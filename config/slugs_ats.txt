@@ -1,0 +1,4 @@
+# Slugs ATS connus, format : <ats>:<slug>
+# Une ligne par slug. Lignes vides et commençant par # ignorées.
+# Les sources de scraping (greenhouse.py, lever.py, ashby.py) lisent ce fichier.
+# Ce fichier sera enrichi en Phase 2 + automatiquement via scripts/decouvrir_slugs.py.

@@ -1,0 +1,110 @@
+profil:
+  poste_cible: "Data Engineer Junior"
+  experience_annees: 1
+
+mots_cles_must_match:
+  - "data engineer"
+  - "ingénieur données"
+  - "ingénieur data"
+  - "développeur data"
+  - "data software engineer"
+  - "analytics engineer"
+  - "mlops"
+
+exclusions_titre:
+  - "senior"
+  - "lead"
+  - "staff"
+  - "principal"
+  - "head of"
+  - "manager"
+  - "directeur"
+  - "director"
+  - "architect"
+  - "expert"
+  - "confirmé"
+  - "expérimenté"
+  - "10 ans"
+  - "8 ans"
+  - "7 ans"
+  - "5 ans"
+
+localisations:
+  - "paris"
+  - "île-de-france"
+  - "ile-de-france"
+  - "idf"
+  - "nanterre"
+  - "la défense"
+  - "boulogne"
+  - "issy"
+  - "saint-denis"
+  - "nantes"
+  - "rennes"
+  - "bordeaux"
+  - "lille"
+  - "lyon"
+  - "toulouse"
+  - "bruxelles"
+  - "brussels"
+  - "remote"
+  - "télétravail"
+  - "full remote"
+
+fraicheur_max_jours: 14
+
+scoring:
+  bonus_signaux_junior:
+    junior: 3
+    graduate: 3
+    "premier emploi": 3
+    débutant: 3
+    alternance: 3
+    apprenti: 3
+    mentorat: 2
+    formation: 2
+    accompagnement: 2
+    "première expérience": 2
+    "0-2 ans": 2
+
+  bonus_stack:
+    python: 2
+    sql: 2
+    airflow: 3
+    dbt: 3
+    snowflake: 3
+    pyspark: 2
+    spark: 2
+    docker: 2
+    kubernetes: 1
+    aws: 2
+    gcp: 2
+    azure: 1
+    kafka: 2
+    fastapi: 2
+    prometheus: 1
+    grafana: 1
+    mlops: 3
+    "ci/cd": 2
+    "github actions": 2
+
+  malus:
+    "esn ": -2
+    "société de conseil": -2
+    consultant: -2
+
+  malus_par_source_supplementaire: -3
+  bonus_source_unique: 5
+
+sources_actives:
+  adzuna: true
+  france_travail: true
+  greenhouse: true
+  lever: true
+  ashby: true
+  hellowork: true
+  choose: true
+
+telegram:
+  top_n_par_jour: 15
+  score_minimum: 5
