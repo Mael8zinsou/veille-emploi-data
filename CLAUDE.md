@@ -41,9 +41,23 @@ GitHub Actions cron 7h Paris
 
 ---
 
-## État actuel : PHASE 4 TERMINÉE ET COMMITTÉE
+## État actuel : PHASE 5 TERMINÉE ET COMMITTÉE
 
-> Phase 1 = `028c9b4`. Phase 2 = `087bcc5`. Phase 3 = `9223e2b`. Phase 4 (pipeline) = commit après `73594b9`.
+> Phase 1 = `028c9b4`. Phase 2 = `087bcc5`. Phase 3 = `9223e2b`. Phase 4 = `2c8ca0e`. Phase 5 (automatisation) = commit après `ec330ff`.
+
+### Ce qui est fait en Phase 5 (automatisation)
+
+| Fichier | État | Note |
+|---|---|---|
+| `.github/workflows/veille.yml` | ✅ | Cron 6h UTC + `workflow_dispatch`. **Cache SQLite en restore/save séparés avec clé datée** (`veille-db-${run_id}` + `restore-keys: veille-db-`) — une clé fixe ne serait jamais ré-uploadée car le cache GitHub est immuable par clé. `concurrency` pour éviter 2 runs simultanés, `permissions: contents:read`, `DRY_RUN=0`, upload logs si échec |
+| `README.md` | ✅ | Portfolio-ready FR : architecture, install, config, sources, automatisation, stack, structure |
+| `scripts/decouvrir_slugs.py` | ✅ | Découverte slugs via **DuckDuckGo HTML** (Google trop bloqué). Manuel, hors cron. `--write` pour ajouter au fichier. Validé : remonte de vrais slugs FR neufs |
+| `scripts/init_db.py` | ✅ | Init manuelle de la base |
+| **Total tests** | ✅ | **69 passent** (inchangé, scripts non testés unitairement — best-effort réseau) |
+
+**Décision cache** : le brief §4.13 proposait une clé `veille-db-${{ github.run_id }}` avec `actions/cache` (action combinée). Problème : l'action combinée ne sauvegarde QUE si la clé n'existe pas, et avec une clé par run elle sauvegarde toujours mais ne restaure jamais l'ancienne sans restore-keys. J'ai donc séparé en `actions/cache/restore` (avec `restore-keys`) + `actions/cache/save` (`if: always()`), pattern fiable pour une DB qui doit persister jour après jour.
+
+**Note Windows** : tous les scripts utilitaires sortent en ASCII (`[OK]` au lieu de `✓`) pour ne pas planter sur la console cp1252. Le pipeline (`main.py`) gère l'UTF-8 via `PYTHONIOENCODING` dans le workflow et le fallback `_print_console` en DRY_RUN.
 
 ### Ce qui est fait en Phase 4 (pipeline)
 
@@ -109,8 +123,7 @@ GitHub Actions cron 7h Paris
 
 ### Ce qui reste à faire (par phase du brief §6)
 
-- **Phase 5 — Automatisation** : `.github/workflows/veille.yml` (cron `0 6 * * *` UTC + cache SQLite), `README.md` portfolio-ready, `scripts/decouvrir_slugs.py` (bonus).
-- **Phase 6 — Livraison** : push GitHub, secrets, premier workflow manuel, activation cron.
+- **Phase 6 — Livraison** (côté utilisateur, nécessite ses accès GitHub) : créer le repo distant, push, ajouter les **GitHub Secrets** (ADZUNA_*, FT_*, TELEGRAM_*), lancer un `workflow_dispatch` manuel pour valider en réel, puis laisser le cron tourner. Côté Telegram : créer le bot via @BotFather (cf. README). **Tout le code est prêt ; il ne reste que des actions de configuration côté compte.**
 
 ---
 
