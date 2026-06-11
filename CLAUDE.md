@@ -41,9 +41,26 @@ GitHub Actions cron 7h Paris
 
 ---
 
-## État actuel : PHASE 3 TERMINÉE ET COMMITTÉE
+## État actuel : PHASE 4 TERMINÉE ET COMMITTÉE
 
-> Phase 1 = `028c9b4`. Phase 2 (sources core) = `087bcc5`. Phase 3 (sources niches) = commit suivant `087bcc5`.
+> Phase 1 = `028c9b4`. Phase 2 = `087bcc5`. Phase 3 = `9223e2b`. Phase 4 (pipeline) = commit après `73594b9`.
+
+### Ce qui est fait en Phase 4 (pipeline)
+
+| Fichier | État | Note |
+|---|---|---|
+| `src/scoring.py` | ✅ | `filtre_par_profil`, `dedoublonne_et_fusionne` (fusion + cumul sources), `score_toutes` (junior+stack, malus ESN, **saturation** : +bonus si exclusif / −malus si ≥4 sources) |
+| `src/notif_telegram.py` | ✅ | MarkdownV2 + escaping réservés, découpage <4096 numéroté, message jour vide, `DRY_RUN`. `_print_console` tolère cp1252 Windows |
+| `src/main.py` | ✅ | Orchestration, chaque source isolée (try/except), logging stdout+`data/pipeline.log` (DEBUG si `VERBOSE=1`), locale FR, prune 90j |
+| `tests/test_scoring.py` | ✅ | 15 tests (filtres, fusion, scoring, saturation) |
+| `tests/test_notif_telegram.py` | ✅ | 9 tests (escaping, découpage, DRY_RUN) |
+| **Total tests** | ✅ | **69 passent** |
+
+**Validé end-to-end en DRY_RUN (2026-06-11)** : 1638 offres brutes → 92 après filtre profil → 86 après dédoublonnage → top 15 notifié. **2e run : 0 nouvelles** → persistance SQLite OK (critère d'acceptation #4 ✅). Sans credentials Adzuna/FT locaux, ces 2 sources renvoient `[]` proprement ; ATS + HelloWork tournent en réseau réel.
+
+**Observation qualité (pas un bug)** : le top est dominé par HelloWork (alternances FR bien scorées) car les offres ATS ont des titres anglais qui matchent moins les mots-clés FR. C'est le comportement spécifié au brief ; ajustable via `config/profil.yaml` (mots-clés, poids) sans toucher au code.
+
+**Reste pour un run live complet** : credentials Adzuna/FT + Telegram en env (cf. §4.10 / annexe 9.3 du brief). Le pipeline est prêt, il manque juste les secrets.
 
 ### Ce qui est fait en Phase 3 (sources niches)
 
@@ -92,8 +109,7 @@ GitHub Actions cron 7h Paris
 
 ### Ce qui reste à faire (par phase du brief §6)
 
-- **Phase 4 — Pipeline** : `src/scoring.py` (filtres + dédoublonnage cross-source avec fusion + scoring saturation), `src/notif_telegram.py` (Markdown V2 + mode `DRY_RUN`), `src/main.py` (orchestration).
-- **Phase 5 — Automatisation** : `.github/workflows/veille.yml` (cron `0 6 * * *` UTC + cache SQLite), `README.md` portfolio-ready.
+- **Phase 5 — Automatisation** : `.github/workflows/veille.yml` (cron `0 6 * * *` UTC + cache SQLite), `README.md` portfolio-ready, `scripts/decouvrir_slugs.py` (bonus).
 - **Phase 6 — Livraison** : push GitHub, secrets, premier workflow manuel, activation cron.
 
 ---
