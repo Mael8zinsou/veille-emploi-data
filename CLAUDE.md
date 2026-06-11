@@ -41,9 +41,20 @@ GitHub Actions cron 7h Paris
 
 ---
 
-## État actuel : PHASE 2 TERMINÉE ET COMMITTÉE (commit `087bcc5`)
+## État actuel : PHASE 3 TERMINÉE ET COMMITTÉE
 
-> Phase 1 = commit `028c9b4`. Phase 2 (sources core) = commit `087bcc5`.
+> Phase 1 = `028c9b4`. Phase 2 (sources core) = `087bcc5`. Phase 3 (sources niches) = commit suivant `087bcc5`.
+
+### Ce qui est fait en Phase 3 (sources niches)
+
+| Fichier | État | Note |
+|---|---|---|
+| `src/sources/hellowork.py` | ✅ | **Scraping HTML réel**. Offres dans le HTML statique, parsées via l'aria-label structuré de chaque ancre `<a>`. Validé live (30 offres/page). Garde-fous : délai 2s, max 3 pages, détection Cloudflare/403 → coupe la source sans casser le run |
+| `src/sources/choose.py` | ✅ | **NO-OP volontaire** (brief §4.8). SPA sans API stable : `api.choose.app` n'existe pas (DNS), pas de `__NEXT_DATA__`, routes `/jobs` en 404. TODO documenté dans le module |
+| `tests/test_sources_niches.py` | ✅ | 6 tests (parsing, filtrage loc, salaire écarté, arrêt pagination, blocage CF, no-op) |
+| **Total tests** | ✅ | **45 passent** (`pytest -q`) |
+
+**À savoir pour la suite** : HelloWork n'expose ni description ni date de publication sur la page liste (`description=""`, `date_publication=""`). Le scoring stack/junior (qui lit la description) sera donc peu efficace sur ces offres — c'est attendu, elles passeront surtout par le matching titre. Si la fraîcheur devient critique, il faudrait fetch la page détail de chaque offre (1 requête/offre, coûteux) — pas fait, pas demandé.
 
 ### Ce qui est fait en Phase 2 (sources core)
 
@@ -81,7 +92,6 @@ GitHub Actions cron 7h Paris
 
 ### Ce qui reste à faire (par phase du brief §6)
 
-- **Phase 3 — Sources niches** : `hellowork.py`, `choose.py`. Brief autorise le no-op + TODO si scraping trop fragile.
 - **Phase 4 — Pipeline** : `src/scoring.py` (filtres + dédoublonnage cross-source avec fusion + scoring saturation), `src/notif_telegram.py` (Markdown V2 + mode `DRY_RUN`), `src/main.py` (orchestration).
 - **Phase 5 — Automatisation** : `.github/workflows/veille.yml` (cron `0 6 * * *` UTC + cache SQLite), `README.md` portfolio-ready.
 - **Phase 6 — Livraison** : push GitHub, secrets, premier workflow manuel, activation cron.
