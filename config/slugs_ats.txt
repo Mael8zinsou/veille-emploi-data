@@ -1,4 +1,95 @@
 # Slugs ATS connus, format : <ats>:<slug>
 # Une ligne par slug. Lignes vides et commençant par # ignorées.
 # Les sources de scraping (greenhouse.py, lever.py, ashby.py) lisent ce fichier.
-# Ce fichier sera enrichi en Phase 2 + automatiquement via scripts/decouvrir_slugs.py.
+# Enrichissable automatiquement via scripts/decouvrir_slugs.py.
+#
+# Statut vérifié en live le 2026-06-11 (endpoints interrogés un à un).
+#   - Section "VÉRIFIÉS LIVE" : board accessible et renvoyant des offres FR/remote.
+#   - Section "FILET" : slugs FR notoires actuellement morts (404) gardés comme veille ;
+#     les sources gèrent les 404 gracieusement (log debug + continue), ça ne casse rien.
+# Pour vérifier un slug : ouvrir l'URL de board correspondante dans un navigateur.
+
+# ===========================================================================
+# GREENHOUSE — https://boards.greenhouse.io/<slug>
+# ===========================================================================
+# --- vérifiés live (offres FR/remote au 2026-06-11) ---
+greenhouse:doctolib
+greenhouse:datadog
+greenhouse:dataiku
+greenhouse:algolia
+greenhouse:mirakl
+greenhouse:shifttechnology
+greenhouse:platformsh
+greenhouse:samsara
+greenhouse:sumup
+greenhouse:adyen
+greenhouse:mongodb
+greenhouse:elastic
+greenhouse:gitlab
+greenhouse:remote
+# --- filet (FR notoires, à recontrôler / réactivés par decouvrir_slugs) ---
+greenhouse:spendesk
+greenhouse:contentsquare
+greenhouse:aircall
+greenhouse:payfit
+greenhouse:qonto
+greenhouse:backmarket
+greenhouse:ledger
+greenhouse:malt
+greenhouse:pennylane
+greenhouse:scaleway
+greenhouse:blablacar
+greenhouse:manomano
+greenhouse:criteo
+greenhouse:owkin
+
+# ===========================================================================
+# LEVER — https://jobs.lever.co/<slug>
+# ===========================================================================
+# --- vérifiés live (offres FR/remote au 2026-06-11) ---
+lever:skello
+lever:pigment
+lever:aircall
+lever:swile
+lever:voodoo
+lever:younited
+lever:kpler
+lever:contentsquare
+lever:ledger
+lever:lifen
+# --- filet ---
+lever:mindee
+lever:dailymotion
+lever:akeneo
+lever:matera
+lever:finary
+
+# ===========================================================================
+# ASHBY — https://jobs.ashbyhq.com/<slug>
+# ===========================================================================
+# --- vérifiés live (offres FR/remote au 2026-06-11) ---
+ashby:pennylane
+ashby:alan
+ashby:photoroom
+ashby:dust
+ashby:poolside
+ashby:lago
+ashby:nabla
+ashby:akur8
+ashby:swan
+ashby:finary
+ashby:formance
+ashby:dotfile
+ashby:spendesk
+ashby:kestra
+ashby:elevenlabs
+ashby:baseten
+ashby:sardine
+ashby:modal
+# --- filet ---
+ashby:mistral
+ashby:huggingface
+ashby:gitguardian
+ashby:qovery
+ashby:pasqal
+ashby:didomi
