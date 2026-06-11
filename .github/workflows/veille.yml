@@ -1,0 +1,73 @@
+name: Veille emploi quotidienne
+
+on:
+  schedule:
+    # 6h UTC = 7h Paris en hiver, 8h en été. Cron GitHub est toujours en UTC.
+    - cron: '0 6 * * *'
+  workflow_dispatch:        # permet le déclenchement manuel depuis l'onglet Actions
+
+# Évite deux runs concurrents (cron + manuel) qui se marcheraient sur la DB.
+concurrency:
+  group: veille-emploi
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  veille:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # --- Persistance de la base SQLite entre runs ---
+      # On restaure la version la plus récente (restore-keys = préfixe commun),
+      # et on sauvegarde sous une clé datée unique. Le cache GitHub étant
+      # immuable par clé, une clé datée garantit que la sauvegarde du jour est
+      # bien écrite (sinon une clé fixe ne serait jamais ré-uploadée).
+      - name: Restore SQLite cache
+        id: cache-restore
+        uses: actions/cache/restore@v4
+        with:
+          path: data/
+          key: veille-db-${{ github.run_id }}
+          restore-keys: |
+            veille-db-
+
+      - name: Lance le pipeline
+        env:
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+          FT_CLIENT_ID: ${{ secrets.FT_CLIENT_ID }}
+          FT_CLIENT_SECRET: ${{ secrets.FT_CLIENT_SECRET }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          DRY_RUN: '0'
+          PYTHONIOENCODING: 'utf-8'
+        run: python -m src.main
+
+      - name: Save SQLite cache
+        # Sauvegarde même si l'envoi a échoué, pour ne pas perdre l'état "déjà vu".
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: data/
+          key: veille-db-${{ github.run_id }}
+
+      - name: Upload logs si échec
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-logs
+          path: data/pipeline.log
+          if-no-files-found: ignore
