@@ -8,7 +8,9 @@
 
 Pipeline autonome de veille d'offres Data Engineer junior, déclenché chaque matin sur GitHub Actions, qui agrège plusieurs sources (Adzuna, France Travail, ATS Greenhouse/Lever/Ashby, plateformes FR niches) et notifie l'utilisateur via Telegram.
 
-**Brief complet :** `../Mail_track_AI/brief_vague3.md` (côté repo Mail_track_AI, gardé en archive de référence). Toutes les décisions de design y sont consignées — ne pas redécider seul.
+**Brief complet :** `brief_vague3.md` (à la racine de CE repo depuis le commit `087bcc5`, copie versionnée ; l'original reste côté `../Mail_track_AI/`). Toutes les décisions de design y sont consignées — ne pas redécider seul.
+
+**Contrat d'interface des sources** (établi en Phase 2, à respecter en Phase 4) : chaque module `src/sources/<x>.py` expose `fetch(config, session) -> list[Offre]`. `config` = SimpleNamespace (`config.fraicheur_max_jours`, etc.). `session` = `build_session()` de `utils/http`. Credentials API lus dans l'environnement, pas dans le YAML. Les sources ATS lisent elles-mêmes `config/slugs_ats.txt` via `load_slugs`.
 
 **Utilisateur :** Maël Mike ZINSOU, étudiant Mastère Data Engineer YNOV, alternant DIRCOFI IDF jusqu'en septembre 2026. Cherche premier CDI ou alternance septembre 2026, profil junior.
 
@@ -39,9 +41,29 @@ GitHub Actions cron 7h Paris
 
 ---
 
-## État actuel : PHASE 1 TERMINÉE ET COMMITTÉE (commit `028c9b4`)
+## État actuel : PHASE 2 TERMINÉE ET COMMITTÉE (commit `087bcc5`)
 
-### Ce qui est fait
+> Phase 1 = commit `028c9b4`. Phase 2 (sources core) = commit `087bcc5`.
+
+### Ce qui est fait en Phase 2 (sources core)
+
+| Fichier | État | Note |
+|---|---|---|
+| `src/sources/adzuna.py` | ✅ | Migré V2, `fetch(config, session)`, credentials via env, 4 requêtes |
+| `src/sources/france_travail.py` | ✅ | Migré V2, OAuth2 token + correctif `maxCreationDate`, 3 requêtes |
+| `src/sources/greenhouse.py` | ✅ | Discovery par slugs, résilient (404 → log debug + continue) |
+| `src/sources/lever.py` | ✅ | idem, parsing `categories.location` |
+| `src/sources/ashby.py` | ✅ | idem, **schéma réel** : `location`/`publishedAt`/`isRemote` (≠ brief qui disait `locationName`) |
+| `src/sources/_ats_common.py` | ✅ | Helpers partagés : `localisation_pertinente`, `slugs_pour`, `pause_polie` (200ms) |
+| `config/slugs_ats.txt` | ✅ | 42 slugs **vérifiés live** le 2026-06-11 + 25 filet (404 gérés). Total 67 |
+| `tests/test_sources.py` | ✅ | 24 tests (parsing, filtrage loc, résilience slug, remote Ashby) |
+| **Total tests** | ✅ | **39 passent** (`pytest -q`) |
+
+**Validation live (2026-06-11)** : sur les slugs vivants, ~1472 offres FR brutes remontées (Greenhouse 744, Ashby 559, Lever 169). Beaucoup de remote international gonfle certains slugs (samsara, gitlab, elevenlabs, baseten) — sera écrémé par le filtrage profil en Phase 4.
+
+**⚠️ Slugs ATS volatils** : la majorité des scale-ups FR « connues » (spendesk, qonto, payfit, alan/lever, sorare…) sont en 404 sur leur ancien ATS — elles ont migré (souvent WTTJ/Teamtailor). `slugs_ats.txt` distingue « vérifiés live » et « filet ». À rafraîchir via `scripts/decouvrir_slugs.py` (Phase 5).
+
+### Ce qui était fait en Phase 1
 
 | Fichier | État | Note |
 |---|---|---|
@@ -59,7 +81,6 @@ GitHub Actions cron 7h Paris
 
 ### Ce qui reste à faire (par phase du brief §6)
 
-- **Phase 2 — Sources core** : `src/sources/adzuna.py`, `france_travail.py`, `greenhouse.py`, `lever.py`, `ashby.py`. Migrer Adzuna + FT depuis `../Mail_track_AI/veille_emploi.py`. Peupler `config/slugs_ats.txt`.
 - **Phase 3 — Sources niches** : `hellowork.py`, `choose.py`. Brief autorise le no-op + TODO si scraping trop fragile.
 - **Phase 4 — Pipeline** : `src/scoring.py` (filtres + dédoublonnage cross-source avec fusion + scoring saturation), `src/notif_telegram.py` (Markdown V2 + mode `DRY_RUN`), `src/main.py` (orchestration).
 - **Phase 5 — Automatisation** : `.github/workflows/veille.yml` (cron `0 6 * * *` UTC + cache SQLite), `README.md` portfolio-ready.
