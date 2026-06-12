@@ -41,17 +41,32 @@ def test_filtre_rejette_exclusion_titre():
     assert filtre_par_profil(offres, CONFIG) == []
 
 
-def test_filtre_rejette_mauvaise_localisation():
+def test_filtre_exclut_alternance_et_apprentissage():
+    # On cherche un CDI/CDD : alternance / apprentissage sont hors cible.
+    offres = [
+        _offre(titre="Alternance Data Engineer", localisation="Lyon"),
+        _offre(titre="Data Engineer en apprentissage", localisation="Paris"),
+        _offre(titre="Apprenti Data Engineer", localisation="Nantes"),
+        _offre(titre="Data Engineer Alternant", localisation="Lille"),
+    ]
+    assert filtre_par_profil(offres, CONFIG) == []
+
+
+def test_filtre_rejette_localisation_etrangere():
     offres = [_offre(titre="Data Engineer", localisation="Berlin, Germany")]
     assert filtre_par_profil(offres, CONFIG) == []
 
 
-def test_filtre_tolere_localisation_vide_ou_france():
+def test_filtre_couvre_toute_la_france():
+    # Couverture France entière : campagne et villes non listées passent aussi.
     offres = [
         _offre(titre="Data Engineer", localisation=""),
         _offre(titre="Data Engineer", localisation="France"),
+        _offre(titre="Data Engineer", localisation="Guéret, Creuse"),       # campagne
+        _offre(titre="Data Engineer", localisation="Aurillac"),             # ville non listée
+        _offre(titre="Data Engineer", localisation="Remote"),
     ]
-    assert len(filtre_par_profil(offres, CONFIG)) == 2
+    assert len(filtre_par_profil(offres, CONFIG)) == 5
 
 
 def test_filtre_localisation_insensible_accents():

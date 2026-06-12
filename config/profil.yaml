@@ -28,30 +28,58 @@ exclusions_titre:
   - "8 ans"
   - "7 ans"
   - "5 ans"
+  # On cherche un CDI/CDD junior, pas un contrat d'études : on écarte
+  # alternance et apprentissage (statut étudiant/apprenti, hors cible).
+  - "alternance"
+  - "alternant"
+  - "apprenti"
+  - "apprentissage"
 
-localisations:
-  - "paris"
-  - "île-de-france"
-  - "ile-de-france"
-  - "idf"
-  - "nanterre"
-  - "la défense"
-  - "boulogne"
-  - "issy"
-  - "saint-denis"
-  - "nantes"
-  - "rennes"
-  - "bordeaux"
-  - "lille"
-  - "lyon"
-  - "toulouse"
-  - "bruxelles"
-  - "brussels"
-  - "remote"
-  - "télétravail"
-  - "full remote"
+# Couverture géographique : TOUTE la France (y compris campagne, TPE/PME de
+# province) + Belgique + remote. On ne liste donc PAS les lieux acceptés
+# (impossible d'énumérer toutes les communes) : on liste au contraire les
+# lieux à EXCLURE — l'étranger non pertinent. Tout le reste est gardé.
+# (cf. filtre_par_profil dans src/scoring.py)
+exclusions_localisation:
+  - "germany"
+  - "allemagne"
+  - "berlin"
+  - "munich"
+  - "spain"
+  - "espagne"
+  - "madrid"
+  - "barcelona"
+  - "barcelone"
+  - "italy"
+  - "italie"
+  - "milan"
+  - "portugal"
+  - "lisbon"
+  - "lisbonne"
+  - "united kingdom"
+  - "london"
+  - "londres"
+  - "ireland"
+  - "dublin"
+  - "netherlands"
+  - "amsterdam"
+  - "poland"
+  - "pologne"
+  - "warsaw"
+  - "united states"
+  - "usa"
+  - "new york"
+  - "san francisco"
+  - "canada"
+  - "india"
+  - "inde"
+  - "bangalore"
+  - "singapore"
+  - "singapour"
+  - "dubai"
+  - "australia"
 
-fraicheur_max_jours: 14
+fraicheur_max_jours: 3
 
 scoring:
   bonus_signaux_junior:
@@ -59,8 +87,8 @@ scoring:
     graduate: 3
     "premier emploi": 3
     débutant: 3
-    alternance: 3
-    apprenti: 3
+    # alternance / apprenti retirés : ces offres sont désormais exclues
+    # (cf. exclusions_titre). On ne les boost donc plus.
     mentorat: 2
     formation: 2
     accompagnement: 2
@@ -106,5 +134,5 @@ sources_actives:
   choose: true
 
 telegram:
-  top_n_par_jour: 15
+  top_n_par_jour: 30
   score_minimum: 5

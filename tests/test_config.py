@@ -10,7 +10,8 @@ def test_load_config_lit_profil_yaml():
     cfg = load_config(REPO_ROOT / "config" / "profil.yaml")
     assert cfg.profil.poste_cible == "Data Engineer Junior"
     assert "data engineer" in cfg.mots_cles_must_match
-    assert cfg.telegram.top_n_par_jour == 15
+    assert cfg.telegram.top_n_par_jour == 30
+    assert cfg.fraicheur_max_jours == 3
     assert cfg.sources_actives.adzuna is True
 
 

@@ -31,13 +31,18 @@ def filtre_par_profil(offres: list[Offre], config) -> list[Offre]:
     """
     Garde une offre si :
       - au moins un mot-clé must-match apparaît dans titre+description, ET
-      - aucune exclusion n'apparaît dans le titre, ET
-      - la localisation matche une cible (les localisations vides/'france' sont
-        tolérées car certaines sources ne renseignent pas le lieu).
+      - aucune exclusion de titre n'apparaît dans le titre (senior, lead,
+        alternance, apprentissage…), ET
+      - la localisation n'est pas un lieu étranger exclu (cf. exclusions_localisation).
+    Couverture géographique par défaut : toute la France + Belgique + remote.
     """
     mots_cles = [m.lower() for m in config.mots_cles_must_match]
     exclusions = [e.lower() for e in config.exclusions_titre]
-    localisations = [l.lower() for l in config.localisations]
+    # Couverture France entière : on n'a PAS de liste blanche de lieux. On garde
+    # par défaut, et on n'écarte que les localisations clairement à l'étranger
+    # listées dans exclusions_localisation. Ainsi la campagne et les TPE/PME de
+    # province passent (elles n'ont aucune raison d'être énumérées).
+    exclusions_loc = [_normalize(l) for l in getattr(config, "exclusions_localisation", [])]
 
     gardees = []
     for o in offres:
@@ -50,10 +55,9 @@ def filtre_par_profil(offres: list[Offre], config) -> list[Offre]:
             continue
 
         loc_l = _normalize(o.localisation)
-        if not any(_normalize(loc) in loc_l for loc in localisations):
-            # On tolère une localisation absente ou générique "france".
-            if loc_l not in ("", "—", "france"):
-                continue
+        # Écarte uniquement si la localisation mentionne un lieu étranger exclu.
+        if loc_l and any(ex in loc_l for ex in exclusions_loc):
+            continue
 
         gardees.append(o)
     return gardees
