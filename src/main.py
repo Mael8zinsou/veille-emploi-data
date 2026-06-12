@@ -154,6 +154,14 @@ def run() -> int:
 
 
 def main() -> None:
+    # Charge un éventuel .env local (no-op sur GitHub Actions où il n'existe pas ;
+    # les variables déjà présentes dans l'environnement ne sont pas écrasées).
+    try:
+        from dotenv import load_dotenv
+        load_dotenv()
+    except ImportError:
+        pass
+
     _setup_logging()
     try:
         run()
