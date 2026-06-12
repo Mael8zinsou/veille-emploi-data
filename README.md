@@ -94,9 +94,10 @@ HelloWork ne nécessitent aucune clé). Le pipeline tourne donc même sans Adzun
 ### Profil (`config/profil.yaml`)
 
 Tout ce qui dépend du profil recherché est externalisé ici, **sans toucher au code** :
-mots-clés à matcher, exclusions de titre (senior, lead…), localisations cibles,
-fraîcheur max, **table de scoring** (poids par techno / signal junior, malus ESN),
-sources actives, et paramètres Telegram (`top_n_par_jour`, `score_minimum`).
+mots-clés à matcher, exclusions de titre (senior, lead, alternance…), lieux à exclure
+(couverture France entière par défaut), fraîcheur max, **table de scoring** (poids par
+techno / signal junior, malus ESN), sources actives, et paramètres Telegram
+(`top_n_par_jour`, `score_minimum`).
 
 ### Slugs ATS (`config/slugs_ats.txt`)
 

@@ -39,14 +39,24 @@ Une offre est **gardée** si les trois conditions sont vraies :
 
 1. **Mot-clé must-match** : au moins un terme de `mots_cles_must_match` apparaît dans
    `titre + description` (insensible à la casse).
-2. **Pas d'exclusion** : aucun terme de `exclusions_titre` (`senior`, `lead`, `staff`,
-   `architect`, `5 ans`…) n'apparaît dans le **titre**.
-3. **Localisation** : la localisation (normalisée) contient une des `localisations`
-   cibles. **Tolérance** : une localisation vide, `—` ou `france` est acceptée (certaines
-   sources ne renseignent pas le lieu — on préfère un faux positif qu'un faux négatif).
+2. **Pas d'exclusion de titre** : aucun terme de `exclusions_titre` (`senior`, `lead`,
+   `staff`, `architect`, `5 ans`, **`alternance`**, **`apprentissage`**…) n'apparaît dans
+   le **titre**. Les contrats d'études (alternance/apprentissage) sont écartés car hors
+   cible CDI/CDD.
+3. **Localisation non exclue** : la localisation (normalisée) ne contient **aucun** lieu
+   étranger listé dans `exclusions_localisation` (Berlin, London, New York…). **Logique
+   inversée** : on couvre **toute la France** (+ Belgique + remote) par défaut, donc on ne
+   liste pas les lieux acceptés (impossible d'énumérer toutes les communes) mais seulement
+   ceux à rejeter. Une localisation vide ou générique est donc gardée.
 
 Le filtrage est volontairement **textuel et simple** : transparent, débogable, et entièrement
 piloté par le YAML.
+
+> **Note sur les deux filtres de localisation.** `filtre_par_profil` (ci-dessus) couvre
+> toute la France via une liste d'**exclusion**. Les sources ATS, elles, appliquent en
+> amont une liste d'**inclusion** (`_ats_common.localisation_pertinente`) car elles
+> interrogent des entreprises internationales : sans ce garde-fou, Greenhouse/Ashby
+> noieraient le flux sous des offres US. Les deux couches sont complémentaires.
 
 ---
 
@@ -74,8 +84,11 @@ Le score d'une offre = somme de quatre contributions, toutes paramétrées dans
 
 ### C.4.1 Bonus « signaux junior »
 Termes présents dans `titre + description`, ex. (poids) :
-`junior` (+3), `graduate` (+3), `alternance` (+3), `apprenti` (+3), `débutant` (+3),
+`junior` (+3), `graduate` (+3), `premier emploi` (+3), `débutant` (+3),
 `mentorat` (+2), `formation` (+2), `première expérience` (+2), `0-2 ans` (+2)…
+
+> `alternance`/`apprenti` ne sont **plus** dans le bonus : ces offres sont désormais
+> exclues au filtrage (cf. C.2), il serait contradictoire de les valoriser.
 
 ### C.4.2 Bonus « stack »
 Technos du profil, ex. (poids) :
@@ -103,7 +116,7 @@ exclusive bien matchée passe ainsi devant une offre omniprésente.
 
 ### C.4.5 Tri final
 `score_toutes` calcule tous les scores puis trie **par score décroissant**. `main.py`
-applique ensuite le seuil `telegram.score_minimum` (5) et coupe au `top_n_par_jour` (15).
+applique ensuite le seuil `telegram.score_minimum` (5) et coupe au `top_n_par_jour` (30).
 Les tags sont dédoublonnés en conservant l'ordre d'apparition.
 
 ---
@@ -122,10 +135,11 @@ clés vides.
 
 Tout est dans `config/profil.yaml` :
 
-- **Trop d'alternances dans le top ?** Baisser les poids `alternance`/`apprenti`, ou
-  renforcer les stacks CDI-typiques.
+- **Réintégrer les alternances ?** Les retirer de `exclusions_titre` (et, si on veut les
+  valoriser, les remettre dans `bonus_signaux_junior`).
 - **Privilégier certaines technos** : augmenter leur poids dans `bonus_stack`.
-- **Élargir/réduire la zone géographique** : éditer `localisations`.
+- **Restreindre la zone géographique** : ajouter des lieux à `exclusions_localisation`
+  (la couverture est « toute la France » par défaut — on retire, on n'ajoute pas).
 - **Être plus/moins sélectif** : ajuster `telegram.score_minimum` et `top_n_par_jour`.
 - **Régler la sensibilité à la saturation** : `bonus_source_unique` et
   `malus_par_source_supplementaire`.

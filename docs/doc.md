@@ -106,7 +106,7 @@ GitHub Actions (cron 6h UTC ≈ 7h Paris)
         ▼
    storage (SQLite)           ── filtre "déjà vu", marque les nouvelles
         ▼
-   notif_telegram             ── top N (15), MarkdownV2, liens cliquables
+   notif_telegram             ── top N (30), MarkdownV2, liens cliquables
         ▼
    Telegram  ← message reçu par l'utilisateur
 ```
@@ -171,10 +171,12 @@ Limitations assumées, documentées pour quiconque reprend le projet.
 
 ### 4.2 Qualité du classement
 
-- Le top du jour tend à être **dominé par HelloWork** (alternances FR aux titres bien
-  matchés) car les offres ATS ont souvent des titres en anglais qui matchent moins les
-  mots-clés FR. C'est un effet du scoring tel que paramétré, **pas un bug** : entièrement
-  ajustable via `config/profil.yaml` (mots-clés, poids) **sans toucher au code**.
+- Les offres ATS ont souvent des titres en **anglais** qui matchent moins les mots-clés FR,
+  tandis que HelloWork (FR) remonte plus haut. C'est un effet du scoring tel que paramétré,
+  **pas un bug** : entièrement ajustable via `config/profil.yaml` (mots-clés, poids)
+  **sans toucher au code**.
+- Historiquement le top était dominé par des **alternances** ; elles sont désormais
+  **exclues** (cf. cible CDI/CDD, [Annexe C](annexe_C_scoring.md) §C.2).
 
 ### 4.3 Quotas et politesse
 

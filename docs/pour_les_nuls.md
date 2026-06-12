@@ -127,8 +127,12 @@ Toutes les offres ne se valent pas pour toi. Le programme donne donc une **note*
 chacune (le *scoring*). Plus la note est haute, plus l'offre te correspond.
 
 - **+ des points** si l'offre mentionne des mots qui t'arrangent : « junior »,
-  « alternance », ou des technologies que tu maîtrises (Python, SQL, Airflow…).
+  « débutant », ou des technologies que tu maîtrises (Python, SQL, Airflow…).
 - **− des points** si elle sent le poste peu adapté (certaines sociétés de conseil).
+
+(Certaines offres sont même **écartées d'emblée** si elles ne correspondent pas à la
+cible : un poste « senior », ou une **alternance** — qui est un contrat d'études, alors
+qu'on cherche ici un vrai premier emploi en CDI/CDD.)
 
 ### L'idée la plus astucieuse du projet : la « saturation »
 Voici le raisonnement : **si une offre est partout, c'est qu'elle a déjà été vue par tout
@@ -144,7 +148,7 @@ C'est exactement la stratégie d'un bon chercheur d'emploi : viser là où les a
 regardent pas encore.
 
 À la fin, les offres sont triées de la meilleure note à la moins bonne, et on garde le
-**top 15**.
+**top 30**.
 
 ---
 
