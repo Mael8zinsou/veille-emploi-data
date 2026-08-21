@@ -192,6 +192,8 @@ scoring:
 
   malus_par_source_supplementaire: -3
   bonus_source_unique: 5
+  # Bonus quand la source signale une offre peu candidatée (APEC) : anti-saturation.
+  bonus_faible_concurrence: 4
 
 sources_actives:
   adzuna: true
@@ -200,6 +202,7 @@ sources_actives:
   lever: true
   ashby: true
   teamtailor: true
+  apec: true
   hellowork: true
   choose: true
 

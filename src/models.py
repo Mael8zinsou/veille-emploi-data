@@ -18,6 +18,9 @@ class Offre:
     url: str
     date_publication: str  # ISO YYYY-MM-DD
 
+    # Signal optionnel porté par la source (ex. APEC : offre peu candidatée).
+    faible_concurrence: bool = False
+
     # Calculés en aval (post-fetch).
     cle_unique: str = ""
     score: int = 0

@@ -82,6 +82,7 @@ def dedoublonne_et_fusionne(offres: list[Offre]) -> list[Offre]:
     """
     par_cle: dict[str, Offre] = {}
     sources_par_cle: dict[str, list[str]] = {}
+    faible_par_cle: dict[str, bool] = {}
 
     for o in offres:
         cle = o.cle_unique
@@ -89,6 +90,8 @@ def dedoublonne_et_fusionne(offres: list[Offre]) -> list[Offre]:
         for src in o.sources_list or [o.source]:
             if src not in sources_par_cle[cle]:
                 sources_par_cle[cle].append(src)
+        # Le signal "peu candidatée" est conservé si une source au moins le porte.
+        faible_par_cle[cle] = faible_par_cle.get(cle, False) or o.faible_concurrence
 
         gardee = par_cle.get(cle)
         if gardee is None or len(o.description) > len(gardee.description):
@@ -99,6 +102,7 @@ def dedoublonne_et_fusionne(offres: list[Offre]) -> list[Offre]:
         sources = sources_par_cle[cle]
         offre.sources_list = sources
         offre.nb_sources = len(sources)
+        offre.faible_concurrence = faible_par_cle[cle]
         fusionnees.append(offre)
     return fusionnees
 
@@ -140,6 +144,11 @@ def score_offre(offre: Offre, config) -> Offre:
     if ent_l and any(m in ent_l for m in malus_ent):
         score += int(getattr(sc, "malus_entreprises_valeur", -5))
         tags.append("⚠ ESN")
+
+    # Offre peu candidatée (signalée par la source, ex. APEC) : bonus anti-saturation.
+    if offre.faible_concurrence:
+        score += int(getattr(sc, "bonus_faible_concurrence", 0))
+        tags.append("peu candidatée")
 
     # Saturation : exclusive = pépite (boost), omniprésente = déjà bombardée (malus).
     n = offre.nb_sources

@@ -12,6 +12,7 @@ import pytest
 from src.sources import (
     _ats_common,
     adzuna,
+    apec,
     ashby,
     france_travail,
     greenhouse,
@@ -338,6 +339,65 @@ def test_teamtailor_slug_obsolete_ne_casse_pas(monkeypatch, config):
     session = FakeSession(default=FakeResponse(404, {}))
     monkeypatch.setattr(teamtailor, "load_slugs", lambda _: [("teamtailor", "mort")])
     assert teamtailor.fetch(config, session) == []
+
+
+class ApecSession:
+    """Session dont chaque .post renvoie la même page APEC.
+    La pagination s'arrête d'elle-même car la page (< 50 résultats) est non pleine."""
+    def __init__(self, resultats):
+        self._resultats = resultats
+
+    def post(self, url, **kwargs):
+        return FakeResponse(200, {"resultats": self._resultats})
+
+
+def _apec_item(intitule="Data Engineer F/H", code=101888, faible=False, jours=1):
+    from datetime import datetime, timedelta
+    d = (datetime.now().astimezone() - timedelta(days=jours)).strftime("%Y-%m-%dT%H:%M:%S.000%z")
+    return {
+        "numeroOffre": "123456W", "id": 123456,
+        "intitule": intitule, "nomCommercial": "ACME",
+        "lieuTexte": "Paris - 75", "typeContrat": code,
+        "texteOffre": "python sql airflow", "datePublication": d,
+        "indicateurFaibleCandidature": faible,
+    }
+
+
+def test_apec_parse_cdi_et_url(config):
+    session = ApecSession([_apec_item(code=101888)])
+    offres = apec.fetch(config, session)
+    assert len(offres) == len(apec.REQUETES)  # une page par requête
+    o = offres[0]
+    assert o.source == "APEC"
+    assert o.contrat == "CDI"
+    assert o.entreprise == "ACME"
+    assert o.url.endswith("/detail-offre/123456W")
+    assert o.faible_concurrence is False
+
+
+def test_apec_mappe_cdd(config):
+    session = ApecSession([_apec_item(code=101887)])
+    offres = apec.fetch(config, session)
+    assert offres[0].contrat == "CDD"
+
+
+def test_apec_signal_faible_candidature(config):
+    session = ApecSession([_apec_item(faible=True)])
+    offres = apec.fetch(config, session)
+    assert offres[0].faible_concurrence is True
+
+
+def test_apec_filtre_fraicheur(config):
+    # config.fraicheur_max_jours = 14 ; une offre publiée il y a 30 jours est écartée.
+    session = ApecSession([_apec_item(jours=30)])
+    assert apec.fetch(config, session) == []
+
+
+def test_apec_http_error_ne_casse_pas(config):
+    class BadSession:
+        def post(self, url, **kwargs):
+            return FakeResponse(500, {})
+    assert apec.fetch(config, BadSession()) == []
 
 
 def test_ats_reponse_inattendue_ne_casse_pas(monkeypatch, config):

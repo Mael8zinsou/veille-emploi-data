@@ -27,6 +27,7 @@ from src.notif_telegram import (
 from src.scoring import dedoublonne_et_fusionne, filtre_par_profil, score_toutes
 from src.sources import (
     adzuna,
+    apec,
     ashby,
     choose,
     france_travail,
@@ -51,6 +52,7 @@ SOURCES = {
     "lever": lever.fetch,
     "ashby": ashby.fetch,
     "teamtailor": teamtailor.fetch,
+    "apec": apec.fetch,
     "hellowork": hellowork.fetch,
     "choose": choose.fetch,
 }

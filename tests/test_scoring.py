@@ -183,6 +183,25 @@ def test_score_conseil_departemental_non_penalise():
     assert "⚠ ESN" not in o.tags
 
 
+def test_score_bonus_faible_concurrence():
+    o = _offre(titre="Data Engineer", description="data engineer")
+    o.faible_concurrence = True
+    score_offre(o, CONFIG)
+    assert "peu candidatée" in o.tags
+    # +5 exclusif + bonus_faible_concurrence
+    assert o.score == CONFIG.scoring.bonus_source_unique + CONFIG.scoring.bonus_faible_concurrence
+
+
+def test_dedoublonne_conserve_faible_concurrence():
+    a = _offre(source="Adzuna", description="courte")
+    b = _offre(source="APEC", description="description plus longue et détaillée")
+    b.faible_concurrence = True
+    # La version gardée est 'a' (peu importe), le signal de 'b' doit survivre.
+    fusion = dedoublonne_et_fusionne([b, a])
+    assert len(fusion) == 1
+    assert fusion[0].faible_concurrence is True
+
+
 def test_score_saturation_source_unique_boost():
     o = _offre(description="data engineer")
     o.nb_sources = 1
