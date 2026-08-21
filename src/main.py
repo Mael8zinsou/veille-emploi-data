@@ -33,6 +33,7 @@ from src.sources import (
     greenhouse,
     hellowork,
     lever,
+    teamtailor,
 )
 from src.utils.http import build_session
 
@@ -49,6 +50,7 @@ SOURCES = {
     "greenhouse": greenhouse.fetch,
     "lever": lever.fetch,
     "ashby": ashby.fetch,
+    "teamtailor": teamtailor.fetch,
     "hellowork": hellowork.fetch,
     "choose": choose.fetch,
 }

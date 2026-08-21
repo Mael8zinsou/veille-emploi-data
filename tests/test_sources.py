@@ -9,7 +9,15 @@ from unittest.mock import patch
 
 import pytest
 
-from src.sources import _ats_common, adzuna, ashby, france_travail, greenhouse, lever
+from src.sources import (
+    _ats_common,
+    adzuna,
+    ashby,
+    france_travail,
+    greenhouse,
+    lever,
+    teamtailor,
+)
 
 
 @pytest.fixture(autouse=True)
@@ -269,6 +277,67 @@ def test_ashby_remote_garde_meme_si_location_hors_fr(monkeypatch, config):
     assert len(offres) == 1
     assert offres[0].url == "https://ashby/r"
     assert offres[0].date_publication == "2026-06-08"
+
+
+def _tt_item(titre, ville, pays, org="Deezer", url="https://x.teamtailor.com/jobs/1"):
+    return {
+        "title": titre,
+        "url": url,
+        "date_published": "2026-08-10T09:00:00+02:00",
+        "content_html": "<p>python sql</p>",
+        "_jobposting": {
+            "@type": "JobPosting",
+            "title": titre,
+            "description": "<p>python sql airflow</p>",
+            "datePosted": "2026-08-10T09:00:00+02:00",
+            "hiringOrganization": {"@type": "Organization", "name": org},
+            "jobLocation": [
+                {"@type": "Place",
+                 "address": {"@type": "PostalAddress",
+                             "addressLocality": ville, "addressCountry": pays}}
+            ],
+        },
+    }
+
+
+def test_teamtailor_parse_fr_et_nom_reel(monkeypatch, config):
+    payload = {"items": [
+        _tt_item("Data Engineer", "Paris", "FR", org="Deezer"),
+        _tt_item("Data Engineer", "Amsterdam", "NL", org="Tibber"),
+    ]}
+    session = FakeSession(default=FakeResponse(200, payload))
+    monkeypatch.setattr(teamtailor, "load_slugs", lambda _: [("teamtailor", "deezer")])
+    offres = teamtailor.fetch(config, session)
+    assert len(offres) == 1
+    o = offres[0]
+    assert o.source == "Teamtailor"
+    assert o.entreprise == "Deezer"          # vrai nom, pas le slug
+    assert "France" in o.localisation
+    assert "python" in o.description.lower() and "<p>" not in o.description  # HTML retiré
+    assert o.date_publication == "2026-08-10"
+
+
+def test_teamtailor_remote_sans_lieu(monkeypatch, config):
+    item = {
+        "title": "Data Engineer",
+        "url": "https://x.teamtailor.com/jobs/2",
+        "_jobposting": {
+            "hiringOrganization": {"name": "Skello"},
+            "jobLocationType": "TELECOMMUTE",
+            "description": "data engineer",
+        },
+    }
+    session = FakeSession(default=FakeResponse(200, {"items": [item]}))
+    monkeypatch.setattr(teamtailor, "load_slugs", lambda _: [("teamtailor", "skello")])
+    offres = teamtailor.fetch(config, session)
+    assert len(offres) == 1
+    assert offres[0].localisation == "Remote"
+
+
+def test_teamtailor_slug_obsolete_ne_casse_pas(monkeypatch, config):
+    session = FakeSession(default=FakeResponse(404, {}))
+    monkeypatch.setattr(teamtailor, "load_slugs", lambda _: [("teamtailor", "mort")])
+    assert teamtailor.fetch(config, session) == []
 
 
 def test_ats_reponse_inattendue_ne_casse_pas(monkeypatch, config):

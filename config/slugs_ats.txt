@@ -93,3 +93,23 @@ ashby:gitguardian
 ashby:qovery
 ashby:pasqal
 ashby:didomi
+
+# ===========================================================================
+# TEAMTAILOR — https://<slug>.teamtailor.com  (flux public /jobs.json)
+# ===========================================================================
+# Gisement d'employeurs finaux FR : beaucoup de scale-ups ayant quitté
+# Greenhouse/Lever/Ashby ont migré ici (PayFit, Akeneo...). Vérifiés live le
+# 2026-08-21 (offres FR présentes dans le flux jobs.json).
+teamtailor:skello
+teamtailor:sunday
+teamtailor:hublo
+teamtailor:deezer
+teamtailor:ornikar
+teamtailor:lumapps
+teamtailor:indy
+teamtailor:papernest
+teamtailor:yousign
+teamtailor:shine
+teamtailor:akeneo
+teamtailor:payfit
+teamtailor:mangopay
