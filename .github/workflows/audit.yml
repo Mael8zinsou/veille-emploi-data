@@ -1,0 +1,44 @@
+name: Audit base de prod (lecture seule)
+
+# Manuel uniquement. Restaure la base SQLite depuis le cache, calcule des stats,
+# et publie un rapport en artefact. Ne lance PAS le pipeline, n'envoie AUCUNE
+# notification, ne sauvegarde PAS le cache (aucune mutation de l'état de prod).
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # Lecture seule : on restaure le dernier cache "veille-db-*" sans jamais le ré-écrire.
+      - name: Restore SQLite cache
+        uses: actions/cache/restore@v4
+        with:
+          path: data/
+          key: audit-lookup-${{ github.run_id }}
+          restore-keys: |
+            veille-db-
+
+      - name: Génère l'audit
+        run: python scripts/audit_stats.py
+
+      - name: Upload rapport d'audit
+        uses: actions/upload-artifact@v4
+        with:
+          name: audit-prod
+          path: |
+            data/audit_report.md
+            data/notified_offers.csv
+          if-no-files-found: warn
