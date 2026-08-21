@@ -166,6 +166,23 @@ def test_score_sans_malus_entreprise_pour_pme():
     assert o.score == CONFIG.scoring.bonus_source_unique  # juste l'exclusivité (+5)
 
 
+def test_score_malus_token_generique_esn():
+    # Longue traîne ESN attrapée par un mot générique dans le nom.
+    for nom in ["T-T Consulting", "OCI Informatique", "ADN-Consulting"]:
+        o = _offre(titre="Data Engineer", entreprise=nom, description="data engineer")
+        score_offre(o, CONFIG)
+        assert "⚠ ESN" in o.tags, nom
+
+
+def test_score_conseil_departemental_non_penalise():
+    # Garde-fou : un employeur PUBLIC ("Conseil Départemental") ne doit PAS être
+    # pénalisé (on n'utilise pas le token "conseil" seul).
+    o = _offre(titre="Data Engineer", entreprise="Conseil Départemental du Rhône",
+               description="data engineer")
+    score_offre(o, CONFIG)
+    assert "⚠ ESN" not in o.tags
+
+
 def test_score_saturation_source_unique_boost():
     o = _offre(description="data engineer")
     o.nb_sources = 1

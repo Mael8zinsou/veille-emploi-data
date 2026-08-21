@@ -179,6 +179,16 @@ scoring:
     - sopra steria
     - modis
     - sopra banking
+    # Mots génériques dans le nom : attrapent la longue traîne d'ESN/SSII que la
+    # liste nominative rate (T-T Consulting, OCI Informatique, ADN-Consulting...).
+    # NB : on n'utilise PAS "conseil" seul — il matcherait "Conseil Départemental /
+    # Régional", qui sont des employeurs PUBLICS légitimes (dans la cible).
+    - consulting
+    - consultant
+    - ingénierie
+    - informatique
+    - indépendant
+    - ssii
 
   malus_par_source_supplementaire: -3
   bonus_source_unique: 5
