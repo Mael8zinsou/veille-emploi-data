@@ -41,7 +41,28 @@ GitHub Actions cron 7h Paris
 
 ---
 
-## État actuel : PHASE 5 TERMINÉE ET COMMITTÉE
+## État actuel : LIVRÉ EN PROD + AUDITÉ — reprise en cours (nettoyage qualité)
+
+> **👉 Pour reprendre l'outil, lis d'abord [`docs/reprise.md`](docs/reprise.md).**
+> Il consolide l'état, l'audit chiffré (2 mois de prod) et la roadmap. Ce CLAUDE.md
+> conserve l'historique détaillé phase par phase en dessous.
+
+**Résumé express (2026-08-21)** :
+- **Phases 1→6 livrées.** Le cron tourne quotidiennement depuis le 2026-06-12 (bot Telegram OK,
+  6 secrets GitHub, cache SQLite persistant). Repo : `Mael8zinsou/veille-emploi-data`.
+- **Ciblage affiné** (commit `7bbc57d`) : fraîcheur 3j, couverture France entière (filtre localisation
+  inversé → `exclusions_localisation`), alternance/apprentissage **exclus**, `top_n` 15→30.
+- **Audit chiffré réalisé** (`scripts/audit_stats.py` + workflow `audit.yml`, run manuel lecture seule).
+  Verdict dur : en pratique l'outil tourne à **91 % sur Adzuna (73 %) + France Travail (18 %)** ;
+  la couche ATS (Greenhouse/Lever/Ashby) = **0,3 % des notifs** (3 offres/1069 en 2 mois) → premise
+  « marché caché » quasi absente. **~29 % du flux = ESN/conseil/freelance** (Collective.work 136 à lui
+  seul), **33 stages** notifiés (`"stage"` pas exclu), **anti-saturation morte** (1067/1069 exclusives).
+- **En cours** : nettoyage qualité (exclure `stage`, liste noire ESN, reconsidérer `top_n=30`).
+  **Ensuite** : Teamtailor + curation slugs FR + APEC. Détails et priorités dans `docs/reprise.md`.
+
+---
+
+## Historique : PHASE 5 TERMINÉE ET COMMITTÉE
 
 > Phase 1 = `028c9b4`. Phase 2 = `087bcc5`. Phase 3 = `9223e2b`. Phase 4 = `2c8ca0e`. Phase 5 (automatisation) = commit après `ec330ff`.
 

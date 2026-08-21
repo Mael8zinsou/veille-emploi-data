@@ -15,6 +15,9 @@
 
 ## Table des annexes
 
+> Pour **reprendre le projet après une pause**, commence par [`reprise.md`](reprise.md) :
+> état courant, audit chiffré (2 mois de prod) et roadmap.
+
 | Annexe | Contenu |
 |---|---|
 | [Annexe A — Sources & contrat d'interface](annexe_A_sources.md) | Chaque source en détail (endpoints, parsing, résilience), contrat `fetch(config, session)`, gestion des slugs ATS. |
