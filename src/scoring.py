@@ -32,7 +32,8 @@ def filtre_par_profil(offres: list[Offre], config) -> list[Offre]:
     Garde une offre si :
       - au moins un mot-clé must-match apparaît dans titre+description, ET
       - aucune exclusion de titre n'apparaît dans le titre (senior, lead,
-        alternance, apprentissage…), ET
+        alternance, apprentissage, stage…), ET
+      - l'entreprise n'est pas une marketplace/ré-agrégateur exclu, ET
       - la localisation n'est pas un lieu étranger exclu (cf. exclusions_localisation).
     Couverture géographique par défaut : toute la France + Belgique + remote.
     """
@@ -43,6 +44,8 @@ def filtre_par_profil(offres: list[Offre], config) -> list[Offre]:
     # listées dans exclusions_localisation. Ainsi la campagne et les TPE/PME de
     # province passent (elles n'ont aucune raison d'être énumérées).
     exclusions_loc = [_normalize(l) for l in getattr(config, "exclusions_localisation", [])]
+    # Marketplaces freelance / ré-agrégateurs : exclus par nom d'entreprise.
+    exclusions_ent = [_normalize(e) for e in getattr(config, "exclusions_entreprise", [])]
 
     gardees = []
     for o in offres:
@@ -52,6 +55,10 @@ def filtre_par_profil(offres: list[Offre], config) -> list[Offre]:
         if not any(kw in texte for kw in mots_cles):
             continue
         if any(excl in titre_l for excl in exclusions):
+            continue
+
+        ent_l = _normalize(o.entreprise)
+        if ent_l and any(ex in ent_l for ex in exclusions_ent):
             continue
 
         loc_l = _normalize(o.localisation)
@@ -112,7 +119,7 @@ def _score_signaux(texte: str, table: dict) -> tuple[int, list[str]]:
 
 
 def score_offre(offre: Offre, config) -> Offre:
-    """Calcule offre.score et offre.tags (mots-clés + saturation). Mutation en place."""
+    """Calcule offre.score et offre.tags (mots-clés + malus ESN + saturation). En place."""
     sc = config.scoring
     texte = f"{offre.titre} {offre.description}".lower()
 
@@ -126,6 +133,13 @@ def score_offre(offre: Offre, config) -> Offre:
     tags.extend(t_junior + t_stack)
     if t_malus:
         tags.append("⚠ ESN/conseil")
+
+    # Malus fort si le NOM d'entreprise est une ESN/SSII connue (déclasse sans exclure).
+    malus_ent = [_normalize(e) for e in getattr(sc, "malus_entreprises", [])]
+    ent_l = _normalize(offre.entreprise)
+    if ent_l and any(m in ent_l for m in malus_ent):
+        score += int(getattr(sc, "malus_entreprises_valeur", -5))
+        tags.append("⚠ ESN")
 
     # Saturation : exclusive = pépite (boost), omniprésente = déjà bombardée (malus).
     n = offre.nb_sources

@@ -29,11 +29,35 @@ exclusions_titre:
   - "7 ans"
   - "5 ans"
   # On cherche un CDI/CDD junior, pas un contrat d'études : on écarte
-  # alternance et apprentissage (statut étudiant/apprenti, hors cible).
+  # alternance, apprentissage et stages (hors cible CDI/CDD).
   - "alternance"
   - "alternant"
   - "apprenti"
   - "apprentissage"
+  - "stage"
+  - "stagiaire"
+
+# Entreprises à EXCLURE totalement (marketplaces freelance, ré-agrégateurs,
+# portails qui repostent des offres) : elles polluaient ~1/3 du flux sans jamais
+# correspondre à un vrai poste salarié junior. Comparé au nom d'entreprise
+# normalisé (minuscule, sans accents), en sous-chaîne. cf. filtre_par_profil.
+exclusions_entreprise:
+  - "collective.work"
+  - "collective work"
+  - "free-work"
+  - "free work"
+  - "freework"
+  - "jobgether"
+  - "direct emploi"
+  - "directemploi"
+  - "w hub"
+  - "whub"
+  - "forums talents handicap"
+  - "talents handicap"
+  - "meteojob"
+  - "jobijoba"
+  - "hellowork group"
+  - "figaro classifieds"
 
 # Couverture géographique : TOUTE la France (y compris campagne, TPE/PME de
 # province) + Belgique + remote. On ne liste donc PAS les lieux acceptés
@@ -120,6 +144,41 @@ scoring:
     "esn ": -2
     "société de conseil": -2
     consultant: -2
+
+  # Malus fort appliqué quand le NOM d'entreprise correspond à une ESN / SSII
+  # connue (comparé au nom normalisé, en sous-chaîne). Ces boîtes recrutent
+  # parfois des juniors, donc on ne les exclut pas : on les déclasse fortement
+  # pour qu'elles ne remontent que si le reste du score compense vraiment.
+  malus_entreprises_valeur: -5
+  malus_entreprises:
+    - alten
+    - sopra
+    - "steria"
+    - cgi
+    - capgemini
+    - devoteam
+    - inetum
+    - expleo
+    - assystem
+    - segula
+    - akkodis
+    - ausy
+    - klanik
+    - externatic
+    - "dgtl"
+    - "enova"
+    - "step up"
+    - celad
+    - soors
+    - amaris
+    - mc2i
+    - umanis
+    - keyrus
+    - talan
+    - atos
+    - sopra steria
+    - modis
+    - sopra banking
 
   malus_par_source_supplementaire: -3
   bonus_source_unique: 5

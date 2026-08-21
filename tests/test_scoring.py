@@ -52,6 +52,25 @@ def test_filtre_exclut_alternance_et_apprentissage():
     assert filtre_par_profil(offres, CONFIG) == []
 
 
+def test_filtre_exclut_stage():
+    # On cherche un CDI/CDD : les stages sont hors cible.
+    offres = [
+        _offre(titre="Stage Data Engineer", localisation="Paris"),
+        _offre(titre="Data Engineer - Stagiaire", localisation="Lyon"),
+    ]
+    assert filtre_par_profil(offres, CONFIG) == []
+
+
+def test_filtre_exclut_entreprise_marketplace():
+    # Marketplaces freelance / ré-agrégateurs exclus par nom d'entreprise.
+    offres = [
+        _offre(titre="Data Engineer", entreprise="Collective.work", localisation="Paris"),
+        _offre(titre="Data Engineer", entreprise="Free-Work", localisation="Remote"),
+        _offre(titre="Data Engineer", entreprise="Jobgether", localisation="France"),
+    ]
+    assert filtre_par_profil(offres, CONFIG) == []
+
+
 def test_filtre_rejette_localisation_etrangere():
     offres = [_offre(titre="Data Engineer", localisation="Berlin, Germany")]
     assert filtre_par_profil(offres, CONFIG) == []
@@ -128,6 +147,23 @@ def test_score_malus_esn():
     # malus société de conseil (-2) + esn  (-2) + exclusif (+5) = 1
     assert o.score == 1
     assert "⚠ ESN/conseil" in o.tags
+
+
+def test_score_malus_entreprise_esn():
+    # ESN reconnue par le NOM d'entreprise : malus fort (-5), pas d'exclusion.
+    o = _offre(titre="Data Engineer", entreprise="ALTEN", description="data engineer")
+    score_offre(o, CONFIG)
+    # -5 (malus entreprise) + 5 (exclusif) = 0
+    assert o.score == 0
+    assert "⚠ ESN" in o.tags
+
+
+def test_score_sans_malus_entreprise_pour_pme():
+    # Une PME lambda n'est pas pénalisée par le malus entreprise.
+    o = _offre(titre="Data Engineer", entreprise="Boulangerie Durand", description="data engineer")
+    score_offre(o, CONFIG)
+    assert "⚠ ESN" not in o.tags
+    assert o.score == CONFIG.scoring.bonus_source_unique  # juste l'exclusivité (+5)
 
 
 def test_score_saturation_source_unique_boost():
