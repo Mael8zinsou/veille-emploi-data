@@ -63,11 +63,28 @@ permet d'en désactiver une sans toucher au code.
   `typeContrat = CDI,CDD,MIS,LIB`.
 - **Statuts gérés** : 200/206 = ok, 204 = aucun résultat, autres = log + `[]`.
 
+### A.2.3 APEC (`apec.py`)
+
+- **Type** : board des cadres — forte densité de vrais postes Data Engineer (un DE junior
+  est un cadre). **Le meilleur ajout de sourcing de la session 2026-08-21.**
+- **Endpoint** : `POST https://www.apec.fr/cms/webservices/rechercheOffre` (API interne de la
+  SPA, **sans authentification ni anti-bot**). Réponse JSON avec `resultats`.
+- **Filtrage CDI/CDD côté serveur** : `typesContrat: [101888, 101887]` (codes APEC : CDI=101888,
+  CDD=101887 ; alternance=597137/597139, écartés). Codes déterminés en live le 2026-08-21.
+- **Fraîcheur** : filtrée ici même (`datePublication` vs `fraicheur_max_jours`), comme Adzuna/FT ;
+  tri par date décroissante → arrêt de la pagination dès qu'on passe le seuil.
+- **Requêtes** : `data engineer`, `ingénieur données`, `analytics engineer`, `mlops` (2 pages ×50).
+- **Signal anti-saturation** : `indicateurFaibleCandidature` → porté par `Offre.faible_concurrence`
+  → bonus `scoring.bonus_faible_concurrence` (cf. [Annexe C](annexe_C_scoring.md)).
+- **Mapping** : `intitule`, `nomCommercial`, `lieuTexte`, `texteOffre`, `datePublication`,
+  URL reconstruite depuis `numeroOffre`.
+
 ---
 
 ## A.3 Sources « core » — ATS (mode *discovery*)
 
-Les trois ATS partagent un même schéma, factorisé dans **`_ats_common.py`** :
+Les quatre ATS (Greenhouse, Lever, Ashby, Teamtailor) partagent un même schéma, factorisé
+dans **`_ats_common.py`** :
 
 - `localisation_pertinente(loc)` : `True` si la localisation (normalisée) évoque la
   France, la Belgique ou un poste remote (liste de *hints* : `paris`, `france`, `lyon`,
@@ -105,6 +122,19 @@ en erreur (404, JSON inattendu) est journalisé en `debug` et la boucle continue
   `descriptionPlain`, `jobUrl`/fallback `applyUrl`, `publishedAt`/fallback `publishedDate`.
 - **Pas de fallback HTML** (brief §4.6) : si le JSON ne répond pas, on log et on passe.
 
+### A.3.4 Teamtailor (`teamtailor.py`)
+
+- **Endpoint** : `https://{slug}.teamtailor.com/jobs.json` — **flux public JSON Feed 1.1, sans clé**
+  (l'API officielle `api.teamtailor.com`, elle, exige un token). La page HTML `/jobs` est une SPA
+  JS non scrapable ; le flux `jobs.json` est la voie fiable.
+- **Réponse** : `{"items": [...]}`, chaque item avec un objet `_jobposting` (schema.org JobPosting).
+- **Atout** : `_jobposting.hiringOrganization.name` = **vrai nom d'entreprise** (pas le slug),
+  et `jobLocation[].address` (ville + `addressCountry`). Description HTML nettoyée (balises retirées).
+- **Filtre FR** : on injecte le libellé pays (FR→France, BE→Belgique) dans la localisation puis on
+  applique `localisation_pertinente` ; les postes `jobLocationType = TELECOMMUTE` → « Remote ».
+- **Intérêt stratégique** : beaucoup de scale-ups FR ayant quitté Greenhouse/Lever/Ashby ont migré
+  ici (PayFit, Akeneo…). Filet de qualité, mais **postes DE junior rares à un instant donné**.
+
 ---
 
 ## A.4 Sources « niches » (désactivables)
@@ -138,11 +168,12 @@ en erreur (404, JSON inattendu) est journalisé en `debug` et la boucle continue
 
 ## A.5 Gestion des slugs ATS (`config/slugs_ats.txt`)
 
-- **Format** : une ligne `<ats>:<slug>` (ex. `greenhouse:doctolib`). Lignes vides et
-  commentaires (`#`) ignorés. Lu par `load_slugs()`.
-- **État actuel** : **67 slugs** (greenhouse 28, ashby 24, lever 15), répartis en deux
-  sections commentées : **« vérifiés live »** (board accessible au 2026-06-11) et
-  **« filet »** (FR notoires potentiellement obsolètes, 404 gérés gracieusement).
+- **Format** : une ligne `<ats>:<slug>` (ex. `greenhouse:doctolib`, `teamtailor:deezer`).
+  Lignes vides et commentaires (`#`) ignorés. Lu par `load_slugs()`.
+- **État actuel** : **~80 slugs** (greenhouse 28, ashby 24, lever 15, **teamtailor 13**),
+  répartis en sections commentées : **« vérifiés live »** et **« filet »** (FR notoires
+  potentiellement obsolètes, 404 gérés gracieusement). Les slugs Teamtailor (Deezer, Skello,
+  PayFit, Akeneo…) ont été vérifiés live le 2026-08-21.
 - **Pourquoi un filet d'entrées mortes ?** Un slug peut « revivre » (l'entreprise revient
   sur l'ATS, rouvre des postes). Le coût d'un slug mort est ~200 ms + un log debug : on
   l'accepte pour ne pas perdre une entreprise au premier 404.

@@ -96,16 +96,17 @@ GitHub Actions (cron 6h UTC ≈ 7h Paris)
         ▼
      main.py  ── orchestration · logging · résilience par source
         │
-        ├─ Sources "core"   (APIs)          : Adzuna · France Travail
-        ├─ Sources "core"   (ATS discovery) : Greenhouse · Lever · Ashby
+        ├─ Sources "core"   (APIs)          : Adzuna · France Travail · APEC
+        ├─ Sources "core"   (ATS discovery) : Greenhouse · Lever · Ashby · Teamtailor
         └─ Sources "niches" (désactivables) : HelloWork · Choose (no-op)
         │
         ▼  list[Offre]  (≈ 2 300 offres brutes)
-   filtre_par_profil          ── mots-clés must-match, exclusions titre, localisation
-        ▼  (≈ 200)
+   filtre_par_profil          ── mots-clés, exclusions titre/entreprise, localisation
+        ▼  (≈ 150)
    dedoublonne_et_fusionne    ── une offre vue N fois → 1 entrée, nb_sources = N
-        ▼  (≈ 186)
-   score_toutes               ── bonus stack/junior, malus ESN, saturation
+        ▼  (≈ 110)
+   score_toutes               ── bonus stack/junior, malus ESN (texte+nom), saturation,
+                                  bonus « peu candidatée » (APEC)
         ▼
    storage (SQLite)           ── filtre "déjà vu", marque les nouvelles
         ▼
@@ -211,6 +212,20 @@ Limitations assumées, documentées pour quiconque reprend le projet.
 | 5 | **`decouvrir_slugs.py`** | Scraping Google trop bloqué → bascule sur **DuckDuckGo HTML**, plus tolérant. Script manuel, hors cron. |
 | 6 | **Chargement `.env`** | Ajout de `load_dotenv()` au démarrage de `main()` : sans lui, `python -m src.main` en local ne voyait pas les credentials. Sans effet en CI (pas de `.env`, les vraies env vars priment). |
 | 7 | **Sortie console ASCII** | Scripts utilitaires en `[OK]` plutôt que `✓` pour survivre à la console cp1252 Windows. |
+
+### Session d'itération du 2026-08-21 (après audit de 2 mois de prod)
+
+Suite à l'[audit chiffré](reprise.md#3-laudit-chiffré) (l'outil tournait de fait à 91 % sur
+Adzuna+FT, ~29 % de bruit ESN, 33 stages notifiés, ATS ≈ 0 %) :
+
+| # | Sujet | Décision |
+|---|---|---|
+| 8 | **Ciblage affiné** | Fraîcheur 14→3 j ; couverture France entière (filtre localisation inversé) ; alternance/apprentissage/**stage** exclus ; `top_n` 15→30. |
+| 9 | **Nettoyage ESN/bruit** | `exclusions_entreprise` (marketplaces/reposters exclus) ; `malus_entreprises` (-5) sur ESN nommées + tokens génériques ; garde-fou public (`conseil` seul épargné). |
+| 10 | **APEC** | Nouvelle source (board des cadres) — le meilleur ajout de volume DE junior. Filtre CDI/CDD serveur + signal « peu candidatée ». |
+| 11 | **Teamtailor** | Nouvelle source ATS (flux public). Filet de qualité pour scale-ups FR, mais rendement immédiat faible (postes DE junior rares). |
+
+> Détails, chiffres et roadmap : [`reprise.md`](reprise.md).
 
 ---
 

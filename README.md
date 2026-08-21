@@ -101,10 +101,10 @@ techno / signal junior, malus ESN), sources actives, et paramètres Telegram
 
 ### Slugs ATS (`config/slugs_ats.txt`)
 
-Liste des entreprises à interroger sur Greenhouse / Lever / Ashby, au format
-`<ats>:<slug>`. Les slugs obsolètes (404) sont ignorés sans casser le run.
-Le script [`scripts/decouvrir_slugs.py`](scripts/decouvrir_slugs.py) aide à en
-découvrir de nouveaux.
+Liste des entreprises à interroger sur Greenhouse / Lever / Ashby / **Teamtailor**,
+au format `<ats>:<slug>` (ex. `teamtailor:deezer`). Les slugs obsolètes (404) sont
+ignorés sans casser le run. Le script [`scripts/decouvrir_slugs.py`](scripts/decouvrir_slugs.py)
+aide à en découvrir de nouveaux.
 
 ### Telegram (setup unique)
 
@@ -122,9 +122,11 @@ découvrir de nouveaux.
 |---|---|---|---|
 | **Adzuna** | API agrégée | ✅ | Free tier, quelques requêtes/run |
 | **France Travail** | API officielle | ✅ | OAuth2, exhaustif sur la France |
+| **APEC** | API interne | ✅ | Board des cadres, gros volume DE ; filtre CDI/CDD serveur + signal « peu candidatée » |
 | **Greenhouse** | ATS (discovery) | ✅ | Endpoint board public, filtrage FR côté code |
 | **Lever** | ATS (discovery) | ✅ | idem |
 | **Ashby** | ATS (discovery) | ✅ | idem (+ gestion des postes remote) |
+| **Teamtailor** | ATS (discovery) | ✅ | Flux public `jobs.json` ; scale-ups FR (ex-Greenhouse/Lever migrées) |
 | **HelloWork** | Scraping HTML | ✅ | Page de recherche, parsing résilient, garde-fous anti-ban |
 | **Choose** | — | ⏸ no-op | SPA sans API stable ; désactivé proprement (réactivable) |
 

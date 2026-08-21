@@ -35,15 +35,19 @@ minuscule, *strip*.
 
 ## C.2 Filtrage par profil (`filtre_par_profil`)
 
-Une offre est **gardée** si les trois conditions sont vraies :
+Une offre est **gardée** si les quatre conditions sont vraies :
 
 1. **Mot-clé must-match** : au moins un terme de `mots_cles_must_match` apparaît dans
    `titre + description` (insensible à la casse).
 2. **Pas d'exclusion de titre** : aucun terme de `exclusions_titre` (`senior`, `lead`,
-   `staff`, `architect`, `5 ans`, **`alternance`**, **`apprentissage`**…) n'apparaît dans
-   le **titre**. Les contrats d'études (alternance/apprentissage) sont écartés car hors
-   cible CDI/CDD.
-3. **Localisation non exclue** : la localisation (normalisée) ne contient **aucun** lieu
+   `staff`, `architect`, `5 ans`, **`alternance`**, **`apprentissage`**, **`stage`**,
+   **`stagiaire`**…) n'apparaît dans le **titre**. Contrats d'études et stages écartés
+   (hors cible CDI/CDD).
+3. **Entreprise non exclue** : le nom (normalisé) ne contient aucune entrée de
+   `exclusions_entreprise` — marketplaces freelance et ré-agrégateurs (Collective.work,
+   Free-Work, Jobgether, Direct Emploi…) qui polluaient ~1/3 du flux sans jamais être un
+   vrai poste salarié. **Exclusion**, pas malus.
+4. **Localisation non exclue** : la localisation (normalisée) ne contient **aucun** lieu
    étranger listé dans `exclusions_localisation` (Berlin, London, New York…). **Logique
    inversée** : on couvre **toute la France** (+ Belgique + remote) par défaut, donc on ne
    liste pas les lieux acceptés (impossible d'énumérer toutes les communes) mais seulement
@@ -68,6 +72,8 @@ Regroupe les offres par `cle_unique` et produit **une** offre par clé :
   donc la mieux scorable).
 - **`sources_list`** : union ordonnée des sources distinctes où l'offre a été vue.
 - **`nb_sources`** : `len(sources_list)` — c'est l'entrée de la détection de saturation.
+- **`faible_concurrence`** : conservé si **au moins une** source fusionnée le porte (OR logique),
+  pour ne pas perdre le signal APEC quand la version gardée vient d'une autre source.
 
 Exemple : une offre vue sur Greenhouse (desc. courte) **et** Adzuna (desc. longue) →
 1 offre, `nb_sources = 2`, on garde la description Adzuna.
@@ -79,7 +85,7 @@ Exemple : une offre vue sur Greenhouse (desc. courte) **et** Adzuna (desc. longu
 
 ## C.4 Scoring (`score_offre` / `score_toutes`)
 
-Le score d'une offre = somme de quatre contributions, toutes paramétrées dans
+Le score d'une offre = somme de contributions, toutes paramétrées dans
 `profil.yaml > scoring`.
 
 ### C.4.1 Bonus « signaux junior »
@@ -96,9 +102,27 @@ Technos du profil, ex. (poids) :
 `spark`/`pyspark` (+2), `docker` (+2), `aws`/`gcp` (+2), `kafka` (+2), `fastapi` (+2),
 `github actions` (+2), `ci/cd` (+2), `kubernetes` (+1), `azure` (+1)…
 
-### C.4.3 Malus ESN / conseil
-Signaux d'une société de service (souvent moins junior-friendly) :
-`esn ` (-2), `société de conseil` (-2), `consultant` (-2). Un tag `⚠ ESN/conseil` est posé.
+### C.4.3 Malus ESN / conseil (par texte)
+Signaux d'une société de service dans `titre + description` :
+`esn ` (-2), `société de conseil` (-2), `consultant` (-2). Tag `⚠ ESN/conseil`.
+
+### C.4.3bis Malus ESN par NOM d'entreprise (`malus_entreprises`, -5)
+Ajouté après l'audit (l'ESN était ~29 % du flux). Si le **nom d'entreprise** (normalisé)
+contient une entrée de `malus_entreprises`, on applique `malus_entreprises_valeur` (**-5**)
+et le tag `⚠ ESN`. La liste combine :
+- des **noms** d'ESN/SSII connues (ALTEN, Sopra, CGI, Capgemini, Klanik, DGTL…) ;
+- des **tokens génériques** attrapant la longue traîne : `consulting`, `consultant`,
+  `ingénierie`, `informatique`, `indépendant`, `ssii`.
+
+> **Garde-fou** : `conseil` seul est **volontairement absent** des tokens — il matcherait
+> « Conseil Départemental / Régional », qui sont des **employeurs publics** dans la cible.
+> Choix **malus** (déclasser) et non exclusion : certaines ESN recrutent de vrais juniors.
+
+### C.4.3ter Bonus « peu candidatée » (`bonus_faible_concurrence`, +4)
+Certaines sources signalent une offre peu concurrentielle : APEC via
+`indicateurFaibleCandidature`, porté par `Offre.faible_concurrence`. Si vrai → **+4** et tag
+`peu candidatée`. C'est un signal **direct** de la stratégie anti-saturation (viser là où il y
+a peu de candidats), complémentaire de la détection par recoupement de sources (C.4.4).
 
 ### C.4.4 Saturation (le cœur de la valeur ajoutée)
 

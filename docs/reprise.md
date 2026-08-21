@@ -12,8 +12,11 @@
   depuis le 2026-06-12**, notifie sur Telegram, sans intervention.
 - **Repo** : `Mael8zinsou/veille-emploi-data` (branche `main`).
 - **Secrets configurés** (6) : `ADZUNA_APP_ID/KEY`, `FT_CLIENT_ID/SECRET`, `TELEGRAM_BOT_TOKEN/CHAT_ID`.
-- **Tests** : 70 (`pytest -q`).
-- **Chantier en cours** : **nettoyage qualité** du flux (voir §4). **Ensuite** : Teamtailor + APEC (§5).
+- **Tests** : 86 (`pytest -q`).
+- **9 sources** : Adzuna, France Travail, **APEC**, Greenhouse, Lever, Ashby, **Teamtailor**,
+  HelloWork, Choose(no-op).
+- **Chantiers de la session du 2026-08-21 : TERMINÉS** — nettoyage qualité (§4) + Teamtailor & APEC
+  (§5). Prochaine étape : **relancer `audit.yml` après quelques crons** pour mesurer l'impact réel.
 
 ---
 
@@ -30,6 +33,16 @@
   - `top_n_par_jour` 15 → **30**.
 - **Outillage d'audit** (commit `4b74459`) : `scripts/audit_stats.py` (lecture seule) +
   `.github/workflows/audit.yml` (manuel). Régénère le rapport quand on veut.
+- **Nettoyage qualité** (commits `9d65bf9`, `9d924c9`) : exclusion `stage`/`stagiaire`,
+  `exclusions_entreprise` (marketplaces/reposters), `scoring.malus_entreprises` (-5 sur ESN
+  nommées + tokens génériques `consulting`/`ingénierie`/`informatique`…, hors `conseil` seul
+  pour épargner les Conseils Départementaux/Régionaux publics).
+- **Teamtailor** (commit `c83fc53`) : `src/sources/teamtailor.py` (flux public `jobs.json`),
+  13 slugs FR (Deezer, Skello, PayFit, Akeneo…). Yield immédiat faible (postes DE junior rares),
+  filet de qualité pour l'avenir.
+- **APEC** (commit `aaedba5` inclus) : `src/sources/apec.py` (POST public, CDI/CDD serveur,
+  fraîcheur, pagination) + `Offre.faible_concurrence` → `scoring.bonus_faible_concurrence` (+4).
+  **Le meilleur ajout** : ~23 offres filtrées, ~7/30 du top, vrais employeurs finaux.
 
 ---
 
@@ -60,37 +73,48 @@ score 5-6 pour remplir 30 slots). Le nettoyage qualité doit précéder ou accom
 
 ---
 
-## 4. Chantier EN COURS — nettoyage qualité (priorité 1)
+## 4. Nettoyage qualité — TERMINÉ (session 2026-08-21)
 
-Objectif : faire remonter de vrais CDI/CDD junior propres, écarter le bruit. Pistes décidées :
+Objectif : faire remonter de vrais CDI/CDD junior propres, écarter le bruit. Livré :
 
-1. **Exclure les stages** : ajouter `stage`, `stagiaire` à `exclusions_titre` (config seule).
-2. **Liste noire d'entreprises ESN/freelance/agrégateurs** : le malus actuel ne cible que
-   `"esn "`, `"société de conseil"`, `"consultant"` (mots), il rate **ALTEN, Sopra, CGI,
-   Collective.work, Free-Work, Jobgether, Klanik, Externatic…** (noms propres). Créer un
-   mécanisme d'exclusion/malus fort **par nom d'entreprise**. Candidats issus du CSV d'audit.
-3. **Reconsidérer `top_n=30`** ou **relever `score_minimum`** une fois le bruit filtré, pour que
-   le tri redevienne sélectif (aujourd'hui il ne l'est pas).
-4. (Optionnel) **Filtrer positivement le contrat** côté Adzuna/HelloWork (FT le fait déjà via
-   `typeContrat`), pour ne garder que CDI/CDD.
+1. ✅ **Stages exclus** : `stage`, `stagiaire` dans `exclusions_titre`.
+2. ✅ **Marketplaces/reposters exclus** : nouvelle clé `exclusions_entreprise`
+   (Collective.work, Free-Work, Jobgether, Direct Emploi, W Hub, Talents Handicap…).
+3. ✅ **ESN déclassées** (pas exclues — certaines recrutent des juniors) : `scoring.malus_entreprises`
+   à **-5**, par nom (ALTEN, Sopra, CGI, Capgemini…) **et** tokens génériques (`consulting`,
+   `consultant`, `ingénierie`, `informatique`, `indépendant`, `ssii`). **`conseil` seul volontairement
+   exclu** des tokens (garde-fou : « Conseil Départemental/Régional » = employeurs publics légitimes).
+4. ✅ **`top_n=30` conservé**, le filtre faisant le tri (décidé après essai).
 
-> Après chaque changement : `pytest -q`, un `DRY_RUN=1 python -m src.main` pour observer le flux,
-> puis relancer `audit.yml` quelques jours plus tard pour mesurer l'effet sur le réel.
+**Plafond atteint** : reste un résidu irréductible d'ESN à nom de marque banal (DEODIS, AMILTONE,
+Meritis, RANDSTAD DIGITAL…) qu'aucune règle n'attrape sans énumération. Continuer = whack-a-mole.
 
 ---
 
-## 5. Chantier SUIVANT — réanimer le marché caché (priorité 2)
+## 5. Nouvelles sources — TERMINÉ (session 2026-08-21)
 
-L'audit prouve que c'est nécessaire, pas cosmétique :
+1. ✅ **Teamtailor** (`src/sources/teamtailor.py`) : flux public `{slug}.teamtailor.com/jobs.json`
+   (JSON Feed, sans clé). 13 slugs FR. Confirme la thèse de l'audit : PayFit/Akeneo, morts sur
+   Greenhouse/Lever, sont **vivants ici**. **Mais yield immédiat ≈ 0** : les postes Data Engineer
+   *junior* sont rares à un instant donné dans ce vivier → filet latent, pas moteur de volume.
+2. ✅ **APEC** (`src/sources/apec.py`) : POST public `apec.fr/cms/webservices/rechercheOffre`
+   (sans auth/anti-bot). Filtre CDI/CDD serveur, fraîcheur, pagination. **Le meilleur ajout** :
+   ~23 offres filtrées, ~7/30 du top, de vrais employeurs finaux (Safran, Mobilize/Renault,
+   régies des eaux publiques). Signal `indicateurFaibleCandidature` → `Offre.faible_concurrence`
+   → bonus scoring anti-saturation.
 
-1. **Teamtailor** : là où les scale-ups FR ont migré (API publique `{slug}.teamtailor.com/api/v1/...`).
-   Nouvel adaptateur `src/sources/teamtailor.py` sur le même contrat `fetch(config, session)`.
-2. **Curation de slugs FR** : `slugs_ats.txt` est US/international-skewed. Passer
-   `decouvrir_slugs.py` + tri manuel. Ajouter une section Teamtailor au fichier de slugs.
-3. **APEC** : board des cadres (un data engineer junior EST cadre). Leake déjà un peu via Adzuna
-   (7 offres). Évaluer une source dédiée.
-4. **Anti-saturation** : ne redeviendra utile que quand plusieurs sources couvriront les **mêmes**
-   offres. Dépend donc de l'élargissement ci-dessus.
+**Leçon de fond** : aucune source ne « débloque » un marché caché plein de pépites — le vivier DE
+junior FR est **structurellement mince et ESN-lourd**. On l'a rendu **propre, frais, CDI/CDD**, et
+APEC y injecte du vrai volume d'employeurs finaux. C'est le maximum réaliste.
+
+### Reste à faire (si on y revient)
+- **Élargir les slugs Teamtailor** (13 → 40-50) : plus de boîtes = plus de chances qu'un poste DE
+  junior soit ouvert un jour donné. Rendement plafonné par la rareté.
+- **Étendre la liste ESN** si le résidu gêne (rendement décroissant).
+- **Anti-saturation** reste peu active (sources qui se recoupent peu) ; le signal APEC
+  `faible_concurrence` la compense partiellement.
+- **Prochaine mesure** : relancer `audit.yml` vers **2026-08-25** (après ~4 crons 100 % nouveau code)
+  pour un mix de sources et une qualité stabilisés, comparables à l'audit originel.
 
 ---
 
@@ -98,7 +122,7 @@ L'audit prouve que c'est nécessaire, pas cosmétique :
 
 ```bash
 # Sanity
-pytest -q                                   # doit passer (70)
+pytest -q                                   # doit passer (86)
 
 # Tester le pipeline sans envoyer (charge .env local si présent)
 DRY_RUN=1 python -m src.main
