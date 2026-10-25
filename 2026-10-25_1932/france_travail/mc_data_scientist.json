@@ -1,0 +1,1145 @@
+{
+ "resultats": [
+  {
+   "id": "215QCSQ",
+   "intitule": "Data Scientist Python / Power BI (H/F)",
+   "description": "Qui sommes-nous ?\n\nNous sommes passionnés par les nouvelles technologies, et vous ?\nRejoindre Amiltone, c'est intégrer des équipes dynamiques et soudées dans le cadre de projets novateurs et\nambitieux. Nous relevons les challenges techniques de nos clients et les accompagnons dans leur transformation\ndigitale.\n\nPourquoi choisir Amiltone ?\n\nAmiltone, plus qu'une entreprise, un état d'esprit ! Notre objectif ? Votre épanouissement professionnel !\nNous avons à cœur de :\nVous accompagner au mieux au travers d'un suivi personnalisé\nVous faire monter en compétences en vous proposant des formations tout au long de votre carrière\nComprendre vos besoins et respecter nos engagements\nVous proposer des missions de qualité avec des technologies innovantes\nCultiver votre potentiel grâce à notre programme de développement personnel Addvise\nVotre bien-être passe aussi par des activités extraprofessionnelles, c'est pourquoi nous vous proposons des séances\nsportives animées par nos coachs, soirées pour se retrouver et animations (à l'agence ou en visio), Gaming nights...\n\nVos missions ?\nIntégré à nos équipes sur nos projets au forfait ou chez nos clients, vous interviendrez sur un projet de Data Scientist : sur des projets Data et IA, de l'analyse des données jusqu'à la mise en œuvre de solutions prédictives. En tant que Data Scientist (H/F), vous assurez les missions suivantes :\n\nCollecter, préparer, nettoyer et analyser des données issues de différentes sources.\n\nRéaliser des analyses exploratoires afin d'identifier des tendances et des opportunités d'amélioration.\n\nConcevoir, développer et optimiser des modèles statistiques et de Machine Learning.\n\nDévelopper des scripts et des traitements de données en Python.\n\nConcevoir des tableaux de bord et des visualisations avec Power BI.\n\nParticiper à l'automatisation et à l'industrialisation des traitements et modèles.\n\nCollaborer avec les équipes techniques et métiers pour comprendre leurs besoins et proposer des solutions adaptées.\n\nContribuer à l'amélioration continue des outils et des pratiques Data.\n\nLa stack technique :\n\nPython : maîtrise indispensable.\n\nPower BI : maîtrise indispensable.\n\nSnowflake : un véritable atout.\n\nSQL : bonne connaissance souhaitée.\n\nBibliothèques Python : Pandas, NumPy, Scikit-learn.\n\nMachine Learning, statistiques et modélisation prédictive.\n\nGit, Docker et outils d'industrialisation : appréciés.\n\nAlors ? Prêt à devenir Amiltonien ?\nN'hésitez pas à postuler si vous vous reconnaissez :\n\nIssu(e) d'une formation supérieure Bac+5 en informatique, Data Science, intelligence artificielle, mathématiques appliquées ou équivalent.\n\nVous justifiez idéalement de 2 à 3 ans d'expérience professionnelle en Data Science.\n\nVous maîtrisez Python et avez déjà utilisé Power BI dans un contexte professionnel.\n\nVous possédez de solides connaissances en analyse de données, statistiques et Machine Learning.\n\nUne expérience sur Snowflake serait particulièrement appréciée.\n\nVous êtes reconnu(e) pour votre rigueur, votre esprit analytique, votre autonomie et votre capacité à travailler en équipe.\n\nVous aimez résoudre des problématiques complexes et transformer les données en solutions concrètes.\n\nOutre vos compétences techniques, nous nous intéressons également à votre potentiel et votre motivation.\n\nNos postes sont ouverts aux personnes en situation de handicap.",
+   "dateCreation": "2026-10-23T15:50:10.007Z",
+   "dateActualisation": "2026-10-23T15:50:10.535Z",
+   "lieuTravail": {
+    "libelle": "69 - VILLEURBANNE",
+    "latitude": 45.766184,
+    "longitude": 4.877063,
+    "codePostal": "69100",
+    "commune": "69266"
+   },
+   "romeCode": "M1405",
+   "romeLibelle": "Data scientist",
+   "appellationlibelle": "Data scientist",
+   "entreprise": {
+    "nom": "AMILTONE",
+    "entrepriseAdaptee": false
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "3 An(s)",
+   "formations": [
+    {
+     "niveauLibelle": "Bac+5 et plus ou équivalents",
+     "exigence": "E"
+    }
+   ],
+   "competences": [
+    {
+     "code": "109527",
+     "libelle": "Adapter les outils de traitement statistique de données",
+     "exigence": "S"
+    },
+    {
+     "code": "300457",
+     "libelle": "Définir et faire évoluer des procédés de traitement de l'information",
+     "exigence": "S"
+    },
+    {
+     "libelle": "snowflake",
+     "exigence": "E"
+    },
+    {
+     "libelle": "Power BI",
+     "exigence": "E"
+    },
+    {
+     "libelle": "SQL",
+     "exigence": "E"
+    },
+    {
+     "libelle": "Python",
+     "exigence": "E"
+    },
+    {
+     "libelle": "pandas",
+     "exigence": "E"
+    },
+    {
+     "libelle": "NumPy",
+     "exigence": "E"
+    }
+   ],
+   "salaire": {
+    "libelle": "Annuel de 30000.0 Euros à 34000.0 Euros - ATTENTION  : Rémunération Selon profil",
+    "commentaire": "ATTENTION  : Rémunération Selon profil",
+    "complement1": "CSE",
+    "complement2": "Intéressement / participation",
+    "listeComplements": [
+     {
+      "code": "9",
+      "libelle": "CSE"
+     },
+     {
+      "code": "10",
+      "libelle": "Intéressement / participation"
+     }
+    ]
+   },
+   "dureeTravailLibelle": "35H/semaine\nTravail en journée",
+   "dureeTravailLibelleConverti": "Temps plein",
+   "alternance": false,
+   "contact": {
+    "nom": "AMILTONE - Mme Camille LEGRAND",
+    "coordonnees1": "Pour postuler, utiliser le lien suivant : https://candidat.francetravail.fr/offres/recherche/detail/215QCSQ",
+    "courriel": "Pour postuler, utiliser le lien suivant : https://candidat.francetravail.fr/offres/recherche/detail/215QCSQ"
+   },
+   "agence": {},
+   "nombrePostes": 3,
+   "qualificationCode": "9",
+   "qualificationLibelle": "Cadre",
+   "codeNAF": "62.01Z",
+   "secteurActivite": "62",
+   "secteurActiviteLibelle": "Programmation informatique",
+   "qualitesProfessionnelles": [
+    {
+     "libelle": "Etre à l'écoute, faire preuve d'empathie",
+     "description": "Capacité à écouter activement, réceptionner des informations et messages, faire preuve d'ouverture d'esprit et de diplomatie."
+    },
+    {
+     "libelle": "Faire preuve de rigueur et de précision",
+     "description": "Capacité à réaliser des tâches en suivant avec exactitude les règles, les procédures, les instructions qui ont été fournies, sans réaliser d'erreur et à transmettre clairement des informations. Se montrer ponctuel et respectueux des règles de savoir-vivre usuelles."
+    },
+    {
+     "libelle": "Etre force de proposition",
+     "description": "Capacité à initier, imaginer des propositions nouvelles pour résoudre les problèmes identifiés ou améliorer une situation. Être proactif."
+    }
+   ],
+   "trancheEffectifEtab": "200 à 249 salariés",
+   "origineOffre": {
+    "origine": "1",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/215QCSQ"
+   },
+   "offresManqueCandidats": false,
+   "contexteTravail": {
+    "horaires": [
+     "35H/semaine\nTravail en journée"
+    ]
+   },
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": true
+  },
+  {
+   "id": "215QCJR",
+   "intitule": "Data Scientist Python / Machine Learning (H/F)",
+   "description": "Qui sommes-nous ?\n\nNous sommes passionnés par les nouvelles technologies, et vous ?\nRejoindre Amiltone, c'est intégrer des équipes dynamiques et soudées dans le cadre de projets novateurs et\nambitieux. Nous relevons les challenges techniques de nos clients et les accompagnons dans leur transformation\ndigitale.\n\nPourquoi choisir Amiltone ?\n\nAmiltone, plus qu'une entreprise, un état d'esprit ! Notre objectif ? Votre épanouissement professionnel !\nNous avons à cœur de :\nVous accompagner au mieux au travers d'un suivi personnalisé\nVous faire monter en compétences en vous proposant des formations tout au long de votre carrière\nComprendre vos besoins et respecter nos engagements\nVous proposer des missions de qualité avec des technologies innovantes\nCultiver votre potentiel grâce à notre programme de développement personnel Addvise\nVotre bien-être passe aussi par des activités extraprofessionnelles, c'est pourquoi nous vous proposons des séances\nsportives animées par nos coachs, soirées pour se retrouver et animations (à l'agence ou en visio), Gaming nights...\n\nVos missions ?\nIntégré à nos équipes sur nos projets au forfait ou chez nos clients, vous interviendrez sur un projet de Data Scientist.\nEn tant que Data Scientist (H/F), vous assurez les missions suivantes :\n\nAu sein d'une équipe projet, tu interviendras sur les activités suivantes :\n\nCollecter, nettoyer et préparer les données nécessaires aux analyses.\n\nExplorer les données et identifier les variables pertinentes pour répondre aux besoins métiers.\n\nConcevoir, entraîner et évaluer des modèles statistiques et de Machine Learning en Python.\n\nDévelopper des approches de prédiction, de classification ou de détection d'anomalies.\n\nCréer des tableaux de bord sous Power BI pour restituer les résultats et suivre les indicateurs.\n\nCollaborer avec les équipes métiers et techniques pour faire évoluer les solutions.\n\nDocumenter tes travaux et présenter tes résultats de manière claire.\n\nLa stack technique :\nPython\nPandas\nNumPy\nPower BI\nSQL\nSnowflake\n\nAlors ? Prêt à devenir Amiltonien ?\nN'hésitez pas à postuler si vous vous reconnaissez :\n\n - Diplômé d'une école d'ingénieur ou d'un Master en Data Science, informatique ou mathématiques appliquées, vous disposez d'une première expérience significative en Data Science, allant de 2 à 3 ans d'expériences. \n\n- Vous maîtrisez Python et ses bibliothèques d'analyse et de modélisation, notamment Pandas, NumPy et Scikit-learn. Tu utilises SQL pour exploiter les données et Power BI pour les visualiser.\n\n- Une connaissance de Snowflake serait un plus. Des compétences en Deep Learning, séries temporelles ou Computer Vision seront également appréciées.\n\n- Rigoureux et méthodique, vous savez analyser une problématique, comparer différentes approches et expliquer tes résultats. \n\n- Vous appréciez le travail en équipe et les échanges avec les utilisateurs.\n- Vous aimez découvrir de nouveaux contextes fonctionnels et comprendre les objectifs des applications que vous développez.\n\nOutre vos compétences techniques, nous nous intéressons également à votre potentiel et votre motivation.\n\nNos postes sont ouverts aux personnes en situation de handicap.",
+   "dateCreation": "2026-10-23T15:40:16.605Z",
+   "dateActualisation": "2026-10-23T16:17:44.957Z",
+   "lieuTravail": {
+    "libelle": "69 - VILLEURBANNE",
+    "latitude": 45.766184,
+    "longitude": 4.877063,
+    "codePostal": "69100",
+    "commune": "69266"
+   },
+   "romeCode": "M1889",
+   "romeLibelle": "Ingénieur / Ingénieure en Intelligence Artificielle (IA)",
+   "appellationlibelle": "Développeur / Développeuse Machine Learning",
+   "entreprise": {
+    "nom": "AMILTONE"
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "3 An(s)",
+   "formations": [
+    {
+     "niveauLibelle": "Bac+5 et plus ou équivalents",
+     "exigence": "E"
+    }
+   ],
+   "competences": [
+    {
+     "code": "508618",
+     "libelle": "Développer des modèles prédictifs pour l'analyse de données",
+     "exigence": "S"
+    },
+    {
+     "code": "508628",
+     "libelle": "Documenter les processus et les architectures d'IA",
+     "exigence": "S"
+    },
+    {
+     "code": "508617",
+     "libelle": "Optimiser les performances des systèmes d'IA",
+     "exigence": "S"
+    },
+    {
+     "libelle": "pandas",
+     "exigence": "E"
+    },
+    {
+     "libelle": "snowflake",
+     "exigence": "E"
+    },
+    {
+     "libelle": "Python",
+     "exigence": "E"
+    },
+    {
+     "libelle": "NumPy",
+     "exigence": "E"
+    },
+    {
+     "libelle": "Power BI",
+     "exigence": "E"
+    },
+    {
+     "libelle": "SQL",
+     "exigence": "E"
+    }
+   ],
+   "salaire": {
+    "libelle": "Annuel de 35000.0 Euros à 45000.0 Euros - ATTENTION  : Rémunération Selon profil",
+    "commentaire": "ATTENTION  : Rémunération Selon profil",
+    "complement1": "CSE",
+    "complement2": "Intéressement / participation",
+    "listeComplements": [
+     {
+      "code": "9",
+      "libelle": "CSE"
+     },
+     {
+      "code": "10",
+      "libelle": "Intéressement / participation"
+     }
+    ]
+   },
+   "dureeTravailLibelle": "35H/semaine\nTravail en journée",
+   "dureeTravailLibelleConverti": "Temps plein",
+   "alternance": false,
+   "contact": {
+    "nom": "AMILTONE - Mme Camille LEGRAND",
+    "coordonnees1": "Pour postuler, utiliser le lien suivant : https://candidat.francetravail.fr/offres/recherche/detail/215QCJR",
+    "courriel": "Pour postuler, utiliser le lien suivant : https://candidat.francetravail.fr/offres/recherche/detail/215QCJR"
+   },
+   "agence": {},
+   "nombrePostes": 3,
+   "qualificationCode": "9",
+   "qualificationLibelle": "Cadre",
+   "codeNAF": "62.01Z",
+   "secteurActivite": "62",
+   "secteurActiviteLibelle": "Programmation informatique",
+   "qualitesProfessionnelles": [
+    {
+     "libelle": "Etre à l'écoute, faire preuve d'empathie",
+     "description": "Capacité à écouter activement, réceptionner des informations et messages, faire preuve d'ouverture d'esprit et de diplomatie."
+    },
+    {
+     "libelle": "Faire preuve de rigueur et de précision",
+     "description": "Capacité à réaliser des tâches en suivant avec exactitude les règles, les procédures, les instructions qui ont été fournies, sans réaliser d'erreur et à transmettre clairement des informations. Se montrer ponctuel et respectueux des règles de savoir-vivre usuelles."
+    },
+    {
+     "libelle": "Etre force de proposition",
+     "description": "Capacité à initier, imaginer des propositions nouvelles pour résoudre les problèmes identifiés ou améliorer une situation. Être proactif."
+    }
+   ],
+   "trancheEffectifEtab": "200 à 249 salariés",
+   "origineOffre": {
+    "origine": "1",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/215QCJR"
+   },
+   "contexteTravail": {
+    "horaires": [
+     "35H/semaine\nTravail en journée"
+    ]
+   },
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": true
+  },
+  {
+   "id": "215KFSS",
+   "intitule": "Data scientist (H/F)",
+   "description": "ALTER EGO TERTIAIRE, agence d'emploi temporaire et de recrutement CDD/CDI, recherche pour un de ses clients\nun.e Data Scientist. \n\nLe poste est à pourvoir au plus tôt en CDI temps plein, secteur Nord de l'île avec des déplacements. \n\nRémunération selon le profil + avantages. \n\nRattaché.e au Directeur Développement, vous êtes au cœur de la transformation data de l'entreprise.\n\nVos missions principales sont les suivantes : \n\n-Analyse & valorisation des données\n-Collecter, structurer et exploiter les données issues des différents systèmes\n-Garantir la qualité et la fiabilité des données\n-Concevoir des tableaux de bord et indicateurs clés\n-Produire des analyses à forte valeur ajoutée pour les décisions stratégiques\n-Data Science & IA\n-Développer des modèles prédictifs (prévision de la demande, maintenance.)\n-Mettre en place des outils d'aide à la décision basés sur le machine learning\n-Structurer et piloter des projets data innovants\n-Veille & innovation\n-Suivre les tendances en data science et IA\n-Identifier de nouvelles opportunités d'innovation dans le secteur de la mobilité\n\nProfil recherché :\n- Bac +5 en Data Science, Statistiques, Informatique ou équivalent\n- Une expérience dans le secteur transport/mobilité est un plus\n- Une connaissance de HASTUS ou des systèmes billettiques est un vrai plus\n- Curiosité et goût pour l'innovation\n- Capacité à vulgariser des sujets techniques",
+   "dateCreation": "2026-10-19T14:13:00.172Z",
+   "dateActualisation": "2026-10-20T09:14:53.455Z",
+   "lieuTravail": {
+    "libelle": "974 - ST DENIS",
+    "latitude": -20.922595,
+    "longitude": 55.434856,
+    "codePostal": "97490",
+    "commune": "97411"
+   },
+   "romeCode": "M1405",
+   "romeLibelle": "Data scientist",
+   "appellationlibelle": "Data scientist",
+   "entreprise": {
+    "nom": "ALTER EGO SAINT PAUL 1225",
+    "entrepriseAdaptee": false
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "5 An(s)",
+   "formations": [
+    {
+     "niveauLibelle": "Bac+5 et plus ou équivalents",
+     "exigence": "E"
+    }
+   ],
+   "langues": [
+    {
+     "libelle": "Français",
+     "exigence": "S"
+    }
+   ],
+   "permis": [
+    {
+     "libelle": "B - Véhicule léger",
+     "exigence": "S"
+    }
+   ],
+   "competences": [
+    {
+     "code": "109527",
+     "libelle": "Adapter les outils de traitement statistique de données",
+     "exigence": "S"
+    },
+    {
+     "code": "300457",
+     "libelle": "Définir et faire évoluer des procédés de traitement de l'information",
+     "exigence": "S"
+    }
+   ],
+   "salaire": {
+    "libelle": "Mensuel de 3333.0 Euros à 4167.0 Euros - Voir l'annonce",
+    "commentaire": "Voir l'annonce",
+    "complement1": "Primes",
+    "listeComplements": [
+     {
+      "code": "1",
+      "libelle": "Primes"
+     }
+    ]
+   },
+   "dureeTravailLibelle": "35H/semaine\nTravail en journée",
+   "dureeTravailLibelleConverti": "Temps plein",
+   "alternance": false,
+   "contact": {
+    "nom": "ALTER EGO SAINT PAUL 1225 - Mme Mathilde CASHA",
+    "coordonnees1": "Pour postuler, utiliser le lien suivant : https://candidat.francetravail.fr/offres/recherche/detail/215KFSS",
+    "courriel": "Pour postuler, utiliser le lien suivant : https://candidat.francetravail.fr/offres/recherche/detail/215KFSS"
+   },
+   "agence": {},
+   "nombrePostes": 1,
+   "qualificationCode": "8",
+   "qualificationLibelle": "Agent de maîtrise",
+   "codeNAF": "78.20Z",
+   "secteurActivite": "78",
+   "secteurActiviteLibelle": "Activités des agences de travail temporaire",
+   "qualitesProfessionnelles": [
+    {
+     "libelle": "Avoir l'esprit d'équipe",
+     "description": "Capacité à travailler et à se coordonner avec les autres au sein de l'entreprise pour réaliser les objectifs fixés."
+    },
+    {
+     "libelle": "Faire preuve de rigueur et de précision",
+     "description": "Capacité à réaliser des tâches en suivant avec exactitude les règles, les procédures, les instructions qui ont été fournies, sans réaliser d'erreur et à transmettre clairement des informations. Se montrer ponctuel et respectueux des règles de savoir-vivre usuelles."
+    },
+    {
+     "libelle": "Etre force de proposition",
+     "description": "Capacité à initier, imaginer des propositions nouvelles pour résoudre les problèmes identifiés ou améliorer une situation. Être proactif."
+    }
+   ],
+   "trancheEffectifEtab": "20 à 49 salariés",
+   "origineOffre": {
+    "origine": "1",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/215KFSS"
+   },
+   "offresManqueCandidats": false,
+   "contexteTravail": {
+    "horaires": [
+     "35H/semaine\nTravail en journée"
+    ]
+   },
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "215QHWD",
+   "intitule": "Ingénieur Data (H/F)",
+   "description": "Enjeux :\n\nNous recherchons notre futur Ingénieur Data (H/F). Au sein de la Direction Data Management, vous serez en charge d'étudier, réaliser et maintenir les données techniques de notre offre produit dans les différents outils du SI Groupe. \n\n\n\nMissions :\n\n * Vous rédigerez les nomenclatures génériques qui permettront de générer automatiquement les données produit, matière, usinage et process, à partir des données de chaque commande, pour la fabrication de composants sur mesure produits à la commande, \n * Vous participerez à des projets de mise en place de la configuration technique dans les outils cibles du groupe,\n * Vous ferez évoluer les outils informatiques liés à la configuration technique,\n * Vous assisterez la Production et le Service Client et maintiendrez les offres techniques,\n * Vous synchroniserez les actions de configuration, de contrôle et de validation du domaine,\n * Vous mettrez en place et animerez une démarche de tests, de contrôles de cohérence et de validation de la configuration au sein du domaine,\n * Vous instaurerez une démarche de progrès permanent et d'amélioration continue en lien avec l'IA,\n * Vous mènerez des analyses sur l'ensemble des offres et leur configuration, dans un objectif de standardisation et de simplification.\n\n\nCe que nous attendons :\n\n * Diplômé(e) d'une école d'Ingénieur en informatique ou Data, vous justifiez d'une 1ère expérience dans la gestion/configuration de données techniques ou en Data, dans un contexte industriel ou de pilotage d'installations à fort niveau d'automatisation.\n * Vous connaissez les outils du progrès permanent et avez une réelle appétence pour la logique informatique et la manipulation de données.\n * Vous êtes fortement attiré(e) par les projets et vous disposez de connaissances informatiques en ERP, en Data et Base de données, IA, en outils de configuration graphique et en manipulation de données (Excel). \n * Reconnu(e) pour vos capacités à créer du lien et une relation de confiance avec vos partenaires et vos clients internes, vous savez faire preuve de leadership et d'accompagnement au quotidien. \n * La maîtrise de l'anglais est requise, l'allemand est un plus.\n\n\n\nCe que nous proposons :\n\nPoste à pourvoir dès que possible en CDI sur Lièpvre (Haut-Rhin).\n\nFourchette de rémunération : Entre 40 et 47k€ brut annuel (package salarial)\n\nAvantages : 13ème mois, intéressement + participation, mutuelle + prévoyance, indemnités kilométriques, restaurant d'entreprise, CSE, chèques vacances, parcours d'intégration personnalisé, crèche, salle de sport, télétravail (8j / mois)\n\n\n\nVotre diversité fait notre richesse. Entreprise inclusive, Schmidt Groupe s'engage en faveur de tous les talents.",
+   "dateCreation": "2026-10-23T18:21:12.446Z",
+   "dateActualisation": "2026-10-23T18:21:12.870Z",
+   "lieuTravail": {
+    "libelle": "68 - Lièpvre",
+    "latitude": 48.271179,
+    "longitude": 7.281994,
+    "codePostal": "68660",
+    "commune": "68185"
+   },
+   "romeCode": "M1405",
+   "romeLibelle": "Data scientist",
+   "appellationlibelle": "Ingénieur / Ingénieure data scientist",
+   "entreprise": {
+    "nom": "SCHMIDT GROUPE",
+    "entrepriseAdaptee": false
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "5 An(s)",
+   "competences": [
+    {
+     "code": "109527",
+     "libelle": "Adapter les outils de traitement statistique de données",
+     "exigence": "S"
+    },
+    {
+     "code": "300085",
+     "libelle": "Conduire des travaux d'études et de recherche",
+     "exigence": "S"
+    },
+    {
+     "code": "300457",
+     "libelle": "Définir et faire évoluer des procédés de traitement de l'information",
+     "exigence": "S"
+    }
+   ],
+   "salaire": {
+    "libelle": "Annuel de 40000.0 Euros à 47000.0 Euros"
+   },
+   "dureeTravailLibelle": "37H/semaine\nTravail en journée",
+   "dureeTravailLibelleConverti": "Temps plein",
+   "alternance": false,
+   "contact": {
+    "coordonnees1": "https://taleez.com/apply/ingenieur-data-h-f-liepvre-schmidt-groupe-cdi-1/applying",
+    "urlPostulation": "https://taleez.com/apply/ingenieur-data-h-f-liepvre-schmidt-groupe-cdi-1/applying"
+   },
+   "agence": {},
+   "nombrePostes": 1,
+   "qualificationCode": "9",
+   "qualificationLibelle": "Cadre",
+   "codeNAF": "31.02Z",
+   "secteurActivite": "31",
+   "secteurActiviteLibelle": "Fabrication de meubles de cuisine",
+   "trancheEffectifEtab": "250 à 499 salariés",
+   "origineOffre": {
+    "origine": "1",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/215QHWD"
+   },
+   "offresManqueCandidats": false,
+   "contexteTravail": {
+    "horaires": [
+     "37H/semaine\nTravail en journée"
+    ]
+   },
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": true
+  },
+  {
+   "id": "8247622",
+   "intitule": "Consultant-e AI Engineer & Data Scientist - Agents IA (H/F) - CDI",
+   "description": "Salaire: 50k€ - 70k€ + variable annuel max. 10k€\n\nPour le compte de notre client, un cabinet de conseil spécialisé dans les agents IA sur mesure pour des secteurs exigeants (finance, juridique, conformité, marketing), nous recherchons un-e Consultant-e AI Engineer & Data Scientist. Vous intervenez sur des projets clients stratégiques, de la compréhension des enjeux métier jusqu'à la mise en production, à l'interface entre data science appliquée, ingénierie ML et cas d'usage concrets, avec un fort niveau d'autonomie.\n\nVos missions\n\n * \n\n   Concevoir, développer et déployer des pipelines de data science et de ML (segmentation, scoring, séries temporelles, RAG)\n\n * \n\n   Développer et orchestrer des agents IA métiers (LLM, workflows outillés, architectures multi-agents)\n\n * \n\n   Industrialiser modèles et pipelines : tests, monitoring, observabilité, performance\n\n * \n\n   Intervenir sur des environnements cloud et/ou on-premise, parfois contraints (sécurité, gouvernance)\n\n * \n\n   Proposer les choix méthodologiques, techniques et d'architecture\n\n * \n\n   Travailler directement avec les équipes data, IT et métiers des clients\n\n * \n\n   Contribuer à la R&D sur les agents IA, aux produits internes et à la montée en compétences de l'équipe\n\nCritères indispensables\n\n * \n\n   3 ans d'expérience minimum en AI engineering ou data science, sur des projets en production\n\n * \n\n   Au moins une expérience de système agentique livré en production\n\n * \n\n   Posture conseil : capacité à échanger avec des décideurs côté client\n\n * \n\n   Anglais courant (clients internationaux)\n\n * \n\n   Basé à Paris\n\n * \n\n   Bac+5 : école d'ingénieur ou master reconnu en data science / IA\n\nCompétences techniques\nPython, pipelines data/ML, modélisation statistique et ML appliqué, LLM, RAG, architectures agentiques et multi-agents, cloud (AWS, GCP, Azure), MLOps/LLMOps (Docker, Kubernetes, CI/CD, monitoring).\n\nVotre profil\nVous savez vous approprier des problématiques métier complexes et les traduire en solutions IA concrètes, concevoir des architectures robustes et scalables, et expliquer vos choix à des profils non techniques. Vous êtes curieux-se, autonome, avec le sens des priorités et le goût du partage.\n\nCe qui vous attend\n\n * \n\n   Un environnement entrepreneurial, avec un impact direct et une forte visibilité sur les projets\n\n * \n\n   Une forte exposition aux agents IA et au ML en production\n\n * \n\n   Des missions variées et exigeantes pour des clients prestigieux\n\n * \n\n   Un encadrement rapproché par des profils seniors\n\n * \n\n   Une grande autonomie et la possibilité d'influencer les choix stratégiques\n\n * \n\n   Télétravail flexible, bureaux en plein centre de Paris\n\n * \n\n   Bonus de performance, mutuelle prise en charge à 100 %, formations continues et conférences",
+   "dateCreation": "2026-10-24T10:03:26.909Z",
+   "dateActualisation": "2026-10-24T10:03:26.909Z",
+   "lieuTravail": {
+    "libelle": "75 - Paris",
+    "commune": "75056"
+   },
+   "romeCode": "M1405",
+   "romeLibelle": "Data scientist",
+   "appellationlibelle": "Ingénieur / Ingénieure data scientist",
+   "entreprise": {
+    "nom": "Collective.work"
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "3 An(s)",
+   "salaire": {
+    "libelle": "Annuel de 10000.0 Euros à 70000.0 Euros"
+   },
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8247622",
+    "partenaires": [
+     {
+      "nom": "XTRAMILE",
+      "url": "https://api-v2-multidiff.xtramile.io/collect/cbfcc76c4b5576feee1de68179de7051",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/xtramile80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8230205",
+   "intitule": "Ingénieur / Ingénieure data scientist (H/F)",
+   "description": "Pour aller plus loin, nous recherchons un(e) ingénieur(e) IA / Data Scientist, pour renforcer notre équipe nantaise et intervenir sur des projets pour des clients dans des domaines variés (Services Publics, Banque/Assurance, Transport, Industrie, Retail).     Vous interviendrez sur des périmètres variés, et selon les tâches, vous prendrez plus au moins part aux activités suivantes :      Concevoir, entraîner et industrialiser des modèles d'apprentissage automatique et d'intelligence artificielle (générative, agentique, .), de la première analyse jusqu'à la mise en production.            Construire et fiabiliser nos briques d'intelligence artificielle générative : moteurs d'inférence, évaluation des modèles, chaînes de génération augmentée par la recherche.            Développer en Python des composants robustes et réutilisables (cadres et gabarits de projet) pour accélérer les équipes.            Mettre en place l'industrialisation des modèles : intégration et déploiement continus, supervision et observabilité.            Partager : revues de code, documentation, veille technologique et diffusion des bonnes pratiques.",
+   "dateCreation": "2026-10-24T05:01:29.269Z",
+   "dateActualisation": "2026-10-25T04:01:22.722Z",
+   "lieuTravail": {
+    "libelle": "44 - Nantes",
+    "codePostal": "44000",
+    "commune": "44109"
+   },
+   "romeCode": "M1405",
+   "romeLibelle": "Data scientist",
+   "appellationlibelle": "Ingénieur / Ingénieure data scientist",
+   "entreprise": {
+    "nom": "Forums Talents Handicap"
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "3 An(s)",
+   "salaire": {},
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8230205",
+    "partenaires": [
+     {
+      "nom": "HANDICAP_JOB",
+      "url": "https://www.handicap-job.com/recherche/detail/oid/6705740/ingenieur-ia-data-scientist-hf.html",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/handicap_job80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8229613",
+   "intitule": "Ingénieur(e) R&D Data Scientist (H/F)",
+   "description": "RESPONSABILITÉS : \n\nL'équipe MIC recherche un(e) Ingénieur(e) R&D Data Scientist, pour un CDD de 12 mois, dans le cadre du développement de nos activités autour de l'exploitation et de l'analyse des données par Intelligence Artificielle (IA) des données CND, SHM et PHM.\nAu sein d'une équipe pluridisciplinaire, vous aurez pour mission de renforcer l'expertise technique de l'équipe et de contribuer à nos développements industriels.\nVos missions :\n - Développer et programmer des algorithmes d'analyse de données basés sur l'Intelligence Artificielle en tenant compte des besoins et connaissances métiers des équipes CND, SHM et PHM\n - Comprendre et adresser les problématiques métiers CND, SHM et PHM et les traduire dans les algorithmes d'analyse par IA\n - Déployer des algorithmes d'analyse d'images (Computer vision...) pour traiter les données d'inspection visuelle, thermique et ultrasonore... dans le cadre de contrôles industriels automatisés\n - Nettoyer, structurer et analyser les données expérimentales collectées\n - Valider la robustesse et la fiabilité (= qualifier) des algorithmes d'IA déployés dans les applications industrielles\n - Communiquer les résultats et les solutions aux équipes de l'IRT et à nos partenaires ou clients\n - Rester en veille sur les nouvelles technologies et solutions de data science, expérimenter et évaluer ces nouvelles méthodes pour dépasser les verrous industriels actuels\nEn rejoignant l'IRT, vous aurez la possibilité de travailler au sein de projets transversaux intégrant nos compétences multidisciplinaires : métalliques, composites, simulations, robotiques et contrôles.\n\nPROFIL RECHERCHÉ : \n\nDe formation Ingénieur(e) en Data Science, vous maîtrisez les modèles d'IA, leur développement et leur intégration pour répondre à des problématiques industrielles, notamment en traitement de données de procédés ou d'images.\nFort(e) d'une expérience en R&D industrielle, vous savez anticiper les risques techniques, prendre du recul et adapter vos développements aux contraintes du terrain. Autonome, rigoureux(se) et organisé(e), vous aimez partager votre expertise et travailler en équipe sur des projets variés.\nUn bon niveau d'anglais, à l'écrit comme à l'oral, est requis.\nCompétences techniques attendues :\n - Machine Learning (Clustering, Ensemble methods)\n - Maitrise des framework IA : Pytorch, tensorflow\n - Programmation python, C, C++\n - Développement de modèles supervisés : d'analyse d'images par IA computer vision (CNN...), d'analyse de données tabulaires (ANN...), d'analyse de données maillage (GNN...)\n - Développement de modèles non supervisés : Clustering...\nCompétences requises sur ce poste :\n - Synthétiser des résultats\n - Maîtriser la communication orale et écrite\n - Maîtriser les pratiques de la recherche, tant théoriques qu'expérimentales\nCet emploi répond à vos ambitions professionnelles ?\nEnvoyez nous votre cv et lettre de motivation qui seront étudiés par la DRH de l'IRT, avant étude par le responsable de l'équipe.\nL'IRT Jules Verne est engagé à offrir un environnement de travail respectueux et accessible à tous. L'environnement de travail pourra être adapté à vos besoins.",
+   "dateCreation": "2026-10-24T04:31:54.350Z",
+   "dateActualisation": "2026-10-24T04:31:54.350Z",
+   "lieuTravail": {
+    "libelle": "44 - Nantes",
+    "codePostal": "44000",
+    "commune": "44109"
+   },
+   "romeCode": "M1405",
+   "romeLibelle": "Data scientist",
+   "appellationlibelle": "Data scientist",
+   "entreprise": {
+    "nom": "IRT JULES VERNE"
+   },
+   "typeContrat": "CDD",
+   "typeContratLibelle": "CDD - 12 Mois",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "D",
+   "experienceLibelle": "Débutant accepté",
+   "salaire": {},
+   "dureeTravailLibelle": "39H/semaine\nTravail en journée",
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "qualificationCode": "9",
+   "qualificationLibelle": "Cadre",
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8229613",
+    "partenaires": [
+     {
+      "nom": "BEETWEEN",
+      "url": "https://app.beetween.com/WeaselWeb/p/#/apply/job/m47yyiez538/ingenieur-e-r-d-data-scientist-h-f",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/beetween80.png"
+     }
+    ]
+   },
+   "contexteTravail": {
+    "horaires": [
+     "39H/semaine\nTravail en journée"
+    ]
+   },
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8199479",
+   "intitule": "Data Scientist Confirmé - Mobilité Electrique (F/H)",
+   "description": "Notre client est un acteur européen en forte croissance spécialisé dans la mobilité électrique et les infrastructures de recharge. Présent dans plusieurs pays européens, il accompagne le développement de nouveaux usages liés à la décarbonation des transports et poursuit un plan de croissance particulièrement ambitieux.\nL'entreprise combine l'agilité d'un environnement startup (150 collaborateurs) avec la solidité d'un groupe international reconnu. Dans un contexte d'expansion rapide, ses équipes interviennent sur des problématiques stratégiques mêlant data, énergie et développement de nouveaux marchés.Au sein d'une équipe Data & Analytics à forte visibilité, vous intervenez sur des problématiques stratégiques de prévision, d'aide à la décision et de modélisation dans un marché en pleine construction. À la croisée de la data et du business, vous contribuerez à améliorer la précision des prévisions, fiabiliser les données et accompagner les décisions d'investissement et de développement de l'entreprise.\nVos principales missions :\n\nDévelopper, améliorer et industrialiser des modèles prédictifs permettant d'anticiper l'activité et les volumes futurs\nConcevoir des analyses avancées à partir de données internes et externes\nParticiper à l'amélioration continue de la qualité des données et des modèles existants\nStructurer et enrichir les modèles de données afin de renforcer la fiabilité des analyses\nCollaborer avec les équipes Business Development, Finance, Stratégie et Opérations\nAutomatiser et fiabiliser les traitements analytiques\nIdentifier de nouvelles approches méthodologiques et contribuer à l'évolution des outils Data.\n\nEnvironnement technique : Python, SQL, Excel, Databricks.La rémunération et les avantages sur ce poste sont :\n\nUn salaire fixe d'environ 60K€ à 65K€ sur 12 mois \nUne rémunération variable de 10% + de l'interessement\nCadre de travail dynamique, environnement startup en forte croissance au sein d'un Grand Groupe\n2 jours de télétravail par semaine après 3 mois",
+   "dateCreation": "2026-10-23T13:08:35.005Z",
+   "dateActualisation": "2026-10-23T13:08:35.005Z",
+   "lieuTravail": {
+    "libelle": "92 - Courbevoie",
+    "codePostal": "92400",
+    "commune": "92026"
+   },
+   "romeCode": "H1401",
+   "romeLibelle": "Responsable ordonnancement-lancement-planification en industrie",
+   "appellationlibelle": "Dispatcheur(se) de réseau de transport d'électricité",
+   "entreprise": {},
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "D",
+   "experienceLibelle": "Débutant accepté",
+   "salaire": {},
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8199479",
+    "partenaires": [
+     {
+      "nom": "DIRECTEMPLOI",
+      "url": "https://www.directemploi.com/candidatOffre/56736947?utm_source=pole-emploi&utm_medium=referral&utm_campaign=Pôle-Emploi",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/directemploi80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8173502",
+   "intitule": "Ingénieur / Ingénieure data scientist (H/F)",
+   "description": "Description de l'entrepriseEn 2025, Wivoo (référence du Product Management & Data/IA) a rejoint Wavestone pour fusionner puissance stratégique et excellence opérationnelle.Des expert-es passionné-es et orienté-es solutions, qui placent l'humain au cœur de la performance et de la croissance. Nous renforçons notre expertise pour transformer les actifs data en leviers de valeur concrets. Nous développons sans cesse notre portefeuille de clients et de projets, avec une portée internationale et une réelle volonté de générer un impact positif.Êtes-vous un vrai team player, porté par des valeurs fortes ? Êtes-vous curieux-se et déterminé-e, avec l'envie d'apprendre chaque jour ? Alors vous êtes au bon endroit.Rejoignez Wivoo, a Wavestone company et exprimez votre potentiel dans un environnement\nstimulant et collaboratif.Description du posteRattaché(e) à notre expertise Data & IA, vous intervenez en tant que Product Data Scientist. Votre tâche consiste à développer une expertise sur des produits data-driven, avec un impact business fort, au sein d'une communauté d'experts.Vous aurez l'opportunité d'accompagner nos clients dans la construction et l'amélioration de produits et de solutions Data / IA, tout en garantissant la livraison de solutions innovantes par une collaboration étroite avec les équipes techniques, business et data.En tant que Product Data Scientist, vous serez amené à jouer un rôle clé sur les piliers suivants :Accompagnement Client & Delivery :Partage de vision, co-construction de roadmaps et priorisation de chantiers à fort impact business en insufflant une culture data-driven.Pilotage du développement, de la mesure et de l'optimisation des produits data via les méthodologies agiles.Développement de dashboards et d'indicateurs clés de performance (KPI) pour suivre l'efficacité des produits.Communication des analyses et recommandations stratégiques aux différentes parties prenantes.Développement de l'offre interne :Contribution active au développement de l'offre « Product Data IA » via de la veille technologique.Participation aux événements marketing et aux phases d'avant-ventes.Formation & Mentorat :Mentorat de profils plus juniors en fonction de votre expérience.Participation à la construction et à l'animation de programmes de formation pour faire monter en compétences les futurs Product Data Scientists de la communauté.QualificationsPlus que des cases à cocher, nous cherchons un profil hybride entre science des données et culture produit :Vous êtes diplômé(e) d'une école d'ingénieur avec une spécialisation en data science, data analyse, statistiques ou économie.Vous avez une expérience significative (3 ans minimum) en tant que Data Scientist ou Data Analyst (ex: élaboration de modèles de recommandation, définition de KPIs d'impact, aide à la priorisation de features pour des PMs).Vous maîtrisez les outils et concepts de l'IA : machine learning, visualisation de données, cloud computing (GCP, Azure, AWS) et les bibliothèques spécialisées (Scikit Learn, Tensorflow, Pytorch, etc.).Vous maîtrisez un ou plusieurs langages de programmation (Python, SQL) ainsi que des outils de visualisation (Tableau, Power BI).Vous avez une bonne connaissance des pratiques Agiles et Produit (Scrum, Safe, RICE, MoSCoW).Vous possédez d'excellentes capacités de vulgarisation et un excellent relationnel pour collaborer avec des profils divers.Vous maîtrisez l'anglais à l'oral comme à l'écrit.Informations supplémentairesEn rejoignant Wavestone, vous bénéficierez de :Career model : Une vision claire sur votre parcours grâce à notre matrice de compétences et des responsabilités évolutives (Lead Data Product, Head of Data Product).Further training : Un programme de formation complet (WiAcademy) basé sur le mentorat interne pour renforcer vos compétences en Product Management.Smartworking : Un cadre de collaboration flexible et mobile, avec des locaux pensés pour la convivialité au coeur du 8ème arrondissement.A Great Place To Work : Une culture valorisant l'épanouissement, avec un onboarding structuré (NPS de 9,25/10) et un suivi régulier (feedbacks clients, sales et RH).Dynamique salariale : Une politique de rémunération transparente et objective (fourchette pour ce poste : 42k€ - 70k€ selon expérience).Process de recrutement : Un parcours structuré incluant un premier échange visio, un entretien sales, un double test technique (Data Game 45min + Product Game 60min) et une rencontre avec les co-fondateurs. Proposition sous 48h.",
+   "dateCreation": "2026-10-23T05:08:50.105Z",
+   "dateActualisation": "2026-10-25T04:06:55.547Z",
+   "lieuTravail": {
+    "libelle": "92 - Nanterre",
+    "codePostal": "92000",
+    "commune": "92050"
+   },
+   "romeCode": "M1405",
+   "romeLibelle": "Data scientist",
+   "appellationlibelle": "Ingénieur / Ingénieure data scientist",
+   "entreprise": {
+    "nom": "Forums Talents Handicap"
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "D",
+   "experienceLibelle": "Débutant accepté",
+   "salaire": {},
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8173502",
+    "partenaires": [
+     {
+      "nom": "HANDICAP_JOB",
+      "url": "https://www.handicap-job.com/recherche/detail/oid/6676498/senior-consultant-product-data-scientist-hf.html",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/handicap_job80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8168611",
+   "intitule": "Data Scientist H/F h/f",
+   "description": "Afin de soutenir son ambition de croissance, Somfy investit dans le renforcement de ses capacités digitales afin d'extraire de la valeur du digital et des données. L'AI Factory est en place pour construire un avantage concurrentiel fort en développant nos capacités data et digitales. L'AI Factory rassemble des talents du numérique pour accompagner le développement de solutions innovantes basées sur l'algorithme et l'analytique avancée, augmenter les capacités digitales au sein de nos équipes, adopter de nouvelles méthodes de travail (par exemple, agiles) et globalement fournir un environnement efficace et attractif pour les talents et projets digitaux chez SOMFY. L'AI Factory conçoit, construit, exploite et met à niveau les solutions numériques propriétaires de SOMFY et déploie des solutions dans les entreprises / pays garantissant le bon niveau de localisation et d'adoption. Vous rejoindrez une équipe Data/IA et développerez des algorithmes IA, en étroite collaboration avec les différents business.Missions principales : Concevoir et mettre en œuvre un code modulaire et maintenable. Implémenter et orchestrer des agents IA suivant les cas d'utilisation identifiés dans toute l'entreprise (Recherche documentaire (RAG), coaching,...)Designer, implémenter et maintenir des algorithmes de machine learning répondant à des besoins businessVeille technologique et proposition d'outils innovantsCommuniquer aux équipes internes et à l'externe sur des sujets IA (articles, conférences, meet-up)\nFormation et expérience :Diplôme de Master dans un domaine quantitatif (maths, physique, data science, computer science).5+ années d'expérience en tant que Data Scientist ou dans un domaine lié à la data: o ayant transformé un besoin business en data producto en collaboration avec un grand nombre d'interlocuteurs, notamment le business. Expérience dans des méthodologies agiles Forte expérience dans l'utilisation de services IA d'Azure (Foundry, copilot studio ou autre)Avoir mis en place des agents IA au service des métiersConnaissances en CI/CD, conteneurs, infra cloudConnaissances et savoir-faire :Maitrise des concepts de mathématiques appliquéesMaîtrise de Python Déployer et maintenir un ou des modèles de machine learningCapacité à comprendre un besoin business, communiquer et vulgariser à différents interlocuteurs : transformer un besoin business en solution et communiquer clairement les résultats à des interlocuteurs non techniquesProactivité, autonomie & veille technologique : capacité à prendre des initiatives, explorer de nouvelles approches et apprendre en continu, notamment sur des sujets émergents en data/IA.Aisance relationnelle et esprit d'équipe : capacité à collaborer efficacement dans des équipes multidisciplinaires, à partager les connaissances et à contribuer à un collectif.Anglais + français : niveau professionnel (B2 minimum)Soft Skills : Pro actif(ve) et autonome Aisance relationnelle et esprit d'équipeEcoute active Intérêt pour la résolution de problématiques business",
+   "dateCreation": "2026-10-22T22:12:17.512Z",
+   "dateActualisation": "2026-10-24T22:12:20.712Z",
+   "lieuTravail": {
+    "libelle": "74 - Cluses",
+    "codePostal": "74300",
+    "commune": "74081"
+   },
+   "romeCode": "M1405",
+   "romeLibelle": "Data scientist",
+   "appellationlibelle": "Data scientist",
+   "entreprise": {},
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "Expérience exigée",
+   "salaire": {},
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8168611",
+    "partenaires": [
+     {
+      "nom": "JOBINLIVE",
+      "url": "http://www.missionhandicap.com/emploi/somfygroup-REF4367J#utm_source=PoleEmploi",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/jobinlive80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8141557",
+   "intitule": "Data Scientist (H/F)",
+   "description": "RESPONSABILITÉS : \n\nLe pôle Data & IA accompagne les équipes produit d'Isagri dans l'industrialisation de leurs usages de la donnée et de l'intelligence artificielle. Il porte notamment la structuration de la plateforme data (« raffinerie de données ») et la mise à disposition d'un cadre d'industrialisation (guidelines, templates projet réutilisables) pour faire passer les projets du prototype à la production.\nDans ce cadre, nous recherchons un ou une Data Scientist pour aider les équipes à valoriser les données de leurs solutions grâce au machine learning et à l'analyse avancée.\n\nLA MISSION :\n - Identifier les cas d'usage : comprendre les besoins métiers, évaluer les données disponibles et proposer les approches les plus pertinentes.\n - Concevoir des modèles de machine learning : analyser les données, développer et évaluer des modèles de prévision, classification, recommandation ou détection d'anomalies.\n - Préparer et suivre la mise en production : garantir la qualité du code, contribuer au déploiement des modèles et suivre leurs performances dans le temps.\n - Accompagner les équipes produit : partager les bonnes pratiques, vulgariser les résultats et contribuer à la montée en compétences.\n - Explorer de nouvelles approches : évaluer les apports de l'IA générative et assurer une veille technologique.\n\nPROFIL RECHERCHÉ : \n\nLE PROFIL RECHERCHE:\n - Vous justifiez de 3 à 5 ans d'expérience en data science, avec au moins un modèle mis en production et suivi dans la durée.\n - Vous maîtrisez Python et ses principales bibliothèques data science (pandas, scikit-learn, ainsi qu'un outil de boosting ou de deep learning).\n - Vous possédez de solides connaissances en statistiques, machine learning et SQL, et savez travailler sur des volumes de données importants.\n - Vous connaissez les pratiques MLOps : suivi d'expériences, versioning et CI/CD.\n - Vous appliquez les bonnes pratiques de développement : tests, Git, conteneurisation et environnement cloud.\n - Curieux et rigoureux, vous savez comprendre les enjeux métiers, prendre du recul sur les résultats et les expliquer à des interlocuteurs non techniques.\n - La connaissance de l'IA générative et des LLM constitue un plus.\nEVOLUTIONS\nLa politique RH vous garantit un accompagnement régulier pour vous faire progresser et évoluer vers de nouvelles missions en fonction de votre projet. Rejoindre notre Groupe, c'est la garantie d'une formation initiale et continue, d'un plan de carrière personnalisé et d'un management de proximité. \n\nCONDITIONS PROPOSEES\n- Poste basé à Beauvais, à pourvoir dès que possible.\n- Rémunération : Fixe + Variable.\n\nDans le cadre de sa politique RH, nous étudions, à compétences égales, toutes candidatures dont celles de personnes en situation de handicap.",
+   "dateCreation": "2026-10-22T04:31:48.644Z",
+   "dateActualisation": "2026-10-22T04:31:48.644Z",
+   "lieuTravail": {
+    "libelle": "60 - Beauvais",
+    "codePostal": "60000",
+    "commune": "60057"
+   },
+   "romeCode": "M1405",
+   "romeLibelle": "Data scientist",
+   "appellationlibelle": "Data scientist",
+   "entreprise": {
+    "nom": "ISAGRI"
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "D",
+   "experienceLibelle": "Débutant accepté",
+   "salaire": {
+    "libelle": "Annuel de 40000.0 Euros à 50000.0 Euros"
+   },
+   "dureeTravailLibelle": "39H/semaine\nTravail en journée",
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "qualificationCode": "9",
+   "qualificationLibelle": "Cadre",
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8141557",
+    "partenaires": [
+     {
+      "nom": "BEETWEEN",
+      "url": "https://app.beetween.com/WeaselWeb/p/#/apply/job/vn48g6i8gf8/data-scientist-h-f",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/beetween80.png"
+     }
+    ]
+   },
+   "contexteTravail": {
+    "horaires": [
+     "39H/semaine\nTravail en journée"
+    ]
+   },
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8124374",
+   "intitule": "Lead data scientist (h/f) (H/F)",
+   "description": "Lieu : Bordeaux, France\n\nConstruisons ensemble un avenir de confiance\nThales est un leader mondial des hautes technologies spécialisé dans trois secteurs d'activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l'environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d'euros par an en Recherche & Développement, notamment dans des domaines clés de l'innovation tels que l'IA, la cybersécurité, le quantique, les technologies du cloud et la 6G. Thales compte près de 85 000 collaborateurs dans 65 pays. \n\n\n\n\n\n\nNos engagements, vos avantages- Une réussite portée par notre excellence technologique, votre expérience et notre ambition partagée\n\n- Un package de rémunération attractif\n\n- Un développement des compétences en continu : parcours de formation, académies et communautés internes\n\n- Un environnement inclusif, bienveillant et respectant l'équilibre des collaborateurs\n\n- Un engagement sociétal et environnemental reconnu\n\n\n\n\n\nVotre quotidienEn nous rejoignant à Mérignac, à proximité de Bordeaux, vous intégrez un site dynamique regroupant nos activités de services numériques permettant d'opérer les systèmes d'informations critiques de nos clients et de les accompagner dans leur transformation numérique sécurisée.\n\nEn intégrant notre équipe agile, vous contribuerez à des cas d'usage métiers innovants, notamment dans le domaine de la maintenance prédictive.\n\n- Poste en CDI sur Mérignac (33/ proche Bordeaux)\n\nResponsabilités principales :-  Framer et concevoir des solutions IA à forte valeur ajoutée pour nos clients.\n- Développer des cas d'usage métiers en collaboration avec les équipes techniques et fonctionnelles.\n- Accompagner et former votre équipe pour monter en compétences et renforcer son expertise.\n- Améliorer en continu les processus et méthodologies de l'équipe.\n- Valoriser et présenter les résultats et l'impact des projets aux parties prenantes.\n\nCompétences techniques :\n\n- Maîtrise des architectures Data et IA.\n- Expertise en Computer Vision, IA Agentique et graphes de connaissances.\n- Expérience confirmée avec Dataiku.\n- Connaissances appréciées en GCP, MLOps, LLMOps (un plus).\n\n\nVOTRE PROFIL : \nVous êtes passionné  par la Data et l'IA et souhaitez mettre votre expertise au service de projets ambitieux ? Voici ce qui pourrait faire de vous le/la candidat(e) idéal(e) :\n\n- Formation : Bac +5 (école d'ingénieur ou master ) en Data Science, IA ou domaine connexe.\n- Expérience : 5 ans minimum dans des projets Data et IA, avec une solide expertise technique. \n\nVous êtes rigoureux et organiser pour piloter des projets complexes ? Vous avez un esprit collaboratif ?\n\nPourquoi nous rejoindre ?\n- Innovation : Travaillez sur des technologies de pointe (IA, Data, Cybersécurité) dans un environnement stimulant.\n- Impact : Contribuez à des projets à haute valeur stratégique pour des secteurs clés (Défense, Aérospatial, Transport).\n- Collaboration : Intégrez une équipe agile et pluridisciplinaire, où votre expertise sera valorisée.\n- Développement : Bénéficiez d'un cadre propice à la montée en compétences et à l'évolution professionnelle.\n- Localisation : Poste basé à Bordeaux, dans un écosystème dynamique et inspirant.\n\nMOT DU MANAGER :\nÀ la direction DAI, la d\n",
+   "dateCreation": "2026-10-21T08:15:58.515Z",
+   "dateActualisation": "2026-10-21T08:15:58.515Z",
+   "lieuTravail": {
+    "libelle": "33 - Bordeaux",
+    "codePostal": "33000",
+    "commune": "33063"
+   },
+   "romeCode": "M1831",
+   "romeLibelle": "Développeur / Développeuse - jeux vidéo",
+   "appellationlibelle": "Lead programmeur / Lead programmeuse - jeux vidéo",
+   "entreprise": {},
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "D",
+   "experienceLibelle": "Débutant accepté",
+   "salaire": {},
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8124374",
+    "partenaires": [
+     {
+      "nom": "JOBDEFENSE",
+      "url": "https://www.jobdefense.com/emploi-defense/lead-data-scientist-hf~31642.html?fromref=poleemploi",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/jobdefense80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8109785",
+   "intitule": "Consultant Ingénieur Data Scientist (H/F)",
+   "description": "Description du poste :\n\nEn postulant à cette offre, vous aurez l'opportunité de rejoindre une société de conseil spécialisée dans le développement d'agents IA sur mesure pour des secteurs exigeants (finance, juridique, conformité, marketing). L'entreprise aide ses clients à concevoir et déployer des solutions d'IA fiables, auditées et réellement utilisées en production, en combinant excellence technique, rigueur scientifique et sens produit.\n\n\nIls sont à la recherche d'un(e) Consultant-e Data Scientist & AI Engineer pour intervenir sur des projets clients stratégiques, de la compréhension fine des enjeux métier jusqu'à la mise en production des solutions.\n\nVos missions si vous les acceptez Concevoir, développer et déployer des pipelines de data science et de machine learning (segmentation, scoring, séries temporelles, modèles explicatifs, RAG)***Développer et orchestrer des agents IA métiers (LLM, workflows outillés, architectures multi-agents)***Industrialiser modèles et pipelines : tests, monitoring, observabilité, performance***Intervenir sur des environnements cloud et/ou on-premise, parfois contraints (sécurité, gouvernance, performance)***Être force de proposition sur les choix méthodologiques, techniques et architecturaux***Travailler en interaction directe avec les équipes data, IT et métiers chez les clients***Contribuer aux produits internes (frameworks, librairies, agents métiers)***Participer aux travaux de R&D autour des agents IA (orchestration multi-agents pour la résolution de tâches complexes)***Contribuer aux formations clients et à la montée en compétences de l'équipe (revues techniques, partage de bonnes pratiques)\n\nDescription du profil :\n\nEt vous Vous êtes titulaire d'un diplôme de Master ou d'une Top école d'ingénieurs / de commerce (ex: Polytechnique, Télécom Paris, CentraleSupélec, ENSAE Paris, Mines Paris - PSL, ENSTA Paris, Centrale Lyon, X-HEC, ESSEC-CentraleSupélec, MVA, Université Paris Dauphine-PSL, ou diplômes internationaux reconnus comme Imperial College, UCL, ETH Zurich, EPFL, Cambridge)***Vous disposez d'au moins 3 à 5 ans d'expérience en data science et/ou ML engineering sur des projets mis en production***Vous avez au moins une expérience de système agentique livré en production***Vous maîtrisez Python, les pipelines data/ML, la modélisation statistique, le ML appliqué, ainsi que les architectures et patterns agentiques***Vous avez une expérience avec des environnements cloud (AWS, GCP, Azure) et/ou on-premise, ainsi que des connaissances en DevOps / MLOps / LLMOps (Docker, Kubernetes, CI/CD, monitoring, observabilité)***Vous possédez une posture conseil, de fortes capacités de communication et de vulgarisation auprès de décideurs et profils non techniques***Vous parlez un anglais courant (clients internationaux) et vous êtes basé(e) à Paris",
+   "dateCreation": "2026-10-21T03:26:37.319Z",
+   "dateActualisation": "2026-10-23T03:23:04.328Z",
+   "lieuTravail": {
+    "libelle": "75 - Paris 9e Arrondissement",
+    "codePostal": "75009",
+    "commune": "75109"
+   },
+   "romeCode": "M1405",
+   "romeLibelle": "Data scientist",
+   "appellationlibelle": "Ingénieur / Ingénieure data scientist",
+   "entreprise": {},
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "1 An(s)",
+   "salaire": {
+    "libelle": "Annuel de 50000.0 Euros à 80000.0 Euros - Il en faut plus pour vous convaincre",
+    "commentaire": "Il en faut plus pour vous convaincre"
+   },
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8109785",
+    "partenaires": [
+     {
+      "nom": "METEOJOB",
+      "url": "https://www.meteojob.com/jobs/57605411?utm_source=pole-emploi&utm_medium=aggregator-free",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/meteojob80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8044971",
+   "intitule": "Senior Consultant.e - Data Scientist (H/F)",
+   "description": "\n            Description de l'entrepriseRejoignez un cabinet de conseil international qui accompagne les grandes transformations stratégiques.Nous sommes Wavestone : des expert-es passionné-es et orienté-es solutions, qui placent l'humain au cœur de la performance et de la croissance. Ambitieux-ses et en pleine expansion, nous développons sans cesse notre portefeuille de clients et de projets, avec une portée internationale et une réelle volonté de générer un impact positif.Êtes-vous un vrai team player, porté par des valeurs fortes ? Êtes-vous curieux-se et déterminé-e, avec l'envie d'apprendre chaque jour ? Êtes-vous du genre à relever les défis sans hésiter ? Alors vous êtes au bon endroit. Rejoignez Wavestone et exprimez votre potentiel dans un environnement stimulant et collaboratif, où l'on transforme les défis d'aujourd'hui en opportunités de demain.Description du posteVotre équipeVous rejoignez la Business Unit AI, une communauté d'environ 200 consultants IA & Data, qui accompagnent les organisations de bout en bout :Stratégie IA et feuille de routeIdentification et priorisation de cas d'usage IAGouvernance Data & IAOperating Models Data & IAAI Governance et Responsible AIAdoption et conduite du changement\n Votre rôle \n\nEn tant que Consultant.e Senior en data science, vous serez amené.e à jouer un rôle clé dans la conception, l'industrialisation et l'orchestration de solutions IA avancées. Votre rôle ne se limitera pas à \"développer des POCs\", vous serez projeté.e au cœur de l'industrialisation de l'IA dans les organisations. Voici quelques terrains d'expertises sur lesquels nous recherchons des expert.e.s :Concevoir et faire évoluer les socles Data & AI de nos clients :Définir et mettre en œuvre les architectures data modernes (data lake / lakehouse, entrepôt, data mesh, data products) supportant les cas d'usage analytiques, ML et GenAI.Structurer des pipelines de données robustes (batch, micro-batch, streaming), de l'ingestion à l'exposition (BI, APIs, features ML, RAG).Industrialiser les cas d'usage IA & GenAI & BI :Travailler en binôme avec les Data Scientists / AI Engineers pour passer du PoC à la production : packaging des modèles, automatisation des workflows, mise en place des bonnes pratiques de MLOps / LLMOps.Concevoir et opérer les composants techniques des solutions GenAI (pipelines RAG, vector DB, outils d'observabilité des LLM, gestion des prompts, sécurisation des appels aux modèles).Contribuer à la mise en place de plateformes data & IA :Collaborer étroitement avec les équipes Data & AI Platform des clients (Data Platform Engineers, DevOps, Architectes, Sécurité) pour définir les patterns d'architecture, l'outillage (Databricks, Snowflake, Dataiku, Azure/AWS/GCP, etc.) et les standards de développement.Tenir un rôle de Tech Lead Data Engineering au sein des squads IA / AI Factory : cadrage technique, arbitrages d'architecture, relecture de code, accompagnement des développeurs.Structurer la qualité, la gouvernance et l'observabilité des données :Mettre en œuvre les bonnes pratiques de data quality (tests, monitoring, gestion des schémas, data contracts) et de data observability au niveau des pipelines.Contribuer aux travaux de gouvernance Data & AI (catalogues, lineage, sécurité d'accès, conformité - notamment dans un contexte AI Act).Déployer des solutions agentiques (AI Agents) :Designer l'architecture data et technique supportant des chaînes d'agents (orchestrateurs, agents spécialisés, intégration avec systèmes métier, APIs et outils métiers).Travailler avec les équipes métier pour transformer des processus complexes en workflows agentiques industrialisables (service client, IT support, processus back-office, etc.).\nVos responsabilités  En tant que Senior Consultant.e, et selon votre niveau d'expérience, vous serez amené.e à: Apporter votre expertise et vos convictions aux grandes organisations sur les sujets data science. Piloter des missions en tant que chef.fe de projet, en assurant la qualité des livrables, la coordination des parties prenantes et la tenue des engagements. Encadrer des équipes, en assurant la montée en compétence des consultants et en diffusant les bonnes pratiques du cabinet. Contribuer en interne au développement de l'offre Data & IA, en identifiant les tendances du marché, en structurant nos convictions et en développant de nouveaux assets (outils, frameworks, benchmarks.). Participer au développement commercial, en aidant à la réponse aux appels d'offres, à des phases d'avant vente, en foisonnant chez votre client... QualificationsVotre profil \nPlus que des cases à cocher, vous possédez une ou plusieurs de ces compétences : Vous avez 4 ans d'expérience ou plus en Data Engineering et avez piloter avec succès des équipes de Data Engineers.Une solide maîtrise des architectures data modernes : data lake / data warehouse / lakehouse, approche medallion (bronze / silver / gold), data products et patterns de data mesh.Vous avez des expériences significatives ...",
+   "dateCreation": "2026-10-19T05:31:00.094Z",
+   "dateActualisation": "2026-10-19T05:31:00.094Z",
+   "lieuTravail": {
+    "libelle": "92 - Nanterre",
+    "codePostal": "92000",
+    "commune": "92050"
+   },
+   "romeCode": "M1405",
+   "romeLibelle": "Data scientist",
+   "appellationlibelle": "Ingénieur / Ingénieure data scientist",
+   "entreprise": {},
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "0 An(s)",
+   "salaire": {},
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "qualificationCode": "7",
+   "qualificationLibelle": "Technicien",
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8044971",
+    "partenaires": [
+     {
+      "nom": "TALENTS_HANDICAP",
+      "url": "https://www.talents-handicap.com/315-wavestone/347118-senior-consultant-e-data-scientist-h-f-12?src=FranceTravail",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/talents_handicap80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8042164",
+   "intitule": "Data scientist - secteur développement durable projet CEDRE F/H",
+   "description": "RESPONSABILITÉS : \n\nUn comité composé de CEDRE et CISAM + définira les délais de réalisation des tâches affectées à l'agent, ses projets prioritaires à traiter et supervisera leur bonne réalisation.\nMISSIONS ET ACTIVITÉS PRINCIPALES\nMissions\n - Concevoir, entraîner et valider des modèles d'IA (deep learning, modèles hybrides) pour classifier, prédire et identifier des motifs inédits dans des données scientifiques complexes\n - Développer des pipelines de prétraitement robustes et reproductibles pour nettoyer, formater et structurer de grands volumes de données issues de l'imagerie et du séquençage\n - Rendre les modèles interprétables (XAI) et croiser les résultats prédictifs avec les connaissances du domaine pour guider la recherche expérimentale\n - Documenter rigoureusement les méthodes, les données et les codes pour assurer la reproductibilité des analyses et faciliter leur transfert aux équipes de recherche\n\nActivités principales\nPrétraitement et structuration des données :\n - Nettoyer, formater et structurer les données issues de séquençage et d'imagerie électronique\n - Développer des pipelines adaptés aux grands volumes de données biologiques et d'imagerie\nModélisation et apprentissage automatique :\n - Concevoir et entraîner des modèles hybrides (deep learning + règles bioinformatiques ou physiques)\n - Appliquer des algorithmes de classification, détection d'anomalies et de clustering\nAnalyse et Découverte :\n - Identifier des modifications inédites dans les ADN/ARN viraux et prédire de nouvelles protéines\n - Développer des outils d'analyse automatique de clichés de microscopie électronique à balayage (MEB)\nExploration et interprétation des résultats :\n - Visualiser et expliquer les sorties des modèles (XAI, SHAP, etc.)\n - Croiser les résultats biologiques, structuraux et prédictifs pour guider les hypothèses scientifiques\nConditions d'exercice\nSon temps de travail sera réparti entre le campus de St Jerome (CEDRE) et ses laboratoires/instituts d'intervention, au sein des autres campus où les projets ont été identifiés (à définir).\nIl ou elle sera amené(e) à se déplacer régulièrement sur les sites d'Aix-Marseille, ou effectuer des missions dans le cadre de son activité.\nDes activités supplémentaires de formation initiale à l'université, ou d'encadrement d'étudiants, pourront lui être proposées, en dehors des heures de travail ou pendant les congés.\n\nPROFIL RECHERCHÉ : \n\nVous êtes diplômé-e au minimum d'un Bac+3 dans le domaine informatique ou mathématiques/IA et disposez d'une première expérience dans ce domaine avec une appétence pour le développement durable.\nCompétences techniques\n - Programmation : Python niveau avancé exigé\n - Compétences solides en conception et optimisation de pipelines de traitement de données volumineuses (ETL). Maîtrise d'un gestionnaire de workflows (Snakemake, Nextflow) indispensable\n - Connaissance approfondie des bonnes pratiques de développement, incluant le versioning (Git), les tests et l'intégration continue\n - Des compétences en déploiement sur serveur ou cloud et en conteneurisation (Docker)\n - Une première expérience avec des données scientifiques (spectrométrie de masse, chromatographie)\n  Compétences « transverses »\nLangue anglaise : B2 au minimum\nPour finir..\nVous travaillez en mode projet.\nVous avez une grande capacité de conceptualisation.\nUn processus de recrutement fluide et transparent :\nÀ réception de votre candidature, deux étapes : un échange téléphonique personnalisé avec les candidats sélectionnés (avec soin par un humain, et non par une IA), et un entretien avec les responsables de notre structure.\nEn cas de réussite, nous mettrons tout en œuvre pour confirmer votre recrutement rapidement. À votre arrivée, vous bénéficiez d'un parcours d'accueil et d'intégration, ainsi que de formations adaptées à vos besoins pour favoriser votre développement professionnel.\n\nRejoindre AMU, c'est bénéficier d'un environnement de travail socialement engagé :\n- Selon le cadre de la structure, une flexibilité dans l'organisation de la semaine de travail est possible  : deux dispositifs ouverts dès 2 mois d'ancienneté en accord avec le manager : Le télétravail et la semaine en 4j ou 4,5j\n- Un équilibre des temps de vie : bénéficiez jusqu'à 50 jours de congés dès la première année, puis 58 jours après un an (varie selon l'organisation choisie et le temps de travail)\n-  Une prime mensuelle et annuelle dès 12 mois d'ancienneté pour les agents non titulaires et application du RIFSEEP pour les titulaires\n- Un accompagnement personnalisé pour les personnels en situation de handicap\n- La prise en charge des transports en commun à hauteur de 75% compatible avec un forfait mobilité durable\n- La possibilité d'une place de parking ou d'un forfait mobilité durable pour l'utilisation de cycles sur les trajets domicile-travail\n- Un accès à des prestations dans différents domaines : loisir, sport, culture et social",
+   "dateCreation": "2026-10-19T04:31:51.944Z",
+   "dateActualisation": "2026-10-20T04:31:44.374Z",
+   "lieuTravail": {
+    "libelle": "13 - Marseille 1er Arrondissement",
+    "codePostal": "13001",
+    "commune": "13201"
+   },
+   "romeCode": "M1419",
+   "romeLibelle": "Data analyst",
+   "appellationlibelle": "Data analyst",
+   "entreprise": {
+    "nom": "Université Aix-Marseille"
+   },
+   "typeContrat": "CDD",
+   "typeContratLibelle": "CDD - 36 Mois",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "Expérience exigée",
+   "salaire": {},
+   "dureeTravailLibelle": "35H/semaine\nTravail en journée",
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "qualificationCode": "9",
+   "qualificationLibelle": "Cadre",
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8042164",
+    "partenaires": [
+     {
+      "nom": "BEETWEEN",
+      "url": "https://app.beetween.com/WeaselWeb/p/#/apply/job/g7kqiqprat8/data-scientist-secteur-developpement-durable-projet-cedre-f-h",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/beetween80.png"
+     }
+    ]
+   },
+   "contexteTravail": {
+    "horaires": [
+     "35H/semaine\nTravail en journée"
+    ]
+   },
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8035799",
+   "intitule": "Data scientist (H/F)",
+   "description": "Description du poste :\n\nEn tant qu'organisateur de forums de recrutement, Talents Handicap accompagne de très nombreuses entreprises & organisations en France dans leurs recrutements de collaborateurs en situation de handicap. Participant actuellement à l'un de nos forums.\nL'entreprise EDF recherche actuellement des profils La Division Numérique (DivNum) de la DPNT (Direction du Parc Nucléaire et Thermique) a pour ambition de placer l'IT au cœur de la performance industrielle de la DPNT. Elle vise à refondre le système d'information, renforcer la cybersécurité et la gestion des données, et s'appuie sur quatre piliers stratégiques : la standardisation, la cloud'isation, la data'isation et l'industrialisation.\n\nLa Force d'Action Rapide du Numérique (FARNum) est l'expression d'une volonté de répondre efficacement aux enjeux des grands chantiers industriels de la DPNT. Véritable catalyseur d'innovation, la FARNum réunit une équipe agile et pluridisciplinaire, dont la mission première est de déployer et industrialiser des solutions numériques à forte valeur ajoutée. L'ADN de la FARNum repose sur une approche résolument pragmatique et orientée résultats. À travers une organisation flexible, l'équipe privilégie la rapidité d'exécution et la création de valeur immédiate, tout en s'adaptant aux besoins concrets du terrain.\n\nLa FARNum est organisé en 3 pôles Affaires et projets\n* FAST AI IT\n* Data Ops\n\nL'équipe Data OPS de la FARNum porte la mise en œuvre opérationnelle des cas d'usage Data et IA, depuis le cadrage technique du besoin métier jusqu'à la mise en production, en s'appuyant sur une approche industrialisée, sécurisée et à valeur.\n\nDans ce cadre, l'équipe Data OPS cherche un.e Data Scientist qui concrétisera l'implémentation et l'usage de l'IA performante et industrielle pour répondre aux besoins métiers mais aussi aux enjeux de la DivNum.\n\nMissions principales Implémenter et améliorer la démarche Data pour les cas d'usage : diagnostic des données, collecte et redressement, valorisation et intégration.\n* Identifier les usages d'IA dans les projets métiers dès la phase d'instruction et de cadrage et évaluer leur faisabilité technique et conformité vis-à-vis des standards groupe en amont de tout engagement.\n* Concevoir avec les architectes et les référents technique les architectures de solutions IA de bout en bout : frameworks, choix de l'infrastructure et des modèles, base de données, patterns, exposition, monitoring, alerting, gestion des risques et des dérives.\n* Déployer, optimiser et piloter les produits Data et IA en production, en anticipant les contraintes de performance, de robustesse, de maintenabilité et de coût.\n* Assurer la veille technologique IA et le partage des connaissances au sein de la FARNum et de la DivNum.\n* Mettre en place et diffuser les bonnes pratiques (DataOps,MLOps), le code review, la capitalisation technique ainsi que l'usage de l'IA générative pour les ingénieurs data.\n\nProfil souhaité 6 ans d'expériences minimum en conception, développement et déploiement de projet Data en production\n* Expertise en analyse Data (diagnostic des données, cartographie des sources de données, collecte, mise en qualité Expertise en modèles IA, Machine Learning et IA générative (LLM, RAG, Agents, Prompts Expertise en python, SQL et NoSQL, écosystème GitHub, conteneurisation, développement d'API.\n* Maîtrise des bonnes pratiques de développement logiciel (qualité de code, tests, documentation) et de déploiement CI/CD.\n* Bonne connaissance des architectures cloud (GCP, AWS) et on premise ainsi que des patterns de déploiement Data IA.\n* Bonne connaissance de la méthode de travail Agile.\n* Autonomie, sens de la pédagogie, fort esprit d'équipe, de proactivité et de partage.\n\nRémunération attractive selon profil :\n\nRémunération brute annuelle de bas hors primes : de 46 à 57K€, selon diplôme et expérience professionnelle.\n\nPackage global comprenant : prime individuelle de performance, intéressement et épargne salariale.\n\nAvantages selon conditions d'éligibilité : tarif préférentiel sur l'électricité et le gaz, aides aux familles et à la parentalité, dispositifs de mobilité durable, activités sociales et culturelles..\n\nAvantages à nous rejoindre Un job varié et intéressant\n* Télétravail 2 jours par semaine\n* Une équipe à taille humaine\n* Formation spécifique à la prise de poste et tout au long de la carrière\n* Des possibilités d'évolution au sein du Groupe EDF\n\nDans le groupe EDF, accueillir des personnes en situation de handicap fait partie de notre ADN. Notre objectif est d'ouvrir nos portes à toutes les compétences, toutes les énergies et toutes les personnalités sans exclusion. Le poste proposé est donc ouvert à toutes et à tous.",
+   "dateCreation": "2026-10-19T03:28:57.241Z",
+   "dateActualisation": "2026-10-19T03:28:57.241Z",
+   "lieuTravail": {
+    "libelle": "11 - Aude"
+   },
+   "romeCode": "M1405",
+   "romeLibelle": "Data scientist",
+   "appellationlibelle": "Data scientist",
+   "entreprise": {
+    "nom": "NEW NET 3D"
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "6 An(s)",
+   "salaire": {},
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "codeNAF": "62.02A",
+   "secteurActivite": "62",
+   "secteurActiviteLibelle": "Conseil en systèmes et logiciels informatiques",
+   "trancheEffectifEtab": "6 à 9 salariés",
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8035799",
+    "partenaires": [
+     {
+      "nom": "METEOJOB",
+      "url": "https://www.meteojob.com/jobs/57517309?utm_source=pole-emploi&utm_medium=aggregator-free",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/meteojob80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8208869",
+   "intitule": "Consultant.e Confirmé.e - Data Science & IA (H/F)",
+   "description": "En tant qu'organisateur de forums de recrutement, Talents Handicap accompagne de très nombreuses entreprises & organisations en France dans leurs recrutements de collaborateurs en situation de handicap. Participant actuellement à l'un de nos forums.\nL'entreprise Wavestone recherche actuellement des profils :\nDescription de l'entreprise\nRejoignez un cabinet de conseil international qui accompagne les grandes transformations stratégiques.\nNous sommes Wavestone : des expert-es passionné-es et orienté-es solutions, qui placent l'humain au cœur de la performance et de la croissance. Ambitieux-ses et en pleine expansion, nous développons sans cesse notre portefeuille de clients et de projets, avec une portée internationale et une réelle volonté de générer un impact positif.\nÊtes-vous un vrai team player, porté par des valeurs fortes ? Êtes-vous curieux-se et déterminé-e, avec l'envie d'apprendre chaque jour ? Êtes-vous du genre à relever les défis sans hésiter ? Alors vous êtes au bon endroit. Rejoignez Wavestone et exprimez votre potentiel dans un environnement stimulant et collaboratif, où l'on transforme les défis d'aujourd'hui en opportunités de demain.\nDescription du poste\nRejoindre la Business Unit AI, c'est intégrer une équipe de près de 200 consultant-e-s passionné-e-s qui accompagnent les grandes organisations dans la transformation de leurs modèles par la donnée et l'intelligence artificielle. \nNous intervenons de bout en bout, de la détection de cas d'usage IA à fort impact métier à la conception de plateformes technologiques de pointe, jusqu'à la définition de modèles de gouvernance responsables et scalables. \nNous opérons auprès de clients grands comptes, en France et à l'international, en synergie avec les autres expertises du cabinet pour maximiser l'impact de nos interventions. \nEn tant que Consultant.e Expérimenté.e en data science et IA, vous serez au cœur de l'industrialisation de l'IA dans les grandes organisations : \nGestion de projet data science et IA :Participer à des projets de data science, de l'identification des besoins métier à la mise en production des solutions, en passant par le développement d'algorithme.\nAccompagner les organisations dans la transition de l'IA traditionnelle vers l'agentique \nConception et industrialisation de solutions :Concevoir, développer et déployer des modèles de machine learning, deep learning et IA générative pour répondre à des problématiques métiers variées.\nContribuer aux échanges avec les équipes techniques du clients (Data Engineer, Architect, ML Engineer, DSI) pour garantir l'intégration de la solution dans le SI Clients\nInnovation et expertise technique :Réaliser des benchmarks d'algorithmes, frameworks et technologies pour proposer des solutions innovantes.\nContribuer à l'exploration de nouveaux cas d'usage en IA (vision par ordinateur, NLP, IA générative, etc.).\nQualifications\nNous cherchons des candidat.e.s avec une envie d'apprendre et de se challenger dans un environnement dynamique et en constante évolution.\nType de profil : \nDiplômé.e d'une grande école d'ingénieurs, école de commerce ou université avec spécialisation data / IA.\n1 à 3 ans d'expérience en CDI en conseil, data, IA ou environnement technologique exigeant.\nIntérêt marqué pour les enjeux business et transformation liés à l'IA.\nFrançais et anglais professionnels.\nCompétences appréciées en data science et IA : \nBonne compréhension des concepts fondamentaux de l'IA et du machine learning.\nExpérience sur des cas d'usage tels que : prédiction, classification, NLP, computer vision, LLM, automatisation, optimisation... etc.\nCapacité à challenger la valeur métier des cas d'usage IA.\nCompétences appréciées en gestion de projet et travail d'équipe :\nCommunication claire, structurée et professionnelle, à la fois avec des interlocuteurs métiers et techniques.\nAutonomie, fiabilité et respect des engagements (qualité, délais).\nSens du collectif et contribution active à la vie de l'équipe (mentorat de juniors, partage de connaissances).\nInformations supplémentaires\nEn rejoignant Wavestone, vous bénéficierez de : \nCarreer model: une carrière sur mesure, cela signifie pour nous des possibilités de développement individuel. Notre Wavestone Horizon vous permet une évolution rapide de votre parcours et de la dynamique salariale. \nFurther training: let's grow together ! Vous avez accès à un vaste catalogue de formations et de certifications (cloud, DevOps, GenAI, etc.) pour vous former continuellement. \nSmartworking: le travail flexible et mobile fait partie de notre ADN et permet un cadre adéquat de collaboration. \nA Great Place To Work: nous sommes reconnus comme Great Place To Work , nous classant numéro un dans notre catégorie parmi les organisations de plus de employés (France). \nParce que votre réussite est notre priorité, nous adaptons nos processus de recrutement et l'environnement de travail à vos besoins spécifiques ou situations de santé (aménagements de poste, tiers-temps, outils adapt...",
+   "dateCreation": "2026-10-23T13:37:22.866Z",
+   "dateActualisation": "2026-10-23T13:37:22.866Z",
+   "lieuTravail": {
+    "libelle": "92 - Nanterre",
+    "codePostal": "92000",
+    "commune": "92050"
+   },
+   "romeCode": "M1405",
+   "romeLibelle": "Data scientist",
+   "appellationlibelle": "Ingénieur / Ingénieure data scientist",
+   "entreprise": {},
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "D",
+   "experienceLibelle": "Débutant accepté",
+   "salaire": {},
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8208869",
+    "partenaires": [
+     {
+      "nom": "DIRECTEMPLOI",
+      "url": "https://www.directemploi.com/candidatOffre/56737970?utm_source=pole-emploi&utm_medium=referral&utm_campaign=Pôle-Emploi",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/directemploi80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8208259",
+   "intitule": "CDI - Consultant-e Data - Secteur Public H/F",
+   "description": "En tant qu'organisateur de forums de recrutement, Talents Handicap accompagne de très nombreuses entreprises & organisations en France dans leurs recrutements de collaborateurs en situation de handicap. Participant actuellement à l'un de nos forums.\nL'entreprise Wavestone recherche actuellement des profils :\nDescription de l'entreprise\nWavestone est un cabinet de conseil, qui a pour mission d'accompagner les entreprises et organisations dans leurs transformations stratégiques dans un monde en constante évolution, avec l'ambition de générer des impacts positifs et durables pour toutes ses parties prenantes.\nForts de plus de collaborateurs talentueux et engagés à travers l'Europe, l'Amérique du Nord et l'Asie, nous disposons d'expertises sectorielles de premier plan et d'un portefeuille de savoir-faire cross-sectoriels, nous permettant d'adresser à 360° les grands programmes de transformation de nos clients.\nChez Wavestone, nous sommes convaincus que la réussite professionnelle et l'épanouissement personnel vont de pair. C'est pourquoi nous offrons un environnement de travail stimulant, inclusif et bienveillant, où chacun peut s'épanouir et atteindre son plein potentiel.\nWavestone est coté sur Euronext, à Paris, et labellisé Great Place to Work®.\nDescription du poste\nS'agissant du secteur public, Wavestone dispose d'une équipe d'environ 200 consultants spécialisés et intervenant pour le compte des administrations et entreprises de service public afin de les accompagner dans leurs transformations majeures, notamment autour de la conception et la mise en œuvre de projets numériques soutenant l'action publique. \nAu sein d'une équipe dédiée à l'accompagnement de la transformation numérique du secteur public, vous interviendrez auprès de ministères, opérateurs ou collectivités pour les aider à structurer, piloter et valoriser leurs données en réponse aux enjeux réglementaires, stratégiques et opérationnels\nVotre objectif : Moderniser l'action publique en accompagnant les organisations publiques dans la définition, la mise en œuvre et la sécurisation de leurs projets Data & IA, dans l'amélioration de leur gouvernance de la donnée et le déploiement d'IA dignes de confiance. \nEn fonction de votre niveau d'expérience, vos responsabilités comprendront :\nAccompagner nos clients publics dans la conception et la mise en œuvre de leurs initiatives Data et IA\nParticiper opérationnellement aux initiatives Data et IA en collaborant avec nos clients pour mettre en place les stratégies, la gouvernance, les socles technologiques et mettre en œuvre les projets.\nAnimer des équipes et des ateliers de cocréation, d'évangélisation, etc. (Identification des cas d'usages Data / IA, création des réseaux d'acteurs de la gouvernance, sensibilisation conformité / sécurité / éthique / frugalité, etc.)\nParticiper à l'acculturation de nos clients à la Gouvernance et au Management des données, à l'IA digne de confiance, et les sensibiliser à l'importance du sujet\nAccompagner les evolutions de pratiques et de modes de collaboration entre les équipes autour des projets Data & IA\nIdentifier les solutions technologiques appropriées aux besoins, contribuer à leur choix, à leur implémentation et à la mise en place cohérente de plateformes de valorisation et d'échange de données\nFaire de la veille technologique et animer des sessions de « knowledge sharing » en faisant part de vos retours d'expérience\nQualifications\nFormation & expérience :\nBac +5 (École d'ingénieur, master data/numérique, école de management).\n1 à 5 ans d'expérience en data, transformation ou conseil (junior confirmé / consultant).\nUne expérience dans le secteur public est un plus (connaissance du fonctionnement et des spécificités du secteur public)\nProfil recherché :\nVous disposez d'une expérience sur des problématiques de Data Gouvernance et/ou Data Product Management et/ou Projets IA et/ou Data Architect (Modèle de Gouvernance, Rôles & Responsabilité, modélisation et qualité des données, Catalogue de données, Marketplace & Data Product, MDM et DQM, Urbanisation Data / IA, Projets de valorisation, Cadrage et déploiement d'IA, Enjeux de conformité et d'éthique, etc.)\nVous avez des expériences concrètes et réussies de mise en œuvre de la gouvernance de données ou de projets data/ IA dans des organisations privées et/ou publiques\nVous disposez de compétences fonctionnelles et techniques sur une ou plusieurs des principales solutions du marché (Databricks, Dataiku, Collibra, Data Galaxy, SUADEO, ServiceNow, Blueway, Tableau, PowerBI, Mistral, Copilot, LightOn, Chapsvision, Huwise.) \nVous avez la capacité à accompagner des data office, des CDO, des directions métiers, techniques ainsi que des acteurs opérationnels.\nVous maîtrisez les enjeux open data, interopérabilité, API, réglementation RGPD / IA Act, numérique responsable .\nCompétences comportementales :\nExcellentes capacités d'analyse et de synthèse.\nAptitude à vulgariser des concepts complexes auprès d'acteurs non techniques.\n...",
+   "dateCreation": "2026-10-23T13:33:10.697Z",
+   "dateActualisation": "2026-10-23T13:33:10.697Z",
+   "lieuTravail": {
+    "libelle": "92 - Nanterre",
+    "codePostal": "92000",
+    "commune": "92050"
+   },
+   "romeCode": "M1405",
+   "romeLibelle": "Data scientist",
+   "appellationlibelle": "Data scientist",
+   "entreprise": {},
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "D",
+   "experienceLibelle": "Débutant accepté",
+   "salaire": {},
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8208259",
+    "partenaires": [
+     {
+      "nom": "DIRECTEMPLOI",
+      "url": "https://www.directemploi.com/candidatOffre/55877568?utm_source=pole-emploi&utm_medium=referral&utm_campaign=Pôle-Emploi",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/directemploi80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8134997",
+   "intitule": "Ingénieur data F/H - Brest en vue",
+   "description": "Brest en vue recrute une ou un Ingénieur data pour développer et faire évoluer son environnement data. Vous contribuez à rendre les données fiables, disponibles, sécurisées et exploitables pour répondre aux besoins métiers et décisionnels, tout en participant au développement de nouveaux usages liés à l'intelligence artificielle. Au sein d'une équipe Data transverse au Groupe, vous interviendrez sur l'ensemble de la chaine de la donnée : du recueil des besoins métier à l'élaboration des tableaux de bord (ou autre data product), en vous appuyant sur notre modern data stack. \n \n \n \nSous la responsabilité du Directeur du Pôle systèmes d'information et numériques, vos principales missions seront les suivantes :\n \n \n \nArchitecture / Modélisation data\n \n \n- Participer à la définition des architectures, modèles et référentiels de données \n- Participer au choix des technologies d'intégration et de traitement des données \n- Veiller au respect des exigences réglementaires et des politiques internes \n- Assurer une veille technologique sur les outils et pratiques du domaine data \n \nDéveloppement / Exploitation des flux de données\n \n \n- Mener les projets techniques d'intégration, de migration ou de valorisation de la donnée (collection, nettoyage, structuration, enrichissement, activation des données, IA) \n- Concevoir, tester, maintenir, administrer, documenter les composants et optimiser leurs performances et leurs coûts \n \nAccompagnement des projets et innovation\n \n \n- Analyser les besoins métiers \n- Traduire les besoins fonctionnels en solutions techniques de traitement de données \n- Mener les projets fonctionnellement \n- Travailler sur la qualité, la gouvernance et l'accès aux donnéesNous attendons du futur Ingénieur data les compétences et qualités suivantes :\n \n \n \nSavoir-faire\n \n- Bac +5 en informatique, systèmes d'information ou équivalent \n- De sortie d'étude à 5 ans d'expérience sur un poste équivalent \n- Bonne capacité de compréhension des process et données métier \n- Maîtrise de Python, des bases de données et de leur modélisation \n- Maîtrise des environnements Unix et Windows et de l'anglais \n- Connaissances de Snowflake, Airflow et Power BI appréciées \n \nSavoir-être\n \n- Travail en équipe et en transversalité \n- Rigueur, autonomie et organisation \n- Force de proposition et ouvert à l'innovation \n \nLe poste n'implique pas de contraintes particulières.\n \n \n \nNous vous offrons un CDD à temps plein, statut Cadre, à pourvoir dès que possible pour une durée de 12 mois (renouvelable). \n \n \n \nLe poste est ouvert aux candidatures jusqu'au 11 novembre 2026 (inclus) et les entretiens auront lieu le mercredi 25 novembre (matin).\n\nAvantages\n- 13ème mois\n- Intéressement\n- Ticket restaurant (valeur 10€, part employeur 60%)\n- Contrat groupe famille Santé et Prévoyance\n- CSE attractif : chèques vacances, voyages...",
+   "dateCreation": "2026-10-21T21:14:33.643Z",
+   "dateActualisation": "2026-10-21T21:14:33.643Z",
+   "lieuTravail": {
+    "libelle": "29 - Finistère"
+   },
+   "romeCode": "M1405",
+   "romeLibelle": "Data scientist",
+   "appellationlibelle": "Data scientist",
+   "entreprise": {
+    "nom": "Brest en vue"
+   },
+   "typeContrat": "CDD",
+   "typeContratLibelle": "CDD - 12 Mois",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "D",
+   "experienceLibelle": "Débutant accepté",
+   "salaire": {},
+   "dureeTravailLibelle": "35H/semaine",
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "codeNAF": "82.11Z",
+   "secteurActivite": "82",
+   "secteurActiviteLibelle": "Services administratifs combinés de bureau",
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8134997",
+    "partenaires": [
+     {
+      "nom": "WE_RECRUIT",
+      "url": "https://careers.werecruit.io/fr/brest-en-vue/offres/ingenieur-data-173666?utm_source=francetravail&utm_medium=job-board",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/we_recruit80.png"
+     }
+    ]
+   },
+   "contexteTravail": {
+    "horaires": [
+     "35H/semaine"
+    ]
+   },
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  }
+ ],
+ "filtresPossibles": [
+  {
+   "filtre": "typeContrat",
+   "agregation": [
+    {
+     "valeurPossible": "CDD",
+     "nbResultats": 3
+    },
+    {
+     "valeurPossible": "CDI",
+     "nbResultats": 16
+    }
+   ]
+  },
+  {
+   "filtre": "experience",
+   "agregation": [
+    {
+     "valeurPossible": "0",
+     "nbResultats": 2
+    },
+    {
+     "valeurPossible": "4",
+     "nbResultats": 8
+    },
+    {
+     "valeurPossible": "1",
+     "nbResultats": 1
+    },
+    {
+     "valeurPossible": "2",
+     "nbResultats": 5
+    },
+    {
+     "valeurPossible": "3",
+     "nbResultats": 3
+    }
+   ]
+  },
+  {
+   "filtre": "qualification",
+   "agregation": [
+    {
+     "valeurPossible": "0",
+     "nbResultats": 2
+    },
+    {
+     "valeurPossible": "9",
+     "nbResultats": 6
+    },
+    {
+     "valeurPossible": "X",
+     "nbResultats": 11
+    }
+   ]
+  },
+  {
+   "filtre": "natureContrat",
+   "agregation": [
+    {
+     "valeurPossible": "E1",
+     "nbResultats": 19
+    }
+   ]
+  }
+ ]
+}

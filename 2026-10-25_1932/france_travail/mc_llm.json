@@ -1,0 +1,617 @@
+{
+ "resultats": [
+  {
+   "id": "215KQXG",
+   "intitule": "Ingénieur IA (agents autonomes & LLM), e-commerce (H/F)",
+   "description": "Description du poste\nCréer des sites e-commerce (PrestaShop / WordPress), concevoir les agents IA qui les exploitent au quotidien (stock, clients, workflows) et ceux qui publient les produits entre différents sites et marketplaces. Déployer et exploiter l'ensemble dans le cloud.\nMissions\n1. Création des sites e-commerce\n- Créer des sites e-commerce et des marketplaces sous PrestaShop / WordPress\n- Développer et adapter les modules, plugins et thèmes selon les besoins\n- Structurer le catalogue (catégories, attributs, déclinaisons, prix, promotions)\n- Configurer les moyens de paiement, la livraison, les taxes et les langues\n- Optimiser les performances et le référencement des sites\n2. Agents IA d'exploitation des sites\n- Concevoir et mettre en production des agents IA qui gèrent les sites au quotidien\n- Gestion du stock : synchroniser les inventaires entre sites et fournisseurs, suivre les disponibilités, détecter les ruptures et alerter\n- Relation client : répondre aux questions sur les produits, la livraison et les commandes, traiter les retours et les demandes, passer la main à un humain si besoin\n- Commandes : suivre leur traitement, gérer les statuts et les mises à jour\n- Contenu produit : rédiger et mettre à jour les fiches, les descriptions et les traductions\n- Reporting : produire des rapports sur les ventes, le stock et l'activité\n3. Agents de publication multi-sites et multi-marketplaces\n- Concevoir des agents qui récupèrent les produits de nombreux sites et les publient vers plusieurs marketplaces, ou d'une marketplace vers une autre\n- Adapter automatiquement chaque fiche produit au format et aux règles de chaque marketplace\n- Contrôler la qualité avant chaque publication (champs obligatoires, cohérence, doublons)\n- Gérer les erreurs : nouvelle tentative automatique, correction, alerte à l'équipe en cas de blocage\n- Connecter les sources et les marketplaces par API, ou par automatisation web lorsqu'il n'y a pas d'API\n- Ajouter de nouveaux sites et marketplaces sans refaire le système\n4. Automatisation des processus\n- Automatiser (à compléter : par exemple les tâches répétitives de back-office, la facturation, la veille des prix, les imports et exports)\n5. Déploiement et exploitation dans le cloud\n- Déployer l'ensemble (sites, agents, bases de données) dans le cloud (OVHcloud)\n- Mettre en place la conteneurisation (Docker) et les déploiements automatisés (CI/CD)\n- Surveiller le bon fonctionnement, les erreurs et les coûts\n- Gérer les sauvegardes, les mises à jour et la sécurité des accès\n- Documenter les solutions et former l'équipe à leur utilisation\n6. Amélioration continue\n- Mesurer la fiabilité, la qualité et le coût des agents, puis les améliorer\n- Travailler avec l'équipe métier pour identifier de nouveaux processus à automatiser\nCompétences requises\n- Python\n- Développement d'agents IA avec des LLM (appel d'outils, orchestration de workflows)\n- PrestaShop / WordPress : modules, plugins, thèmes, API\n- Intégration d'API REST (boutiques, marketplaces, fournisseurs)\n- Bases de données (MySQL, PostgreSQL ou MongoDB)\n- Docker, Git, déploiement sur le cloud\n- Bonne compréhension des processus e-commerce (catalogue, stock, commandes)\nCompétences appréciées\n- Expérience de la gestion de stock et des marketplaces\n- Automatisation web (scraping, navigateur automatisé)\n- Expérience sur OVHcloud\n- CI/CD et supervision\nFormation et expérience\n- Diplôme d'ingénieur en informatique (Bac+5) ou équivalent",
+   "dateCreation": "2026-10-19T17:35:46.249Z",
+   "dateActualisation": "2026-10-21T10:32:35.986Z",
+   "lieuTravail": {
+    "libelle": "31 - TOULOUSE",
+    "latitude": 43.580451,
+    "longitude": 1.461257,
+    "codePostal": "31200",
+    "commune": "31555"
+   },
+   "romeCode": "M1889",
+   "romeLibelle": "Ingénieur / Ingénieure en Intelligence Artificielle (IA)",
+   "appellationlibelle": "Ingénieur / Ingénieure en Intelligence Artificielle (IA)",
+   "entreprise": {
+    "nom": "D.C.T FRANCE",
+    "entrepriseAdaptee": false
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "6 Mois",
+   "formations": [
+    {
+     "niveauLibelle": "Bac+5 et plus ou équivalents",
+     "commentaire": "Diplôme d'ingénieur en informatique",
+     "exigence": "E"
+    }
+   ],
+   "competences": [
+    {
+     "code": "508618",
+     "libelle": "Développer des modèles prédictifs pour l'analyse de données",
+     "exigence": "E"
+    },
+    {
+     "code": "508628",
+     "libelle": "Documenter les processus et les architectures d'IA",
+     "exigence": "E"
+    },
+    {
+     "code": "508617",
+     "libelle": "Optimiser les performances des systèmes d'IA",
+     "exigence": "E"
+    }
+   ],
+   "salaire": {
+    "commentaire": "selon expérience"
+   },
+   "dureeTravailLibelle": "35H/semaine\nTravail en journée",
+   "dureeTravailLibelleConverti": "Temps plein",
+   "alternance": false,
+   "contact": {},
+   "agence": {},
+   "nombrePostes": 1,
+   "deplacementCode": "1",
+   "deplacementLibelle": "Jamais Zone départementale",
+   "qualificationCode": "6",
+   "qualificationLibelle": "Employé qualifié",
+   "codeNAF": "46.43Z",
+   "secteurActivite": "46",
+   "secteurActiviteLibelle": "Commerce de gros (commerce interentreprises) d'appareils électroménagers",
+   "qualitesProfessionnelles": [
+    {
+     "libelle": "Organiser son travail selon les priorités et les objectifs",
+     "description": "Capacité à planifier, prioriser, anticiper des actions, en tenant compte des moyens, des ressources, des objectifs et du calendrier pour les réaliser."
+    },
+    {
+     "libelle": "Faire preuve de rigueur et de précision",
+     "description": "Capacité à réaliser des tâches en suivant avec exactitude les règles, les procédures, les instructions qui ont été fournies, sans réaliser d'erreur et à transmettre clairement des informations. Se montrer ponctuel et respectueux des règles de savoir-vivre usuelles."
+    },
+    {
+     "libelle": "Faire preuve de créativité, d'inventivité",
+     "description": "Capacité à créer, imaginer quelque chose de nouveau (nouveau produit, nouvelle solution, …)."
+    }
+   ],
+   "trancheEffectifEtab": "1 ou 2 salariés",
+   "origineOffre": {
+    "origine": "1",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/215KQXG"
+   },
+   "offresManqueCandidats": false,
+   "contexteTravail": {
+    "horaires": [
+     "35H/semaine\nTravail en journée"
+    ]
+   },
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "215KKPX",
+   "intitule": "Ingénieur IA senior - LLM, agents intelligents et cybersécurité (H/F)",
+   "description": "Ingénieur IA senior - LLM, agents intelligents et cybersécurité (H/F)\n\nFANTOM DETECTIVE - Projet Cimvex\nCDI à temps plein\nLieu : Poissy (78), Yvelines\nTélétravail possible, modalités à définir\nRémunération : 40 000 € brut annuel\nPrise de poste souhaitée : octobre 2026\n\nÀ PROPOS DE CIMVEX\n\nFANTOM DETECTIVE développe Cimvex, un système de cybersécurité fondé sur l'intelligence artificielle. Il vise à détecter les attaques informatiques, identifier les vulnérabilités et proposer des remédiations adaptées pour sécuriser les systèmes d'information.\n\nEn exploitant les logs, les configurations et les données des outils de sécurité, Cimvex doit aider les équipes à comprendre les menaces, prioriser les risques et déterminer les actions correctives. Les recommandations sont expliquées et les actions sensibles soumises à validation humaine.\n\nVOTRE RÔLE\n\nVous concevrez le moteur LLM et les agents intelligents de Cimvex, en collaboration avec le fondateur, expert Splunk et SOC, et un ingénieur spécialisé en machine learning et deep learning.\n\nVOS MISSIONS\n\n- Concevoir l'architecture LLM : choix des modèles, gestion du contexte, appels d'outils et réponses structurées.\n- Développer des agents pour analyser les alertes, interroger les outils autorisés et assister les investigations.\n- Construire une architecture RAG exploitant la documentation technique, les connaissances sur les menaces et les procédures de remédiation.\n- Mettre en œuvre les embeddings, la recherche vectorielle et hybride et le reranking.\n- Générer et valider des requêtes d'investigation et des règles de détection, notamment en SPL pour Splunk.\n- Contextualiser les événements et les vulnérabilités à partir des actifs concernés et des techniques MITRE ATT&CK.\n- Produire des recommandations de correction précisant leurs justifications, prérequis et impacts possibles.\n- Adapter les modèles par fine-tuning, notamment LoRA ou QLoRA, lorsque les évaluations en démontrent l'intérêt.\n- Mesurer les hallucinations, la pertinence des analyses et la fiabilité des appels d'outils.\n- Protéger les composants contre les injections de prompt, les fuites de données et les actions non autorisées.\n- Développer les API Python et participer au déploiement et au suivi en production.\n\nEXPERTISE ATTENDUE\n\nIA et développement :\n- Maîtrise des LLM, Transformers, réseaux de neurones et architectures RAG.\n- Expérience concrète des agents, du fine-tuning et de l'évaluation de modèles.\n- Pratique de PyTorch ou équivalent et de Hugging Face.\n- Très bonne maîtrise de Python, des API, de Git, Docker et des tests automatisés.\n- Compréhension des contraintes d'inférence : mémoire GPU, quantification, latence et coût.\n\nCybersécurité :\n- Bonne compréhension des activités SOC, de la détection et de la réponse à incident.\n- Capacité à interpréter des logs d'authentification, système, réseau et des alertes EDR.\n- Connaissance des attaques : compromission de comptes, élévation de privilèges, mouvements latéraux et exfiltration.\n- Compréhension des vulnérabilités, des CVE et des principes de remédiation.\n- La pratique de Splunk, SPL et MITRE ATT&CK constitue un atout.\n\nPROFIL ET CANDIDATURE\n\nAu moins 3 ans d'expérience professionnelle en IA, avec des réalisations significatives sur les LLM et une pratique concrète de la cybersécurité. Autonomie attendue en conception, développement et évaluation.\n\nFormation supérieure en IA, informatique, cybersécurité ou domaine proche, ou expérience équivalente. Français professionnel et anglais technique.\n\nTransmettez votre CV via France Travail et une courte présentation d'un projet : contribution personnelle, architecture et résultats. Code ou démonstration bienvenus, sans informations confidentielles.",
+   "dateCreation": "2026-10-19T15:31:09.149Z",
+   "dateActualisation": "2026-10-19T15:31:09.149Z",
+   "lieuTravail": {
+    "libelle": "78 - POISSY",
+    "latitude": 48.927303,
+    "longitude": 2.04262,
+    "codePostal": "78300",
+    "commune": "78498"
+   },
+   "romeCode": "M1889",
+   "romeLibelle": "Ingénieur / Ingénieure en Intelligence Artificielle (IA)",
+   "appellationlibelle": "Ingénieur / Ingénieure en Intelligence Artificielle (IA)",
+   "entreprise": {
+    "nom": "FANTOM DETECTIVE",
+    "entrepriseAdaptee": false
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "3 An(s)",
+   "formations": [
+    {
+     "niveauLibelle": "Bac+5 et plus ou équivalents",
+     "exigence": "E"
+    }
+   ],
+   "langues": [
+    {
+     "libelle": "Anglais",
+     "exigence": "S"
+    },
+    {
+     "libelle": "Français",
+     "exigence": "S"
+    }
+   ],
+   "competences": [
+    {
+     "code": "508618",
+     "libelle": "Développer des modèles prédictifs pour l'analyse de données",
+     "exigence": "S"
+    },
+    {
+     "code": "508617",
+     "libelle": "Optimiser les performances des systèmes d'IA",
+     "exigence": "S"
+    }
+   ],
+   "salaire": {
+    "libelle": "Annuel de 35000.0 Euros à 40000.0 Euros",
+    "complement1": "Primes",
+    "listeComplements": [
+     {
+      "code": "1",
+      "libelle": "Primes"
+     }
+    ]
+   },
+   "dureeTravailLibelle": "40H/semaine\nTravail en journée",
+   "dureeTravailLibelleConverti": "Temps plein",
+   "alternance": false,
+   "contact": {
+    "nom": "FANTOM DETECTIVE - M. Youcef MOHAMED MAHMOUD",
+    "coordonnees1": "Pour postuler, utiliser le lien suivant : https://candidat.francetravail.fr/offres/recherche/detail/215KKPX",
+    "courriel": "Pour postuler, utiliser le lien suivant : https://candidat.francetravail.fr/offres/recherche/detail/215KKPX"
+   },
+   "agence": {},
+   "nombrePostes": 1,
+   "deplacementCode": "3",
+   "deplacementLibelle": "Fréquents Zone départementale",
+   "qualificationCode": "9",
+   "qualificationLibelle": "Cadre",
+   "codeNAF": "62.02A",
+   "secteurActivite": "62",
+   "secteurActiviteLibelle": "Conseil en systèmes et logiciels informatiques",
+   "qualitesProfessionnelles": [
+    {
+     "libelle": "Faire preuve de leadership",
+     "description": "Capacité à mobiliser une équipe/des interlocuteurs et à les entraîner dans la poursuite d'un objectif partagé."
+    },
+    {
+     "libelle": "Faire preuve de curiosité, d'ouverture d'esprit",
+     "description": "Capacité à aller chercher au-delà de ce qui est donné à voir, à s'ouvrir sur la nouveauté et à investiguer pour comprendre et agir de façon appropriée."
+    },
+    {
+     "libelle": "Etre force de proposition",
+     "description": "Capacité à initier, imaginer des propositions nouvelles pour résoudre les problèmes identifiés ou améliorer une situation. Être proactif."
+    }
+   ],
+   "origineOffre": {
+    "origine": "1",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/215KKPX"
+   },
+   "offresManqueCandidats": false,
+   "contexteTravail": {
+    "horaires": [
+     "40H/semaine\nTravail en journée"
+    ]
+   },
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "215NMCX",
+   "intitule": "#TALENTINTECH2026 Expert.e cyber IA data science F/H",
+   "description": "***Rencontre directe dans le cadre du salon Talent In Tech le 5 Novembre 2026 de 9h30 à 16h30 à l'Azur Arena d'Antibes - rue Emile Hugues - 06600 ANTIBES***\nVous munir de plusieurs CV\n\nAu sein de la la Direction du Contrôle Interne et de la Sécurité Numérique (DCISN), l'ensemble des acteurs œuvrent pour la sécurité numérique afin de faire face à l'augmentation incessante du niveau de menace, en apportant de l'agilité dans la mise en place des postures de sécurisation des SI, de détection des tentatives de compromission, de contrôle de l'application des politiques et processus.\n\nRattaché(e) au département Cyber défense de la DCISN, vous intégrerez pôle SOC (8 collaborateurs) qui participe au dispositif de détection des activités malveillantes ayant trait à la fraude sur le système d'information de la DSI de la CNAF.\n\nVotre mission consistera à transformer de grands volumes de données en systèmes intelligents de prévention et de détection de la fraude, directement exploitables par les équipes métiers ! Pour ce faire, vous vous appuierez sur votre expertise cyber et sur l'utilisation de l'intelligence artificielle, en combinant Data Science avancée, Machine Learning, analyse comportementale et expertise fraude.\n\nMissions : \n\nAnalyser les traces cyber et investiguer les comportements frauduleux\nAnalyser les journaux de sécurité, les événements applicatifs et les traces d'utilisation des services web et des API pour identifier des activités suspectes ;\nReconstituer les enchaînements d'événements et caractériser les modes opératoires associés aux compromissions de comptes, aux usurpations d'identité, aux usages automatisés abusifs et aux détournements de services numériques à des fins frauduleuses ;\nConduire les investigations techniques en croisant les sources disponibles, distinguer les comportements légitimes des anomalies et des indices de fraude.\nConcevoir et faire évoluer la collecte et la corrélation des données\n\nEnrichir la détection par la CTI et les informations de compromission\nExploiter les outils et sources de CTI afin d'identifier les menaces, les indicateurs de compromission et les modes opératoires susceptibles d'alimenter des scénarios de fraude sur les services numériques.\nDévelopper des capacités de détection combinant expertise cyber, analyse de données et IA\n\nConstruire des variables pertinentes à partir des traces cyber et des parcours d'utilisation des services. Développer des approches supervisées et non supervisées : classification, détection d'anomalies, regroupement de comportements et calcul de scores de risque.\nIdentifier les signaux faibles, les comportements coordonnés et les relations entre différentes entités.\nIndustrialiser les dispositifs et améliorer leurs performances\n\nIntégrer les règles, traitements et modèles dans les outils de détection et d'investigation.\nAutomatiser les opérations répétitives de collecte, d'enrichissement et de préqualification.\nDéfinir les méthodes de validation et d'évaluation à partir des données historiques et des cas confirmés.\nProposer des améliorations sur les outils et processus utilisés lors de la détection et qualification des cas de fraude.\nApporter une expertise opérationnelle et garantir la maîtrise des usages\n\nCollaborer avec les équipes cybersécurité, lutte contre la fraude, métiers, données et développement pour comprendre les usages légitimes, qualifier les risques et définir les priorités de détection.\nProduire des restitutions claires et exploitables : synthèses d'investigation, descriptions de scénarios, documentation des règles et des modèles, recommandations d'amélioration des des dispositifs de surveillance et de sécurisation.\nGarantir l'explicabilité des résultats et documenter les sources.\n\nDes déplacements sur les autres sites de la CNAF sont possibles.\n\nBAC+5 et 5 ans d'expérience sur les compétences listées en cybersécurité, analyse de données, IA.",
+   "dateCreation": "2026-10-22T11:36:31.639Z",
+   "dateActualisation": "2026-10-23T11:13:09.311Z",
+   "lieuTravail": {
+    "libelle": "06 - VALBONNE",
+    "latitude": 43.622404,
+    "longitude": 7.046216,
+    "codePostal": "06560",
+    "commune": "06152"
+   },
+   "romeCode": "M1856",
+   "romeLibelle": "Expert / Experte en cybersécurité",
+   "appellationlibelle": "Expert / Experte en sécurité informatique (SSI)",
+   "entreprise": {
+    "nom": "SITE CNAF SOPHIA-ANTIPOLIS DOLINES",
+    "entrepriseAdaptee": false
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "5 An(s)",
+   "formations": [
+    {
+     "codeFormation": "31045",
+     "domaineLibelle": "Cybersécurité",
+     "niveauLibelle": "Bac+5 et plus ou équivalents",
+     "exigence": "E"
+    }
+   ],
+   "competences": [
+    {
+     "code": "300195",
+     "libelle": "Concevoir un logiciel, un système d'informations, une application",
+     "exigence": "S"
+    },
+    {
+     "code": "300495",
+     "libelle": "Evaluer le résultat de ses actions",
+     "exigence": "S"
+    },
+    {
+     "code": "300488",
+     "libelle": "Concevoir et gérer un projet",
+     "exigence": "S"
+    },
+    {
+     "libelle": "Exploiter des données CTI, IOC",
+     "exigence": "S"
+    },
+    {
+     "libelle": "Maitrise Python, SQL, GIT ",
+     "exigence": "S"
+    },
+    {
+     "libelle": "Maîtrise d'un SIEM : Splunk et du langage SPL",
+     "exigence": "S"
+    },
+    {
+     "libelle": "Sécurité des applications web et des API ",
+     "exigence": "S"
+    },
+    {
+     "libelle": "LLM, IA générative et harnais d'agents IA",
+     "exigence": "S"
+    }
+   ],
+   "salaire": {
+    "libelle": "Annuel de 44700.0 Euros à 57000.0 Euros - sur 14 mois",
+    "commentaire": "sur 14 mois",
+    "complement1": "CSE",
+    "complement2": "Intéressement / participation",
+    "listeComplements": [
+     {
+      "code": "9",
+      "libelle": "CSE"
+     },
+     {
+      "code": "10",
+      "libelle": "Intéressement / participation"
+     },
+     {
+      "code": "6",
+      "libelle": "Titres restaurant / Prime de panier"
+     }
+    ]
+   },
+   "dureeTravailLibelle": "35H/semaine\nTravail en journée",
+   "dureeTravailLibelleConverti": "Temps plein",
+   "alternance": false,
+   "contact": {
+    "coordonnees1": "http://mesevenementsemploi.francetravail.fr/mes-evenements-emploi/evenement/772750?at_medium=CMP&at_campaign=DSIMonstreuil&at_cmp_indicateur1=PromotionEvenementConseiller&at_cmp_indicateur2=Multicanal",
+    "urlPostulation": "http://mesevenementsemploi.francetravail.fr/mes-evenements-emploi/evenement/772750?at_medium=CMP&at_campaign=DSIMonstreuil&at_cmp_indicateur1=PromotionEvenementConseiller&at_cmp_indicateur2=Multicanal"
+   },
+   "agence": {},
+   "nombrePostes": 1,
+   "accessibleTH": false,
+   "qualificationCode": "9",
+   "qualificationLibelle": "Cadre",
+   "codeNAF": "84.30C",
+   "secteurActivite": "84",
+   "secteurActiviteLibelle": "Distribution sociale de revenus",
+   "qualitesProfessionnelles": [
+    {
+     "libelle": "Avoir l'esprit d'équipe",
+     "description": "Capacité à travailler et à se coordonner avec les autres au sein de l'entreprise pour réaliser les objectifs fixés."
+    },
+    {
+     "libelle": "Faire preuve de rigueur et de précision",
+     "description": "Capacité à réaliser des tâches en suivant avec exactitude les règles, les procédures, les instructions qui ont été fournies, sans réaliser d'erreur et à transmettre clairement des informations. Se montrer ponctuel et respectueux des règles de savoir-vivre usuelles."
+    }
+   ],
+   "trancheEffectifEtab": "100 à 199 salariés",
+   "origineOffre": {
+    "origine": "1",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/215NMCX"
+   },
+   "offresManqueCandidats": false,
+   "contexteTravail": {
+    "horaires": [
+     "35H/semaine\nTravail en journée"
+    ]
+   },
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "215MRKD",
+   "intitule": "1 AVOCAT/JURISTE EN DROIT BANCAIRE ET FINANCIER - Middle à Sénior (H/F)",
+   "description": "Cabinet de conseil de 1er plan basé en Principauté de Monaco, recherche dans le cadre de son développement :\n\n1 AVOCAT/JURISTE EN DROIT BANCAIRE ET FINANCIER - Niveau middle à senior (H/F)\nPoste basé Monaco - CDI - 39H - Statut cadre + statut de salarié Monégasque\n75-90K€ annuels bruts selon profil \n\nMISSION :\n\nRattaché hiérarchiquement aux associés, vous serez amené à collaborer de manière fonctionnelle avec tout autre collaborateur du Cabinet. \n\nAu sein d'une équipe à taille humaine, vous interviendrez pour une clientèle d'entreprises sur des dossiers relevant de problématiques en droit bancaire/financier et réglementaire à Monaco.\n\nVous réaliserez des missions de nature juridique telles que des consultations, due diligences, gestion de projets en droit monégasque de type : distribution de produits et de services financiers, financement d'un projet ou d'un actif immobilier, implantation d'une société de gestion, consultation dans le rapprochement d'établissements bancaires, etc. \n\nVous serez amené à encadrer et superviser des collaborateurs sur les missions selon votre niveau de séniorité.\n\nPROFIL :\n\nDe formation juridique supérieure de type Master 2 en droit bancaire ou équivalent, et/ou CAPA / CRFPA, idéalement complétée par un diplôme en gestion/management (ESC, MSG, MSTCF) et/ou anglo-saxon (MBA, LLM, Master of Taxation).\nVous capitalisez de 5 à 10 ans d'expérience en conseil en droit bancaire et financier acquise au sein d'un cabinet d'avocats international. \nTrès sensibilisé à la qualité de service, pragmatique et orienté résultat, vous êtes force de proposition et êtes enclin au travail d'équipe. Rigoureux, structuré et synthétique, vous vous distinguez par votre rigueur intellectuelle, votre autonomie et de très bonnes capacités d'analyse.\nTrès bon niveau d'anglais (écrit et oral) requis pour ce poste.",
+   "dateCreation": "2026-10-21T14:31:27.809Z",
+   "dateActualisation": "2026-10-21T14:31:28.261Z",
+   "lieuTravail": {
+    "libelle": "Monaco"
+   },
+   "romeCode": "K1903",
+   "romeLibelle": "Juriste",
+   "appellationlibelle": "Juriste de banque",
+   "entreprise": {
+    "nom": "GLOBAL RH CONSULTING",
+    "description": "Pour une structure basée en Principauté de Monaco, GLOBAL RH CONSULTING recherche:",
+    "entrepriseAdaptee": false
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "5 An(s)",
+   "langues": [
+    {
+     "libelle": "Anglais",
+     "exigence": "S"
+    }
+   ],
+   "competences": [
+    {
+     "code": "124627",
+     "libelle": "Apporter des conseils sur des procédures de résolution de litiges",
+     "exigence": "S"
+    },
+    {
+     "libelle": "Master 2 en droit bancaire ou équivalent,",
+     "exigence": "S"
+    },
+    {
+     "libelle": "CAPA / CRFPA",
+     "exigence": "S"
+    },
+    {
+     "libelle": "anglo-saxon (MBA, LLM, Master of Taxation",
+     "exigence": "S"
+    },
+    {
+     "libelle": "diplôme en gestion/management (ESC, MSG, MSTCF) ",
+     "exigence": "S"
+    }
+   ],
+   "salaire": {
+    "libelle": "Annuel de 75000.0 Euros à 90000.0 Euros - Statut cadre + statut de salarié Monégasque",
+    "commentaire": "Statut cadre + statut de salarié Monégasque"
+   },
+   "dureeTravailLibelle": "39H/semaine\nTravail en journée",
+   "dureeTravailLibelleConverti": "Temps plein",
+   "alternance": false,
+   "contact": {
+    "nom": "GLOBAL RH CONSULTING - M. Christophe BENDAYAN",
+    "coordonnees1": "Pour postuler, utiliser le lien suivant : https://candidat.francetravail.fr/offres/recherche/detail/215MRKD",
+    "courriel": "Pour postuler, utiliser le lien suivant : https://candidat.francetravail.fr/offres/recherche/detail/215MRKD"
+   },
+   "agence": {},
+   "nombrePostes": 1,
+   "deplacementCode": "1",
+   "deplacementLibelle": "Jamais Zone départementale",
+   "qualificationCode": "9",
+   "qualificationLibelle": "Cadre",
+   "codeNAF": "70.22Z",
+   "secteurActivite": "70",
+   "secteurActiviteLibelle": "Conseil pour les affaires et autres conseils de gestion",
+   "trancheEffectifEtab": "1 ou 2 salariés",
+   "origineOffre": {
+    "origine": "1",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/215MRKD"
+   },
+   "offresManqueCandidats": false,
+   "contexteTravail": {
+    "horaires": [
+     "39H/semaine\nTravail en journée"
+    ]
+   },
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "215LFRP",
+   "intitule": "Ingénieur R&D IA (H/F)",
+   "description": "Vous travaillerez dans une Startup Toulousaine spécialisée dans le développement et la recherche IA neuro-symbolique. \n\nActivités principales\n- Concevoir et développer une plateforme qui améliore automatiquement des programmes à base de LLM, par apprentissage en contexte (prompts, exemples few-shot) et boucle d'optimisation itérative.\n- Concevoir les stratégies d'optimisation et les fonctions d'évaluation (LLM-as-judge, métriques de qualité).\n- Exploiter finement les LLM : sorties structurées, raisonnement, agents, appels d'outils.\n- Valider la plateforme sur des benchmarks et documenter les résultats.\n\nResponsabilités\n- Livrer en 4 mois une plateforme fonctionnelle, testée et documentée.\n- Justifier les choix techniques par des résultats mesurés.\n- Assurer la transmission à l'équipe en fin de mission.\n\nConditions d'exercice\n- CDI, temps plein, statut cadre.\n- Salaire : 2 530 à 2 987 € brut mensuel selon expérience (Syntec, position 2.1).\n\nProfil \nIngénieur, master ou doctorat en informatique ou IA \nBonne connaissances en math et en science des données\nTrès bonne connaissance des LLM (Prompting, sorties structurées, agents, évaluation) \nBon niveau en Python \nAnglais technique\n\nConditions horaires\n- 35 h par semaine, horaires flexibles avec une plage commune (10 h à 16 h).\n\nEnvironnement de travail\n- Télétravail complet, résidence en Occitanie, une journée par mois en présentiel à Toulouse.\n- Équipe à taille humaine développant un framework open source de programmes LLM.",
+   "dateCreation": "2026-10-20T11:59:00.594Z",
+   "dateActualisation": "2026-10-22T10:28:07.726Z",
+   "lieuTravail": {
+    "libelle": "31 - TOULOUSE",
+    "latitude": 43.585663,
+    "longitude": 1.466058,
+    "codePostal": "31400",
+    "commune": "31555"
+   },
+   "romeCode": "M1827",
+   "romeLibelle": "Ingénieur / Ingénieure DevOps",
+   "appellationlibelle": "Ingénieur / Ingénieure de développement informatique",
+   "entreprise": {
+    "nom": "SYNALINKS",
+    "entrepriseAdaptee": false
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "1 An(s) - Sur le même poste",
+   "experienceCommentaire": "Sur le même poste",
+   "langues": [
+    {
+     "libelle": "Anglais",
+     "exigence": "E"
+    },
+    {
+     "libelle": "Français",
+     "exigence": "S"
+    }
+   ],
+   "competences": [
+    {
+     "code": "300188",
+     "libelle": "Rédiger un cahier des charges, des spécifications techniques",
+     "exigence": "S"
+    },
+    {
+     "code": "484485",
+     "libelle": "Configurer et optimiser des systèmes DevOps",
+     "exigence": "S"
+    },
+    {
+     "code": "300242",
+     "libelle": "Déterminer des mesures correctives",
+     "exigence": "S"
+    },
+    {
+     "libelle": " très bonne connaissance des LLM ",
+     "exigence": "E"
+    }
+   ],
+   "salaire": {
+    "libelle": "Mensuel de 2530.0 Euros à 2987.0 Euros"
+   },
+   "dureeTravailLibelle": "35H/semaine\nTravail en journée",
+   "dureeTravailLibelleConverti": "Temps plein",
+   "alternance": false,
+   "contact": {},
+   "agence": {},
+   "nombrePostes": 1,
+   "deplacementCode": "2",
+   "deplacementLibelle": "Ponctuels Zone régionale",
+   "qualificationCode": "9",
+   "qualificationLibelle": "Cadre",
+   "codeNAF": "62.01Z",
+   "secteurActivite": "62",
+   "secteurActiviteLibelle": "Programmation informatique",
+   "qualitesProfessionnelles": [
+    {
+     "libelle": "Avoir l'esprit d'équipe",
+     "description": "Capacité à travailler et à se coordonner avec les autres au sein de l'entreprise pour réaliser les objectifs fixés."
+    },
+    {
+     "libelle": "Etre force de proposition",
+     "description": "Capacité à initier, imaginer des propositions nouvelles pour résoudre les problèmes identifiés ou améliorer une situation. Être proactif."
+    },
+    {
+     "libelle": "Faire preuve de créativité, d'inventivité",
+     "description": "Capacité à créer, imaginer quelque chose de nouveau (nouveau produit, nouvelle solution, …)."
+    }
+   ],
+   "trancheEffectifEtab": "0 salarié (n'ayant pas d'effectif au 31/12 mais ayant employé des salariés au cours de l'année de référence)",
+   "origineOffre": {
+    "origine": "1",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/215LFRP"
+   },
+   "offresManqueCandidats": false,
+   "contexteTravail": {
+    "horaires": [
+     "35H/semaine\nTravail en journée"
+    ]
+   },
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8102339",
+   "intitule": "INGÉNIEUR IA PYTHON - SOLUTIONS LLM & RAG (H/F)",
+   "description": "descriptif du posteAu sein d'une équipe DSI à taille humaine (4 développeurs), vous travaillerez en binôme avec le Product Owner. Votre mission : être le référent technique pour concevoir, développer et mettre en production des solutions basées sur l'IA générative afin d'outiller les experts métiers sur le terrain.Vos futures missions (Faire du concret avec l'IA) :Ici, pas de recherche fondamentale ! Vous utilisez votre background de développeur pour assem",
+   "dateCreation": "2026-10-20T13:31:29.417Z",
+   "dateActualisation": "2026-10-23T13:53:12.081Z",
+   "lieuTravail": {
+    "libelle": "34 - Sète",
+    "codePostal": "34200",
+    "commune": "34301"
+   },
+   "romeCode": "M1873",
+   "romeLibelle": "Spécialiste IA embarquée",
+   "appellationlibelle": "Spécialiste IA embarquée",
+   "entreprise": {},
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "D",
+   "experienceLibelle": "Débutant accepté",
+   "salaire": {},
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8102339",
+    "partenaires": [
+     {
+      "nom": "DIRECTEMPLOI",
+      "url": "https://www.directemploi.com/candidatOffre/56563038?utm_source=pole-emploi&utm_medium=referral&utm_campaign=Pôle-Emploi",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/directemploi80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  }
+ ],
+ "filtresPossibles": [
+  {
+   "filtre": "typeContrat",
+   "agregation": [
+    {
+     "valeurPossible": "CDI",
+     "nbResultats": 6
+    }
+   ]
+  },
+  {
+   "filtre": "experience",
+   "agregation": [
+    {
+     "valeurPossible": "4",
+     "nbResultats": 1
+    },
+    {
+     "valeurPossible": "1",
+     "nbResultats": 1
+    },
+    {
+     "valeurPossible": "2",
+     "nbResultats": 2
+    },
+    {
+     "valeurPossible": "3",
+     "nbResultats": 2
+    }
+   ]
+  },
+  {
+   "filtre": "qualification",
+   "agregation": [
+    {
+     "valeurPossible": "0",
+     "nbResultats": 1
+    },
+    {
+     "valeurPossible": "9",
+     "nbResultats": 4
+    },
+    {
+     "valeurPossible": "X",
+     "nbResultats": 1
+    }
+   ]
+  },
+  {
+   "filtre": "natureContrat",
+   "agregation": [
+    {
+     "valeurPossible": "E1",
+     "nbResultats": 6
+    }
+   ]
+  }
+ ]
+}

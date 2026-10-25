@@ -1,0 +1,231 @@
+{
+ "resultats": [
+  {
+   "id": "215QCJR",
+   "intitule": "Data Scientist Python / Machine Learning (H/F)",
+   "description": "Qui sommes-nous ?\n\nNous sommes passionnés par les nouvelles technologies, et vous ?\nRejoindre Amiltone, c'est intégrer des équipes dynamiques et soudées dans le cadre de projets novateurs et\nambitieux. Nous relevons les challenges techniques de nos clients et les accompagnons dans leur transformation\ndigitale.\n\nPourquoi choisir Amiltone ?\n\nAmiltone, plus qu'une entreprise, un état d'esprit ! Notre objectif ? Votre épanouissement professionnel !\nNous avons à cœur de :\nVous accompagner au mieux au travers d'un suivi personnalisé\nVous faire monter en compétences en vous proposant des formations tout au long de votre carrière\nComprendre vos besoins et respecter nos engagements\nVous proposer des missions de qualité avec des technologies innovantes\nCultiver votre potentiel grâce à notre programme de développement personnel Addvise\nVotre bien-être passe aussi par des activités extraprofessionnelles, c'est pourquoi nous vous proposons des séances\nsportives animées par nos coachs, soirées pour se retrouver et animations (à l'agence ou en visio), Gaming nights...\n\nVos missions ?\nIntégré à nos équipes sur nos projets au forfait ou chez nos clients, vous interviendrez sur un projet de Data Scientist.\nEn tant que Data Scientist (H/F), vous assurez les missions suivantes :\n\nAu sein d'une équipe projet, tu interviendras sur les activités suivantes :\n\nCollecter, nettoyer et préparer les données nécessaires aux analyses.\n\nExplorer les données et identifier les variables pertinentes pour répondre aux besoins métiers.\n\nConcevoir, entraîner et évaluer des modèles statistiques et de Machine Learning en Python.\n\nDévelopper des approches de prédiction, de classification ou de détection d'anomalies.\n\nCréer des tableaux de bord sous Power BI pour restituer les résultats et suivre les indicateurs.\n\nCollaborer avec les équipes métiers et techniques pour faire évoluer les solutions.\n\nDocumenter tes travaux et présenter tes résultats de manière claire.\n\nLa stack technique :\nPython\nPandas\nNumPy\nPower BI\nSQL\nSnowflake\n\nAlors ? Prêt à devenir Amiltonien ?\nN'hésitez pas à postuler si vous vous reconnaissez :\n\n - Diplômé d'une école d'ingénieur ou d'un Master en Data Science, informatique ou mathématiques appliquées, vous disposez d'une première expérience significative en Data Science, allant de 2 à 3 ans d'expériences. \n\n- Vous maîtrisez Python et ses bibliothèques d'analyse et de modélisation, notamment Pandas, NumPy et Scikit-learn. Tu utilises SQL pour exploiter les données et Power BI pour les visualiser.\n\n- Une connaissance de Snowflake serait un plus. Des compétences en Deep Learning, séries temporelles ou Computer Vision seront également appréciées.\n\n- Rigoureux et méthodique, vous savez analyser une problématique, comparer différentes approches et expliquer tes résultats. \n\n- Vous appréciez le travail en équipe et les échanges avec les utilisateurs.\n- Vous aimez découvrir de nouveaux contextes fonctionnels et comprendre les objectifs des applications que vous développez.\n\nOutre vos compétences techniques, nous nous intéressons également à votre potentiel et votre motivation.\n\nNos postes sont ouverts aux personnes en situation de handicap.",
+   "dateCreation": "2026-10-23T15:40:16.605Z",
+   "dateActualisation": "2026-10-23T16:17:44.957Z",
+   "lieuTravail": {
+    "libelle": "69 - VILLEURBANNE",
+    "latitude": 45.766184,
+    "longitude": 4.877063,
+    "codePostal": "69100",
+    "commune": "69266"
+   },
+   "romeCode": "M1889",
+   "romeLibelle": "Ingénieur / Ingénieure en Intelligence Artificielle (IA)",
+   "appellationlibelle": "Développeur / Développeuse Machine Learning",
+   "entreprise": {
+    "nom": "AMILTONE"
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "3 An(s)",
+   "formations": [
+    {
+     "niveauLibelle": "Bac+5 et plus ou équivalents",
+     "exigence": "E"
+    }
+   ],
+   "competences": [
+    {
+     "code": "508618",
+     "libelle": "Développer des modèles prédictifs pour l'analyse de données",
+     "exigence": "S"
+    },
+    {
+     "code": "508628",
+     "libelle": "Documenter les processus et les architectures d'IA",
+     "exigence": "S"
+    },
+    {
+     "code": "508617",
+     "libelle": "Optimiser les performances des systèmes d'IA",
+     "exigence": "S"
+    },
+    {
+     "libelle": "pandas",
+     "exigence": "E"
+    },
+    {
+     "libelle": "snowflake",
+     "exigence": "E"
+    },
+    {
+     "libelle": "Python",
+     "exigence": "E"
+    },
+    {
+     "libelle": "NumPy",
+     "exigence": "E"
+    },
+    {
+     "libelle": "Power BI",
+     "exigence": "E"
+    },
+    {
+     "libelle": "SQL",
+     "exigence": "E"
+    }
+   ],
+   "salaire": {
+    "libelle": "Annuel de 35000.0 Euros à 45000.0 Euros - ATTENTION  : Rémunération Selon profil",
+    "commentaire": "ATTENTION  : Rémunération Selon profil",
+    "complement1": "CSE",
+    "complement2": "Intéressement / participation",
+    "listeComplements": [
+     {
+      "code": "9",
+      "libelle": "CSE"
+     },
+     {
+      "code": "10",
+      "libelle": "Intéressement / participation"
+     }
+    ]
+   },
+   "dureeTravailLibelle": "35H/semaine\nTravail en journée",
+   "dureeTravailLibelleConverti": "Temps plein",
+   "alternance": false,
+   "contact": {
+    "nom": "AMILTONE - Mme Camille LEGRAND",
+    "coordonnees1": "Pour postuler, utiliser le lien suivant : https://candidat.francetravail.fr/offres/recherche/detail/215QCJR",
+    "courriel": "Pour postuler, utiliser le lien suivant : https://candidat.francetravail.fr/offres/recherche/detail/215QCJR"
+   },
+   "agence": {},
+   "nombrePostes": 3,
+   "qualificationCode": "9",
+   "qualificationLibelle": "Cadre",
+   "codeNAF": "62.01Z",
+   "secteurActivite": "62",
+   "secteurActiviteLibelle": "Programmation informatique",
+   "qualitesProfessionnelles": [
+    {
+     "libelle": "Etre à l'écoute, faire preuve d'empathie",
+     "description": "Capacité à écouter activement, réceptionner des informations et messages, faire preuve d'ouverture d'esprit et de diplomatie."
+    },
+    {
+     "libelle": "Faire preuve de rigueur et de précision",
+     "description": "Capacité à réaliser des tâches en suivant avec exactitude les règles, les procédures, les instructions qui ont été fournies, sans réaliser d'erreur et à transmettre clairement des informations. Se montrer ponctuel et respectueux des règles de savoir-vivre usuelles."
+    },
+    {
+     "libelle": "Etre force de proposition",
+     "description": "Capacité à initier, imaginer des propositions nouvelles pour résoudre les problèmes identifiés ou améliorer une situation. Être proactif."
+    }
+   ],
+   "trancheEffectifEtab": "200 à 249 salariés",
+   "origineOffre": {
+    "origine": "1",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/215QCJR"
+   },
+   "contexteTravail": {
+    "horaires": [
+     "35H/semaine\nTravail en journée"
+    ]
+   },
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": true
+  },
+  {
+   "id": "8167621",
+   "intitule": "DÉVELOPPEUR POWER BI F/H CDD - H/F",
+   "description": "Description :\n\n\nAu sein d'une équipe réunissant des Business Analysts et des experts Power BI, vous travaillerez en étroite collaboration avec les équipes métier et les équipes Data.\n \nÀ ce titre, vous serez amené(e) à :\n \nCOMPRENDRE LES BESOINS MÉTIER ET CONCEVOIR LES SOLUTIONS ADAPTÉES\n\n *\nÉchanger avec les Business Analysts et les équipes opérationnelles pour comprendre leurs besoins en matière de reporting et d'analyse.\n\n *\nTraduire ces besoins en exigences fonctionnelles et proposer des visualisations pertinentes.\n\n *\nConcevoir des tableaux de bord clairs, ergonomiques et adaptés aux enjeux de pilotage de nos clients.\n\nDÉVELOPPER ET FAIRE ÉVOLUER LES TABLEAUX DE BORD POWER BI\n\n *\nConcevoir, développer et maintenir des rapports et dashboards sous Power BI.\n\n *\nExploiter et transformer les données disponibles à l'aide de Power Query et DAX.\n\n *\nUtiliser les données préparées et mises à disposition par nos équipes Data Engineering au sein de notre Data Warehouse.\n\n *\nFaire évoluer les reportings existants et réaliser des analyses ad hoc selon les besoins métier.\n\nGARANTIR LA QUALITÉ ET LA FIABILITÉ DES LIVRABLES\n\n *\nVérifier la cohérence des données, des indicateurs et des visualisations.\n\n *\nRéaliser les tests nécessaires avant chaque livraison afin de garantir des tableaux de bord fiables et fonctionnels.\n\n *\nCorriger les anomalies identifiées et améliorer continuellement l'expérience utilisateur.\n\n *\nDocumenter les développements et assurer le suivi des évolutions réalisées.\n\nCOLLABORER AVEC LES ÉQUIPES MÉTIER ET TECHNIQUES\n\n *\nTravailler main dans la main avec les Business Analysts pour assurer la bonne compréhension des demandes et la qualité des livrables.\n\n *\nCollaborer avec un Lead Développeur Power BI sur les problématiques techniques plus complexes.\n\n *\nContribuer à une organisation collaborative, en favorisant les échanges directs, la réactivité et le respect des engagements.\n\n\n  \n  \nProfil recherché :\n  \n  \nIssu(e) d'une formation supérieure en informatique, data, Business Intelligence ou équivalent, vous avez acquis une première expérience en développement de tableaux de bord Power BI, dans le cadre d'un stage, d'une alternance ou d'une première expérience professionnelle.\n \nVOS COMPÉTENCES TECHNIQUES :\n\n *\nBonne maîtrise de Power BI et de la conception de tableaux de bord.\n\n *\nConnaissance de Power Query et du langage DAX.\n\n *\nCompréhension des principes de modélisation et de transformation des données.\n\n *\nCapacité à exploiter des données issues d'un Data Warehouse.\n\nMAIS AU-DELÀ DE VOS COMPÉTENCES TECHNIQUES, C'EST VOTRE APPROCHE DU MÉTIER QUI FERA LA DIFFÉRENCE.\nNous recherchons avant tout une personne qui :\n\n *\nS'intéresse aux enjeux business et cherche à comprendre l'utilisation concrète de ses tableaux de bord.\n\n *\nSait échanger avec des interlocuteurs non techniques et traduire leurs besoins en solutions adaptées.\n\n *\nAccorde une grande importance à la fiabilité des données, au sens du détail et à la qualité du travail livré.\n\n *\nA le réflexe de tester ses développements et de s'assurer qu'ils répondent réellement aux attentes.\n\n *\nApprécie le travail en équipe, communique facilement et fait preuve de réactivité et d'autonomie.\n\n \nVOUS N'AVEZ PAS BESOIN D'ÊTRE EXPERT(E) EN DÉVELOPPEMENTS DAX COMPLEXES POUR RÉUSSIR DANS CE POSTE.\nNos équipes Data Engineering préparent et structurent progressivement les données en amont, vous permettant de vous concentrer sur la conception des tableaux de bord et leur valeur ajoutée pour les utilisateurs.\n \nPOURQUOI NOUS REJOINDRE ?\n\n * \nDES PROJETS CONCRETS : contribuez aux outils de pilotage de la performance commerciale de grandes marques telles que Samsung ou L'Oréal.\n * \nUN ENVIRONNEMENT COLLABORATIF : travaillez au quotidien avec des Business Analysts, un Lead Développeur Power BI et des équipes Data Engineering.\n * \nUN ACCOMPAGNEMENT TECHNIQUE : développez vos compétences aux côtés d'experts et découvrez un environnement Data structuré autour d'un Data Warehouse et de technologies telles que Cube.\n * \nUN POSTE À FORTE DIMENSION MÉTIER : mesurez directement l'utilité de vos réalisations auprès des équipes opérationnelles.\n\nENVIE DE METTRE VOS COMPÉTENCES POWER BI AU SERVICE DE PROJETS CONCRETS ET DE CRÉER DES OUTILS QUI FONT RÉELLEMENT LA DIFFÉRENCE POUR LEURS UTILISATEURS ? REJOIGNEZ-NOUS !",
+   "dateCreation": "2026-10-22T19:34:14.616Z",
+   "dateActualisation": "2026-10-25T19:34:06.542Z",
+   "lieuTravail": {
+    "libelle": "92 - Neuilly-sur-Seine",
+    "codePostal": "92200",
+    "commune": "92051"
+   },
+   "romeCode": "M1824",
+   "romeLibelle": "Développeur / Développeuse décisionnel - Business Intelligence",
+   "appellationlibelle": "Développeur(se) décisionnel - Business Intelligence",
+   "entreprise": {
+    "nom": "GLOBE GROUPE"
+   },
+   "typeContrat": "CDD",
+   "typeContratLibelle": "CDD - 18 Mois",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "1 An(s)",
+   "salaire": {
+    "libelle": "Annuel de 38000.0 Euros à 45000.0 Euros"
+   },
+   "dureeTravailLibelle": "\nTravail en journée",
+   "complementExercice": "Temps plein",
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "codeNAF": "70.22Z",
+   "secteurActivite": "70",
+   "secteurActiviteLibelle": "Conseil pour les affaires et autres conseils de gestion",
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8167621",
+    "partenaires": [
+     {
+      "nom": "SOFTY",
+      "url": "https://techsell.softy.pro/offre/225987?idt=5&h=2259870",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/softy80.png"
+     }
+    ]
+   },
+   "contexteTravail": {
+    "horaires": [
+     "\nTravail en journée"
+    ]
+   },
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  }
+ ],
+ "filtresPossibles": [
+  {
+   "filtre": "typeContrat",
+   "agregation": [
+    {
+     "valeurPossible": "CDD",
+     "nbResultats": 1
+    },
+    {
+     "valeurPossible": "CDI",
+     "nbResultats": 1
+    }
+   ]
+  },
+  {
+   "filtre": "experience",
+   "agregation": [
+    {
+     "valeurPossible": "2",
+     "nbResultats": 2
+    }
+   ]
+  },
+  {
+   "filtre": "qualification",
+   "agregation": [
+    {
+     "valeurPossible": "9",
+     "nbResultats": 1
+    },
+    {
+     "valeurPossible": "X",
+     "nbResultats": 1
+    }
+   ]
+  },
+  {
+   "filtre": "natureContrat",
+   "agregation": [
+    {
+     "valeurPossible": "E1",
+     "nbResultats": 2
+    }
+   ]
+  }
+ ]
+}

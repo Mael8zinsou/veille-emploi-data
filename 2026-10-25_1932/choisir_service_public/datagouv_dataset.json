@@ -1,0 +1,622 @@
+{
+ "access_audiences": [],
+ "access_type": "open",
+ "access_type_reason": null,
+ "access_type_reason_category": null,
+ "acronym": "CSP",
+ "archived": null,
+ "authorization_request_url": null,
+ "badges": [],
+ "contact_points": [],
+ "created_at": "2022-09-15T11:00:14.610000+00:00",
+ "deleted": null,
+ "description": "Description des données principales contenues dans les offres d’emploi diffusées sur le site Choisir le Service Public.\nIl s’agit de données accessibles par les utilisateurs du site choisirleservicepublic.gouv.fr\n\nLes offres d’emploi diffusées par Choisir le Service Public proviennent de deux sources :\n- Les offres déposées directement sur le site par les employeurs publics ;\n- Les offres transmises à Choisir le Service Public par des sites partenaires pour diffusion ;\n\nLes données publiées sur les offres d’emploi diffusées par Choisir le Service Public sont des données brutes et sont mises à jour à une fréquence hebdomadaire.\n\nLe jeu de données contient également les référentiels des métiers, des domaines et des spécialités de diplôme .",
+ "description_short": null,
+ "doi": null,
+ "extras": {},
+ "featured": false,
+ "frequency": "weekly",
+ "frequency_date": "2022-09-22T14:51:21+00:00",
+ "geopf": null,
+ "harvest": null,
+ "id": "6322e99e12175f7eb26ff465",
+ "internal": {
+  "created_at_internal": "2022-09-15T11:00:14.610000+00:00",
+  "last_modified_internal": "2026-10-19T06:01:04.457000+00:00"
+ },
+ "last_modified": "2026-10-19T06:01:04.457000+00:00",
+ "last_update": "2026-10-19T06:01:04.457000+00:00",
+ "license": "lov2",
+ "metrics": {
+  "dataservices": 1,
+  "discussions": 6,
+  "discussions_open": 6,
+  "followers": 3,
+  "followers_by_months": {
+   "2024-08": 0,
+   "2024-09": 0,
+   "2024-10": 1,
+   "2024-11": 0,
+   "2024-12": 0,
+   "2025-01": 0,
+   "2025-02": 0,
+   "2025-03": 0,
+   "2025-04": 0,
+   "2025-05": 0,
+   "2025-06": 0,
+   "2025-07": 0,
+   "2025-08": 0
+  },
+  "resources_downloads": 42509,
+  "reuses": 2,
+  "reuses_by_months": {
+   "2025-07": 0,
+   "2025-08": 0,
+   "2025-09": 0,
+   "2025-10": 0,
+   "2025-11": 0,
+   "2025-12": 0,
+   "2026-01": 0,
+   "2026-02": 0,
+   "2026-03": 0,
+   "2026-04": 0,
+   "2026-05": 0,
+   "2026-06": 0,
+   "2026-07": 1
+  },
+  "views": 48033
+ },
+ "organization": {
+  "acronym": "DGAFP",
+  "badges": [
+   {
+    "kind": "public-service"
+   },
+   {
+    "kind": "certified"
+   }
+  ],
+  "class": "Organization",
+  "id": "5c1b60038b4c41685320f5bd",
+  "logo": "https://udata-avatars.s3.rbx.io.cloud.ovh.net/40/ddacaa4b9442429cc5aeb3942ffd36.jpg",
+  "logo_thumbnail": "https://udata-avatars.s3.rbx.io.cloud.ovh.net/40/ddacaa4b9442429cc5aeb3942ffd36-100.jpg",
+  "name": "Direction Générale de l'Administration et de la Fonction Publique",
+  "page": "https://www.data.gouv.fr/organizations/direction-generale-de-ladministration-et-de-la-fonction-publique",
+  "permissions": {
+   "delete": false,
+   "edit": false,
+   "harvest": false,
+   "members": false,
+   "private": false
+  },
+  "slug": "direction-generale-de-ladministration-et-de-la-fonction-publique",
+  "uri": "https://www.data.gouv.fr/api/1/organizations/direction-generale-de-ladministration-et-de-la-fonction-publique/"
+ },
+ "owner": null,
+ "page": "https://www.data.gouv.fr/datasets/les-offres-diffusees-sur-choisir-le-service-public",
+ "permissions": {
+  "delete": false,
+  "edit": false,
+  "edit_resources": false
+ },
+ "private": false,
+ "quality": {
+  "all_resources_available": true,
+  "dataset_description_quality": true,
+  "has_open_format": true,
+  "has_resources": true,
+  "license": true,
+  "resources_documentation": true,
+  "score": 1.0,
+  "spatial": true,
+  "temporal_coverage": true,
+  "update_frequency": true,
+  "update_fulfilled_in_time": true
+ },
+ "resources": [
+  {
+   "checksum": {
+    "type": "sha1",
+    "value": "5b369fe03321cccaf52e8bdf5dd44e09152cf0cc"
+   },
+   "created_at": "2026-01-12T07:00:16.387000+00:00",
+   "description": null,
+   "extras": {
+    "analysis:check_id": 55401548,
+    "analysis:error": "File too large to download",
+    "analysis:last-modified-at": "2026-10-19T07:05:09+00:00",
+    "analysis:last-modified-detection": "last-modified-header",
+    "analysis:parsing:finished_at": "2026-08-24T06:01:44.312400+00:00",
+    "analysis:parsing:parquet_size": 13520457,
+    "analysis:parsing:parquet_url": "https://hydra.s3.rbx.io.cloud.ovh.net/parquet/867034a2-2fa1-41b4-bd39-c84691ea618f.parquet",
+    "analysis:parsing:parsing_table": "7c22533e28a29e72b4912267c4126b00",
+    "analysis:parsing:started_at": "2026-08-24T06:01:17.100816+00:00",
+    "check:available": true,
+    "check:cors:allow-credentials": "true",
+    "check:cors:allow-headers": "Origin,Authorization,Accept,DNT,User-Agent,If-Modified-Since,Cache-Control,Content-Type,Range,sentry-trace,baggage",
+    "check:cors:allow-methods": "GET, OPTIONS",
+    "check:cors:allow-origin": "*",
+    "check:cors:max-age": "1728000",
+    "check:cors:status": 204,
+    "check:date": "2026-10-05T06:01:09.183548+00:00",
+    "check:headers:content-type": "text/csv",
+    "check:id": 54531751,
+    "check:status": 200,
+    "check:timeout": false
+   },
+   "filesize": 126590673,
+   "filetype": "file",
+   "format": "csv",
+   "geopf": null,
+   "harvest": null,
+   "id": "867034a2-2fa1-41b4-bd39-c84691ea618f",
+   "internal": {
+    "created_at_internal": "2026-01-12T07:00:16.387000+00:00",
+    "last_modified_internal": "2026-10-19T06:01:04.457000+00:00"
+   },
+   "last_modified": "2026-10-19T06:01:04.457000+00:00",
+   "latest": "https://www.data.gouv.fr/api/1/datasets/r/867034a2-2fa1-41b4-bd39-c84691ea618f",
+   "metrics": {
+    "views": 13405
+   },
+   "mime": "text/csv",
+   "preview_url": "https://explore.data.gouv.fr/fr/resources/867034a2-2fa1-41b4-bd39-c84691ea618f",
+   "schema": null,
+   "title": "offres-datagouv-20260927.csv",
+   "type": "main",
+   "url": "https://static.data.gouv.fr/resources/les-offres-diffusees-sur-choisir-le-service-public/20261019-060100/offres-datagouv-20260927.csv"
+  },
+  {
+   "checksum": {
+    "type": "sha1",
+    "value": "af3bf60f77f2ae1365264e1639518cffba295f07"
+   },
+   "created_at": "2026-01-05T07:00:22.714000+00:00",
+   "description": null,
+   "extras": {
+    "analysis:check_id": 55403526,
+    "analysis:checksum": "af3bf60f77f2ae1365264e1639518cffba295f07",
+    "analysis:content-length": 1680032,
+    "analysis:last-modified-at": "2026-10-16T12:24:36+00:00",
+    "analysis:last-modified-detection": "last-modified-header",
+    "analysis:mime-type": "text/plain",
+    "analysis:parsing:finished_at": "2026-10-19T18:57:26.702568+00:00",
+    "analysis:parsing:parquet_size": 273417,
+    "analysis:parsing:parquet_url": "https://hydra.s3.rbx.io.cloud.ovh.net/parquet/a6792853-eb46-4897-a4dd-72fd717f9326.parquet",
+    "analysis:parsing:parsing_table": "15adc2f2075341b758998dc4bbac49c5",
+    "analysis:parsing:started_at": "2026-10-19T18:57:26.162196+00:00",
+    "check:available": true,
+    "check:cors:allow-credentials": "true",
+    "check:cors:allow-headers": "Origin,Authorization,Accept,DNT,User-Agent,If-Modified-Since,Cache-Control,Content-Type,Range,sentry-trace,baggage",
+    "check:cors:allow-methods": "GET, OPTIONS",
+    "check:cors:allow-origin": "*",
+    "check:cors:max-age": "1728000",
+    "check:cors:status": 204,
+    "check:date": "2026-10-19T18:57:22.197316+00:00",
+    "check:headers:content-type": "text/csv",
+    "check:id": 55403526,
+    "check:status": 200,
+    "check:timeout": false
+   },
+   "filesize": 1680032,
+   "filetype": "file",
+   "format": "csv",
+   "geopf": null,
+   "harvest": null,
+   "id": "a6792853-eb46-4897-a4dd-72fd717f9326",
+   "internal": {
+    "created_at_internal": "2026-01-05T07:00:22.714000+00:00",
+    "last_modified_internal": "2026-01-05T08:00:22.586000+00:00"
+   },
+   "last_modified": "2026-01-05T08:00:22.586000+00:00",
+   "latest": "https://www.data.gouv.fr/api/1/datasets/r/a6792853-eb46-4897-a4dd-72fd717f9326",
+   "metrics": {
+    "views": 882
+   },
+   "mime": "text/csv",
+   "preview_url": "https://explore.data.gouv.fr/fr/resources/a6792853-eb46-4897-a4dd-72fd717f9326",
+   "schema": null,
+   "title": "offres-datagouv-20251228.csv",
+   "type": "main",
+   "url": "https://static.data.gouv.fr/resources/les-offres-diffusees-sur-choisir-le-service-public/20260105-070021/offres-datagouv-20251228.csv"
+  },
+  {
+   "checksum": {
+    "type": "sha1",
+    "value": "6701b47e39d3a565283ccc6368e1cf89e20bb0a4"
+   },
+   "created_at": "2025-01-06T07:00:28.925000+00:00",
+   "description": null,
+   "extras": {
+    "analysis:check_id": 55464594,
+    "analysis:error": "File too large to download",
+    "analysis:last-modified-at": "2026-10-16T12:24:41+00:00",
+    "analysis:last-modified-detection": "last-modified-header",
+    "analysis:parsing:finished_at": "2025-08-04T06:02:12.237903+00:00",
+    "analysis:parsing:parquet_size": 13069481,
+    "analysis:parsing:parquet_url": "https://hydra.s3.rbx.io.cloud.ovh.net/parquet/73f35aaa-15a2-4ddb-8be1-0a650e65fd7d.parquet",
+    "analysis:parsing:parsing_table": "9b1d0449ef8b5f50333a0b791ed0a0b8",
+    "analysis:parsing:started_at": "2025-08-04T06:01:23.248971+00:00",
+    "check:available": true,
+    "check:cors:allow-credentials": "true",
+    "check:cors:allow-headers": "Origin,Authorization,Accept,DNT,User-Agent,If-Modified-Since,Cache-Control,Content-Type,Range,sentry-trace,baggage",
+    "check:cors:allow-methods": "GET, OPTIONS",
+    "check:cors:allow-origin": "*",
+    "check:cors:max-age": "1728000",
+    "check:cors:status": 204,
+    "check:date": "2026-10-12T07:31:57.486719+00:00",
+    "check:headers:content-type": "text/csv",
+    "check:id": 54944188,
+    "check:status": 200,
+    "check:timeout": false
+   },
+   "filesize": 163994301,
+   "filetype": "file",
+   "format": "csv",
+   "geopf": null,
+   "harvest": null,
+   "id": "73f35aaa-15a2-4ddb-8be1-0a650e65fd7d",
+   "internal": {
+    "created_at_internal": "2025-01-06T07:00:28.925000+00:00",
+    "last_modified_internal": "2025-12-29T08:02:25.370000+00:00"
+   },
+   "last_modified": "2025-12-29T08:02:25.370000+00:00",
+   "latest": "https://www.data.gouv.fr/api/1/datasets/r/73f35aaa-15a2-4ddb-8be1-0a650e65fd7d",
+   "metrics": {
+    "views": 4087
+   },
+   "mime": "text/csv",
+   "preview_url": "https://explore.data.gouv.fr/fr/resources/73f35aaa-15a2-4ddb-8be1-0a650e65fd7d",
+   "schema": null,
+   "title": "offres-datagouv-20251221.csv",
+   "type": "main",
+   "url": "https://static.data.gouv.fr/resources/les-offres-diffusees-sur-choisir-le-service-public/20251229-070216/offres-datagouv-20251221.csv"
+  },
+  {
+   "checksum": {
+    "type": "sha1",
+    "value": "ed012b0733513b8653dc8f20f938ed36fb284a90"
+   },
+   "created_at": "2024-01-08T07:00:16.971000+00:00",
+   "description": null,
+   "extras": {
+    "analysis:check_id": 55821981,
+    "analysis:error": "File too large to download",
+    "analysis:last-modified-at": "2026-10-16T12:24:39+00:00",
+    "analysis:last-modified-detection": "last-modified-header",
+    "analysis:parsing:finished_at": "2024-07-22T06:18:17.058997+00:00",
+    "analysis:parsing:started_at": "2024-07-22T06:16:52.862101+00:00",
+    "check:available": true,
+    "check:cors:allow-credentials": "true",
+    "check:cors:allow-headers": "Origin,Authorization,Accept,DNT,User-Agent,If-Modified-Since,Cache-Control,Content-Type,Range,sentry-trace,baggage",
+    "check:cors:allow-methods": "GET, OPTIONS",
+    "check:cors:allow-origin": "*",
+    "check:cors:max-age": "1728000",
+    "check:cors:status": 204,
+    "check:date": "2026-10-25T01:33:37.601924+00:00",
+    "check:headers:content-type": "text/csv",
+    "check:id": 55821981,
+    "check:status": 200,
+    "check:timeout": false
+   },
+   "filesize": 168159826,
+   "filetype": "file",
+   "format": "csv",
+   "geopf": null,
+   "harvest": null,
+   "id": "72af0662-06b0-4e31-be78-2711cda3c73e",
+   "internal": {
+    "created_at_internal": "2024-01-08T07:00:16.971000+00:00",
+    "last_modified_internal": "2024-12-30T08:01:00.762000+00:00"
+   },
+   "last_modified": "2024-12-30T08:01:00.762000+00:00",
+   "latest": "https://www.data.gouv.fr/api/1/datasets/r/72af0662-06b0-4e31-be78-2711cda3c73e",
+   "metrics": {
+    "views": 21558
+   },
+   "mime": "text/csv",
+   "preview_url": null,
+   "schema": {
+    "name": null,
+    "url": null,
+    "version": null
+   },
+   "title": "offres-datagouv-20241229.csv",
+   "type": "main",
+   "url": "https://static.data.gouv.fr/resources/les-offres-diffusees-sur-choisir-le-service-public/20241230-070051/offres-datagouv-20241229.csv"
+  },
+  {
+   "checksum": {
+    "type": "sha1",
+    "value": "d47156c994b4e33ef211121dad1baf1110071fce"
+   },
+   "created_at": "2023-01-10T18:26:40.966000+00:00",
+   "description": null,
+   "extras": {
+    "analysis:check_id": 55507202,
+    "analysis:checksum": "d47156c994b4e33ef211121dad1baf1110071fce",
+    "analysis:content-length": 1308994,
+    "analysis:last-modified-at": "2026-10-16T12:24:40+00:00",
+    "analysis:last-modified-detection": "last-modified-header",
+    "analysis:mime-type": "application/pdf",
+    "check:available": true,
+    "check:cors:allow-credentials": "true",
+    "check:cors:allow-headers": "Origin,Authorization,Accept,DNT,User-Agent,If-Modified-Since,Cache-Control,Content-Type,Range,sentry-trace,baggage",
+    "check:cors:allow-methods": "GET, OPTIONS",
+    "check:cors:allow-origin": "*",
+    "check:cors:max-age": "1728000",
+    "check:cors:status": 204,
+    "check:date": "2026-02-14T20:00:14.735770+00:00",
+    "check:headers:content-length": 1308994,
+    "check:headers:content-type": "application/pdf",
+    "check:id": 41567605,
+    "check:status": 200,
+    "check:timeout": false
+   },
+   "filesize": 1308994,
+   "filetype": "file",
+   "format": "pdf",
+   "geopf": null,
+   "harvest": null,
+   "id": "302af58f-d84e-4082-b64e-c2ada3dc6c6f",
+   "internal": {
+    "created_at_internal": "2023-01-10T18:26:40.966000+00:00",
+    "last_modified_internal": "2023-04-24T11:11:00.187000+00:00"
+   },
+   "last_modified": "2023-04-24T11:11:00.187000+00:00",
+   "latest": "https://www.data.gouv.fr/api/1/datasets/r/302af58f-d84e-4082-b64e-c2ada3dc6c6f",
+   "metrics": {
+    "views": 543
+   },
+   "mime": "application/pdf",
+   "preview_url": null,
+   "schema": {
+    "name": null,
+    "url": null,
+    "version": null
+   },
+   "title": "guide-pedagogique-csp-rmfp.pdf",
+   "type": "documentation",
+   "url": "https://static.data.gouv.fr/resources/les-offres-diffusees-sur-la-place-de-lemploi-public/20230110-182640/guide-pedagogique-pep-rmfp.pdf"
+  },
+  {
+   "checksum": {
+    "type": "sha1",
+    "value": "31634d52af94011308943bbfed3b7a8105872857"
+   },
+   "created_at": "2023-01-10T18:26:31.856000+00:00",
+   "description": null,
+   "extras": {
+    "analysis:check_id": 55591744,
+    "analysis:checksum": "31634d52af94011308943bbfed3b7a8105872857",
+    "analysis:content-length": 201701,
+    "analysis:last-modified-at": "2026-10-16T12:24:37+00:00",
+    "analysis:last-modified-detection": "last-modified-header",
+    "analysis:mime-type": "application/pdf",
+    "check:available": true,
+    "check:cors:allow-credentials": "true",
+    "check:cors:allow-headers": "Origin,Authorization,Accept,DNT,User-Agent,If-Modified-Since,Cache-Control,Content-Type,Range,sentry-trace,baggage",
+    "check:cors:allow-methods": "GET, OPTIONS",
+    "check:cors:allow-origin": "*",
+    "check:cors:max-age": "1728000",
+    "check:cors:status": 204,
+    "check:date": "2026-02-15T13:43:17.863233+00:00",
+    "check:headers:content-length": 201701,
+    "check:headers:content-type": "application/pdf",
+    "check:id": 41686353,
+    "check:status": 200,
+    "check:timeout": false
+   },
+   "filesize": 201701,
+   "filetype": "file",
+   "format": "pdf",
+   "geopf": null,
+   "harvest": null,
+   "id": "1f838ec3-73f0-410d-a1f9-51df23dcb7f6",
+   "internal": {
+    "created_at_internal": "2023-01-10T18:26:31.856000+00:00",
+    "last_modified_internal": "2023-01-10T18:29:56.637000+00:00"
+   },
+   "last_modified": "2023-01-10T18:29:56.637000+00:00",
+   "latest": "https://www.data.gouv.fr/api/1/datasets/r/1f838ec3-73f0-410d-a1f9-51df23dcb7f6",
+   "metrics": {
+    "views": 425
+   },
+   "mime": "application/pdf",
+   "preview_url": null,
+   "schema": {
+    "name": null,
+    "url": null,
+    "version": null
+   },
+   "title": "documentation.pdf",
+   "type": "documentation",
+   "url": "https://static.data.gouv.fr/resources/les-offres-diffusees-sur-la-place-de-lemploi-public/20230110-182631/documentation.pdf"
+  },
+  {
+   "checksum": {
+    "type": "sha1",
+    "value": "38653645e4c89a1d56cd6f6e56321386e68843c0"
+   },
+   "created_at": "2023-01-10T17:42:48.093000+00:00",
+   "description": null,
+   "extras": {
+    "analysis:check_id": 54250377,
+    "analysis:error": "File too large to download",
+    "analysis:last-modified-at": "2026-07-02T17:06:44+00:00",
+    "analysis:last-modified-detection": "last-modified-header",
+    "check:available": true,
+    "check:cors:allow-credentials": "true",
+    "check:cors:allow-headers": "Origin,Authorization,Accept,DNT,User-Agent,If-Modified-Since,Cache-Control,Content-Type,Range,sentry-trace,baggage",
+    "check:cors:allow-methods": "GET, OPTIONS",
+    "check:cors:allow-origin": "*",
+    "check:cors:max-age": "1728000",
+    "check:cors:status": 204,
+    "check:date": "2026-09-30T12:31:59.594915+00:00",
+    "check:headers:content-type": "text/csv",
+    "check:id": 54250377,
+    "check:status": 200,
+    "check:timeout": false
+   },
+   "filesize": 167427099,
+   "filetype": "file",
+   "format": "csv",
+   "geopf": null,
+   "harvest": null,
+   "id": "e215cdb4-4995-4420-9650-8490a79f71df",
+   "internal": {
+    "created_at_internal": "2023-01-10T17:42:48.093000+00:00",
+    "last_modified_internal": "2024-02-20T14:33:46.461000+00:00"
+   },
+   "last_modified": "2024-02-20T14:33:46.461000+00:00",
+   "latest": "https://www.data.gouv.fr/api/1/datasets/r/e215cdb4-4995-4420-9650-8490a79f71df",
+   "metrics": {
+    "views": 552
+   },
+   "mime": "text/csv",
+   "preview_url": null,
+   "schema": {
+    "name": null,
+    "url": null,
+    "version": null
+   },
+   "title": "offres-datagouv-20231224.csv",
+   "type": "main",
+   "url": "https://static.data.gouv.fr/resources/les-offres-diffusees-sur-choisir-le-service-public/20240220-143330/offres-datagouv-20231224.csv"
+  },
+  {
+   "checksum": {
+    "type": "sha1",
+    "value": "b0a5984e060ce9abced102885830b2a529b3c2f2"
+   },
+   "created_at": "2022-12-28T09:49:36.915000+00:00",
+   "description": null,
+   "extras": {
+    "analysis:check_id": 55586268,
+    "analysis:error": "File too large to download",
+    "analysis:last-modified-at": "2026-10-16T12:24:41+00:00",
+    "analysis:last-modified-detection": "last-modified-header",
+    "check:available": true,
+    "check:cors:allow-credentials": "true",
+    "check:cors:allow-headers": "Origin,Authorization,Accept,DNT,User-Agent,If-Modified-Since,Cache-Control,Content-Type,Range,sentry-trace,baggage",
+    "check:cors:allow-methods": "GET, OPTIONS",
+    "check:cors:allow-origin": "*",
+    "check:cors:max-age": "1728000",
+    "check:cors:status": 204,
+    "check:date": "2026-10-22T04:02:18.624555+00:00",
+    "check:headers:content-type": "text/csv",
+    "check:id": 55586268,
+    "check:status": 200,
+    "check:timeout": false
+   },
+   "filesize": 141408675,
+   "filetype": "file",
+   "format": "csv",
+   "geopf": null,
+   "harvest": null,
+   "id": "f3028dbd-6e48-40ba-b79b-0995b92d3196",
+   "internal": {
+    "created_at_internal": "2022-12-28T09:49:36.915000+00:00",
+    "last_modified_internal": "2022-12-28T09:51:33.024000+00:00"
+   },
+   "last_modified": "2022-12-28T09:51:33.024000+00:00",
+   "latest": "https://www.data.gouv.fr/api/1/datasets/r/f3028dbd-6e48-40ba-b79b-0995b92d3196",
+   "metrics": {
+    "views": 426
+   },
+   "mime": "text/csv",
+   "preview_url": null,
+   "schema": {
+    "name": null,
+    "url": null,
+    "version": null
+   },
+   "title": "offres-datagouv-20221225.csv",
+   "type": "main",
+   "url": "https://static.data.gouv.fr/resources/les-offres-diffusees-sur-la-place-de-lemploi-public/20221228-095125/offres-datagouv-20221225.csv"
+  },
+  {
+   "checksum": {
+    "type": "sha1",
+    "value": "4e4e0d508c3416b9e16b17c1b0621e524ccaa13b"
+   },
+   "created_at": "2022-09-20T09:34:38.547000+00:00",
+   "description": "Dans ce fichier, on trouve les différents référentiels utilisés dans les offres d'emploi de Choisir le Service Public. Notamment : le référentiel des métiers et domaines, le référentiel des spécialités des diplômes et le référentiel des catégories des postes. ",
+   "extras": {
+    "analysis:check_id": 55587804,
+    "analysis:checksum": "4e4e0d508c3416b9e16b17c1b0621e524ccaa13b",
+    "analysis:content-length": 38784,
+    "analysis:last-modified-at": "2026-10-16T12:24:30+00:00",
+    "analysis:last-modified-detection": "last-modified-header",
+    "analysis:mime-type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "analysis:parsing:error": "parquet_export:zero-length delimited identifier at or near \"\"\"\"",
+    "analysis:parsing:finished_at": "2026-10-22T04:32:07.383826+00:00",
+    "analysis:parsing:parsing_table": "f39d6b856db516c4a42873268c7f87aa",
+    "analysis:parsing:started_at": "2026-10-22T04:28:03.448302+00:00",
+    "check:available": true,
+    "check:cors:allow-credentials": "true",
+    "check:cors:allow-headers": "Origin,Authorization,Accept,DNT,User-Agent,If-Modified-Since,Cache-Control,Content-Type,Range,sentry-trace,baggage",
+    "check:cors:allow-methods": "GET, OPTIONS",
+    "check:cors:allow-origin": "*",
+    "check:cors:max-age": "1728000",
+    "check:cors:status": 204,
+    "check:date": "2026-02-15T12:49:24.856193+00:00",
+    "check:headers:content-length": 38784,
+    "check:headers:content-type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "check:id": 41678594,
+    "check:status": 200,
+    "check:timeout": false
+   },
+   "filesize": 38784,
+   "filetype": "file",
+   "format": "xlsx",
+   "geopf": null,
+   "harvest": null,
+   "id": "dd3cf2d3-1c66-4fa2-af3a-66cdb32ca9ab",
+   "internal": {
+    "created_at_internal": "2022-09-20T09:34:38.547000+00:00",
+    "last_modified_internal": "2023-04-24T11:10:43.993000+00:00"
+   },
+   "last_modified": "2023-04-24T11:10:43.993000+00:00",
+   "latest": "https://www.data.gouv.fr/api/1/datasets/r/dd3cf2d3-1c66-4fa2-af3a-66cdb32ca9ab",
+   "metrics": {
+    "views": 674
+   },
+   "mime": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+   "preview_url": "https://explore.data.gouv.fr/fr/resources/dd3cf2d3-1c66-4fa2-af3a-66cdb32ca9ab",
+   "schema": {
+    "name": null,
+    "url": null,
+    "version": null
+   },
+   "title": "referentiels-csp.xlsx",
+   "type": "documentation",
+   "url": "https://static.data.gouv.fr/resources/les-offres-diffusees-sur-la-place-de-lemploi-public/20220920-093438/referentiels-pep.xlsx"
+  }
+ ],
+ "schema": null,
+ "slug": "les-offres-diffusees-sur-choisir-le-service-public",
+ "spatial": {
+  "geom": null,
+  "granularity": "country",
+  "zones": []
+ },
+ "tags": [
+  "administration",
+  "emploi",
+  "fonction-publique",
+  "fonctionnaire",
+  "metiers",
+  "mobilite",
+  "offre-d-emploi",
+  "offre-demploi",
+  "recrutement",
+  "service-public"
+ ],
+ "temporal_coverage": {
+  "end": "2023-12-31",
+  "start": "2021-01-01"
+ },
+ "title": "Les offres diffusées sur Choisir le Service Public",
+ "uri": "https://www.data.gouv.fr/api/1/datasets/les-offres-diffusees-sur-choisir-le-service-public/"
+}

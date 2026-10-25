@@ -1,0 +1,81 @@
+{
+ "resultats": [
+  {
+   "id": "8208913",
+   "intitule": "Senior Consultant / Manager - MLOps & LLMOps Lead (H/F/X)",
+   "description": "En tant qu'organisateur de forums de recrutement, Talents Handicap accompagne de très nombreuses entreprises & organisations en France dans leurs recrutements de collaborateurs en situation de handicap. Participant actuellement à l'un de nos forums.\nL'entreprise Wavestone recherche actuellement des profils :\nDescription de l'entreprise\nRejoignez un cabinet de conseil international qui accompagne les grandes transformations stratégiques.\nNous sommes Wavestone : des expert-es passionné-es et orienté-es solutions, qui placent l'humain au cœur de la performance et de la croissance. Ambitieux-ses et en pleine expansion, nous développons sans cesse notre portefeuille de clients et de projets, avec une portée internationale et une réelle volonté de générer un impact positif.\nÊtes-vous un vrai team player, porté par des valeurs fortes ? Êtes-vous curieux-se et déterminé-e, avec l'envie d'apprendre chaque jour ? Êtes-vous du genre à relever les défis sans hésiter ? Alors vous êtes au bon endroit. Rejoignez Wavestone et exprimez votre potentiel dans un environnement stimulant et collaboratif, où l'on transforme les défis d'aujourd'hui en opportunités de demain.\nDescription du poste\nVous rejoignez la Business Unit AI, une communauté de +500 consultants IA & Data, renforcée depuis septembre par l'intégration d'AI Builders. Nous accompagnons les organisations de bout en bout : identification de cas d'usage IA à fort impact métier, conception de plateformes Data & IA performantes, et définition de modèles de gouvernance responsables et scalables. Nous ne faisons pas de l'IA de démonstration. Nos équipes conçoivent, déploient et font évoluer des solutions utilisées en production. Nous travaillons avec Microsoft, Google, AWS, Mistral, Anthropic, Databricks et Dataiku, tout en conservant une approche indépendante et orientée valeur client. \nVotre rôle \nVous accompagnez les clients qui doivent passer d'expérimentations dispersées à un portefeuille IA industrialisé. Vous définissez le cadre MLOps/LLMOps et conduisez son adoption par les équipes. \nVous intervenez à l'interface des équipes Data Science, AI Engineering, Cloud, sécurité et exploitation. Vous transformez les exigences de fiabilité et de contrôle en un dispositif utilisable par plusieurs produits et plusieurs équipes. \nVos responsabilités \nDonner la direction Définir la cible d'industrialisation, les standards et la feuille de route. \nArbitrer outillage, SLO, sécurité, coûts et responsabilités de run. \nDéfinir les principes de gouvernance du cycle de vie, de traçabilité, d'évaluation et de gestion des releases. \nConduire le delivery et faire grandir les équipes Piloter la mise en œuvre et l'adoption du dispositif. \nEncadrer les équipes et installer les pratiques d'évaluation, monitoring et gestion des incidents. \nAligner Data Science, Engineering, Cloud, sécurité et run autour de responsabilités claires et de standards communs. \nDévelopper la relation client et le business Qualifier les besoins d'industrialisation et porter les propositions associées. \nDévelopper les extensions autour de l'observabilité, des gateways et du FinOps IA. \nCapitaliser les patterns et retours de mission pour accélérer les propositions et les nouveaux dispositifs. \nExemples de missions \nMettre en place un cadre LLMOps multi-produits. \nRationaliser des chaînes de déploiement de modèles. \nDéfinir un dispositif d'évaluation et de maîtrise des coûts. \nMettre en place un cadre d'observabilité et de gestion des incidents pour un portefeuille de solutions IA. \nQualifications\n4 ans d'expérience ou plus en MLOps, plateforme ML ou engineering cloud. \nMaîtrise du cycle de vie ML/LLM, CI/CD, observabilité et sécurité. \nLeadership de delivery et capacité de conseil. \nCapacité à conduire une transformation transverse et à faire adopter de nouvelles pratiques. \nCompréhension des SLO, du FinOps IA, des gateways et de la sécurité des modèles. \nExpérience des plateformes ML/LLM, registres, pipelines de déploiement et solutions d'observabilité. \nVous parlez français et anglais couramment. \nInformations supplémentaires\nNotre offre\nCarreer model : une carrière sur mesure, cela signifie pour nous des possibilités de développement individuel. Notre Wavestone Horizon vous permet une évolution rapide de votre parcours et de la dynamique salariale. \nFurther training : let's grow together ! Vous avez accès à un vaste catalogue de formations et de certifications (cloud, DevOps, GenAI, etc.) pour vous former continuellement. \nSmartworking : le travail flexible et mobile fait partie de notre ADN et permet un cadre adéquat de collaboration. \nA Great Place To Work : nous sommes reconnus comme Great Place To Work , nous classant numéro un dans notre catégorie parmi les organisations de plus de employés (France). \nParce que votre réussite est notre priorité, nous adaptons nos processus de recrutement et l'environnement de travail à vos besoins spécifiques ou situations de santé (aménagements de poste, tiers-temps, outi...",
+   "dateCreation": "2026-10-23T13:37:23.329Z",
+   "dateActualisation": "2026-10-23T13:37:23.329Z",
+   "lieuTravail": {
+    "libelle": "92 - Nanterre",
+    "codePostal": "92000",
+    "commune": "92050"
+   },
+   "romeCode": "M1429",
+   "romeLibelle": "Consultant / Consultante en management",
+   "appellationlibelle": "Consultant / Consultante pilotage de la performance",
+   "entreprise": {},
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "D",
+   "experienceLibelle": "Débutant accepté",
+   "salaire": {},
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8208913",
+    "partenaires": [
+     {
+      "nom": "DIRECTEMPLOI",
+      "url": "https://www.directemploi.com/candidatOffre/56737982?utm_source=pole-emploi&utm_medium=referral&utm_campaign=Pôle-Emploi",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/directemploi80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  }
+ ],
+ "filtresPossibles": [
+  {
+   "filtre": "typeContrat",
+   "agregation": [
+    {
+     "valeurPossible": "CDI",
+     "nbResultats": 1
+    }
+   ]
+  },
+  {
+   "filtre": "experience",
+   "agregation": [
+    {
+     "valeurPossible": "4",
+     "nbResultats": 1
+    }
+   ]
+  },
+  {
+   "filtre": "qualification",
+   "agregation": [
+    {
+     "valeurPossible": "X",
+     "nbResultats": 1
+    }
+   ]
+  },
+  {
+   "filtre": "natureContrat",
+   "agregation": [
+    {
+     "valeurPossible": "E1",
+     "nbResultats": 1
+    }
+   ]
+  }
+ ]
+}

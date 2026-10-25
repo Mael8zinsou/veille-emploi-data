@@ -1,0 +1,390 @@
+{
+ "resultats": [
+  {
+   "id": "215MNJR",
+   "intitule": "Chargé(e) d'études statistiques H/F",
+   "description": "Cette offre d'emploi est confiée à France Travail par LINDUSTRIE-RECRUTE.FR\n\nMissions\n\n\nRattaché(e) au Chargé de mission, vous contribuez à la réalisation des études et analyses statistiques menées par l'Observatoire, en réponse aux besoins de ses partenaires institutionnels et professionnels.\n\n\n \n\n\nÀ ce titre, vos principales missions seront les suivantes :\n\n\n-         sélectionner, collecter et fiabiliser les données relatives à l'emploi, aux métiers et à la formation professionnelle ;\n\n\n-         assurer l'exploitation, le traitement et l'analyse statistique des données ;\n\n\n-         produire des indicateurs, tableaux de bord, cartographies et outils d'aide à la décision ;\n\n\n-         contribuer à la rédaction des études et à la synthèse des résultats ;\n\n\n-         préparer les supports de présentation, présenter et partager les résultats des travaux auprès des différents partenaires et acteurs du territoire ;\n\n\n-         participer à la conduite de projets d'études en lien avec les partenaires de l'Observatoire.\n\n\n\nConditions du poste\n\n\n-         Type de contrat : CDD de 6 mois\n\n\n-         Lieu : Saint-Herblain (44)\n\n\n-         Télétravail : télétravail partiel possible\n\n\n-         Prise de poste : décembre 2026\n\nProfil\n\n\nVous êtes diplômé(e) en statistique, analyse de données, économie ou dans une discipline connexe comportant une solide formation aux méthodes quantitatives, vous disposez :\n\n\n-         de bonnes compétences en analyse, traitement et exploitation de bases de données ;\n\n\n-         d'une bonne maîtrise des outils statistiques et d'analyse de données : Excel, RStudio et/ou Python ;\n\n\n-         d'une appétence pour les outils de cartographie et de datavisualisation ;\n\n\n-         d'une première expérience (stage, alternance ou projet d'études) en analyse de données ou traitement statistique.\n\n\n\nVous faites preuve de :\n\n\n-         rigueur méthodologique ;\n\n\n-         capacités d'analyse et de synthèse ;\n\n\n-         curiosité intellectuelle et goût pour l'exploitation des données ;\n\n\n-         autonomie, organisation et capacité d'adaptation ;\n\n\n-         aisance relationnelle et aptitude au travail en équipe.\n\n\nVous appréciez :\n\n\n-         analyser et faire parler les données ;\n\n\n-         comprendre, structurer et synthétiser des informations complexes ;\n\n\n-         les questions économiques et les enjeux du monde industriel ;\n\n\n-         apprendre de nouveaux outils et méthodes.\n\n\n ",
+   "dateCreation": "2026-10-21T14:23:54.040Z",
+   "dateActualisation": "2026-10-23T08:08:38.030Z",
+   "lieuTravail": {
+    "libelle": "44 - Saint-Herblain",
+    "latitude": 47.244068,
+    "longitude": -1.605885,
+    "codePostal": "44800",
+    "commune": "44162"
+   },
+   "romeCode": "M1419",
+   "romeLibelle": "Data analyst",
+   "appellationlibelle": "Data analyst",
+   "entreprise": {
+    "nom": "ASSOCIATION JEUNES INDUSTRIES REGION PAY",
+    "description": "L'ORCI Pays de la Loire est un observatoire régional spécialisé dans l'analyse des emplois, des métiers, des compétences et des besoins en formation au sein des secteurs industriels.\n\n\nÀ travers ses études et travaux d'observation, il accompagne les acteurs économiques, institutionnels et de la formation dans leurs réflexions et leurs prises de décision à l'échelle des territo",
+    "entrepriseAdaptee": false
+   },
+   "typeContrat": "CDD",
+   "typeContratLibelle": "CDD - 6 Mois",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "D",
+   "experienceLibelle": "Débutant accepté",
+   "competences": [
+    {
+     "code": "109529",
+     "libelle": "Communiquer les résultats des études aux parties prenantes",
+     "exigence": "S"
+    },
+    {
+     "code": "109527",
+     "libelle": "Adapter les outils de traitement statistique de données",
+     "exigence": "S"
+    }
+   ],
+   "salaire": {
+    "commentaire": "Selon profil"
+   },
+   "dureeTravailLibelle": "35H/semaine\nTravail en journée",
+   "dureeTravailLibelleConverti": "Temps plein",
+   "alternance": false,
+   "contact": {
+    "nom": "ASSOCIATION JEUNES INDUSTRIES REGION PAY - X Sandrine QUINIO",
+    "coordonnees1": "https://www.lindustrie-recrute.fr/candidat/offre/837166?utm_source=NQ==",
+    "urlPostulation": "https://www.lindustrie-recrute.fr/candidat/offre/837166?utm_source=NQ=="
+   },
+   "agence": {},
+   "nombrePostes": 1,
+   "qualificationCode": "7",
+   "qualificationLibelle": "Technicien",
+   "codeNAF": "94.99Z",
+   "secteurActivite": "94",
+   "secteurActiviteLibelle": "Autres organisations fonctionnant par adhésion volontaire",
+   "trancheEffectifEtab": "1 ou 2 salariés",
+   "origineOffre": {
+    "origine": "1",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/215MNJR"
+   },
+   "offresManqueCandidats": false,
+   "contexteTravail": {
+    "horaires": [
+     "35H/semaine\nTravail en journée"
+    ]
+   },
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "215LNGY",
+   "intitule": "Chargé / chargée de mission statistiques et actuarielles (H/F)",
+   "description": "Nous recrutons un.e chargé.e de mission statistiques et actuarielles pour renforcer le service souscription et pilotage du portefeuille Branches et Grossistes. \n\nVos principales missions :\n- Tarification & Appels d'offres : Réaliser la tarification des offres, participer à la réponse aux appels d'offres et à la rédaction des documents contractuels.\n- Analyse & Pilotage : Réaliser les comptes comptables et techniques en support des équipes commerciales, conduire des études actuarielles et statistiques et fournir des indicateurs de pilotage.\n- Expertise & Validation : Apporter son expérience dans la production ou la validation des travaux.\n\n\nRejoindre AESIO mutuelle, c'est ouvrir la porte à une série d'avantages attractifs tels que :\n\n\n- Organisation flexible : forfait jours et télétravail partiel pour un meilleur équilibre vie pro / vie perso.\n- Package attractif : accord d'intéressement et de participation, épargne salariale avec abondement.\n- Qualité de vie au travail : carte restaurant prise en charge à 60% par l'entreprise et CSE offrant de nombreux avantages (billetterie, chèques vacances, etc.).\n- Mobilité facilitée : prise en charge à 75% des frais de transport urbains + un forfait mobilité durable (150€/an).\n- Protection complète : mutuelle et prévoyance entreprise.\n- Évolutions possibles : de réelles perspectives de mobilité au sein du groupe AEMA.\n\nÊtre une mutuelle, c'est avant tout prendre soin de chacun : 6 jours d'absence pour enfant malade, un congé proche aidant, et un accompagnement bienveillant au retour de congé maternité ou adoption (1 mois et demi payé à 100 % ou 3 mois à 50 %). Des actions concrètes pour notre engagement en faveur de l'égalité femmes-hommes.\n\nProfil\nTitulaire d'un master en statistiques ou en actuariat, nous recherchons une personne ayant plus de 2 ans d'expérience en santé prévoyance (hors alternance), maitrisant parfaitement les missions confiées.\n\nVous êtes rigoureux et motivé à développer vos compétences.\n\nL'adaptabilité à des environnements changeants et de bonnes compétences en communication sont des qualités essentielles.\n \nVous serez également évalué sur les compétences suivantes :\n\nPédagogie / Communication : capacité à vulgariser des sujets complexes et à s'exprimer avec clarté, à l'écrit comme à l'oral\nCuriosité : aptitude à approfondir les sujets et à aller au-delà des informations disponibles\nCalcul  : capacité à produire des calculs fiables, à en garantir la cohérence et à en expliquer les résultats\nAnalyse / Diagnostic : capacité à appréhender des situations complexes, identifier les enjeux et proposer des solutions adaptées \n \n\nINFORMATIONS SUR LE PROCESSUS DE RECRUTEMENT\nSi vous souhaitez relever de nouveaux défis, envoyez nous votre candidature avant le 11/11/26\nCelle-ci sera examinée par Florence TALVAS qui est votre point de contact pour toute question.\nAprès un 1er échange téléphonique, si votre profil correspond, nous vous proposerons un entretien en visioconférence ou en présentiel avec la chargée de recrutement et le manager. Vous recevrez une réponse sous 10 jours après l'entretien.\nCertifiée ISO 9001, notre entreprise valorise également l'inclusion et la diversité, en étant handi-accueillante.\nDécouvrez nos engagements.",
+   "dateCreation": "2026-10-20T15:18:52.980Z",
+   "dateActualisation": "2026-10-20T16:00:51.392Z",
+   "lieuTravail": {
+    "libelle": "14 - Caen",
+    "latitude": 49.197885,
+    "longitude": -0.346875,
+    "codePostal": "14000",
+    "commune": "14118"
+   },
+   "romeCode": "M1403",
+   "romeLibelle": "Chargé / Chargée d'études socio-économiques",
+   "appellationlibelle": "Chargé / Chargée d'études statistiques",
+   "entreprise": {
+    "nom": "AESIO MUTUELLE",
+    "entrepriseAdaptee": false
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "2 An(s)",
+   "formations": [
+    {
+     "codeFormation": "41036",
+     "domaineLibelle": "Assurance",
+     "niveauLibelle": "Bac+5 et plus ou équivalents",
+     "exigence": "S"
+    },
+    {
+     "codeFormation": "41079",
+     "domaineLibelle": "Actuariat",
+     "niveauLibelle": "Bac+5 et plus ou équivalents",
+     "exigence": "S"
+    }
+   ],
+   "competences": [
+    {
+     "code": "109529",
+     "libelle": "Communiquer les résultats des études aux parties prenantes",
+     "exigence": "S"
+    }
+   ],
+   "salaire": {
+    "libelle": "Annuel de 40000.0 Euros à 50000.0 Euros",
+    "complement1": "Intéressement / participation",
+    "complement2": "Plan d'épargne retraite d'entreprise",
+    "listeComplements": [
+     {
+      "code": "10",
+      "libelle": "Intéressement / participation"
+     },
+     {
+      "code": "12",
+      "libelle": "Plan d'épargne retraite d'entreprise"
+     },
+     {
+      "code": "7",
+      "libelle": "Complémentaire santé"
+     },
+     {
+      "code": "6",
+      "libelle": "Titres restaurant / Prime de panier"
+     },
+     {
+      "code": "9",
+      "libelle": "CSE"
+     }
+    ]
+   },
+   "dureeTravailLibelle": "37H/semaine\nTravail en journée",
+   "dureeTravailLibelleConverti": "Temps plein",
+   "alternance": false,
+   "contact": {
+    "coordonnees1": "https://ensemble.aesio.fr/offres-emploi/offre/2026-5351",
+    "urlPostulation": "https://ensemble.aesio.fr/offres-emploi/offre/2026-5351"
+   },
+   "agence": {},
+   "nombrePostes": 1,
+   "deplacementCode": "1",
+   "deplacementLibelle": "Jamais Zone départementale",
+   "qualificationCode": "9",
+   "qualificationLibelle": "Cadre",
+   "codeNAF": "65.12Z",
+   "secteurActivite": "65",
+   "secteurActiviteLibelle": "Autres assurances",
+   "qualitesProfessionnelles": [
+    {
+     "libelle": "Avoir l'esprit d'équipe",
+     "description": "Capacité à travailler et à se coordonner avec les autres au sein de l'entreprise pour réaliser les objectifs fixés."
+    },
+    {
+     "libelle": "Faire preuve de rigueur et de précision",
+     "description": "Capacité à réaliser des tâches en suivant avec exactitude les règles, les procédures, les instructions qui ont été fournies, sans réaliser d'erreur et à transmettre clairement des informations. Se montrer ponctuel et respectueux des règles de savoir-vivre usuelles."
+    },
+    {
+     "libelle": "Faire preuve de curiosité, d'ouverture d'esprit",
+     "description": "Capacité à aller chercher au-delà de ce qui est donné à voir, à s'ouvrir sur la nouveauté et à investiguer pour comprendre et agir de façon appropriée."
+    }
+   ],
+   "trancheEffectifEtab": "250 à 499 salariés",
+   "origineOffre": {
+    "origine": "1",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/215LNGY"
+   },
+   "offresManqueCandidats": false,
+   "contexteTravail": {
+    "horaires": [
+     "37H/semaine\nTravail en journée"
+    ]
+   },
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8166465",
+   "intitule": "Chargé d'études statistiques et actuarielles F/H",
+   "description": "Offre d'Emploi: Chargé(e) d'Études Statistiques et Actuarielles F/H Notre entreprise, leader dans le secteur (secteur), est à la recherche d'un(e) Chargé(e) d'Études Statistiques et Actuarielles passionné(e) pour rejoindre notre équipe dynamique. Au sein de notre structure, vous aurez l'opportunité de travailler sur des projets innovants et de contribuer au développement stratégique de nos services. Responsabilités Principales En tant que Chargé(e) d'Études Statistiques et Actuarielles, vous serez responsable de :\nAnalyser les données complexes et les interpréter pour soutenir la prise de décision.\nConcevoir et mettre en oeuvre des modèles statistiques et actuariels.\nFournir des rapports détaillés et des recommandations basées sur les analyses.\nAssurer la qualité et la fiabilité des données utilisées dans les analyses.\nTravailler en étroite collaboration avec différents départements pour comprendre leurs besoins et fournir des solutions adaptées.\nCompétences et Qualifications Le candidat idéal pour le poste de Chargé(e) d'Études Statistiques et Actuarielles devrait posséder les compétences et qualifications suivantes :\nFormation supérieure en Statistiques, Actuariat ou dans un domaine connexe.\nExpérience prouvée dans le domaine des études statistiques et actuarielles.\nMaitrise des logiciels statistiques (R, SAS, SPSS, etc.).\nExcellentes compétences analytiques et attention aux détails.\nAptitude à communiquer clairement les résultats des analyses à un public non spécialisé.\nCapacité à travailler en équipe et à gérer plusieurs projets simultanément.\nRejoignez Notre Équipe Si vous êtes passionné(e) par l'analyse de données et que vous avez envie de relever des défis au sein d'une équipe innovante, envoyez-nous votre candidature pour le poste de Chargé(e) d'Études Statistiques et Actuarielles. Nous offrons un environnement de travail stimulant, des opportunités de développement professionnel et un package de rémunération attractif. Comment Postuler Pour postuler, veuillez envoyer votre CV et lettre de motivation à (adresse email/lien vers le formulaire de candidature). Mentionnez « Candidature Chargé(e) d'Études Statistiques et Actuarielles F/H » dans l'objet de votre mail. À propos de Notre Entreprise Nous valorisons la diversité et l'inclusion au sein de notre équipe et encourageons les candidatures de tous les horizons. Nous attendons avec impatience de découvrir comment votre expertise en statistiques et actuariat contribuera à notre succès. N'hésitez pas à nous rejoindre dans cette aventure passionnante !\n  \n Compétences et Qualifications\n\nLe candidat idéal pour le poste de Chargé(e) d'Études Statistiques et Actuarielles devrait posséder les compétences et qualifications suivantes :\n\nFormation supérieure en Statistiques, Actuariat ou dans un domaine connexe.\n\nExpérience prouvée dans le domaine des études statistiques et actuarielles.\n\nMaitrise des logiciels statistiques (R, SAS, SPSS, etc.).\n\nExcellentes compétences analytiques et attention aux détails.\n\nAptitude à communiquer clairement les résultats des analyses à un public non spécialisé.\n\nCapacité à travailler en équipe et à gérer plusieurs projets simultanément.\n\nRejoignez Notre Équipe\n\nSi vous êtes passionné(e) par l'analyse de données et que vous avez envie de relever des défis au sein d'une équipe innovante, envoyez-nous votre candidature pour le poste de Chargé(e) d'Études Statistiques et Actuarielles. Nous offrons un environnement de travail stimulant, des opportunités de développement professionnel et un package de rémunération attractif.\n",
+   "dateCreation": "2026-10-22T14:36:24.799Z",
+   "dateActualisation": "2026-10-22T14:36:24.799Z",
+   "lieuTravail": {
+    "libelle": "75 - Paris 8e Arrondissement",
+    "codePostal": "75008",
+    "commune": "75108"
+   },
+   "romeCode": "C1120",
+   "romeLibelle": "Conseiller / Conseillère en études actuarielles",
+   "appellationlibelle": "Chargé / Chargée d'études actuarielles en assurances",
+   "entreprise": {
+    "nom": "Galian"
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "D",
+   "experienceLibelle": "Débutant accepté",
+   "salaire": {
+    "libelle": "Annuel de 40000.0 Euros à 40000.0 Euros"
+   },
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "qualificationCode": "9",
+   "qualificationLibelle": "Cadre",
+   "codeNAF": "66.21Z",
+   "secteurActivite": "66",
+   "secteurActiviteLibelle": "Évaluation des risques et dommages",
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8166465",
+    "partenaires": [
+     {
+      "nom": "TALENTPLUG",
+      "url": "http://app.mytalentplug.com/redirection.aspx?ojid=gmCl+BzFGzDwcH+irxdBCw==",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/talentplug80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8110970",
+   "intitule": "Chargé d'études statistiques H/F",
+   "description": "RESPONSABILITÉS : \n\nAu sein de la DAPEQ de l'Université de Lorraine, vous renforcez l'Observatoire en exploitant une enquête sur les conditions de vie et d'études des étudiant-es et en valorisant ses résultats.\nVos missions principales :\n -  Exploiter et analyser les données issues de l'enquête et assurer leur fiabilité\n -  Contrôler la qualité et la représentativité des résultats au regard de la population étudiée\n -  Mettre en œuvre les traitements statistiques nécessaires (redressements, pondérations, analyses comparatives)\n -  Comparer les résultats avec les enquêtes précédentes et analyser les principales évolutions\n -  Concevoir tableaux de bord et indicateurs, notamment via le logiciel Sphinx\n -  Produire des synthèses et supports de présentation pour les instances et partenaires\n -  Présenter et valoriser les résultats auprès de différents publics internes et externes\n -  Participer aux travaux de l'Observatoire en collaboration avec les autres chargé-es d'études\n\nPROFIL RECHERCHÉ : \n\nVous êtes titulaire d'un diplôme de niveau Bac+3 minimum en statistique, démographie, économie, mathématiques, sciences sociales ou domaine équivalent.\nCompétences et qualités attendues :\n -  Maîtrise du traitement et de l'analyse de données (enquêtes, indicateurs, études quantitatives)\n -  Pratique avancée d'un logiciel statistique type R ou SAS ; la connaissance de Sphinx est un plus\n -  Capacité à analyser des données d'enquête, produire des tableaux de bord et restituer les résultats à des publics variés\n -  Rigueur, esprit d'analyse et de synthèse, sens de l'organisation et fiabilité dans le suivi des projets\n -  Aisance relationnelle et travail en équipe au sein de l'Observatoire et avec les partenaires internes\n -  Intérêt pour l'enseignement supérieur, l'évaluation et les politiques publiques et les questions de conditions de vie et d'études des étudiants\nCDD temps plein à pourvoir du 4 janvier au 31 Décembre 2027.\nRémunération : 2422 € brut mensuel\nSi cette offre d'emploi vous intéresse, merci de d'envoyer votre candidature avant le 30 Novembre.",
+   "dateCreation": "2026-10-21T04:31:45.647Z",
+   "dateActualisation": "2026-10-21T04:31:45.647Z",
+   "lieuTravail": {
+    "libelle": "54 - Nancy",
+    "codePostal": "54000",
+    "commune": "54395"
+   },
+   "romeCode": "M1403",
+   "romeLibelle": "Chargé / Chargée d'études socio-économiques",
+   "appellationlibelle": "Chargé / Chargée d'études statistiques",
+   "entreprise": {
+    "nom": "Université de Lorraine - DAPEQ"
+   },
+   "typeContrat": "CDD",
+   "typeContratLibelle": "CDD - 12 Mois",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "D",
+   "experienceLibelle": "Débutant accepté",
+   "salaire": {
+    "libelle": "Mensuel de 2422.0 Euros à 2423.0 Euros"
+   },
+   "dureeTravailLibelle": "35H/semaine\nTravail en journée",
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "qualificationCode": "9",
+   "qualificationLibelle": "Cadre",
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8110970",
+    "partenaires": [
+     {
+      "nom": "BEETWEEN",
+      "url": "https://app.beetween.com/WeaselWeb/p/#/apply/job/7i0piafgp68/charge-d-etudes-statistiques-h-f",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/beetween80.png"
+     }
+    ]
+   },
+   "contexteTravail": {
+    "horaires": [
+     "35H/semaine\nTravail en journée"
+    ]
+   },
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8071937",
+   "intitule": "Chargé(e) d'Etudes Statistiques (H/F) - CDD (8 mois)",
+   "description": "Rejoindre la CARPV, c'est intégrer un environnement dynamique, collaboratif et stimulant, tout en bénéficiant d'un cadre de travail privilégié au cœur de Paris.\n\nMission/Activités\n\nDescription du poste & Missions\n\nEn tant que Chargé(e) d'études statistiques, vous jouez un rôle clé dans le pilotage des activités de la Caisse. Vous collaborez activement avec les services internes (ordonnateurs et financiers) et externes (CNAVPL).\n\nVotre action apporte un appui stratégique à la Direction à travers trois volets principaux :\n\n * Volet Statistique & Exploitation : Extraction, traitement et analyse des données relatives aux cotisants et aux allocataires ;\n * Volet Requetage & Informatique : Conception de requêtes, automatisation de tableaux de bord et fiabilisation des bases de données du service ;\n * Volet Expertise & Comptes rendus institutionnels : Production d'études décisionnelles, de projections et de bilans chiffrés. Vous élaborez les comptes rendus et bilans stratégiques destinés à la Direction, ainsi que les documents officiels présentés lors des différentes instances avec les Administrateurs de la Caisse ou dans le cadre des échanges avec la CNAVPL. Vous assurez le suivi des indicateurs, identifiez des tendances et des points d'alerte afin d'accompagner la Direction dans ses prises de décision\n\nCompétences\n\nExpérience & Compétences\n\nAu-delà de votre diplôme, vous maîtrisez impérativement la pratique du requetage et l'utilisation d'outils d'extraction et d'analyse de données (Excel avancé, SQL, ou autres outils de gestion de bases de données). Une affinité avec le droit de la sécurité sociale ou l'environnement des retraites est un plus.\n\nQualités professionnelles et relationnelles\n\n * Rigueur, esprit de synthèse, sens de l'organisation et excellente gestion des priorités.\n * Capacité à alerter à bon escient et à être force de proposition.\n * Aisance relationnelle et persévérance pour dialoguer avec des interlocuteurs variés.\n * Forte capacité d'adaptation pour s'épanouir au sein d'une petite équipe\n\nFormation\n\nDiplôme d'études supérieures (Bac+2 minimum) avec une dimension quantitative ou analytique: gestion, économie, informatique décisionnelle, statistiques, ou mathématiques appliquées.\n\nInformations complémentaires\n\nQualité de vie au travail & Avantages\n\nLa CARPV attache une importance particulière à l'équilibre entre vie professionnelle et vie personnelle :\n\n * Télétravail : Envisageable et flexible selon votre niveau d'autonomie.\n * Cadre de travail : Locaux agréables, espace de convivialité équipé pour le déjeuner (réfrigérateurs et micro-ondes).\n * Avantages financiers : Prise en charge à 75 % de l'abonnement aux transports collectifs, mutuelle d'entreprise protectrice, et Comité d'Entreprise (CSE) dynamique proposant des prestations attractives\n\nPour postuler\n\nLe poste est à pourvoir immédiatement.\n\nOrganisme : Caisse Autonome de Retraites et de Prévoyances des Vétérinaires (CARPV)\n\nLocalisation : 64 Avenue Raymond Poincaré, 75116 Paris - (Métro : Victor Hugo - Ligne 2 ou Trocadéro - Lignes 6 et 9)\n\nRattachement : Rattaché(e) directement au Responsable du service Statistiques et Informatique\n\nRémunération : 37 000 € à 39 000 € brut annuel (selon expérience)\n\nDisponibilité : immédiate",
+   "dateCreation": "2026-10-20T00:32:03.287Z",
+   "dateActualisation": "2026-10-20T00:32:03.287Z",
+   "lieuTravail": {
+    "libelle": "75 - Paris 16e Arrondissement",
+    "codePostal": "75016",
+    "commune": "75116"
+   },
+   "romeCode": "M1403",
+   "romeLibelle": "Chargé / Chargée d'études socio-économiques",
+   "appellationlibelle": "Chargé / Chargée d'études statistiques",
+   "entreprise": {
+    "nom": "UCANSS"
+   },
+   "typeContrat": "CDD",
+   "typeContratLibelle": "CDD - 8 Mois",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "D",
+   "experienceLibelle": "Débutant accepté",
+   "salaire": {
+    "libelle": "Annuel de 37000.0 Euros à 39000.0 Euros - Oui (télétravail partiel)",
+    "commentaire": "Oui (télétravail partiel)"
+   },
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "codeNAF": "84.30A",
+   "secteurActivite": "84",
+   "secteurActiviteLibelle": "Activités générales de sécurité sociale",
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8071937",
+    "partenaires": [
+     {
+      "nom": "BROADBEAN",
+      "url": "https://www.aplitrak.com/?adid=Y2FycHYuNDA5MjQuNjcwNkB1Y2Fuc3MuYXBsaXRyYWsuY29t",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/broadbean80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  }
+ ],
+ "filtresPossibles": [
+  {
+   "filtre": "typeContrat",
+   "agregation": [
+    {
+     "valeurPossible": "CDD",
+     "nbResultats": 3
+    },
+    {
+     "valeurPossible": "CDI",
+     "nbResultats": 2
+    }
+   ]
+  },
+  {
+   "filtre": "experience",
+   "agregation": [
+    {
+     "valeurPossible": "4",
+     "nbResultats": 4
+    },
+    {
+     "valeurPossible": "2",
+     "nbResultats": 1
+    }
+   ]
+  },
+  {
+   "filtre": "qualification",
+   "agregation": [
+    {
+     "valeurPossible": "0",
+     "nbResultats": 1
+    },
+    {
+     "valeurPossible": "9",
+     "nbResultats": 3
+    },
+    {
+     "valeurPossible": "X",
+     "nbResultats": 1
+    }
+   ]
+  },
+  {
+   "filtre": "natureContrat",
+   "agregation": [
+    {
+     "valeurPossible": "E1",
+     "nbResultats": 5
+    }
+   ]
+  }
+ ]
+}

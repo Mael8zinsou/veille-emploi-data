@@ -1,0 +1,562 @@
+{
+ "resultats": [
+  {
+   "id": "215MRWH",
+   "intitule": "ALTERNANCE - INGÉNIEUR(E) AMÉLIORATION CONTINUE, DATA & IA (H/F)",
+   "description": "Chez Léonard (Black Star Next), nous sommes spécialisés dans le remanufacturage de pneumatiques.\n\nImplantés à Béthune, nous souhaitons poursuivre l'optimisation de nos processus industriels en associant innovation, intelligence artificielle et amélioration continue.\n\nDans le cadre de notre développement, nous recherchons un(e) alternant(e) Ingénieur(e) Amélioration Continue, Data & IA pour accompagner notre transformation industrielle et contribuer à des projets concrets au cœur de notre site de production.\n\nVos missions\n\nRattaché(e) à la Direction industrielle / Excellence opérationnelle, vous participerez activement à plusieurs projets stratégiques :\n\nData & Intelligence Artificielle\n\nExploiter, structurer et fiabiliser les données de production.\n\nDévelopper des outils d'analyse et des modèles d'intelligence artificielle pour optimiser les performances industrielles.\n\nIdentifier les anomalies, anticiper les dysfonctionnements et faciliter la prise de décision.\n\nAmélioration continue & optimisation des flux\n\nAnalyser et optimiser les flux logistiques internes ainsi que les processus de tri des pneumatiques.\n\nIdentifier les axes d'amélioration pour réduire les pertes de temps et améliorer la productivité.\n\nParticiper au déploiement des méthodes Lean Manufacturing, 5S et Six Sigma.\n\nTraçabilité & performance industrielle\n\nContribuer à la conception et au déploiement d'un système de traçabilité des pneumatiques, de leur réception jusqu'à leur expédition.\n\nSuivre les indicateurs clés de performance (TRS, taux de rebut, délais, traçabilité).\n\nProposer des actions correctives et accompagner les équipes terrain dans l'utilisation des nouveaux outils.\n\nVotre profil\n\nVous préparez un diplôme d'ingénieur Bac+5, avec une spécialisation en data science, génie industriel ou génie des procédés.\n\nVous disposez idéalement :\n\nDe connaissances en Python, SQL, Machine Learning et outils de Business Intelligence.\n\nD'un intérêt marqué pour les environnements industriels, la logistique et l'optimisation des processus.\n\nDe notions en amélioration continue (Lean, 5S, Six Sigma).\n\nD'un bon esprit d'analyse et d'une capacité à proposer des solutions concrètes.\n\nVos atouts ? Rigueur, autonomie, curiosité, esprit d'équipe et aisance relationnelle.\n\nVous aimez autant analyser des données que comprendre ce qui se passe sur le terrain ? Cette alternance est faite pour vous !\n\nPourquoi nous rejoindre ?\n\nEn intégrant Léonard, vous bénéficierez :\n\nDe projets concrets mêlant industrie, data et intelligence artificielle.\n\nD'une véritable autonomie et de responsabilités dans vos missions.\n\nD'un accompagnement par un maître d'apprentissage.\n\nD'une immersion au cœur d'un environnement industriel, au contact direct des équipes.\n\nDe la possibilité de mesurer concrètement l'impact de vos actions sur la performance de notre usine.\n\nEnvie de relever le défi ?\n\nRejoignez Léonard et participez activement à l'amélioration de notre performance industrielle !\n\nPour postuler, transmettez nous votre CV et votre lettre de motivation, en précisant votre formation ainsi que votre rythme d'alternance.\n\nNous avons hâte de découvrir votre candidature !",
+   "dateCreation": "2026-10-21T14:43:20.997Z",
+   "dateActualisation": "2026-10-22T08:25:56.494Z",
+   "lieuTravail": {
+    "libelle": "62 - BETHUNE",
+    "latitude": 50.518267,
+    "longitude": 2.624768,
+    "codePostal": "62400",
+    "commune": "62119"
+   },
+   "romeCode": "M1811",
+   "romeLibelle": "Data engineer",
+   "appellationlibelle": "Ingénieur / Ingénieure en développement big data",
+   "entreprise": {
+    "nom": "BLACK STAR NEXT",
+    "entrepriseAdaptee": false
+   },
+   "typeContrat": "CDD",
+   "typeContratLibelle": "CDD - 12 Mois",
+   "natureContrat": "Contrat apprentissage",
+   "experienceExige": "E",
+   "experienceLibelle": "1 An(s)",
+   "formations": [
+    {
+     "niveauLibelle": "Bac+3, Bac+4 ou équivalents",
+     "exigence": "E"
+    }
+   ],
+   "competences": [
+    {
+     "code": "404121",
+     "libelle": "Data engineer",
+     "exigence": "S"
+    },
+    {
+     "code": "300067",
+     "libelle": "Analyser, exploiter, structurer des données",
+     "exigence": "S"
+    }
+   ],
+   "salaire": {
+    "commentaire": "Selon les éléments en vigueur",
+    "complement1": "Intéressement / participation",
+    "listeComplements": [
+     {
+      "code": "10",
+      "libelle": "Intéressement / participation"
+     }
+    ]
+   },
+   "dureeTravailLibelle": "35H/semaine\nTravail en journée",
+   "dureeTravailLibelleConverti": "Temps plein",
+   "alternance": true,
+   "contact": {},
+   "agence": {},
+   "nombrePostes": 1,
+   "deplacementCode": "1",
+   "deplacementLibelle": "Jamais Zone départementale",
+   "qualificationCode": "6",
+   "qualificationLibelle": "Employé qualifié",
+   "codeNAF": "22.11Z",
+   "secteurActivite": "22",
+   "secteurActiviteLibelle": "Fabrication et rechapage de pneumatiques",
+   "qualitesProfessionnelles": [
+    {
+     "libelle": "Faire preuve de rigueur et de précision",
+     "description": "Capacité à réaliser des tâches en suivant avec exactitude les règles, les procédures, les instructions qui ont été fournies, sans réaliser d'erreur et à transmettre clairement des informations. Se montrer ponctuel et respectueux des règles de savoir-vivre usuelles."
+    },
+    {
+     "libelle": "Etre force de proposition",
+     "description": "Capacité à initier, imaginer des propositions nouvelles pour résoudre les problèmes identifiés ou améliorer une situation. Être proactif."
+    },
+    {
+     "libelle": "Avoir l'esprit d'équipe",
+     "description": "Capacité à travailler et à se coordonner avec les autres au sein de l'entreprise pour réaliser les objectifs fixés."
+    }
+   ],
+   "trancheEffectifEtab": "50 à 99 salariés",
+   "origineOffre": {
+    "origine": "1",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/215MRWH"
+   },
+   "offresManqueCandidats": false,
+   "contexteTravail": {
+    "horaires": [
+     "35H/semaine\nTravail en journée"
+    ]
+   },
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "215MJSW",
+   "intitule": "Apprenti(e) Business Developer (H/F)",
+   "description": "Au sein de l'équipe IPS (Internal Product Specialists), contribuer à la performance commerciale en générant des ventes additionnelles auprès des clients sous contrat. Vous identifiez les contacts clés et les opportunités d'achat inexploitées, menez des campagnes commerciales ciblées, promouvez des produits stratégiques et transformez l'engagement client en opportunités commerciales qualifiées.\n\n\n\n\nPrincipales missions\n\n\n\n1. Actions commerciales ciblées & Marketing direct\n\nMarketing direct / Activation de comptes - Responsabilités principales\n\nIdentifier et cartographier les contacts pertinents ainsi que les décideurs au sein des comptes clients sous contrat.\nMettre en œuvre des actions ciblées visant à accroître l'adoption et l'utilisation des contrats existants.\nExécuter des campagnes commerciales pour promouvoir des produits sélectionnés, des catégories de produits, des nouveautés, des promotions et des initiatives stratégiques de fournisseurs.\nIdentifier des opportunités de ventes croisées (cross-selling) et de ventes complémentaires (upselling) en fonction du profil client, de l'historique d'achats, de la couverture contractuelle et du potentiel du portefeuille.\nGénérer et qualifier des leads commerciaux via des contacts clients proactifs et transmettre les opportunités aux équipes commerciales ou spécialistes concernées.\nContacter les clients par téléphone, e-mail et canaux digitaux afin de promouvoir des produits, solutions, promotions et avantages contractuels adaptés à leurs besoins.\nAssurer le suivi des campagnes marketing et des devis afin de convertir l'intérêt des clients en opportunités commerciales concrètes et en commandes.\nSoutenir le développement des gammes stratégiques, notamment la gamme VWR Collection, les marques propres et les portefeuilles fournisseurs prioritaires.\nCollaborer étroitement avec les Account Managers, les spécialistes commerciaux et l'équipe IPS afin de coordonner les actions, partager les opportunités qualifiées et éviter les doublons dans les contacts clients.\nEnregistrer les activités, contacts, leads et résultats dans le CRM et suivre les indicateurs clés de performance (KPI) tels que :\nnombre de contacts créés,\ncampagnes réalisées,\nleads générés,\nopportunités identifiées,\ntaux de conversion,\nchiffre d'affaires additionnel généré.\n\n2. Support technique (Internal Product Specialist)\n\nApporter un premier niveau de support technique sur certaines gammes de produits.\nRépondre aux demandes techniques des clients.\nRéaliser les offres commerciales et assurer leur suivi.\n\n\n3. Gestion des offres commerciales\n\nAssurer le suivi et les relances des devis afin de maximiser le taux de conversion.\nCollecter et consolider les retours du terrain afin d'améliorer les futures propositions commerciales.",
+   "dateCreation": "2026-10-21T12:16:27.302Z",
+   "dateActualisation": "2026-10-22T09:31:23.544Z",
+   "lieuTravail": {
+    "libelle": "93 - ROSNY-SOUS-BOIS",
+    "latitude": 48.871973,
+    "longitude": 2.488056,
+    "codePostal": "93110",
+    "commune": "93064"
+   },
+   "romeCode": "M1707",
+   "romeLibelle": "Responsable du développement commercial",
+   "appellationlibelle": "Responsable développement / Business Developer",
+   "entreprise": {
+    "nom": "V W R INTERNATIONAL",
+    "url": "https://www.avantorsciences.com/fr/fr/",
+    "entrepriseAdaptee": false
+   },
+   "typeContrat": "CDD",
+   "typeContratLibelle": "CDD - 12 Mois",
+   "natureContrat": "Contrat apprentissage",
+   "experienceExige": "D",
+   "experienceLibelle": "Débutant accepté",
+   "formations": [
+    {
+     "codeFormation": "11554",
+     "domaineLibelle": "Chimie",
+     "niveauLibelle": "Bac+3, Bac+4 ou équivalents",
+     "commentaire": "biologie,  biochimie,data / CRM, ",
+     "exigence": "S"
+    }
+   ],
+   "langues": [
+    {
+     "libelle": "Anglais",
+     "exigence": "S"
+    }
+   ],
+   "competences": [
+    {
+     "code": "115028",
+     "libelle": "Données d'activité de la structure, du service",
+     "exigence": "S"
+    },
+    {
+     "code": "300067",
+     "libelle": "Analyser, exploiter, structurer des données",
+     "exigence": "S"
+    },
+    {
+     "code": "121364",
+     "libelle": "Déterminer le potentiel d'un client ou prospect",
+     "exigence": "S"
+    },
+    {
+     "code": "300384",
+     "libelle": "Elaborer une stratégie commerciale",
+     "exigence": "S"
+    },
+    {
+     "code": "122534",
+     "libelle": "Mettre en œuvre la stratégie commerciale de l'entreprise",
+     "exigence": "S"
+    }
+   ],
+   "salaire": {
+    "commentaire": "salaire de base + benefis",
+    "complement1": "Titres restaurant / Prime de panier",
+    "complement2": "Indemnité transports",
+    "listeComplements": [
+     {
+      "code": "6",
+      "libelle": "Titres restaurant / Prime de panier"
+     },
+     {
+      "code": "14",
+      "libelle": "Indemnité transports"
+     },
+     {
+      "code": "3",
+      "libelle": "Téléphone mobile"
+     },
+     {
+      "code": "4",
+      "libelle": "Ordinateur portable"
+     }
+    ]
+   },
+   "dureeTravailLibelle": "Temps partiel - 20H/semaine\nTravail en journée",
+   "dureeTravailLibelleConverti": "Temps partiel",
+   "alternance": true,
+   "contact": {
+    "nom": "V W R INTERNATIONAL - Mme Bigaj Justyna",
+    "coordonnees1": "https://careers.avantorsciences.com/fr/apprenti-e-business-developer-h-f/job/R-175423",
+    "urlPostulation": "https://careers.avantorsciences.com/fr/apprenti-e-business-developer-h-f/job/R-175423"
+   },
+   "agence": {},
+   "nombrePostes": 1,
+   "deplacementCode": "1",
+   "deplacementLibelle": "Jamais Zone départementale",
+   "qualificationCode": "5",
+   "qualificationLibelle": "Employé non qualifié",
+   "codeNAF": "46.75Z",
+   "secteurActivite": "46",
+   "secteurActiviteLibelle": "Commerce de gros (commerce interentreprises) de produits chimiques",
+   "qualitesProfessionnelles": [
+    {
+     "libelle": "Etre force de proposition",
+     "description": "Capacité à initier, imaginer des propositions nouvelles pour résoudre les problèmes identifiés ou améliorer une situation. Être proactif."
+    },
+    {
+     "libelle": "Organiser son travail selon les priorités et les objectifs",
+     "description": "Capacité à planifier, prioriser, anticiper des actions, en tenant compte des moyens, des ressources, des objectifs et du calendrier pour les réaliser."
+    },
+    {
+     "libelle": "Faire preuve d'autonomie",
+     "description": "Capacité à prendre en charge son activité sans devoir être encadré de façon continue (le cas échéant, à solliciter les autres acteurs de l'entreprise)."
+    }
+   ],
+   "trancheEffectifEtab": "200 à 249 salariés",
+   "origineOffre": {
+    "origine": "1",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/215MJSW"
+   },
+   "offresManqueCandidats": false,
+   "contexteTravail": {
+    "horaires": [
+     "Temps partiel - 20H/semaine\nTravail en journée"
+    ]
+   },
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8250156",
+   "intitule": "Alternance Data analyst - Montreuil (F/H)",
+   "description": "Production des données de pilotage : collecter, analyser et croiser les données issues des applicatifs métiers de la douane (lutte contre la fraude, dédouanement.) pour suivre l'activité et les résultats des services déconcentrés, et répondre aux demandes de la direction.Création de tableaux de bord : concevoir des tableaux de bord, des infographies et des visualisations d'aide à la décision, préparer les données dans Tableau Prep et requêter le lac de données.Projet de système d'information décisionnel : participer à la définition des règles de gestion des indicateurs et à la mise en place des traitements dans Tableau, et contribuer à la recette en lien avec la DSI et les prestataires.Automatisation et amélioration continue : automatiser la production des tableaux de bord et des rapports, et proposer des solutions pour accélérer la collecte, l'analyse et la restitution des données.",
+   "dateCreation": "2026-10-24T12:02:42.855Z",
+   "dateActualisation": "2026-10-24T12:02:42.855Z",
+   "lieuTravail": {
+    "libelle": "93 - Montreuil",
+    "codePostal": "93100",
+    "commune": "93048"
+   },
+   "romeCode": "M1419",
+   "romeLibelle": "Data analyst",
+   "appellationlibelle": "Data analyst",
+   "entreprise": {},
+   "typeContrat": "CDD",
+   "typeContratLibelle": "CDD - 12 Mois",
+   "natureContrat": "Cont. professionnalisation",
+   "experienceExige": "D",
+   "experienceLibelle": "Débutant accepté",
+   "salaire": {},
+   "alternance": true,
+   "contact": {},
+   "nombrePostes": 1,
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8250156",
+    "partenaires": [
+     {
+      "nom": "DIRECTEMPLOI",
+      "url": "https://www.directemploi.com/candidatOffre/56817699?utm_source=pole-emploi&utm_medium=referral&utm_campaign=Pôle-Emploi",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/directemploi80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8207151",
+   "intitule": "Alternance Data Analyst Client - Paris (F/H)",
+   "description": "Rattaché au pôle informatique et data analyse, vos missions seront de :Collecter les données clients,Contacter les clients par téléphone, e-mail et ponctuellement lors de visites pour compléter les informations,Renseigner et mettre à jour les données dans le nouvel outil métier,Vérifier la fiabilité et la qualité des informations saisies,Assurer le suivi des dossiers incomplets et effectuer les relances nécessaires,Participer ponctuellement à la planification et à la coordination de certaines interventions.",
+   "dateCreation": "2026-10-23T13:31:07.371Z",
+   "dateActualisation": "2026-10-23T13:31:07.371Z",
+   "lieuTravail": {
+    "libelle": "75 - Paris",
+    "commune": "75056"
+   },
+   "romeCode": "M1419",
+   "romeLibelle": "Data analyst",
+   "appellationlibelle": "Data analyst",
+   "entreprise": {},
+   "typeContrat": "CDD",
+   "typeContratLibelle": "CDD - 12 Mois",
+   "natureContrat": "Cont. professionnalisation",
+   "experienceExige": "D",
+   "experienceLibelle": "Débutant accepté",
+   "salaire": {},
+   "alternance": true,
+   "contact": {},
+   "nombrePostes": 1,
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8207151",
+    "partenaires": [
+     {
+      "nom": "DIRECTEMPLOI",
+      "url": "https://www.directemploi.com/candidatOffre/56789535?utm_source=pole-emploi&utm_medium=referral&utm_campaign=Pôle-Emploi",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/directemploi80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8203382",
+   "intitule": "Carrefour Links Chef de Projet Data (F/H) - Alternance - MASSY",
+   "description": "Carrefour Links Chef de Projet Data (F/H) - Alternance\nVous êtes rigoureux, synthétique et avez à cœur d'accélérer la transformation data de nos partenaires ? En tant que Carrefour Links Chef de Projet Data (F/H), vous êtes garants de la satisfaction des industriels partenaires et de la coordination avec la Digital Factory.\nVos missions :\nOnboarding & Customer Success : Former et accompagner les utilisateurs internationaux et locaux sur les plateformes Links Growth, puis animer la relation client via newsletters, REX et suivi statistiques.\nSupport & Coordination Produit : Travailler avec les équipes opérations et data, accompagner les CSM dans la résolution des tickets et assurer le suivi des demandes auprès des équipes Produits.\nAnalyse & Storytelling Business : Accompagner la réalisation de cas d'usages adaptés aux enjeux des clients et présenter des synthèses à forte valeur ajoutée à destination des Codir.\nPilotage de l'activité : Suivre les indicateurs clés de l'équipe et assurer un suivi rigoureux des projets et clients en cours via les outils internes.\nVotre profil :\nFormation : Master 1 ou 2 (École de commerce, d'ingénieur ou universitaire).\nSavoir-faire : Aisance relationnelle, esprit de synthèse, orientation client et analyse de données.\nOutils maîtrisés : Excel et outils de Data Visualisation (Looker, Tableau).\nSavoir-être : Autonomie, rigueur, goût du travail en équipe et anglais courant.\nCe que nous offrons :\nAvantages : remboursement des frais de transport (50%), 12% de remise sur carte Pass, parking.\nBien-être : Salle de sport + accès à Wellpass, restauration, conciergerie, crèche, CSE attractif.\nVotre Carrière : Plan de formation et perspectives d'évolution interne.\nContrat : Alternance de 12 mois à partir de janvier .\nQui sommes-nous ? Notre engagement :\nCarrefour, c'est bien plus qu'un distributeur. C'est un acteur engagé dans la transition alimentaire pour tous, la consommation responsable, le respect du climat et de la biodiversité. À travers ses enseignes et ses divers métiers, le Groupe s'investit dans un modèle durable et inclusif grâce à ses expertises, son innovation et l'engagement de ses collaborateurs.\nCarrefour valorise la diversité des parcours et s'engage à ne laisser aucun talent de côté. Fiers de nos équipes représentatives de la société, nous encourageons tous les profils à postuler, garantissant un recrutement inclusif et sans discrimination.",
+   "dateCreation": "2026-10-23T13:14:28.793Z",
+   "dateActualisation": "2026-10-23T13:14:28.793Z",
+   "lieuTravail": {
+    "libelle": "91 - Massy",
+    "codePostal": "91300",
+    "commune": "91377"
+   },
+   "romeCode": "M1854",
+   "romeLibelle": "Chef / Cheffe de projet réseau fixe et mobile",
+   "appellationlibelle": "Chef / Cheffe de projet Datacenter",
+   "entreprise": {},
+   "typeContrat": "CDD",
+   "typeContratLibelle": "CDD - 12 Mois",
+   "natureContrat": "Cont. professionnalisation",
+   "experienceExige": "D",
+   "experienceLibelle": "Débutant accepté",
+   "salaire": {},
+   "alternance": true,
+   "contact": {},
+   "nombrePostes": 1,
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8203382",
+    "partenaires": [
+     {
+      "nom": "DIRECTEMPLOI",
+      "url": "https://www.directemploi.com/candidatOffre/56801492?utm_source=pole-emploi&utm_medium=referral&utm_campaign=Pôle-Emploi",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/directemploi80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8161126",
+   "intitule": "Alternance Data Analyst Client - Paris (H/F)",
+   "description": "L'ISCOD, spécialiste de la formation en Digital Learning, recherche pour son entreprise partenaire, spécialisée dans Nettoyage, un.e Data Analyst Clients, pour préparer l'une de nos formations diplômantes reconnues par l'Etat, de niveau 4 à niveau 7 (Bac, Bac+2, Bachelor/Bac+3 ou Mastère/Bac+5).Choisissez l'alternance nouvelle génération avec l'ISCOD !\nLES MISSIONS\nRattaché au pôle informatique et data analyse, vos missions seront de :Collecter les données clients,Contacter les clients par téléphone, e-mail et ponctuellement lors de visites pour compléter les informations,Renseigner et mettre à jour les données dans le nouvel outil métier,Vérifier la fiabilité et la qualité des informations saisies,Assurer le suivi des dossiers incomplets et effectuer les relances nécessaires,Participer ponctuellement à la planification et à la coordination de certaines interventions.\n\nPROFIL RECHERCHE\nVous êtes la ou le candidat idéal si vous êtes : Organisé, autonome et proactif.Vous aimez le travail en équipe et savez vous appuyer sur votre aisance rédactionnelle tout comme votre aisance à l'oral.Vous avez une appétence en analyse de données.Poste basé au c?ur de Paris (4e arr.)Rémunération selon niveau d'études + âge.Vous êtes intéressé(e) par cette offre d'emploi en alternance ? Postulez dès maintenant !",
+   "dateCreation": "2026-10-22T11:22:08.379Z",
+   "dateActualisation": "2026-10-22T11:22:08.379Z",
+   "lieuTravail": {
+    "libelle": "75 - Paris 4e Arrondissement",
+    "codePostal": "75004",
+    "commune": "75104"
+   },
+   "romeCode": "M1419",
+   "romeLibelle": "Data analyst",
+   "appellationlibelle": "Data analyst",
+   "entreprise": {
+    "nom": "ISCOD"
+   },
+   "typeContrat": "CDD",
+   "typeContratLibelle": "CDD - 12 Mois",
+   "natureContrat": "Contrat apprentissage",
+   "experienceExige": "E",
+   "experienceLibelle": "1 An(s)",
+   "salaire": {},
+   "complementExercice": "Temps plein",
+   "alternance": true,
+   "contact": {},
+   "nombrePostes": 1,
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8161126",
+    "partenaires": [
+     {
+      "nom": "PMEJOB",
+      "url": "https://www.pmejob.fr/offre-emploi-alternance-data-analyst-client-paris-paris-2648078.html#utm_source=Pole_emploi&utm_medium=free&utm_campaign=Pole_emploi",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/pmejob80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8126849",
+   "intitule": "Alternance Dev Data IA - Saint-Herblain (H/F)",
+   "description": "L'ISCOD, spécialiste de la formation en Digital Learning, recherche pour son entreprise partenaire, spécialisée dans la fabrication des équipements électroniques, un.e Dev Data IA, pour préparer l'une de nos formations diplômantes reconnues par l'Etat, de niveau 4 à niveau 7 (Bac, Bac+2, Bachelor/Bac+3 ou Mastère/Bac+5).Choisissez l'alternance nouvelle génération avec l'ISCOD !\nLES MISSIONS\nRéaliser des tableaux de bord et des visualisations de données avec Power BICréer et faire évoluer des rapports décisionnelsComprendre et analyser les besoins des métiersCréer et maintenir des flux ETLRéaliser des requêtes SQLParticiper à la gestion et à l'évolution des bases de donnéesDévelopper des agents IA avec Copilot StudioSuivre l'utilisation et l'adoption des solutions IAExpérimenter de nouveaux cas d'usage autour de l'intelligence artificielleParticiper à la communauté AI FriendsRédiger la documentation technico-fonctionnelleAccompagner l'équipe dans la gestion des incidents\n\nPROFIL RECHERCHE\nVous êtes le ou la candidat(e) idéal(e) si :Connaissances de SQLConnaissances de GitConnaissances de DAX / Power QueryConnaissance d'un outil ETLCompréhension des IA générativesCompréhension des concepts liés aux prompts, aux agents et aux fluxAnglais professionnelVous êtes éligible à une formation Bac+2 à Bac+5 (diplôme validé ou en cours de validation)Poste basé à SAINT-HERBLAIN (44800)Rémunération selon niveau d'études + âge. Formation prise en charge à 100% par l'entreprise.Vous êtes intéressé(e) par cette offre d'emploi en alternance ? Postulez dès maintenant !",
+   "dateCreation": "2026-10-21T11:21:31.524Z",
+   "dateActualisation": "2026-10-21T11:21:31.524Z",
+   "lieuTravail": {
+    "libelle": "44 - Saint-Herblain",
+    "codePostal": "44800",
+    "commune": "44162"
+   },
+   "romeCode": "A1404",
+   "romeLibelle": "Aquaculteur / Aquacultrice",
+   "appellationlibelle": "Pectiniculteur / Pectinicultrice (coquilles Saint-Jacques)",
+   "entreprise": {
+    "nom": "ISCOD"
+   },
+   "typeContrat": "CDD",
+   "typeContratLibelle": "CDD - 12 Mois",
+   "natureContrat": "Contrat apprentissage",
+   "experienceExige": "E",
+   "experienceLibelle": "1 An(s)",
+   "salaire": {},
+   "complementExercice": "Temps plein",
+   "alternance": true,
+   "contact": {},
+   "nombrePostes": 1,
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8126849",
+    "partenaires": [
+     {
+      "nom": "PMEJOB",
+      "url": "https://www.pmejob.fr/offre-emploi-alternance-dev-data-ia-saint-herblain-saint-herblain-2646772.html#utm_source=Pole_emploi&utm_medium=free&utm_campaign=Pole_emploi",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/pmejob80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8022570",
+   "intitule": "Alternance Analyste fonctionnel & Data - Saint-Sébastien-sur-Loire (F/H)",
+   "description": "Assurer l'administration de niveau 1 de l'ERP et du CRM, ainsi que leur maintien en condition opérationnelleOptimiser le paramétrage fonctionnel de la solutionAnalyser le fonctionnement métier de l'outil et travailler avec les référents métierSuivre les projets d'optimisation et y contribuerPréparer et animer les points d'échange liés aux projetsConcevoir et réaliser les tableaux de bord et rapports Power BICorriger et optimiser les modèles de donnéesMaintenir et mettre à jour la partie ETLRecueillir et analyser les besoins fonctionnels et techniques auprès des parties prenantes",
+   "dateCreation": "2026-10-18T11:58:04.600Z",
+   "dateActualisation": "2026-10-23T13:28:23.800Z",
+   "lieuTravail": {
+    "libelle": "44 - Saint-Sébastien-sur-Loire",
+    "codePostal": "44230",
+    "commune": "44190"
+   },
+   "romeCode": "M1811",
+   "romeLibelle": "Data engineer",
+   "appellationlibelle": "Data engineer",
+   "entreprise": {},
+   "typeContrat": "CDD",
+   "typeContratLibelle": "CDD - 12 Mois",
+   "natureContrat": "Cont. professionnalisation",
+   "experienceExige": "D",
+   "experienceLibelle": "Débutant accepté",
+   "salaire": {},
+   "alternance": true,
+   "contact": {},
+   "nombrePostes": 1,
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8022570",
+    "partenaires": [
+     {
+      "nom": "DIRECTEMPLOI",
+      "url": "https://www.directemploi.com/candidatOffre/56736530?utm_source=pole-emploi&utm_medium=referral&utm_campaign=Pôle-Emploi",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/directemploi80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8020632",
+   "intitule": "Chef(fe) de Projet BI & Data H/F",
+   "description": "Description\nTransdev recrute un Chef(fe)\nde Projet BI & Data\nExpert de la mobilité, le groupe Transdev s'engage pour\ndévelopper des solutions de transport de voyageurs performantes, innovantes,\npersonnalisées et de haute qualité.\nParce que nous maîtrisons des modes de transport diversifiés\n(bus, car, tram, cable,  Transpoirt à la\ndemande, vélo...) et que nous sommes implantés dans 20 pays sur les 5\ncontinents, nous imaginons des offres qui nous positionnent comme l'un des\nréférents au niveau mondial.\nPassionnés, engagés, performants et partenaires, nos \ncollaborateurs évoluent dans un univers où la mobilité permet d'aller toujours\nplus loin.\nVous rêvez d'un métier qui vous transporte ? Rejoignez dès\nmaintenant nos équipes et bénéficiez d'un cadre exceptionnel, favorable à\nl'expression de vos talents.\nVotre destination\nLa région Ile de France chez Transdev regroupe les activités\npour Ile de France Mobilités et les Activités Privées et Pole Aéroportuaire :\nquelques collaborateurs, plus de bus et cars, le Câble C1 etc.  Vous interviendrez au sein de la DSI Ile de\nFrance, environ 20 personnes, qui délivre ses services pour toutes les entités\nde la région Ile de France. Outre les équipes de la DSI IDF, vous serez en lien\nétroit entre les Directions Métiers de la région IDF (Performance,\nClients, Qualité, Finance et RH), les entités locales qui opèrent le service\naux voyageurs, et la DSI France, qui délivre les plateformes techniques\npartagées.\nFinalité du poste\nPiloter les projets de Business Intelligence et de\nvalorisation de la donnée afin de fournir aux différents métiers de Transdev\nÎle-de-France (Exploitation, Maintenance, Ressources Humaines, Finance, QSE)\ndes outils d'aide à la décision fiables, pertinents et adaptés à leurs besoins.\nLe/la Chef(fe) de Projet BI & Data intervient sur\nl'ensemble du cycle de vie des solutions Data & BI, depuis le recueil des\nbesoins jusqu'à leur déploiement, leur évolution et leur amélioration continue.\nIl/elle assure l'interface entre les utilisateurs métiers et les acteurs\ntechniques.\nLe poste s'appuie sur un Data Analyst dont il/elle coordonne\net supervise l'activité dans le cadre des projets Data & BI.\nMissions principales\n- Recueillir et challenger les besoins des métiers afin de concevoir des solutions Data & BI adaptées.\n- Piloter le portefeuille de projets et coordonner les différents acteurs impliqués.\n- Concevoir et faire évoluer les outils de reporting, d'analyse et de pilotage.\n- Définir les indicateurs, modèles de données et règles de gestion nécessaires aux projets.\n- Collaborer avec les équipes Data et Intégration pour garantir la disponibilité et la qualité des données.\n- Réaliser des analyses de données et présenter les résultats aux parties prenantes.\n- Veiller à la qualité de la visualisation des données et à l'expérience utilisateur.\n- Définir les priorités de développement et coordonner l'activité du Data Analyst.\n- Assurer la maintenance et l'amélioration continue des solutions déployées.\nProfil et compétences\n-Nous recherchons des profils disposant de 5 ans d'expérience minimum, hors alternance.\n- Fort esprit analytique et réelle appétence pour les sujets liés à la donnée.\n- Capacité à comprendre les enjeux métiers et à les traduire en solutions techniques adaptées.\n- Aisance dans le pilotage de projets et la gestion des priorités.\n- Curiosité, autonomie, réactivité et orientation résultats.\n- Capacité à interagir avec des interlocuteurs variés, aussi bien métiers que techniques.\n- Bonne maîtrise de Power BI et de Power Query.\n- Bases solides en SQL.\n- Sensibilité aux enjeux de datavisualisation et d'expérience utilisateur (UX).\n- Bonne compréhension des principes de modélisation des données et des enjeux de qualité des données.\n- Familiarité avec Power Automate et Power Apps.\nEnvironnement technique\nPower BI\nPower Query\nSQL\nSnowflake\nPower Automate\nPower Apps\nSuite Microsoft 365\nLes plus !\n- Nous accompagnons le développement, l'équilibre professionnel et personnel et le bien-être de nos collaborateurs. \n- Nous construisons une culture d'entreprise bienveillante qui valorise la diversité, permettant à chacun de s'épanouir.\n- Nous donnons à nos collaborateurs la possibilité d'avoir un impact sociétal positif en déployant des transports durables.\n- Nous offrons à nos collaborateurs des opportunités pour construire leur expérience au sein d'un Groupe international, aux activités locales.",
+   "dateCreation": "2026-10-18T11:55:44.331Z",
+   "dateActualisation": "2026-10-23T12:57:02.340Z",
+   "lieuTravail": {
+    "libelle": "92 - Issy-les-Moulineaux",
+    "codePostal": "92130",
+    "commune": "92040"
+   },
+   "romeCode": "M1853",
+   "romeLibelle": "Chef / Cheffe de projet étude et développement informatique",
+   "appellationlibelle": "Chargé / Chargée de projet Data",
+   "entreprise": {},
+   "typeContrat": "CDD",
+   "typeContratLibelle": "CDD - 12 Mois",
+   "natureContrat": "Cont. professionnalisation",
+   "experienceExige": "D",
+   "experienceLibelle": "Débutant accepté",
+   "salaire": {},
+   "alternance": true,
+   "contact": {},
+   "nombrePostes": 1,
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8020632",
+    "partenaires": [
+     {
+      "nom": "DIRECTEMPLOI",
+      "url": "https://www.directemploi.com/candidatOffre/56445407?utm_source=pole-emploi&utm_medium=referral&utm_campaign=Pôle-Emploi",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/directemploi80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  }
+ ],
+ "filtresPossibles": [
+  {
+   "filtre": "typeContrat",
+   "agregation": [
+    {
+     "valeurPossible": "CDD",
+     "nbResultats": 9
+    }
+   ]
+  },
+  {
+   "filtre": "experience",
+   "agregation": [
+    {
+     "valeurPossible": "4",
+     "nbResultats": 6
+    },
+    {
+     "valeurPossible": "2",
+     "nbResultats": 3
+    }
+   ]
+  },
+  {
+   "filtre": "qualification",
+   "agregation": [
+    {
+     "valeurPossible": "0",
+     "nbResultats": 2
+    },
+    {
+     "valeurPossible": "X",
+     "nbResultats": 7
+    }
+   ]
+  },
+  {
+   "filtre": "natureContrat",
+   "agregation": [
+    {
+     "valeurPossible": "E2",
+     "nbResultats": 4
+    },
+    {
+     "valeurPossible": "FS",
+     "nbResultats": 5
+    }
+   ]
+  }
+ ]
+}

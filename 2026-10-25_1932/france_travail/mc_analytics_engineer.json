@@ -1,0 +1,221 @@
+{
+ "resultats": [
+  {
+   "id": "8208262",
+   "intitule": "Analytics Engineer Consultant - Luxe, Retail, Hospitalité, Services - CDI - Digital Customer H/F",
+   "description": "En tant qu'organisateur de forums de recrutement, Talents Handicap accompagne de très nombreuses entreprises & organisations en France dans leurs recrutements de collaborateurs en situation de handicap. Participant actuellement à l'un de nos forums.\nL'entreprise Wavestone recherche actuellement des profils :\nDescription de l'entreprise\nRejoignez un cabinet de conseil international qui accompagne les grandes transformations stratégiques.\nNous sommes Wavestone : des expert-es passionné-es et orienté-es solutions, qui placent l'humain au cœur de la performance et de la croissance. Ambitieux-ses et en pleine expansion, nous développons sans cesse notre portefeuille de clients et de projets, avec une portée internationale et une réelle volonté de générer un impact positif.\nÊtes-vous un vrai team player, porté par des valeurs fortes ? Êtes-vous curieux-se et déterminé-e, avec l'envie d'apprendre chaque jour ? Êtes-vous du genre à relever les défis sans hésiter ? Alors vous êtes au bon endroit. Rejoignez Wavestone et exprimez votre potentiel dans un environnement stimulant et collaboratif, où l'on transforme les défis d'aujourd'hui en opportunités de demain.\nDescription du poste\nAu sein du bureau de Paris, la business unit Digital Customer (350 collaborateurs) accompagne les grandes entreprises françaises et internationales dans leurs projets de transformation. La BU accompagne en particulier les secteurs du Luxe, du Retail, de la Beauté, de l'Hospitalité, des Services et des FMCG.\nAu cœur des plus grands enjeux actuels et futurs de ces secteurs, vous accompagnerez nos clients dans leurs projets de transformation les plus importants : lancement de nouvelles offres et de produits, digitalisation des parcours et processus métier, amélioration de la connaissance client, performance de la Supply Chain, exploitation des données pour la recherche et l'innovation, refonte des modèles de distribution.  \nAu sein de la BU DC, l'offre Data, Analytics & AI (80 consultants au sein de la communauté) accompagne les directions métiers, Data & IT dans leurs transformations liées aux données. Les enjeux sont vastes : le renforcement de la connaissance client pour mieux cibler les actions Marketing, l'automatisation de processus via l'IA, la monétisation des données en sont des exemples. Nos équipes vont intervenir de bout en bout sur ces projets de transformation, de la stratégie à la mise en œuvre opérationnelle.\nNous recherchons des Analytics Engineers capables d'intervenir tout au long de la chaîne de valeur data, de la réflexion stratégique à la mise en œuvre opérationnelle. Vous accompagnerez nos clients dans la structuration de leurs usages data, la définition d'indicateurs de performance pertinents et le déploiement de solutions analytiques robustes. Vous évoluerez sur des environnements data modernes en vous appuyant sur SQL et Power BI (indispensable), avec, selon les missions, GCP BigQuery, Databricks ou Snowflake. La maîtrise de dbt et/ou d'autres outils de dataviz (Tableau, Looker.) constituera un véritable atout.\nCase n°1 :\nGrand acteur mondial du Luxe\nDans un contexte de transformation majeure du SI, accompagnement du groupe dans la refonte complète des usages Analytics pour les périmètres Retail et Finance.\nCadrage des besoins métiers et définition des indicateurs de pilotage clés pour les directions Retail et Finance\nModélisation des données en vue d'une mise à disposition en self-service analytics pour les équipes métiers\nSpécification, conception et pilotage des transformations des données brutes dans dbt (modèles, règles de gestion, tests de qualité)\nContribution à la gouvernance data et à la structuration des usages Analytics\nPilotage et delivery des nouveaux dashboards de performance et de pilotage de l'entreprise (Power BI)\nCase n°2 :\nGrand acteur international des Cosmétiques\nAccompagnement dans la refonte de la méthodologie d'audit des usines de production, avec un fort enjeu de fiabilisation et de pilotage global.\nCadrage du projet et formalisation des besoins des équipes Qualité, Industrielles et Corporate\nConception d'un dashboard automatisé couvrant la collecte, la transformation et la visualisation des données d'audit\nMise en place de vues analytiques à différents niveaux de granularité (zone géographique, site, usine)\nTransformation et structuration des données dans GCP / BigQuery\nDéfinition de la gouvernance data, des rôles et des rituels de pilotage associés\nConstruction du cockpit de pilotage pour le suivi des audits et la prise de décision\nCase n°3 : \nGrand acteur FMCG\nMise en place des dispositifs de pilotage data du plan stratégique visant à améliorer les compositions nutritionnelles des produits du groupe.\nCadrage des nouveaux dashboards de pilotage : définition des KPI, parcours utilisateurs et UX Design\nPréparation et transformation des données dans Databricks\nDelivery des dashboards de pilotage dans Power BI à destination des équipes Corporate et Métiers\nStructuration des indicateurs de su...",
+   "dateCreation": "2026-10-23T13:33:13.919Z",
+   "dateActualisation": "2026-10-23T13:33:13.919Z",
+   "lieuTravail": {
+    "libelle": "92 - Nanterre",
+    "codePostal": "92000",
+    "commune": "92050"
+   },
+   "romeCode": "B1301",
+   "romeLibelle": "Etalagiste",
+   "appellationlibelle": "Etalagiste en articles de luxe",
+   "entreprise": {},
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "D",
+   "experienceLibelle": "Débutant accepté",
+   "salaire": {},
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8208262",
+    "partenaires": [
+     {
+      "nom": "DIRECTEMPLOI",
+      "url": "https://www.directemploi.com/candidatOffre/55877439?utm_source=pole-emploi&utm_medium=referral&utm_campaign=Pôle-Emploi",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/directemploi80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8106014",
+   "intitule": "Analytics engineer F/H - Le Gouessant",
+   "description": "Dans le cadre de la modernisation de sa plateforme de données, la coopérative renforce son service Data au sein de la Direction des Systèmes d'Information. Vous rejoignez une équipe à taille humaine, où la polyvalence fait partie intégrante du fonctionnement. Chaque membre intervient sur l'ensemble de la chaîne de valeur de la donnée, depuis la collecte et la transformation des données jusqu'à leur valorisation auprès des utilisateurs métiers.\n \n \n \nVos missions :\n \n \n \n \nPiloter la modernisation et l'évolution de la plateforme Data\n \n- Porter la conception et l'évolution de l'architecture de l'entrepôt de données (Data Warehouse), en étant force de proposition sur les modèles de données, les standards de structuration et les principes d'intégration, permettant de garantir la cohérence, la performance et la pérennité de la plateforme. \n- Porter techniquement la modernisation de la plateforme Data : bonnes pratiques de développement, CI/CD. Conduire les évaluations techniques et contribuer aux choix d'architecture et d'outillage. \n- Proposer et faire vivre les standards de développement, et accompagner techniquement l'équipe pour favoriser la montée en compétences collective. \n \nConcevoir et fiabiliser les flux de données\n \n- Concevoir, développer et maintenir les flux de données : alimentation depuis les systèmes sources, traitements, modélisation décisionnelle et mise à disposition des données. \n- Assurer la fiabilité et la qualité des traitements : supervision, contrôles de cohérence, gestion des incidents et documentation. \n \nContribuer à la mise à disposition et à la gouvernance des données\n \n- Recueillir, analyser et challenger les besoins des directions métiers afin de proposer des solutions adaptées. \n- Participer au développement de la gouvernance des données, notamment à travers la structuration du catalogue de données. \n- Concevoir les modèles de données et les tableaux de bord de notre outil BI et accompagner les utilisateurs dans leur usage. \n \n \n Les + du poste \n- Des échanges directs et fréquents avec les directions métiers et les autres services de la DSI. \n- \nUn rôle clé dans la structuration de la couche de transformation des données, au cœur de la modernisation de notre écosystème Data. \n- Une influence directe sur les choix d'architecture et d'outillage dans un circuit de décision court. \n- Une démarche d'industrialisation qui s'appuie sur l'IA générative, déjà déployée dans l'équipe et appelée à s'intégrer à notre chaîne de développement.- De formation supérieure Bac+5 en informatique, data ou statistiques, vous justifiez d'une expérience significative d'au moins 5 ans sur des fonctions Data/décisionnelles (Data Engineer, Analytics Engineer, Ingénieur BI, Consultant BI...). \n- Vous maîtrisez SQL et la modélisation de données, leur historisation et les mécanismes de chargement incrémental. \n- Vous disposez d'une culture de la CI/CD appliquée à la data : versionnement, tests, intégration et déploiement continus, documentation. Vous avez de préférence déjà mis en place ces pratiques au sein de vos expériences passées. \n- Une expérience de l'environnement Microsoft (SQL Server / SSIS) est un atout, tout comme la maitrise de dbt et/ou de Python. \n- Une expérience sur Qlik Sense est appréciée. À défaut, vous maîtrisez un autre outil de restitution tel que Power BI, Tableau ou Looker. \n- Force de proposition, vous contribuez activement à l'évolution de la plateforme en apportant votre expertise sur les sujets de transformation, de modélisation et d'industrialisation des traitement de données. Vous êtes capable de challenger les choix techniques, de participer à l'amélioration continue des pratiques de l'équipe et de contribuer à la définition des futurs standards de la plateforme. \n- Au-delà des compétences techniques, vous faites preuve d'autonomie, de rigueur et d'un réel esprit d'analyse.\nBon communiquant, capable de vulgariser auprès des métiers nos concepts techniques, vous appréciez les échanges avec ces derniers, savez challenger les besoins exprimés et avez à cœur d'accompagner les utilisateurs dans l'appropriation des solutions mises en œuvre. \n \n \n Les conditions d'emploi \n- Poste en CDI - temps plein forfait jours (15 jours de RTT) \n- Lieu de travail : Noyal-sur-Vilaine (35) ou Lamballe (22), avec des déplacements ponctuels sur les sites du Groupe. \n- Télétravail possible 2 jours par semaine. \n- Rémunération selon expérience + avantages : CSE, dispositifs intéressement/participation... \n- Date de prise de fonction : dès accord.",
+   "dateCreation": "2026-10-20T21:15:22.938Z",
+   "dateActualisation": "2026-10-20T21:15:22.938Z",
+   "lieuTravail": {
+    "libelle": "35 - Noyal-sur-Vilaine",
+    "codePostal": "35530",
+    "commune": "35207"
+   },
+   "romeCode": "M1419",
+   "romeLibelle": "Data analyst",
+   "appellationlibelle": "Data analyst",
+   "entreprise": {
+    "nom": "Le Gouessant"
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "5 An(s)",
+   "salaire": {},
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "codeNAF": "10.91Z",
+   "secteurActivite": "10",
+   "secteurActiviteLibelle": "Fabrication d'aliments pour animaux de ferme",
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8106014",
+    "partenaires": [
+     {
+      "nom": "WE_RECRUIT",
+      "url": "https://recrutement.legouessant.com/fr/offres/analytics-engineer-cfbcb2?utm_source=francetravail&utm_medium=job-board",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/we_recruit80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8100134",
+   "intitule": "Analytics engineer F/H",
+   "description": "? Concevoir, développer et déployer des pipelines de données robustes et scalables sur la plateforme Databricks.\n? Modéliser et préparer les données (Delta Lake) pour répondre efficacement aux enjeux analytiques de nos clients.\n? Optimiser les performances des traitements de données (Apache Spark, SQL, Python) et garantir la fiabilité de l'architecture.\n? Collaborer étroitement avec les Data Scientists et les équipes métiers pour industrialiser les cas d'usage Data.\n Implémenter les bonnes pratiques d'ingénierie logicielle (CI/CD, tests automatisés, versioning) au sein des projets.",
+   "dateCreation": "2026-10-20T13:27:01.493Z",
+   "dateActualisation": "2026-10-23T13:12:07.007Z",
+   "lieuTravail": {
+    "libelle": "59 - Marcq-en-Barœul",
+    "codePostal": "59700",
+    "commune": "59378"
+   },
+   "romeCode": "M1811",
+   "romeLibelle": "Data engineer",
+   "appellationlibelle": "Data engineer",
+   "entreprise": {},
+   "typeContrat": "MIS",
+   "typeContratLibelle": "Intérim - 1 Mois",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "D",
+   "experienceLibelle": "Débutant accepté",
+   "salaire": {},
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "codeNAF": "78.10Z",
+   "secteurActivite": "78",
+   "secteurActiviteLibelle": "Activités des agences de placement de main-d'œuvre",
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8100134",
+    "partenaires": [
+     {
+      "nom": "DIRECTEMPLOI",
+      "url": "https://www.directemploi.com/candidatOffre/56769516?utm_source=pole-emploi&utm_medium=referral&utm_campaign=Pôle-Emploi",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/directemploi80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8019575",
+   "intitule": "Data Analyst / Analytics Engineer junior (paie, RH) (H/F)",
+   "description": "Notre client est un éditeur de logiciel SaaS B2B en forte croissance, basé à Paris. Sa solution s'interface avec les systèmes de paie, de gestion RH et d'assurance de ses clients, ainsi qu'avec certains organismes de protection sociale, afin de collecter, standardiser et réconcilier des données issues de sources multiples.\nDans le cadre de son développement, l'entreprise renforce son équipe data, composée de cinq personnes aux profils scientifiques (docteurs et ingénieurs), spécialisées en analyse de données, statistiques et machine learning.\n\n\nLe poste : \n\nContexte\nRattaché(e) au responsable de l'équipe data, vous intervenez sur l'exploitation des données de paie, RH, sécurité sociale et assurance traitées par la plateforme. Votre rôle consiste à transformer ces données en analyses fiables et utiles, à destination des clients comme des équipes internes.\nMissions\n\n- Recueillir et formaliser les besoins d'analyse exprimés par les équipes métier et les clients - Rechercher, extraire et croiser les données pertinentes pour y répondre - Réaliser des analyses à forte exigence de précision, notamment sur des données de paie et de cotisations - Concevoir et mettre en oeuvre des tests de qualité des données - Contribuer à l'amélioration des processus de réconciliation entre sources de données - Participer à la constitution d'une base de données de référence, standardisée et anonymisée - Maintenir et faire évoluer les tableaux de bord existants - Documenter les traitements et les règles de gestion utilisées \nEnvironnement technique\n\n- Langage : Python (une maîtrise de R est également appréciée) - Architecture : SaaS B2B multitenant, bases de données distribuées, data lake et data lakehouse - Sources de données : logiciels de paie et SIRH, organismes sociaux, assureurs (API, échanges de fichiers) \n\n\nProfil recherché : \n\nExpérience\n\n- 3 ans d'expérience minimum en tant que Data Analyst, Analytics Engineer ou Data Engineer - Une première expérience sur des données de paie, RH, assurance, finance ou issues du secteur public est indispensable \nCompétences techniques\n\n- Pratique de Python pour la manipulation et l'analyse de données - Maîtrise du SQL - Une expérience en intégration de données (API, SFTP, ETL, pipelines) est un plus - Des connaissances en statistiques et en machine learning sont appréciées \nQualités recherchées\n\n- Rigueur et sens du détail : vous êtes attentif(ve) à la cohérence et à l'exactitude des données - Intérêt pour les règles de gestion et les sujets métier complexes - Capacité à comprendre un environnement technique existant avant de proposer des évolutions - Autonomie, curiosité et envie d'apprendre - Anglais professionnel, l'équipe comptant des collaborateurs anglophones \n",
+   "dateCreation": "2026-10-18T11:21:31.317Z",
+   "dateActualisation": "2026-10-25T11:21:49.745Z",
+   "lieuTravail": {
+    "libelle": "75 - Paris 13e Arrondissement",
+    "codePostal": "75013",
+    "commune": "75113"
+   },
+   "romeCode": "M1868",
+   "romeLibelle": "Architecte base de données",
+   "appellationlibelle": "Architecte de bases de données",
+   "entreprise": {
+    "nom": "Cabinet EKINOX"
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "2 An(s)",
+   "salaire": {},
+   "complementExercice": "Temps plein",
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8019575",
+    "partenaires": [
+     {
+      "nom": "PMEJOB",
+      "url": "https://www.jobposting.pro/emploi-2726420-120",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/pmejob80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  }
+ ],
+ "filtresPossibles": [
+  {
+   "filtre": "typeContrat",
+   "agregation": [
+    {
+     "valeurPossible": "CDI",
+     "nbResultats": 3
+    },
+    {
+     "valeurPossible": "MIS",
+     "nbResultats": 1
+    }
+   ]
+  },
+  {
+   "filtre": "experience",
+   "agregation": [
+    {
+     "valeurPossible": "4",
+     "nbResultats": 2
+    },
+    {
+     "valeurPossible": "2",
+     "nbResultats": 1
+    },
+    {
+     "valeurPossible": "3",
+     "nbResultats": 1
+    }
+   ]
+  },
+  {
+   "filtre": "qualification",
+   "agregation": [
+    {
+     "valeurPossible": "X",
+     "nbResultats": 4
+    }
+   ]
+  },
+  {
+   "filtre": "natureContrat",
+   "agregation": [
+    {
+     "valeurPossible": "E1",
+     "nbResultats": 4
+    }
+   ]
+  }
+ ]
+}

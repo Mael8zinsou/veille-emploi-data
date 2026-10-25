@@ -1,0 +1,81 @@
+{
+ "resultats": [
+  {
+   "id": "8124244",
+   "intitule": "Data steward f/h f/h (H/F)",
+   "description": "Safran est un groupe international de haute technologie opérant dans les domaines de l'aéronautique (propulsion, équipements et intérieurs), de l'espace et de la défense. Sa mission : contribuer durablement à un monde plus sûr, où le transport aérien devient toujours plus respectueux de l'environnement, plus confortable et plus accessible. Implanté sur tous les continents, le Groupe emploie 110 000 collaborateurs pour un chiffre d'affaires de 31,3 milliards d'euros en 2025, et occupe, seul ou en partenariat, des positions de premier plan mondial ou européen sur ses marchés. \n\nSafran est la 2ème entreprise du secteur aéronautique et défense du classement « World's Best Companies 2025 » du magazine TIME.\n\n\n\nSafran Electronics & Defense est une entreprise internationale de plus de 19 000 collaboratrices et collaborateurs, qui mobilisent expertises et esprit de corps pour concevoir des solutions de haute technologie dans les domaines de l'aéronautique, de la défense et du spatial. En combinant intelligence humaine et technologique, l'entreprise développe des produits et services pour les acteurs du monde civil et militaires, sur terre, en mer, dans le ciel et dans l'espace.\n\n\n\nParce que nous sommes persuadés que chaque talent compte, nous valorisons et encourageons les candidatures de personnes en situation de handicap pour nos opportunités d'emploi.\n\n\nDescriptif missionRattaché(e) à la Direction Supply Chain, le/la Data Steward contribue à la qualité, à la fiabilité et à la gouvernance des données de l'entreprise. Véritable interface entre les métiers, les équipes Supply Chain et les systèmes d'information, il/elle veille à la cohérence des données de référence et accompagne les utilisateurs dans leur gestion quotidienne. Par son action, il/elle participe à l'amélioration continue des processus et contribue à la performance opérationnelle de la Supply Chain.\n\n\n\nVos Missions:\n\nAnalyser et suivre la qualité des données de votre périmètre.\n\nAppliquer les règles de gouvernance et les standards de gestion des données de référence.\n\nIdentifier les anomalies, piloter leur correction avec les équipes métiers et assurer le suivi des indicateurs qualité.\n\nMaintenir à jour la documentation et la classification des données dans les outils dédiés.\n\nAccompagner et conseiller les utilisateurs dans l'utilisation des référentiels de données.\n\nProposer et mettre en oeuvre des actions d'amélioration continue de la qualité des données et des processus associés.\n\nAnimer fonctionnellement un réseau d'interlocuteurs Data (Data Stewards, sous-traitants, métiers, etc.).\n\nCollaborer étroitement avec les Data Managers, les experts métiers et les équipes systèmes d'information.\n\nVous développez des outils et Reporting pour répondre aux problématiques des opérationnels terrain (solutions d'analyse et d'exploitation des données).",
+   "dateCreation": "2026-10-21T08:15:49.610Z",
+   "dateActualisation": "2026-10-21T08:15:49.610Z",
+   "lieuTravail": {
+    "libelle": "25 - Besançon",
+    "codePostal": "25000",
+    "commune": "25056"
+   },
+   "romeCode": "N2101",
+   "romeLibelle": "Personnel Navigant Commercial (PNC)",
+   "appellationlibelle": "Steward / Hôtesse de l'air",
+   "entreprise": {},
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "Expérience exigée",
+   "salaire": {},
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8124244",
+    "partenaires": [
+     {
+      "nom": "AEROCONTACT",
+      "url": "https://www.aerocontact.com/emploi-aeronautique/data-steward-fh-fh~1196679.html?fromref=poleemploi",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/aerocontact80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  }
+ ],
+ "filtresPossibles": [
+  {
+   "filtre": "typeContrat",
+   "agregation": [
+    {
+     "valeurPossible": "CDI",
+     "nbResultats": 1
+    }
+   ]
+  },
+  {
+   "filtre": "experience",
+   "agregation": [
+    {
+     "valeurPossible": "0",
+     "nbResultats": 1
+    }
+   ]
+  },
+  {
+   "filtre": "qualification",
+   "agregation": [
+    {
+     "valeurPossible": "X",
+     "nbResultats": 1
+    }
+   ]
+  },
+  {
+   "filtre": "natureContrat",
+   "agregation": [
+    {
+     "valeurPossible": "E1",
+     "nbResultats": 1
+    }
+   ]
+  }
+ ]
+}
