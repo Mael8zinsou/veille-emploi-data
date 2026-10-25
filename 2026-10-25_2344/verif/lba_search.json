@@ -1,0 +1,6416 @@
+{
+ "jobs": [
+  {
+   "identifier": {
+    "id": "6adbdcf7bfbdb64c1a67fcb2",
+    "partner_label": "France Travail",
+    "partner_job_id": "214YWWX"
+   },
+   "workplace": {
+    "siret": "52788142900064",
+    "brand": null,
+    "legal_name": "ETLB",
+    "website": null,
+    "name": "ETLB",
+    "description": null,
+    "size": "50 à 99 salariés",
+    "location": {
+     "address": "75008 Paris 8e Arrondissement",
+     "geopoint": {
+      "coordinates": [
+       2.3116,
+       48.873707
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 478,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "66.30Z",
+      "label": "Gestion de fonds"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/214YWWX",
+    "phone": null,
+    "recipient_id": null
+   },
+   "contract": {
+    "start": null,
+    "start_type": null,
+    "start_is_flexible": null,
+    "duration": 12,
+    "type": [
+     "Apprentissage"
+    ],
+    "remote": null
+   },
+   "offer": {
+    "title": "Alternance - Assistant(e) IA / BI (H/F)",
+    "rome_codes": [
+     "M1419"
+    ],
+    "description": "Dans un contexte d'hypercroissance et d'industrialisation des processus, Côté Sushi accélère sa \ntransition vers l'automatisation et l'usage de l'IA. Ce poste est clé pour créer, déployer et \nmaintenir des agents IA, automatiser les flux inter-systèmes, structurer les données et \nindustrialiser les dashboards Power BI. Vous collaborerez au quotidien avec les équipes Supply, \nAchats, Finance, QHSE et DSI. \n\nVOS MISSIONS \n1. Automatisation &amp; agents IA : Vous concevez et déployez des agents IA opérationnels et des workflows automatisés pour \nfiabiliser et accélérer les processus métier. \n- Créer des agents IA dédiés aux thématiques supply, prévisionnel, achats et data \nquality : définition des prompts structurés, paramétrage et documentation \n- Développer des workflows Power Automate pour automatiser les flux ERP, la \ngestion de fichiers, les alertes et les synchronisations inter-systèmes \n- Mettre en place des alertes intelligentes sur les ruptures, anomalies et incohérences \ndata, ainsi que des systèmes de prédiction et d'alerting avancés \n- Automatiser les prévisionnels de bout en bout : collecte, calcul, export et diffusion \n\n2. Data Engineering &amp; intégrations : Vous structurez et fiabilisez la donnée en construisant des pipelines robustes et des connexions \nautomatisées entre les systèmes. \n- Traiter, nettoyer et structurer les données issues de sources multiples (ERP, \nSharePoint, fichiers internes) \n- Construire et maintenir des pipelines de données automatisés, fiables et \ndocumentés \n- Développer les connexions API entre l'ERP, SharePoint et Power BI \n- Créer et maintenir les dictionnaires de données et référentiels, et assurer la \nvérification systématique de la qualité des données \n\n3. Business Intelligence : Vous concevez des tableaux de bord Power BI industrialisés, orientés décision, adoptés par les \néquipes métier. \n- Construire, optimiser et maintenir les dashboards Power BI : modélisation DAX, data \nrefresh incrémental, optimisation des performances \n- Créer les modèles de données et mettre en place des conventions de nommage et \nstandards BI \n- Définir et instrumenter les KPIs clés en lien avec les équipes Supply, Finance et \nAchats \n\n4. Support transverse &amp; amélioration continue : Vous êtes un relais tech au sein des équipes, capable d'accompagner, de former et de documenter \npour ancrer les pratiques dans la durée. \n- Accompagner les équipes dans la prise en main des outils IA et Power Platform : \nformation, support, pédagogie \n- Participer aux projets digitaux transverses (BI, automatisation, data) en lien avec la \nDSI et la direction générale \n- Produire une documentation technique systématique et des guides utilisateurs pour \nchaque livrable déployé \n\n\nPROFIL RECHERCHÉ \n- Formation : étudiant(e) Bac+3 à Bac+5 en Data, BI, IA, digital ou informatique \n- Une première expérience (stage ou alternance) en automatisation, BI ou data \nengineering est un plus \n- Forte capacité d'apprentissage, rigueur, logique et sens du détail \n- Autonomie, organisation et espérit d'initiative : vous savez avancer seul(e) sur des \nsujets complexes \n- Pédagogie et aisance relationnelle pour interagir avec des équipes métier non \ntechniques \n- Fort appétit pour la tech, la data et la supply chain \n\nCOMPÉTENCES TECHNIQUES \n- Power Automate - niveau confirmé ou fort potentiel \n- Power BI - modélisation &amp; DAX \n- SQL - un plus \n- Notions d'API et intégrations inter-systèmes \n- IA / LLM - Copilot Studio, agents IA \n- Bases en Python appréciées \n- Compréhension ERP / Supply Chain \n\n\nPourquoi nous rejoindre ? \n- Contrat d'apprentissage uniquement \n- Durée du contrat : 1 an \n- Début de contrat : Septembre 2026 \n- Localisation : Paris 8e (St-Augustin / St-Lazare)",
+    "target_diploma": {
+     "european": "6",
+     "label": "Licence, BUT, Licence Pro (Bac+3)"
+    },
+    "desired_skills": [],
+    "to_be_acquired_skills": [
+     "Adapter les outils de traitement statistique de données",
+     "Communiquer les résultats des études aux parties prenantes"
+    ],
+    "access_conditions": [],
+    "publication": {
+     "creation": "2026-10-08T14:56:05.572Z",
+     "expiration": "2026-12-08T14:56:05.572Z"
+    },
+    "opening_count": 1,
+    "status": "Active",
+    "to_applicant_questions": null
+   },
+   "is_delegated": false
+  },
+  {
+   "identifier": {
+    "id": "6ad696a2e2d92300cfde48af",
+    "partner_label": "France Travail",
+    "partner_job_id": "7398511"
+   },
+   "workplace": {
+    "siret": null,
+    "brand": null,
+    "legal_name": null,
+    "website": null,
+    "name": "MAYOLY",
+    "description": null,
+    "size": null,
+    "location": {
+     "address": "92500 Rueil-Malmaison",
+     "geopoint": {
+      "coordinates": [
+       2.180528,
+       48.874602
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": null,
+     "opco": null,
+     "naf": {
+      "code": "21.20Z",
+      "label": "Fabrication de préparations pharmaceutiques"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://mayoly-spindler.softy.pro/offre/221812?idt=5&h=2218120",
+    "phone": null,
+    "recipient_id": null
+   },
+   "contract": {
+    "start": null,
+    "start_type": null,
+    "start_is_flexible": null,
+    "duration": 12,
+    "type": [
+     "Apprentissage"
+    ],
+    "remote": null
+   },
+   "offer": {
+    "title": "ALTERNANT CHARGÉ DANALYSE DE DONNÉES SUPPLY CHAIN - H/F",
+    "rome_codes": [
+     "M1419"
+    ],
+    "description": "Description :\n\n\nContribuer au PILOTAGE DE LA PERFORMANCE SUPPLY CHAIN au sein du département S&amp;OE, à travers la fiabilisation des données, le développement d'outils de reporting et de dashboards, l'automatisation des processus et l'analyse des indicateurs clés.\n\nL'alternant(e) participe à l'amélioration de la qualité et de l'exploitation des données Supply afin de faciliter la prise de décision et d'optimiser les processus opérationnels\n\n \n\nREPORTING &amp; DATA\n\n * Extraire, consolider, contrôler et préparer les données issues des différentes sources.\n * Produire et maintenir les reportings nécessaires au pilotage de l'activité.\n * Structurer les données afin de faciliter leur analyse et leur exploitation.\n\nPOWER BI &amp; DASHBOARDS\n\n * Créer, développer et maintenir les dashboards de pilotage S&amp;OE.\n * Faire évoluer les dashboards en fonction des besoins des équipes Supply Chain.\n * Améliorer la visualisation et la lisibilité des indicateurs de performance.\n\nAUTOMATISATION\n\n * Identifier les tâches et processus pouvant être automatisés.\n * Développer et optimiser des solutions sous EXCEL, POWER QUERY ET POWER BI.\n * Réduire les tâches manuelles et améliorer la fiabilité des reportings.\n\nDATA QUALITY\n\n * Mettre en place et réaliser des contrôles de qualité et de cohérence des données.\n * Identifier, analyser et suivre les anomalies.\n * Contribuer à la résolution des problèmes de données avec les équipes concernées.\n\nANALYSE KPI\n\n * Suivre les principaux KPI Supply Chain.\n * Analyser les tendances et les écarts par rapport aux objectifs.\n * Identifier les principales causes d'écarts et contribuer à la mise en évidence des leviers d'amélioration.\n\nAMÉLIORATION CONTINUE\n\n * Documenter les processus, outils et reportings.\n * Identifier les opportunités d'optimisation et de standardisation.\n * Participer aux projets d'amélioration continue et de digitalisation de la Supply Chain\n\n\n  \n  \nProfil recherché :\n  \n  \nEn cours de formation Bac+4/5 en Supply Chain, Data, Business Intelligence, École d'ingénieur, École de commerce ou formation universitaire équivalente.\n\nVous avez:\n\n * Appétence forte pour les chiffres\n * Maitrise avancée d'Excel.\n * Connaissances ERP, APS (FuturMaster/Sunstice) et Power BI seraient un plus\n * Anglais professionnel courant écrit et oral afin de gérer des partenaires internationaux\n * Esprit analytique et capacité à interpréter des données.\n * Rigueur et sens du détail.\n * Autonomie, curiosité et capacité à être force de proposition.\n * Bon relationnel et capacité à travailler avec des interlocuteurs issus de différentes fonctions.",
+    "target_diploma": null,
+    "desired_skills": [],
+    "to_be_acquired_skills": [],
+    "access_conditions": [],
+    "publication": {
+     "creation": "2026-09-25T15:29:18.166Z",
+     "expiration": "2026-11-25T15:29:18.166Z"
+    },
+    "opening_count": 1,
+    "status": "Active",
+    "to_applicant_questions": null
+   },
+   "is_delegated": false
+  },
+  {
+   "identifier": {
+    "id": "6ac02afc0d871689a663c8de",
+    "partner_label": "Hellowork",
+    "partner_job_id": "e83e9432-4693-4b41-975e-1412f7e9cf19"
+   },
+   "workplace": {
+    "siret": null,
+    "brand": null,
+    "legal_name": null,
+    "website": null,
+    "name": "LACROIXSAVAC",
+    "description": "LACROIXSAVAC, c'est le groupement de deux entreprises nées respectivement en 1937 dans les Yvelines (vallée de Chevreuse) pour Savac et 1953 dans le Val d'Oise (vallée de Montmorency) pour Lacroix.  \n  \nPortés depuis toujours par les mêmes valeurs d'engagement, d'agilité et de bienveillance au service de la performance, Lacroix et Savac se sont unis en septembre 2019 pour mettre en commun un savoir-faire distinctif : celui d'être à la fois les meilleurs connaisseurs du territoire francilien et de ses innombrables particularités, tout en développant des méthodes innovantes et en délivrant des prestations de qualité.",
+    "size": null,
+    "location": {
+     "address": "75001 Paris",
+     "geopoint": {
+      "coordinates": [
+       2.347,
+       48.859
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": null,
+     "opco": null,
+     "naf": null
+    }
+   },
+   "apply": {
+    "url": "https://r.holeest.com/redirect?jd_token=<masqué>&o=1&from=https%3A%2F%2Fwww.hellowork.com%2Ffr-fr%2Femplois%2F83967596.html%3Futm_source%3Dbonnealternance%26utm_medium%3Dmetamoteurs-free%26utm_campaign%3Dalternance%2B-%2Blogistique%26utm_content%3Dfluxbonnealternance%26utm_term%3D83967596",
+    "phone": null,
+    "recipient_id": null
+   },
+   "contract": {
+    "start": null,
+    "start_type": null,
+    "start_is_flexible": null,
+    "duration": 24,
+    "type": [
+     "Apprentissage",
+     "Professionnalisation"
+    ],
+    "remote": null
+   },
+   "offer": {
+    "title": "Ingénieur Data - DevOps en Alternance H/F",
+    "rome_codes": [
+     "M1811"
+    ],
+    "description": "Rejoignez LACROIXSAVAC, spécialiste du transport de voyageurs depuis 2019 et 3ème opérateur de mobilité en grande couronne, pour contribuer à façonner l'avenir de la mobilité.\n\nNous recherchons un(e) Ingénieur(e) DATA / DevOps en alternance pour notre siège basé à Paris (8ème).\n\nVous aurez pour principales responsabilités :\n\nData :\n\n- Optimisation des flux de données : Participer à l'amélioration du système d'ingestion de données existant (Base de données, APIs, fichiers plats, FTP ...)\n- Administration de base de données (Gestion du cycle de vie de la donnée, optimisation des tables et des requêtes pour la performance analytique)\n- Participer à la mise en place d'une data-plateforme moderne (Object Storage S3, Cloud, outils d'orchestration)\n\nDevOps :\n\n- Mise en place de monitoring des flux pour assurer la qualité des données et la performance des systèmes.\n- Développement de tests automatisés, contrôles qualités et intégration d'outils d'audit de sécurité et de gouvernance de la donnée.\n- Gestion et versionnement via GitHub.\n- Automatisation des déploiements avec des outils d'IAC tel que Ansible.\n- Configuration d'agents IA pour soutenir le cycle de développement et la documentation du code.\n\nGestion de projet :\n\n- Pilotage et accompagnement du développement d'applications métiers (Front et backend)\n- Maintien en condition opérationnelle de la solution\n- Rédaction du cahier des charges\n- S'assurer de la conformité du besoin et des règles métiers\n- Déploiement et intégration continue",
+    "target_diploma": {
+     "european": "7",
+     "label": "Master, titre ingénieur, grande école (Bac+5)"
+    },
+    "desired_skills": [
+     "Votre parcours :\n\n- En cours de préparation d'un diplôme d'ingénieur ou Master en Ingénierie ou autre Bac +5 en Informatique, Data ou équivalent.\n\nVos compétences :\n\n- Esprit d'équipe et bonnes capacités de communication\n- Curiosité intellectuelle et envie d'apprendre et de se développer dans le domaine de l'ingénieurie de données\n- Capacité à résoudre des problèmes de manière proactive et à travailler de manière autonome sous supervision\n- Bonnes connaissances Python, SQL\n- Connaissance en conception de base de données, entrepôts de données.\n- Connaissance de base de la gestion et versionning de code sur GitHub (PR, CI /CD, commits, branches..)\n\nEst un plus : Connaissance d'un outil d'orchestration type Airflow, connaissance en administration linux, background de développeur.\n\nPourquoi nous rejoindre ?\n\n- Un environnement de travail dynamique et stimulant.\n- Des opportunités de développement professionnel et de carrière.\n- Une politique d'entreprise axée sur le bien-être et l'équilibre vie professionnelle/vie personnelle.\n- Une équipe collaborative et solidaire.\n\nLe poste est ouvert aux personnes en situation de handicap."
+    ],
+    "to_be_acquired_skills": [],
+    "access_conditions": [],
+    "publication": {
+     "creation": "2026-10-01T07:51:38.000Z",
+     "expiration": "2026-12-01T07:51:38.000Z"
+    },
+    "opening_count": 1,
+    "status": "Active",
+    "to_applicant_questions": null
+   },
+   "is_delegated": false
+  },
+  {
+   "identifier": {
+    "id": "6adbdcf7bfbdb64c1a67fcb2",
+    "partner_label": "France Travail",
+    "partner_job_id": "214YWWX"
+   },
+   "workplace": {
+    "siret": "52788142900064",
+    "brand": null,
+    "legal_name": "ETLB",
+    "website": null,
+    "name": "ETLB",
+    "description": null,
+    "size": "50 à 99 salariés",
+    "location": {
+     "address": "75008 Paris 8e Arrondissement",
+     "geopoint": {
+      "coordinates": [
+       2.3116,
+       48.873707
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 478,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "66.30Z",
+      "label": "Gestion de fonds"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/214YWWX",
+    "phone": null,
+    "recipient_id": null
+   },
+   "contract": {
+    "start": null,
+    "start_type": null,
+    "start_is_flexible": null,
+    "duration": 12,
+    "type": [
+     "Apprentissage"
+    ],
+    "remote": null
+   },
+   "offer": {
+    "title": "Alternance - Assistant(e) IA / BI (H/F)",
+    "rome_codes": [
+     "M1419"
+    ],
+    "description": "Dans un contexte d'hypercroissance et d'industrialisation des processus, Côté Sushi accélère sa \ntransition vers l'automatisation et l'usage de l'IA. Ce poste est clé pour créer, déployer et \nmaintenir des agents IA, automatiser les flux inter-systèmes, structurer les données et \nindustrialiser les dashboards Power BI. Vous collaborerez au quotidien avec les équipes Supply, \nAchats, Finance, QHSE et DSI. \n\nVOS MISSIONS \n1. Automatisation &amp; agents IA : Vous concevez et déployez des agents IA opérationnels et des workflows automatisés pour \nfiabiliser et accélérer les processus métier. \n- Créer des agents IA dédiés aux thématiques supply, prévisionnel, achats et data \nquality : définition des prompts structurés, paramétrage et documentation \n- Développer des workflows Power Automate pour automatiser les flux ERP, la \ngestion de fichiers, les alertes et les synchronisations inter-systèmes \n- Mettre en place des alertes intelligentes sur les ruptures, anomalies et incohérences \ndata, ainsi que des systèmes de prédiction et d'alerting avancés \n- Automatiser les prévisionnels de bout en bout : collecte, calcul, export et diffusion \n\n2. Data Engineering &amp; intégrations : Vous structurez et fiabilisez la donnée en construisant des pipelines robustes et des connexions \nautomatisées entre les systèmes. \n- Traiter, nettoyer et structurer les données issues de sources multiples (ERP, \nSharePoint, fichiers internes) \n- Construire et maintenir des pipelines de données automatisés, fiables et \ndocumentés \n- Développer les connexions API entre l'ERP, SharePoint et Power BI \n- Créer et maintenir les dictionnaires de données et référentiels, et assurer la \nvérification systématique de la qualité des données \n\n3. Business Intelligence : Vous concevez des tableaux de bord Power BI industrialisés, orientés décision, adoptés par les \néquipes métier. \n- Construire, optimiser et maintenir les dashboards Power BI : modélisation DAX, data \nrefresh incrémental, optimisation des performances \n- Créer les modèles de données et mettre en place des conventions de nommage et \nstandards BI \n- Définir et instrumenter les KPIs clés en lien avec les équipes Supply, Finance et \nAchats \n\n4. Support transverse &amp; amélioration continue : Vous êtes un relais tech au sein des équipes, capable d'accompagner, de former et de documenter \npour ancrer les pratiques dans la durée. \n- Accompagner les équipes dans la prise en main des outils IA et Power Platform : \nformation, support, pédagogie \n- Participer aux projets digitaux transverses (BI, automatisation, data) en lien avec la \nDSI et la direction générale \n- Produire une documentation technique systématique et des guides utilisateurs pour \nchaque livrable déployé \n\n\nPROFIL RECHERCHÉ \n- Formation : étudiant(e) Bac+3 à Bac+5 en Data, BI, IA, digital ou informatique \n- Une première expérience (stage ou alternance) en automatisation, BI ou data \nengineering est un plus \n- Forte capacité d'apprentissage, rigueur, logique et sens du détail \n- Autonomie, organisation et espérit d'initiative : vous savez avancer seul(e) sur des \nsujets complexes \n- Pédagogie et aisance relationnelle pour interagir avec des équipes métier non \ntechniques \n- Fort appétit pour la tech, la data et la supply chain \n\nCOMPÉTENCES TECHNIQUES \n- Power Automate - niveau confirmé ou fort potentiel \n- Power BI - modélisation &amp; DAX \n- SQL - un plus \n- Notions d'API et intégrations inter-systèmes \n- IA / LLM - Copilot Studio, agents IA \n- Bases en Python appréciées \n- Compréhension ERP / Supply Chain \n\n\nPourquoi nous rejoindre ? \n- Contrat d'apprentissage uniquement \n- Durée du contrat : 1 an \n- Début de contrat : Septembre 2026 \n- Localisation : Paris 8e (St-Augustin / St-Lazare)",
+    "target_diploma": {
+     "european": "6",
+     "label": "Licence, BUT, Licence Pro (Bac+3)"
+    },
+    "desired_skills": [],
+    "to_be_acquired_skills": [
+     "Adapter les outils de traitement statistique de données",
+     "Communiquer les résultats des études aux parties prenantes"
+    ],
+    "access_conditions": [],
+    "publication": {
+     "creation": "2026-10-08T14:56:05.572Z",
+     "expiration": "2026-12-08T14:56:05.572Z"
+    },
+    "opening_count": 1,
+    "status": "Active",
+    "to_applicant_questions": null
+   },
+   "is_delegated": false
+  },
+  {
+   "identifier": {
+    "id": "6aa86fe99dceff7dd4b89948",
+    "partner_label": "Hellowork",
+    "partner_job_id": "da2354e2-66f5-45d1-af5f-38c4327f065a"
+   },
+   "workplace": {
+    "siret": "98270430600025",
+    "brand": null,
+    "legal_name": "VULCAIN ENGINEERING GROUP",
+    "website": null,
+    "name": "VULCAIN ENGINEERING GROUP",
+    "description": "Vulcain Engineering, acteur de l’ingénierie et du conseil, accompagne les leaders industriels mondiaux dans leur transition vers un avenir plus responsable et durable. Nous suivons nos client dans la conception, la construction et l'exploitation de leurs infrastructures complexes.",
+    "size": "Non diffusé",
+    "location": {
+     "address": "92200 Neuilly-sur-Seine",
+     "geopoint": {
+      "coordinates": [
+       2.265869,
+       48.886191
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "64.20Z",
+      "label": "Activités des sociétés holding"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://r.holeest.com/redirect?jd_token=<masqué>&o=1&from=https%3A%2F%2Fwww.hellowork.com%2Ffr-fr%2Femplois%2F80733348.html%3Futm_source%3Dbonnealternance%26utm_medium%3Dmetamoteurs-free%26utm_campaign%3Dalternance%2B-%2B%7Bseo_domain%7D%26utm_content%3Dfluxbonnealternance%26utm_term%3D80733348",
+    "phone": null,
+    "recipient_id": null
+   },
+   "contract": {
+    "start": null,
+    "start_type": null,
+    "start_is_flexible": null,
+    "duration": null,
+    "type": [
+     "Apprentissage",
+     "Professionnalisation"
+    ],
+    "remote": "hybrid"
+   },
+   "offer": {
+    "title": "Data Specialist Junior H/F",
+    "rome_codes": [
+     "M1405"
+    ],
+    "description": "Sous la responsabilité du responsable du domaine Data :\n\nContribuer à la conception et à la réalisation de l'infrastructure d'intégration de données et de flux :\n\n- Conception de la solution à partir d'un outil open source leader du marché (Talend)\n- Développement et recette des flux avec les utilisateurs\n- Mise en production\n- Supervision applicative\n- Traitement des incidents, et amélioration continue de la plate-forme.\n- Contribuer à la conception et à la réalisation de l'infrastructure de reporting :\n- Contribution à l'évaluation des options techniques pour la réalisation du datalake\n- Conception à la définition du modèle de données du datalake\n- Conception et développement de flux d'alimentation et de préparation des data\n- Développement de reports (Power BI)\n- Développement et recette avec les utilisateurs\n- Mise en production\n- Supervision applicative\n- Traitement des incidents, et amélioration continue de la plate-forme.\n- Formation et support des utilisateurs",
+    "target_diploma": {
+     "european": "7",
+     "label": "Master, titre ingénieur, grande école (Bac+5)"
+    },
+    "desired_skills": [
+     "Profil et compétences attendues:\n\n- Profil école d'informatique ou Fac Niveau M1ou M2\n- Bonne capacité relationnelle, vous vous exprimez simplement et clairement (Fr/Eng)\n- Maitrise du langage SQL ainsi, connaissance si possible, de l'ETL Talend\n- Expérience en modélisation de données\n- Expérience en BI (Power BI est un plus)\n- Autonomie, autodidacte\n\nCalendrier et durée\n\n- Ouverture du poste : à partir du 1 janvier 2023\n- Durée de la collaboration : 1 an ou 2 en alternance\n- Lieu du stage : Neuilly sur Seine (avec du télétravail partiel)"
+    ],
+    "to_be_acquired_skills": [],
+    "access_conditions": [],
+    "publication": {
+     "creation": "2026-09-28T20:15:05.000Z",
+     "expiration": "2026-11-28T20:15:05.000Z"
+    },
+    "opening_count": 1,
+    "status": "Active",
+    "to_applicant_questions": null
+   },
+   "is_delegated": false
+  },
+  {
+   "identifier": {
+    "id": "6ada87671965492bdb882190",
+    "partner_label": "PASS",
+    "partner_job_id": "A-2026-239993"
+   },
+   "workplace": {
+    "siret": null,
+    "brand": null,
+    "legal_name": null,
+    "website": null,
+    "name": "Direction générale des douanes et droits indirects",
+    "description": null,
+    "size": null,
+    "location": {
+     "address": "93100 Montreuil",
+     "geopoint": {
+      "coordinates": [
+       2.449364,
+       48.863728
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": null,
+     "opco": null,
+     "naf": null
+    }
+   },
+   "apply": {
+    "url": "https://www.pass.fonction-publique.gouv.fr/offre/data-analyst-chargee-du-traitement-des-donnees-au-sein-du-pole-performance-de-la-douane",
+    "phone": null,
+    "recipient_id": "partners_6ada87671965492bdb882190"
+   },
+   "contract": {
+    "start": "2026-11-14T23:00:00.000Z",
+    "start_type": null,
+    "start_is_flexible": null,
+    "duration": 12,
+    "type": [
+     "Apprentissage"
+    ],
+    "remote": null
+   },
+   "offer": {
+    "title": "\"Data analyst\" chargé(e) du traitement des données au sein du Pôle performance de la Douane",
+    "rome_codes": [
+     "M1419"
+    ],
+    "description": "<p><strong>1 – Mission générale</strong></p><p>En soutien des deux<em> data analyst</em> du pôle<em>,</em> l’alternant(e) « Data Analyst » recruté(e) au sein de la direction générale des douanes joue un rôle stratégique en matière de suivi de l’activité et de la performance des services<strong>. </strong></p><p>Il/elle participe au pilotage les projets relatifs à la gestion des données et est responsable de l’automatisation, de l'intégration et de l'optimisation des processus d’analyse des données. </p><p>Ce poste exige une forte capacité à gérer des projets complexes et à travailler en assurant une collaboration étroite avec l'ensemble des acteurs concernés.</p><p>Les travaux s’effectuent via TABLEAU.</p><p> </p><p><strong>2 – Production des données de pilotage</strong></p><p>– Produit des données utiles au pilotage de l’activité et au suivi des résultats des services déconcentrés ; </p><p>– Collecte et analyse les données issues des différents applicatifs métiers de la douane (lutte contre la fraude, dédouanement, etc.) ;</p><p>– En lien avec le chef de la performance, participe à l’identification des besoins en matière de données ;</p><p>– Analyse et croise les données pertinentes pour analyser l’activité des services déconcentrés et répondre aux commandes du chef de service des opérations du réseau et du directeur général.</p><p> </p><p><strong>3 – Création et industrialisation des documents décisionnels</strong></p><p>– Contribue à la conception et à la réalisation de tableaux de bord, infographies et autres documents de visualisation des données, essentiels pour les processus de décision au sein de la douane ;</p><p>– Prépare les données dans TABLEAU PREP ;</p><p>– Requête le lac de données via des outils internes.</p><p> </p><p><strong>4 – Pilotage du projet de système d’information décisionnel</strong></p><p>– Participe à la définition des règles de gestion des indicateurs d’activité et de performance, ainsi que la mise en place des traitements de données dans TABLEAU.</p><p>– Travaille en étroite collaboration avec la sous-direction des systèmes d’information, les prestataires extérieurs et les différents comités de suivi, en assurant la coordination des travaux de recette et en apportant un appui technique aux équipes projet.</p><p> </p><p><strong>5 – Automatisation et amélioration continue</strong></p><p>– Automatise les productions de tableaux de bord et autres rapports afin de réduire les délais de production et d’améliorer la performance du service.</p><p>– Propose des solutions innovantes pour simplifier et accélérer les processus de collecte, d’analyse et de restitution des données.</p>",
+    "target_diploma": {
+     "european": "6",
+     "label": "Licence, BUT, Licence Pro (Bac+3)"
+    },
+    "desired_skills": [],
+    "to_be_acquired_skills": [],
+    "access_conditions": [],
+    "publication": {
+     "creation": "2026-10-22T13:08:18.000Z",
+     "expiration": "2027-01-14T23:00:00.000Z"
+    },
+    "opening_count": 1,
+    "status": "Active",
+    "to_applicant_questions": null
+   },
+   "is_delegated": false
+  },
+  {
+   "identifier": {
+    "id": "6adbda05ec4f5594ab3cccac",
+    "partner_label": "Hellowork",
+    "partner_job_id": "a9ac552b-7382-4c2f-8e04-7239db0afe9e"
+   },
+   "workplace": {
+    "siret": "85520050700017",
+    "brand": null,
+    "legal_name": "MANUFACTURE FRANCAISE DES PNEUMATIQUES MICHELIN",
+    "website": null,
+    "name": "MANUFACTURE FRANCAISE DES PNEUMATIQUES MICHELIN",
+    "description": "Notre siège mondial, basé à Clermont-Ferrand depuis la création de l’entreprise en 1889, regroupe l'ensemble des pôles de responsabilités du Groupe. 16 implantations industrielles en France, assurent une part importante de notre production, notamment sur les produits technologiques et innovants.",
+    "size": "10 000 salariés et plus",
+    "location": {
+     "address": "92100 Boulogne-Billancourt",
+     "geopoint": {
+      "coordinates": [
+       2.242716,
+       48.836976
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 45,
+     "opco": "OPCO 2i",
+     "naf": {
+      "code": "22.11Z",
+      "label": "Fabrication et rechapage de pneumatiques"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://r.holeest.com/redirect?jd_token=<masqué>&o=1&from=https%3A%2F%2Fwww.hellowork.com%2Ffr-fr%2Femplois%2F84745540.html%3Futm_source%3Dbonnealternance%26utm_medium%3Dmetamoteurs-free%26utm_campaign%3Dalternance%2B-%2B%7Bseo_domain%7D%26utm_content%3Dfluxbonnealternance%26utm_term%3D84745540",
+    "phone": null,
+    "recipient_id": null
+   },
+   "contract": {
+    "start": null,
+    "start_type": null,
+    "start_is_flexible": null,
+    "duration": 12,
+    "type": [
+     "Apprentissage",
+     "Professionnalisation"
+    ],
+    "remote": null
+   },
+   "offer": {
+    "title": "Alternance - Data Engineer Michelin Guide H/F",
+    "rome_codes": [
+     "M1811"
+    ],
+    "description": "Alternance - Data Engineer Michelin Guide (F/H)\n- - - - - - - - - - - -\n\n Localisation : Paris Boulogne\n\n Niveau d'études : Bac +4 à Bac +5\n\n Date de début : Novembre 2026\n\n Durée : 1 à 2 ans\n\nContexte :\n\nRejoignez notre équipe Data LB Lifestyle, une équipe pluridisciplinaire en charge du développement d'une Data Platform globale et robuste pour nos applications Guide Michelin, Tablet Hotels, ViaMichelin et Robert Parker. En particulier, participez à la construction du socle Data robuste sur l'histoire du Guide Michelin et la valorisation business de son patrimoine.\n\nVotre mission :\n\nDans le cadre de son développement, l'équipe recherche un(e) alternant Data Engineer pour une durée de 1 an ou 2 ans.\n\nDans ce rôle, vous travaillerez sur une infrastructure data moderne (Snowflake, DBT, Dagster) et aurez l'opportunité de contribuer à l'adoption de nouveaux outils et bonnes pratiques.\n\nVous travaillerez sur des sujets métier à fort impact, notamment autour des restaurants et hôtels étoilés Michelin, de nouvelles approches data et de cas d'usage de personnalisation visant à améliorer l'expérience utilisateur.\n\nProfil recherché :\n\nFormation\n\nVous préparez un diplôme de niveau Bac +5 (École de commerce ou d'école d'ingénieur, avec une spécialisation en Data Engineering)\n\nCompétences techniques\n\nData Engineering &amp; Data Platforms\n\n- Snowflake ou Databricks\n- DBT\n\nLangages\n\n- SQL avancé\n- Python\n\nBases de données\n\n- Bonnes connaissances des systèmes relationnels et analytiques\n- Modélisation de données\n\nCloud\n\n- AWS, Microsoft Azure ou Google Cloud Platform\n\nData Visualisation\n\n- Power BI, Tableau ou Looker\n\nGestion du code et industrialisation\n\n- GitHub ou GitLab\n- Notions CI/CD appréciées\n\nCompétences comportementales\n\nNous recherchons avant tout une personne qui démontre :\n\n- Un fort esprit d'analyse et de résolution de problèmes.\n- Une curiosité naturelle pour les nouvelles technologies et l'innovation.\n- De l'autonomie, de la rigueur et de la proactivité.\n- Une bonne capacité à communiquer et à travailler en équipe.\n- Une volonté d'apprendre dans un environnement international et multiculturel.\n\nLangues\n\n- Français courant (écrit et oral)\n- Anglais courant (écrit et oral)\n\n===========================================================\n\nCette offre vous intéresse et vous demande de la mobilité ?\n\nMichelin vous accompagne dans la recherche et le financement de votre logement.\n\nEn cas d'éloignement école/entreprise de plus de 50 km :\n\n- Participation aux frais de trajet (sous conditions)\n- En cas de double loyer, versement d'une indemnité forfaitaire\n\n- - - - - - - - - - - -\n\nInformations importantes pour votre candidature :\n\n- votre organisme de formation en alternance doit être certifié Qualiopi\n- merci de vous renseigner auprès de votre école sur le type de contrat souhaité (apprentissage ou professionnalisation) ainsi que sur le coût de votre formation.\n\nNous vous précisons que la période d'alternance se déroulera uniquement sur le territoire Français (France métropolitaine).\n\nSi une période à l'étranger est obligatoire pour l'obtention de votre diplôme, Michelin n'est pas dans l'obligation de vous trouver une mission au sein du Groupe.\n\nVotre tuteur.trice vous accompagnera tout au long de votre mission afin de développer votre savoir-faire et savoir-être et vous proposera, si besoin, des formations complémentaires en adéquation avec votre mission.\n\nVous percevrez une rémunération mensuelle en fonction de votre niveau d'études, de votre âge et du type de contrat. Par exemple, pour un contrat en apprentissage, si vous avez moins de 26 ans, elle sera comprise entre 1529,72 € brut mensuel pour un diplôme préparé Bac +1 et 1723,36 € brut mensuel pour un diplôme préparé Bac +5.\n\n- - - - - - - - - - - -\n\nMichelin entreprise engagée dans la mobilité durable et reconnue pour ses actions en faveur de l'expérience employé !\n\n- Une note de 99/100 à l'index de l'égalité femmes-hommes\n- Entreprise « Handi accueillante », avec un réseau de référents et ambassadeurs Handicap pour vous accompagner\n- 83,5% de taux d'engagement de nos employés\n- 94,6% des stagiaires et alternants nous recommandent, label \"Happy Trainees\" depuis 9 années consécutives\n- Classé parmi les groupes du CAC 40 les plus engagés selon les Bac +5 à l'index RSE Universum 2023\n- Parmi les 100 entreprises les plus attractives pour les étudiants et actifs Bac +2/3 au classement Universum 2023\n- N°1 des entreprises de plus de 500 stagiaires et alternants qui rémunèrent le mieux au Classement HappyTrainees® Rémunération 2023\n- Dans le Top 10 des meilleurs employeurs en France au classement Glassdoor 2023\n- Dans le top 3 des entreprises du secteur « Automobile / Equipementier » en matière d'attractivité employeur à l'édition 2024 du Palmarès @EPOKA @GROUPE IFOP @Occurrence\n\nPour en savoir plus sur le Groupe :\n\n- - - - - - - - - - - -",
+    "target_diploma": {
+     "european": "6",
+     "label": "Licence, BUT, Licence Pro (Bac+3)"
+    },
+    "desired_skills": [],
+    "to_be_acquired_skills": [],
+    "access_conditions": [],
+    "publication": {
+     "creation": "2026-10-23T12:05:30.000Z",
+     "expiration": "2026-12-23T12:05:30.000Z"
+    },
+    "opening_count": 1,
+    "status": "Active",
+    "to_applicant_questions": null
+   },
+   "is_delegated": false
+  },
+  {
+   "identifier": {
+    "id": "6adbda04ec4f5594ab3ccc3d",
+    "partner_label": "Hellowork",
+    "partner_job_id": "2a2f59fd-a7eb-4121-ac51-d48187083876"
+   },
+   "workplace": {
+    "siret": "85520050700017",
+    "brand": null,
+    "legal_name": "MANUFACTURE FRANCAISE DES PNEUMATIQUES MICHELIN",
+    "website": null,
+    "name": "MANUFACTURE FRANCAISE DES PNEUMATIQUES MICHELIN",
+    "description": "Notre siège mondial, basé à Clermont-Ferrand depuis la création de l’entreprise en 1889, regroupe l'ensemble des pôles de responsabilités du Groupe. 16 implantations industrielles en France, assurent une part importante de notre production, notamment sur les produits technologiques et innovants.",
+    "size": "10 000 salariés et plus",
+    "location": {
+     "address": "92100 Boulogne-Billancourt",
+     "geopoint": {
+      "coordinates": [
+       2.242716,
+       48.836976
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 45,
+     "opco": "OPCO 2i",
+     "naf": {
+      "code": "22.11Z",
+      "label": "Fabrication et rechapage de pneumatiques"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://r.holeest.com/redirect?jd_token=<masqué>&o=1&from=https%3A%2F%2Fwww.hellowork.com%2Ffr-fr%2Femplois%2F84745442.html%3Futm_source%3Dbonnealternance%26utm_medium%3Dmetamoteurs-free%26utm_campaign%3Dalternance%2B-%2B%7Bseo_domain%7D%26utm_content%3Dfluxbonnealternance%26utm_term%3D84745442",
+    "phone": null,
+    "recipient_id": null
+   },
+   "contract": {
+    "start": null,
+    "start_type": null,
+    "start_is_flexible": null,
+    "duration": 12,
+    "type": [
+     "Apprentissage",
+     "Professionnalisation"
+    ],
+    "remote": null
+   },
+   "offer": {
+    "title": "Alternance - Data Engineer Michelin Guide H/F",
+    "rome_codes": [
+     "M1811"
+    ],
+    "description": "Alternance - Data Engineer Michelin Guide (F/H)\n- - - - - - - - - - - -\n\n Localisation : Paris Boulogne\n\n Niveau d'études : Bac +4 à Bac +5\n\n Date de début : Novembre 2026\n\n Durée : 1 à 2 ans\n\nContexte :\n\nRejoignez notre équipe Data LB Lifestyle, une équipe pluridisciplinaire en charge du développement d'une Data Platform globale et robuste pour nos applications Guide Michelin, Tablet Hotels, ViaMichelin et Robert Parker. En particulier, participez à la construction du socle Data robuste sur l'histoire du Guide Michelin et la valorisation business de son patrimoine.\n\nVotre mission :\n\nDans le cadre de son développement, l'équipe recherche un(e) alternant Data Engineer pour une durée de 1 an ou 2 ans.\n\nDans ce rôle, vous travaillerez sur une infrastructure data moderne (Snowflake, DBT, Dagster) et aurez l'opportunité de contribuer à l'adoption de nouveaux outils et bonnes pratiques.\n\nVous travaillerez sur des sujets métier à fort impact, notamment autour des restaurants et hôtels étoilés Michelin, de nouvelles approches data et de cas d'usage de personnalisation visant à améliorer l'expérience utilisateur.\n\nProfil recherché :\n\nFormation\n\nVous préparez un diplôme de niveau Bac +5 (École de commerce ou d'école d'ingénieur, avec une spécialisation en Data Engineering)\n\nCompétences techniques\n\nData Engineering &amp; Data Platforms\n\n- Snowflake ou Databricks\n- DBT\n\nLangages\n\n- SQL avancé\n- Python\n\nBases de données\n\n- Bonnes connaissances des systèmes relationnels et analytiques\n- Modélisation de données\n\nCloud\n\n- AWS, Microsoft Azure ou Google Cloud Platform\n\nData Visualisation\n\n- Power BI, Tableau ou Looker\n\nGestion du code et industrialisation\n\n- GitHub ou GitLab\n- Notions CI/CD appréciées\n\nCompétences comportementales\n\nNous recherchons avant tout une personne qui démontre :\n\n- Un fort esprit d'analyse et de résolution de problèmes.\n- Une curiosité naturelle pour les nouvelles technologies et l'innovation.\n- De l'autonomie, de la rigueur et de la proactivité.\n- Une bonne capacité à communiquer et à travailler en équipe.\n- Une volonté d'apprendre dans un environnement international et multiculturel.\n\nLangues\n\n- Français courant (écrit et oral)\n- Anglais courant (écrit et oral)\n\n===========================================================\n\nCette offre vous intéresse et vous demande de la mobilité ?\n\nMichelin vous accompagne dans la recherche et le financement de votre logement.\n\nEn cas d'éloignement école/entreprise de plus de 50 km :\n\n- Participation aux frais de trajet (sous conditions)\n- En cas de double loyer, versement d'une indemnité forfaitaire\n\n- - - - - - - - - - - -\n\nInformations importantes pour votre candidature :\n\n- votre organisme de formation en alternance doit être certifié Qualiopi\n- merci de vous renseigner auprès de votre école sur le type de contrat souhaité (apprentissage ou professionnalisation) ainsi que sur le coût de votre formation.\n\nNous vous précisons que la période d'alternance se déroulera uniquement sur le territoire Français (France métropolitaine).\n\nSi une période à l'étranger est obligatoire pour l'obtention de votre diplôme, Michelin n'est pas dans l'obligation de vous trouver une mission au sein du Groupe.\n\nVotre tuteur.trice vous accompagnera tout au long de votre mission afin de développer votre savoir-faire et savoir-être et vous proposera, si besoin, des formations complémentaires en adéquation avec votre mission.\n\nVous percevrez une rémunération mensuelle en fonction de votre niveau d'études, de votre âge et du type de contrat. Par exemple, pour un contrat en apprentissage, si vous avez moins de 26 ans, elle sera comprise entre 1529,72 € brut mensuel pour un diplôme préparé Bac +1 et 1723,36 € brut mensuel pour un diplôme préparé Bac +5.\n\n- - - - - - - - - - - -\n\nMichelin entreprise engagée dans la mobilité durable et reconnue pour ses actions en faveur de l'expérience employé !\n\n- Une note de 99/100 à l'index de l'égalité femmes-hommes\n- Entreprise « Handi accueillante », avec un réseau de référents et ambassadeurs Handicap pour vous accompagner\n- 83,5% de taux d'engagement de nos employés\n- 94,6% des stagiaires et alternants nous recommandent, label \"Happy Trainees\" depuis 9 années consécutives\n- Classé parmi les groupes du CAC 40 les plus engagés selon les Bac +5 à l'index RSE Universum 2023\n- Parmi les 100 entreprises les plus attractives pour les étudiants et actifs Bac +2/3 au classement Universum 2023\n- N°1 des entreprises de plus de 500 stagiaires et alternants qui rémunèrent le mieux au Classement HappyTrainees® Rémunération 2023\n- Dans le Top 10 des meilleurs employeurs en France au classement Glassdoor 2023\n- Dans le top 3 des entreprises du secteur « Automobile / Equipementier » en matière d'attractivité employeur à l'édition 2024 du Palmarès @EPOKA @GROUPE IFOP @Occurrence\n\nPour en savoir plus sur le Groupe :\n\n- - - - - - - - - - - -",
+    "target_diploma": {
+     "european": "6",
+     "label": "Licence, BUT, Licence Pro (Bac+3)"
+    },
+    "desired_skills": [],
+    "to_be_acquired_skills": [],
+    "access_conditions": [],
+    "publication": {
+     "creation": "2026-10-23T12:04:37.000Z",
+     "expiration": "2026-12-23T12:04:37.000Z"
+    },
+    "opening_count": 1,
+    "status": "Active",
+    "to_applicant_questions": null
+   },
+   "is_delegated": false
+  },
+  {
+   "identifier": {
+    "id": "6ad696a2e2d92300cfde48af",
+    "partner_label": "France Travail",
+    "partner_job_id": "7398511"
+   },
+   "workplace": {
+    "siret": null,
+    "brand": null,
+    "legal_name": null,
+    "website": null,
+    "name": "MAYOLY",
+    "description": null,
+    "size": null,
+    "location": {
+     "address": "92500 Rueil-Malmaison",
+     "geopoint": {
+      "coordinates": [
+       2.180528,
+       48.874602
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": null,
+     "opco": null,
+     "naf": {
+      "code": "21.20Z",
+      "label": "Fabrication de préparations pharmaceutiques"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://mayoly-spindler.softy.pro/offre/221812?idt=5&h=2218120",
+    "phone": null,
+    "recipient_id": null
+   },
+   "contract": {
+    "start": null,
+    "start_type": null,
+    "start_is_flexible": null,
+    "duration": 12,
+    "type": [
+     "Apprentissage"
+    ],
+    "remote": null
+   },
+   "offer": {
+    "title": "ALTERNANT CHARGÉ DANALYSE DE DONNÉES SUPPLY CHAIN - H/F",
+    "rome_codes": [
+     "M1419"
+    ],
+    "description": "Description :\n\n\nContribuer au PILOTAGE DE LA PERFORMANCE SUPPLY CHAIN au sein du département S&amp;OE, à travers la fiabilisation des données, le développement d'outils de reporting et de dashboards, l'automatisation des processus et l'analyse des indicateurs clés.\n\nL'alternant(e) participe à l'amélioration de la qualité et de l'exploitation des données Supply afin de faciliter la prise de décision et d'optimiser les processus opérationnels\n\n \n\nREPORTING &amp; DATA\n\n * Extraire, consolider, contrôler et préparer les données issues des différentes sources.\n * Produire et maintenir les reportings nécessaires au pilotage de l'activité.\n * Structurer les données afin de faciliter leur analyse et leur exploitation.\n\nPOWER BI &amp; DASHBOARDS\n\n * Créer, développer et maintenir les dashboards de pilotage S&amp;OE.\n * Faire évoluer les dashboards en fonction des besoins des équipes Supply Chain.\n * Améliorer la visualisation et la lisibilité des indicateurs de performance.\n\nAUTOMATISATION\n\n * Identifier les tâches et processus pouvant être automatisés.\n * Développer et optimiser des solutions sous EXCEL, POWER QUERY ET POWER BI.\n * Réduire les tâches manuelles et améliorer la fiabilité des reportings.\n\nDATA QUALITY\n\n * Mettre en place et réaliser des contrôles de qualité et de cohérence des données.\n * Identifier, analyser et suivre les anomalies.\n * Contribuer à la résolution des problèmes de données avec les équipes concernées.\n\nANALYSE KPI\n\n * Suivre les principaux KPI Supply Chain.\n * Analyser les tendances et les écarts par rapport aux objectifs.\n * Identifier les principales causes d'écarts et contribuer à la mise en évidence des leviers d'amélioration.\n\nAMÉLIORATION CONTINUE\n\n * Documenter les processus, outils et reportings.\n * Identifier les opportunités d'optimisation et de standardisation.\n * Participer aux projets d'amélioration continue et de digitalisation de la Supply Chain\n\n\n  \n  \nProfil recherché :\n  \n  \nEn cours de formation Bac+4/5 en Supply Chain, Data, Business Intelligence, École d'ingénieur, École de commerce ou formation universitaire équivalente.\n\nVous avez:\n\n * Appétence forte pour les chiffres\n * Maitrise avancée d'Excel.\n * Connaissances ERP, APS (FuturMaster/Sunstice) et Power BI seraient un plus\n * Anglais professionnel courant écrit et oral afin de gérer des partenaires internationaux\n * Esprit analytique et capacité à interpréter des données.\n * Rigueur et sens du détail.\n * Autonomie, curiosité et capacité à être force de proposition.\n * Bon relationnel et capacité à travailler avec des interlocuteurs issus de différentes fonctions.",
+    "target_diploma": null,
+    "desired_skills": [],
+    "to_be_acquired_skills": [],
+    "access_conditions": [],
+    "publication": {
+     "creation": "2026-09-25T15:29:18.166Z",
+     "expiration": "2026-11-25T15:29:18.166Z"
+    },
+    "opening_count": 1,
+    "status": "Active",
+    "to_applicant_questions": null
+   },
+   "is_delegated": false
+  },
+  {
+   "identifier": {
+    "id": "6ada88bdd61b4915a03dcb0b",
+    "partner_label": "Hellowork",
+    "partner_job_id": "be604937-4c0f-4d20-a87f-5d6d0dd17bbd"
+   },
+   "workplace": {
+    "siret": "45132133500023",
+    "brand": "CARREFOUR",
+    "legal_name": "CARREFOUR HYPERMARCHES",
+    "website": null,
+    "name": "CARREFOUR HYPERMARCHES",
+    "description": "Notre ambition ? Agir et nous battre sur tous les terrains pour mettre le “mieux-manger” (manger sain, frais, bio et local) à la portée de tous. Pour y parvenir, c'est plus de 300 métiers qui œuvre chaque jour pour porter tous les projets répondant à nos enjeux business, RSE et tant d’autres !",
+    "size": "10 000 salariés et plus",
+    "location": {
+     "address": "91300 Massy",
+     "geopoint": {
+      "coordinates": [
+       2.269556,
+       48.728133
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 2216,
+     "opco": "L'Opcommerce",
+     "naf": {
+      "code": "70.10Z",
+      "label": "Activités des sièges sociaux"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://r.holeest.com/redirect?jd_token=<masqué>&o=1&from=https%3A%2F%2Fwww.hellowork.com%2Ffr-fr%2Femplois%2F84711906.html%3Futm_source%3Dbonnealternance%26utm_medium%3Dmetamoteurs-free%26utm_campaign%3Dalternance%2B-%2B%7Bseo_domain%7D%26utm_content%3Dfluxbonnealternance%26utm_term%3D84711906",
+    "phone": null,
+    "recipient_id": null
+   },
+   "contract": {
+    "start": null,
+    "start_type": null,
+    "start_is_flexible": null,
+    "duration": null,
+    "type": [
+     "Apprentissage",
+     "Professionnalisation"
+    ],
+    "remote": null
+   },
+   "offer": {
+    "title": "Carrefour Links Chef de Projet Data - Alternance H/F",
+    "rome_codes": [
+     "M1811"
+    ],
+    "description": "A propos de l'offre :: \nCarrefour Links Chef de Projet Data (F/H) - Alternance\n\nVous êtes rigoureux, synthétique et avez à coeur d'accélérer la transformation data de nos partenaires ? En tant que Carrefour Links Chef de Projet Data (F/H), vous êtes garants de la satisfaction des industriels partenaires et de la coordination avec la Digital Factory.\n\nVos missions :\n\n- Onboarding &amp; Customer Success : Former et accompagner les utilisateurs internationaux et locaux sur les plateformes Links Growth, puis animer la relation client via newsletters, REX et suivi statistiques.\n- Support &amp; Coordination Produit : Travailler avec les équipes opérations et data, accompagner les CSM dans la résolution des tickets et assurer le suivi des demandes auprès des équipes Produits.\n- Analyse &amp; Storytelling Business : Accompagner la réalisation de cas d'usages adaptés aux enjeux des clients et présenter des synthèses à forte valeur ajoutée à destination des Codir.\n- Pilotage de l'activité : Suivre les indicateurs clés de l'équipe et assurer un suivi rigoureux des projets et clients en cours via les outils internes.\n\nVotre profil :\n\n- Formation : Master 1 ou 2 (École de commerce, d'ingénieur ou universitaire).\n- Savoir-faire : Aisance relationnelle, esprit de synthèse, orientation client et analyse de données.\n- Outils maîtrisés : Excel et outils de Data Visualisation (Looker, Tableau).\n- Savoir-être : Autonomie, rigueur, goût du travail en équipe et anglais courant.\n\nCe que nous offrons :\n\n- Statut et rémunération : Statut Étudiant en alternance, Gratification légale selon le niveau d'études sur 13,5 mois.\n- Avantages : remboursement des frais de transport (50%), 12% de remise sur carte Pass, parking.\n- Bien-être : Salle de sport + accès à Wellpass, restauration, conciergerie, crèche, CSE attractif.\n- Votre Carrière : Plan de formation et perspectives d'évolution interne.\n- Contrat : Alternance de 12 mois à partir de janvier 2027.\n\nQui sommes-nous ? Notre engagement :\n\nCarrefour, c'est bien plus qu'un distributeur. C'est un acteur engagé dans la transition alimentaire pour tous, la consommation responsable, le respect du climat et de la biodiversité. À travers ses enseignes et ses divers métiers, le Groupe s'investit dans un modèle durable et inclusif grâce à ses expertises, son innovation et l'engagement de ses collaborateurs.\n\nCarrefour valorise la diversité des parcours et s'engage à ne laisser aucun talent de côté. Fiers de nos équipes représentatives de la société, nous encourageons tous les profils à postuler, garantissant un recrutement inclusif et sans discrimination.",
+    "target_diploma": {
+     "european": "7",
+     "label": "Master, titre ingénieur, grande école (Bac+5)"
+    },
+    "desired_skills": [],
+    "to_be_acquired_skills": [],
+    "access_conditions": [],
+    "publication": {
+     "creation": "2026-10-22T17:13:47.000Z",
+     "expiration": "2026-12-22T17:13:47.000Z"
+    },
+    "opening_count": 1,
+    "status": "Active",
+    "to_applicant_questions": null
+   },
+   "is_delegated": false
+  },
+  {
+   "identifier": {
+    "id": "6abd880bd46e986892b9e15f",
+    "partner_label": "Hellowork",
+    "partner_job_id": "5df8ecbc-6867-4d04-a493-7b60ccc70c4d"
+   },
+   "workplace": {
+    "siret": "45132133500023",
+    "brand": "CARREFOUR",
+    "legal_name": "CARREFOUR HYPERMARCHES",
+    "website": null,
+    "name": "CARREFOUR HYPERMARCHES",
+    "description": "Notre ambition ? Agir et nous battre sur tous les terrains pour mettre le “mieux-manger” (manger sain, frais, bio et local) à la portée de tous. Pour y parvenir, c'est plus de 300 métiers qui œuvre chaque jour pour porter tous les projets répondant à nos enjeux business, RSE et tant d’autres !",
+    "size": "10 000 salariés et plus",
+    "location": {
+     "address": "91300 Massy",
+     "geopoint": {
+      "coordinates": [
+       2.269556,
+       48.728133
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 2216,
+     "opco": "L'Opcommerce",
+     "naf": {
+      "code": "70.10Z",
+      "label": "Activités des sièges sociaux"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://r.holeest.com/redirect?jd_token=<masqué>&o=1&from=https%3A%2F%2Fwww.hellowork.com%2Ffr-fr%2Femplois%2F83892083.html%3Futm_source%3Dbonnealternance%26utm_medium%3Dmetamoteurs-free%26utm_campaign%3Dalternance%2B-%2B%7Bseo_domain%7D%26utm_content%3Dfluxbonnealternance%26utm_term%3D83892083",
+    "phone": null,
+    "recipient_id": null
+   },
+   "contract": {
+    "start": null,
+    "start_type": null,
+    "start_is_flexible": null,
+    "duration": null,
+    "type": [
+     "Apprentissage",
+     "Professionnalisation"
+    ],
+    "remote": "hybrid"
+   },
+   "offer": {
+    "title": "Data Engineer - en Alternance H/F",
+    "rome_codes": [
+     "M1811"
+    ],
+    "description": "A propos de l'offre :: \nData Engineer (F/H) - en alternance\n\nVous êtes curieux, rigoureux et avez à coeur de transformer la donnée en leviers de performance commerciale ? En tant que Data Engineer (F/H) en alternance, vous êtes au coeur des projets Data pour digitaliser et automatiser les processus de notre Digital Factory.\n\nVos missions :\n\n- Développement Data et ETL : Montée en compétence et développement sur l'ETL BigL, BigLoader et BDI/DBT.\n- Qualité et DevOps : Prise en charge des incidents, automatisation du delivery et application des normes DevOps.\n- Collaboration et Agilité : Participation aux chiffrages, chantiers SCRUM et montée en compétences de l'équipe.\n\nVotre profil :\n\n- Formation : Bac +5 en école d'ingénieur ou université.\n- Savoir-faire : Gestion de données Cloud (GCP), CI/CD, Docker, Linux, Git, méthode Agile SCRUM.\n- Outils maîtrisés : SQL, Git, Docker Compose, Linux CLI, DBT.\n- Savoir-être : Esprit d'équipe, rigueur, esprit d'analyse et prise de recul.\n\nCe que nous offrons :\n\n- Statut et rémunération : Statut Cadre, Rémunération sur 13,5 mois + rémunération variable sur objectif.\n- Avantages : 1 jour de télétravail possible (charte d'entreprise), primes de participation et intéressement, mutuelle, prévoyance, titres restaurant, CESU, remboursement des frais de transport (50%), 12% de remise sur achats avec la carte Pass, parking.\n- Bien-être : Salle de sport + accès à Wellpass, restauration, conciergerie, crèche, CSE attractif.\n- Votre Carrière : Plan de formation et perspectives d'évolution interne.\n- Type de contrat : Alternance.\n- Disponibilité : Septembre.\n\nQui sommes-nous ? Notre engagement :\n\nCarrefour, c'est bien plus qu'un distributeur. C'est un acteur engagé dans la transition alimentaire pour tous, la consommation responsable, le respect du climat et de la biodiversité. À travers ses enseignes et ses divers métiers, le Groupe s'investit dans un modèle durable et inclusif grâce à ses expertises, son innovation et l'engagement de ses collaborateurs.\n\nCarrefour valorise la diversité des parcours et s'engage à ne laisser aucun talent de côté. Fiers de nos équipes représentatives de la société, nous encourageons tous les profils à postuler, garantissant un recrutement inclusif et sans discrimination.",
+    "target_diploma": {
+     "european": "5",
+     "label": "BTS, DEUST (Bac+2)"
+    },
+    "desired_skills": [],
+    "to_be_acquired_skills": [],
+    "access_conditions": [],
+    "publication": {
+     "creation": "2026-09-29T09:09:38.000Z",
+     "expiration": "2026-11-29T09:09:38.000Z"
+    },
+    "opening_count": 1,
+    "status": "Active",
+    "to_applicant_questions": null
+   },
+   "is_delegated": false
+  },
+  {
+   "identifier": {
+    "id": "6a7658310f924fc95a1131d4",
+    "partner_label": "Hellowork",
+    "partner_job_id": "e7f1e4d3-3259-4295-bba4-4b14b434788d"
+   },
+   "workplace": {
+    "siret": "70990024500040",
+    "brand": null,
+    "legal_name": "SPIE GLOBAL SERVICES ENERGY",
+    "website": null,
+    "name": "SPIE GLOBAL SERVICES ENERGY",
+    "description": "À propos de SPIE Global Services Energy  \n  \nFiliale internationale du groupe SPIE présente dans une trentaine de pays en Europe, en Afrique, en Asie-Pacifique, au Moyen-Orient et dans les Amériques, SPIE Global Services Energy intervient sur l'ensemble de la chaîne de valeur des infrastructures de production d'énergie, de la conception à la maintenance. Forte d'un réseau de proximité qui permet de mobiliser rapidement des ressources, SPIE Global Services Energy répond aux besoins de ses clients dans les meilleures conditions de sécurité.    \n  \nSPIE Global Services Energy s'appuie sur l'expertise de ses 5 000 collaborateurs pour aider les acteurs de l'industrie du pétrole, du gaz et des énergies renouvelables à améliorer la performance technique de leurs infrastructures, leur efficacité énergétique et à réduire leur empreinte carbone.   \n  \nAvec 55 000 collaborateurs, le groupe SPIE a réalisé en 2025 un chiffre d'affaires consolidé de 10,4  milliards d'euros et un EBITA consolidé de 793 millions d'euros.",
+    "size": "100 à 199 salariés",
+    "location": {
+     "address": "95000 Cergy",
+     "geopoint": {
+      "coordinates": [
+       2.045547,
+       49.04227
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "71.12B",
+      "label": "Ingénierie, études techniques"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://r.holeest.com/redirect?jd_token=<masqué>&o=1&from=https%3A%2F%2Fwww.hellowork.com%2Ffr-fr%2Femplois%2F82130810.html%3Futm_source%3Dbonnealternance%26utm_medium%3Dmetamoteurs-free%26utm_campaign%3Dalternance%2B-%2Blogistique%26utm_content%3Dfluxbonnealternance%26utm_term%3D82130810",
+    "phone": null,
+    "recipient_id": null
+   },
+   "contract": {
+    "start": null,
+    "start_type": null,
+    "start_is_flexible": null,
+    "duration": 24,
+    "type": [
+     "Apprentissage",
+     "Professionnalisation"
+    ],
+    "remote": null
+   },
+   "offer": {
+    "title": "Apprenti Data Ingénieur H/F",
+    "rome_codes": [
+     "M1811"
+    ],
+    "description": "·  Concevoir et développer des scripts ou des outils pour intégrer, transformer et transférer des données entre systèmes (ERP, outils RH, finance...).\n\n·        Automatiser les traitements récurrents : extractions, consolidations, mises à jour de données.\n\n·         Veiller à la sécurisation des échanges de données (authentification, gestion des accès, traçabilité via logs).\n\n·    Participer à la création de tableaux de bord et de visualisations",
+    "target_diploma": {
+     "european": "6",
+     "label": "Licence, BUT, Licence Pro (Bac+3)"
+    },
+    "desired_skills": [
+     "- Étudiant en formation de Bac +3 à Bac +5 (BUT, Licence, Master, école d'ingénieur), avec une spécialisation en développement informatique ou data engineering.  \n  \n- Bonnes bases en développement backend (Java, Python, Node.js ou autre langage serveur).  \n  \n- Connaissances en manipulation de données SQL, API REST, formats JSON/XML  \n et outils de versioning (Git).  \n  \n- Rigueur, autonomie, esprit d'analyse, et goût pour le travail technique."
+    ],
+    "to_be_acquired_skills": [],
+    "access_conditions": [],
+    "publication": {
+     "creation": "2026-10-07T20:10:11.000Z",
+     "expiration": "2026-12-07T20:10:11.000Z"
+    },
+    "opening_count": 1,
+    "status": "Active",
+    "to_applicant_questions": null
+   },
+   "is_delegated": false
+  }
+ ],
+ "recruiters": [
+  {
+   "identifier": {
+    "id": "6a003c399a6be614e48abba9"
+   },
+   "workplace": {
+    "siret": "82846965000075",
+    "brand": "WETRADELOCAL",
+    "legal_name": "WETRADELOCAL",
+    "website": null,
+    "name": "WETRADELOCAL",
+    "description": null,
+    "size": "0-0",
+    "location": {
+     "address": "3 avenue Victoria 75004 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3503879999999997,
+       48.85684199998633
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1978,
+     "opco": "Opco entreprises de proximité",
+     "naf": {
+      "code": "62.01Z",
+      "label": "Programmation informatique"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/82846965000075/wetradelocal",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "68f7bdfd49b8c5a96684ae07"
+   },
+   "workplace": {
+    "siret": "55209179502456",
+    "brand": "PARIS HOTEL DE VILLE",
+    "legal_name": "PARIS HOTEL DE VILLE",
+    "website": null,
+    "name": "PARIS HOTEL DE VILLE",
+    "description": null,
+    "size": "10-19",
+    "location": {
+     "address": "33 RUE DE RIVOLI 75004 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.350588,
+       48.857628999986325
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 3210,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "64.19Z",
+      "label": "Autres intermédiations monétaires"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/55209179502456/paris-hotel-de-ville",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c889a6be614e48ec247"
+   },
+   "workplace": {
+    "siret": "84845778400025",
+    "brand": "LEHIBOU CYBERSECURITY",
+    "legal_name": "LEHIBOU CYBERSECURITY",
+    "website": null,
+    "name": "LEHIBOU CYBERSECURITY",
+    "description": null,
+    "size": "6-9",
+    "location": {
+     "address": "99 rue de la Verrerie 75004 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3503730000000003,
+       48.85885899998632
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.02A",
+      "label": "Conseil en systèmes et logiciels informatiques"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/84845778400025/lehibou-cybersecurity",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003ca09a6be614e4900c6b"
+   },
+   "workplace": {
+    "siret": "82795047800046",
+    "brand": "COME ON S.A.S.",
+    "legal_name": "COME ON S.A.S.",
+    "website": null,
+    "name": "COME ON S.A.S.",
+    "description": null,
+    "size": "6-9",
+    "location": {
+     "address": "14 RUE SAINT-MERRI 75004 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3529009999999997,
+       48.85942099998631
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 787,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "69.20Z",
+      "label": "Activités comptables"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/82795047800046/come-on-s-a-s",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "68f7bec649b8c5a96689a14b"
+   },
+   "workplace": {
+    "siret": "91959856500019",
+    "brand": "DNK CONSULTING",
+    "legal_name": "DNK CONSULTING",
+    "website": null,
+    "name": "DNK CONSULTING",
+    "description": null,
+    "size": "0-0",
+    "location": {
+     "address": "14 rue Saint Merri 75004 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3529009999999997,
+       48.85942099998631
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.01Z",
+      "label": "Programmation informatique"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/91959856500019/dnk-consulting",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c399a6be614e48abd21"
+   },
+   "workplace": {
+    "siret": "81134628700030",
+    "brand": "TOOT SWEET",
+    "legal_name": "TOOT SWEET",
+    "website": null,
+    "name": "TOOT SWEET",
+    "description": null,
+    "size": "20-49",
+    "location": {
+     "address": "23 rue des Lombards 75004 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.34922,
+       48.85929599998634
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.01Z",
+      "label": "Programmation informatique"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/81134628700030/toot-sweet",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "68f7bec749b8c5a96689bc0f"
+   },
+   "workplace": {
+    "siret": "92147755000013",
+    "brand": "CABINET BDV ASSOCIES",
+    "legal_name": "CABINET BDV ASSOCIES",
+    "website": null,
+    "name": "CABINET BDV ASSOCIES",
+    "description": null,
+    "size": "6-9",
+    "location": {
+     "address": "16 boulevard de Sebastopol 75004 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3491400000000002,
+       48.859756999986324
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 787,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "69.20Z",
+      "label": "Activités comptables"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/92147755000013/cabinet-bdv-associes",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a0976917fd1311f99c86d31"
+   },
+   "workplace": {
+    "siret": "93285274200018",
+    "brand": "LIFT",
+    "legal_name": "LIFT",
+    "website": null,
+    "name": "LIFT",
+    "description": null,
+    "size": "3-5",
+    "location": {
+     "address": "81 rue Saint Louis en l Ile 75004 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3536879905480084,
+       48.85281098481495
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": null,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.01Z",
+      "label": "Programmation informatique"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/93285274200018/lift",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c829a6be614e48e927d"
+   },
+   "workplace": {
+    "siret": "82279657900024",
+    "brand": "DESJARDINS EXPERTISE-COMPTABLE",
+    "legal_name": "DESJARDINS EXPERTISE-COMPTABLE",
+    "website": null,
+    "name": "DESJARDINS EXPERTISE-COMPTABLE",
+    "description": null,
+    "size": "0-0",
+    "location": {
+     "address": "47 RUE DE RIVOLI 75001 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3469549999999995,
+       48.858803999986314
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": null,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "69.20Z",
+      "label": "Activités comptables"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/82279657900024/desjardins-expertise-comptable",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c399a6be614e48abcbd"
+   },
+   "workplace": {
+    "siret": "81115700700022",
+    "brand": "ALTIRNAO FRANCE",
+    "legal_name": "ALTIRNAO FRANCE",
+    "website": null,
+    "name": "ALTIRNAO FRANCE",
+    "description": null,
+    "size": "0-0",
+    "location": {
+     "address": "6 rue BEAUBOURG 75004 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3533340000000003,
+       48.86067299998633
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "58.29C",
+      "label": "Edition de logiciels applicatifs"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/81115700700022/altirnao-france",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "68f7bd8e49b8c5a96682769d"
+   },
+   "workplace": {
+    "siret": "43777545500011",
+    "brand": "MARC BORGEL",
+    "legal_name": "MARC BORGEL",
+    "website": null,
+    "name": "MARC BORGEL",
+    "description": null,
+    "size": "3-5",
+    "location": {
+     "address": "5 RUE DE RIVOLI 75004 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3587970000000005,
+       48.85564799998631
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 787,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "69.20Z",
+      "label": "Activités comptables"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/43777545500011/marc-borgel",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c399a6be614e48adaa9"
+   },
+   "workplace": {
+    "siret": "38996993200042",
+    "brand": "CABINET COURTOIS",
+    "legal_name": "CABINET COURTOIS",
+    "website": null,
+    "name": "CABINET COURTOIS",
+    "description": null,
+    "size": "0-0",
+    "location": {
+     "address": "6 rue Lavandieres Ste Opportune 75001 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.346211999999999,
+       48.85873399998633
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 787,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "69.20Z",
+      "label": "Activités comptables"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/38996993200042/cabinet-courtois",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c719a6be614e48d8c4f"
+   },
+   "workplace": {
+    "siret": "31197697100110",
+    "brand": "BIZOUARD ET ASSOCIES",
+    "legal_name": "BIZOUARD ET ASSOCIES",
+    "website": null,
+    "name": "BIZOUARD ET ASSOCIES",
+    "description": null,
+    "size": "0-0",
+    "location": {
+     "address": "6 RUE DES LAVANDIERES SAINTE-OPPOR 75001 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.346211999999999,
+       48.85873399998633
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 787,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "69.20Z",
+      "label": "Activités comptables"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/31197697100110/bizouard-et-associes",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c949a6be614e48f3fbd"
+   },
+   "workplace": {
+    "siret": "95450974103700",
+    "brand": "CREDIT LYONNAIS",
+    "legal_name": "CREDIT LYONNAIS",
+    "website": null,
+    "name": "CREDIT LYONNAIS",
+    "description": null,
+    "size": "6-9",
+    "location": {
+     "address": "14 rue Rambuteau 75003 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3556530000000007,
+       48.860561999986324
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": null,
+     "opco": "AKTO / Opco entreprises et salariés des services à forte intensité de main d'oeuvre",
+     "naf": {
+      "code": "64.19Z",
+      "label": "Autres intermédiations monétaires"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/95450974103700/credit-lyonnais",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "68f7bec449b8c5a966899037"
+   },
+   "workplace": {
+    "siret": "91830898200019",
+    "brand": "BLACKLIGHT",
+    "legal_name": "BLACKLIGHT",
+    "website": null,
+    "name": "BLACKLIGHT",
+    "description": null,
+    "size": "6-9",
+    "location": {
+     "address": "55 RUE DES FRANCS BOURGEOIS 75004 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3576130000000006,
+       48.859467999986336
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "63.12Z",
+      "label": "Portails Internet"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/91830898200019/blacklight",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c779a6be614e48dec17"
+   },
+   "workplace": {
+    "siret": "82458045000032",
+    "brand": "MILKPRINT",
+    "legal_name": "MILKPRINT",
+    "website": null,
+    "name": "MILKPRINT",
+    "description": null,
+    "size": "1-2",
+    "location": {
+     "address": "31 BOULEVARD DE SEBASTOPOL 75001 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3492440000000006,
+       48.86077399998632
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.01Z",
+      "label": "Programmation informatique"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/82458045000032/milkprint",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c889a6be614e48eb533"
+   },
+   "workplace": {
+    "siret": "95450974118740",
+    "brand": "CREDIT LYONNAIS",
+    "legal_name": "CREDIT LYONNAIS",
+    "website": null,
+    "name": "CREDIT LYONNAIS",
+    "description": null,
+    "size": "20-49",
+    "location": {
+     "address": "18 rue de Rivoli 75004 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.359239,
+       48.85577199998632
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": null,
+     "opco": "AKTO / Opco entreprises et salariés des services à forte intensité de main d'oeuvre",
+     "naf": {
+      "code": "64.19Z",
+      "label": "Autres intermédiations monétaires"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/95450974118740/credit-lyonnais",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "68f7bebd49b8c5a966896d0b"
+   },
+   "workplace": {
+    "siret": "91408877800016",
+    "brand": "STIGUE",
+    "legal_name": "STIGUE",
+    "website": null,
+    "name": "STIGUE",
+    "description": null,
+    "size": "0-0",
+    "location": {
+     "address": "6 RUE SAINTE-OPPORTUNE 75001 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.347384,
+       48.86011999998634
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "58.29A",
+      "label": "Édition de logiciels système et de réseau"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/91408877800016/stigue",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "69822f093cdd0315835502a3"
+   },
+   "workplace": {
+    "siret": "51876847800019",
+    "brand": "FIDUCIAIRE GESTORIA",
+    "legal_name": "FIDUCIAIRE GESTORIA",
+    "website": null,
+    "name": "FIDUCIAIRE GESTORIA",
+    "description": null,
+    "size": "6-9",
+    "location": {
+     "address": "30 BOULEVARD DE SEBASTOPOL 75004 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3499019999999993,
+       48.86111999998633
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 787,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "69.20Z",
+      "label": "Activités comptables"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/51876847800019/fiduciaire-gestoria",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c959a6be614e48f64a1"
+   },
+   "workplace": {
+    "siret": "38480112200068",
+    "brand": "SOCIETE FIDUCIAIRE D'EXPERTISE COMPTABLE DE L'OUEST",
+    "legal_name": "SOCIETE FIDUCIAIRE D'EXPERTISE COMPTABLE DE L'OUEST",
+    "website": null,
+    "name": "SOCIETE FIDUCIAIRE D'EXPERTISE COMPTABLE DE L'OUEST",
+    "description": null,
+    "size": "10-19",
+    "location": {
+     "address": "10 rue des Nonnains d Hyeres 75004 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3585199999999995,
+       48.85401999998631
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 787,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "69.20Z",
+      "label": "Activités comptables"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/38480112200068/societe-fiduciaire-d-expertise-comptable-de-l-ouest",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "68f7be4449b8c5a966863835"
+   },
+   "workplace": {
+    "siret": "81864234000025",
+    "brand": "LA NATION DU WEB",
+    "legal_name": "LA NATION DU WEB",
+    "website": null,
+    "name": "LA NATION DU WEB",
+    "description": null,
+    "size": "0-0",
+    "location": {
+     "address": "45 rue des 2 Boules 75001 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.345603000000001,
+       48.85906999998632
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.01Z",
+      "label": "Programmation informatique"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/81864234000025/la-nation-du-web",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003ca69a6be614e4905059"
+   },
+   "workplace": {
+    "siret": "78810854600011",
+    "brand": "LA MUTUELLE DES SCOP",
+    "legal_name": "LA MUTUELLE DES SCOP",
+    "website": null,
+    "name": "LA MUTUELLE DES SCOP",
+    "description": null,
+    "size": "6-9",
+    "location": {
+     "address": "12 QUAI DE LA MEGISSERIE 75001 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.344641,
+       48.85802799998632
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 2511,
+     "opco": "Uniformation, l'Opco de la Cohésion sociale",
+     "naf": {
+      "code": "65.12Z",
+      "label": "Autres assurances"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/78810854600011/la-mutuelle-des-scop",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a5c84a31a4d3cbe32ed08f8"
+   },
+   "workplace": {
+    "siret": "89372651300011",
+    "brand": "IZYPAPER",
+    "legal_name": "IZYPAPER",
+    "website": null,
+    "name": "IZYPAPER",
+    "description": null,
+    "size": "0-0",
+    "location": {
+     "address": "15 RUE DES HALLES 75001 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.346209000000001,
+       48.86014699998632
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "58.29A",
+      "label": "Édition de logiciels système et de réseau"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/89372651300011/izypaper",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "68f7be8d49b8c5a966880871"
+   },
+   "workplace": {
+    "siret": "88273741400012",
+    "brand": "WELAN",
+    "legal_name": "WELAN",
+    "website": null,
+    "name": "WELAN",
+    "description": null,
+    "size": "1-2",
+    "location": {
+     "address": "15 rue des Halles 75001 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.346209000000001,
+       48.86014699998632
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.02A",
+      "label": "Conseil en systèmes et logiciels informatiques"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/88273741400012/welan",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003cad9a6be614e490b7e9"
+   },
+   "workplace": {
+    "siret": "90322003600011",
+    "brand": "QASSIL",
+    "legal_name": "QASSIL",
+    "website": null,
+    "name": "QASSIL",
+    "description": null,
+    "size": "3-5",
+    "location": {
+     "address": "15 rue des Halles 75001 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.346209000000001,
+       48.86014699998632
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.02A",
+      "label": "Conseil en systèmes et logiciels informatiques"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/90322003600011/qassil",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c6a9a6be614e48d6095"
+   },
+   "workplace": {
+    "siret": "85407621300024",
+    "brand": "WHAT ABOUT YOURS?",
+    "legal_name": "WHAT ABOUT YOURS?",
+    "website": null,
+    "name": "WHAT ABOUT YOURS?",
+    "description": null,
+    "size": "3-5",
+    "location": {
+     "address": "15 RUE DES HALLES 75001 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.346209000000001,
+       48.86014699998632
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1480,
+     "opco": "AFDAS",
+     "naf": {
+      "code": "58.13Z",
+      "label": "Édition de journaux"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/85407621300024/what-about-yours",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003cc19a6be614e4918bb3"
+   },
+   "workplace": {
+    "siret": "90010014000012",
+    "brand": "LINKOLIS",
+    "legal_name": "LINKOLIS",
+    "website": null,
+    "name": "LINKOLIS",
+    "description": null,
+    "size": "0-0",
+    "location": {
+     "address": "15 rue des Halles 75001 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.346209000000001,
+       48.86014699998632
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": null,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.01Z",
+      "label": "Programmation informatique"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/90010014000012/linkolis",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c129a6be614e488d78f"
+   },
+   "workplace": {
+    "siret": "91011902300018",
+    "brand": "BSIGHT",
+    "legal_name": "BSIGHT",
+    "website": null,
+    "name": "BSIGHT",
+    "description": null,
+    "size": "1-2",
+    "location": {
+     "address": "15 RUE DES HALLES 75001 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.346209000000001,
+       48.86014699998632
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": null,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.02A",
+      "label": "Conseil en systèmes et logiciels informatiques"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/91011902300018/bsight",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c2e9a6be614e48a486f"
+   },
+   "workplace": {
+    "siret": "89923582400013",
+    "brand": "UPFAST",
+    "legal_name": "UPFAST",
+    "website": null,
+    "name": "UPFAST",
+    "description": null,
+    "size": "6-9",
+    "location": {
+     "address": "15 rue des Halles 75001 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.346209000000001,
+       48.86014699998632
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.02A",
+      "label": "Conseil en systèmes et logiciels informatiques"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/89923582400013/upfast",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c279a6be614e48a0c0b"
+   },
+   "workplace": {
+    "siret": "42074452600021",
+    "brand": "SEAL",
+    "legal_name": "SEAL",
+    "website": null,
+    "name": "SEAL",
+    "description": null,
+    "size": "6-9",
+    "location": {
+     "address": "52 rue Galande 75005 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3467280000000006,
+       48.851985999986304
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.01Z",
+      "label": "Programmation informatique"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/42074452600021/seal",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c279a6be614e489fdf9"
+   },
+   "workplace": {
+    "siret": "66204244939657",
+    "brand": "BNP PARIBAS",
+    "legal_name": "BNP PARIBAS",
+    "website": null,
+    "name": "BNP PARIBAS",
+    "description": null,
+    "size": "10-19",
+    "location": {
+     "address": "8 rue de Rivoli 75004 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.360909,
+       48.85537199998631
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1090,
+     "opco": "Opco Mobilités",
+     "naf": {
+      "code": "64.19Z",
+      "label": "Autres intermédiations monétaires"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/66204244939657/bnp-paribas",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "68f7bed049b8c5a9668a079d"
+   },
+   "workplace": {
+    "siret": "95098543200026",
+    "brand": "MONPROFILDATA",
+    "legal_name": "MONPROFILDATA",
+    "website": null,
+    "name": "MONPROFILDATA",
+    "description": null,
+    "size": "0-0",
+    "location": {
+     "address": "48 boulevard de Sebastopol 75003 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.350661999999999,
+       48.86247699998633
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.02A",
+      "label": "Conseil en systèmes et logiciels informatiques"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/95098543200026/monprofildata",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a1beba33c20be0861bc4c9e"
+   },
+   "workplace": {
+    "siret": "95286299300013",
+    "brand": "GLAASTER",
+    "legal_name": "GLAASTER",
+    "website": null,
+    "name": "GLAASTER",
+    "description": null,
+    "size": "1-2",
+    "location": {
+     "address": "2 RUE DES HAUDRIETTES 75003 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3580900000000007,
+       48.86137699998632
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "58.29B",
+      "label": "Edition de logiciels outils de développement et de langages"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/95286299300013/glaaster",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c399a6be614e48ab879"
+   },
+   "workplace": {
+    "siret": "85272658700045",
+    "brand": "EYEPICK",
+    "legal_name": "EYEPICK",
+    "website": null,
+    "name": "EYEPICK",
+    "description": null,
+    "size": "6-9",
+    "location": {
+     "address": "11 rue de l Ave Maria 75004 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.359967000000001,
+       48.85288799998631
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.01Z",
+      "label": "Programmation informatique"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/85272658700045/eyepick",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c719a6be614e48d825b"
+   },
+   "workplace": {
+    "siret": "84203031400020",
+    "brand": "SIOUPLAIT",
+    "legal_name": "SIOUPLAIT",
+    "website": null,
+    "name": "SIOUPLAIT",
+    "description": null,
+    "size": "3-5",
+    "location": {
+     "address": "100 rue Quincampoix 75003 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.351589000000001,
+       48.863019999986335
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.01Z",
+      "label": "Programmation informatique"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/84203031400020/siouplait",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c079a6be614e4886483"
+   },
+   "workplace": {
+    "siret": "42509306900101",
+    "brand": "\"KELKOO\"",
+    "legal_name": "KELBEST, KELKOOPRO, KELKOO-PRO",
+    "website": null,
+    "name": "KELBEST, KELKOOPRO, KELKOO-PRO",
+    "description": null,
+    "size": "10-19",
+    "location": {
+     "address": "64 RUE DES ARCHIVES 75003 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.358771000000001,
+       48.86162899998633
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 2148,
+     "opco": "AFDAS",
+     "naf": {
+      "code": "63.12Z",
+      "label": "Portails Internet"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/42509306900101/kelbest-kelkoopro-kelkoo-pro",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c279a6be614e489de99"
+   },
+   "workplace": {
+    "siret": "54201638101872",
+    "brand": "M SAINT MICHEL",
+    "legal_name": "M SAINT MICHEL",
+    "website": null,
+    "name": "M SAINT MICHEL",
+    "description": null,
+    "size": "10-19",
+    "location": {
+     "address": "6 BOULEVARD SAINT MICHEL 75006 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3436749999999997,
+       48.8529449999863
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 2120,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "64.19Z",
+      "label": "Autres intermédiations monétaires"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/54201638101872/m-saint-michel",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c509a6be614e48c187f"
+   },
+   "workplace": {
+    "siret": "84198382800028",
+    "brand": "UBER EATS FRANCE SAS",
+    "legal_name": "UBER EATS FRANCE SAS",
+    "website": null,
+    "name": "UBER EATS FRANCE SAS",
+    "description": null,
+    "size": "100-199",
+    "location": {
+     "address": "5 rue Charlot 75003 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.360199000000001,
+       48.860910999986324
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "63.12Z",
+      "label": "Portails Internet"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/84198382800028/uber-eats-france-sas",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003bfb9a6be614e487c73d"
+   },
+   "workplace": {
+    "siret": "52999111900098",
+    "brand": "LEDGER",
+    "legal_name": "LEDGER",
+    "website": null,
+    "name": "LEDGER",
+    "description": null,
+    "size": "250-499",
+    "location": {
+     "address": "106 RUE DU TEMPLE 75003 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3576500077994145,
+       48.8625069857668
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.01Z",
+      "label": "Programmation informatique"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/52999111900098/ledger",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c019a6be614e488244d"
+   },
+   "workplace": {
+    "siret": "51529913900037",
+    "brand": "KBRW AD-VENTURE",
+    "legal_name": "KBRW AD-VENTURE",
+    "website": null,
+    "name": "KBRW AD-VENTURE",
+    "description": null,
+    "size": "100-199",
+    "location": {
+     "address": "28 rue Madame de Sevigne 75004 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3627420000000003,
+       48.85660999998633
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "58.29C",
+      "label": "Edition de logiciels applicatifs"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/51529913900037/kbrw-ad-venture",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c4a9a6be614e48bad69"
+   },
+   "workplace": {
+    "siret": "84076265200013",
+    "brand": "SARA HERNANDEZ CONSULTING LIMITED",
+    "legal_name": "SARA HERNANDEZ CONSULTING LIMITED",
+    "website": null,
+    "name": "SARA HERNANDEZ CONSULTING LIMITED",
+    "description": null,
+    "size": "0-0",
+    "location": {
+     "address": "44 boulevard Saint Germain 75005 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.35077,
+       48.8497269999863
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": null,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "74.90B",
+      "label": "Activités spécialisées, scientifiques et techniques diverses"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/84076265200013/sara-hernandez-consulting-limited",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a6ef99d722d5d73245f1c9e"
+   },
+   "workplace": {
+    "siret": "79441639600032",
+    "brand": "GROUPE EGAE",
+    "legal_name": "GROUPE EGAE",
+    "website": null,
+    "name": "GROUPE EGAE",
+    "description": null,
+    "size": "0-0",
+    "location": {
+     "address": "60 BOULEVARD DE SEBASTOPOL 75003 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3512829999999996,
+       48.863588999986334
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "74.90B",
+      "label": "Activités spécialisées, scientifiques et techniques diverses"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/79441639600032/groupe-egae",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a534d5ecead659ac0093298"
+   },
+   "workplace": {
+    "siret": "79837235500023",
+    "brand": "CREATIWITY",
+    "legal_name": "CREATIWITY",
+    "website": null,
+    "name": "CREATIWITY",
+    "description": null,
+    "size": "0-0",
+    "location": {
+     "address": "1 RUE DE SAVOIE 75006 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3419620000000005,
+       48.854216999986306
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.02A",
+      "label": "Conseil en systèmes et logiciels informatiques"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/79837235500023/creatiwity",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c209a6be614e4899a59"
+   },
+   "workplace": {
+    "siret": "38290094207241",
+    "brand": "CAISSE D'EPARGNE ET DE PREVOYANCE ILE-DE-FRANCE",
+    "legal_name": "CAISSE D'EPARGNE ET DE PREVOYANCE ILE-DE-FRANCE",
+    "website": null,
+    "name": "CAISSE D'EPARGNE ET DE PREVOYANCE ILE-DE-FRANCE",
+    "description": null,
+    "size": "6-9",
+    "location": {
+     "address": "80 RUE SAINT-ANTOINE 75004 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3627440000000006,
+       48.85476699998631
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 5005,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "64.19Z",
+      "label": "Autres intermédiations monétaires"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/38290094207241/caisse-d-epargne-et-de-prevoyance-ile-de-france",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "68f7bd6a49b8c5a96681a021"
+   },
+   "workplace": {
+    "siret": "39897290109275",
+    "brand": "GMF ASSURANCES",
+    "legal_name": "GMF ASSURANCES",
+    "website": null,
+    "name": "GMF ASSURANCES",
+    "description": null,
+    "size": "3-5",
+    "location": {
+     "address": "84 BOULEVARD SAINT-GERMAIN 75005 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.345356,
+       48.851011999986305
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1672,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "65.12Z",
+      "label": "Autres assurances"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/39897290109275/gmf-assurances",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "68f7be6d49b8c5a966874067"
+   },
+   "workplace": {
+    "siret": "84264043500025",
+    "brand": "EAS CONSEIL",
+    "legal_name": "EAS CONSEIL",
+    "website": null,
+    "name": "EAS CONSEIL",
+    "description": null,
+    "size": "0-0",
+    "location": {
+     "address": "142 rue de Rivoli 75001 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.342882,
+       48.86036299998632
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "74.90B",
+      "label": "Activités spécialisées, scientifiques et techniques diverses"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/84264043500025/eas-conseil",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "68f7be6149b8c5a9668701ed"
+   },
+   "workplace": {
+    "siret": "83781125600010",
+    "brand": "MINDEE",
+    "legal_name": "MINDEE",
+    "website": null,
+    "name": "MINDEE",
+    "description": null,
+    "size": "20-49",
+    "location": {
+     "address": "14 rue Charles V 75004 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3620320000000006,
+       48.85333399998631
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.01Z",
+      "label": "Programmation informatique"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/83781125600010/mindee",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c829a6be614e48e89e3"
+   },
+   "workplace": {
+    "siret": "48507195500036",
+    "brand": "CBK INTERACTIVE",
+    "legal_name": "CBK INTERACTIVE",
+    "website": null,
+    "name": "CBK INTERACTIVE",
+    "description": null,
+    "size": "0-0",
+    "location": {
+     "address": "14 RUE CHARLES V 75004 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3620320000000006,
+       48.85333399998631
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.02B",
+      "label": "Tierce maintenance de systèmes et d'applications informatiques"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/48507195500036/cbk-interactive",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003cb49a6be614e490c66f"
+   },
+   "workplace": {
+    "siret": "55212022205285",
+    "brand": "SOCIETE GENERALE",
+    "legal_name": "SOCIETE GENERALE",
+    "website": null,
+    "name": "SOCIETE GENERALE",
+    "description": null,
+    "size": "10-19",
+    "location": {
+     "address": "23 BOULEVARD SAINT GERMAIN 75005 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3528939999999996,
+       48.84935599998631
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1090,
+     "opco": "Opco Mobilités",
+     "naf": {
+      "code": "64.19Z",
+      "label": "Autres intermédiations monétaires"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/55212022205285/societe-generale",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c339a6be614e48a8127"
+   },
+   "workplace": {
+    "siret": "69204371401072",
+    "brand": "CAISSE REGIONALE DE CREDIT MUTUEL D'ILE DE FRANCE",
+    "legal_name": "CAISSE REGIONALE DE CREDIT MUTUEL D'ILE DE FRANCE",
+    "website": null,
+    "name": "CAISSE REGIONALE DE CREDIT MUTUEL D'ILE DE FRANCE",
+    "description": null,
+    "size": "10-19",
+    "location": {
+     "address": "69 boulevard Saint Germain 75005 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.345263,
+       48.85072899998631
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1468,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "64.19Z",
+      "label": "Autres intermédiations monétaires"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/69204371401072/caisse-regionale-de-credit-mutuel-d-ile-de-france",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003cc69a6be614e491c6b9"
+   },
+   "workplace": {
+    "siret": "82497885200013",
+    "brand": "ACTIVEVIAM",
+    "legal_name": "ACTIVEVIAM",
+    "website": null,
+    "name": "ACTIVEVIAM",
+    "description": null,
+    "size": "50-99",
+    "location": {
+     "address": "46 rue de l Arbre Sec 75001 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.342532999999999,
+       48.860662999986324
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.02A",
+      "label": "Conseil en systèmes et logiciels informatiques"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/82497885200013/activeviam",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "68f7be5049b8c5a966867e11"
+   },
+   "workplace": {
+    "siret": "82407494200023",
+    "brand": "FRANCE FIDUCIAIRE",
+    "legal_name": "FRANCE FIDUCIAIRE",
+    "website": null,
+    "name": "FRANCE FIDUCIAIRE",
+    "description": null,
+    "size": "1-2",
+    "location": {
+     "address": "10 RUE CHARLOT 75003 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.361013,
+       48.86145399998633
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 787,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "69.20Z",
+      "label": "Activités comptables"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/82407494200023/france-fiduciaire",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "68f7be8f49b8c5a966881ce9"
+   },
+   "workplace": {
+    "siret": "88447669800037",
+    "brand": "EXALT IT",
+    "legal_name": "EXALT IT",
+    "website": null,
+    "name": "EXALT IT",
+    "description": null,
+    "size": "50-99",
+    "location": {
+     "address": "8 RUE VAUVILLIERS 75001 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.343329,
+       48.861613999986325
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.02A",
+      "label": "Conseil en systèmes et logiciels informatiques"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/88447669800037/exalt-it",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a5c84921a4d3cbe32eb65c6"
+   },
+   "workplace": {
+    "siret": "90159946400020",
+    "brand": "EXALT PARIS",
+    "legal_name": "EXALT PARIS",
+    "website": null,
+    "name": "EXALT PARIS",
+    "description": null,
+    "size": "100-199",
+    "location": {
+     "address": "8 rue Vauvilliers 75001 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.343329,
+       48.861613999986325
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.02A",
+      "label": "Conseil en systèmes et logiciels informatiques"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/90159946400020/exalt-paris",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "68f7be7849b8c5a96687818f"
+   },
+   "workplace": {
+    "siret": "84960165300041",
+    "brand": "EXALT FI",
+    "legal_name": "EXALT FI",
+    "website": null,
+    "name": "EXALT FI",
+    "description": null,
+    "size": "100-199",
+    "location": {
+     "address": "8 RUE VAUVILLIERS 75001 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.343329,
+       48.861613999986325
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.02A",
+      "label": "Conseil en systèmes et logiciels informatiques"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/84960165300041/exalt-fi",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c189a6be614e4892d57"
+   },
+   "workplace": {
+    "siret": "94940963500016",
+    "brand": "EXALT VALUE",
+    "legal_name": "EXALT VALUE",
+    "website": null,
+    "name": "EXALT VALUE",
+    "description": null,
+    "size": "20-49",
+    "location": {
+     "address": "10 rue Vauvilliers 75001 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3433489999999995,
+       48.86165299998632
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": null,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.02A",
+      "label": "Conseil en systèmes et logiciels informatiques"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/94940963500016/exalt-value",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c449a6be614e48b78c5"
+   },
+   "workplace": {
+    "siret": "88508975500015",
+    "brand": "EZO MEDIA",
+    "legal_name": "EZO MEDIA",
+    "website": null,
+    "name": "EZO MEDIA",
+    "description": null,
+    "size": "1-2",
+    "location": {
+     "address": "5 rue des Chantiers 75005 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3546569999999996,
+       48.8489609999863
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "63.12Z",
+      "label": "Portails Internet"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/88508975500015/ezo-media",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003cb49a6be614e490e72f"
+   },
+   "workplace": {
+    "siret": "55212022240316",
+    "brand": "CAR PARIS RIVE GAUCHE",
+    "legal_name": "CAR PARIS RIVE GAUCHE",
+    "website": null,
+    "name": "CAR PARIS RIVE GAUCHE",
+    "description": null,
+    "size": "20-49",
+    "location": {
+     "address": "10 rue Thenard 75005 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3458319999999997,
+       48.84976599998632
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1090,
+     "opco": "Opco Mobilités",
+     "naf": {
+      "code": "64.19Z",
+      "label": "Autres intermédiations monétaires"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/55212022240316/car-paris-rive-gauche",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "68f7be2749b8c5a966858ff3"
+   },
+   "workplace": {
+    "siret": "79979192600048",
+    "brand": "NOVAQUARK",
+    "legal_name": "NOVAQUARK",
+    "website": null,
+    "name": "NOVAQUARK",
+    "description": null,
+    "size": "50-99",
+    "location": {
+     "address": "82 rue Beaubourg 75003 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3553570000000006,
+       48.86438799998632
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "58.29C",
+      "label": "Edition de logiciels applicatifs"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/79979192600048/novaquark",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "68f7be2749b8c5a966859795"
+   },
+   "workplace": {
+    "siret": "80053270700034",
+    "brand": "DMVM",
+    "legal_name": "DMVM",
+    "website": null,
+    "name": "DMVM",
+    "description": null,
+    "size": "0-0",
+    "location": {
+     "address": "37 RUE DE POITOU 75003 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3617750000000006,
+       48.861663999986334
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 247,
+     "opco": "OPCO 2i",
+     "naf": {
+      "code": "14.14Z",
+      "label": "Fabrication de vêtements de dessous"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/80053270700034/dmvm",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c569a6be614e48c6863"
+   },
+   "workplace": {
+    "siret": "95450974103650",
+    "brand": "CREDIT LYONNAIS",
+    "legal_name": "CREDIT LYONNAIS",
+    "website": null,
+    "name": "CREDIT LYONNAIS",
+    "description": null,
+    "size": "20-49",
+    "location": {
+     "address": "22 boulevard Saint Michel 75006 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3428430000000002,
+       48.85118699998631
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": null,
+     "opco": "AKTO / Opco entreprises et salariés des services à forte intensité de main d'oeuvre",
+     "naf": {
+      "code": "64.19Z",
+      "label": "Autres intermédiations monétaires"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/95450974103650/credit-lyonnais",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c899a6be614e48edd41"
+   },
+   "workplace": {
+    "siret": "92312815100027",
+    "brand": "XRPL COMMONS",
+    "legal_name": "XRPL COMMONS",
+    "website": null,
+    "name": "XRPL COMMONS",
+    "description": null,
+    "size": "6-9",
+    "location": {
+     "address": "84 rue Beaubourg 75003 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3554649999999997,
+       48.86458599998633
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "63.11Z",
+      "label": "Traitement de données, hébergement et activités connexes"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/92312815100027/xrpl-commons",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c959a6be614e48f7909"
+   },
+   "workplace": {
+    "siret": "80337757100044",
+    "brand": "CAP COLLECTIF",
+    "legal_name": "CAP COLLECTIF",
+    "website": null,
+    "name": "CAP COLLECTIF",
+    "description": null,
+    "size": "20-49",
+    "location": {
+     "address": "2 rue Neuve Saint Pierre 75004 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3641389665498704,
+       48.853572971923555
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "58.29A",
+      "label": "Édition de logiciels système et de réseau"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/80337757100044/cap-collectif",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c129a6be614e4890e49"
+   },
+   "workplace": {
+    "siret": "66204244936158",
+    "brand": "BNP PARIBAS",
+    "legal_name": "BNPPARIBAS",
+    "website": null,
+    "name": "BNPPARIBAS",
+    "description": null,
+    "size": "10-19",
+    "location": {
+     "address": "81 boulevard de Sebastopol 75002 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.351651,
+       48.865075999986345
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1090,
+     "opco": "Opco Mobilités",
+     "naf": {
+      "code": "64.19Z",
+      "label": "Autres intermédiations monétaires"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/66204244936158/bnpparibas",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003bfb9a6be614e487c2b3"
+   },
+   "workplace": {
+    "siret": "55212022246107",
+    "brand": "PARIS ST ANTOINE",
+    "legal_name": "PARIS ST ANTOINE",
+    "website": null,
+    "name": "PARIS ST ANTOINE",
+    "description": null,
+    "size": "6-9",
+    "location": {
+     "address": "47 rue Saint Antoine 75004 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.364482,
+       48.85387899998632
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1090,
+     "opco": "Opco Mobilités",
+     "naf": {
+      "code": "64.19Z",
+      "label": "Autres intermédiations monétaires"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/55212022246107/paris-st-antoine",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a534d84cead659ac00c0ef8"
+   },
+   "workplace": {
+    "siret": "52281665100056",
+    "brand": "GETAROUND, DRIVY",
+    "legal_name": "GETAROUND, DRIVY",
+    "website": null,
+    "name": "GETAROUND, DRIVY",
+    "description": null,
+    "size": "100-199",
+    "location": {
+     "address": "35 rue Greneta 75002 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.350149000000001,
+       48.86510999998633
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.01Z",
+      "label": "Programmation informatique"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/52281665100056/getaround-drivy",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c629a6be614e48ce069"
+   },
+   "workplace": {
+    "siret": "39887284600025",
+    "brand": "PLAY BAC PRESSE",
+    "legal_name": "PLAY BAC PRESSE",
+    "website": null,
+    "name": "PLAY BAC PRESSE",
+    "description": null,
+    "size": "50-99",
+    "location": {
+     "address": "14B RUE DES MINIMES 75003 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.365360000000001,
+       48.85736799998632
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 2121,
+     "opco": "AFDAS",
+     "naf": {
+      "code": "58.13Z",
+      "label": "Édition de journaux"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/39887284600025/play-bac-presse",
+    "phone": null,
+    "recipient_id": "partners_6a003c629a6be614e48ce069"
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003ca69a6be614e4903225"
+   },
+   "workplace": {
+    "siret": "82808200800016",
+    "brand": "SODILVI",
+    "legal_name": "SODILVI",
+    "website": null,
+    "name": "SODILVI",
+    "description": null,
+    "size": "6-9",
+    "location": {
+     "address": "5 rue Pierre Sarrazin 75006 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3423669999999994,
+       48.85073899998631
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.01Z",
+      "label": "Programmation informatique"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/82808200800016/sodilvi",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c129a6be614e489061b"
+   },
+   "workplace": {
+    "siret": "55209179503256",
+    "brand": "BRED BANQUE POPULAIRE",
+    "legal_name": "BRED BANQUE POPULAIRE",
+    "website": null,
+    "name": "BRED BANQUE POPULAIRE",
+    "description": null,
+    "size": "6-9",
+    "location": {
+     "address": "24 RUE DU LOUVRE 75001 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3412730000000006,
+       48.861564999986335
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 3210,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "64.19Z",
+      "label": "Autres intermédiations monétaires"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/55209179503256/bred-banque-populaire",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c629a6be614e48d1215"
+   },
+   "workplace": {
+    "siret": "80446819700012",
+    "brand": "FOTONOWER FRANCE",
+    "legal_name": "FOTONOWER FRANCE",
+    "website": null,
+    "name": "FOTONOWER FRANCE",
+    "description": null,
+    "size": "10-19",
+    "location": {
+     "address": "30 rue Charlot 75003 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3621420000000004,
+       48.86244499998633
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": null,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "74.90B",
+      "label": "Activités spécialisées, scientifiques et techniques diverses"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/80446819700012/fotonower-france",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c019a6be614e488192d"
+   },
+   "workplace": {
+    "siret": "98142812100017",
+    "brand": "MARKEN KRAFT",
+    "legal_name": "MARKEN KRAFT",
+    "website": null,
+    "name": "MARKEN KRAFT",
+    "description": null,
+    "size": "3-5",
+    "location": {
+     "address": "10 rue Greneta 75003 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.352453000000001,
+       48.86540199998633
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": null,
+     "opco": "AFDAS",
+     "naf": {
+      "code": "62.01Z",
+      "label": "Programmation informatique"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/98142812100017/marken-kraft",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c139a6be614e4891ac7"
+   },
+   "workplace": {
+    "siret": "30560941400076",
+    "brand": "SAVA",
+    "legal_name": "SAVA",
+    "website": null,
+    "name": "SAVA",
+    "description": null,
+    "size": "3-5",
+    "location": {
+     "address": "PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3514189999999995,
+       48.865396999986345
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": null,
+     "opco": "OPCO 2i",
+     "naf": {
+      "code": "14.14Z",
+      "label": "Fabrication de vêtements de dessous"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/30560941400076/sava",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "68f7bd7a49b8c5a96681f563"
+   },
+   "workplace": {
+    "siret": "41330210000024",
+    "brand": "BELMA ET ASSOCIES",
+    "legal_name": "BELMA ET ASSOCIES",
+    "website": null,
+    "name": "BELMA ET ASSOCIES",
+    "description": null,
+    "size": "10-19",
+    "location": {
+     "address": "9 RUE VILLEHARDOUIN 75003 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.36532,
+       48.858748999986325
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 787,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "69.20Z",
+      "label": "Activités comptables"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/41330210000024/belma-et-associes",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003cb49a6be614e490fd4b"
+   },
+   "workplace": {
+    "siret": "81757541800014",
+    "brand": "LA DEVANTURE",
+    "legal_name": "LA DEVANTURE",
+    "website": null,
+    "name": "LA DEVANTURE",
+    "description": null,
+    "size": "6-9",
+    "location": {
+     "address": "4 RUE DE LA SORBONNE 75005 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3434550000000005,
+       48.849812999986305
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.01Z",
+      "label": "Programmation informatique"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/81757541800014/la-devanture",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a534daacead659ac00ed4dc"
+   },
+   "workplace": {
+    "siret": "75088716800045",
+    "brand": "COGICEO",
+    "legal_name": "COGICEO",
+    "website": null,
+    "name": "COGICEO",
+    "description": null,
+    "size": "20-49",
+    "location": {
+     "address": "95 boulevard de Sebastopol 75002 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.351942,
+       48.86559599998634
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.02A",
+      "label": "Conseil en systèmes et logiciels informatiques"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/75088716800045/cogiceo",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c959a6be614e48f6a8f"
+   },
+   "workplace": {
+    "siret": "55212022205277",
+    "brand": "SOCIETE GENERALE",
+    "legal_name": "SOCIETE GENERALE",
+    "website": null,
+    "name": "SOCIETE GENERALE",
+    "description": null,
+    "size": "20-49",
+    "location": {
+     "address": "27 BOULEVARD SAINT MICHEL 75005 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.342737000000001,
+       48.8500539999863
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1090,
+     "opco": "Opco Mobilités",
+     "naf": {
+      "code": "64.19Z",
+      "label": "Autres intermédiations monétaires"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/55212022205277/societe-generale",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c129a6be614e488f49b"
+   },
+   "workplace": {
+    "siret": "83416774400053",
+    "brand": "NOVADE SOLUTIONS EUROPE",
+    "legal_name": "NOVADE SOLUTIONS EUROPE",
+    "website": null,
+    "name": "NOVADE SOLUTIONS EUROPE",
+    "description": null,
+    "size": "0-0",
+    "location": {
+     "address": "40 rue du Louvre 75001 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3418879999999995,
+       48.86268199998633
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": null,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "58.29B",
+      "label": "Edition de logiciels outils de développement et de langages"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/83416774400053/novade-solutions-europe",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a65bf38d55499013b5b6fb1"
+   },
+   "workplace": {
+    "siret": "52786246000039",
+    "brand": "ALFIC",
+    "legal_name": "ALFIC",
+    "website": null,
+    "name": "ALFIC",
+    "description": null,
+    "size": "10-19",
+    "location": {
+     "address": "40 rue du Louvre 75001 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3418879999999995,
+       48.86268199998633
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.02A",
+      "label": "Conseil en systèmes et logiciels informatiques"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/52786246000039/alfic",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c829a6be614e48e62e3"
+   },
+   "workplace": {
+    "siret": "66204244920376",
+    "brand": "BNP PARIBAS",
+    "legal_name": "BNP PARIBAS",
+    "website": null,
+    "name": "BNP PARIBAS",
+    "description": null,
+    "size": "6-9",
+    "location": {
+     "address": "67 RUE DE BRETAGNE 75003 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3599459999999994,
+       48.86435599998634
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1090,
+     "opco": "Opco Mobilités",
+     "naf": {
+      "code": "64.19Z",
+      "label": "Autres intermédiations monétaires"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/66204244920376/bnp-paribas",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c569a6be614e48c3bd7"
+   },
+   "workplace": {
+    "siret": "69204371402021",
+    "brand": "CREDIT MUTUEL",
+    "legal_name": "CREDIT MUTUEL",
+    "website": null,
+    "name": "CREDIT MUTUEL",
+    "description": null,
+    "size": "6-9",
+    "location": {
+     "address": "25 RUE MONGE 75005 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3512369999999994,
+       48.847326999986294
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1468,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "64.19Z",
+      "label": "Autres intermédiations monétaires"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/69204371402021/credit-mutuel",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c339a6be614e48a747d"
+   },
+   "workplace": {
+    "siret": "80348923600023",
+    "brand": "IQGEO FRANCE SAS",
+    "legal_name": "IQGEO FRANCE SAS",
+    "website": null,
+    "name": "IQGEO FRANCE SAS",
+    "description": null,
+    "size": "50-99",
+    "location": {
+     "address": "53 rue de Turbigo 75003 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.355967000000001,
+       48.865630999986344
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.01Z",
+      "label": "Programmation informatique"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/80348923600023/iqgeo-france-sas",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c009a6be614e487fb51"
+   },
+   "workplace": {
+    "siret": "55212022215540",
+    "brand": "SOCIETE GENERALE",
+    "legal_name": "SOCIETE GENERALE",
+    "website": null,
+    "name": "SOCIETE GENERALE",
+    "description": null,
+    "size": "6-9",
+    "location": {
+     "address": "63 RUE DAUPHINE 75006 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.338609000000001,
+       48.8537389999863
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1090,
+     "opco": "Opco Mobilités",
+     "naf": {
+      "code": "64.19Z",
+      "label": "Autres intermédiations monétaires"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/55212022215540/societe-generale",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "68f7bded49b8c5a966846d75"
+   },
+   "workplace": {
+    "siret": "53154046600038",
+    "brand": "PANORABANQUES LE COMPARATEUR DE BANQUES",
+    "legal_name": "PANORABANQUES LE COMPARATEUR DE BANQUES",
+    "website": null,
+    "name": "PANORABANQUES LE COMPARATEUR DE BANQUES",
+    "description": null,
+    "size": "20-49",
+    "location": {
+     "address": "22 RUE DE PALESTRO 75002 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.351975,
+       48.86603099998634
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "64.19Z",
+      "label": "Autres intermédiations monétaires"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/53154046600038/panorabanques-le-comparateur-de-banques",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c399a6be614e48ac9ff"
+   },
+   "workplace": {
+    "siret": "55212022205350",
+    "brand": "SOCIETE GENERALE",
+    "legal_name": "SOCIETE GENERALE",
+    "website": null,
+    "name": "SOCIETE GENERALE",
+    "description": null,
+    "size": "10-19",
+    "location": {
+     "address": "15 RUE DU LOUVRE 75001 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3419959999999995,
+       48.863500999986336
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1090,
+     "opco": "Opco Mobilités",
+     "naf": {
+      "code": "64.19Z",
+      "label": "Autres intermédiations monétaires"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/55212022205350/societe-generale",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "68f7be6949b8c5a966871f3f"
+   },
+   "workplace": {
+    "siret": "84008307500027",
+    "brand": "PASS CONSEIL SAS",
+    "legal_name": "PASS CONSEIL SAS",
+    "website": null,
+    "name": "PASS CONSEIL SAS",
+    "description": null,
+    "size": "0-0",
+    "location": {
+     "address": "23 RUE JEAN JACQUES ROUSSEAU 75001 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3409740000000006,
+       48.862799999986336
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": null,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "69.20Z",
+      "label": "Activités comptables"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/84008307500027/pass-conseil-sas",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c449a6be614e48b47af"
+   },
+   "workplace": {
+    "siret": "39040669200033",
+    "brand": "TEC AUDIT",
+    "legal_name": "TEC AUDIT",
+    "website": null,
+    "name": "TEC AUDIT",
+    "description": null,
+    "size": "10-19",
+    "location": {
+     "address": "44 RUE DU LOUVRE 75001 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3426130000000005,
+       48.86408199998633
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 787,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "69.20Z",
+      "label": "Activités comptables"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/39040669200033/tec-audit",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c8f9a6be614e48f2611"
+   },
+   "workplace": {
+    "siret": "55212022205327",
+    "brand": "SOCIETE GENERALE",
+    "legal_name": "SOCIETE GENERALE",
+    "website": null,
+    "name": "SOCIETE GENERALE",
+    "description": null,
+    "size": "10-19",
+    "location": {
+     "address": "94 RUE DE TURENNE 75003 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3647299999999998,
+       48.86195199998633
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1090,
+     "opco": "Opco Mobilités",
+     "naf": {
+      "code": "64.19Z",
+      "label": "Autres intermédiations monétaires"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/55212022205327/societe-generale",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003cbb9a6be614e491572d"
+   },
+   "workplace": {
+    "siret": "84209241300033",
+    "brand": "2AP+",
+    "legal_name": "2AP+ CONSEILS",
+    "website": null,
+    "name": "2AP+ CONSEILS",
+    "description": null,
+    "size": "0-0",
+    "location": {
+     "address": "33 BOULEVARD HENRI IV 75004 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3656230000000007,
+       48.852258999986304
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 787,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "69.20Z",
+      "label": "Activités comptables"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/84209241300033/2-ap-conseils",
+    "phone": null,
+    "recipient_id": "partners_6a003cbb9a6be614e491572d"
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c209a6be614e489b621"
+   },
+   "workplace": {
+    "siret": "94799979300013",
+    "brand": "HEXAMIND",
+    "legal_name": "HEXAMIND",
+    "website": null,
+    "name": "HEXAMIND",
+    "description": null,
+    "size": "10-19",
+    "location": {
+     "address": "16 rue Saint Antoine 75004 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3664760000000005,
+       48.85364199998631
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.02A",
+      "label": "Conseil en systèmes et logiciels informatiques"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/94799979300013/hexamind",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003bf49a6be614e4878d9d"
+   },
+   "workplace": {
+    "siret": "66204244908256",
+    "brand": "BNP PARIBAS",
+    "legal_name": "BNP PARIBAS",
+    "website": null,
+    "name": "BNP PARIBAS",
+    "description": null,
+    "size": "20-49",
+    "location": {
+     "address": "109 rue de Turenne 75003 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.364411000000001,
+       48.86236199998632
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1090,
+     "opco": "Opco Mobilités",
+     "naf": {
+      "code": "64.19Z",
+      "label": "Autres intermédiations monétaires"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/66204244908256/bnp-paribas",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "68f7bd5c49b8c5a9668152bb"
+   },
+   "workplace": {
+    "siret": "38428296800765",
+    "brand": "BPE",
+    "legal_name": "BPE",
+    "website": null,
+    "name": "BPE",
+    "description": null,
+    "size": "200-249",
+    "location": {
+     "address": "48 rue du Louvre 75001 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3428740000000006,
+       48.864587999986334
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 2120,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "64.19Z",
+      "label": "Autres intermédiations monétaires"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/38428296800765/bpe",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c279a6be614e489cf21"
+   },
+   "workplace": {
+    "siret": "38428296800815",
+    "brand": "POLE DE GESTION PRIVEE PARIS SEINE",
+    "legal_name": "POLE DE GESTION PRIVEE PARIS SEINE",
+    "website": null,
+    "name": "POLE DE GESTION PRIVEE PARIS SEINE",
+    "description": null,
+    "size": "6-9",
+    "location": {
+     "address": "48 rue du Louvre 75001 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3428740000000006,
+       48.864587999986334
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 2120,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "64.19Z",
+      "label": "Autres intermédiations monétaires"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/38428296800815/pole-de-gestion-privee-paris-seine",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c769a6be614e48dd387"
+   },
+   "workplace": {
+    "siret": "38428296800807",
+    "brand": "POLE DE GESTION PRIVEE PARIS TROCADERO",
+    "legal_name": "POLE DE GESTION PRIVEE PARIS TROCADERO",
+    "website": null,
+    "name": "POLE DE GESTION PRIVEE PARIS TROCADERO",
+    "description": null,
+    "size": "3-5",
+    "location": {
+     "address": "48 rue du Louvre 75001 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3428740000000006,
+       48.864587999986334
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 2120,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "64.19Z",
+      "label": "Autres intermédiations monétaires"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/38428296800807/pole-de-gestion-privee-paris-trocadero",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c829a6be614e48e6e21"
+   },
+   "workplace": {
+    "siret": "38428296800773",
+    "brand": "POLE DE GESTION PRIVEE PARIS LOUVRE",
+    "legal_name": "POLE DE GESTION PRIVEE PARIS LOUVRE",
+    "website": null,
+    "name": "POLE DE GESTION PRIVEE PARIS LOUVRE",
+    "description": null,
+    "size": "10-19",
+    "location": {
+     "address": "48 RUE DU LOUVRE 75001 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3428740000000006,
+       48.864587999986334
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 2120,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "64.19Z",
+      "label": "Autres intermédiations monétaires"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/38428296800773/pole-de-gestion-privee-paris-louvre",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003ca69a6be614e4906f9f"
+   },
+   "workplace": {
+    "siret": "42059693400034",
+    "brand": "LA FRANCAISE ASSURANCE ET PREVOYANCE",
+    "legal_name": "LA FRANCAISE ASSURANCE ET PREVOYANCE",
+    "website": null,
+    "name": "LA FRANCAISE ASSURANCE ET PREVOYANCE",
+    "description": null,
+    "size": "6-9",
+    "location": {
+     "address": "29 RUE DUSSOUBS 75002 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3491910000000003,
+       48.86648499998633
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 2247,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "66.22Z",
+      "label": "Activités des agents et courtiers d'assurances"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/42059693400034/la-francaise-assurance-et-prevoyance",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "68f7be6b49b8c5a966872ac5"
+   },
+   "workplace": {
+    "siret": "84099121000013",
+    "brand": "BDB CONSEIL",
+    "legal_name": "BDB CONSEIL",
+    "website": null,
+    "name": "BDB CONSEIL",
+    "description": null,
+    "size": "0-0",
+    "location": {
+     "address": "29 RUE DUSSOUBS 75002 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3491910000000003,
+       48.86648499998633
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "66.22Z",
+      "label": "Activités des agents et courtiers d'assurances"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/84099121000013/bdb-conseil",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c0d9a6be614e488a37d"
+   },
+   "workplace": {
+    "siret": "95450974119144",
+    "brand": "CREDIT LYONNAIS",
+    "legal_name": "CREDIT LYONNAIS",
+    "website": null,
+    "name": "CREDIT LYONNAIS",
+    "description": null,
+    "size": "3-5",
+    "location": {
+     "address": "67 boulevard Beaumarchais 75003 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.367734000000001,
+       48.857879999986324
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": null,
+     "opco": "AKTO / Opco entreprises et salariés des services à forte intensité de main d'oeuvre",
+     "naf": {
+      "code": "64.19Z",
+      "label": "Autres intermédiations monétaires"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/95450974119144/credit-lyonnais",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "68f7bd5b49b8c5a9668146f9"
+   },
+   "workplace": {
+    "siret": "38290094203075",
+    "brand": "CAISSE D'EPARGNE ET DE PREVOYANCE ILE-DE-FRANCE",
+    "legal_name": "CAISSE D'EPARGNE ET DE PREVOYANCE ILE-DE-FRANCE",
+    "website": null,
+    "name": "CAISSE D'EPARGNE ET DE PREVOYANCE ILE-DE-FRANCE",
+    "description": null,
+    "size": "50-99",
+    "location": {
+     "address": "21 RUE DU LOUVRE 75001 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3427070000000003,
+       48.86487199998633
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 5005,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "64.19Z",
+      "label": "Autres intermédiations monétaires"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/38290094203075/caisse-d-epargne-et-de-prevoyance-ile-de-france",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "68f7bdfd49b8c5a96684ade9"
+   },
+   "workplace": {
+    "siret": "55209179500567",
+    "brand": "BRED BANQUE POPULAIRE",
+    "legal_name": "BRED BANQUE POPULAIRE",
+    "website": null,
+    "name": "BRED BANQUE POPULAIRE",
+    "description": null,
+    "size": "10-19",
+    "location": {
+     "address": "2 RUE DES TOURNELLES 75004 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.367416,
+       48.853675999986315
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 3210,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "64.19Z",
+      "label": "Autres intermédiations monétaires"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/55209179500567/bred-banque-populaire",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003bfb9a6be614e487b243"
+   },
+   "workplace": {
+    "siret": "82092312600040",
+    "brand": "IAD BUSINESS FACTORY",
+    "legal_name": "IAD BUSINESS FACTORY",
+    "website": null,
+    "name": "IAD BUSINESS FACTORY",
+    "description": null,
+    "size": "0-0",
+    "location": {
+     "address": "43T rue Etienne Marcel 75002 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.343436000000001,
+       48.865310999986335
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.01Z",
+      "label": "Programmation informatique"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/82092312600040/iad-business-factory",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a4a0fd9f3a737a089ebac37"
+   },
+   "workplace": {
+    "siret": "50094233900069",
+    "brand": "NEXT PERFORMANCE RAKUTEN MARKETING FRANCE",
+    "legal_name": "NEXT PERFORMANCE RAKUTEN MARKETING FRANCE",
+    "website": null,
+    "name": "NEXT PERFORMANCE RAKUTEN MARKETING FRANCE",
+    "description": null,
+    "size": "50-99",
+    "location": {
+     "address": "92 rue Reaumur 75002 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3497459999999992,
+       48.866942999986335
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "63.11Z",
+      "label": "Traitement de données, hébergement et activités connexes"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/50094233900069/next-performance-rakuten-marketing-france",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c2e9a6be614e48a2dbb"
+   },
+   "workplace": {
+    "siret": "55212022205301",
+    "brand": "SOCIETE GENERALE",
+    "legal_name": "SOCIETE GENERALE",
+    "website": null,
+    "name": "SOCIETE GENERALE",
+    "description": null,
+    "size": "10-19",
+    "location": {
+     "address": "5 RUE SAINT ANTOINE 75004 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.367419,
+       48.85327799998632
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1090,
+     "opco": "Opco Mobilités",
+     "naf": {
+      "code": "64.19Z",
+      "label": "Autres intermédiations monétaires"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/55212022205301/societe-generale",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "69822fb63cdd03158358f0f3"
+   },
+   "workplace": {
+    "siret": "87831498800014",
+    "brand": "BUGALI",
+    "legal_name": "BUGALI",
+    "website": null,
+    "name": "BUGALI",
+    "description": null,
+    "size": "10-19",
+    "location": {
+     "address": "81 rue Reaumur 75002 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.348451,
+       48.866903999986334
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "58.29C",
+      "label": "Edition de logiciels applicatifs"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/87831498800014/bugali",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003ca69a6be614e4903bcf"
+   },
+   "workplace": {
+    "siret": "84219445800019",
+    "brand": "SOFTSALES CONSULTING",
+    "legal_name": "SOFTSALES CONSULTING",
+    "website": null,
+    "name": "SOFTSALES CONSULTING",
+    "description": null,
+    "size": "0-0",
+    "location": {
+     "address": "81 RUE REAUMUR 75002 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.348451,
+       48.866903999986334
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": null,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.02A",
+      "label": "Conseil en systèmes et logiciels informatiques"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/84219445800019/softsales-consulting",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "68f7be6849b8c5a966871185"
+   },
+   "workplace": {
+    "siret": "83897140600031",
+    "brand": "UNISSEY",
+    "legal_name": "UNISSEY",
+    "website": null,
+    "name": "UNISSEY",
+    "description": null,
+    "size": "20-49",
+    "location": {
+     "address": "4 RUE DU CAIRE 75002 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3524579999999995,
+       48.86721399998634
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.01Z",
+      "label": "Programmation informatique"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/83897140600031/unissey",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c7c9a6be614e48e161f"
+   },
+   "workplace": {
+    "siret": "84240384200029",
+    "brand": "WEBLOOM",
+    "legal_name": "WEBLOOM",
+    "website": null,
+    "name": "WEBLOOM",
+    "description": null,
+    "size": "3-5",
+    "location": {
+     "address": "8 RUE DU CAIRE 75002 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.35216,
+       48.867279999986344
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.01Z",
+      "label": "Programmation informatique"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/84240384200029/webloom",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c399a6be614e48ad073"
+   },
+   "workplace": {
+    "siret": "33815833000054",
+    "brand": "LIONEL CHOUCHA",
+    "legal_name": "LIONEL CHOUCHA",
+    "website": null,
+    "name": "LIONEL CHOUCHA",
+    "description": null,
+    "size": "6-9",
+    "location": {
+     "address": "14 rue Jacques Coeur 75004 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.367673999999999,
+       48.85317799998631
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": null,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "69.20Z",
+      "label": "Activités comptables"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/33815833000054/lionel-choucha",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "68f7be6849b8c5a966871135"
+   },
+   "workplace": {
+    "siret": "83894325600019",
+    "brand": "CORSO-MESANGUY",
+    "legal_name": "CORSO-MESANGUY",
+    "website": null,
+    "name": "CORSO-MESANGUY",
+    "description": null,
+    "size": "1-2",
+    "location": {
+     "address": "94 BOULEVARD BEAUMARCHAIS 75011 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.367752,
+       48.86000199998632
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 2335,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "66.22Z",
+      "label": "Activités des agents et courtiers d'assurances"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/83894325600019/corso-mesanguy",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c889a6be614e48eb407"
+   },
+   "workplace": {
+    "siret": "48790154800072",
+    "brand": "DLM/DIFFUSION DU LIVRE MADRIGALL",
+    "legal_name": "DLM/DIFFUSION DU LIVRE MADRIGALL",
+    "website": null,
+    "name": "DLM/DIFFUSION DU LIVRE MADRIGALL",
+    "description": null,
+    "size": "10-19",
+    "location": {
+     "address": "1 place de l Odeon 75006 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.338898999999999,
+       48.8500919999863
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 2121,
+     "opco": "AFDAS",
+     "naf": {
+      "code": "46.18Z",
+      "label": "Intermédiaires spécialisés dans le commerce d'autres produits spécifiques"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/48790154800072/dlm-diffusion-du-livre-madrigall",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c6a9a6be614e48d5d0f"
+   },
+   "workplace": {
+    "siret": "79770492100031",
+    "brand": "PNL CONSEIL",
+    "legal_name": "PNL CONSEIL",
+    "website": null,
+    "name": "PNL CONSEIL",
+    "description": null,
+    "size": "0-0",
+    "location": {
+     "address": "1 rue Saint Antoine 75004 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.367989,
+       48.853200999986306
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 787,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "69.20Z",
+      "label": "Activités comptables"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/79770492100031/pnl-conseil",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003cb49a6be614e490eb3d"
+   },
+   "workplace": {
+    "siret": "53991385500059",
+    "brand": "ASTORIA AUDIT & CONSEIL",
+    "legal_name": "ASTORIA AUDIT & CONSEIL",
+    "website": null,
+    "name": "ASTORIA AUDIT & CONSEIL",
+    "description": null,
+    "size": "6-9",
+    "location": {
+     "address": "1 RUE SAINT-ANTOINE 75004 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.367989,
+       48.853200999986306
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 787,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "69.20Z",
+      "label": "Activités comptables"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/53991385500059/astoria-audit-conseil",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c509a6be614e48c1293"
+   },
+   "workplace": {
+    "siret": "82767565300014",
+    "brand": "AROLD AUDIT &ACCOUNTANCY",
+    "legal_name": "AROLD AUDIT &ACCOUNTANCY",
+    "website": null,
+    "name": "AROLD AUDIT &ACCOUNTANCY",
+    "description": null,
+    "size": "0-0",
+    "location": {
+     "address": "40 rue Amelot 75011 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3685720000000003,
+       48.85848699998632
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 787,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "69.20Z",
+      "label": "Activités comptables"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/82767565300014/arold-audit-accountancy",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c3f9a6be614e48b30bd"
+   },
+   "workplace": {
+    "siret": "84753630700014",
+    "brand": "CONSAUDEXPERT SIS",
+    "legal_name": "CONSAUDEXPERT SIS",
+    "website": null,
+    "name": "CONSAUDEXPERT SIS",
+    "description": null,
+    "size": "3-5",
+    "location": {
+     "address": "323 RUE SAINT-MARTIN 75003 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.354541999999999,
+       48.86745299998634
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 787,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "69.20Z",
+      "label": "Activités comptables"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/84753630700014/consaudexpert-sis",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c209a6be614e48971ed"
+   },
+   "workplace": {
+    "siret": "49284495600028",
+    "brand": "CONSAUDEXPERT",
+    "legal_name": "CONSAUDEXPERT",
+    "website": null,
+    "name": "CONSAUDEXPERT",
+    "description": null,
+    "size": "6-9",
+    "location": {
+     "address": "323 RUE SAINT-MARTIN 75003 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.354541999999999,
+       48.86745299998634
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 787,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "69.20Z",
+      "label": "Activités comptables"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/49284495600028/consaudexpert",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c509a6be614e48c0e17"
+   },
+   "workplace": {
+    "siret": "89116983100023",
+    "brand": "INSIDEBOARD AI",
+    "legal_name": "INSIDEBOARD AI",
+    "website": null,
+    "name": "INSIDEBOARD AI",
+    "description": null,
+    "size": "0-0",
+    "location": {
+     "address": "100 RUE REAUMUR 75002 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3482680000000005,
+       48.86726099998634
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": null,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.01Z",
+      "label": "Programmation informatique"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/89116983100023/insideboard-ai",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a12b196389e430a5ce7d4f1"
+   },
+   "workplace": {
+    "siret": "45098834000078",
+    "brand": "LWM",
+    "legal_name": "LWM",
+    "website": null,
+    "name": "LWM",
+    "description": null,
+    "size": "0-0",
+    "location": {
+     "address": "100 RUE REAUMUR 75002 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3482680000000005,
+       48.86726099998634
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.02B",
+      "label": "Tierce maintenance de systèmes et d'applications informatiques"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/45098834000078/lwm",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "68f7bdfe49b8c5a96684b371"
+   },
+   "workplace": {
+    "siret": "57210489100716",
+    "brand": "BANQUE DE FRANCE",
+    "legal_name": "BANQUE DE FRANCE",
+    "website": null,
+    "name": "BANQUE DE FRANCE",
+    "description": null,
+    "size": "50-99",
+    "location": {
+     "address": "5 PLACE DE LA BASTILLE 75004 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.368288,
+       48.853574999986314
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 5008,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "64.11Z",
+      "label": "Activités de banque centrale"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/57210489100716/banque-de-france",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c569a6be614e48c592b"
+   },
+   "workplace": {
+    "siret": "80211021300039",
+    "brand": "GLOBALIA",
+    "legal_name": "GLOBALIA",
+    "website": null,
+    "name": "GLOBALIA",
+    "description": null,
+    "size": "20-49",
+    "location": {
+     "address": "29 rue du Louvre 75002 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3432530000000003,
+       48.86592599998635
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "58.29C",
+      "label": "Edition de logiciels applicatifs"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/80211021300039/globalia",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "68f7be2049b8c5a966858569"
+   },
+   "workplace": {
+    "siret": "79883921300013",
+    "brand": "ELASTICSEARCH SARL",
+    "legal_name": "ELASTICSEARCH SARL",
+    "website": null,
+    "name": "ELASTICSEARCH SARL",
+    "description": null,
+    "size": "100-199",
+    "location": {
+     "address": "42 rue Monge 75005 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3518610000000004,
+       48.845550999986294
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.02A",
+      "label": "Conseil en systèmes et logiciels informatiques"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/79883921300013/elasticsearch-sarl",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c129a6be614e488dc23"
+   },
+   "workplace": {
+    "siret": "90534924700015",
+    "brand": "VERT D'YEUX",
+    "legal_name": "VERT D'YEUX",
+    "website": null,
+    "name": "VERT D'YEUX",
+    "description": null,
+    "size": "1-2",
+    "location": {
+     "address": "43 RUE MONGE 75005 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3521830000000006,
+       48.845511999986286
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.01Z",
+      "label": "Programmation informatique"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/90534924700015/vert-d-yeux",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c569a6be614e48c3f9b"
+   },
+   "workplace": {
+    "siret": "92478353300012",
+    "brand": "ACHILLE.AI",
+    "legal_name": "ACHILLE.AI",
+    "website": null,
+    "name": "ACHILLE.AI",
+    "description": null,
+    "size": "3-5",
+    "location": {
+     "address": "21 rue des Filles du Calvaire 75003 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3661450600144756,
+       48.86289601024304
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": null,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.01Z",
+      "label": "Programmation informatique"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/92478353300012/achille-ai",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a12b16f389e430a5ce54769"
+   },
+   "workplace": {
+    "siret": "98081542700029",
+    "brand": "DIGITAL CONSULTATION CENTRE FRANCE",
+    "legal_name": "DIGITAL CONSULTATION CENTRE FRANCE",
+    "website": null,
+    "name": "DIGITAL CONSULTATION CENTRE FRANCE",
+    "description": null,
+    "size": "0-0",
+    "location": {
+     "address": "31 rue du Louvre 75002 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.343351955332948,
+       48.866115986317055
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": null,
+     "opco": "inconnu",
+     "naf": {
+      "code": "63.12Z",
+      "label": "Portails Internet"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/98081542700029/digital-consultation-centre-france",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a25262af2e41652d47f9232"
+   },
+   "workplace": {
+    "siret": "89772462100023",
+    "brand": "KARMA SEARCH",
+    "legal_name": "KARMA SEARCH",
+    "website": null,
+    "name": "KARMA SEARCH",
+    "description": null,
+    "size": "1-2",
+    "location": {
+     "address": "71 rue du Cardinal Lemoine 75005 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3503110000000005,
+       48.8454979999863
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.01Z",
+      "label": "Programmation informatique"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/89772462100023/karma-search",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c699a6be614e48d201f"
+   },
+   "workplace": {
+    "siret": "85032363500035",
+    "brand": "BIZAO",
+    "legal_name": "BIZAO",
+    "website": null,
+    "name": "BIZAO",
+    "description": null,
+    "size": "6-9",
+    "location": {
+     "address": "66 rue Saint Sabin 75011 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3686429999999996,
+       48.859584999986325
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.02A",
+      "label": "Conseil en systèmes et logiciels informatiques"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/85032363500035/bizao",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "68f7bdfd49b8c5a96684abc3"
+   },
+   "workplace": {
+    "siret": "55200231303058",
+    "brand": "BANQUE POPULAIRE RIVES DE PARIS",
+    "legal_name": "BANQUE POPULAIRE RIVES DE PARIS",
+    "website": null,
+    "name": "BANQUE POPULAIRE RIVES DE PARIS",
+    "description": null,
+    "size": "6-9",
+    "location": {
+     "address": "56 BOULEVARD SAINT MICHEL 75006 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.341064,
+       48.8480849999863
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 3210,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "64.19Z",
+      "label": "Autres intermédiations monétaires"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/55200231303058/banque-populaire-rives-de-paris",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "68f7bd6149b8c5a966817c95"
+   },
+   "workplace": {
+    "siret": "39184421400323",
+    "brand": "SOCRIF - SOCIETE DE CREDIT IMMOBILIER DES CHEMINS DE FER",
+    "legal_name": "SOCRIF - SOCIETE DE CREDIT IMMOBILIER DES CHEMINS DE FER",
+    "website": null,
+    "name": "SOCRIF - SOCIETE DE CREDIT IMMOBILIER DES CHEMINS DE FER",
+    "description": null,
+    "size": "100-199",
+    "location": {
+     "address": "64 rue de Saintonge 75003 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3652099999999994,
+       48.863975999986344
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 478,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "64.92Z",
+      "label": "Autre distribution de crédit"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/39184421400323/socrif-societe-de-credit-immobilier-des-chemins-de-fer",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003bf49a6be614e4874feb"
+   },
+   "workplace": {
+    "siret": "66204244908058",
+    "brand": "BNP PARIBAS",
+    "legal_name": "BNP PARIBAS",
+    "website": null,
+    "name": "BNP PARIBAS",
+    "description": null,
+    "size": "10-19",
+    "location": {
+     "address": "2 BOULEVARD BEAUMARCHAIS 75011 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.369109,
+       48.85430799998631
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1090,
+     "opco": "Opco Mobilités",
+     "naf": {
+      "code": "64.19Z",
+      "label": "Autres intermédiations monétaires"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/66204244908058/bnp-paribas",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "68f7bd8649b8c5a966823679"
+   },
+   "workplace": {
+    "siret": "42385702800074",
+    "brand": "QUOD FINANCIAL",
+    "legal_name": "QUOD FINANCIAL",
+    "website": null,
+    "name": "QUOD FINANCIAL",
+    "description": null,
+    "size": "20-49",
+    "location": {
+     "address": "91 RUE REAUMUR 75002 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.346743000000001,
+       48.867384999986335
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "58.29A",
+      "label": "Édition de logiciels système et de réseau"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/42385702800074/quod-financial",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003cc09a6be614e4916a13"
+   },
+   "workplace": {
+    "siret": "79167433600056",
+    "brand": "MOMENT",
+    "legal_name": "MOMENT",
+    "website": null,
+    "name": "MOMENT",
+    "description": null,
+    "size": "20-49",
+    "location": {
+     "address": "1 BOULEVARD RICHARD LENOIR 75011 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.369211,
+       48.85430299998632
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.01Z",
+      "label": "Programmation informatique"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/79167433600056/moment",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003cc09a6be614e491863f"
+   },
+   "workplace": {
+    "siret": "44789184700033",
+    "brand": "CTRE INTERPROF PROTECT SOCIALE EPARGNE",
+    "legal_name": "CTRE INTERPROF PROTECT SOCIALE EPARGNE",
+    "website": null,
+    "name": "CTRE INTERPROF PROTECT SOCIALE EPARGNE",
+    "description": null,
+    "size": "6-9",
+    "location": {
+     "address": "1B RUE MORNAY 75004 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.365813000000001,
+       48.84937299998631
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 2247,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "66.22Z",
+      "label": "Activités des agents et courtiers d'assurances"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/44789184700033/ctre-interprof-protect-sociale-epargne",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003cc19a6be614e491a3f7"
+   },
+   "workplace": {
+    "siret": "66204244920285",
+    "brand": "BNP PARIBAS",
+    "legal_name": "BNP PARIBAS",
+    "website": null,
+    "name": "BNP PARIBAS",
+    "description": null,
+    "size": "10-19",
+    "location": {
+     "address": "7 RUE SOUFFLOT 75005 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.34376,
+       48.846492999986296
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1090,
+     "opco": "Opco Mobilités",
+     "naf": {
+      "code": "64.19Z",
+      "label": "Autres intermédiations monétaires"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/66204244920285/bnp-paribas",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c7c9a6be614e48e3fe7"
+   },
+   "workplace": {
+    "siret": "89173300800025",
+    "brand": "GREENDID",
+    "legal_name": "GREENDID",
+    "website": null,
+    "name": "GREENDID",
+    "description": null,
+    "size": "0-0",
+    "location": {
+     "address": "25 rue Notre Dame de Nazareth 75003 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.359257999999999,
+       48.867248999986344
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.01Z",
+      "label": "Programmation informatique"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/89173300800025/greendid",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c2e9a6be614e48a3683"
+   },
+   "workplace": {
+    "siret": "66204244908215",
+    "brand": "BNP PARIBAS",
+    "legal_name": "BNP PARIBAS",
+    "website": null,
+    "name": "BNP PARIBAS",
+    "description": null,
+    "size": "10-19",
+    "location": {
+     "address": "133 BOULEVARD SAINT GERMAIN 75006 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.335293000000001,
+       48.853163999986315
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1090,
+     "opco": "Opco Mobilités",
+     "naf": {
+      "code": "64.19Z",
+      "label": "Autres intermédiations monétaires"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/66204244908215/bnp-paribas",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "68f7be4a49b8c5a966867021"
+   },
+   "workplace": {
+    "siret": "82294806300026",
+    "brand": "A2P EXPERTISE ET AUDIT",
+    "legal_name": "A2P EXPERTISE ET AUDIT",
+    "website": null,
+    "name": "A2P EXPERTISE ET AUDIT",
+    "description": null,
+    "size": "0-0",
+    "location": {
+     "address": "9 boulevard Morland 75004 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3647409999999995,
+       48.84831199998631
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 787,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "69.20Z",
+      "label": "Activités comptables"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/82294806300026/a2-p-expertise-et-audit",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c4a9a6be614e48bb7a1"
+   },
+   "workplace": {
+    "siret": "95450974134093",
+    "brand": "CREDIT LYONNAIS",
+    "legal_name": "CREDIT LYONNAIS",
+    "website": null,
+    "name": "CREDIT LYONNAIS",
+    "description": null,
+    "size": "6-9",
+    "location": {
+     "address": "15 rue Soufflot 75005 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3421450000000004,
+       48.8469099999863
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": null,
+     "opco": "AKTO / Opco entreprises et salariés des services à forte intensité de main d'oeuvre",
+     "naf": {
+      "code": "64.19Z",
+      "label": "Autres intermédiations monétaires"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/95450974134093/credit-lyonnais",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a65bf15d55499013b58734d"
+   },
+   "workplace": {
+    "siret": "35248807600014",
+    "brand": "GABRIEL AMAR ASSOCIES INTER AUDIT INTERN",
+    "legal_name": "GABRIEL AMAR ASSOCIES INTER AUDIT INTERN",
+    "website": null,
+    "name": "GABRIEL AMAR ASSOCIES INTER AUDIT INTERN",
+    "description": null,
+    "size": "6-9",
+    "location": {
+     "address": "7 RUE PELEE 75011 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.36948,
+       48.85968199998631
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 787,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "69.20Z",
+      "label": "Activités comptables"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/35248807600014/gabriel-amar-associes-inter-audit-intern",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c719a6be614e48da899"
+   },
+   "workplace": {
+    "siret": "91341600400012",
+    "brand": "DIGIPART",
+    "legal_name": "DIGIPART",
+    "website": null,
+    "name": "DIGIPART",
+    "description": null,
+    "size": "0-0",
+    "location": {
+     "address": "135 boulevard de Sebastopol 75002 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.353524,
+       48.868427999986345
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.01Z",
+      "label": "Programmation informatique"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/91341600400012/digipart",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c019a6be614e488101d"
+   },
+   "workplace": {
+    "siret": "81025744400036",
+    "brand": "DELIGHT",
+    "legal_name": "DELIGHT",
+    "website": null,
+    "name": "DELIGHT",
+    "description": null,
+    "size": "0-0",
+    "location": {
+     "address": "93 RUE D'ABOUKIR 75002 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.348451023510272,
+       48.86825596049064
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.01Z",
+      "label": "Programmation informatique"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/81025744400036/delight",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003bf49a6be614e4876983"
+   },
+   "workplace": {
+    "siret": "95250563400016",
+    "brand": "14MY",
+    "legal_name": "14MY",
+    "website": null,
+    "name": "14MY",
+    "description": null,
+    "size": "6-9",
+    "location": {
+     "address": "14 rue du Mail 75002 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3425140000000004,
+       48.866714999986335
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.02A",
+      "label": "Conseil en systèmes et logiciels informatiques"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/95250563400016/14-my",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c4a9a6be614e48bc3b1"
+   },
+   "workplace": {
+    "siret": "54201638102029",
+    "brand": "B VICTOIRE",
+    "legal_name": "B VICTOIRE",
+    "website": null,
+    "name": "B VICTOIRE",
+    "description": null,
+    "size": "6-9",
+    "location": {
+     "address": "4 PLACE DES VICTOIRES 75002 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.340721,
+       48.865946999986335
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 2120,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "64.19Z",
+      "label": "Autres intermédiations monétaires"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/54201638102029/b-victoire",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "68f7bd5b49b8c5a9668146f3"
+   },
+   "workplace": {
+    "siret": "38290094202333",
+    "brand": "CAISSE D'EPARGNE ET DE PREVOYANCE ILE-DE-FRANCE",
+    "legal_name": "CAISSE D'EPARGNE ET DE PREVOYANCE ILE-DE-FRANCE",
+    "website": null,
+    "name": "CAISSE D'EPARGNE ET DE PREVOYANCE ILE-DE-FRANCE",
+    "description": null,
+    "size": "10-19",
+    "location": {
+     "address": "15 RUE DU FOUR 75006 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.334872999999999,
+       48.852732999986316
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 5005,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "64.19Z",
+      "label": "Autres intermédiations monétaires"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/38290094202333/caisse-d-epargne-et-de-prevoyance-ile-de-france",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c509a6be614e48c13ed"
+   },
+   "workplace": {
+    "siret": "84450510700020",
+    "brand": "TULIP SAS",
+    "legal_name": "TULIP SAS",
+    "website": null,
+    "name": "TULIP SAS",
+    "description": null,
+    "size": "0-0",
+    "location": {
+     "address": "16 passage Lemoine 75002 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3524740000000004,
+       48.86871499998633
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 2247,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "66.22Z",
+      "label": "Activités des agents et courtiers d'assurances"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/84450510700020/tulip-sas",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003cc69a6be614e491baa7"
+   },
+   "workplace": {
+    "siret": "84314880000033",
+    "brand": "INDIGO",
+    "legal_name": "INDIGO",
+    "website": null,
+    "name": "INDIGO",
+    "description": null,
+    "size": "6-9",
+    "location": {
+     "address": "18 RUE SAINTE-FOY 75002 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3512059999999995,
+       48.86870199998634
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.01Z",
+      "label": "Programmation informatique"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/84314880000033/indigo",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c3f9a6be614e48b15a9"
+   },
+   "workplace": {
+    "siret": "54201638102045",
+    "brand": "A REPUBLIQUE",
+    "legal_name": "A REPUBLIQUE",
+    "website": null,
+    "name": "A REPUBLIQUE",
+    "description": null,
+    "size": "10-19",
+    "location": {
+     "address": "201 RUE DU TEMPLE 75003 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.361773,
+       48.867013999986334
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 2120,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "64.19Z",
+      "label": "Autres intermédiations monétaires"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/54201638102045/a-republique",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c829a6be614e48e7373"
+   },
+   "workplace": {
+    "siret": "94885713100015",
+    "brand": "ACTOON",
+    "legal_name": "ACTOON",
+    "website": null,
+    "name": "ACTOON",
+    "description": null,
+    "size": "0-0",
+    "location": {
+     "address": "122 rue Amelot 75011 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3669249999999997,
+       48.86411499998633
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": null,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "58.29C",
+      "label": "Edition de logiciels applicatifs"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/94885713100015/actoon",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c0d9a6be614e488d01d"
+   },
+   "workplace": {
+    "siret": "88311013200015",
+    "brand": "PROCESS METRONOME",
+    "legal_name": "PROCESS METRONOME",
+    "website": null,
+    "name": "PROCESS METRONOME",
+    "description": null,
+    "size": "6-9",
+    "location": {
+     "address": "122 rue Amelot 75011 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3669249999999997,
+       48.86411499998633
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": null,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "62.02A",
+      "label": "Conseil en systèmes et logiciels informatiques"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/88311013200015/process-metronome",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c699a6be614e48d2ccf"
+   },
+   "workplace": {
+    "siret": "90478033500025",
+    "brand": "KLEEP",
+    "legal_name": "KLEEP",
+    "website": null,
+    "name": "KLEEP",
+    "description": null,
+    "size": "0-0",
+    "location": {
+     "address": "23 RUE BLONDEL 75002 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3524829999999994,
+       48.86887099998635
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1486,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "58.29C",
+      "label": "Edition de logiciels applicatifs"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/90478033500025/kleep",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c009a6be614e487eeb1"
+   },
+   "workplace": {
+    "siret": "77566563101961",
+    "brand": "MUTUELLE ASSURANCES CORPS SANTE FRANCAIS",
+    "legal_name": "MUTUELLE ASSURANCES CORPS SANTE FRANCAIS",
+    "website": null,
+    "name": "MUTUELLE ASSURANCES CORPS SANTE FRANCAIS",
+    "description": null,
+    "size": "6-9",
+    "location": {
+     "address": "103 rue Reaumur 75002 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3445919999999996,
+       48.86785199998634
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 1672,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "65.12Z",
+      "label": "Autres assurances"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/77566563101961/mutuelle-assurances-corps-sante-francais",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "6a003c209a6be614e489a31d"
+   },
+   "workplace": {
+    "siret": "78939993800024",
+    "brand": "JASPE",
+    "legal_name": "JASPE",
+    "website": null,
+    "name": "JASPE",
+    "description": null,
+    "size": "3-5",
+    "location": {
+     "address": "124 RUE D'ABOUKIR 75002 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.350997,
+       48.868898999986335
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 2098,
+     "opco": "Opco entreprises de proximité",
+     "naf": {
+      "code": "62.01Z",
+      "label": "Programmation informatique"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/78939993800024/jaspe",
+    "phone": null,
+    "recipient_id": null
+   }
+  },
+  {
+   "identifier": {
+    "id": "68f7be1b49b8c5a966854eb5"
+   },
+   "workplace": {
+    "siret": "79112964600018",
+    "brand": "DN AUDIT ET EXPERTISE",
+    "legal_name": "DN AUDIT ET EXPERTISE",
+    "website": null,
+    "name": "DN AUDIT ET EXPERTISE",
+    "description": null,
+    "size": "1-2",
+    "location": {
+     "address": "32 BOULEVARD DU TEMPLE 75011 PARIS",
+     "geopoint": {
+      "coordinates": [
+       2.3658380000000006,
+       48.86514899998634
+      ],
+      "type": "Point"
+     }
+    },
+    "domain": {
+     "idcc": 787,
+     "opco": "ATLAS",
+     "naf": {
+      "code": "69.20Z",
+      "label": "Activités comptables"
+     }
+    }
+   },
+   "apply": {
+    "url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/79112964600018/dn-audit-et-expertise",
+    "phone": null,
+    "recipient_id": null
+   }
+  }
+ ],
+ "warnings": []
+}
