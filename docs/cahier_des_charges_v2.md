@@ -1,8 +1,8 @@
 # Cahier des charges : refonte v2 de la veille emploi
 
-> Statut : **proposition à valider**, rédigée le 25 octobre 2026 à partir de l'échange de cadrage
-> des 23 et 25 octobre et de l'audit de production du 23 octobre. Aucune ligne de code n'est
-> écrite avant validation de ce document.
+> Statut : **validé le 25 octobre 2026**. Rédigé à partir de l'échange de cadrage des 23 et
+> 25 octobre et de l'audit de production du 23 octobre. Les décisions de la section 13 sont
+> tranchées. La conception est décrite dans [`conception_v2.md`](conception_v2.md).
 
 ## 1. Pourquoi une refonte
 
@@ -370,12 +370,10 @@ part des alertes que tu retiens réellement.
 Les lots 1 à 4 rendent l'outil utile sur le nouveau besoin avec les sources existantes. Le lot 5
 ajoute de la couverture, le lot 6 de la finesse.
 
-## 13. Questions à trancher avant la conception
+## 13. Décisions (25 octobre 2026)
 
-1. **Onglet Veille et case Retenir** (§ 7.2) : d'accord, ou préfères-tu une copie directe dans
-   Candidatures ?
-2. **Durée minimale** des CDD et missions d'intérim : 6 mois te convient ?
-3. **Annotation** du jeu d'évaluation : prêt à y consacrer une demi-heure ?
-4. **Immersion Facilitée** : la demande d'accès à l'API se fait à ton nom. D'accord pour la
-   faire ?
-5. **Horaires** : passages de 7h à 22h et silence de nuit, ça te va ?
+1. **Onglet Veille et case Retenir** (§ 7.2) : retenu, pas de copie directe dans Candidatures.
+2. **Durée minimale** des CDD et missions d'intérim : 6 mois, quand la durée est connue.
+3. **Annotation** du jeu d'évaluation : Maël annote environ 150 offres.
+4. **Immersion Facilitée** : Maël demande l'accès à l'API à son nom.
+5. **Horaires** : passages de 7h à 22h, silence de nuit, alertes de la nuit envoyées au réveil.
