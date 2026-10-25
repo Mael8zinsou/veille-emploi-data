@@ -1,0 +1,1018 @@
+{
+ "count": 31,
+ "mean": 110750,
+ "results": [
+  {
+   "location": {
+    "display_name": "France",
+    "area": [
+     "France"
+    ],
+    "__CLASS__": "Adzuna::API::Response::Location"
+   },
+   "__CLASS__": "Adzuna::API::Response::Job",
+   "title": "Stage – Data Science, IA & Machine Learning H/F",
+   "company": {
+    "__CLASS__": "Adzuna::API::Response::Company",
+    "display_name": "ELIS"
+   },
+   "redirect_url": "https://www.adzuna.fr/details/5941591387?utm_medium=api&utm_source=<ADZUNA_APP_ID>",
+   "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk0MTU5MTM4NyIsInMiOiIxSDJLSjZ2UThSR3JWOXFQb2pEczF3In0.uOqRB5pMoosHe6xJ0Dwl0PGgPCFb-K2eI6mHAqHKSfA",
+   "description": "Informations générales ELIS Si comme nous, vous travaillez mieux quand on vous fait confiance, C'est par ici. Car Chez Elis, on sait que l'on peut compter sur les personnes que l'on recrute, leur donner des responsabilités, les former et les faire évoluer. On croit en vous et en la force du collectif pour atteindre les objectifs ! Rejoindre Elis, c'est aussi choisir un groupe français, présent à l'international, solide, humain et engagé dans l'économie circulaire depuis plus de 75 ans. Notre mi…",
+   "created": "2026-10-25T17:13:35Z",
+   "category": {
+    "tag": "unknown",
+    "__CLASS__": "Adzuna::API::Response::Category",
+    "label": "Unknown"
+   },
+   "salary_is_predicted": "0",
+   "id": "5941591387"
+  },
+  {
+   "id": "5941569950",
+   "longitude": 2.35713,
+   "salary_is_predicted": "0",
+   "created": "2026-10-25T16:55:59Z",
+   "category": {
+    "label": "Emplois Informatique",
+    "tag": "it-jobs",
+    "__CLASS__": "Adzuna::API::Response::Category"
+   },
+   "description": "Et si votre prochain défi s’écrivait chez Parrot ? Du Bluetooth dans l’automobile aux drones grand public, jusqu’aux drones professionnels : depuis 1994, nous avons fait de l’innovation notre culture . Année après année, nous transformons notre savoir-faire technologique en solutions toujours plus intelligentes, performantes et ambitieuses . Trois décennies d’innovations nous ont permis de construire une expertise unique et de nous imposer sur des marchés en constante évolution. Et cette dynami…",
+   "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk0MTU2OTk1MCIsInMiOiIxSDJLSjZ2UThSR3JWOXFQb2pEczF3In0.cf96TyYVKhZ6pWgdWxMzk3ye2A_K0r8MFd3DloemR8M",
+   "company": {
+    "__CLASS__": "Adzuna::API::Response::Company",
+    "display_name": "Parrot Drones"
+   },
+   "redirect_url": "https://www.adzuna.fr/details/5941569950?utm_medium=api&utm_source=<ADZUNA_APP_ID>",
+   "contract_time": "full_time",
+   "latitude": 48.87174,
+   "__CLASS__": "Adzuna::API::Response::Job",
+   "title": "Stage - Machine Learning - Foundation Model (H/F)",
+   "location": {
+    "display_name": "10ème Arrondissement, Paris",
+    "__CLASS__": "Adzuna::API::Response::Location",
+    "area": [
+     "France",
+     "Ile-de-France",
+     "Paris",
+     "10ème Arrondissement"
+    ]
+   }
+  },
+  {
+   "salary_min": 90000,
+   "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiMUgyS0o2dlE4UkdyVjlxUG9qRHMxdyIsImkiOiI1OTQxMDc0NDY1In0.bmxcYPhoQ--_HRxdJTCgJa5CX7d5IPeYk6o80xgHYcc",
+   "company": {
+    "__CLASS__": "Adzuna::API::Response::Company",
+    "display_name": "Capital Fund Management "
+   },
+   "redirect_url": "https://www.adzuna.fr/details/5941074465?utm_medium=api&utm_source=<ADZUNA_APP_ID>",
+   "__CLASS__": "Adzuna::API::Response::Job",
+   "title": "Machine Learning Engineer",
+   "latitude": 48.863839,
+   "location": {
+    "display_name": "Paris, Ile-de-France",
+    "__CLASS__": "Adzuna::API::Response::Location",
+    "area": [
+     "France",
+     "Ile-de-France",
+     "Paris"
+    ]
+   },
+   "longitude": 2.344631,
+   "salary_max": 130000,
+   "id": "5941074465",
+   "salary_is_predicted": "0",
+   "description": "Founded in 1991, we are a global quantitative and systematic asset management firm applying a scientific approach to finance to develop alternative investment strategies that create value for our clients. We value innovation, dedication, collaboration, and the ability to make an impact. Together, we create a stimulating environment for talented and passionate experts in research, technology, and business to explore new ideas and challenge existing assumptions. ABOUT THE ROLE CFM is looking for …",
+   "created": "2026-10-25T04:18:03Z",
+   "category": {
+    "label": "Emplois Autres/Général",
+    "__CLASS__": "Adzuna::API::Response::Category",
+    "tag": "other-general-jobs"
+   }
+  },
+  {
+   "latitude": 48.82583,
+   "title": "Stage Data Science, IA & Machine Learning H/F (Stage)",
+   "__CLASS__": "Adzuna::API::Response::Job",
+   "location": {
+    "display_name": "Hauts-de-Seine, Ile-de-France",
+    "__CLASS__": "Adzuna::API::Response::Location",
+    "area": [
+     "France",
+     "Ile-de-France",
+     "Hauts-de-Seine"
+    ]
+   },
+   "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiMUgyS0o2dlE4UkdyVjlxUG9qRHMxdyIsImkiOiI1OTQwNjQwNzI3In0.wNPFTvJ0iDdDP0-Pdw68EiATH4LOuN8_rxIlMdwo39o",
+   "redirect_url": "https://www.adzuna.fr/land/ad/5940640727?se=1H2KJ6vQ8RGrV9qPojDs1w&utm_medium=api&utm_source=<ADZUNA_APP_ID>&v=7B85A60006C89ADB3F6E7E9FD64E1F8A97B61BDD",
+   "company": {
+    "display_name": "ELIS",
+    "__CLASS__": "Adzuna::API::Response::Company"
+   },
+   "contract_type": "contract",
+   "salary_is_predicted": "0",
+   "category": {
+    "label": "Unknown",
+    "__CLASS__": "Adzuna::API::Response::Category",
+    "tag": "unknown"
+   },
+   "created": "2026-10-24T17:52:31Z",
+   "description": "Si comme nous, vous travaillez mieux quand on vous fait confiance, C'est par ici Car Chez Elis, on sait que l'on peut compter sur les personnes que l'on recrute, leur donner des responsabilités, les former et les faire évoluer. On croit en vous et en la force du collectif pour atteindre les objectifs ! Rejoindre Elis, c'est aussi choisir un groupe français, présent à l'international, solide, humain et engagé dans l'économie circulaire depuis plus de 75 ans. Notre mission ? Louer et entretenir d…",
+   "id": "5940640727",
+   "longitude": 2.245857
+  },
+  {
+   "description": "Description du poste : Qui sommes-nous ? Nous sommes passionnés par les nouvelles technologies, et vous ? Rejoindre Amiltone, c'est intégrer des équipes dynamiques et soudées dans le cadre de projets novateurs et ambitieux. Nous relevons les challenges techniques de nos clients et les accompagnons dans leur transformation digitale. Pourquoi choisir Amiltone ? Amiltone, plus qu'une entreprise, un état d'esprit ! Notre objectif ? Votre épanouissement professionnel ! Nous avons à cœur de : Vous ac…",
+   "created": "2026-10-24T13:30:22Z",
+   "category": {
+    "__CLASS__": "Adzuna::API::Response::Category",
+    "tag": "unknown",
+    "label": "Unknown"
+   },
+   "salary_is_predicted": "0",
+   "longitude": 4.88039,
+   "id": "5940395603",
+   "location": {
+    "__CLASS__": "Adzuna::API::Response::Location",
+    "area": [
+     "France",
+     "Auvergne-Rhône-Alpes",
+     "Rhône",
+     "Lyon",
+     "Villeurbanne"
+    ],
+    "display_name": "Villeurbanne, Lyon"
+   },
+   "title": "Data Scientist Python / Machine Learning (H/F)",
+   "__CLASS__": "Adzuna::API::Response::Job",
+   "latitude": 45.76471,
+   "company": {
+    "__CLASS__": "Adzuna::API::Response::Company",
+    "display_name": "France Travail"
+   },
+   "redirect_url": "https://www.adzuna.fr/details/5940395603?utm_medium=api&utm_source=<ADZUNA_APP_ID>",
+   "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk0MDM5NTYwMyIsInMiOiIxSDJLSjZ2UThSR3JWOXFQb2pEczF3In0.RPD2he7P-OGv8BLFq5_Q_aWLjHL-AEyeUGPXu-ED0O4"
+  },
+  {
+   "redirect_url": "https://www.adzuna.fr/details/5940384484?utm_medium=api&utm_source=<ADZUNA_APP_ID>",
+   "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk0MDM4NDQ4NCIsInMiOiIxSDJLSjZ2UThSR3JWOXFQb2pEczF3In0.-O5VYwV_H-LbXhg5g6H5vjUqZVS6HKW5NMiUuEVCCWI",
+   "location": {
+    "display_name": "Toulouse, Haute-Garonne",
+    "__CLASS__": "Adzuna::API::Response::Location",
+    "area": [
+     "France",
+     "Occitanie",
+     "Haute-Garonne",
+     "Toulouse"
+    ]
+   },
+   "title": "Ingénieur de recherche en machine learning et rendu 3D F/H",
+   "salary_max": 55000,
+   "id": "5940384484",
+   "created": "2026-10-24T13:28:12Z",
+   "description": "Tu travailleras à l'interface entre l'équipe Machine Learning (3 personnes) et l'équipe Rendu (5 personnes), sur des sujets de recherche appliquée visant à améliorer la qualité visuelle, la fidélité géométrique et la robustesse de nos pipelines d'essayage virtuel et de production d'assets 3D. Tes défis : Amélioration du rendu d'essayage par modèles génératifs Tu étudieras comment combiner des méthodes de rendu 3D classiques avec des modèles génératifs, notamment des modèles de diffusion, pour p…",
+   "contract_type": "permanent",
+   "company": {
+    "__CLASS__": "Adzuna::API::Response::Company",
+    "display_name": "FITTINGBOX"
+   },
+   "salary_min": 40000,
+   "latitude": 43.60436,
+   "__CLASS__": "Adzuna::API::Response::Job",
+   "longitude": 1.44295,
+   "category": {
+    "label": "Emplois Administration",
+    "tag": "admin-jobs",
+    "__CLASS__": "Adzuna::API::Response::Category"
+   },
+   "salary_is_predicted": "0"
+  },
+  {
+   "longitude": 2.41755,
+   "salary_is_predicted": "0",
+   "category": {
+    "label": "Emplois Informatique",
+    "tag": "it-jobs",
+    "__CLASS__": "Adzuna::API::Response::Category"
+   },
+   "salary_min": 90000,
+   "company": {
+    "__CLASS__": "Adzuna::API::Response::Company",
+    "display_name": "Ubisoft Entertainment Inc."
+   },
+   "__CLASS__": "Adzuna::API::Response::Job",
+   "contract_time": "full_time",
+   "latitude": 48.83973,
+   "salary_max": 140000,
+   "id": "5939984860",
+   "description": "Ubisoft is a global leader in gaming with teams across the world creating original and memorable gaming experiences, from Assassin's Creed, Rainbow Six, to Just Dance and more. We believe diverse perspectives help both players and teams thrive. If you're passionate about innovation and pushing entertainment boundaries, join our journey and help us create the unknown! JOB DESCRIPTION Ubisoft is natively data-driven: from the core of our games to our marketing actions, we're leveraging data and a…",
+   "created": "2026-10-24T05:15:58Z",
+   "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiMUgyS0o2dlE4UkdyVjlxUG9qRHMxdyIsImkiOiI1OTM5OTg0ODYwIn0.uek11igs-7JE_5ZS7-Fh4Biio_BQwPgGlyrG2ErtW8s",
+   "redirect_url": "https://www.adzuna.fr/details/5939984860?utm_medium=api&utm_source=<ADZUNA_APP_ID>",
+   "title": "Senior Machine Learning Engineer (W/M/X)",
+   "location": {
+    "display_name": "Saint-Mandé, Nogent-sur-Marne",
+    "area": [
+     "France",
+     "Ile-de-France",
+     "Val-de-Marne",
+     "Nogent-sur-Marne",
+     "Saint-Mandé"
+    ],
+    "__CLASS__": "Adzuna::API::Response::Location"
+   }
+  },
+  {
+   "created": "2026-10-24T05:13:39Z",
+   "description": "The Senior Machine Learning Engineer, ML Platform is responsible for building, running, and evolving the ML monorepo used by the X-ray, CT, and MRI machine learning group at DeepHealth. The monorepo covers the full path from experimentation to product: dataset and sample definitions, training and evaluation code, experiment tracking, model export, and the inference servers that run in production Everyone on the team contributes to the monorepo; this role is the single point of accountability fo…",
+   "id": "5939982389",
+   "salary_max": 130000,
+   "title": "Senior Machine Learning Engineer (ML Platform)",
+   "location": {
+    "display_name": "Paris, Ile-de-France",
+    "area": [
+     "France",
+     "Ile-de-France",
+     "Paris"
+    ],
+    "__CLASS__": "Adzuna::API::Response::Location"
+   },
+   "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiMUgyS0o2dlE4UkdyVjlxUG9qRHMxdyIsImkiOiI1OTM5OTgyMzg5In0.SyvxZ9ngFtYWhgWM3gTBjvhW8R-6JY7wp7-X8OyFIf0",
+   "redirect_url": "https://www.adzuna.fr/details/5939982389?utm_medium=api&utm_source=<ADZUNA_APP_ID>",
+   "salary_is_predicted": "0",
+   "category": {
+    "__CLASS__": "Adzuna::API::Response::Category",
+    "tag": "other-general-jobs",
+    "label": "Emplois Autres/Général"
+   },
+   "longitude": 2.344631,
+   "latitude": 48.863839,
+   "contract_time": "full_time",
+   "__CLASS__": "Adzuna::API::Response::Job",
+   "salary_min": 90000,
+   "company": {
+    "__CLASS__": "Adzuna::API::Response::Company",
+    "display_name": "Aidence"
+   }
+  },
+  {
+   "title": "Machine Learning and Python SME",
+   "location": {
+    "display_name": "Chantilly, Senlis",
+    "area": [
+     "France",
+     "Hauts-De-France",
+     "Oise",
+     "Senlis",
+     "Chantilly"
+    ],
+    "__CLASS__": "Adzuna::API::Response::Location"
+   },
+   "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTkzOTk4MjEwMiIsInMiOiIxSDJLSjZ2UThSR3JWOXFQb2pEczF3In0.pHuP7RpXwgxn02-Og5_3U3pExyLhRAdIwUN0JTYAt3M",
+   "redirect_url": "https://www.adzuna.fr/details/5939982102?utm_medium=api&utm_source=<ADZUNA_APP_ID>",
+   "created": "2026-10-24T05:12:22Z",
+   "description": "Avalore, LLC is seeking a Machine Learning and Python Subject Matter Expert (SME) to support advanced data analytics, natural language processing (NLP), and machine learning initiatives for US Government customers. The ideal candidate will have demonstrated experience developing, evaluating, and optimizing machine learning models using Python, deep learning frameworks, and modern NLP techniques. This role will leverage advanced statistical analysis, data engineering, and performance measurement…",
+   "salary_max": 170000,
+   "id": "5939982102",
+   "latitude": 49.22256,
+   "contract_time": "full_time",
+   "__CLASS__": "Adzuna::API::Response::Job",
+   "salary_min": 110000,
+   "company": {
+    "display_name": "Avalore, LLC",
+    "__CLASS__": "Adzuna::API::Response::Company"
+   },
+   "salary_is_predicted": "0",
+   "category": {
+    "tag": "other-general-jobs",
+    "__CLASS__": "Adzuna::API::Response::Category",
+    "label": "Emplois Autres/Général"
+   },
+   "longitude": 2.44329
+  },
+  {
+   "id": "5939924596",
+   "longitude": 2.3365,
+   "category": {
+    "tag": "unknown",
+    "__CLASS__": "Adzuna::API::Response::Category",
+    "label": "Unknown"
+   },
+   "created": "2026-10-24T04:26:55Z",
+   "description": "Description du poste Descriptif détaillé du besoin Dans le cadre du développement de projets innovants autour de la Data Science et de l'Intelligence Artificielle, nous recherchons un Data Scientist / AI Engineer capable d'intervenir sur l'ensemble du cycle de vie des solutions IA, de l'exploration des cas d'usage jusqu'à leur mise en production. Vous rejoindrez une équipe en pleine croissance, intervenant sur des problématiques métier concrètes et variées : optimisation logistique, automatisat…",
+   "contract_type": "contract",
+   "salary_is_predicted": "0",
+   "company": {
+    "__CLASS__": "Adzuna::API::Response::Company",
+    "display_name": "Collective.work"
+   },
+   "redirect_url": "https://www.adzuna.fr/details/5939924596?utm_medium=api&utm_source=<ADZUNA_APP_ID>",
+   "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTkzOTkyNDU5NiIsInMiOiIxSDJLSjZ2UThSR3JWOXFQb2pEczF3In0.Gc4Tao6p-23h47653tRv_Tf5C2F-SvP9mWtBAtshLnI",
+   "location": {
+    "area": [
+     "France",
+     "Ile-de-France",
+     "Paris",
+     "8ème Arrondissement"
+    ],
+    "__CLASS__": "Adzuna::API::Response::Location",
+    "display_name": "8ème Arrondissement, Paris"
+   },
+   "contract_time": "full_time",
+   "latitude": 48.8814,
+   "__CLASS__": "Adzuna::API::Response::Job",
+   "title": "Data Scientist / AI Engineer – GenAI, LLM & Machine Learning (H/F) - Freelance"
+  },
+  {
+   "salary_max": 140000,
+   "id": "5939550396",
+   "description": "Founded in 1991, we are a global quantitative and systematic asset management firm applying a scientific approach to finance to develop alternative investment strategies that create value for our clients. We value innovation, dedication, collaboration, and the ability to make an impact. Together, we create a stimulating environment for talented and passionate experts in research, technology, and business to explore new ideas and challenge existing assumptions. YOUR ROLE We’re hiring for a Machi…",
+   "created": "2026-10-23T19:12:13Z",
+   "redirect_url": "https://www.adzuna.fr/details/5939550396?utm_medium=api&utm_source=<ADZUNA_APP_ID>",
+   "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTkzOTU1MDM5NiIsInMiOiIxSDJLSjZ2UThSR3JWOXFQb2pEczF3In0.iW1qoUPHQkuv05eQoXAIwN6OYHmtyPqPdRx-MFwcfW8",
+   "location": {
+    "display_name": "Paris, Ile-de-France",
+    "area": [
+     "France",
+     "Ile-de-France",
+     "Paris"
+    ],
+    "__CLASS__": "Adzuna::API::Response::Location"
+   },
+   "title": "Machine Learning Researcher",
+   "longitude": 2.344631,
+   "category": {
+    "label": "Emplois Autres/Général",
+    "tag": "other-general-jobs",
+    "__CLASS__": "Adzuna::API::Response::Category"
+   },
+   "salary_is_predicted": "0",
+   "company": {
+    "display_name": "Capital Fund Management ",
+    "__CLASS__": "Adzuna::API::Response::Company"
+   },
+   "salary_min": 90000,
+   "__CLASS__": "Adzuna::API::Response::Job",
+   "latitude": 48.863839,
+   "contract_time": "full_time"
+  },
+  {
+   "created": "2026-10-23T18:06:34Z",
+   "category": {
+    "__CLASS__": "Adzuna::API::Response::Category",
+    "tag": "it-jobs",
+    "label": "Emplois Informatique"
+   },
+   "description": "This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Senior Technical Trainer — Machine Learning based in France. We are seeking a hands-on machine learning practitioner with a passion for teaching to design and deliver engaging technical courses for engineers. In this remote freelance role, you will help learners progress from core machine learning concepts to training and evaluating their own models through practical…",
+   "salary_is_predicted": "0",
+   "id": "5939467861",
+   "location": {
+    "display_name": "France",
+    "area": [
+     "France"
+    ],
+    "__CLASS__": "Adzuna::API::Response::Location"
+   },
+   "contract_time": "full_time",
+   "__CLASS__": "Adzuna::API::Response::Job",
+   "title": "Senior Technical Trainer — Machine Learning",
+   "company": {
+    "display_name": "Jobgether",
+    "__CLASS__": "Adzuna::API::Response::Company"
+   },
+   "redirect_url": "https://www.adzuna.fr/details/5939467861?utm_medium=api&utm_source=<ADZUNA_APP_ID>",
+   "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTkzOTQ2Nzg2MSIsInMiOiIxSDJLSjZ2UThSR3JWOXFQb2pEczF3In0.xmsy3Ml_CPCLugH5jaDFndROJon7J4oUzaFHEuXJYa4"
+  },
+  {
+   "id": "5939287856",
+   "longitude": 4.89025,
+   "created": "2026-10-23T14:56:20Z",
+   "category": {
+    "label": "Unknown",
+    "tag": "unknown",
+    "__CLASS__": "Adzuna::API::Response::Category"
+   },
+   "description": "Lieu : Valence, France Construisons ensemble un avenir de confiance Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d'activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l'environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d'euros par an en Recherche & Développement, notamment dans des domaines clés de l'innovation tels …",
+   "contract_type": "contract",
+   "salary_is_predicted": "0",
+   "company": {
+    "display_name": "THALES",
+    "__CLASS__": "Adzuna::API::Response::Company"
+   },
+   "redirect_url": "https://www.adzuna.fr/details/5939287856?utm_medium=api&utm_source=<ADZUNA_APP_ID>",
+   "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTkzOTI4Nzg1NiIsInMiOiIxSDJLSjZ2UThSR3JWOXFQb2pEczF3In0.kX35cLyn4s5s-JK_a41laA-JXe4frd7fick-INjPIEo",
+   "location": {
+    "__CLASS__": "Adzuna::API::Response::Location",
+    "area": [
+     "France",
+     "Auvergne-Rhône-Alpes",
+     "Drôme",
+     "Valence"
+    ],
+    "display_name": "Valence, Drôme"
+   },
+   "latitude": 44.93046,
+   "title": "STAGE - Ingénieur - Implémentation d’un filtre de navigation et intégration de machine learning - F/H",
+   "__CLASS__": "Adzuna::API::Response::Job"
+  },
+  {
+   "latitude": 45.76043,
+   "title": "Stage – Ingénieur R&D Deep Learning et Machine Learning F/H",
+   "__CLASS__": "Adzuna::API::Response::Job",
+   "location": {
+    "__CLASS__": "Adzuna::API::Response::Location",
+    "area": [
+     "France",
+     "Auvergne-Rhône-Alpes",
+     "Rhône",
+     "Lyon",
+     "1er-Arrondissement"
+    ],
+    "display_name": "1er-Arrondissement, Lyon"
+   },
+   "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiMUgyS0o2dlE4UkdyVjlxUG9qRHMxdyIsImkiOiI1OTM4ODQ5MzE4In0.PKpOFhy1mA0c9WVhjGBPzHS9QDO8FuRGoYdaJw5TF4g",
+   "company": {
+    "display_name": "Direct Emploi",
+    "__CLASS__": "Adzuna::API::Response::Company"
+   },
+   "redirect_url": "https://www.adzuna.fr/details/5938849318?utm_medium=api&utm_source=<ADZUNA_APP_ID>",
+   "salary_is_predicted": "0",
+   "category": {
+    "tag": "unknown",
+    "__CLASS__": "Adzuna::API::Response::Category",
+    "label": "Unknown"
+   },
+   "created": "2026-10-23T07:03:36Z",
+   "description": "Description du poste : Rattaché(e) à la Section Calculs Mécaniques de Tuyauteries de la Business Unit Base Installée, l'objectif de ce stage est de poursuivre le développement d'un utilitaire basé sur des outils Machine Learning et de Deep Learning visant à comparer des composants de tuyauteries entre eux. La finalité de l'utilitaire est de permettre l'identification des composants les plus exposés au risque de rupture brutale. Vos missions seront : - Prise en main de l'utilitaire existant ; - …",
+   "id": "5938849318",
+   "longitude": 4.84891
+  },
+  {
+   "redirect_url": "https://www.adzuna.fr/details/5938645761?utm_medium=api&utm_source=<ADZUNA_APP_ID>",
+   "company": {
+    "__CLASS__": "Adzuna::API::Response::Company",
+    "display_name": "Collective.work"
+   },
+   "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTkzODY0NTc2MSIsInMiOiIxSDJLSjZ2UThSR3JWOXFQb2pEczF3In0.IBO3-MYO0x7ii-OqnpZfBucmxMV6QJ34eZID5XrB2Xs",
+   "location": {
+    "area": [
+     "France",
+     "Ile-de-France",
+     "Paris",
+     "8ème Arrondissement"
+    ],
+    "__CLASS__": "Adzuna::API::Response::Location",
+    "display_name": "8ème Arrondissement, Paris"
+   },
+   "contract_time": "full_time",
+   "latitude": 48.8814,
+   "__CLASS__": "Adzuna::API::Response::Job",
+   "title": "Lead Data Scientist Transverse – IA / Machine Learning / GenAI - Freelance",
+   "id": "5938645761",
+   "longitude": 2.3365,
+   "created": "2026-10-23T04:26:37Z",
+   "category": {
+    "label": "Unknown",
+    "tag": "unknown",
+    "__CLASS__": "Adzuna::API::Response::Category"
+   },
+   "description": "Description du poste Descriptif détaillé du besoin Dans le cadre de la transformation Data & IA d'un grand groupe international, nous recherchons un Lead Data Scientist Transverse pour accompagner le développement, l'industrialisation et le passage à l'échelle de solutions Data Science et Intelligence Artificielle à forte valeur ajoutée. Intégré(e) à une Data Factory, vous interviendrez en tant que référent technique Data Science & IA sur un périmètre transverse couvrant plusieurs directions mé…",
+   "salary_is_predicted": "0",
+   "contract_type": "contract"
+  },
+  {
+   "id": "5938133136",
+   "longitude": 2.34107,
+   "salary_is_predicted": "0",
+   "created": "2026-10-22T17:49:45Z",
+   "category": {
+    "label": "Emplois Informatique",
+    "__CLASS__": "Adzuna::API::Response::Category",
+    "tag": "it-jobs"
+   },
+   "description": "Vos missions : Industrialiser les modèles de Machine Learning et d’IA Générative : collaborer étroitement avec les Data Scientists pour transformer leurs modèles en produits prêts pour la production. Concevoir et opérer des plateformes MLOps sur Azure Databricks : MLflow (tracking, Model Registry dans Unity Catalog), Feature Engineering, Mosaic AI Model Serving, Lakeflow Jobs, Databricks Asset Bundles. Développer des solutions d’IA Générative sur Databricks : RAG avec Mosaic AI Vector Search, a…",
+   "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiMUgyS0o2dlE4UkdyVjlxUG9qRHMxdyIsImkiOiI1OTM4MTMzMTM2In0.D5s2oIxUiV0razFaWg8fEsDk4jiTOwmyciv26M8VJ0w",
+   "company": {
+    "display_name": "Datatorii",
+    "__CLASS__": "Adzuna::API::Response::Company"
+   },
+   "redirect_url": "https://www.adzuna.fr/details/5938133136?utm_medium=api&utm_source=<ADZUNA_APP_ID>",
+   "contract_time": "full_time",
+   "latitude": 48.86023,
+   "title": "Machine Learning Engineer Databricks / Microsoft",
+   "__CLASS__": "Adzuna::API::Response::Job",
+   "location": {
+    "display_name": "1er Arrondissement, Paris",
+    "__CLASS__": "Adzuna::API::Response::Location",
+    "area": [
+     "France",
+     "Ile-de-France",
+     "Paris",
+     "1er Arrondissement"
+    ]
+   }
+  },
+  {
+   "description": "Vos missions : Industrialiser les modèles de Machine Learning et d’IA Générative : collaborer étroitement avec les Data Scientists pour transformer leurs modèles en produits prêts pour la production. Concevoir et opérer des plateformes MLOps sur Azure Databricks : MLflow (tracking, Model Registry dans Unity Catalog), Feature Engineering, Mosaic AI Model Serving, Lakeflow Jobs, Databricks Asset Bundles. Développer des solutions d’IA Générative sur Databricks : RAG avec Mosaic AI Vector Search, a…",
+   "created": "2026-10-22T13:23:50Z",
+   "contract_type": "permanent",
+   "salary_max": 50000,
+   "id": "5937825816",
+   "location": {
+    "area": [
+     "France",
+     "Ile-de-France",
+     "Paris"
+    ],
+    "__CLASS__": "Adzuna::API::Response::Location",
+    "display_name": "Paris, Ile-de-France"
+   },
+   "title": "Machine Learning Engineer Databricks / Microsoft F/H",
+   "redirect_url": "https://www.adzuna.fr/details/5937825816?utm_medium=api&utm_source=<ADZUNA_APP_ID>",
+   "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiMUgyS0o2dlE4UkdyVjlxUG9qRHMxdyIsImkiOiI1OTM3ODI1ODE2In0.u_2yYUSkrBbXmVeyhTqynHK6T_MWZUiKAwQ93mx-4OE",
+   "category": {
+    "label": "Emplois Informatique",
+    "__CLASS__": "Adzuna::API::Response::Category",
+    "tag": "it-jobs"
+   },
+   "salary_is_predicted": "0",
+   "longitude": 2.344631,
+   "__CLASS__": "Adzuna::API::Response::Job",
+   "latitude": 48.863839,
+   "company": {
+    "__CLASS__": "Adzuna::API::Response::Company",
+    "display_name": "DATATORII"
+   },
+   "salary_min": 40000
+  },
+  {
+   "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiMUgyS0o2dlE4UkdyVjlxUG9qRHMxdyIsImkiOiI1OTM3ODE0MjQxIn0.CiK1fxGWQVYSfLKZ5CytSE0TnUsKBqICGhUBHlc2K6I",
+   "redirect_url": "https://www.adzuna.fr/details/5937814241?utm_medium=api&utm_source=<ADZUNA_APP_ID>",
+   "company": {
+    "display_name": "KLANIK",
+    "__CLASS__": "Adzuna::API::Response::Company"
+   },
+   "contract_time": "full_time",
+   "latitude": 50.447027,
+   "title": "Machine learning Engineer (H/F)",
+   "__CLASS__": "Adzuna::API::Response::Job",
+   "location": {
+    "display_name": "Nord, Hauts-De-France",
+    "__CLASS__": "Adzuna::API::Response::Location",
+    "area": [
+     "France",
+     "Hauts-De-France",
+     "Nord"
+    ]
+   },
+   "id": "5937814241",
+   "longitude": 3.171878,
+   "salary_is_predicted": "0",
+   "contract_type": "permanent",
+   "category": {
+    "label": "Emplois Informatique",
+    "__CLASS__": "Adzuna::API::Response::Category",
+    "tag": "it-jobs"
+   },
+   "created": "2026-10-22T13:19:53Z",
+   "description": "En tant que consultant(e) Klanik, vous interviendrez chez l'un de nos partenaires grands-comptes sur la mission suivante: - Déploiement et gestion d'applications ML en production, avec une forte dimension MLOps. - Mise en production d'applications de Machine Learning - Collecte et orchestration de pipelines de données - Création d'outils CI/CD - Monitoring applicatif et intégration des modèles dans des produits digitaux. Compétences techniques attendues : Python, FastAPI, Streamlit, Docker, Goo…"
+  },
+  {
+   "salary_is_predicted": "0",
+   "category": {
+    "label": "Emplois Autres/Général",
+    "tag": "other-general-jobs",
+    "__CLASS__": "Adzuna::API::Response::Category"
+   },
+   "longitude": 2.344631,
+   "contract_time": "full_time",
+   "latitude": 48.863839,
+   "__CLASS__": "Adzuna::API::Response::Job",
+   "salary_min": 90000,
+   "company": {
+    "display_name": "Mistral",
+    "__CLASS__": "Adzuna::API::Response::Company"
+   },
+   "created": "2026-10-22T06:05:16Z",
+   "description": "About Mistral Mistral provides full-stack AI solutions: from frontier models to developer tools, applications, and compute. We partner with enterprises tackling the hardest problems—across high-stakes industries like finance, manufacturing, defense, healthcare, and the public sector—co-creating customized AI systems that they can run on their terms. We are a dynamic, collaborative team passionate about AI and its potential to transform society. Our diverse workforce thrives in competitive envir…",
+   "id": "5937391122",
+   "salary_max": 130000,
+   "title": "Research Engineer, Machine Learning",
+   "location": {
+    "display_name": "Paris, Ile-de-France",
+    "__CLASS__": "Adzuna::API::Response::Location",
+    "area": [
+     "France",
+     "Ile-de-France",
+     "Paris"
+    ]
+   },
+   "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTkzNzM5MTEyMiIsInMiOiIxSDJLSjZ2UThSR3JWOXFQb2pEczF3In0.ckDKf8Td4R1AetAxukh5Y84elYRhmWXE9iAIC8am1_c",
+   "redirect_url": "https://www.adzuna.fr/details/5937391122?utm_medium=api&utm_source=<ADZUNA_APP_ID>"
+  },
+  {
+   "title": "Staff Product Manager [Machine Learning expertise]",
+   "location": {
+    "area": [
+     "France",
+     "Ile-de-France",
+     "Paris"
+    ],
+    "__CLASS__": "Adzuna::API::Response::Location",
+    "display_name": "Paris, Ile-de-France"
+   },
+   "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTkzNzM4OTAxOSIsInMiOiIxSDJLSjZ2UThSR3JWOXFQb2pEczF3In0.-Nyp_cL7JIld-0l6mjyqG4whogA_7YxJAbzslgBUmg0",
+   "redirect_url": "https://www.adzuna.fr/details/5937389019?utm_medium=api&utm_source=<ADZUNA_APP_ID>",
+   "created": "2026-10-22T06:04:24Z",
+   "description": "Our mission and customers: We are creating the freedom for SMEs to succeed by delivering Europe's leading finance workspace with banking at its core, augmented by financial tools. We are proud to be rated 4.8 on Trustpilot,based on 55,000 reviews. Our cultureputs customer satisfaction at the core of what we do, as proven by our Net Promoter Score of 75(more about our culture here). Our journey:Founded in 2017 byAlexandre and Steve, the company has grown to 1,600 Qontoers serving over 600,000 cu…",
+   "salary_max": 130000,
+   "id": "5937389019",
+   "latitude": 48.863839,
+   "contract_time": "full_time",
+   "__CLASS__": "Adzuna::API::Response::Job",
+   "salary_min": 90000,
+   "company": {
+    "display_name": "Qonto",
+    "__CLASS__": "Adzuna::API::Response::Company"
+   },
+   "salary_is_predicted": "0",
+   "category": {
+    "tag": "other-general-jobs",
+    "__CLASS__": "Adzuna::API::Response::Category",
+    "label": "Emplois Autres/Général"
+   },
+   "longitude": 2.344631
+  },
+  {
+   "longitude": 2.344631,
+   "salary_is_predicted": "0",
+   "category": {
+    "label": "Emplois Autres/Général",
+    "tag": "other-general-jobs",
+    "__CLASS__": "Adzuna::API::Response::Category"
+   },
+   "salary_min": 85000,
+   "company": {
+    "display_name": "Doctrine",
+    "__CLASS__": "Adzuna::API::Response::Company"
+   },
+   "__CLASS__": "Adzuna::API::Response::Job",
+   "contract_time": "full_time",
+   "latitude": 48.863839,
+   "salary_max": 125000,
+   "id": "5937388207",
+   "description": "Notre mission Chez Doctrine, nous construisons le leader de l’IA juridique en Europe. Notre conviction ? Le droit ne doit pas être ralenti par des tâches répétitives. Il doit être augmenté par une IA spécialisée, conçue pour comprendre, analyser et produire du raisonnement juridique avec un haut niveau d’exigence. Notre ambition ? Permettre aux professionnels du droit de gagner en fiabilité, en efficacité et en sérénité, grâce à une plateforme unique, exhaustive et sécurisée. Aujourd’hui, 27 00…",
+   "created": "2026-10-22T06:04:01Z",
+   "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiMUgyS0o2dlE4UkdyVjlxUG9qRHMxdyIsImkiOiI1OTM3Mzg4MjA3In0.trsBD1fCwKfUImQuO6CqWJmxZ-ACsloeyx0ppXz-yzg",
+   "redirect_url": "https://www.adzuna.fr/details/5937388207?utm_medium=api&utm_source=<ADZUNA_APP_ID>",
+   "title": "Confirmed Machine Learning Engineer (Productivity)",
+   "location": {
+    "__CLASS__": "Adzuna::API::Response::Location",
+    "area": [
+     "France",
+     "Ile-de-France",
+     "Paris"
+    ],
+    "display_name": "Paris, Ile-de-France"
+   }
+  },
+  {
+   "__CLASS__": "Adzuna::API::Response::Job",
+   "contract_time": "full_time",
+   "latitude": 48.863839,
+   "salary_min": 90000,
+   "company": {
+    "display_name": "Pennylane",
+    "__CLASS__": "Adzuna::API::Response::Company"
+   },
+   "salary_is_predicted": "0",
+   "category": {
+    "__CLASS__": "Adzuna::API::Response::Category",
+    "tag": "other-general-jobs",
+    "label": "Emplois Autres/Général"
+   },
+   "longitude": 2.344631,
+   "title": "Senior Machine Learning Engineer - Embedded AI",
+   "location": {
+    "display_name": "Paris, Ile-de-France",
+    "area": [
+     "France",
+     "Ile-de-France",
+     "Paris"
+    ],
+    "__CLASS__": "Adzuna::API::Response::Location"
+   },
+   "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiMUgyS0o2dlE4UkdyVjlxUG9qRHMxdyIsImkiOiI1OTM3Mzg3ODE4In0.jm3OfJ2LZZV_pR98Yhdq3mo3UPnTXy2alPVVu9hoPOg",
+   "redirect_url": "https://www.adzuna.fr/details/5937387818?utm_medium=api&utm_source=<ADZUNA_APP_ID>",
+   "description": "Are you looking to have an impact on the daily life of millions of entrepreneurs in France (and tomorrow in Europe)? Are you looking for a work environment that values trust, proactivity, and autonomy? Are our Engineering principles aligned with your vision? Then Pennylane is the right place for you! Our vision We aim to become the most beloved financial Operating System of French SMEs and Accounting Firms (and soon, European ones). We help entrepreneurs rid themselves of time-consuming tasks r…",
+   "created": "2026-10-22T06:03:49Z",
+   "salary_max": 130000,
+   "id": "5937387818"
+  },
+  {
+   "location": {
+    "area": [
+     "France",
+     "Ile-de-France",
+     "Val-de-Marne",
+     "Nogent-sur-Marne",
+     "Saint-Mandé"
+    ],
+    "__CLASS__": "Adzuna::API::Response::Location",
+    "display_name": "Saint-Mandé, Nogent-sur-Marne"
+   },
+   "title": "Senior Machine Learning Engineer (W/M/X)",
+   "redirect_url": "https://www.adzuna.fr/details/5937387764?utm_medium=api&utm_source=<ADZUNA_APP_ID>",
+   "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiMUgyS0o2dlE4UkdyVjlxUG9qRHMxdyIsImkiOiI1OTM3Mzg3NzY0In0._9dgi0JBq5tZiItppDfiNhejU-k58uUpbtXH83ZOplk",
+   "description": "Full-time Contract: Permanent Work flexibility: Office-based Company Description Ubisoft is a global leader in gaming with teams across the world creating original and memorable gaming experiences, from Assassin’s Creed, Rainbow Six, to Just Dance and more. We believe diverse perspectives help both players and teams thrive. If you’re passionate about innovation and pushing entertainment boundaries, join our journey and help us create the unknown! Job Description Ubisoft is natively data-driven:…",
+   "created": "2026-10-22T06:03:48Z",
+   "salary_max": 130000,
+   "id": "5937387764",
+   "__CLASS__": "Adzuna::API::Response::Job",
+   "latitude": 48.83973,
+   "contract_time": "full_time",
+   "company": {
+    "__CLASS__": "Adzuna::API::Response::Company",
+    "display_name": "Hybride"
+   },
+   "salary_min": 90000,
+   "category": {
+    "label": "Emplois Autres/Général",
+    "tag": "other-general-jobs",
+    "__CLASS__": "Adzuna::API::Response::Category"
+   },
+   "salary_is_predicted": "0",
+   "longitude": 2.41755
+  },
+  {
+   "title": "Senior Machine Learning Engineer - Identity & Audience",
+   "location": {
+    "__CLASS__": "Adzuna::API::Response::Location",
+    "area": [
+     "France",
+     "Ile-de-France",
+     "Paris"
+    ],
+    "display_name": "Paris, Ile-de-France"
+   },
+   "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTkzNzM4NzYzMyIsInMiOiIxSDJLSjZ2UThSR3JWOXFQb2pEczF3In0.BwvP8oUjUFgkiPJc52WIBk8UzzZFkm8-C0yocxfIHGk",
+   "redirect_url": "https://www.adzuna.fr/details/5937387633?utm_medium=api&utm_source=<ADZUNA_APP_ID>",
+   "description": "Senior Machine Learning Engineer, Identity & Audience About Vibe At Vibe.co, we're reimagining how brands reach audiences in the age of streaming. We believe streaming TV is no longer just a brand awareness play, it's the next great performance marketing channel. We're building the infrastructure to unlock this $100B opportunity. Vibe.co provides an Audience First Streaming TV Advertising solution for marketers to unlock TV as a growth channel. Our all-in-one solution combines hyper-targeted au…",
+   "created": "2026-10-22T06:03:45Z",
+   "id": "5937387633",
+   "salary_max": 190000,
+   "__CLASS__": "Adzuna::API::Response::Job",
+   "contract_time": "full_time",
+   "latitude": 48.863839,
+   "salary_min": 120000,
+   "company": {
+    "__CLASS__": "Adzuna::API::Response::Company",
+    "display_name": "Vibe, Inc."
+   },
+   "salary_is_predicted": "0",
+   "category": {
+    "label": "Emplois Autres/Général",
+    "__CLASS__": "Adzuna::API::Response::Category",
+    "tag": "other-general-jobs"
+   },
+   "longitude": 2.344631
+  },
+  {
+   "salary_min": 90000,
+   "company": {
+    "display_name": "Talantir",
+    "__CLASS__": "Adzuna::API::Response::Company"
+   },
+   "__CLASS__": "Adzuna::API::Response::Job",
+   "latitude": 48.863839,
+   "contract_time": "full_time",
+   "longitude": 2.344631,
+   "salary_is_predicted": "0",
+   "category": {
+    "label": "Emplois Autres/Général",
+    "__CLASS__": "Adzuna::API::Response::Category",
+    "tag": "other-general-jobs"
+   },
+   "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTkzNzM4Njc1NyIsInMiOiIxSDJLSjZ2UThSR3JWOXFQb2pEczF3In0.m4ICVYmqTrxQJrLzIQuhts0jk52K6byjTZZmQTfwojA",
+   "redirect_url": "https://www.adzuna.fr/details/5937386757?utm_medium=api&utm_source=<ADZUNA_APP_ID>",
+   "title": "Senior Machine Learning Engineer - Applied AI",
+   "location": {
+    "display_name": "Paris, Ile-de-France",
+    "area": [
+     "France",
+     "Ile-de-France",
+     "Paris"
+    ],
+    "__CLASS__": "Adzuna::API::Response::Location"
+   },
+   "salary_max": 140000,
+   "id": "5937386757",
+   "description": "Job Description We are looking for a Senior Machine Learning Engineer to join our team. This role can be based in Barcelona or Paris on a hybrid schedule, or fully remote from anywhere else within the European Union. Who We Are Adikteev fuels the app ecosystem by inspiring users to engage with the apps they know and love. Specializing in user retention, we grow in-app revenue and build user loyalty with custom retargeting and CTV campaigns. Operating globally from Barcelona, Paris, San Francisc…",
+   "created": "2026-10-22T06:03:20Z"
+  },
+  {
+   "title": "Experienced/Senior Machine Learning Engineer - Squad Distribute",
+   "location": {
+    "display_name": "Paris, Ile-de-France",
+    "__CLASS__": "Adzuna::API::Response::Location",
+    "area": [
+     "France",
+     "Ile-de-France",
+     "Paris"
+    ]
+   },
+   "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTkzNzM4NjE5MiIsInMiOiIxSDJLSjZ2UThSR3JWOXFQb2pEczF3In0.FaV32ZXSlzOx_XfhszKKp_kQwwWxzgVbsLRv5EWcPDM",
+   "redirect_url": "https://www.adzuna.fr/details/5937386192?utm_medium=api&utm_source=<ADZUNA_APP_ID>",
+   "created": "2026-10-22T06:03:01Z",
+   "description": "Our Mission At Doctrine, we're building Europe's leading legal AI platform. Our belief? Law shouldn't be slowed down by repetitive tasks. It should be augmented by a specialised AI, designed to understand, analyse and produce legal reasoning at the highest standard. Our ambition? To help legal professionals work with greater reliability, efficiency and peace of mind, through a single, comprehensive and secure platform. Today, 27,000 legal professionals across five countries (France, Italy, Germ…",
+   "salary_max": 130000,
+   "id": "5937386192",
+   "contract_time": "full_time",
+   "latitude": 48.863839,
+   "__CLASS__": "Adzuna::API::Response::Job",
+   "salary_min": 90000,
+   "company": {
+    "display_name": "Starther",
+    "__CLASS__": "Adzuna::API::Response::Company"
+   },
+   "salary_is_predicted": "0",
+   "category": {
+    "label": "Emplois Autres/Général",
+    "tag": "other-general-jobs",
+    "__CLASS__": "Adzuna::API::Response::Category"
+   },
+   "longitude": 2.344631
+  },
+  {
+   "salary_min": 90000,
+   "company": {
+    "display_name": "Capital Fund Management ",
+    "__CLASS__": "Adzuna::API::Response::Company"
+   },
+   "contract_time": "full_time",
+   "latitude": 48.863839,
+   "__CLASS__": "Adzuna::API::Response::Job",
+   "longitude": 2.344631,
+   "salary_is_predicted": "0",
+   "category": {
+    "label": "Emplois Autres/Général",
+    "tag": "other-general-jobs",
+    "__CLASS__": "Adzuna::API::Response::Category"
+   },
+   "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiMUgyS0o2dlE4UkdyVjlxUG9qRHMxdyIsImkiOiI1OTM3Mzg2MDUxIn0.LM8opzH8jb01G9W3fzuCTIB1UVZajo4pTIMY_Pd6p7s",
+   "redirect_url": "https://www.adzuna.fr/details/5937386051?utm_medium=api&utm_source=<ADZUNA_APP_ID>",
+   "title": "Machine Learning Research and Engineering",
+   "location": {
+    "display_name": "Paris, Ile-de-France",
+    "area": [
+     "France",
+     "Ile-de-France",
+     "Paris"
+    ],
+    "__CLASS__": "Adzuna::API::Response::Location"
+   },
+   "salary_max": 140000,
+   "id": "5937386051",
+   "created": "2026-10-22T06:02:55Z",
+   "description": "Select how often (in days) to receive an alert: Machine Learning Research and Engineering Paris, 75, FR ABOUT CFM Founded in 1991, we are a global quantitative and systematic asset management firm applying a scientific approach to finance to develop alternative investment strategies that create value for our clients. We value innovation, dedication, collaboration, and the ability to make an impact. Together, we create a stimulating environment for talented and passionate experts in research, te…"
+  },
+  {
+   "salary_max": 170000,
+   "id": "5937385943",
+   "created": "2026-10-22T06:02:51Z",
+   "description": "At Hugging Face, we're on a journey to democratize good AI. We are building the fastest growing platform for AI builders with over 11 million users who collectively shared over 3M models, 1M datasets & 1.47M apps. Our open-source libraries have more than 600k stars on Github. About the Role We are building the open voice-agent stack for Hugging Face, and we are looking for a senior engineer to own a large part of it.Two things sit at the centre of this role. The first is speech-to-speech, our o…",
+   "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTkzNzM4NTk0MyIsInMiOiIxSDJLSjZ2UThSR3JWOXFQb2pEczF3In0.8VVBxTD3dO4_6nSpPUUqzKDSEGERXptiVyJ0CeIWw5g",
+   "redirect_url": "https://www.adzuna.fr/details/5937385943?utm_medium=api&utm_source=<ADZUNA_APP_ID>",
+   "title": "Senior Machine Learning Engineer, Voice Agents - EMEA Remote",
+   "location": {
+    "display_name": "Paris, Ile-de-France",
+    "area": [
+     "France",
+     "Ile-de-France",
+     "Paris"
+    ],
+    "__CLASS__": "Adzuna::API::Response::Location"
+   },
+   "longitude": 2.344631,
+   "salary_is_predicted": "0",
+   "category": {
+    "label": "Emplois Autres/Général",
+    "tag": "other-general-jobs",
+    "__CLASS__": "Adzuna::API::Response::Category"
+   },
+   "salary_min": 110000,
+   "company": {
+    "__CLASS__": "Adzuna::API::Response::Company",
+    "display_name": "Hugging Face"
+   },
+   "latitude": 48.863839,
+   "contract_time": "full_time",
+   "__CLASS__": "Adzuna::API::Response::Job"
+  },
+  {
+   "created": "2026-10-22T06:02:14Z",
+   "description": "Sélectionnez la fréquence (en jours) de réception d’une alerte: Type de poste: Permanent / Temporaire Le transport est au cœur de notre société. Pourquoi ne pas mettre votre compétence au service de l’élaboration des solutions de transport et infrastructure durables de demain ? Si vous souhaitez agir à l'échelle mondiale en travaillant sur les technologies les plus avancées et avec les meilleures équipes, alors nous pourrions parfaitement nous entendre. Votre future équipe Vous rejoindrez l’équ…",
+   "salary_max": 150000,
+   "id": "5937384893",
+   "location": {
+    "area": [
+     "France",
+     "Auvergne-Rhône-Alpes",
+     "Rhône",
+     "Lyon"
+    ],
+    "__CLASS__": "Adzuna::API::Response::Location",
+    "display_name": "Lyon, Rhône"
+   },
+   "title": "Machine Learning Engineer / Tech Lead F/H",
+   "redirect_url": "https://www.adzuna.fr/details/5937384893?utm_medium=api&utm_source=<ADZUNA_APP_ID>",
+   "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiMUgyS0o2dlE4UkdyVjlxUG9qRHMxdyIsImkiOiI1OTM3Mzg0ODkzIn0.cirn83lcatuucrDflmUPmH8kxCWAGVDKe8F2bdSNtRk",
+   "category": {
+    "tag": "manufacturing-jobs",
+    "__CLASS__": "Adzuna::API::Response::Category",
+    "label": "Emplois Fabrication"
+   },
+   "salary_is_predicted": "0",
+   "longitude": 5.08666,
+   "contract_time": "full_time",
+   "latitude": 45.72035,
+   "__CLASS__": "Adzuna::API::Response::Job",
+   "company": {
+    "__CLASS__": "Adzuna::API::Response::Company",
+    "display_name": "AB Volvo"
+   },
+   "salary_min": 90000
+  },
+  {
+   "created": "2026-10-22T06:01:51Z",
+   "description": "Ubisoft is natively data-driven: from the core of our games to our marketing actions, we’re leveraging data and algorithms. Part of the Ubisoft Data Office, the role of the Consumer Data Domain is to leverage data to improve the consumer experience engaging them all along their journeys while making sure they feel safe and cared for. Your role: Reporting to the Director of the Consumer Domain, your role is to build scalable machine learning systems to preserve the trust and safety of our users.…",
+   "salary_max": 150000,
+   "id": "5937384186",
+   "location": {
+    "display_name": "Saint-Mandé, Nogent-sur-Marne",
+    "area": [
+     "France",
+     "Ile-de-France",
+     "Val-de-Marne",
+     "Nogent-sur-Marne",
+     "Saint-Mandé"
+    ],
+    "__CLASS__": "Adzuna::API::Response::Location"
+   },
+   "title": "Lead Machine Learning Engineer (W/M/NB)",
+   "redirect_url": "https://www.adzuna.fr/details/5937384186?utm_medium=api&utm_source=<ADZUNA_APP_ID>",
+   "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTkzNzM4NDE4NiIsInMiOiIxSDJLSjZ2UThSR3JWOXFQb2pEczF3In0.DjPM43vv_fbLUUTRoubhWDNCZrVPYROCYsckAIk2YJg",
+   "category": {
+    "label": "Emplois Autres/Général",
+    "tag": "other-general-jobs",
+    "__CLASS__": "Adzuna::API::Response::Category"
+   },
+   "salary_is_predicted": "0",
+   "longitude": 2.41755,
+   "contract_time": "full_time",
+   "latitude": 48.83973,
+   "__CLASS__": "Adzuna::API::Response::Job",
+   "company": {
+    "__CLASS__": "Adzuna::API::Response::Company",
+    "display_name": "Ubisoft"
+   },
+   "salary_min": 95000
+  },
+  {
+   "latitude": 48.863839,
+   "contract_time": "full_time",
+   "__CLASS__": "Adzuna::API::Response::Job",
+   "salary_min": 90000,
+   "company": {
+    "display_name": "Mistral AI",
+    "__CLASS__": "Adzuna::API::Response::Company"
+   },
+   "salary_is_predicted": "0",
+   "category": {
+    "tag": "other-general-jobs",
+    "__CLASS__": "Adzuna::API::Response::Category",
+    "label": "Emplois Autres/Général"
+   },
+   "longitude": 2.344631,
+   "title": "Research Engineer, Machine Learning",
+   "location": {
+    "area": [
+     "France",
+     "Ile-de-France",
+     "Paris"
+    ],
+    "__CLASS__": "Adzuna::API::Response::Location",
+    "display_name": "Paris, Ile-de-France"
+   },
+   "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiMUgyS0o2dlE4UkdyVjlxUG9qRHMxdyIsImkiOiI1OTM3Mzg0MTUyIn0.lxhyaZIRpfgV_j_uz7iVGEYBTCGJvmc0K0vib-DB08o",
+   "redirect_url": "https://www.adzuna.fr/details/5937384152?utm_medium=api&utm_source=<ADZUNA_APP_ID>",
+   "created": "2026-10-22T06:01:50Z",
+   "description": "About MistralMistral provides full-stack AI solutions: from frontier models to developer tools, applications, and compute. We partner with enterprises tackling the hardest problems—across high-stakes industries like finance, manufacturing, defense, healthcare, and the public sector—co-creating customized AI systems that they can run on their terms. We are a dynamic, collaborative team passionate about AI and its potential to transform society. Our diverse workforce thrives in competitive enviro…",
+   "id": "5937384152",
+   "salary_max": 130000
+  }
+ ],
+ "__CLASS__": "Adzuna::API::Response::JobSearchResults"
+}
