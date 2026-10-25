@@ -12,6 +12,7 @@ Variables : GOOGLE_TOKEN_JSON, SUIVI_SHEET_ID, TELEGRAM_BOT_TOKEN, LBA_API_KEY.
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import os
 import sys
@@ -49,7 +50,9 @@ def verif_sheets() -> bool:
         notice("Sheets : secrets absents", "GOOGLE_TOKEN_JSON ou SUIVI_SHEET_ID manquant.")
         return False
     s, portees = _session_google()
-    lignes = [f"Portées du jeton : {', '.join(portees) or 'inconnues'}"]
+    empreinte = hashlib.sha256(sheet_id.encode()).hexdigest()[:12]
+    lignes = [f"Empreinte de SUIVI_SHEET_ID : {empreinte} (comparaison sans révéler l'identifiant)",
+              f"Portées du jeton : {', '.join(portees) or 'inconnues'}"]
 
     meta = s.get(f"{SHEETS}/{sheet_id}", params={"fields": "properties(title,locale,timeZone),"
                                                  "sheets.properties(title,gridProperties)"})

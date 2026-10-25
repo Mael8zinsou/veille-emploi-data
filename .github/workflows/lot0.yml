@@ -52,6 +52,7 @@ jobs:
           FT_CLIENT_ID: ${{ secrets.FT_CLIENT_ID }}
           FT_CLIENT_SECRET: ${{ secrets.FT_CLIENT_SECRET }}
           LBA_API_KEY: ${{ secrets.LBA_API_KEY }}
+          SONDES: sonde_adzuna_titre,sonde_csp_rss,sonde_engagement_sitemap
         run: python scripts/lot0/sonde.py
 
       - name: Publie les réponses brutes sur la branche sondes

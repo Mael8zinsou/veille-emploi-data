@@ -262,16 +262,91 @@ def sonde_engagement_jeunes() -> list[str]:
     return lignes
 
 
+# --------------------------------------------------------------------------- Second passage (25/10)
+
+def sonde_adzuna_titre() -> list[str]:
+    """Deux requêtes : recherche limitée au titre, pour un flux plus net que what_or."""
+    d = SORTIE / "adzuna_titre"
+    base = "https://api.adzuna.com/v1/api/jobs/fr/search/1"
+    auth = {"app_id": os.environ["ADZUNA_APP_ID"], "app_key": os.environ["ADZUNA_APP_KEY"],
+            "results_per_page": 50, "max_days_old": 3, "content-type": "application/json", "sort_by": "date"}
+    lignes = []
+    for nom, p in (("titre_data", {"title_only": "data"}), ("titre_machine_learning", {"title_only": "machine learning"})):
+        r = S.get(base, params={**auth, **p}, timeout=30)
+        n, total = 0, "?"
+        if r.status_code == 200:
+            data = r.json()
+            ecrire(d, f"{nom}.json", data)
+            n, total = len(data.get("results", [])), data.get("count", "?")
+            titres = [o.get("title", "")[:45] for o in data.get("results", [])[:8]]
+            lignes.append(f"  exemples {nom} : " + "; ".join(titres))
+        lignes.append(f"{nom} : HTTP {r.status_code}, {n} reçues, {total} correspondances sur 3 jours")
+        pause()
+    return lignes
+
+
+def sonde_csp_rss() -> list[str]:
+    """Choisir le service public renvoie vers des flux RSS Talentsoft publics, comme Passerelles."""
+    d = SORTIE / "choisir_service_public_rss"
+    base = "https://place-ep-recrute.talent-soft.com"
+    lignes = []
+    r = S.get(f"{base}/offre-de-emploi/tous-les-flux-rss.aspx", timeout=30)
+    ecrire(d, "page_flux_rss.html", r.text)
+    lignes.append(f"Page des flux : HTTP {r.status_code}, {len(r.text)} caractères")
+    familles = re.findall(r"Rss_JobFamily=(\d+)[^>]*>\s*([^<]{3,90})<", r.text)
+    num = [(i, t.strip()) for i, t in familles if re.search(r"num|informat|syst", t, re.IGNORECASE)]
+    lignes.append("Familles repérées : " + "; ".join(f"{t} ({i})" for i, t in num[:8]))
+    flux = [("toutes", "")] + [(f"famille_{i}", f"&Rss_JobFamily={i}") for i, _ in num[:2]]
+    for nom, suffixe in flux:
+        r = S.get(f"{base}/handlers/offerRss.ashx?LCID=1036{suffixe}", timeout=30)
+        ecrire(d, f"rss_{nom}.xml", r.text)
+        n, titres = _resume_rss(r.text)
+        lignes.append(f"RSS {nom} : HTTP {r.status_code}, {n} offres. " + "; ".join(titres[:5]))
+        pause(1.0)
+    return lignes
+
+
+def sonde_engagement_sitemap() -> list[str]:
+    """engagement-jeunes.com : robots.txt autorise tout et publie un plan du site des offres."""
+    d = SORTIE / "engagement_jeunes_sitemap"
+    lignes = []
+    r = S.get("https://www.engagement-jeunes.com/fr/sitemap-index-poste.xml", timeout=30)
+    ecrire(d, "sitemap_index_poste.xml", r.text)
+    enfants = re.findall(r"<loc>([^<]+)</loc>", r.text)
+    lignes.append(f"Index des offres : HTTP {r.status_code}, {len(enfants)} plans enfants")
+    if enfants:
+        r2 = S.get(enfants[-1], timeout=30)
+        ecrire(d, "sitemap_enfant.xml", r2.text[:400000])
+        urls = re.findall(r"<loc>([^<]+)</loc>", r2.text)
+        lignes.append(f"Plan enfant : HTTP {r2.status_code}, {len(urls)} adresses. Exemples : " + "; ".join(urls[:4]))
+        if urls:
+            pause(2.0)
+            r3 = S.get(urls[0], timeout=30)
+            ecrire(d, "offre_exemple.html", r3.text)
+            lignes.append(f"Offre exemple : HTTP {r3.status_code}, JSON-LD JobPosting : {'JobPosting' in r3.text}")
+    pause(2.0)
+    r = S.get("https://www.engagement-jeunes.com/", timeout=30)
+    ecrire(d, "accueil.html", r.text)
+    liens = sorted(set(re.findall(r'href="([^"]*(?:offre|emploi|recherche|cgu|conditions)[^"]*)"', r.text)))
+    lignes.append("Liens utiles sur l'accueil : " + "; ".join(liens[:12]))
+    return lignes
+
+
 SONDES = {
     "France Travail": sonde_france_travail, "APEC": sonde_apec, "Adzuna": sonde_adzuna,
     "HelloWork": sonde_hellowork, "La bonne alternance": sonde_lba, "Passerelles": sonde_passerelles,
     "Choisir le service public": sonde_csp, "engagement-jeunes": sonde_engagement_jeunes,
+    "Adzuna titre": sonde_adzuna_titre, "Choisir le service public RSS": sonde_csp_rss,
+    "engagement-jeunes plan du site": sonde_engagement_sitemap,
 }
 
 
 def main() -> int:
     SORTIE.mkdir(parents=True, exist_ok=True)
+    choix = [s.strip() for s in os.getenv("SONDES", "").split(",") if s.strip()]
     for nom, fn in SONDES.items():
+        if choix and fn.__name__ not in choix:
+            continue
         try:
             notice(f"Sonde {nom}", fn())
         except Exception:  # noqa: BLE001 (une sonde ne doit pas bloquer les autres)
