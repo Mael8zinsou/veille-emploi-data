@@ -1,38 +1,58 @@
-from pathlib import Path
+import shutil
 
-from src.config import load_config, load_slugs
+import pytest
+import yaml
+from pydantic import ValidationError
 
-
-REPO_ROOT = Path(__file__).resolve().parents[1]
-
-
-def test_load_config_lit_profil_yaml():
-    cfg = load_config(REPO_ROOT / "config" / "profil.yaml")
-    assert cfg.profil.poste_cible == "Data Engineer Junior"
-    assert "data engineer" in cfg.mots_cles_must_match
-    assert cfg.telegram.top_n_par_jour == 30
-    assert cfg.fraicheur_max_jours == 3
-    assert cfg.sources_actives.adzuna is True
+from src.config import DOSSIER_CONFIG, charger
 
 
-def test_load_slugs_ignore_commentaires_et_vides(tmp_path):
-    p = tmp_path / "slugs.txt"
-    p.write_text(
-        "# commentaire\n"
-        "\n"
-        "greenhouse:doctolib\n"
-        " lever:alan \n"
-        "ligne sans deux-points\n"
-        "ashby:foo\n",
-        encoding="utf-8",
-    )
-    slugs = load_slugs(p)
-    assert slugs == [
-        ("greenhouse", "doctolib"),
-        ("lever", "alan"),
-        ("ashby", "foo"),
-    ]
+def test_configuration_reelle_valide(config):
+    assert {f.nom for f in config.metiers.familles} >= {"data_engineering", "data_science", "ia_ml", "analyse"}
+    assert config.planning.quotas.adzuna_mensuel <= 250
 
 
-def test_load_slugs_fichier_absent_retourne_vide(tmp_path):
-    assert load_slugs(tmp_path / "absent.txt") == []
+def test_motifs_normalises_au_chargement(config):
+    de = next(f for f in config.metiers.familles if f.nom == "data_engineering")
+    assert "ingenieur donnees" in de.motifs
+    assert all(m == m.lower() and "é" not in m for f in config.metiers.familles for m in f.motifs)
+    assert "belgique" in config.filtres.lieux.etrangers
+
+
+def _copie(tmp_path, fichier, modifier):
+    d = tmp_path / "config"
+    shutil.copytree(DOSSIER_CONFIG, d)
+    donnees = yaml.safe_load((d / fichier).read_text(encoding="utf-8"))
+    modifier(donnees)
+    (d / fichier).write_text(yaml.safe_dump(donnees, allow_unicode=True), encoding="utf-8")
+    return d
+
+
+def test_cle_inconnue_refusee(tmp_path):
+    d = _copie(tmp_path, "filtres.yaml", lambda c: c.update({"fraicheur_maxi_jours": 3}))
+    with pytest.raises(ValidationError):
+        charger(d)
+
+
+def test_priorite_hors_bornes_refusee(tmp_path):
+    d = _copie(tmp_path, "metiers.yaml", lambda c: c["familles"][0].update({"priorite": 4}))
+    with pytest.raises(ValidationError):
+        charger(d)
+
+
+def test_famille_sans_motif_refusee(tmp_path):
+    d = _copie(tmp_path, "metiers.yaml", lambda c: c["familles"][0].update({"motifs": []}))
+    with pytest.raises(ValidationError):
+        charger(d)
+
+
+def test_quota_adzuna_au_dela_du_gratuit_refuse(tmp_path):
+    d = _copie(tmp_path, "planning.yaml", lambda c: c["quotas"].update({"adzuna_mensuel": 400}))
+    with pytest.raises(ValidationError):
+        charger(d)
+
+
+def test_plage_inversee_refusee(tmp_path):
+    d = _copie(tmp_path, "planning.yaml", lambda c: c.update({"plage": {"debut": 22, "fin": 7}}))
+    with pytest.raises(ValidationError):
+        charger(d)

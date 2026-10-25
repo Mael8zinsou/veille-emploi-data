@@ -1,0 +1,173 @@
+# Familles de métiers reconnues, par priorité (cahier des charges § 3.1).
+#
+# La reconnaissance se fait sur le TITRE de l'offre, normalisé (minuscules, sans accents,
+# ponctuation remplacée par des espaces) et comparé mot à mot : « ia » ne reconnaît pas
+# « media », « ml » ne reconnaît pas « html ». Écrire les motifs sans accents.
+#
+# Quand un titre relève de plusieurs familles, la priorité la plus haute l'emporte
+# (1 avant 2 avant 3), puis l'ordre de ce fichier.
+#
+# `romes` : codes ROME de France Travail rattachés à la famille. Ils servent à interroger
+# l'API et à reconnaître une offre dont le titre est flou mais le code explicite.
+
+familles:
+  - nom: data_engineering
+    libelle: Data Engineering
+    priorite: 1
+    romes: [M1811]
+    motifs:
+      - data engineer
+      - data engineering
+      - data ingenieur
+      - ingenieur data
+      - ingenieur donnees
+      - ingenieur des donnees
+      - ingenieur de donnees
+      - ingenieur big data
+      - developpeur data
+      - developpeur big data
+      - developpeur etl
+      - ingenieur etl
+      - data ops
+      - dataops
+      - data platform engineer
+      - data software engineer
+      - data integration engineer
+      - ingenieur integration de donnees
+      - big data engineer
+
+  - nom: data_science
+    libelle: Data Science
+    priorite: 1
+    romes: [M1405]
+    motifs:
+      - data scientist
+      - data scientiste
+      - datascientist
+      - data science
+      - ingenieur data science
+      - machine learning scientist
+      - research scientist
+
+  - nom: ia_ml
+    libelle: IA et ML
+    priorite: 1
+    romes: [M1889]
+    motifs:
+      - ai engineer
+      - ia engineer
+      - ml engineer
+      - machine learning engineer
+      - machine learning
+      - mlops
+      - ml ops
+      - llmops
+      - ingenieur ia
+      - ingenieur en ia
+      - ingenieur intelligence artificielle
+      - ingenieur en intelligence artificielle
+      - developpeur ia
+      - developpeur intelligence artificielle
+      - intelligence artificielle
+      - ia generative
+      - genai
+      - gen ai
+      - generative ai
+      - llm
+      - ingenieur llm
+      - deep learning
+      - nlp
+      - computer vision
+      - vision par ordinateur
+      - coordinateur ia
+      - chef de projet ia
+      - consultant ia
+      - ingenieur ml
+
+  - nom: analytics_engineering
+    libelle: Analytics Engineering
+    priorite: 1
+    romes: []
+    motifs:
+      - analytics engineer
+      - analytics engineering
+      - ingenieur analytics
+
+  - nom: analyse
+    libelle: Analyse de données
+    priorite: 2
+    romes: [M1419, M1403]
+    motifs:
+      - data analyst
+      - data analyste
+      - analyste data
+      - analyste de donnees
+      - analyste donnees
+      - analyste des donnees
+      - analyste statistique
+      - charge d etudes statistiques
+      - charge d etude statistique
+      - charge d etudes data
+      - statisticien
+      - statisticienne
+      - ingenieur d etudes
+      - ingenieur d etude
+      - product analyst
+      - business analyst data
+      - data analytics
+
+  - nom: bi
+    libelle: BI et décisionnel
+    priorite: 2
+    romes: []
+    motifs:
+      - developpeur bi
+      - developpeur decisionnel
+      - consultant bi
+      - consultant decisionnel
+      - ingenieur bi
+      - ingenieur decisionnel
+      - analyste bi
+      - bi developer
+      - bi engineer
+      - bi analyst
+      - business intelligence
+      - power bi
+      - decisionnel
+
+  - nom: gouvernance
+    libelle: Qualité et gouvernance
+    priorite: 2
+    romes: []
+    motifs:
+      - data quality
+      - qualite des donnees
+      - qualite de donnees
+      - data steward
+      - data management
+      - data manager
+      - data governance
+      - gouvernance des donnees
+      - gouvernance de la donnee
+      - data officer
+      - data custodian
+      - master data
+
+  - nom: satellites
+    libelle: Métiers voisins
+    priorite: 3
+    romes: [M1818]
+    motifs:
+      - developpeur python
+      - python developer
+      - backend data
+      - data product
+      - product owner data
+      - geomaticien
+      - geomaticienne
+      - ingenieur geomatique
+      - sig
+      - charge d etudes
+      # Filet large : tout titre contenant « data » entre en priorité 3. La note et
+      # l'évaluation décident ensuite de ce qui mérite d'être vu.
+      - data

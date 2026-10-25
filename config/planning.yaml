@@ -1,0 +1,23 @@
+# Rythme des passages (cahier des charges § 5, conception § 2).
+# Le workflow se déclenche toutes les heures ; ce fichier décide de ce qui est dû.
+# Heures exprimées à Paris.
+
+fuseau: Europe/Paris
+plage:
+  debut: 7    # premier passage utile
+  fin: 22     # aucun passage utile à partir de cette heure
+
+taches:
+  # Une source est due si son dernier succès date d'au moins `intervalle_minutes`.
+  france_travail: {intervalle_minutes: 50}
+  hellowork: {intervalle_minutes: 50}
+  adzuna: {intervalle_minutes: 340}   # 3 passages par jour
+  la_bonne_alternance: {intervalle_minutes: 480}
+
+envois:
+  resume_quotidien_heure: 18
+  bilan_hebdomadaire: {jour: 0, heure: 8}   # jour 0 = lundi
+
+quotas:
+  # Requêtes Adzuna autorisées par mois civil (quota gratuit : 250).
+  adzuna_mensuel: 220
