@@ -2,7 +2,8 @@ name: Évaluation du tri
 
 # Rejoue les règles actuelles sur l'échantillon annoté (eval/) et les avis de l'onglet
 # « Annotation ». Métriques agrégées en annotations (publiques) ; détail offre par offre dans
-# un nouvel onglet du fichier de suivi (privé). Aucune autre écriture.
+# un nouvel onglet du fichier de suivi (privé), seulement lors d'un lancement manuel : une
+# fusion dans main mesure sans rien écrire. Aucune autre écriture.
 
 on:
   push:
@@ -33,4 +34,6 @@ jobs:
           GOOGLE_TOKEN_JSON: ${{ secrets.GOOGLE_TOKEN_JSON }}
           SUIVI_SHEET_ID: ${{ secrets.SUIVI_SHEET_ID }}
           PYTHONIOENCODING: utf-8
+          # Onglet de détail dans le fichier de suivi : seulement pour un lancement manuel.
+          EVAL_ONGLET: ${{ github.event_name == 'workflow_dispatch' && '1' || '0' }}
         run: python scripts/evaluer_tri.py

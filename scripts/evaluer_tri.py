@@ -19,6 +19,7 @@ import sys
 from dataclasses import dataclass, field
 from datetime import date, datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import yaml
 
@@ -214,13 +215,15 @@ def main() -> int:
                            f"* {'OK' if x['ok'] else 'ÉCHEC'} : {x['titre']} ({x['entreprise']}), attendu {x['attendu']}, "
                            f"obtenu {x['obtenu']}" for x in inc) + "\n", encoding="utf-8")
 
-    if client is not None:
+    # Le détail n'est écrit que sur demande (lancement manuel) : sinon chaque fusion dans main
+    # ajouterait un onglet au fichier de suivi.
+    if client is not None and os.getenv("EVAL_ONGLET", "1") == "1":
         detail = [["N°", "Ton avis", "Verdict v2", "Note", "Raisons", "Titre", "Entreprise", "Famille", "Fil", "Lien"]]
         for r in sorted(resultats, key=lambda r: r.numero):
             detail.append([r.numero, r.avis, r.motif_rejet or r.niveau, r.note if r.note is not None else "",
                            " ; ".join(r.raisons), r.offre.titre, r.offre.entreprise, r.offre.famille, str(r.offre.fil or ""),
                            r.offre.url])
-        titre = f"Évaluation {datetime.now():%d-%m %Hh%M}"
+        titre = f"Évaluation {datetime.now(ZoneInfo('Europe/Paris')):%d-%m %Hh%M}"
         client.ajouter_onglet(titre, detail, largeurs={4: 300, 5: 340, 6: 180})
         _annotation("Détail", [f"Détail offre par offre dans l'onglet privé « {titre} »"])
     return 0
