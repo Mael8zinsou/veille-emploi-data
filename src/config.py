@@ -200,11 +200,24 @@ class HelloWork(_Strict):
     alternance: list[RechercheHelloWork] = []
 
 
+class FluxTalentsoft(_Strict):
+    nom: str
+    profil: int | None = None     # métier du répertoire (Rss_Profile)
+    famille: int | None = None    # domaine (Rss_JobFamily)
+
+
+class ServicePublic(_Strict):
+    flux: list[FluxTalentsoft]
+    max_details: int = Field(ge=0, le=100)
+    delai_secondes: float = Field(ge=0.5)
+
+
 class Sources(_Strict):
     actives: dict[str, bool]
     france_travail: FranceTravail
     adzuna: Adzuna
     hellowork: HelloWork
+    service_public: ServicePublic
 
 
 # --------------------------------------------------------------------------- notation

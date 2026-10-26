@@ -4,6 +4,7 @@ actives:
   france_travail: true
   adzuna: true
   hellowork: true
+  service_public: true
 
 france_travail:
   # Fenêtre de recherche : les offres créées depuis N jours (le dédoublonnage écarte le déjà vu).
@@ -63,3 +64,24 @@ hellowork:
   alternance:
     - {k: alternance data}
     - {k: alternance intelligence artificielle}
+
+service_public:
+  # Choisir le service public, par les flux RSS de la Place de l'emploi public (sondage du
+  # 26/10). Un flux par métier data du répertoire de la fonction publique, plus le domaine
+  # Numérique en filet. Les identifiants viennent de la page des flux de la plateforme.
+  # Passerelles (ministères économiques et financiers) est inclus : même plateforme.
+  max_details: 30           # pages d'offre lues au plus par passage (employeur, expérience)
+  delai_secondes: 1.0
+  flux:
+    - {nom: data engineer, profil: 3871}
+    - {nom: data scientist, profil: 3872}
+    - {nom: data steward, profil: 3873}
+    - {nom: analyste de donnees, profil: 3552}
+    - {nom: analyste de donnees financieres, profil: 3553}
+    - {nom: collecte et exploitation de donnees, profil: 3622}
+    - {nom: expert production traitement analyse de donnees, profil: 3940}
+    - {nom: technicien production traitement analyse de donnees, profil: 4485}
+    - {nom: statisticien, profil: 4202}
+    - {nom: expert information statistique, profil: 4489}
+    - {nom: administrateur bases de donnees, profil: 3540}
+    - {nom: domaine numerique, famille: 3522}

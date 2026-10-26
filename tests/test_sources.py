@@ -6,8 +6,8 @@ import requests
 
 from src.filtres import normaliser_offre
 from src.models import Contrat, Fil
-from src.sources import Contexte, SourceIndisponible, adzuna, france_travail, hellowork
-from tests.conftest import FausseSession, Reponse, fixture_json, fixture_texte
+from src.sources import Contexte, SourceIndisponible, adzuna, france_travail, hellowork, service_public
+from tests.conftest import FausseSession, Reponse, fixture_json, fixture_texte, offre
 
 MAINTENANT = datetime(2026, 10, 26, 9, 0)
 
@@ -169,3 +169,98 @@ def test_session_honnete():
     from src.utils.http import build_session
     s = build_session()
     assert "veille-emploi-data" in s.headers["User-Agent"] and "Mozilla" not in s.headers["User-Agent"]
+
+
+# --------------------------------------------------------------------------- Choisir le service public
+
+def test_service_public_flux_reel():
+    offres = service_public.lire_flux(fixture_texte("service_public/rss_contractuels.xml"))
+    assert len(offres) == 20
+    dgcl = next(o for o in offres if "Data Analyst" in o.titre)
+    assert dgcl.id_source == "MINT_BI075ACA-127426"
+    assert dgcl.titre.startswith("DGCL- Data Analyst")
+    assert dgcl.url == "https://choisirleservicepublic.gouv.fr/offre-emploi/MINT_BI075ACA-127426/"
+    assert dgcl.contrat_brut == service_public.CONTRACTUEL and dgcl.lieu.startswith("2 Place des Saussaies")
+    assert dgcl.description and dgcl.date_publication and dgcl.entreprise == ""
+
+
+@pytest.mark.parametrize("nature, attendu", [
+    ("Emploi ouvert aux titulaires et/ou aux contractuels", service_public.CONTRACTUEL),
+    ("Emploi ouvert uniquement aux contractuels", service_public.CONTRACTUEL),
+    ("Emploi ouvert aux titulaires", service_public.FONCTIONNAIRES),
+    ("Emploi réservé aux fonctionnaires et lauréats d'un concours territorial", service_public.FONCTIONNAIRES),
+])
+def test_service_public_nature(nature, attendu):
+    assert service_public.nature_vers_contrat(nature) == attendu
+
+
+def test_service_public_fonctionnaires_hors_cible(config):
+    from src.filtres import motif_de_rejet
+    o = normaliser_offre(offre(contrat_brut=service_public.FONCTIONNAIRES), config)
+    assert motif_de_rejet(o, config, MAINTENANT.date())[0].value == "contrat_hors_cible"
+    o = normaliser_offre(offre(contrat_brut=service_public.CONTRACTUEL), config)
+    assert o.contrat == Contrat.CDD and o.fil == Fil.EMPLOI
+
+
+def test_service_public_detail_reel():
+    detail = service_public.lire_detail(fixture_texte("service_public/detail_mef.html"))
+    o = offre(entreprise="", lieu="Ivry")
+    service_public.completer(o, detail)
+    assert o.entreprise == "Direction nationale du renseignement et des enquêtes douanières (DNRED)"
+    assert o.lieu == "Val de Marne (94)" and o.date_publication == "2026-10-22"
+    assert o.debutant_accepte is None and o.experience_annees is None     # « Confirmé » : neutre
+
+
+@pytest.mark.parametrize("niveau, debutant, annees", [("Débutant", True, None), ("Expert", None, 5)])
+def test_service_public_niveaux(niveau, debutant, annees):
+    o = offre()
+    service_public.completer(o, {"experienceRequirements": niveau})
+    assert o.debutant_accepte == debutant and o.experience_annees == annees
+
+
+def test_service_public_detail_absent():
+    assert service_public.lire_detail("<html>rien</html>") == {}
+    assert service_public.lire_detail('<script type="application/ld+json">{pas du json</script>') == {}
+
+
+def test_service_public_fetch(config):
+    flux = fixture_texte("service_public/rss_contractuels.xml")
+    detail = fixture_texte("service_public/detail_mef.html")
+
+    def repondre(methode, url, kw):
+        if "offerRss" in url:
+            return Reponse(text=flux)
+        return Reponse(text=detail)
+
+    c = Contexte(config=config, session=FausseSession(repondre), maintenant_utc=datetime(2026, 10, 26, 13, 0))
+    offres = service_public.fetch(c)
+    assert len(offres) == 20                                  # mêmes offres dans chaque flux : dédoublonnées
+    pages = [u for _, u, _ in c.session.appels if "offerRss" not in u]
+    # Seules les offres au titre reconnu sont complétées (Data Analyst, développement pour le data…)
+    assert pages and all("/offre-emploi/" in u for u in pages)
+    completees = [o for o in offres if o.entreprise]
+    assert len(completees) == len(pages)
+    assert all(o.entreprise == "" for o in offres if "Cuisinier" in o.titre or "Technicien" in o.titre)
+    flux_appels = [kw["params"] for _, u, kw in c.session.appels if "offerRss" in u]
+    assert {"LCID": 1036, "Rss_Profile": 3871} in flux_appels and {"LCID": 1036, "Rss_JobFamily": 3522} in flux_appels
+
+
+def test_service_public_limite_de_pages(config):
+    flux = fixture_texte("service_public/rss_contractuels.xml")
+    sp = config.sources.service_public.model_copy(update={"max_details": 0})
+    cfg = config.model_copy(update={"sources": config.sources.model_copy(update={"service_public": sp})})
+    c = Contexte(config=cfg, session=FausseSession(lambda m, u, k: Reponse(text=flux)),
+                 maintenant_utc=datetime(2026, 10, 26, 13, 0))
+    assert len(service_public.fetch(c)) == 20
+    assert all("offerRss" in u for _, u, _ in c.session.appels)
+
+
+def test_service_public_indisponible(config):
+    c = Contexte(config=config, session=FausseSession(lambda m, u, k: Reponse(status_code=503)),
+                 maintenant_utc=MAINTENANT)
+    with pytest.raises(SourceIndisponible):
+        service_public.fetch(c)
+
+
+def test_service_public_flux_illisible():
+    assert service_public.lire_flux("<html>maintenance</html>") == []
