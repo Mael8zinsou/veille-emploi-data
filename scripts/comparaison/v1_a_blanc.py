@@ -52,3 +52,4 @@ def main(sortie: str) -> int:
 
 if __name__ == "__main__":
     sys.exit(main(sys.argv[1]))
+# relance 2026-10-26T00:17:24
