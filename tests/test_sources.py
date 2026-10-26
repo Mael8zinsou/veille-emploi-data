@@ -251,8 +251,10 @@ def test_service_public_limite_de_pages(config):
     cfg = config.model_copy(update={"sources": config.sources.model_copy(update={"service_public": sp})})
     c = Contexte(config=cfg, session=FausseSession(lambda m, u, k: Reponse(text=flux)),
                  maintenant_utc=datetime(2026, 10, 26, 13, 0))
-    assert len(service_public.fetch(c)) == 20
+    offres = service_public.fetch(c)
     assert all("offerRss" in u for _, u, _ in c.session.appels)
+    # Les offres à compléter sont reportées, pas rendues sans employeur.
+    assert 0 < len(offres) < 20 and not any("Data Analyst" in o.titre for o in offres)
 
 
 def test_service_public_indisponible(config):
@@ -264,3 +266,21 @@ def test_service_public_indisponible(config):
 
 def test_service_public_flux_illisible():
     assert service_public.lire_flux("<html>maintenance</html>") == []
+
+
+def test_service_public_memoire(config):
+    """Une page d'offre n'est lue qu'une fois : la mémoire de la source sert aux passages suivants."""
+    flux = fixture_texte("service_public/rss_contractuels.xml")
+    detail = fixture_texte("service_public/detail_mef.html")
+
+    def repondre(methode, url, kw):
+        return Reponse(text=flux if "offerRss" in url else detail)
+
+    premier = Contexte(config=config, session=FausseSession(repondre), maintenant_utc=datetime(2026, 10, 26, 13, 0))
+    service_public.fetch(premier)
+    assert premier.memoire and all(v["hiringOrganization"] for v in premier.memoire.values())
+    second = Contexte(config=config, session=FausseSession(repondre), maintenant_utc=datetime(2026, 10, 26, 15, 0),
+                      memoire=premier.memoire)
+    offres = service_public.fetch(second)
+    assert all("offerRss" in u for _, u, _ in second.session.appels)
+    assert sum(1 for o in offres if o.entreprise) == len(premier.memoire)

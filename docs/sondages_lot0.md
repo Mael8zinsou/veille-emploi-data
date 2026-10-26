@@ -114,3 +114,28 @@ page, parsing de la v1 toujours valable.
 **Effet sur la v1 dès maintenant** : la production tourne sans APEC depuis trois semaines. Retirer
 APEC de la v1 ne change rien au flux, mais supprime des erreurs silencieuses. La v2 compensera par
 France Travail (codes ROME, plus de métiers), Passerelles et Choisir le service public.
+
+## 4. Lot 5 : sondage du 26/10 (sources publiques)
+
+Sonde `sonde_lot5_public` (branche `sonde-lot5`, réponses dans `sondes/2026-10-26_1247/`), avec le
+User-Agent honnête de la production.
+
+* **Page de recherche de Choisir le service public : écartée.** 4,5 Mo par page de 20 offres ; tri
+  par pertinence ; filtre « 48 heures » incohérent (2 offres quand le site en affiche du jour même).
+  Le filtre de nature d'emploi fonctionne (`type/2349-2267`), mais lire 179 offres « data » sur
+  7 jours coûterait 9 pages de 4,5 Mo.
+* **Flux RSS de la Place de l'emploi public (Talentsoft) : retenus.** Un flux par métier du
+  répertoire de la fonction publique (`Rss_Profile` : Data engineer 3871, Data Scientist 3872,
+  Analyste de données 3552…) et par domaine (`Rss_JobFamily`, Numérique 3522). 20 offres par flux,
+  avec description complète et nature de l'emploi. Le domaine Numérique couvre moins d'une journée,
+  les flux métier plusieurs semaines.
+* **Passerelles : pas de source séparée.** Les offres des ministères économiques et financiers sont
+  dans les flux ci-dessus (références `MEF_…`).
+* **Page d'une offre** (200 Ko) : bloc JSON-LD `JobPosting` avec employeur, niveau d'expérience
+  (Débutant, Confirmé, Expert), date de publication et lieu. Lue une seule fois par offre (mémoire
+  de la source en base), seulement pour les offres au titre reconnu, fraîches et ouvertes aux
+  contractuels.
+
+Essai réel du 26/10 (base de production, sans envoi) : 195 offres lues, 19 gardées, dont une alerte
+(« Ingénieur Big Data - Data Engineer », Commissariat au Numérique de Défense) et des postes à la
+DNRED, à la DEPP, à la DREES, au Contrôle général des armées.

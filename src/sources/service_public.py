@@ -15,7 +15,8 @@ Sondages du 25 et du 26/10 (docs/sondages_lot0.md, § 2) :
 * Le flux ne donne pas l'employeur. La page de l'offre porte un bloc JSON-LD JobPosting :
   employeur, niveau d'expérience (Débutant, Confirmé, Expert), date de publication, lieu.
   On ne la lit que pour les offres au titre reconnu, fraîches et ouvertes aux contractuels,
-  dans la limite de `max_details` par passage.
+  une seule fois par offre (mémoire de la source en base), dans la limite de `max_details`
+  pages par passage.
 """
 from __future__ import annotations
 
@@ -104,6 +105,9 @@ def lire_detail(texte: str) -> dict:
     return {}
 
 
+_CHAMPS_GARDES = ("hiringOrganization", "addressLocality", "datePosted", "experienceRequirements")
+
+
 def completer(o: Offre, detail: dict) -> None:
     """Employeur, lieu, date et expérience depuis la page de l'offre."""
     employeur = detail.get("hiringOrganization")
@@ -155,15 +159,30 @@ def fetch(ctx: Contexte) -> list[Offre]:
     ctx.verifier(NOM)
 
     offres = list(par_ref.values())
-    a_lire = [o for o in offres if _a_completer(o, ctx)]
-    lues = 0
-    for o in a_lire[:cfg.max_details]:
-        r = ctx.get(o.url)
-        if r is not None:
-            completer(o, lire_detail(r.text))
-            lues += 1
+    a_lire = []
+    for o in offres:
+        if not _a_completer(o, ctx):
+            continue
+        if o.id_source in ctx.memoire:
+            completer(o, ctx.memoire[o.id_source])
+        else:
+            a_lire.append(o)
+    # Une offre à compléter dont la page n'a pas été lue (limite atteinte, page en échec) est
+    # gardée pour un prochain passage : rendue sans employeur, elle aurait une autre clé de
+    # dédoublonnage qu'une fois complétée, et serait présentée deux fois.
+    reportees: set[str] = set()
+    for i, o in enumerate(a_lire):
+        r = ctx.get(o.url) if i < cfg.max_details else None
+        if r is None:
+            reportees.add(o.id_source)
+            continue
+        detail = lire_detail(r.text)
+        ctx.memoire[o.id_source] = {k: detail[k] for k in _CHAMPS_GARDES if k in detail}
+        completer(o, detail)
         time.sleep(cfg.delai_secondes)
-    if len(a_lire) > cfg.max_details:
-        logger.warning("service_public : %d pages d'offre à lire, limite %d", len(a_lire), cfg.max_details)
-    logger.info("service_public : %d offres, %d pages d'offre lues, %d requêtes", len(offres), lues, ctx.requetes)
-    return offres
+    if reportees:
+        logger.warning("service_public : %d offres reportées au prochain passage (limite %d pages)",
+                       len(reportees), cfg.max_details)
+    logger.info("service_public : %d offres, %d pages d'offre lues, %d requêtes",
+                len(offres) - len(reportees), len(a_lire) - len(reportees), ctx.requetes)
+    return [o for o in offres if o.id_source not in reportees]

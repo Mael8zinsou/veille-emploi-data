@@ -74,3 +74,15 @@ def test_purge(tmp_path, config):
     with sqlite3.connect(base.chemin) as c:
         c.execute("UPDATE offres SET derniere_vue = '2025-01-01 00:00:00'")
     assert stockage.purger(base) == (1, 0)
+
+
+def test_memoire_des_sources(tmp_path):
+    from datetime import datetime, timedelta
+    base = stockage.ouvrir(tmp_path / "b.sqlite")
+    t0 = datetime(2026, 10, 26, 10, 0)
+    stockage.ecrire_memoire(base, "service_public", {"A": {"x": "é"}}, t0)
+    stockage.ecrire_memoire(base, "service_public", {"A": {"x": "autre"}, "B": {}}, t0 + timedelta(days=59))
+    assert stockage.lire_memoire(base, "service_public") == {"A": {"x": "é"}, "B": {}}   # A garde sa valeur
+    assert stockage.lire_memoire(base, "autre") == {}
+    stockage.ecrire_memoire(base, "service_public", {}, t0 + timedelta(days=61))
+    assert stockage.lire_memoire(base, "service_public") == {"B": {}}                    # A oubliée

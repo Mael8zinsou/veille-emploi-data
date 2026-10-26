@@ -35,6 +35,9 @@ class Contexte:
     maintenant_utc: datetime
     requetes: int = 0
     erreurs: list[str] = field(default_factory=list)
+    # Données gardées d'un passage à l'autre, propres à la source (chargées et enregistrées
+    # par main.py).
+    memoire: dict[str, dict] = field(default_factory=dict)
 
     def _appel(self, methode: str, url: str, **kwargs) -> requests.Response | None:
         kwargs.setdefault("timeout", DELAI_DEFAUT)

@@ -86,6 +86,16 @@ CREATE TABLE IF NOT EXISTS route_b (
     entreprise_normalisee TEXT PRIMARY KEY,
     ajoutee_le TEXT NOT NULL
 );
+
+-- Ce qu'une source garde d'un passage à l'autre (Choisir le service public : la page de
+-- chaque offre n'est lue qu'une fois).
+CREATE TABLE IF NOT EXISTS memoire_sources (
+    source TEXT NOT NULL,
+    cle TEXT NOT NULL,
+    valeur TEXT NOT NULL,
+    maj_le TEXT NOT NULL,
+    PRIMARY KEY (source, cle)
+);
 """
 
 
@@ -148,6 +158,29 @@ def _importer_v1(c: sqlite3.Connection) -> int:
                   CASE WHEN notifiee = 1 THEN 'envoyee' ELSE 'aucun' END, 1
            FROM offres_vues""")
     return cur.rowcount
+
+
+# --------------------------------------------------------------------------- mémoire des sources
+
+MEMOIRE_JOURS = 60
+
+
+def lire_memoire(base: Base, source: str) -> dict[str, dict]:
+    with closing(base.connexion()) as c:
+        rows = c.execute("SELECT cle, valeur FROM memoire_sources WHERE source = ?", (source,)).fetchall()
+    return {r["cle"]: json.loads(r["valeur"]) for r in rows}
+
+
+def ecrire_memoire(base: Base, source: str, memoire: dict[str, dict], le: datetime | None = None) -> None:
+    """Ajoute les entrées nouvelles (les connues gardent leur date) et oublie celles de plus de
+    MEMOIRE_JOURS jours."""
+    maintenant = le or maintenant_utc()
+    with closing(base.connexion()) as c, c:
+        c.executemany("INSERT OR IGNORE INTO memoire_sources (source, cle, valeur, maj_le) VALUES (?,?,?,?)",
+                      [(source, cle, json.dumps(v, ensure_ascii=False), _maintenant(maintenant))
+                       for cle, v in memoire.items()])
+        c.execute("DELETE FROM memoire_sources WHERE source = ? AND maj_le < ?",
+                  (source, _maintenant(maintenant - timedelta(days=MEMOIRE_JOURS))))
 
 
 # --------------------------------------------------------------------------- offres

@@ -86,7 +86,8 @@ def collecter(noms: list[str], config: Config, base: stockage.Base, session, mai
         if fetch is None:
             rapport.sources[nom] = {"etat": "inconnue"}
             continue
-        ctx = Contexte(config=config, session=session, maintenant_utc=maintenant_utc)
+        ctx = Contexte(config=config, session=session, maintenant_utc=maintenant_utc,
+                       memoire=stockage.lire_memoire(base, nom))
         ident = stockage.debut_execution(base, nom, maintenant_utc)
         try:
             offres = fetch(ctx)
@@ -102,6 +103,8 @@ def collecter(noms: list[str], config: Config, base: stockage.Base, session, mai
             continue
         stockage.fin_execution(base, ident, True, len(offres), ctx.requetes,
                                "; ".join(ctx.erreurs[:3]) if ctx.erreurs else None)
+        if ctx.memoire:
+            stockage.ecrire_memoire(base, nom, ctx.memoire, maintenant_utc)
         rapport.sources[nom] = {"etat": "ok", "offres": len(offres), "requetes": ctx.requetes,
                                 "erreurs_partielles": len(ctx.erreurs), "erreurs": ctx.erreurs[:5]}
         toutes.extend(offres)
