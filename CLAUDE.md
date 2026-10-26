@@ -7,8 +7,12 @@
 > * Branches : `main` = **v2 en période de test** depuis le 26/10/2026 (la v1 n'existe plus que
 >   dans l'historique, tag de référence : commit `89cacbf`) ; `sondes` = réponses brutes des
 >   sondages. Travail par branches et pull requests vers `main`.
-> * Période de test : `veille.yml` tourne toutes les heures, VEILLE_ENVOI=simulation,
->   VEILLE_SUIVI=essai. Mise en service réelle après calibrage des seuils (eval/).
+> * **En service depuis le 26/10/2026** (PR #11 calibrage, #12 mise en service) :
+>   VEILLE_ENVOI=telegram, VEILLE_SUIVI=reel, onglet « Veille » du fichier de suivi.
+> * Lancement : cron-job.org appelle `workflow_dispatch` de `veille.yml` à la minute 5 de chaque
+>   heure (jeton GitHub à grain fin, Actions en écriture, sur ce seul dépôt, expiration à
+>   surveiller). Le cron GitHub reste en secours : il arrive avec 4 à 7 h de retard et saute
+>   souvent des lancements, inutilisable seul pour des alertes.
 > * Contrat des sources v2 : `NOM` + `fetch(ctx: Contexte) -> list[Offre]` (src/sources/__init__.py).
 > * Toutes les dates en base sont en UTC ; le planning raisonne en heure de Paris.
 > * APEC répond 403 depuis le 1er octobre 2026 : retirée, ne pas chercher à contourner.
