@@ -38,6 +38,8 @@ jobs:
         run: pip install requests==2.32.3 google-auth==2.35.0
 
       - name: Vérification des accès
+        # Désactivée pour ce passage : elle poste un message de test dans chaque sujet Telegram.
+        if: false
         env:
           GOOGLE_TOKEN_JSON: ${{ secrets.GOOGLE_TOKEN_JSON }}
           SUIVI_SHEET_ID: ${{ secrets.SUIVI_SHEET_ID }}
@@ -52,7 +54,7 @@ jobs:
           FT_CLIENT_ID: ${{ secrets.FT_CLIENT_ID }}
           FT_CLIENT_SECRET: ${{ secrets.FT_CLIENT_SECRET }}
           LBA_API_KEY: ${{ secrets.LBA_API_KEY }}
-          SONDES: aucune  # passage de vérification seule (26/10)
+          SONDES: sonde_hellowork_tri
         run: python scripts/lot0/sonde.py
 
       - name: Publie les réponses brutes sur la branche sondes

@@ -332,12 +332,29 @@ def sonde_engagement_sitemap() -> list[str]:
     return lignes
 
 
+def sonde_hellowork_tri() -> list[str]:
+    """La page liste n'affiche pas de date : l'ordre des identifiants (croissants dans le temps)
+    révèle si un paramètre de tri par date est pris en compte."""
+    d = SORTIE / "hellowork_tri"
+    lignes = []
+    for nom, extra in (("defaut", {}), ("st_date", {"st": "date"}), ("s_date", {"s": "date"}),
+                       ("tri_date", {"tri": "date"}), ("sort_date", {"sort": "date"})):
+        r = S.get("https://www.hellowork.com/fr-fr/emploi/recherche.html", params={"k": "data engineer", **extra}, timeout=30)
+        ids = [int(i) for i in re.findall(r'href="/fr-fr/emplois/(\\d+)\\.html"[^>]*aria-label="Voir offre', r.text)]
+        decroissants = sum(1 for a, b in zip(ids, ids[1:]) if a > b)
+        ecrire(d, f"{nom}.txt", " ".join(map(str, ids)))
+        lignes.append(f"{nom} : HTTP {r.status_code}, {len(ids)} offres, ordre décroissant {decroissants}/{max(len(ids) - 1, 0)}, "
+                      f"premiers {ids[:4]}")
+        pause(2.5)
+    return lignes
+
+
 SONDES = {
     "France Travail": sonde_france_travail, "APEC": sonde_apec, "Adzuna": sonde_adzuna,
     "HelloWork": sonde_hellowork, "La bonne alternance": sonde_lba, "Passerelles": sonde_passerelles,
     "Choisir le service public": sonde_csp, "engagement-jeunes": sonde_engagement_jeunes,
     "Adzuna titre": sonde_adzuna_titre, "Choisir le service public RSS": sonde_csp_rss,
-    "engagement-jeunes plan du site": sonde_engagement_sitemap,
+    "engagement-jeunes plan du site": sonde_engagement_sitemap, "HelloWork tri": sonde_hellowork_tri,
 }
 
 
