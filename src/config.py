@@ -273,6 +273,15 @@ class Notation(_Strict):
     niveaux: Niveaux
 
 
+# --------------------------------------------------------------------------- telegram
+
+class Telegram(_Strict):
+    groupe_id: int
+    sujets: dict[str, int]
+    resume_max_offres: int = Field(ge=1, le=100)
+    pannes_avant_avertissement: int = Field(ge=1, le=20)
+
+
 # --------------------------------------------------------------------------- ensemble
 
 class Config(_Strict):
@@ -281,6 +290,7 @@ class Config(_Strict):
     planning: Planning
     sources: Sources
     notation: Notation
+    telegram: Telegram
 
 
 def _lire(chemin: Path) -> dict:
@@ -289,8 +299,8 @@ def _lire(chemin: Path) -> dict:
 
 
 def charger(dossier: Path | str = DOSSIER_CONFIG) -> Config:
-    """Charge et valide les cinq fichiers. Lève pydantic.ValidationError si invalide."""
+    """Charge et valide les fichiers de configuration. Lève pydantic.ValidationError si invalide."""
     d = Path(dossier)
     return Config(metiers=_lire(d / "metiers.yaml"), filtres=_lire(d / "filtres.yaml"),
                   planning=_lire(d / "planning.yaml"), sources=_lire(d / "sources.yaml"),
-                  notation=_lire(d / "notation.yaml"))
+                  notation=_lire(d / "notation.yaml"), telegram=_lire(d / "telegram.yaml"))

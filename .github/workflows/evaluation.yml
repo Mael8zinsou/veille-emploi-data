@@ -6,7 +6,7 @@ name: Évaluation du tri
 
 on:
   push:
-    branches: [lot2, v2]
+    branches: [main]
     paths: ['config/**', 'src/**', 'eval/**', 'scripts/evaluer_tri.py', '.github/workflows/evaluation.yml']
   workflow_dispatch:
 

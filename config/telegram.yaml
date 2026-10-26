@@ -1,0 +1,11 @@
+# Groupe Telegram à sujets (vérifié le 26/10 par scripts/lot0/verif_setup.py).
+# Ces identifiants ne permettent pas d'écrire dans le groupe : il faut le jeton du bot
+# (secret TELEGRAM_BOT_TOKEN).
+groupe_id: -1004458686954
+sujets:
+  emploi: 2
+  alternance: 4
+  immersion: 6
+resume_max_offres: 30
+# Une source en échec ce nombre de fois d'affilée déclenche un avertissement immédiat.
+pannes_avant_avertissement: 3

@@ -19,6 +19,6 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          for wf in veille.yml v2_ombre.yml; do
+          for wf in veille.yml; do
             gh api -X PUT "repos/${{ github.repository }}/actions/workflows/$wf/enable" && echo "$wf réactivé" || echo "$wf absent"
           done
