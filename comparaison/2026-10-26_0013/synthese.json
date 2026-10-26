@@ -1,0 +1,67 @@
+{
+ "date": "2026-10-26T00:13:21.160120+00:00",
+ "v1_par_source": {
+  "adzuna": 149,
+  "france_travail": 242,
+  "greenhouse": 775,
+  "lever": 98,
+  "ashby": 594,
+  "teamtailor": 187,
+  "apec": 0,
+  "hellowork": 185,
+  "choose": 0
+ },
+ "v1_brutes": 2230,
+ "v1_gardees": 105,
+ "v1_notifiables": 91,
+ "v1_notifiees_ce_passage": 3,
+ "v2_sur_offres_v1": {
+  "gardee": 76,
+  "freelance": 8,
+  "seniorite": 1,
+  "trop_ancienne": 3,
+  "metier_hors_cible": 1,
+  "lieu_etranger": 1,
+  "stage_conventionne": 1
+ },
+ "v2_collecte_des_offres_v1": {
+  "absente": 61,
+  "retrouvee": 30
+ },
+ "v2_sources": {
+  "france_travail": {
+   "etat": "ok",
+   "offres": 70,
+   "requetes": 18,
+   "erreurs_partielles": 0,
+   "erreurs": []
+  },
+  "adzuna": {
+   "etat": "ok",
+   "offres": 100,
+   "requetes": 2,
+   "erreurs_partielles": 0,
+   "erreurs": []
+  },
+  "hellowork": {
+   "etat": "ok",
+   "offres": 454,
+   "requetes": 16,
+   "erreurs_partielles": 0,
+   "erreurs": []
+  }
+ },
+ "v2_brutes": 624,
+ "v2_gardees": 322,
+ "v2_apport": 294,
+ "v2_apport_par_famille": {
+  "satellites": 44,
+  "analyse": 85,
+  "data_science": 42,
+  "ia_ml": 57,
+  "data_engineering": 49,
+  "gouvernance": 8,
+  "analytics_engineering": 8,
+  "bi": 1
+ }
+}
