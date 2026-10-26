@@ -1,7 +1,7 @@
 name: Maintien des workflows planifiés
 
 # GitHub désactive un workflow planifié après 60 jours sans activité sur le dépôt. Ce
-# workflow le réactive chaque mois par l'API, sans commit factice.
+# workflow réactive chaque mois les workflows planifiés par l'API, sans commit factice.
 
 on:
   schedule:
@@ -15,7 +15,10 @@ jobs:
   maintien:
     runs-on: ubuntu-latest
     steps:
-      - name: Réactive la veille
+      - name: Réactive les workflows planifiés
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh api -X PUT "repos/${{ github.repository }}/actions/workflows/veille.yml/enable"
+        run: |
+          for wf in veille.yml v2_ombre.yml; do
+            gh api -X PUT "repos/${{ github.repository }}/actions/workflows/$wf/enable" && echo "$wf réactivé" || echo "$wf absent"
+          done
