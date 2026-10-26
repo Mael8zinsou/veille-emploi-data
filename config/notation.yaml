@@ -1,0 +1,56 @@
+# Note d'une offre et niveaux (cahier des charges § 6.2, conception § 6).
+# Valeurs de DÉPART : elles seront calibrées sur le jeu d'annotation (eval/), pas à l'intuition.
+# Chaque composante apparaît comme raison dans les messages : une note n'est jamais opaque.
+
+priorite_famille: {1: 6, 2: 3, 3: 1}
+
+competences:
+  # Compétences de Maël reconnues dans le titre ou la description : +1 chacune, plafonnées.
+  points: 1
+  plafond: 6
+  liste: [python, sql, postgresql, airflow, dbt, kafka, spark, pyspark, snowflake, docker, kubernetes,
+          fastapi, mlflow, prometheus, grafana, ci cd, github actions, power bi, talend, qgis, llm, rag,
+          scikit learn, pandas, aws, etl, elt, data quality, qualite des donnees]
+
+niveau_experience:
+  signaux_junior: [junior, debutant, debutante, jeune diplome, jeune diplomee, premier emploi, graduate,
+                   entry level, sortie d ecole, 0 a 2 ans, 1 an d experience, premiere experience]
+  junior: 3                # signal junior dans le titre ou la description
+  debutant_accepte: 3      # France Travail : expérience « débutant accepté »
+  confirme_titre: -3       # « confirmé » ou « expérimenté » dans le titre
+  mots_confirme: [confirme, confirmee, experimente, experimentee]
+  annees: {0: 2, 1: 2, 2: 0, 3: -1}
+
+employeur:
+  esn: -4
+  intermediaire: -2        # republicateur ou cabinet : « seconde main »
+  inconnu: -2              # employeur non indiqué : « seconde main »
+  ecole: -3
+
+suivi:
+  # Verdict de l'entreprise dans l'onglet Entreprises du fichier de suivi (lot 4).
+  cible_prioritaire: 6
+  cible: 4
+  derniere_priorite: -2
+  ecarter: -4
+  # Verdicts « Écarter » définitifs : l'offre est archivée sans note.
+  ecarter_definitif: ["ecarter pas un employeur", "ecarter nationalite", "ecarter ingenierie hors de france",
+                      "ecarter deja traite"]
+
+signaux:
+  publiee_depuis_un_jour: 2
+  publiee_depuis_5_jours: -1
+  republiee: -3
+  peu_candidatee: 2
+  zone_preferee: 1
+  teletravail_complet: 1
+
+niveaux:
+  alerte:
+    note_min: 12
+    fils: [emploi]
+    # Il faut aussi une famille de priorité 1 OU une entreprise cible, et un employeur identifié.
+    exige_priorite_1_ou_cible: true
+    exclut_seconde_main: true
+  resume:
+    note_min: 4

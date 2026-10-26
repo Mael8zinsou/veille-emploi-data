@@ -35,10 +35,13 @@ adzuna:
   max_jours: 2
   par_page: 50
   requetes:
+    # Seconde comparaison (26/10) : les offres encore manquées étaient surtout des « Analytics
+    # Engineer » et des « MLOps », d'où ces deux requêtes à la place d'« ingénieur data »,
+    # que France Travail et HelloWork couvrent déjà.
     - {nom: data_engineer, title_only: data engineer, pages: 2}
     - {nom: data_analyst, title_only: data analyst, pages: 1}
     - {nom: data_scientist, title_only: data scientist, pages: 1}
-    - {nom: ingenieur_data, title_only: ingénieur data, pages: 1}
+    - {nom: analytics_engineer, title_only: analytics engineer, pages: 1}
     - {nom: machine_learning, title_only: machine learning, pages: 1}
 
 hellowork:
@@ -53,6 +56,7 @@ hellowork:
     - {k: data scientist}
     - {k: data analyst}
     - {k: data analyst, l: Paris}
+    - {k: ingenieur data}
     - {k: ingenieur ia}
     - {k: analytics engineer}
     - {k: machine learning}

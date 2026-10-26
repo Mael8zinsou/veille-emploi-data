@@ -36,6 +36,12 @@ class TypeEmployeur(StrEnum):
     INCONNU = "inconnu"
 
 
+class Niveau(StrEnum):
+    ALERTE = "alerte"
+    RESUME = "resume"
+    ARCHIVE = "archive"
+
+
 class Motif(StrEnum):
     """Motifs de rejet, dans l'ordre d'application des filtres (conception § 5.4)."""
     METIER_HORS_CIBLE = "metier_hors_cible"

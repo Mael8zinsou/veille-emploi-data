@@ -20,7 +20,7 @@ from datetime import UTC, datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from src import dedoublonnage, filtres, planning, stockage
+from src import dedoublonnage, filtres, notation, planning, stockage
 from src.config import Config, charger
 from src.models import Offre, Rejet
 from src.sources import Contexte, SourceIndisponible, adzuna, france_travail, hellowork
@@ -43,6 +43,7 @@ class Rapport:
     par_fil: dict[str, int] = field(default_factory=dict)
     par_famille: dict[str, int] = field(default_factory=dict)
     par_type_employeur: dict[str, int] = field(default_factory=dict)
+    par_niveau: dict[str, int] = field(default_factory=dict)
     exemples_nouvelles: list[str] = field(default_factory=list)
 
     def resume(self) -> list[str]:
@@ -59,6 +60,7 @@ class Rapport:
         lignes.append("Fils : " + ", ".join(f"{k} {v}" for k, v in sorted(self.par_fil.items())))
         lignes.append("Familles : " + ", ".join(f"{k} {v}" for k, v in sorted(self.par_famille.items())))
         lignes.append("Employeurs : " + ", ".join(f"{k} {v}" for k, v in sorted(self.par_type_employeur.items())))
+        lignes.append("Niveaux (nouvelles) : " + ", ".join(f"{k} {v}" for k, v in sorted(self.par_niveau.items())))
         return lignes
 
 
@@ -93,8 +95,12 @@ def collecter(noms: list[str], config: Config, base: stockage.Base, session, mai
     return toutes
 
 
+REPUBLICATION_JOURS = 30
+
+
 def passage(config: Config, base: stockage.Base, maintenant_utc: datetime | None = None,
-            sources_imposees: list[str] | None = None, session=None, sources: dict = SOURCES) -> Rapport:
+            sources_imposees: list[str] | None = None, session=None, sources: dict = SOURCES,
+            verdicts: dict[str, str] | None = None) -> Rapport:
     maintenant_utc = maintenant_utc or stockage.maintenant_utc()
     plan = planning.taches_dues(maintenant_utc, stockage.dernier_succes(base), stockage.derniers_envois(base),
                                 stockage.requetes_du_mois(base, "adzuna", maintenant_utc), config)
@@ -109,10 +115,20 @@ def passage(config: Config, base: stockage.Base, maintenant_utc: datetime | None
     aujourdhui = maintenant_utc.replace(tzinfo=UTC).astimezone(ZoneInfo(config.planning.fuseau)).date()
     gardees, rejets = filtres.trier(brutes, config, aujourdhui)
     fusionnees = dedoublonnage.fusionner(gardees)
-    connues = stockage.cles_connues(base, [o.cle for o in fusionnees])
-    nouvelles = [o for o in fusionnees if o.cle not in connues]
+    vues = stockage.dernieres_vues(base, [o.cle for o in fusionnees])
+    nouvelles, notes = [], {}
+    for o in fusionnees:
+        derniere = vues.get(o.cle)
+        republiee = derniere is not None and (maintenant_utc - derniere).days >= REPUBLICATION_JOURS
+        if derniere is None or republiee:
+            nouvelles.append(o)
+        note = notation.noter(o, config, aujourdhui, verdicts, republiee=republiee)
+        notes[o.cle] = (note, notation.niveau(o, note, config))
 
     stockage.enregistrer_offres(base, fusionnees, maintenant_utc)
+    for o in nouvelles:
+        note, niv = notes[o.cle]
+        stockage.noter(base, o.cle, note.total, note.composantes, niv.value)
     stockage.enregistrer_rejets(base, _rejets_uniques(rejets), maintenant_utc)
 
     rapport.brutes, rapport.gardees, rapport.nouvelles = len(brutes), len(fusionnees), len(nouvelles)
@@ -120,8 +136,10 @@ def passage(config: Config, base: stockage.Base, maintenant_utc: datetime | None
     rapport.par_fil = dict(collections.Counter(str(o.fil) for o in fusionnees))
     rapport.par_famille = dict(collections.Counter(o.famille for o in fusionnees))
     rapport.par_type_employeur = dict(collections.Counter(str(o.type_employeur) for o in fusionnees))
-    rapport.exemples_nouvelles = [f"[{o.fil}/{o.famille}] {o.titre} · {o.entreprise} · {o.lieu}"
-                                  for o in sorted(nouvelles, key=lambda o: o.priorite)[:25]]
+    rapport.par_niveau = dict(collections.Counter(notes[o.cle][1].value for o in nouvelles))
+    meilleures = sorted(nouvelles, key=lambda o: notes[o.cle][0].total, reverse=True)[:25]
+    rapport.exemples_nouvelles = [f"{notes[o.cle][1].value} {notes[o.cle][0].total:+d} [{o.fil}/{o.famille}] {o.titre} · "
+                                  f"{o.entreprise} · {o.lieu} ({', '.join(notes[o.cle][0].raisons(2))})" for o in meilleures]
     stockage.purger(base)
     return rapport
 
