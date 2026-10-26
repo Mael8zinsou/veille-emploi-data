@@ -44,7 +44,9 @@ jobs:
           ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
           ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
           VEILLE_BASE: data/offres.sqlite
-          VEILLE_SOURCES: france_travail,adzuna,hellowork
+          # Adzuna est exclue des essais pour ménager son quota (250 requêtes par mois) ;
+          # elle est couverte par la comparaison v1 / v2.
+          VEILLE_SOURCES: france_travail,hellowork
           PYTHONIOENCODING: utf-8
         run: |
           ls -la data/ || true
