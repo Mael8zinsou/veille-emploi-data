@@ -68,3 +68,19 @@ def test_resume_du_rapport(tmp_path, config):
                      sources=_sources(france_travail=lambda ctx: [offre()], adzuna=lambda ctx: [], hellowork=lambda ctx: []))
     texte = "\n".join(r.resume())
     assert "france_travail : ok, 1 offres" in texte and "nouvelles 1" in texte
+
+
+def test_memoire_de_source_conservee(tmp_path, config):
+    base = stockage.ouvrir(tmp_path / "b.sqlite")
+    vues = []
+
+    def source(ctx):
+        vues.append(dict(ctx.memoire))
+        ctx.memoire["MEF_1"] = {"hiringOrganization": "DGFiP"}
+        return []
+
+    sources = _sources(service_public=source)
+    for heure in (9, 12):
+        main.passage(config, base, datetime(2026, 10, 27, heure, 0), sources_imposees=["service_public"],
+                     session=object(), sources=sources)
+    assert vues == [{}, {"MEF_1": {"hiringOrganization": "DGFiP"}}]

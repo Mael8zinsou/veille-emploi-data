@@ -47,14 +47,12 @@ jobs:
           # Comme le mode ombre : planning réel, Adzuna exclue (quota partagé avec la v1),
           # envois simulés (aucun jeton Telegram transmis).
           VEILLE_SOURCES_EXCLUES: adzuna
+          # Pour essayer une seule source : VEILLE_SOURCES: <nom> (essai du lot 5 : service_public).
           VEILLE_ENVOI: simulation
-          # Fichier de suivi en mode essai : onglets « Veille (essai) » et « Route B (essai) »
-          # seulement ; Candidatures et Entreprises ne sont que lus.
-          VEILLE_SUIVI: essai
+          # Fichier de suivi non touché (la production écrit dans l'onglet Veille).
+          VEILLE_SUIVI: aucun
           GOOGLE_TOKEN_JSON: ${{ secrets.GOOGLE_TOKEN_JSON }}
           SUIVI_SHEET_ID: ${{ secrets.SUIVI_SHEET_ID }}
-          # Dimanche 25/10 à 18h30 (Paris) : sources, résumé du soir et bilan de la semaine sont dus.
-          VEILLE_MAINTENANT: '2026-10-25T17:30:00'
           PYTHONIOENCODING: utf-8
         run: |
           ls -la data/ || true

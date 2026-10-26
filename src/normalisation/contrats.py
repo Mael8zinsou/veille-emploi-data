@@ -36,6 +36,7 @@ _CORRESPONDANCES: list[tuple[str, Contrat]] = [
     ("saisonnier", Contrat.AUTRE),
     ("fra", Contrat.AUTRE),                # franchise
     ("cce", Contrat.AUTRE),
+    ("reserve aux fonctionnaires", Contrat.AUTRE),   # Choisir le service public
 ]
 
 
