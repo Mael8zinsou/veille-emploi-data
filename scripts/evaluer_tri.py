@@ -53,6 +53,7 @@ class Resultat:
     note: int | None
     niveau: str | None
     raisons: list[str] = field(default_factory=list)
+    detail: str = ""
 
 
 def rejouer(offres: list[tuple[int, Offre]], avis: dict[int, str], config: Config, jour: date) -> list[Resultat]:
@@ -63,7 +64,7 @@ def rejouer(offres: list[tuple[int, Offre]], avis: dict[int, str], config: Confi
         o = filtres.normaliser_offre(o, config)
         r = filtres.motif_de_rejet(o, config, jour)
         if r:
-            sortie.append(Resultat(numero, avis[numero], o, r[0].value, None, None))
+            sortie.append(Resultat(numero, avis[numero], o, r[0].value, None, None, detail=r[1]))
             continue
         n = noter(o, config, jour)
         sortie.append(Resultat(numero, avis[numero], o, None, n.total, niveau(o, n, config).value, n.raisons(3)))
@@ -141,8 +142,9 @@ def diagnostic(resultats: list[Resultat], balayage: list[dict]) -> list[str]:
     lignes = []
     for avis in (POSTULE, PEUT_ETRE, HORS_CIBLE):
         lignes.append(f"Notes « {avis} » : " + _quantiles([r.note for r in resultats if r.avis == avis and r.note is not None]))
-    rejets = collections.Counter(r.motif_rejet for r in resultats if r.avis == POSTULE and r.motif_rejet)
-    lignes.append("« je postule » rejetées par les filtres : " + (", ".join(f"{k} {v}" for k, v in rejets.items()) or "aucune"))
+    for avis in (POSTULE, HORS_CIBLE):
+        rejets = collections.Counter(f"{r.motif_rejet} ({r.detail})" for r in resultats if r.avis == avis and r.motif_rejet)
+        lignes.append(f"« {avis} » rejetées par les filtres : " + (", ".join(f"{k} x{v}" for k, v in rejets.items()) or "aucune"))
     for avis in (POSTULE, HORS_CIBLE):
         familles = collections.Counter(r.offre.famille or "?" for r in resultats if r.avis == avis)
         employeurs = collections.Counter(str(r.offre.type_employeur) for r in resultats if r.avis == avis)
