@@ -53,10 +53,16 @@ class ClientSheets:
             raise ErreurSheets(f"{action} : HTTP {r.status_code} {r.text[:300]}")
         return r.json() if r.text else {}
 
-    def onglets(self) -> dict[str, int]:
-        r = self.session.get(f"{API}/{self.sheet_id}", params={"fields": "sheets.properties(title,sheetId)"})
+    def onglets_detail(self) -> dict[str, dict]:
+        r = self.session.get(f"{API}/{self.sheet_id}",
+                             params={"fields": "sheets.properties(title,sheetId,gridProperties.rowCount)"})
         donnees = self._verifier(r, "lecture des onglets")
-        return {s["properties"]["title"]: s["properties"]["sheetId"] for s in donnees.get("sheets", [])}
+        return {s["properties"]["title"]: {"id": s["properties"]["sheetId"],
+                                           "lignes": s["properties"].get("gridProperties", {}).get("rowCount", 0)}
+                for s in donnees.get("sheets", [])}
+
+    def onglets(self) -> dict[str, int]:
+        return {t: d["id"] for t, d in self.onglets_detail().items()}
 
     def lire(self, plage: str, rendu: str = "FORMATTED_VALUE") -> list[list]:
         r = self.session.get(f"{API}/{self.sheet_id}/values/{quote(plage)}", params={"valueRenderOption": rendu})
@@ -103,6 +109,37 @@ class ClientSheets:
                          "showCustomUi": True, "strict": True}}})
         self._lot(requetes)
         return sheet
+
+    def ajouter_lignes(self, onglet: str, lignes: list[list], premiere: int = 2,
+                       cases_a_cocher: int | None = None) -> int:
+        """Ajoute `lignes` après la dernière ligne remplie (colonne A), sans rien écraser.
+
+        Rend le numéro de la première ligne écrite. `cases_a_cocher` : index de colonne qui
+        reçoit une case à cocher sur les lignes ajoutées. Agrandit l'onglet si besoin.
+        """
+        if not lignes:
+            return 0
+        colonne_a = self.lire(f"'{onglet}'!A{premiere}:A")
+        debut = premiere + len(colonne_a)
+        fin = debut + len(lignes) - 1
+        largeur = max(len(lg) for lg in lignes)
+        derniere_col = chr(ord("A") + largeur - 1)
+        if any(any(str(v).strip() for v in lg) for lg in self.lire(f"'{onglet}'!A{debut}:{derniere_col}{fin}", "FORMULA")):
+            raise ErreurSheets(f"{onglet} : les lignes {debut} à {fin} ne sont pas vides, rien n'est écrit")
+        detail = self.onglets_detail()[onglet]
+        requetes: list[dict] = []
+        if fin > detail["lignes"]:
+            requetes.append({"appendDimension": {"sheetId": detail["id"], "dimension": "ROWS",
+                                                 "length": fin - detail["lignes"] + 500}})
+        if requetes:
+            self._lot(requetes)
+        self._ecrire(f"'{onglet}'!A{debut}", lignes)
+        if cases_a_cocher is not None:
+            self._lot([{"setDataValidation": {
+                "range": {"sheetId": detail["id"], "startRowIndex": debut - 1, "endRowIndex": fin,
+                          "startColumnIndex": cases_a_cocher, "endColumnIndex": cases_a_cocher + 1},
+                "rule": {"condition": {"type": "BOOLEAN"}, "showCustomUi": True}}}])
+        return debut
 
     def ecrire_cellules_vides(self, onglet: str, cellules: dict[str, object]) -> None:
         """Écrit chaque cellule (« B7 » -> valeur) seulement si elle est vide à la relecture."""

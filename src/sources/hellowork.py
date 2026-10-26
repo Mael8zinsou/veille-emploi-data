@@ -67,7 +67,7 @@ def fetch(ctx: Contexte) -> list[Offre]:
                 params["l"] = recherche.l
             try:
                 r = ctx.session.get(URL, params=params, timeout=20)
-            except Exception as e:
+            except Exception as e:  # réseau : on journalise et on passe
                 ctx.erreurs.append(f"hellowork : {e.__class__.__name__}")
                 break
             if _refuse(r.status_code, r.text):

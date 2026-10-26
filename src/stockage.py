@@ -259,3 +259,97 @@ def purger(base: Base, jours_offres: int = 180, jours_rejets: int = 90) -> tuple
         n_o = c.execute("DELETE FROM offres WHERE derniere_vue < ?", (limite_o,)).rowcount
         n_r = c.execute("DELETE FROM rejets WHERE vu_le < ?", (limite_r,)).rowcount
     return n_o, n_r
+
+
+# --------------------------------------------------------------------------- envois (lot 3)
+
+def _ligne(r: sqlite3.Row) -> dict:
+    d = dict(r)
+    d["composantes"] = json.loads(d.get("raisons") or "[]")
+    tri = sorted(d["composantes"], key=lambda c: abs(c[1]), reverse=True)
+    d["raisons"] = [f"{n} {p:+d}" for n, p in tri[:3]]
+    d["signaux"] = [n for n, _ in d["composantes"] if n in ("seconde main", "employeur non indiqué", "republiée",
+                                                             "peu candidatée", "école")]
+    return d
+
+
+def alertes_a_envoyer(base: Base) -> list[dict]:
+    with closing(base.connexion()) as c:
+        rows = c.execute("SELECT * FROM offres WHERE niveau = 'alerte' AND etat_envoi IN ('aucun', 'en_attente') "
+                         "ORDER BY note DESC").fetchall()
+    return [_ligne(r) for r in rows]
+
+
+def a_resumer(base: Base, fil: str) -> list[dict]:
+    with closing(base.connexion()) as c:
+        rows = c.execute("SELECT * FROM offres WHERE niveau = 'resume' AND etat_envoi = 'aucun' AND fil = ? "
+                         "ORDER BY note DESC", (fil,)).fetchall()
+    return [_ligne(r) for r in rows]
+
+
+def marquer(base: Base, cles: list[str], etat: str, le: datetime | None = None) -> None:
+    with closing(base.connexion()) as c, c:
+        c.executemany("UPDATE offres SET etat_envoi = ?, envoyee_le = ? WHERE cle = ?",
+                      [(etat, _maintenant(le), cle) for cle in cles])
+
+
+def stats_periode(base: Base, debut: datetime, fin: datetime) -> dict:
+    d, f = debut.strftime(FORMAT), fin.strftime(FORMAT)
+    with closing(base.connexion()) as c:
+        par_fil = dict(c.execute("SELECT fil, COUNT(*) FROM offres WHERE envoyee_le BETWEEN ? AND ? "
+                                 "AND etat_envoi IN ('envoyee', 'simulee') AND niveau IN ('alerte', 'resume') "
+                                 "GROUP BY fil", (d, f)).fetchall())
+        alertes = c.execute("SELECT COUNT(*) FROM offres WHERE envoyee_le BETWEEN ? AND ? AND niveau = 'alerte' "
+                            "AND etat_envoi IN ('envoyee', 'simulee')", (d, f)).fetchone()[0]
+        sources = [dict(r) for r in c.execute(
+            "SELECT tache, COUNT(*) AS passages, SUM(succes) AS succes, COALESCE(SUM(nb_offres), 0) AS offres "
+            "FROM executions WHERE debut BETWEEN ? AND ? GROUP BY tache ORDER BY tache", (d, f)).fetchall()]
+    for s in sources:
+        s["echecs_consecutifs"] = echecs_consecutifs(base, s["tache"])
+    return {"par_fil": par_fil, "alertes": alertes, "sources": sources}
+
+
+def derniere_erreur(base: Base, tache: str) -> str:
+    with closing(base.connexion()) as c:
+        r = c.execute("SELECT erreur FROM executions WHERE tache = ? AND succes = 0 ORDER BY id DESC LIMIT 1",
+                      (tache,)).fetchone()
+    return (r[0] or "") if r else ""
+
+
+# --------------------------------------------------------------------------- fichier de suivi (lot 4)
+
+def a_ajouter_veille(base: Base) -> list[dict]:
+    """Offres présentées (alerte ou résumé) pas encore ajoutées à l'onglet Veille."""
+    with closing(base.connexion()) as c:
+        rows = c.execute("SELECT * FROM offres WHERE niveau IN ('alerte', 'resume') AND ajoutee_veille_le IS NULL "
+                         "AND importee_v1 = 0 ORDER BY premiere_vue, note DESC").fetchall()
+    return [_ligne(r) for r in rows]
+
+
+def marquer_veille(base: Base, cles: list[str], le: datetime | None = None) -> None:
+    with closing(base.connexion()) as c, c:
+        c.executemany("UPDATE offres SET ajoutee_veille_le = ? WHERE cle = ?", [(_maintenant(le), k) for k in cles])
+
+
+def candidats_route_b(base: Base, depuis: datetime) -> list[dict]:
+    """Employeurs finaux identifiés dont une offre a été rejetée pour séniorité ou ancienneté."""
+    with closing(base.connexion()) as c:
+        rows = c.execute("SELECT * FROM rejets WHERE motif IN ('seniorite', 'trop_ancienne') AND type_employeur = 'final' "
+                         "AND entreprise <> '' AND vu_le >= ? ORDER BY vu_le", (depuis.strftime(FORMAT),)).fetchall()
+    return [dict(r) for r in rows]
+
+
+def route_b_connues(base: Base) -> set[str]:
+    with closing(base.connexion()) as c:
+        return {r[0] for r in c.execute("SELECT entreprise_normalisee FROM route_b")}
+
+
+def route_b_ajoutees_depuis(base: Base, depuis: datetime) -> int:
+    with closing(base.connexion()) as c:
+        return c.execute("SELECT COUNT(*) FROM route_b WHERE ajoutee_le >= ?", (depuis.strftime(FORMAT),)).fetchone()[0]
+
+
+def ajouter_route_b(base: Base, nom_normalise: str, le: datetime | None = None) -> None:
+    with closing(base.connexion()) as c, c:
+        c.execute("INSERT OR IGNORE INTO route_b (entreprise_normalisee, ajoutee_le) VALUES (?, ?)",
+                  (nom_normalise, _maintenant(le)))
