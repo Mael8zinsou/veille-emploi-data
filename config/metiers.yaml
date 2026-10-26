@@ -7,8 +7,9 @@
 # Quand un titre relève de plusieurs familles, la priorité la plus haute l'emporte
 # (1 avant 2 avant 3), puis l'ordre de ce fichier.
 #
-# `romes` : codes ROME de France Travail rattachés à la famille. Ils servent à interroger
-# l'API et à reconnaître une offre dont le titre est flou mais le code explicite.
+# `romes` : codes ROME de France Travail rattachés à la famille, à titre documentaire. Ils
+# ne servent pas à classer : France Travail range parfois sous un code data des offres sans
+# rapport (essai du 26/10). Les codes interrogés sont dans sources.yaml.
 
 familles:
   - nom: data_engineering
@@ -171,3 +172,5 @@ familles:
       # Filet large : tout titre contenant « data » entre en priorité 3. La note et
       # l'évaluation décident ensuite de ce qui mérite d'être vu.
       - data
+      - donnees
+      - analyse de donnees

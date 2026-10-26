@@ -55,9 +55,15 @@ def test_hors_cible(config, titre):
     assert metiers.reconnaitre(titre, config.metiers)[0] is None
 
 
-def test_code_rome_en_secours(config):
-    f, motif = metiers.reconnaitre("Ingénieur en analyse de simulations", config.metiers, code_rome="M1811")
-    assert f.nom == "data_engineering" and motif == "rome M1811"
+@pytest.mark.parametrize("titre", ["IDEC (F/H)", "Mecanicien Rapide H/f", "Développeur GO/C# - F/H"])
+def test_code_rome_ne_classe_pas(config, titre):
+    # Offres réelles rangées par France Travail sous M1889 (ingénieur IA) : le titre seul décide.
+    assert metiers.reconnaitre(titre, config.metiers, code_rome="M1889")[0] is None
+
+
+def test_filet_donnees(config):
+    f, _ = metiers.reconnaitre("Ingénieur en analyse de données de simulations", config.metiers)
+    assert f.nom == "satellites"
 
 
 # --------------------------------------------------------------------------- contrats
