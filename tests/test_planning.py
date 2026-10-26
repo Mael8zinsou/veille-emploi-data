@@ -33,17 +33,18 @@ def test_premier_passage_tout_est_du(config):
 
 
 def test_intervalles(config):
-    succes = {"france_travail": MARDI_HIVER_10H - timedelta(minutes=30),
-              "hellowork": MARDI_HIVER_10H - timedelta(minutes=55),
-              "adzuna": MARDI_HIVER_10H - timedelta(hours=2)}
+    t = config.planning.taches
+    succes = {"france_travail": MARDI_HIVER_10H - timedelta(minutes=t["france_travail"].intervalle_minutes - 5),
+              "hellowork": MARDI_HIVER_10H - timedelta(minutes=t["hellowork"].intervalle_minutes + 5),
+              "adzuna": MARDI_HIVER_10H - timedelta(minutes=t["adzuna"].intervalle_minutes - 60)}
     p = plan(config, MARDI_HIVER_10H, succes)
     assert p.sources == ["hellowork"]
     assert "france_travail" in p.raisons and "adzuna" in p.raisons
 
 
 def test_passage_en_retard_ne_perd_rien(config):
-    # Le cron a sauté trois heures : les sources sont dues, une seule fois.
-    succes = {n: MARDI_HIVER_10H - timedelta(hours=7) for n in ("france_travail", "hellowork", "adzuna")}
+    # Plus d'une journée sans passage réussi : tout est dû, une seule fois.
+    succes = {n: MARDI_HIVER_10H - timedelta(hours=25) for n in ("france_travail", "hellowork", "adzuna")}
     assert set(plan(config, MARDI_HIVER_10H, succes).sources) == {"france_travail", "adzuna", "hellowork"}
 
 

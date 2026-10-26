@@ -181,11 +181,16 @@ class Adzuna(_Strict):
     requetes: list[RequeteAdzuna]
 
 
+class RechercheHelloWork(_Strict):
+    k: str
+    l: str | None = None  # noqa: E741 (nom du paramètre de l'URL HelloWork)
+
+
 class HelloWork(_Strict):
     max_pages: int = Field(ge=1, le=5)
     delai_secondes: float = Field(ge=1.0)
-    emploi: list[str]
-    alternance: list[str] = []
+    emploi: list[RechercheHelloWork]
+    alternance: list[RechercheHelloWork] = []
 
 
 class Sources(_Strict):
