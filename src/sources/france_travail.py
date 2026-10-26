@@ -1,131 +1,116 @@
-"""
-Source France Travail (API officielle, https://francetravail.io/).
-OAuth2 client_credentials -> token 24h, puis recherche d'offres.
+"""France Travail, API Offres d'emploi v2 (socle, sondage du lot 0).
 
-Migré depuis veille_emploi.py V2. Correctif V2 conservé : l'API exige
-minCreationDate ET maxCreationDate ensemble (ISO 8601), sinon 400.
-
-Signature standardisée : fetch(config, session) -> list[Offre].
-Credentials lus dans l'environnement (FT_CLIENT_ID, FT_CLIENT_SECRET).
+* Authentification OAuth2 (client_credentials), jeton valable 24 heures.
+* Emploi : une requête par code ROME, puis par mot-clé pour les métiers sans code propre.
+* Alternance : `natureContrat` E2 (apprentissage) et FS (professionnalisation).
+* L'API exige `minCreationDate` ET `maxCreationDate` ensemble (correctif hérité de la v1).
+* Pagination par `range` (150 offres par page), tant que `Content-Range` annonce la suite.
+* Champs exploités, nouveaux en v2 : `experienceExige` et `experienceLibelle` (séniorité
+  sans deviner), `offresManqueCandidats` (offre peu candidatée), `romeCode`, partenaire de
+  diffusion.
 """
+from __future__ import annotations
+
 import logging
 import os
-from datetime import datetime, timedelta
+import time
+from datetime import timedelta
 
-import requests
+from src.models import Fil, Offre
+from src.normalisation.experience import depuis_france_travail
+from src.sources import Contexte, SourceIndisponible
 
-from src.models import Offre
-from src.utils.http import DEFAULT_TIMEOUT
-
+NOM = "france_travail"
 logger = logging.getLogger(__name__)
 
-TOKEN_URL = "https://entreprise.francetravail.fr/connexion/oauth2/access_token"
-SEARCH_URL = "https://api.francetravail.io/partenaire/offresdemploi/v2/offres/search"
-
-# Requêtes envoyées (motsCles). FT plafonne à 150 résultats par requête.
-REQUETES = [
-    "data engineer",
-    "ingénieur données",
-    "data",
-]
-MAX_RESULTATS = 150
-TYPE_CONTRAT = "CDI,CDD,MIS,LIB"  # tous types pertinents, intérim seul exclu
+URL_JETON = "https://entreprise.francetravail.fr/connexion/oauth2/access_token"
+URL_RECHERCHE = "https://api.francetravail.io/partenaire/offresdemploi/v2/offres/search"
+URL_DETAIL = "https://candidat.francetravail.fr/offres/recherche/detail/{id}"
+PAR_PAGE = 150
+PAUSE = 0.25   # secondes entre deux requêtes : l'API limite le débit par application
 
 
-def _get_token(session: requests.Session, client_id: str, client_secret: str) -> str | None:
-    """Récupère un token OAuth2 (valable 24h). None en cas d'échec."""
-    params = {"realm": "/partenaire"}
-    data = {
-        "grant_type": "client_credentials",
-        "client_id": client_id,
-        "client_secret": client_secret,
-        "scope": "api_offresdemploiv2 o2dsoffre",
-    }
-    try:
-        r = session.post(TOKEN_URL, params=params, data=data, timeout=DEFAULT_TIMEOUT)
-        if r.status_code >= 400:
-            logger.warning("France Travail token : HTTP %s", r.status_code)
-            return None
-        return r.json().get("access_token")
-    except (requests.RequestException, ValueError) as e:
-        logger.warning("France Travail token : %s", e)
-        return None
+def _jeton(ctx: Contexte) -> str:
+    cid, secret = os.getenv("FT_CLIENT_ID"), os.getenv("FT_CLIENT_SECRET")
+    if not cid or not secret:
+        raise SourceIndisponible("france_travail : FT_CLIENT_ID ou FT_CLIENT_SECRET absent")
+    r = ctx.post(URL_JETON, params={"realm": "/partenaire"},
+                 data={"grant_type": "client_credentials", "client_id": cid, "client_secret": secret,
+                       "scope": "api_offresdemploiv2 o2dsoffre"})
+    jeton = r.json().get("access_token") if r is not None else None
+    if not jeton:
+        raise SourceIndisponible("france_travail : jeton refusé")
+    return jeton
 
 
-def _fetch_une_requete(
-    session: requests.Session,
-    token: str,
-    mots_cles: str,
-    max_days_old: int,
-) -> list[Offre]:
-    """Une requête FT -> liste d'Offre. Erreur isolée : log + []."""
-    headers = {"Authorization": f"Bearer {token}", "Accept": "application/json"}
-    # Correctif V2 : minCreationDate ET maxCreationDate obligatoires ensemble.
-    now = datetime.now()
-    min_date = (now - timedelta(days=max_days_old)).strftime("%Y-%m-%dT00:00:00Z")
-    max_date = now.strftime("%Y-%m-%dT%H:%M:%SZ")
-    params = {
-        "motsCles": mots_cles,
-        "range": f"0-{MAX_RESULTATS - 1}",
-        "minCreationDate": min_date,
-        "maxCreationDate": max_date,
-        "typeContrat": TYPE_CONTRAT,
-    }
-    try:
-        r = session.get(SEARCH_URL, headers=headers, params=params, timeout=DEFAULT_TIMEOUT)
-        if r.status_code == 204:
-            logger.info("France Travail '%s' : aucun résultat", mots_cles)
-            return []
-        if r.status_code not in (200, 206):
-            logger.warning("France Travail '%s' : HTTP %s", mots_cles, r.status_code)
-            return []
-        data = r.json()
-    except (requests.RequestException, ValueError) as e:
-        logger.warning("France Travail '%s' : %s", mots_cles, e)
-        return []
+def convertir(item: dict, fil: Fil) -> Offre:
+    lieu = item.get("lieuTravail") or {}
+    entreprise = item.get("entreprise") or {}
+    origine = item.get("origineOffre") or {}
+    partenaires = origine.get("partenaires") or []
+    annees, debutant = depuis_france_travail(item.get("experienceExige"), item.get("experienceLibelle"))
+    nature = item.get("natureContrat") or ""
+    type_c = f"{item.get('typeContrat') or ''} {item.get('typeContratLibelle') or ''}".strip()
+    return Offre(
+        source=NOM,
+        id_source=str(item.get("id", "")),
+        titre=item.get("intitule") or "",
+        entreprise=entreprise.get("nom") or "",
+        lieu=lieu.get("libelle") or "",
+        url=origine.get("urlOrigine") or URL_DETAIL.format(id=item.get("id", "")),
+        description=(item.get("description") or "")[:3000],
+        # La nature (apprentissage, professionnalisation) passe avant le type : un CDD
+        # d'apprentissage est une alternance.
+        contrat_brut=f"{nature} | {type_c}" if nature and nature != "Contrat travail" else type_c,
+        date_publication=(item.get("dateCreation") or "")[:10],
+        experience_annees=annees,
+        debutant_accepte=debutant,
+        faible_concurrence=bool(item.get("offresManqueCandidats")),
+        code_rome=item.get("romeCode") or "",
+        diffuseur=(partenaires[0].get("nom") or "") if partenaires else "",
+        fil_demande=fil,
+    )
 
-    offres = []
-    for item in data.get("resultats", []):
-        lieu = item.get("lieuTravail") or {}
-        entreprise = item.get("entreprise") or {}
-        origine = item.get("origineOffre") or {}
-        url = origine.get("urlOrigine") or (
-            f"https://candidat.francetravail.fr/offres/recherche/detail/{item.get('id', '')}"
-        )
-        offres.append(
-            Offre(
-                source="France Travail",
-                titre=item.get("intitule", "") or "",
-                entreprise=entreprise.get("nom", "") or "—",
-                localisation=lieu.get("libelle", "") or "—",
-                contrat=item.get("typeContratLibelle", "") or "",
-                description=(item.get("description", "") or "")[:500],
-                url=url,
-                date_publication=(item.get("dateCreation", "") or "")[:10],
-            )
-        )
-    logger.info("France Travail '%s' : %d offres", mots_cles, len(offres))
+
+def _rechercher(ctx: Contexte, jeton: str, params: dict, fil: Fil, max_pages: int) -> list[Offre]:
+    entetes = {"Authorization": f"Bearer {jeton}", "Accept": "application/json"}
+    fenetre = ctx.config.sources.france_travail.fenetre_jours
+    dates = {"minCreationDate": (ctx.maintenant_utc - timedelta(days=fenetre)).strftime("%Y-%m-%dT00:00:00Z"),
+             "maxCreationDate": ctx.maintenant_utc.strftime("%Y-%m-%dT%H:%M:%SZ")}
+    offres: list[Offre] = []
+    for page in range(max_pages):
+        debut = page * PAR_PAGE
+        time.sleep(PAUSE)
+        r = ctx.get(URL_RECHERCHE, headers=entetes,
+                    params={**params, **dates, "range": f"{debut}-{debut + PAR_PAGE - 1}"})
+        if r is None or r.status_code == 204:
+            break
+        try:
+            resultats = r.json().get("resultats", [])
+        except ValueError:
+            ctx.erreurs.append("france_travail : JSON illisible")
+            break
+        offres.extend(convertir(item, fil) for item in resultats)
+        total = r.headers.get("Content-Range", "").rpartition("/")[2]
+        if not total.isdigit() or debut + PAR_PAGE >= int(total):
+            break
     return offres
 
 
-def fetch(config, session: requests.Session) -> list[Offre]:
-    """
-    Interroge France Travail sur plusieurs requêtes et agrège les offres.
-    Retourne [] si les credentials manquent ou si le token échoue.
-    """
-    client_id = os.getenv("FT_CLIENT_ID")
-    client_secret = os.getenv("FT_CLIENT_SECRET")
-    if not client_id or not client_secret:
-        logger.warning("France Travail : FT_CLIENT_ID / FT_CLIENT_SECRET absents, source ignorée.")
-        return []
-
-    token = _get_token(session, client_id, client_secret)
-    if not token:
-        return []
-
-    max_days_old = int(getattr(config, "fraicheur_max_jours", 14))
-
+def fetch(ctx: Contexte) -> list[Offre]:
+    cfg = ctx.config.sources.france_travail
+    jeton = _jeton(ctx)
     offres: list[Offre] = []
-    for query in REQUETES:
-        offres.extend(_fetch_une_requete(session, token, query, max_days_old))
+    e = cfg.emploi
+    for code in e.romes:
+        offres += _rechercher(ctx, jeton, {"codeROME": code, "typeContrat": e.types_contrat}, Fil.EMPLOI, cfg.max_pages)
+    for mot in e.mots_cles:
+        offres += _rechercher(ctx, jeton, {"motsCles": mot, "typeContrat": e.types_contrat}, Fil.EMPLOI, 1)
+    a = cfg.alternance
+    for code in a.romes:
+        offres += _rechercher(ctx, jeton, {"codeROME": code, "natureContrat": a.nature_contrat}, Fil.ALTERNANCE, 1)
+    for mot in a.mots_cles:
+        offres += _rechercher(ctx, jeton, {"motsCles": mot, "natureContrat": a.nature_contrat}, Fil.ALTERNANCE, 1)
+    ctx.verifier(NOM, preliminaires=1)
+    logger.info("france_travail : %d offres, %d requêtes", len(offres), ctx.requetes)
     return offres

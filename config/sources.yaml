@@ -1,0 +1,38 @@
+# Requêtes envoyées à chaque source, par fil (résultats du lot 0 : docs/sondages_lot0.md).
+
+actives:
+  france_travail: true
+  adzuna: true
+  hellowork: true
+
+france_travail:
+  # Fenêtre de recherche : les offres créées depuis N jours (le dédoublonnage écarte le déjà vu).
+  fenetre_jours: 2
+  max_pages: 2              # 150 offres par page
+  emploi:
+    types_contrat: CDI,CDD,MIS
+    # Codes ROME confirmés au sondage du 25/10.
+    romes: [M1811, M1405, M1419, M1889, M1403]
+    # Métiers sans code ROME propre.
+    mots_cles: [analytics engineer, power bi, data steward, data quality, mlops, llm]
+  alternance:
+    nature_contrat: E2,FS   # apprentissage, professionnalisation
+    romes: [M1811, M1405, M1419, M1889]
+    mots_cles: [data, intelligence artificielle]
+
+adzuna:
+  # Recherche sur le titre (title_only), tri par date. Chaque page coûte 1 requête sur le quota.
+  # Sondage du 25/10 : environ 365 titres « data » par jour. Deux pages (100 offres) toutes les
+  # 6 heures couvrent le flux, pour 6 requêtes par jour (environ 186 par mois).
+  # Pas de what_exclude : il porte sur tout le texte et écarterait une offre junior dont la
+  # description mentionne « senior ». La séniorité est filtrée sur le titre, par nos règles.
+  max_jours: 2
+  par_page: 50
+  requetes:
+    - {nom: titre_data, title_only: data, pages: 2}
+
+hellowork:
+  max_pages: 2
+  delai_secondes: 2.0
+  emploi: [data engineer, data scientist, data analyst, ingenieur ia, analytics engineer, machine learning]
+  alternance: [alternance data, alternance intelligence artificielle]

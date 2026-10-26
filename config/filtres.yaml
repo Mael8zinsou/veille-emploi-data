@@ -1,0 +1,327 @@
+# Règles de normalisation et filtres éliminatoires (cahier des charges § 3 et § 6.1).
+# Tous les motifs s'écrivent sans accents, en minuscules. Comparaison mot à mot.
+
+# Une offre plus ancienne est rejetée (motif trop_ancienne).
+fraicheur_max_jours: 7
+
+# Durée minimale d'un CDD ou d'une mission d'intérim, quand la source la donne.
+duree_min_mois: 6
+
+lieux:
+  # Lieux hors France métropolitaine : rejet (motif lieu_etranger), sauf télétravail complet.
+  etrangers:
+    - belgique
+    - belgium
+    - bruxelles
+    - brussels
+    - luxembourg
+    - suisse
+    - switzerland
+    - geneve
+    - zurich
+    - lausanne
+    - monaco
+    - allemagne
+    - germany
+    - berlin
+    - munich
+    - espagne
+    - spain
+    - madrid
+    - barcelona
+    - barcelone
+    - italie
+    - italy
+    - milan
+    - portugal
+    - lisbonne
+    - lisbon
+    - royaume uni
+    - united kingdom
+    - london
+    - londres
+    - irlande
+    - ireland
+    - dublin
+    - pays bas
+    - netherlands
+    - amsterdam
+    - pologne
+    - poland
+    - varsovie
+    - warsaw
+    - etats unis
+    - united states
+    - usa
+    - new york
+    - san francisco
+    - canada
+    - montreal
+    - toronto
+    - maroc
+    - morocco
+    - casablanca
+    - tunisie
+    - tunis
+    - inde
+    - india
+    - bangalore
+    - singapour
+    - singapore
+    - dubai
+    - australie
+    - australia
+    # Outre-mer : hors France métropolitaine.
+    - guadeloupe
+    - martinique
+    - guyane
+    - la reunion
+    - reunion
+    - mayotte
+    - polynesie
+    - nouvelle caledonie
+    - "971"
+    - "972"
+    - "973"
+    - "974"
+    - "976"
+  # Télétravail complet : un lieu étranger est alors accepté (CDC § 3.4). Le télétravail
+  # partiel (« 2 jours par semaine ») ne compte pas.
+  teletravail_complet:
+    - teletravail complet
+    - teletravail total
+    - full remote
+    - fully remote
+    - 100 remote
+    - 100 teletravail
+    - remote
+  preferees:
+    - paris
+    - ile de france
+    - hauts de seine
+    - seine saint denis
+    - val de marne
+    - essonne
+    - yvelines
+    - val d oise
+    - seine et marne
+    - "75"
+    - "77"
+    - "78"
+    - "91"
+    - "92"
+    - "93"
+    - "94"
+    - "95"
+    - lille
+    - hauts de france
+    - nord
+    - pas de calais
+    - "59"
+    - "62"
+
+contrats:
+  # Indices dans le TITRE, prioritaires sur le contrat déclaré par la source.
+  # L'ordre compte : alternance avant stage (« stage de fin d'études / alternance »).
+  indices_titre:
+    alternance: [alternance, alternant, alternante, apprenti, apprentie, apprentissage, contrat pro,
+                 contrat de professionnalisation, professionnalisation, work study]
+    immersion: [immersion, pmsmp]
+    stage: [stage, stagiaire, internship, intern, stage de fin d etudes]
+    freelance: [freelance, free lance, independant, portage salarial, mission freelance]
+    cdi: [cdi]
+    cdd: [cdd]
+    interim: [interim, interimaire]
+
+seniorite:
+  # Un de ces mots dans le titre : rejet (motif seniorite).
+  titre:
+    - senior
+    - sr
+    - lead
+    - leader
+    - staff
+    - principal
+    - head of
+    - head
+    - manager
+    - directeur
+    - directrice
+    - director
+    - architecte
+    - architect
+    - expert
+    - experte
+    - vp
+    - cto
+    - chief
+  # Expressions retirées du titre avant ce contrôle : ce sont des métiers, pas des grades.
+  exceptions:
+    - data manager
+    - data management
+    - product manager data
+  # Exigence d'expérience au-delà de laquelle l'offre est rejetée.
+  annees_max: 3
+
+employeurs:
+  # Plateformes de missions : rejet (motif plateforme_missions).
+  plateformes_missions:
+    - collective work
+    - collective
+    - free work
+    - freework
+    - malt
+    - comet
+    - creme de la creme
+    - freelance republik
+    - lehibou
+    - le hibou
+  # Republicateurs, agrégateurs, jobboards, cabinets et agences : « seconde main ».
+  intermediaires:
+    - cadremploi
+    - handicap job
+    - hellowork
+    - direct emploi
+    - directemploi
+    - meteojob
+    - jobijoba
+    - talents handicap
+    - forums talents handicap
+    - w hub
+    - whub
+    - figaro classifieds
+    - jobgether
+    - jobteaser
+    - indeed
+    - talent com
+    - pmejob
+    - beetween
+    - xtramile
+    - broadbean
+    - talentplug
+    - jobinlive
+    - softy
+    - choisir le service public
+    - engagement jeunes
+    - proaxian
+    - sthree
+    - lhh
+    - recruitment
+    - recrutement
+    - talent acquisition
+    - externatic
+    - hays
+    - michael page
+    - page personnel
+    - robert half
+    - expectra
+    - randstad
+    - adecco
+    - manpower
+    - proman
+    - synergie
+    - startpeople
+    - side
+    - gojob
+  esn:
+    - alten
+    - sopra
+    - steria
+    - cgi
+    - capgemini
+    - devoteam
+    - inetum
+    - expleo
+    - assystem
+    - segula
+    - akkodis
+    - ausy
+    - klanik
+    - dgtl
+    - step up
+    - celad
+    - soors
+    - amaris
+    - mc2i
+    - umanis
+    - keyrus
+    - talan
+    - atos
+    - modis
+    - viveris
+    - jems
+    - nexton
+    - yunik
+    - skiils
+    - bial x
+    - atlanse
+    - co martin
+    - mp data
+    - softeam
+    - tekkit
+    - carrevolutis
+    - deodis
+    - amiltone
+    - meritis
+    - astek
+    - accenture
+    - wavestone
+    - onepoint
+    - micropole
+    - ekimetrics
+    - converteo
+    - artefact
+    - octo
+    - zenika
+    - sfeir
+    - extia
+    - sii
+    - altran
+    - econocom
+    - spie ics
+    - ntt data
+    - kpmg
+    - deloitte
+    - ey
+    - pwc
+    # Mots génériques du nom. « conseil » seul est exclu : il désignerait les Conseils
+    # départementaux et régionaux, employeurs publics légitimes.
+    - consulting
+    - consultants
+    - consultant
+    - ingenierie
+    - informatique
+    - ssii
+    - esn
+  # Écoles et organismes de formation qui publient des offres d'alternance.
+  ecoles:
+    - kaischool
+    - openclassrooms
+    - studi
+    - iscod
+    - ifocop
+    - simplon
+    - wild code school
+    - jedha
+    - datascientest
+    - le wagon
+    - ironhack
+    - aston ecole
+    - ipssi
+    - esgi
+    - ynov
+    - epitech
+    - my digital school
+    - digital campus
+    - iscae
+    - sup de vinci
+    - efrei
+    - hetic
+    - isitech
+    - eemi
+    - ecole
+    - school
+    - cfa
+    - business school
+    - institut de formation
+    - centre de formation

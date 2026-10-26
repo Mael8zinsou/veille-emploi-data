@@ -1,4 +1,22 @@
-# CLAUDE.md — Veille emploi Data Engineer (Vague 3)
+# CLAUDE.md — Veille emploi (refonte v2 en cours)
+
+> **Refonte v2 (depuis le 25/10/2026).** Le besoin, la conception et l'avancement sont dans
+> `docs/cahier_des_charges_v2.md` (validé), `docs/conception_v2.md` et `docs/sondages_lot0.md`.
+> Ces documents remplacent `brief_vague3.md` pour toute décision nouvelle.
+>
+> * Branches : `main` = v1 en production (ne pas modifier avant la bascule) ; `v2` = intégration ;
+>   `lotN` = un lot, fusionné dans `v2` par pull request ; `sondes` = réponses brutes des sondages.
+> * Contrat des sources v2 : `NOM` + `fetch(ctx: Contexte) -> list[Offre]` (src/sources/__init__.py).
+> * Toutes les dates en base sont en UTC ; le planning raisonne en heure de Paris.
+> * APEC répond 403 depuis le 1er octobre 2026 : retirée, ne pas chercher à contourner.
+> * Tests : `pytest -q --cov` (seuil 90 %), lint : `ruff check src tests`.
+> * Pas d'accès réseau aux sites depuis l'espace de Claude : les essais réels passent par
+>   GitHub Actions (`v2_essai.yml`), résultats lus en annotations des check-runs.
+
+---
+
+## Historique v1 (vague 3)
+
 
 > Fichier de suivi pour les futures sessions Claude. Lis-le en premier avant de toucher au code.
 

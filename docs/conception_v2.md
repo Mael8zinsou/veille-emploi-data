@@ -98,9 +98,11 @@ tests/
   fixtures/<source>/    réponses réelles capturées au sondage
 ```
 
-Le contrat des sources reste celui de la v1, `fetch(config, session) -> list[Offre]`, avec un
-ajout : chaque source reçoit le **fil** demandé (une même source peut servir Emploi et
-Alternance avec des requêtes différentes).
+Contrat des sources (mis en œuvre au lot 1) : chaque module expose `NOM` et
+`fetch(ctx: Contexte) -> list[Offre]`. Le contexte porte la configuration, la session HTTP et
+l'heure du passage, et compte les requêtes et les erreurs. Une source interroge elle-même les
+fils qu'elle sert et renseigne `Offre.fil_demande`. Elle lève `SourceIndisponible` quand un
+accès manque ou que toutes ses requêtes échouent.
 
 Les sources Greenhouse, Lever, Ashby, Teamtailor et Choose, `slugs_ats.txt` et
 `decouvrir_slugs.py` sont supprimés.
