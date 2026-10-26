@@ -1,0 +1,92 @@
+verdict_v2,detail,retrouvee_par_v2,note_v1,source_v1,titre,entreprise,lieu,famille_v2,fil_v2,url
+gardee,,True,12,Adzuna,Data Engineer F/H,DATASCIENTEST,"Paris, Ile-de-France",data_engineering,emploi,https://www.adzuna.fr/details/5940382662?utm_medium=api&utm_source=1328e03a
+freelance,full_time,True,12,Adzuna,Data Engineer Freelance - H/F,Emeria Technologies,"Paris, Ile-de-France",data_engineering,,https://www.adzuna.fr/details/5941614583?utm_medium=api&utm_source=1328e03a
+gardee,,True,11,France Travail,Data Engineer PySpark - Data Factory - Services Financiers - Ile de France (H/F),—,75 - Paris 1er Arrondissement,data_engineering,emploi,https://candidat.francetravail.fr/offres/recherche/detail/8173689
+gardee,,False,10,Adzuna,FINAXYS recrute un MLOps F/H,FINAXYS,"Paris, Ile-de-France",ia_ml,emploi,https://www.adzuna.fr/details/5939170370?utm_medium=api&utm_source=1328e03a
+gardee,,False,10,Adzuna,Développeur(se) IA / MLOps (F/H) (IT),ODHCOM - FREELANCEREPUBLIK,"Paris, Ile-de-France",ia_ml,emploi,https://www.adzuna.fr/details/5939647832?utm_medium=api&utm_source=1328e03a
+gardee,,False,10,Adzuna,Ingénieur IA / Generative AI Engineer — Toulouse F/H,ABD PARTNERS,"Toulouse, Haute-Garonne",ia_ml,emploi,https://www.adzuna.fr/details/5939167910?utm_medium=api&utm_source=1328e03a
+gardee,,True,10,France Travail,Ingénieur / Ingénieure en développement big data (H/F),Randstad professional,13 - Vitrolles,satellites,emploi,https://candidat.francetravail.fr/offres/recherche/detail/8229948
+gardee,,False,9,Adzuna,Data Engineer,PROXIAD,"Nord, Hauts-De-France",data_engineering,emploi,https://www.adzuna.fr/details/5938847792?utm_medium=api&utm_source=1328e03a
+gardee,,True,9,Adzuna,Analyste Data Engineer (SQL Python R) H/F,Banque de France,France,data_engineering,emploi,https://www.adzuna.fr/details/5941576693?utm_medium=api&utm_source=1328e03a
+gardee,,False,9,Adzuna,Data Engineer Python / Spark — Plateforme IA - F/H (IT),INGENIANCE,"Paris, Ile-de-France",data_engineering,emploi,https://www.adzuna.fr/details/5939647930?utm_medium=api&utm_source=1328e03a
+gardee,,True,9,HelloWork,Data Engineer Aws - Python H/F,Oreve - Ortec Group,Paris - 75,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/83280010.html
+gardee,,True,9,HelloWork,Data Analyst - Data Engineer Qualité des Données SQL Python H/F,Cabinet EKINOX,Paris 13e - 75,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/84379034.html
+gardee,,True,8,Adzuna,Data Engineer Junior,International Business Machines Corporation,"Bois-Colombes, Nanterre",data_engineering,emploi,https://www.adzuna.fr/details/5939913193?utm_medium=api&utm_source=1328e03a
+gardee,,False,8,Adzuna,Data Engineer Snowflake DBT F/H,SEENOVATE,"Lyon, Rhône",data_engineering,emploi,https://www.adzuna.fr/details/5939179047?utm_medium=api&utm_source=1328e03a
+gardee,,True,8,France Travail,Data Engineer Snowflake F/H h/f,—,84 - Avignon,data_engineering,emploi,https://candidat.francetravail.fr/offres/recherche/detail/8259724
+gardee,,True,8,France Travail,Data Engineer DBT F/H h/f,—,38 - Grenoble,data_engineering,emploi,https://candidat.francetravail.fr/offres/recherche/detail/8259699
+gardee,,False,8,Lever,Data Engineer (Growth Team),pigment,Paris,data_engineering,emploi,https://jobs.lever.co/pigment/0aede960-d9cd-45c1-92e4-82e3cb3b2ae2
+gardee,,False,8,HelloWork,Data Engineer Dbt H/F,Orange Business,Lyon 2e - 69,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/83892123.html
+freelance,Indépendant,True,8,HelloWork,Analytics Engineer - Microsoft Fabric - Power Bi - Snowflake - Lyon H/F,Yunik,Lyon - 69,analytics_engineering,,https://www.hellowork.com/fr-fr/emplois/84684658.html
+gardee,,True,7,Adzuna,Data engineer,Alphabet France Fleet Management,"Yvelines, Ile-de-France",data_engineering,emploi,https://www.adzuna.fr/details/5941172025?utm_medium=api&utm_source=1328e03a
+gardee,,False,7,Adzuna,Data Engineer F/H,Altim,"Boulogne-Billancourt, Hauts-de-Seine",data_engineering,emploi,https://www.adzuna.fr/details/5939168049?utm_medium=api&utm_source=1328e03a
+gardee,,True,7,Adzuna,Data Engineer – Qualité et Gouvernance des Données (GCP) F/H,SMARTPOINT GROUP,"Paris, Ile-de-France",data_engineering,emploi,https://www.adzuna.fr/details/5940392274?utm_medium=api&utm_source=1328e03a
+gardee,,True,7,France Travail,Data Engineer GCP - Services Financiers - Ile-de-France H/F,—,75 - Paris,data_engineering,emploi,https://candidat.francetravail.fr/offres/recherche/detail/8209435
+gardee,,True,7,France Travail,Ingénieur Data Augmenté (H/F),IPPON Technologies,31 - Toulouse,data_engineering,emploi,https://candidat.francetravail.fr/offres/recherche/detail/8193670
+gardee,,True,7,HelloWork,Data Engineer Gcp H/F,AS International,Paris 13e - 75,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/83165706.html
+freelance,Freelance,True,7,HelloWork,Développeur Python - Data Engineer H/F,Computer Futures,Paris - 75,data_engineering,,https://www.hellowork.com/fr-fr/emplois/83976607.html
+freelance,Indépendant,True,7,HelloWork,Analytics Engineer Python - Recommandation Produit H/F,Ecaris,Paris - 75,analytics_engineering,,https://www.hellowork.com/fr-fr/emplois/84750237.html
+gardee,,True,6,HelloWork,Data Engineer Snowflake Dbt H/F,Seenovate,Paris - 75,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/84563554.html
+gardee,,True,6,HelloWork,Data Engineer Azure Data Factory H/F,Groupe Alliance,Paris 1er - 75,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/84588803.html
+freelance,Indépendant,True,6,HelloWork,Data Engineer Snowflake Junior H/F,Celad,Paris - 75,data_engineering,,https://www.hellowork.com/fr-fr/emplois/84621834.html
+gardee,,False,5,Adzuna,Data engineer,Proxiel,"Alpes-Maritimes, Provence-Alpes-Côte d'Azur",data_engineering,emploi,https://www.adzuna.fr/details/5938847953?utm_medium=api&utm_source=1328e03a
+gardee,,False,5,Adzuna,Data Engineer (Data & Product Engineering),Mondelez International,"Boulogne-Billancourt, Hauts-de-Seine",data_engineering,emploi,https://www.adzuna.fr/details/5938919142?utm_medium=api&utm_source=1328e03a
+gardee,,False,5,Adzuna,Data Engineer / Référent ETL & Flux (H/F) (CDI),Mercato de l'emploi,"1er Arrondissement, Paris",data_engineering,emploi,https://www.adzuna.fr/land/ad/5939442974?se=9pURqNLQ8RG0GownEE_3tg&utm_medium=api&utm_source=1328e03a&v=9502E79983D51B79B1D4F65AB3C3065691D85B26
+gardee,,True,5,Adzuna,Data Engineer (ArangoDB) F/H,Nexton,"Paris, Ile-de-France",data_engineering,emploi,https://www.adzuna.fr/details/5940395134?utm_medium=api&utm_source=1328e03a
+gardee,,False,5,Adzuna,Paris - Data Engineer F/H,HARDIS TECH SERVICES,"Courbevoie, Nanterre",data_engineering,emploi,https://www.adzuna.fr/details/5939181283?utm_medium=api&utm_source=1328e03a
+gardee,,True,5,Adzuna,"Software / Cloud / Data Engineer, Client Insights Platform",HyLight,"Paris, Ile-de-France",data_engineering,emploi,https://www.adzuna.fr/details/5940651026?utm_medium=api&utm_source=1328e03a
+gardee,,False,5,Adzuna,Analytics Engineer,360Learning,France,analytics_engineering,emploi,https://www.adzuna.fr/details/5939472514?utm_medium=api&utm_source=1328e03a
+seniorite,8 ans d'expérience demandés,False,5,Adzuna,Data Analyst F/H,OPEN,"Levallois-Perret, Nanterre",analyse,emploi,https://www.adzuna.fr/details/5939165028?utm_medium=api&utm_source=1328e03a
+gardee,,False,5,Adzuna,Data Full Stack – CDI – Paris,Respire,"12ème Arrondissement, Paris",satellites,emploi,https://www.adzuna.fr/details/5940650263?utm_medium=api&utm_source=1328e03a
+gardee,,True,5,France Travail,Ingénieur DataOps F/H,—,08 - Girondelle,data_engineering,emploi,https://candidat.francetravail.fr/offres/recherche/detail/8208316
+gardee,,True,5,France Travail,Ingénieur Data (H/F),SCHMIDT GROUPE,68 - Lièpvre,data_engineering,emploi,https://candidat.francetravail.fr/offres/recherche/detail/215QHWD
+trop_ancienne,82 jours,False,5,Greenhouse,Workday Integration & Analytics Engineer - Paris (x/f/m),doctolib,"Paris, Paris, France",analytics_engineering,emploi,https://job-boards.greenhouse.io/doctolib/jobs/7795798003
+metier_hors_cible,,False,5,Greenhouse,Software Engineering Intern,datadog,"Paris, France",,,https://careers.datadoghq.com/detail/8114186/?gh_jid=8114186
+gardee,,False,5,Greenhouse,Data Engineer,samsara,Remote - US,data_engineering,emploi,https://www.samsara.com/company/careers/roles/8141959?gh_jid=8141959
+lieu_etranger,belgium,False,5,Ashby,Data Engineer,alan,"Paris, France; Marseille, France; Bordeaux, France; Biarritz, France; Brussels, Belgium",data_engineering,emploi,https://jobs.ashbyhq.com/alan/ff5b0060-3d47-4d4d-bbed-baef57e1a0d3
+trop_ancienne,88 jours,False,5,Ashby,Data Engineer - Onboarding,sardine,North America,data_engineering,emploi,https://jobs.ashbyhq.com/sardine/527bac62-7445-4942-b2df-575fcb93e182
+trop_ancienne,87 jours,False,5,Teamtailor,Data Analytics Engineer,sunday,"Paris, France",analytics_engineering,emploi,https://sunday.teamtailor.com/jobs/8153943-data-analytics-engineer
+gardee,,True,5,HelloWork,Data Engineer H/F,Ippon Technologies,Île-de-France,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/84707456.html
+gardee,,True,5,HelloWork,Data Engineer H/F,HELPLINE,Paris - 75,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/84616415.html
+gardee,,True,5,HelloWork,Data Engineer H/F,Onepoint,Paris - 75,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/76926754.html
+gardee,,True,5,HelloWork,Data Engineer H/F,Meritis,Paris 8e - 75,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/57647163.html
+gardee,,True,5,HelloWork,Data Engineer H/F,Consort Group,Paris 17e - 75,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/81027324.html
+gardee,,True,5,HelloWork,Data Engineer H/F,JEMS,Paris - 75,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/84126617.html
+gardee,,True,5,HelloWork,Data Engineer H/F,GRADIANT,Île-de-France,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/82986859.html
+gardee,,True,5,HelloWork,Data Engineer Talend - Oracle H/F,Morgan Philips Specialist,Paris - 75,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/81470583.html
+gardee,,True,5,HelloWork,Data Engineer H/F,MP Data,Paris - 75,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/77464691.html
+gardee,,True,5,HelloWork,Data Engineer H/F,néosoft,Paris - 75,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/82859241.html
+gardee,,True,5,HelloWork,Data Engineer - Référent Etl & Flux H/F,Mercato de l'emploi,Paris - 75,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/79087397.html
+gardee,,True,5,HelloWork,Data Engineer - Plateforme Data d'Un Assureur en Ligne H/F,Cabinet EKINOX,Paris 1er - 75,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/84775795.html
+gardee,,True,5,HelloWork,Data Engineer - Data Analyst - Dataiku H/F,SIBYLONE,Paris - 75,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/78703535.html
+gardee,,True,5,HelloWork,Data Engineer H/F,Groupe Karavel,Paris 10e - 75,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/71820699.html
+gardee,,True,5,HelloWork,Ingénieur Data H/F,Cabinet de recrutement de travailleurs handicapés,Paris - 75,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/84742588.html
+gardee,,True,5,HelloWork,Data Analytics Engineer H/F,Sunday,Paris 10e - 75,analytics_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/83943664.html
+gardee,,True,5,HelloWork,Analytics Engineer H/F,Vusion,Paris 2e - 75,analytics_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/84775457.html
+gardee,,True,5,HelloWork,Analytics Engineer H/F,SOMA,Paris - 75,analytics_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/70650362.html
+gardee,,True,5,HelloWork,Ingénieur Data Ops H/F,La ligue nationale contre le cancer,Paris 13e - 75,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/84616466.html
+gardee,,True,5,HelloWork,Analytics Engineer H/F,Team.is,Paris 10e - 75,analytics_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/84487978.html
+gardee,,True,5,HelloWork,Analytics Engineer - Full Remote H/F,Tiime,Île-de-France - Grand Est,analytics_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/84761323.html
+gardee,,True,5,HelloWork,Ingénieur Data H/F,SERES TECHNOLOGIES,Paris - 75,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/83886199.html
+gardee,,True,5,HelloWork,Ingénieur Data - IA H/F,H3 Campus,Paris 14e - 75,data_engineering,alternance,https://www.hellowork.com/fr-fr/emplois/78400063.html
+gardee,,True,5,HelloWork,Ingénieur Data HR Acces H/F,Ministère des armées - Civils de la Défense,Paris - 75,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/82939687.html
+stage_conventionne,,True,5,HelloWork,Ingénieur Dataops H/F,Jobmania,Paris - 75,data_engineering,,https://www.hellowork.com/fr-fr/emplois/84430537.html
+gardee,,True,5,HelloWork,Ingénieur Dataops Cloud H/F,Onepoint,Paris - 75,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/78889808.html
+gardee,,True,5,HelloWork,Développeur Talend - Ingénieur Data Integration H/F,FAB Group,Paris 16e - 75,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/83906551.html
+gardee,,True,5,HelloWork,Data Engineer H/F,Groupe SII,Lyon - 69,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/84708291.html
+gardee,,True,5,HelloWork,Data Engineer H/F,Inside,Lyon 6e - 69,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/82492529.html
+gardee,,True,5,HelloWork,Data Engineer H/F,", super recruteur",Lyon - 69,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/77008881.html
+gardee,,True,5,HelloWork,Data Engineer Databricks H/F,JEMS,Lyon - 69,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/83292791.html
+gardee,,True,5,HelloWork,Data Engineer H/F,OXO Team,Lyon - 69,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/83024070.html
+gardee,,False,5,HelloWork,Data Engineer Databricks H/F,Orange Business,Lyon 2e - 69,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/75353625.html
+gardee,,False,5,HelloWork,Data Engineer - Snaplogic 100% Télétravail H/F,JEMS,Lyon - 69,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/84549139.html
+gardee,,False,5,HelloWork,Ingénieur Data H/F,GAC SOFTWARE,Lyon 9e - 69,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/84508362.html
+gardee,,True,5,HelloWork,Analytics Engineer H/F,APRIL,Lyon 6e - 69,analytics_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/83630520.html
+gardee,,False,5,HelloWork,Ingénieur Data Microsoft H/F,Alliade Habitat,Lyon 7e - 69,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/84384938.html
+gardee,,False,5,HelloWork,Ingénieur Data H/F,LR Technologies Groupe,Lyon 2e - 69,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/84417345.html
+gardee,,False,5,HelloWork,Data Engineer H/F,Everience,Lyon - 69,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/78290491.html
+freelance,Indépendant,True,5,HelloWork,Analytics Engineer - Bi Engineer H/F,Skiils,Paris - 75,analytics_engineering,,https://www.hellowork.com/fr-fr/emplois/84708793.html
+freelance,Indépendant,True,5,HelloWork,Data Analyst - Analytics Engineer H/F,Elevate,Paris - 75,analytics_engineering,,https://www.hellowork.com/fr-fr/emplois/84524684.html
+gardee,,True,5,HelloWork,Analytics Engineer H/F,Alma,Paris 1er - 75,analytics_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/83804005.html
+freelance,Indépendant,True,5,HelloWork,Data Analytics Engineer H/F,Yunik,France,analytics_engineering,,https://www.hellowork.com/fr-fr/emplois/84506205.html
+gardee,,True,5,HelloWork,Data Engineer Bi Power Bi H/F,Ipsos,Paris - 75,data_engineering,emploi,https://www.hellowork.com/fr-fr/emplois/83228413.html
