@@ -212,12 +212,26 @@ class ServicePublic(_Strict):
     delai_secondes: float = Field(ge=0.5)
 
 
+class RechercheLBA(_Strict):
+    nom: str
+    latitude: float | None = None
+    longitude: float | None = None
+    rayon_km: int = Field(default=60, ge=1, le=200)
+
+
+class LaBonneAlternance(_Strict):
+    romes: list[str]
+    recherches: list[RechercheLBA]
+    partenaires_exclus: list[str] = []
+
+
 class Sources(_Strict):
     actives: dict[str, bool]
     france_travail: FranceTravail
     adzuna: Adzuna
     hellowork: HelloWork
     service_public: ServicePublic
+    la_bonne_alternance: LaBonneAlternance
 
 
 # --------------------------------------------------------------------------- notation

@@ -5,6 +5,7 @@ actives:
   adzuna: true
   hellowork: true
   service_public: true
+  la_bonne_alternance: true
 
 france_travail:
   # Fenêtre de recherche : les offres créées depuis N jours (le dédoublonnage écarte le déjà vu).
@@ -85,3 +86,14 @@ service_public:
     - {nom: expert information statistique, profil: 4489}
     - {nom: administrateur bases de donnees, profil: 3540}
     - {nom: domaine numerique, famille: 3522}
+
+la_bonne_alternance:
+  # API publique de l'apprentissage (sondage du 25/10), fil Alternance. Offres triées de la
+  # plus récente à la plus ancienne. Deux recherches : Île-de-France, puis France entière.
+  romes: [M1811, M1405, M1419, M1889, M1403]
+  recherches:
+    - {nom: ile de france, latitude: 48.8566, longitude: 2.3522, rayon_km: 60}
+    - {nom: france}
+  # Copies d'offres de sources déjà interrogées directement : ignorées (doublons sous la
+  # raison sociale de l'employeur).
+  partenaires_exclus: [France Travail, Hellowork]

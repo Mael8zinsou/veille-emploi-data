@@ -139,3 +139,11 @@ User-Agent honnête de la production.
 Essai réel du 26/10 (base de production, sans envoi) : 195 offres lues, 19 gardées, dont une alerte
 (« Ingénieur Big Data - Data Engineer », Commissariat au Numérique de Défense) et des postes à la
 DNRED, à la DEPP, à la DREES, au Contrôle général des armées.
+
+### La bonne alternance (essai du 26/10)
+
+Sur l'Île-de-France (60 km) et la France entière, une trentaine d'offres data en alternance au
+total, dont la grande majorité sont des copies de France Travail et de HelloWork, sources déjà
+interrogées : elles sont ignorées. Reste peu d'offres propres à la source (une gardée à l'essai :
+« Data analyst » à la Direction générale des douanes, venue de la Place de l'apprentissage et des
+stages). Coût faible (2 requêtes toutes les 8 heures) : source gardée pour ces offres publiques.

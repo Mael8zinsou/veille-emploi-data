@@ -75,7 +75,8 @@ class Offre:
     debutant_accepte: bool | None = None
     faible_concurrence: bool = False
     code_rome: str = ""
-    diffuseur: str = ""                  # partenaire qui a republié l'offre (France Travail)
+    diffuseur: str = ""                  # partenaire qui a republié l'offre (France Travail, La bonne alternance)
+    delegue_par_ecole: bool = False      # offre déposée par une école pour une entreprise (La bonne alternance)
     fil_demande: Fil | None = None       # fil pour lequel la source a été interrogée
 
     # Rempli par la normalisation

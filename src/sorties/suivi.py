@@ -33,7 +33,8 @@ LARGEURS_VEILLE = {0: 120, 1: 85, 2: 75, 3: 50, 4: 180, 5: 340, 6: 160, 7: 80, 8
 ENTETE_ROUTE_B = ["Entreprise", "Catégorie", "Verdict Route B", "Secteur / implantation", "Pourquoi ce verdict",
                   "Format d'adresse mail", "Vérifiée", "Date d'ouverture", "Source"]
 LIBELLES_SOURCE = {"france_travail": "France Travail", "adzuna": "Adzuna", "hellowork": "HelloWork",
-                   "service_public": "Choisir le service public"}
+                   "service_public": "Choisir le service public",
+                   "la_bonne_alternance": "La bonne alternance"}
 LIBELLES_NIVEAU = {"alerte": "alerte", "resume": "résumé"}
 LIBELLES_MOTIF = {"seniorite": "trop senior", "trop_ancienne": "offre ancienne"}
 BLOC_CANDIDATURES = (5, 300)

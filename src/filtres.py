@@ -25,7 +25,8 @@ def normaliser_offre(o: Offre, config: Config, delegue_par_ecole: bool = False) 
     if o.duree_mois is None:
         o.duree_mois = contrats.duree_en_mois(o.contrat_brut)
     o.fil = contrats.fil_du_contrat(o.contrat)
-    o.type_employeur = employeurs.classer(o.entreprise, config.filtres.employeurs, delegue_par_ecole)
+    o.type_employeur = employeurs.classer(o.entreprise, config.filtres.employeurs,
+                                         delegue_par_ecole or o.delegue_par_ecole)
     a = lieux.analyser(o.lieu, o.titre, config.filtres.lieux)
     o.teletravail_complet, o.zone_preferee = a.teletravail_complet, a.zone_preferee
     o.annees_requises = experience.annees_requises(o.titre, o.description, o.experience_annees)

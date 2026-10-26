@@ -30,12 +30,20 @@ from src.sorties import telegram as tgm
 from src.sorties.sheets import ClientSheets, ErreurSheets
 from src.sorties.suivi import ROUTE_B_PAR_JOUR, Suivi
 from src.sorties.telegram import Telegram
-from src.sources import Contexte, SourceIndisponible, adzuna, france_travail, hellowork, service_public
+from src.sources import (
+    Contexte,
+    SourceIndisponible,
+    adzuna,
+    france_travail,
+    hellowork,
+    la_bonne_alternance,
+    service_public,
+)
 from src.utils.http import build_session
 
 logger = logging.getLogger("veille")
 
-SOURCES = {m.NOM: m.fetch for m in (france_travail, adzuna, hellowork, service_public)}
+SOURCES = {m.NOM: m.fetch for m in (france_travail, adzuna, hellowork, service_public, la_bonne_alternance)}
 
 
 @dataclass

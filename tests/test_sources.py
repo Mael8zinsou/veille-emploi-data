@@ -6,7 +6,7 @@ import requests
 
 from src.filtres import normaliser_offre
 from src.models import Contrat, Fil
-from src.sources import Contexte, SourceIndisponible, adzuna, france_travail, hellowork, service_public
+from src.sources import Contexte, SourceIndisponible, adzuna, france_travail, hellowork, la_bonne_alternance, service_public
 from tests.conftest import FausseSession, Reponse, fixture_json, fixture_texte, offre
 
 MAINTENANT = datetime(2026, 10, 26, 9, 0)
@@ -284,3 +284,63 @@ def test_service_public_memoire(config):
     offres = service_public.fetch(second)
     assert all("offerRss" in u for _, u, _ in second.session.appels)
     assert sum(1 for o in offres if o.entreprise) == len(premier.memoire)
+
+
+# --------------------------------------------------------------------------- La bonne alternance
+
+@pytest.fixture
+def cle_lba(monkeypatch):
+    monkeypatch.setenv("LBA_API_KEY", "x")
+
+
+def test_lba_conversion_reelle(config):
+    jobs = fixture_json("la_bonne_alternance/recherche_paris.json")["jobs"]
+    pass_ = la_bonne_alternance.convertir(next(j for j in jobs if j["identifier"]["partner_label"] == "PASS"))
+    assert pass_.titre.startswith('"Data analyst"') and pass_.entreprise.startswith("Direction générale")
+    assert pass_.url.startswith("https://www.pass.fonction-publique.gouv.fr/offre/")
+    assert pass_.fil_demande == Fil.ALTERNANCE and pass_.duree_mois == 12 and pass_.date_publication == "2026-10-22"
+    o = normaliser_offre(pass_, config)
+    assert o.contrat == Contrat.ALTERNANCE and o.fil == Fil.ALTERNANCE
+
+
+def test_lba_lien_hellowork_sans_traceur():
+    url = ("https://r.holeest.com/redirect?jd_token=t&o=1&from=https%3A%2F%2Fwww.hellowork.com"
+           "%2Ffr-fr%2Femplois%2F123.html")
+    assert la_bonne_alternance._lien(url) == "https://www.hellowork.com/fr-fr/emplois/123.html"
+    assert la_bonne_alternance._lien("https://exemple.fr/offre") == "https://exemple.fr/offre"
+    assert la_bonne_alternance._lien("") == ""
+
+
+def test_lba_ecole_deleguee(config):
+    job = {"identifier": {"id": "1"}, "workplace": {"brand": "Doctolib"}, "offer": {"title": "Alternance Data Engineer"},
+           "contract": {"type": ["Apprentissage"]}, "is_delegated": True}
+    from src.models import TypeEmployeur
+    assert normaliser_offre(la_bonne_alternance.convertir(job), config).type_employeur == TypeEmployeur.ECOLE
+
+
+def test_lba_fetch(config, cle_lba):
+    donnees = fixture_json("la_bonne_alternance/recherche_paris.json")
+    c = ctx(config, lambda m, u, k: Reponse(donnees=donnees))
+    offres = la_bonne_alternance.fetch(c)
+    assert len(c.session.appels) == 2
+    assert all(k["headers"]["Authorization"] == "Bearer x" for _, _, k in c.session.appels)
+    assert c.session.appels[0][2]["params"]["radius"] == 60 and "latitude" not in c.session.appels[1][2]["params"]
+    # Copies France Travail et HelloWork ignorées, doublons d'identifiant fusionnés.
+    assert {o.diffuseur for o in offres} == {"PASS", "Jobs that make sense"}
+    assert len({o.id_source for o in offres}) == len(offres) == 2
+
+
+def test_lba_sans_cle(config, monkeypatch):
+    monkeypatch.delenv("LBA_API_KEY", raising=False)
+    with pytest.raises(SourceIndisponible):
+        la_bonne_alternance.fetch(ctx(config, lambda m, u, k: Reponse()))
+
+
+def test_lba_indisponible(config, cle_lba):
+    with pytest.raises(SourceIndisponible):
+        la_bonne_alternance.fetch(ctx(config, lambda m, u, k: Reponse(status_code=401)))
+
+
+def test_lba_reponse_illisible(config, cle_lba):
+    with pytest.raises(SourceIndisponible):
+        la_bonne_alternance.fetch(ctx(config, lambda m, u, k: Reponse(text="<html>")))

@@ -26,9 +26,17 @@ def test_changement_d_heure(config):
     assert plan(config, datetime(2026, 11, 2, 5, 30)).hors_plage
 
 
+def actives(config) -> set[str]:
+    return {n for n, actif in config.sources.actives.items() if actif}
+
+
+def test_toutes_les_sources_actives_ont_un_rythme(config):
+    assert actives(config) <= set(config.planning.taches)
+
+
 def test_premier_passage_tout_est_du(config):
     p = plan(config, MARDI_HIVER_10H)
-    assert set(p.sources) == {"france_travail", "adzuna", "hellowork", "service_public"}
+    assert set(p.sources) == actives(config)
     assert p.alertes_en_attente
 
 
@@ -37,7 +45,8 @@ def test_intervalles(config):
     succes = {"france_travail": MARDI_HIVER_10H - timedelta(minutes=t["france_travail"].intervalle_minutes - 5),
               "hellowork": MARDI_HIVER_10H - timedelta(minutes=t["hellowork"].intervalle_minutes + 5),
               "adzuna": MARDI_HIVER_10H - timedelta(minutes=t["adzuna"].intervalle_minutes - 60),
-              "service_public": MARDI_HIVER_10H - timedelta(minutes=t["service_public"].intervalle_minutes - 1)}
+              "service_public": MARDI_HIVER_10H - timedelta(minutes=t["service_public"].intervalle_minutes - 1),
+              "la_bonne_alternance": MARDI_HIVER_10H - timedelta(minutes=t["la_bonne_alternance"].intervalle_minutes - 1)}
     p = plan(config, MARDI_HIVER_10H, succes)
     assert p.sources == ["hellowork"]
     assert "france_travail" in p.raisons and "adzuna" in p.raisons
@@ -45,9 +54,8 @@ def test_intervalles(config):
 
 def test_passage_en_retard_ne_perd_rien(config):
     # Plus d'une journée sans passage réussi : tout est dû, une seule fois.
-    succes = {n: MARDI_HIVER_10H - timedelta(hours=25) for n in ("france_travail", "hellowork", "adzuna", "service_public")}
-    assert set(plan(config, MARDI_HIVER_10H, succes).sources) == {"france_travail", "adzuna", "hellowork",
-                                                                  "service_public"}
+    succes = {n: MARDI_HIVER_10H - timedelta(hours=25) for n in actives(config)}
+    assert set(plan(config, MARDI_HIVER_10H, succes).sources) == actives(config)
 
 
 def test_quota_adzuna(config):
