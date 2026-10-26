@@ -48,8 +48,12 @@ class Rapport:
     def resume(self) -> list[str]:
         lignes = [f"Plan : {', '.join(self.plan['sources']) or 'aucune source due'}"]
         for nom, s in self.sources.items():
-            lignes.append(f"{nom} : {s['etat']}, {s.get('offres', 0)} offres, {s.get('requetes', 0)} requêtes"
-                          + (f" ({s['erreur']})" if s.get("erreur") else ""))
+            ligne = f"{nom} : {s['etat']}, {s.get('offres', 0)} offres, {s.get('requetes', 0)} requêtes"
+            if s.get("erreur"):
+                ligne += f" ({s['erreur']})"
+            elif s.get("erreurs_partielles"):
+                ligne += f", {s['erreurs_partielles']} en échec ({'; '.join(s['erreurs'][:2])})"
+            lignes.append(ligne)
         lignes.append(f"Brutes {self.brutes}, gardées {self.gardees}, nouvelles {self.nouvelles}")
         lignes.append("Rejets : " + ", ".join(f"{k} {v}" for k, v in sorted(self.rejets_par_motif.items())))
         lignes.append("Fils : " + ", ".join(f"{k} {v}" for k, v in sorted(self.par_fil.items())))
@@ -84,7 +88,7 @@ def collecter(noms: list[str], config: Config, base: stockage.Base, session, mai
         stockage.fin_execution(base, ident, True, len(offres), ctx.requetes,
                                "; ".join(ctx.erreurs[:3]) if ctx.erreurs else None)
         rapport.sources[nom] = {"etat": "ok", "offres": len(offres), "requetes": ctx.requetes,
-                                "erreurs_partielles": len(ctx.erreurs)}
+                                "erreurs_partielles": len(ctx.erreurs), "erreurs": ctx.erreurs[:5]}
         toutes.extend(offres)
     return toutes
 

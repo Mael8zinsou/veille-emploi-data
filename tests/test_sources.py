@@ -16,6 +16,11 @@ def ctx(config, repondre):
     return Contexte(config=config, session=FausseSession(repondre), maintenant_utc=MAINTENANT)
 
 
+@pytest.fixture(autouse=True)
+def sans_pause(monkeypatch):
+    monkeypatch.setattr("time.sleep", lambda s: None)
+
+
 @pytest.fixture
 def identifiants(monkeypatch):
     for nom in ("FT_CLIENT_ID", "FT_CLIENT_SECRET", "ADZUNA_APP_ID", "ADZUNA_APP_KEY"):

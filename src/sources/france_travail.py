@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import logging
 import os
+import time
 from datetime import timedelta
 
 from src.models import Fil, Offre
@@ -26,6 +27,7 @@ URL_JETON = "https://entreprise.francetravail.fr/connexion/oauth2/access_token"
 URL_RECHERCHE = "https://api.francetravail.io/partenaire/offresdemploi/v2/offres/search"
 URL_DETAIL = "https://candidat.francetravail.fr/offres/recherche/detail/{id}"
 PAR_PAGE = 150
+PAUSE = 0.25   # secondes entre deux requêtes : l'API limite le débit par application
 
 
 def _jeton(ctx: Contexte) -> str:
@@ -78,6 +80,7 @@ def _rechercher(ctx: Contexte, jeton: str, params: dict, fil: Fil, max_pages: in
     offres: list[Offre] = []
     for page in range(max_pages):
         debut = page * PAR_PAGE
+        time.sleep(PAUSE)
         r = ctx.get(URL_RECHERCHE, headers=entetes,
                     params={**params, **dates, "range": f"{debut}-{debut + PAR_PAGE - 1}"})
         if r is None or r.status_code == 204:

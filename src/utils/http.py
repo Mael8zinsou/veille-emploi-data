@@ -12,10 +12,11 @@ USER_AGENT = "veille-emploi-data/2.0 (veille personnelle; +https://github.com/Ma
 
 
 def build_session(total_retries: int = 3, backoff_factor: float = 0.5,
-                  status_forcelist: tuple[int, ...] = (500, 502, 503, 504)) -> requests.Session:
-    """Nouvelles tentatives espacées (0,5 s, 1 s, 2 s) sur les erreurs serveur passagères.
+                  status_forcelist: tuple[int, ...] = (429, 500, 502, 503, 504)) -> requests.Session:
+    """Nouvelles tentatives espacées (0,5 s, 1 s, 2 s) sur les erreurs passagères.
 
-    Le code 429 (trop de requêtes) n'est pas rejoué : c'est une demande de ralentir.
+    Sur un 429 (trop de requêtes), l'attente demandée par le serveur (`Retry-After`) est
+    respectée avant de réessayer : c'est ralentir comme il le demande.
     """
     s = requests.Session()
     retry = Retry(total=total_retries, backoff_factor=backoff_factor, status_forcelist=status_forcelist,
