@@ -3,8 +3,6 @@ name: Veille emploi (v2)
 # Un passage de la veille v2 toutes les heures. Le code décide, en heure de Paris, de ce qui
 # est dû (config/planning.yaml) : rien ne se passe hors de la plage 7h-22h.
 #
-# PÉRIODE DE TEST (depuis le 26/10/2026) : aucun envoi Telegram (mode simulation, jeton non
-# transmis) et, dans le fichier de suivi, écriture seulement dans les onglets « (essai) ».
 # En service depuis la fusion de la PR « Mise en service ». Pour revenir en test :
 # VEILLE_ENVOI=simulation et VEILLE_SUIVI=essai.
 
