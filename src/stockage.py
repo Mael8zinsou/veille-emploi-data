@@ -314,3 +314,42 @@ def derniere_erreur(base: Base, tache: str) -> str:
         r = c.execute("SELECT erreur FROM executions WHERE tache = ? AND succes = 0 ORDER BY id DESC LIMIT 1",
                       (tache,)).fetchone()
     return (r[0] or "") if r else ""
+
+
+# --------------------------------------------------------------------------- fichier de suivi (lot 4)
+
+def a_ajouter_veille(base: Base) -> list[dict]:
+    """Offres présentées (alerte ou résumé) pas encore ajoutées à l'onglet Veille."""
+    with closing(base.connexion()) as c:
+        rows = c.execute("SELECT * FROM offres WHERE niveau IN ('alerte', 'resume') AND ajoutee_veille_le IS NULL "
+                         "AND importee_v1 = 0 ORDER BY premiere_vue, note DESC").fetchall()
+    return [_ligne(r) for r in rows]
+
+
+def marquer_veille(base: Base, cles: list[str], le: datetime | None = None) -> None:
+    with closing(base.connexion()) as c, c:
+        c.executemany("UPDATE offres SET ajoutee_veille_le = ? WHERE cle = ?", [(_maintenant(le), k) for k in cles])
+
+
+def candidats_route_b(base: Base, depuis: datetime) -> list[dict]:
+    """Employeurs finaux identifiés dont une offre a été rejetée pour séniorité ou ancienneté."""
+    with closing(base.connexion()) as c:
+        rows = c.execute("SELECT * FROM rejets WHERE motif IN ('seniorite', 'trop_ancienne') AND type_employeur = 'final' "
+                         "AND entreprise <> '' AND vu_le >= ? ORDER BY vu_le", (depuis.strftime(FORMAT),)).fetchall()
+    return [dict(r) for r in rows]
+
+
+def route_b_connues(base: Base) -> set[str]:
+    with closing(base.connexion()) as c:
+        return {r[0] for r in c.execute("SELECT entreprise_normalisee FROM route_b")}
+
+
+def route_b_ajoutees_depuis(base: Base, depuis: datetime) -> int:
+    with closing(base.connexion()) as c:
+        return c.execute("SELECT COUNT(*) FROM route_b WHERE ajoutee_le >= ?", (depuis.strftime(FORMAT),)).fetchone()[0]
+
+
+def ajouter_route_b(base: Base, nom_normalise: str, le: datetime | None = None) -> None:
+    with closing(base.connexion()) as c, c:
+        c.execute("INSERT OR IGNORE INTO route_b (entreprise_normalisee, ajoutee_le) VALUES (?, ?)",
+                  (nom_normalise, _maintenant(le)))

@@ -7,7 +7,8 @@ Lancement : `python -m src.main`
 Variables : FT_CLIENT_ID, FT_CLIENT_SECRET, ADZUNA_APP_ID, ADZUNA_APP_KEY.
 Options : VEILLE_BASE (chemin de la base), VEILLE_SOURCES (liste imposée, ignore le planning),
 VEILLE_SOURCES_EXCLUES, VEILLE_ENVOI (telegram pour un envoi réel, simulation sinon),
-VEILLE_MAINTENANT (essais : heure UTC imposée), VEILLE_RAPPORT (rapport JSON), VERBOSE=1.
+VEILLE_MAINTENANT (essais : heure UTC imposée), VEILLE_SUIVI (reel, essai ou aucun ; requiert
+GOOGLE_TOKEN_JSON et SUIVI_SHEET_ID), VEILLE_RAPPORT (rapport JSON), VERBOSE=1.
 """
 from __future__ import annotations
 
@@ -26,6 +27,8 @@ from src.config import Config, charger
 from src.models import Offre, Rejet
 from src.planning import Plan
 from src.sorties import telegram as tgm
+from src.sorties.sheets import ClientSheets, ErreurSheets
+from src.sorties.suivi import ROUTE_B_PAR_JOUR, Suivi
 from src.sorties.telegram import Telegram
 from src.sources import Contexte, SourceIndisponible, adzuna, france_travail, hellowork
 from src.utils.http import build_session
@@ -51,6 +54,7 @@ class Rapport:
     exemples_nouvelles: list[str] = field(default_factory=list)
     envois: dict[str, int] = field(default_factory=lambda: {"alertes": 0, "alertes_en_attente": 0, "resumes": 0,
                                                             "bilans": 0, "pannes": 0})
+    suivi: dict[str, object] = field(default_factory=dict)
 
     def resume(self) -> list[str]:
         lignes = [f"Plan : {', '.join(self.plan['sources']) or 'aucune source due'}"]
@@ -68,6 +72,8 @@ class Rapport:
         lignes.append("Employeurs : " + ", ".join(f"{k} {v}" for k, v in sorted(self.par_type_employeur.items())))
         lignes.append("Niveaux (nouvelles) : " + ", ".join(f"{k} {v}" for k, v in sorted(self.par_niveau.items())))
         lignes.append("Envois : " + ", ".join(f"{k} {v}" for k, v in self.envois.items()))
+        if self.suivi:
+            lignes.append("Suivi : " + ", ".join(f"{k} {v}" for k, v in self.suivi.items()))
         return lignes
 
 
@@ -108,7 +114,7 @@ REPUBLICATION_JOURS = 30
 def passage(config: Config, base: stockage.Base, maintenant_utc: datetime | None = None,
             sources_imposees: list[str] | None = None, session=None, sources: dict = SOURCES,
             verdicts: dict[str, str] | None = None, telegram: Telegram | None = None,
-            sources_exclues: list[str] | None = None) -> Rapport:
+            sources_exclues: list[str] | None = None, suivi: Suivi | None = None) -> Rapport:
     """Un passage : collecte des sources dues, tri, note, enregistrement, puis envois dus.
 
     `sources_imposees` ignore le planning (essais). `sources_exclues` retire des sources après
@@ -121,13 +127,55 @@ def passage(config: Config, base: stockage.Base, maintenant_utc: datetime | None
     noms = [n for n in noms if n not in (sources_exclues or [])]
     rapport = Rapport(debut=maintenant_utc.isoformat(), plan={"sources": noms, "raisons": plan.raisons,
                                                                "hors_plage": plan.hors_plage})
+    if suivi is not None and verdicts is None and not plan.hors_plage:
+        try:
+            verdicts = suivi.verdicts()
+            rapport.suivi["verdicts_lus"] = len(verdicts)
+        except ErreurSheets as ex:
+            rapport.suivi["erreur_verdicts"] = str(ex)[:200]
+            logger.warning("Verdicts du suivi illisibles, note calculée sans eux : %s", ex)
     if noms:
         _collecter_et_noter(noms, config, base, session, maintenant_utc, rapport, sources, verdicts)
     else:
         logger.info("Aucune source due : %s", plan.raisons)
     if telegram is not None and not plan.hors_plage:
         envoyer(base, config, plan, telegram, maintenant_utc, rapport)
+    if suivi is not None and not plan.hors_plage:
+        synchroniser_suivi(base, config, suivi, verdicts or {}, maintenant_utc, rapport)
     return rapport
+
+
+def synchroniser_suivi(base: stockage.Base, config: Config, suivi: Suivi, verdicts: dict[str, str],
+                       maintenant_utc: datetime, rapport: Rapport) -> None:
+    """Transfert des offres retenues, ajout des nouvelles à l'onglet Veille, cibles Route B.
+
+    Chaque étape est isolée : un échec Google Sheets n'empêche ni les autres étapes ni le
+    passage suivant, qui reprend ce qui n'a pas été écrit (l'état est en base).
+    """
+    local = maintenant_utc.replace(tzinfo=UTC).astimezone(ZoneInfo(config.planning.fuseau))
+    try:
+        rapport.suivi.update(suivi.transferer_retenues(local))
+    except ErreurSheets as ex:
+        rapport.suivi["erreur_transfert"] = str(ex)[:200]
+    try:
+        offres = stockage.a_ajouter_veille(base)
+        n = suivi.ajouter_a_veille(offres, local)
+        stockage.marquer_veille(base, [o["cle"] for o in offres], maintenant_utc)
+        rapport.suivi["ajoutees_veille"] = n
+    except ErreurSheets as ex:
+        rapport.suivi["erreur_veille"] = str(ex)[:200]
+    try:
+        debut_jour = (local.replace(hour=0, minute=0, second=0, microsecond=0)).astimezone(UTC).replace(tzinfo=None)
+        restant = ROUTE_B_PAR_JOUR - stockage.route_b_ajoutees_depuis(base, debut_jour)
+        if restant > 0:
+            choisies = suivi.cibles_route_b(stockage.candidats_route_b(base, maintenant_utc - timedelta(hours=2)),
+                                            stockage.route_b_connues(base), verdicts, restant)
+            suivi.ajouter_route_b([ligne for _, ligne in choisies])
+            for nom, _ in choisies:
+                stockage.ajouter_route_b(base, nom, maintenant_utc)
+            rapport.suivi["cibles_route_b"] = len(choisies)
+    except ErreurSheets as ex:
+        rapport.suivi["erreur_route_b"] = str(ex)[:200]
 
 
 def _collecter_et_noter(noms, config, base, session, maintenant_utc, rapport, sources, verdicts) -> None:
@@ -231,8 +279,16 @@ def main() -> int:
     # résumés et bilans hors des heures où ils sont dus.
     force = os.getenv("VEILLE_MAINTENANT")
     quand = datetime.fromisoformat(force) if force else None
+    # Fichier de suivi : « reel », « essai » (onglets séparés, rien de modifié) ou rien.
+    mode_suivi = os.getenv("VEILLE_SUIVI", "aucun")
+    suivi = None
+    if mode_suivi in ("reel", "essai"):
+        try:
+            suivi = Suivi(ClientSheets.depuis_env(), mode=mode_suivi)
+        except Exception as ex:  # jeton expiré ou absent : la veille continue sans le fichier de suivi
+            logger.error("Fichier de suivi inaccessible (%s) : passage sans lui", ex.__class__.__name__)
     rapport = passage(config, base, maintenant_utc=quand, sources_imposees=imposees, telegram=tg,
-                      sources_exclues=exclues)
+                      sources_exclues=exclues, suivi=suivi)
     chemin = Path(os.getenv("VEILLE_RAPPORT", "data/rapport_passage.json"))
     chemin.parent.mkdir(parents=True, exist_ok=True)
     chemin.write_text(json.dumps(rapport.__dict__, ensure_ascii=False, indent=1), encoding="utf-8")
