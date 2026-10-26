@@ -5,7 +5,7 @@
 fraicheur_max_jours: 7
 
 # Durée minimale d'un CDD ou d'une mission d'intérim, quand la source la donne.
-duree_min_mois: 6
+duree_min_mois: 3   # décision du 26/10 (annotation : deux CDD courts retenus)
 
 lieux:
   # Lieux hors France métropolitaine : rejet (motif lieu_etranger), sauf télétravail complet.
@@ -155,13 +155,27 @@ seniorite:
     - vp
     - cto
     - chief
+    # Calibrage du 26/10 (76 offres annotées) : « confirmé » dans le titre écarte 4 « hors cible »
+    # et aucun « je postule ». « Expérimenté » n'est PAS retenu : il écartait un « je postule ».
+    - confirme
+    - confirmee
   # Expressions retirées du titre avant ce contrôle : ce sont des métiers, pas des grades.
   exceptions:
     - data manager
     - data management
     - product manager data
-  # Exigence d'expérience au-delà de laquelle l'offre est rejetée.
+  # Exigence d'expérience au-delà de laquelle l'offre est rejetée. Calibrage du 26/10 : un
+  # plafond à 2 ans écartait deux « je postule » demandant 3 ans, et aucun « hors cible ».
   annees_max: 3
+
+# Certification précise exigée : rejet (motif certification_exigee). Décision du 26/10.
+# Règle : « certifi… » suivi, à `fenetre` mots au plus, d'un mot d'exigence
+# (« Certification AWS exigée », « certifié Azure obligatoire »). « Appréciée » ou « souhaitée »
+# ne comptent pas.
+certification_exigee:
+  fenetre: 4
+  mots: [exige, exigee, exigees, exiges, requis, requise, requises, obligatoire, obligatoires, indispensable,
+         indispensables, imperative, imperatif, required, mandatory]
 
 employeurs:
   # Plateformes de missions : rejet (motif plateforme_missions).

@@ -68,9 +68,9 @@ def test_niveaux(config):
     o, n = note_de(config, titre="Data Engineer junior", entreprise="", lieu="Paris", description="Python SQL Airflow dbt",
                    date_publication="2026-10-26")
     assert niveau(o, n, config) != Niveau.ALERTE
-    # Priorité 3, mal notée : archive.
-    o, n = note_de(config, titre="Chef de projet data confirmé", entreprise="ALTEN", date_publication="2026-10-20")
-    assert niveau(o, n, config) == Niveau.ARCHIVE
+    # Calibrage du 26/10 : toute offre gardée par les filtres entre au moins dans le résumé.
+    o, n = note_de(config, titre="Chef de projet data", entreprise="ALTEN", date_publication="2026-10-20")
+    assert n.total < 0 and niveau(o, n, config) == Niveau.RESUME
     # Verdict définitif du suivi : archive d'office.
     o, n = note_de(config, verdicts=[("Mondial Relay", "Écarter : ingénierie hors de France")],
                    entreprise="Mondial Relay", titre="Data Engineer junior", description="Python SQL Airflow dbt")

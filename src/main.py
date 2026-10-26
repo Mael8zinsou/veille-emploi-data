@@ -109,6 +109,7 @@ def collecter(noms: list[str], config: Config, base: stockage.Base, session, mai
 
 
 REPUBLICATION_JOURS = 30
+REPRISE_JOURS = 2   # mise en service : offres de la période de test reprises dans les vrais envois
 
 
 def passage(config: Config, base: stockage.Base, maintenant_utc: datetime | None = None,
@@ -158,9 +159,11 @@ def synchroniser_suivi(base: stockage.Base, config: Config, suivi: Suivi, verdic
     except ErreurSheets as ex:
         rapport.suivi["erreur_transfert"] = str(ex)[:200]
     try:
-        offres = stockage.a_ajouter_veille(base)
+        # Mise en service : le vrai onglet reprend les offres des deux derniers jours de test.
+        depuis = maintenant_utc - timedelta(days=REPRISE_JOURS) if suivi.mode == "reel" else None
+        offres = stockage.a_ajouter_veille(base, suivi.mode, depuis)
         n = suivi.ajouter_a_veille(offres, local)
-        stockage.marquer_veille(base, [o["cle"] for o in offres], maintenant_utc)
+        stockage.marquer_veille(base, [o["cle"] for o in offres], maintenant_utc, suivi.mode)
         rapport.suivi["ajoutees_veille"] = n
     except ErreurSheets as ex:
         rapport.suivi["erreur_veille"] = str(ex)[:200]
@@ -215,6 +218,9 @@ def envoyer(base: stockage.Base, config: Config, plan: Plan, tg: Telegram, maint
             rapport: Rapport) -> None:
     """Alertes (dès détection, rejouées si l'envoi a échoué), pannes, résumés, bilan."""
     fait = "envoyee" if tg.mode == "telegram" else "simulee"
+    if tg.mode == "telegram":
+        # Mise en service : ce qui n'a été que simulé pendant le test récent est envoyé pour de vrai.
+        rapport.envois["reprises"] = stockage.reprendre_simulations(base, maintenant_utc - timedelta(days=REPRISE_JOURS))
     for o in stockage.alertes_a_envoyer(base):
         ok = tg.envoyer(tgm.message_alerte(o), o["fil"])
         stockage.marquer(base, [o["cle"]], fait if ok else "en_attente", maintenant_utc)

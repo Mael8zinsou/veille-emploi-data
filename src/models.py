@@ -51,6 +51,7 @@ class Motif(StrEnum):
     STAGE_CONVENTIONNE = "stage_conventionne"
     CONTRAT_HORS_CIBLE = "contrat_hors_cible"
     SENIORITE = "seniorite"
+    CERTIFICATION_EXIGEE = "certification_exigee"
     DUREE_TROP_COURTE = "duree_trop_courte"
     TROP_ANCIENNE = "trop_ancienne"
 

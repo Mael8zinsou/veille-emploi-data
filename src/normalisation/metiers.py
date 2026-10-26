@@ -14,6 +14,8 @@ def reconnaitre(titre: str, metiers: Metiers, code_rome: str = "") -> tuple[Fami
     dans la signature pour la traçabilité.
     """
     t = normaliser(titre)
+    if any(contient(t, e) for e in metiers.exclusions):
+        return None, ""
     meilleure: tuple[Famille, str] | None = None
     for famille in metiers.familles:
         for motif in famille.motifs:
