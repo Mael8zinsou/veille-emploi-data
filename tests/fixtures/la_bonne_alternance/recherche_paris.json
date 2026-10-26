@@ -1,0 +1,2203 @@
+{
+"jobs": [
+{
+"identifier": {
+"id": "6adbdcf7bfbdb64c1a67fcad",
+"partner_label": "France Travail",
+"partner_job_id": "8221059"
+},
+"workplace": {
+"siret": "91150085800012",
+"brand": "HOLIS",
+"legal_name": "HOLIS",
+"website": null,
+"name": "HOLIS",
+"description": null,
+"size": "6 à 9 salariés",
+"location": {
+"address": "75001 Paris",
+"geopoint": {
+"coordinates": [
+2.347,
+48.859
+],
+"type": "Point"
+}
+},
+"domain": {
+"idcc": 1486,
+"opco": "ATLAS",
+"naf": {
+"code": "70.22Z",
+"label": "Conseil pour les affaires et autres conseils de gestion"
+}
+}
+},
+"apply": {
+"url": "https://jobs.makesense.org/fr/jobs/holis-data-analyst-scientist-startup-a-impact-ynnY0fGqKDP1kM2UdGIE?source=france_travail",
+"phone": null,
+"recipient_id": null
+},
+"contract": {
+"start": null,
+"start_type": null,
+"start_is_flexible": null,
+"duration": 12,
+"type": [
+"Apprentissage"
+],
+"remote": null
+},
+"offer": {
+"title": "Data Analyst / Scientist - Startup à impact  (H/F)",
+"rome_codes": [
+"M1405"
+],
+"description": "Démocratiser l'ACV auprès des entreprises\n\nHolis permet à toute entreprise de quantifier, d'améliorer et de communiquer les performances socio-environnementales de l'ensemble de ses produits \n\nEn facilitant la réalisation d'analyses du cycle de vie (ACV), notre plateforme SaaS permet d'évaluer en quelques minutes l'impact de catalogues entiers et d'identifier les leviers d'éco-conception les plus efficaces. Grâce à notre interface didactique couplée à des outils d'automatisation primés (UNESCO, GreenTech), chaque initiative peut ainsi être valorisée, avec à la clé une réduction d'impact de l'ordre de 20%. Et tout ceci avec rigueur, Holis étant certifiée conforme aux méthodologies française et européenne (Affichage environnemental, PEF, ISO, etc.) \n\nCo-fondée en 2022, Holis compte aujourd'hui une vingtaine d'ingénieurs, de développeurs et de profils hybrides couplant customer success et sciences environnementales  Soutenue par des partenaires reconnus (ADEME, Microsoft, et bien d'autres), l'équipe que tu rejoindrais a déjà permis d'améliorer des milliers de produits issus d'industries variées, et d'accompagner artistes indépendants comme entreprises du CAC 40 dans leur transition !\n\n Tes missions\n\nSi tu as envie de mettre ton expertise analytique et numérique au service d'un monde plus durable, alors ce poste est fait pour toi ! Voici quelles seront tes missions :\n\n Data Analyst\n\n- Contribuer à une harmonisation et valorisation des données environnementales disponibles\n\n- Travailler sur l'automatisation de la collecte et des process\n\n- Optimiser les outils de vérification des matching de données\n\n Data Engineer\n\n- Développer des outils d'optimisation de graphes et des process\n\n- Réaliser l'intégration des outils (internes ou API) à la plateforme, en lien avec les développeurs\n\n- Explorer de nouvelles pistes (faisabilité technique, robustesse, valeur ajoutée, coûts)\n\nProfil recherché\n Ton skillset\n\nHard skills\n\n- Développement Python et SQL\n\n- Maitrise des bases de données\n\nSoft skills\n\n- Une forte capacité à t'approprier et restituer des connaissances scientifiques (environnementales, economiques, sociales) et techniques\n\n- Une capacité à travailler en autonomie et à maitriser des sujets complexes\n\n- Un tres bon sens du relationnel : tu es a l'aise au sein d'equipes pluridisciplinaires\n\n- Langues : bilingue français-anglais, toute autre langue est un plus\n\n Tes qualités\n\n- Tu as envie de t'engager pour resoudre les problemes socio- environnementaux et mesurer l'impact d'un maximum de produits\n\n- Tu as une soif d'apprendre et tu cherches constamment a t'ameliorer\n\n- Tu recherches un environnement dynamique et tu as envie de contribuer au developpement d'une start-up à impact\n\n- Tu ne remplis pas (forcément) toutes les cases ci-dessus, mais ces missions te correspondent et tu apprends vite !\n\n Détails de l'offre\n\nRéférence : S_DA\n\nType : Stage 6 mois\n\nQuand : Pour un début en janvier 2027\n\nOù : Paris BnF (M6, M14, Vélib) &amp; Télétravail\n\nCombien : Gratification selon profil\n\n Le processus de recrutement en 3 étapes\n\n Un premier entretien de 15 min\n\n Un exercice technique en ligne\n\n Restitution du cas technique et entretien oral.\n\nPS : One more thing! Before sending in your resume, please add to its bottom right corner the number related to Responsible Consumption and Production, one of the 17 United Nations Sustainable Development Goals to be achieved by 2030",
+"target_diploma": null,
+"desired_skills": [],
+"to_be_acquired_skills": [],
+"access_conditions": [],
+"publication": {
+"creation": "2026-10-23T18:31:46.076Z",
+"expiration": "2026-12-23T18:31:46.076Z"
+},
+"opening_count": 1,
+"status": "Active",
+"to_applicant_questions": null
+},
+"is_delegated": false
+},
+{
+"identifier": {
+"id": "6adbdcf7bfbdb64c1a67fcb2",
+"partner_label": "France Travail",
+"partner_job_id": "214YWWX"
+},
+"workplace": {
+"siret": "52788142900064",
+"brand": null,
+"legal_name": "ETLB",
+"website": null,
+"name": "ETLB",
+"description": null,
+"size": "50 à 99 salariés",
+"location": {
+"address": "75008 Paris 8e Arrondissement",
+"geopoint": {
+"coordinates": [
+2.3116,
+48.873707
+],
+"type": "Point"
+}
+},
+"domain": {
+"idcc": 478,
+"opco": "ATLAS",
+"naf": {
+"code": "66.30Z",
+"label": "Gestion de fonds"
+}
+}
+},
+"apply": {
+"url": "https://candidat.francetravail.fr/offres/recherche/detail/214YWWX",
+"phone": null,
+"recipient_id": null
+},
+"contract": {
+"start": null,
+"start_type": null,
+"start_is_flexible": null,
+"duration": 12,
+"type": [
+"Apprentissage"
+],
+"remote": null
+},
+"offer": {
+"title": "Alternance - Assistant(e) IA / BI (H/F)",
+"rome_codes": [
+"M1419"
+],
+"description": "Dans un contexte d'hypercroissance et d'industrialisation des processus, Côté Sushi accélère sa \ntransition vers l'automatisation et l'usage de l'IA. Ce poste est clé pour créer, déployer et \nmaintenir des agents IA, automatiser les flux inter-systèmes, structurer les données et \nindustrialiser les dashboards Power BI. Vous collaborerez au quotidien avec les équipes Supply, \nAchats, Finance, QHSE et DSI. \n\nVOS MISSIONS \n1. Automatisation &amp; agents IA : Vous concevez et déployez des agents IA opérationnels et des workflows automatisés pour \nfiabiliser et accélérer les processus métier. \n- Créer des agents IA dédiés aux thématiques supply, prévisionnel, achats et data \nquality : définition des prompts structurés, paramétrage et documentation \n- Développer des workflows Power Automate pour automatiser les flux ERP, la \ngestion de fichiers, les alertes et les synchronisations inter-systèmes \n- Mettre en place des alertes intelligentes sur les ruptures, anomalies et incohérences \ndata, ainsi que des systèmes de prédiction et d'alerting avancés \n- Automatiser les prévisionnels de bout en bout : collecte, calcul, export et diffusion \n\n2. Data Engineering &amp; intégrations : Vous structurez et fiabilisez la donnée en construisant des pipelines robustes et des connexions \nautomatisées entre les systèmes. \n- Traiter, nettoyer et structurer les données issues de sources multiples (ERP, \nSharePoint, fichiers internes) \n- Construire et maintenir des pipelines de données automatisés, fiables et \ndocumentés \n- Développer les connexions API entre l'ERP, SharePoint et Power BI \n- Créer et maintenir les dictionnaires de données et référentiels, et assurer la \nvérification systématique de la qualité des données \n\n3. Business Intelligence : Vous concevez des tableaux de bord Power BI industrialisés, orientés décision, adoptés par les \néquipes métier. \n- Construire, optimiser et maintenir les dashboards Power BI : modélisation DAX, data \nrefresh incrémental, optimisation des performances \n- Créer les modèles de données et mettre en place des conventions de nommage et \nstandards BI \n- Définir et instrumenter les KPIs clés en lien avec les équipes Supply, Finance et \nAchats \n\n4. Support transverse &amp; amélioration continue : Vous êtes un relais tech au sein des équipes, capable d'accompagner, de former et de documenter \npour ancrer les pratiques dans la durée. \n- Accompagner les équipes dans la prise en main des outils IA et Power Platform : \nformation, support, pédagogie \n- Participer aux projets digitaux transverses (BI, automatisation, data) en lien avec la \nDSI et la direction générale \n- Produire une documentation technique systématique et des guides utilisateurs pour \nchaque livrable déployé \n\n\nPROFIL RECHERCHÉ \n- Formation : étudiant(e) Bac+3 à Bac+5 en Data, BI, IA, digital ou informatique \n- Une première expérience (stage ou alternance) en automatisation, BI ou data \nengineering est un plus \n- Forte capacité d'apprentissage, rigueur, logique et sens du détail \n- Autonomie, organisation et espérit d'initiative : vous savez avancer seul(e) sur des \nsujets complexes \n- Pédagogie et aisance relationnelle pour interagir avec des équipes métier non \ntechniques \n- Fort appétit pour la tech, la data et la supply chain \n\nCOMPÉTENCES TECHNIQUES \n- Power Automate - niveau confirmé ou fort potentiel \n- Power BI - modélisation &amp; DAX \n- SQL - un plus \n- Notions d'API et intégrations inter-systèmes \n- IA / LLM - Copilot Studio, agents IA \n- Bases en Python appréciées \n- Compréhension ERP / Supply Chain \n\n\nPourquoi nous rejoindre ? \n- Contrat d'apprentissage uniquement \n- Durée du contrat : 1 an \n- Début de contrat : Septembre 2026 \n- Localisation : Paris 8e (St-Augustin / St-Lazare)",
+"target_diploma": {
+"european": "6",
+"label": "Licence, BUT, Licence Pro (Bac+3)"
+},
+"desired_skills": [],
+"to_be_acquired_skills": [
+"Adapter les outils de traitement statistique de données",
+"Communiquer les résultats des études aux parties prenantes"
+],
+"access_conditions": [],
+"publication": {
+"creation": "2026-10-08T14:56:05.572Z",
+"expiration": "2026-12-08T14:56:05.572Z"
+},
+"opening_count": 1,
+"status": "Active",
+"to_applicant_questions": null
+},
+"is_delegated": false
+},
+{
+"identifier": {
+"id": "6ab2ff287caaafd3f596a596",
+"partner_label": "France Travail",
+"partner_job_id": "7093043"
+},
+"workplace": {
+"siret": null,
+"brand": null,
+"legal_name": null,
+"website": null,
+"name": null,
+"description": null,
+"size": null,
+"location": {
+"address": "92000 Nanterre",
+"geopoint": {
+"coordinates": [
+2.202314,
+48.898095
+],
+"type": "Point"
+}
+},
+"domain": {
+"idcc": null,
+"opco": null,
+"naf": null
+}
+},
+"apply": {
+"url": "https://www.talents-handicap.com/315-wavestone/342993-stage-de-fin-d-etudes-alternance-sujet-de-stage-finance-achats-accompagner-les-transformations-de-ces-metiers-en-s-appuyant-sur-la-data-et-les-systemes-d-informations-les-plus-performants?src=FranceTravail",
+"phone": null,
+"recipient_id": null
+},
+"contract": {
+"start": null,
+"start_type": null,
+"start_is_flexible": null,
+"duration": 12,
+"type": [
+"Apprentissage"
+],
+"remote": null
+},
+"offer": {
+"title": "Stage de fin d'études / Alternance - Sujet de stage : Finance &amp; Achats - Accompagner les transformations de ces métiers en s'appuyant sur la Data et les Systèmes d'Informations les plus performants  (H/F)",
+"rome_codes": [
+"M1805"
+],
+"description": "Description de l'entrepriseWavestone est un cabinet de conseil, qui a pour mission d'accompagner les entreprises et organisations dans leurs transformations stratégiques dans un monde en constante évolution, avec l'ambition de générer des impacts positifs et durables pour toutes ses parties prenantes. Forts de plus de 5500 collaborateurs talentueux et engagés à travers l'Europe, l'Amérique du Nord et l'Asie, nous disposons d'expertises sectorielles de premier plan et d'un portefeuille de savoir-faire cross-sectoriels, nous permettant d'adresser à 360° les grands programmes de transformation de nos clients. Chez Wavestone, nous sommes convaincus que la réussite professionnelle et l'épanouissement personnel vont de pair. C'est pourquoi nous offrons un environnement de travail stimulant, inclusif et bienveillant, où chacun peut s'épanouir et atteindre son plein potentiel. Wavestone est coté sur Euronext, à Paris, et labellisé Great Place to Work®. Pour plus d'informations, consulter www.wavestone.com.   Description du posteDescription de la Business Unit TIME TIME (Transport, Infrastructure, Manufacturing, Energy) accompagne les leaders industriels et énergétiques dans leur digitalisation. Nous soutenons leurs projets de transformation des systèmes d'information, de la définition de la stratégie IT au choix et au déploiement des solutions (ERP, EPM, TMS, WMS, CRM.), ainsi que la transformation des métiers tout au long de la chaîne de valeur (R&amp;D, Production, Supply, Vente, Marketing). Nous accélérons également l'adoption des technologies digitales en aidant nos clients à valoriser leurs données et à industrialiser l'innovation, notamment via l'IoT, la GenAI et les jumeaux numériques. Notre accompagnement repose sur des expertises sectorielles, fonctionnelles et technologiques, continuellement renforcées par la veille et la formation. Description du poste L'agilité et la digitalisation des processus, la valorisation de la donnée, la contribution aux objectifs de développement durable sont des enjeux clés pour nos clients, constituant l'agenda prioritaire des CFO (Chief Financial Officer) et CPO (Chief Procurement Officer), respectivement en charge des fonctions Finance et Achats. Vous aurez l'opportunité d'accompagner et d'impacter directement les transformations les plus profondes engagées par nos clients au sein des directions Financières et Achats, s'inscrivant souvent dans une dimension internationale et multiculturelle avec des interlocuteurs de haut niveau, dans des secteurs variés de l'Industrie, de l'Energie et des Services. Vous aurez ainsi la possibilité d'intervenir sur l'ensemble de notre large panel de savoir-faire, typologies de missions et phases d'un projet (du cadrage au déploiement), et notamment les problématiques de : Pilotage de la performance financière et extra-financière Refonte / digitalisation des processus et des SI Finance et/ou Achats Mise en place de centres de services partagés Digitalisation des contrats (Contract Management) Au sein de notre practice Transportation, Infrastructure, Manufacturing &amp; Energy (TIME), tout en approfondissant vos connaissances des fonctions Finance et Achats, vous explorerez d'autres domaines de compétences (Data &amp; process digitalization, IS Transformation, Change Management), clés dans la transformation. En parallèle du sujet de stage que vous aurez à traiter, vous participerez à une ou plusieurs missions de conseil auprès de nos clients, ou sur des chantiers internes, en étant intégré dans une équipe de consultants placée sous la responsabilité d'un.e directeur.ice de mission. QualificationsEtudiant.e au sein d'une école d'ingénieur ou de management, vous êtes à la recherche d'un stage de fin d'études ou d'une alternance dans un cabinet de conseil. Vous possédez un excellent relationnel, le goût du travail en équipe et un sens prononcé de la qualité. Vous savez associer analyse et synthèse et être force de proposition.  Si votre objectif est d'être considéré comme un.e collaborateur.rice à part entière : soucieux.se d'être acteur d'un projet d'entreprise ambitieux, ayant envie de mettre à profit son talent et son enthousiasme dans une société où il est possible de prendre des responsabilités rapidement et de vivre une expérience riche, alors donnez-vous les chances de rejoindre nos équipes et postulez ! Informations supplémentairesNos stages et alternances s'inscrivent tous dans une logique de pré-embauche. Wavestone est un employeur inclusif qui s'engage pour l'égalité des chances. Dans le cadre de cette politique de diversité et inclusion, Wavestone accompagne les personnes en situation de handicap et/ou nécessitant un aménagement durant leur process de recrutement et lors de leur prise de poste.",
+"target_diploma": null,
+"desired_skills": [],
+"to_be_acquired_skills": [],
+"access_conditions": [],
+"publication": {
+"creation": "2026-09-22T10:09:39.414Z",
+"expiration": "2026-11-22T10:09:39.414Z"
+},
+"opening_count": 1,
+"status": "Active",
+"to_applicant_questions": null
+},
+"is_delegated": false
+},
+{
+"identifier": {
+"id": "6ab2ff287caaafd3f596a595",
+"partner_label": "France Travail",
+"partner_job_id": "7093046"
+},
+"workplace": {
+"siret": null,
+"brand": null,
+"legal_name": null,
+"website": null,
+"name": null,
+"description": null,
+"size": null,
+"location": {
+"address": "92000 Nanterre",
+"geopoint": {
+"coordinates": [
+2.202314,
+48.898095
+],
+"type": "Point"
+}
+},
+"domain": {
+"idcc": null,
+"opco": null,
+"naf": null
+}
+},
+"apply": {
+"url": "https://www.talents-handicap.com/315-wavestone/342991-stage-de-fin-d-etudes-alternance-sujet-de-stage-accompagner-les-transformations-majeures-des-acteurs-du-transport-via-l-evolution-de-leur-business-model-ainsi-que-les-solutions-innovantes-liees-a-la-data-et-a-l-ia?src=FranceTravail",
+"phone": null,
+"recipient_id": null
+},
+"contract": {
+"start": null,
+"start_type": null,
+"start_is_flexible": null,
+"duration": 12,
+"type": [
+"Apprentissage"
+],
+"remote": null
+},
+"offer": {
+"title": "Stage de fin d'études / Alternance - Sujet de stage : Accompagner les transformations majeures des acteurs du transport via l'évolution de leur business model ainsi que les solutions innovantes liées à la Data et à l'IA  (H/F)",
+"rome_codes": [
+"M1805"
+],
+"description": "Description de l'entrepriseWavestone est un cabinet de conseil, qui a pour mission d'accompagner les entreprises et organisations dans leurs transformations stratégiques dans un monde en constante évolution, avec l'ambition de générer des impacts positifs et durables pour toutes ses parties prenantes. Forts de plus de 5500 collaborateurs talentueux et engagés à travers l'Europe, l'Amérique du Nord et l'Asie, nous disposons d'expertises sectorielles de premier plan et d'un portefeuille de savoir-faire cross-sectoriels, nous permettant d'adresser à 360° les grands programmes de transformation de nos clients. Chez Wavestone, nous sommes convaincus que la réussite professionnelle et l'épanouissement personnel vont de pair. C'est pourquoi nous offrons un environnement de travail stimulant, inclusif et bienveillant, où chacun peut s'épanouir et atteindre son plein potentiel. Wavestone est coté sur Euronext, à Paris, et labellisé Great Place to Work®. Pour plus d'informations, consulter www.wavestone.com.  Description du posteDescription de la Business Unit TIME TIME (Transport, Infrastructure, Manufacturing, Energy) accompagne les leaders industriels et énergétiques dans leur digitalisation. Nous soutenons leurs projets de transformation des systèmes d'information, de la définition de la stratégie IT au choix et au déploiement des solutions (ERP, EPM, TMS, WMS, CRM.), ainsi que la transformation des métiers tout au long de la chaîne de valeur (R&amp;D, Production, Supply, Vente, Marketing). Nous accélérons également l'adoption des technologies digitales en aidant nos clients à valoriser leurs données et à industrialiser l'innovation, notamment via l'IoT, la GenAI et les jumeaux numériques. Notre accompagnement repose sur des expertises sectorielles, fonctionnelles et technologiques, continuellement renforcées par la veille et la formation. Description du poste Le secteur des transports est au cœur de transformations majeures. L'ouverture à la concurrence du marché ferroviaire français bouleverse les modèles historiques et pousse les opérateurs à se différencier par la qualité de service et l'innovation. Parallèlement, la transition écologique impose une réduction des émissions de gaz à effet de serre, conformément aux objectifs européens et encourage le report modal vers des solutions collectives ou actives. Ces évolutions s'accompagnent d'une digitalisation accélérée des mobilités : dématérialisation des titres, applications multimodales, information voyageur en temps réel, etc. Dans ce contexte, la performance opérationnelle, la satisfaction client et la réduction de l'empreinte environnementale deviennent des priorités stratégiques. La donnée est un levier essentiel pour y parvenir : elle permet de mieux connaître les voyageurs (habitudes, irritants, préférences), d'anticiper les défaillances, d'adapter l'offre en temps réel et de concevoir des services différenciants. Elle est également indispensable pour mesurer et piloter l'impact écologique des mobilités, favoriser l'intermodalité et accompagner les politiques publiques. Dans ce cadre, sous l'encadrement d'un tuteur et d'un sponsor de l'offre, vous travaillerez sur les types de problématiques suivantes :  Quels sont les cas d'usage de l'IA dans le secteur du transport ? Comment distribuer des offres de transport ferroviaire dans un marché ouvert à la concurrence ? La data dans le secteur de la mobilité : quels usages pour répondre aux enjeux de demain ? Comment la mise en qualité de la donnée permet-elle d'améliorer la performance des opérateurs de Transport ? Relation Client : Comment la donnée permet-elle aux opérateurs de se différencier entre eux ? Quels impacts de la transition écologique sur le secteur du transport ? En parallèle du sujet de stage que vous aurez à traiter, vous participerez à une ou plusieurs missions de conseil auprès de nos clients, ou sur des chantiers internes, en étant intégré dans une équipe de consultants placée sous la responsabilité d'un.e directeur.ice de mission. QualificationsEtudiant.e au sein d'une école d'ingénieur ou de management, vous êtes à la recherche d'un stage de fin d'études ou d'une alternance dans un cabinet de conseil. Vous possédez un excellent relationnel, le goût du travail en équipe et un sens prononcé de la qualité. Vous savez associer analyse et synthèse et être force de proposition.  Si votre objectif est d'être considéré comme un.e collaborateur.rice à part entière : soucieux.se d'être acteur d'un projet d'entreprise ambitieux, ayant envie de mettre à profit son talent et son enthousiasme dans une société où il est possible de prendre des responsabilités rapidement et de vivre une expérience riche, alors donnez-vous les chances de rejoindre nos équipes et postulez ! Informations supplémentairesTous nos stages et alternance s'inscrivent dans une logique de pré-embauche.Wavestone est un employeur inclusif qui s'engage pour l'égalité des chances. Dans le cadre de cette politique de diversit...",
+"target_diploma": null,
+"desired_skills": [],
+"to_be_acquired_skills": [],
+"access_conditions": [],
+"publication": {
+"creation": "2026-09-22T10:09:39.410Z",
+"expiration": "2026-11-22T10:09:39.410Z"
+},
+"opening_count": 1,
+"status": "Active",
+"to_applicant_questions": null
+},
+"is_delegated": false
+},
+{
+"identifier": {
+"id": "6ab2ff287caaafd3f596a594",
+"partner_label": "France Travail",
+"partner_job_id": "7093047"
+},
+"workplace": {
+"siret": null,
+"brand": null,
+"legal_name": null,
+"website": null,
+"name": null,
+"description": null,
+"size": null,
+"location": {
+"address": "92000 Nanterre",
+"geopoint": {
+"coordinates": [
+2.202314,
+48.898095
+],
+"type": "Point"
+}
+},
+"domain": {
+"idcc": null,
+"opco": null,
+"naf": null
+}
+},
+"apply": {
+"url": "https://www.talents-handicap.com/315-wavestone/342995-stage-de-fin-d-etudes-alternance-sujet-de-stage-industrie-5-0-et-performance-des-operations-au-coeur-des-strategies-et-des-transformations-des-acteurs-industriels?src=FranceTravail",
+"phone": null,
+"recipient_id": null
+},
+"contract": {
+"start": null,
+"start_type": null,
+"start_is_flexible": null,
+"duration": 12,
+"type": [
+"Apprentissage"
+],
+"remote": null
+},
+"offer": {
+"title": "Stage de fin d'études / Alternance - Sujet de stage : Industrie 5.0 et performance des opérations, au cœur des stratégies et des transformations des acteurs industriels.  (H/F)",
+"rome_codes": [
+"M1805"
+],
+"description": "Description de l'entrepriseWavestone est un cabinet de conseil, qui a pour mission d'accompagner les entreprises et organisations dans leurs transformations stratégiques dans un monde en constante évolution, avec l'ambition de générer des impacts positifs et durables pour toutes ses parties prenantes. Forts de plus de 5500 collaborateurs talentueux et engagés à travers l'Europe, l'Amérique du Nord et l'Asie, nous disposons d'expertises sectorielles de premier plan et d'un portefeuille de savoir-faire cross-sectoriels, nous permettant d'adresser à 360° les grands programmes de transformation de nos clients. Chez Wavestone, nous sommes convaincus que la réussite professionnelle et l'épanouissement personnel vont de pair. C'est pourquoi nous offrons un environnement de travail stimulant, inclusif et bienveillant, où chacun peut s'épanouir et atteindre son plein potentiel. Wavestone est coté sur Euronext, à Paris, et labellisé Great Place to Work®. Pour plus d'informations, consulter www.wavestone.com.  Description du posteDescription de la Business Unit TIME TIME (Transport, Infrastructure, Manufacturing, Energy) accompagne les leaders industriels et énergétiques dans leur digitalisation. Nous soutenons leurs projets de transformation des systèmes d'information, de la définition de la stratégie IT au choix et au déploiement des solutions (ERP, EPM, TMS, WMS, CRM.), ainsi que la transformation des métiers tout au long de la chaîne de valeur (R&amp;D, Production, Supply, Vente, Marketing). Nous accélérons également l'adoption des technologies digitales en aidant nos clients à valoriser leurs données et à industrialiser l'innovation, notamment via l'IoT, la GenAI et les jumeaux numériques. Notre accompagnement repose sur des expertises sectorielles, fonctionnelles et technologiques, continuellement renforcées par la veille et la formation. Description du poste La recherche de performance opérationnelle est au cœur des problématiques des entreprises industrielles et des transformations opérées par ces dernières. Définir les bonnes stratégies, indicateurs et décliner les feuilles de routes pour atteindre les objectifs est un exercice constant pour s'adapter à un environnement de plus en plus complexe et challengeant.   Identifier les enjeux clés est un point de départ à l'élaboration ou à la mise à jour d'un plan de transformation. L'usine du futur est-elle guidée par l'IA, les outils digitaux, l'humain ou les 3 ? Les enjeux d'une usine sont-ils l'efficacité opérationnelle, la réduction de son impact environnemental ou le développement de ses ressources humaines ? Aidez Wavestone, au travers de la practice TIME (Transport, Infrastructure, Manufacturing &amp; Energy), à développer ses convictions sur ces sujets.  L'objectif du stage de fin d'études ou de l'alternance:  Le stage / l'alternance pourra se concentrer sur un ou plusieurs aspects de la performance industrielle, des enjeux clés actuels des entreprises industrielles, de la recherche de performance par la transformation digitale et des impacts des transformations au sein des organisations.  Travaux à réaliser :   Sous la supervision d'un tuteur, et avec l'aide d'une équipe de consultants experts en industrie, opérations &amp; technologies, le stagiaire/l'alternant devra :   Cadrer et identifier la problématique cible liée à la performance des opérations industrielles et/ou à l'industrie 5.0.  Identifier les enjeux clés liés à sa problématique, comprendre leur importance pour une entreprise industrielle et orienter sa recherche vers les leviers principaux de transformation et les impacts associés.  Etablir une analyse de maturité de nos clients sur la thématique adoptée et dégager des tendances sur les freins et accélérateurs, pour aboutir à l'identification de nouvelles convictions cabinet et/ou à la révision de convictions existantes.  Synthétiser les convictions de Wavestone en la matière pour renforcer les recommandations de Wavestone pour ses clients et la notoriété du cabinet.  En parallèle du sujet de stage que vous aurez à traiter, vous participerez à une ou plusieurs missions de conseil auprès de nos clients, ou sur des chantiers internes, en étant intégré dans une équipe de consultants placée sous la responsabilité d'un.e directeur.ice de mission. QualificationsEtudiant.e au sein d'une école d'ingénieur ou de management, vous êtes à la recherche d'un stage de fin d'études ou d'une alternance dans un cabinet de conseil. Vous possédez un excellent relationnel, le goût du travail en équipe et un sens prononcé de la qualité. Vous savez associer analyse et synthèse et être force de proposition.  Si votre objectif est d'être considéré comme un.e collaborateur.rice à part entière : soucieux.se d'être acteur d'un projet d'entreprise ambitieux, ayant envie de mettre à profit son talent et son enthousiasme dans une société où il est possible de prendre des responsabilités rapidement et de vivre une expérience riche, alors donnez-vous les chances de rejoin...",
+"target_diploma": null,
+"desired_skills": [],
+"to_be_acquired_skills": [],
+"access_conditions": [],
+"publication": {
+"creation": "2026-09-22T10:09:39.407Z",
+"expiration": "2026-11-22T10:09:39.407Z"
+},
+"opening_count": 1,
+"status": "Active",
+"to_applicant_questions": null
+},
+"is_delegated": false
+},
+{
+"identifier": {
+"id": "6ab2ff287caaafd3f596a597",
+"partner_label": "France Travail",
+"partner_job_id": "7093038"
+},
+"workplace": {
+"siret": null,
+"brand": null,
+"legal_name": null,
+"website": null,
+"name": null,
+"description": null,
+"size": null,
+"location": {
+"address": "92000 Nanterre",
+"geopoint": {
+"coordinates": [
+2.202314,
+48.898095
+],
+"type": "Point"
+}
+},
+"domain": {
+"idcc": null,
+"opco": null,
+"naf": null
+}
+},
+"apply": {
+"url": "https://www.talents-handicap.com/315-wavestone/342992-stage-de-fin-d-etudes-alternance-sujet-de-stage-management-des-directions-recherche-et-innovation?src=FranceTravail",
+"phone": null,
+"recipient_id": null
+},
+"contract": {
+"start": null,
+"start_type": null,
+"start_is_flexible": null,
+"duration": 12,
+"type": [
+"Apprentissage"
+],
+"remote": null
+},
+"offer": {
+"title": "Stage de fin d'études / Alternance - Sujet de stage : Management des directions Recherche et Innovation (H/F)",
+"rome_codes": [
+"M1805"
+],
+"description": "Description de l'entrepriseWavestone est un cabinet de conseil, qui a pour mission d'accompagner les entreprises et organisations dans leurs transformations stratégiques dans un monde en constante évolution, avec l'ambition de générer des impacts positifs et durables pour toutes ses parties prenantes. Forts de plus de 5500 collaborateurs talentueux et engagés à travers l'Europe, l'Amérique du Nord et l'Asie, nous disposons d'expertises sectorielles de premier plan et d'un portefeuille de savoir-faire cross-sectoriels, nous permettant d'adresser à 360° les grands programmes de transformation de nos clients. Chez Wavestone, nous sommes convaincus que la réussite professionnelle et l'épanouissement personnel vont de pair. C'est pourquoi nous offrons un environnement de travail stimulant, inclusif et bienveillant, où chacun peut s'épanouir et atteindre son plein potentiel. Wavestone est coté sur Euronext, à Paris, et labellisé Great Place to Work®. Pour plus d'informations, consulter www.wavestone.com.  Description du posteDescription de la Business Unit TIME TIME (Transport, Infrastructure, Manufacturing, Energy) accompagne les leaders industriels et énergétiques dans leur digitalisation. Nous soutenons leurs projets de transformation des systèmes d'information, de la définition de la stratégie IT au choix et au déploiement des solutions (ERP, EPM, TMS, WMS, CRM.), ainsi que la transformation des métiers tout au long de la chaîne de valeur (R&amp;D, Production, Supply, Vente, Marketing). Nous accélérons également l'adoption des technologies digitales en aidant nos clients à valoriser leurs données et à industrialiser l'innovation, notamment via l'IoT, la GenAI et les jumeaux numériques. Notre accompagnement repose sur des expertises sectorielles, fonctionnelles et technologiques, continuellement renforcées par la veille et la formation. Description du poste Les directions Recherche &amp; Innovation (R&amp;I) sont aujourd'hui confrontées à des défis majeurs : démontrer leur valeur, accélérer la mise sur le marché des innovations, tirer parti de l'IA et de la donnée, renforcer leurs écosystèmes et intégrer les enjeux de durabilité au cœur de leurs démarches. Au sein de l'offre Stratégie et Management R&amp;I de Wavestone, nous accompagnons les grandes entreprises industrielles et technologiques dans la transformation de leurs activités d'innovation, de la définition de la stratégie jusqu'à la mise en œuvre opérationnelle. Notre accompagnement s'articule autour de 6 piliers complémentaires : Stratégie, pilotage et performance de l'innovation : définir les feuilles de route R&amp;I, mesurer la création de valeur, optimiser les portefeuilles de projets et mettre en place des dispositifs de pilotage performants. Open innovation et financement : développer les écosystèmes d'innovation, structurer les partenariats avec les startups, laboratoires et institutions, et mobiliser les dispositifs de financement publics et privés. Produits et services innovants : faire émerger, expérimenter et industrialiser de nouvelles offres, depuis l'idéation et le prototypage jusqu'au déploiement à grande échelle. Data &amp; IA au service de la R&amp;I : valoriser la donnée, déployer l'intelligence artificielle générative, digitaliser les activités de recherche et construire des organisations davantage pilotées par les données. Acculturation et transformation : faire évoluer les organisations, les compétences et les modes de travail pour diffuser une culture de l'innovation durable et collaborative. Innovation durable : intégrer les enjeux environnementaux et sociétaux dans les stratégies d'innovation, développer l'éco-innovation et imaginer les business models de demain. Objectifs et exemples de travaux à réaliser Ce stage/cette alternance vise à structurer et produire une connaissance et un savoir-faire de premier plan sur un ou plusieurs leviers listés ci-dessus. Les résultats devront apporter à Wavestone des atouts différenciants sur le marché. Dans ce cadre, sous l'encadrement d'un tuteur et d'un sponsor de l'offre « Stratégie et management R&amp;I », vous serez amené.e à travailler sur le type de problématiques présentées ci-dessous : Stratégie &amp; performance : Comment restituer la valeur de la R&amp;D dans un environnement industriel ? Data &amp; IA : AI Agents : Demain, un chercheur aura-t-il son copilote scientifique ? Innovation durable : Comment scorer l'innovation d'un point de vue durable ? Open innovation : Benchmark sur les dispositifs partagés d'innovation sur la data de demain Exemples de sujets donnés à titre illustratif, liste non exhaustive En parallèle, vous participerez potentiellement à une ou plusieurs missions de conseil auprès de nos clients, en étant intégré dans une équipe de consultants placée sous la responsabilité d'un directeur de mission. QualificationsEtudiant.e au sein d'une école d'ingénieur ou de management, vous êtes à la recherche d'un stage de fin d'études ou d'une alternance dans un cabinet de conseil. Vous possédez un e...",
+"target_diploma": null,
+"desired_skills": [],
+"to_be_acquired_skills": [],
+"access_conditions": [],
+"publication": {
+"creation": "2026-09-22T10:09:39.386Z",
+"expiration": "2026-11-22T10:09:39.386Z"
+},
+"opening_count": 1,
+"status": "Active",
+"to_applicant_questions": null
+},
+"is_delegated": false
+},
+{
+"identifier": {
+"id": "6ab2ff287caaafd3f596a598",
+"partner_label": "France Travail",
+"partner_job_id": "7093035"
+},
+"workplace": {
+"siret": null,
+"brand": null,
+"legal_name": null,
+"website": null,
+"name": null,
+"description": null,
+"size": null,
+"location": {
+"address": "92000 Nanterre",
+"geopoint": {
+"coordinates": [
+2.202314,
+48.898095
+],
+"type": "Point"
+}
+},
+"domain": {
+"idcc": null,
+"opco": null,
+"naf": null
+}
+},
+"apply": {
+"url": "https://www.talents-handicap.com/315-wavestone/342996-stage-de-fin-d-etudes-alternance-sujet-de-stage-transformation-si-transformer-les-si-pour-repondre-aux-nouveaux-enjeux-du-monde-industriel-et-energetique-1?src=FranceTravail",
+"phone": null,
+"recipient_id": null
+},
+"contract": {
+"start": null,
+"start_type": null,
+"start_is_flexible": null,
+"duration": 12,
+"type": [
+"Apprentissage"
+],
+"remote": null
+},
+"offer": {
+"title": "Stage de fin d'études / Alternance - Sujet de stage : Transformation SI : transformer les SI pour répondre aux nouveaux enjeux du monde industriel et énergétique  (H/F)",
+"rome_codes": [
+"M1805"
+],
+"description": "Description de l'entrepriseWavestone est un cabinet de conseil, qui a pour mission d'accompagner les entreprises et organisations dans leurs transformations stratégiques dans un monde en constante évolution, avec l'ambition de générer des impacts positifs et durables pour toutes ses parties prenantes. Forts de plus de 5500 collaborateurs talentueux et engagés à travers l'Europe, l'Amérique du Nord et l'Asie, nous disposons d'expertises sectorielles de premier plan et d'un portefeuille de savoir-faire cross-sectoriels, nous permettant d'adresser à 360° les grands programmes de transformation de nos clients. Chez Wavestone, nous sommes convaincus que la réussite professionnelle et l'épanouissement personnel vont de pair. C'est pourquoi nous offrons un environnement de travail stimulant, inclusif et bienveillant, où chacun peut s'épanouir et atteindre son plein potentiel. Wavestone est coté sur Euronext, à Paris, et labellisé Great Place to Work®. Pour plus d'informations, consulter www.wavestone.com.  Description du posteDescription de la Business Unit TIME TIME (Transport, Infrastructure, Manufacturing, Energy) accompagne les leaders industriels et énergétiques dans leur digitalisation. Nous soutenons leurs projets de transformation des systèmes d'information, de la définition de la stratégie IT au choix et au déploiement des solutions (ERP, EPM, TMS, WMS, CRM.), ainsi que la transformation des métiers tout au long de la chaîne de valeur (R&amp;D, Production, Supply, Vente, Marketing). Nous accélérons également l'adoption des technologies digitales en aidant nos clients à valoriser leurs données et à industrialiser l'innovation, notamment via l'IoT, la GenAI et les jumeaux numériques. Notre accompagnement repose sur des expertises sectorielles, fonctionnelles et technologiques, continuellement renforcées par la veille et la formation. Description du poste Dans un contexte où l'intelligence artificielle s'intègre désormais dans les moindres recoins de l'entreprise - jusqu'à la machine à café -, où les opérations de fusion-acquisition se succèdent à un rythme soutenu, et où les cadres réglementaires évoluent avec une fréquence difficilement prévisible, les entreprises font face à une nécessité impérieuse : se réinventer pour rester compétitives. Notre mission au sein de la BU TIME (Transport, Infrastructure, Manufacturing &amp; Energy) - et peut-être bientôt la vôtre - est d'accompagner les grandes entreprises dans la refonte, la modernisation et l'alignement de leur système d'information avec leurs ambitions stratégiques. Nous combinons vision, pragmatisme et exigence de résultats pour transformer les idées en actions concrètes. Car si les présentations soignées font bonne impression, ce sont les impacts mesurables qui font vraiment la différence. Nos terrains de jeu favoris : Architecture des systèmes d'information (SI) : concevoir un système d'information cohérent, modulaire et évolutif, capable d'intégrer les nouvelles technologies (cloud, IA, data) tout en répondant aux besoins métiers. Target Operating Model (TOM) : organiser les équipes et les outils pour assurer la fluidité dans les opérations, même en mode Agile. M&amp;A IT : fusionner des SI sans provoquer de crash. Votre mission : Renforcer notre expertise sur la transformation des SI au service du business. Concrètement ? Vous allez produire des livrables qui comptent vraiment : utiles, différenciants, et qui font briller nos missions. et nos clients. Et bien sûr, vous ne serez pas seul-e dans l'aventure : Un tuteur et un sponsor de l'offre vous accompagneront sur des sujets aussi passionnants que stratégiques. Vous serez également pleinement intégré.e à la vie de l'équipe : participation à l'élaboration de propositions commerciales, intégration en mission client, contribution au knowledge management. Bref, un environnement stimulant, où l'on apprend vite, ensemble, et dans la bonne humeur. Quelques exemples de défis qui vous attendent : - Automatiser la MaJ de cartographie applicative pour ne plus traiter les écarts à la main, - Définir des indicateurs de pilotage, GreenOps, de gestion de parc applicatif, ou d'autres encore., - Injecter de l'IA dans les processus IT pour les rendre plus efficaces, - Harmoniser une DSI post-fusion : agir au meilleur niveau pour remettre de l'ordre dans l'organigramme, - Définir une stratégie cloud sur mesure pour SAP S/4 HANA (et faire fondre les coûts). En parallèle du sujet de stage que vous aurez à traiter, vous participerez à une ou plusieurs missions de conseil auprès de nos clients, ou sur des chantiers internes, en étant intégré dans une équipe de consultants placée sous la responsabilité d'un.e directeur.ice de mission. QualificationsEtudiant.e au sein d'une école d'ingénieur ou de management, vous êtes à la recherche d'un stage de fin d'études ou d'une alternance dans un cabinet de conseil. Vous possédez un excellent relationnel, le goût du travail en équipe et un sens prononcé de la qualité. Vous save...",
+"target_diploma": null,
+"desired_skills": [],
+"to_be_acquired_skills": [],
+"access_conditions": [],
+"publication": {
+"creation": "2026-09-22T10:09:38.911Z",
+"expiration": "2026-11-22T10:09:38.911Z"
+},
+"opening_count": 1,
+"status": "Active",
+"to_applicant_questions": null
+},
+"is_delegated": false
+},
+{
+"identifier": {
+"id": "6ab2ff287caaafd3f596a599",
+"partner_label": "France Travail",
+"partner_job_id": "7093024"
+},
+"workplace": {
+"siret": null,
+"brand": null,
+"legal_name": null,
+"website": null,
+"name": null,
+"description": null,
+"size": null,
+"location": {
+"address": "92000 Nanterre",
+"geopoint": {
+"coordinates": [
+2.202314,
+48.898095
+],
+"type": "Point"
+}
+},
+"domain": {
+"idcc": null,
+"opco": null,
+"naf": null
+}
+},
+"apply": {
+"url": "https://www.talents-handicap.com/315-wavestone/342994-stage-de-fin-d-etudes-alternance-sujet-de-stage-performance-et-digitalisation-de-l-ingenierie?src=FranceTravail",
+"phone": null,
+"recipient_id": null
+},
+"contract": {
+"start": null,
+"start_type": null,
+"start_is_flexible": null,
+"duration": 12,
+"type": [
+"Apprentissage"
+],
+"remote": null
+},
+"offer": {
+"title": "Stage de fin d'études / Alternance - Sujet de stage : Performance et digitalisation de l'ingénierie (H/F)",
+"rome_codes": [
+"M1805"
+],
+"description": "Description de l'entrepriseWavestone est un cabinet de conseil, qui a pour mission d'accompagner les entreprises et organisations dans leurs transformations stratégiques dans un monde en constante évolution, avec l'ambition de générer des impacts positifs et durables pour toutes ses parties prenantes. Forts de plus de 5500 collaborateurs talentueux et engagés à travers l'Europe, l'Amérique du Nord et l'Asie, nous disposons d'expertises sectorielles de premier plan et d'un portefeuille de savoir-faire cross-sectoriels, nous permettant d'adresser à 360° les grands programmes de transformation de nos clients. Chez Wavestone, nous sommes convaincus que la réussite professionnelle et l'épanouissement personnel vont de pair. C'est pourquoi nous offrons un environnement de travail stimulant, inclusif et bienveillant, où chacun peut s'épanouir et atteindre son plein potentiel. Wavestone est coté sur Euronext, à Paris, et labellisé Great Place to Work®. Pour plus d'informations, consulter www.wavestone.com.  Description du posteDescription de la Business Unit TIME TIME (Transport, Infrastructure, Manufacturing, Energy) accompagne les leaders industriels et énergétiques dans leur digitalisation. Nous soutenons leurs projets de transformation des systèmes d'information, de la définition de la stratégie IT au choix et au déploiement des solutions (ERP, EPM, TMS, WMS, CRM.), ainsi que la transformation des métiers tout au long de la chaîne de valeur (R&amp;D, Production, Supply, Vente, Marketing). Nous accélérons également l'adoption des technologies digitales en aidant nos clients à valoriser leurs données et à industrialiser l'innovation, notamment via l'IoT, la GenAI et les jumeaux numériques. Notre accompagnement repose sur des expertises sectorielles, fonctionnelles et technologiques, continuellement renforcées par la veille et la formation. Description du poste Wavestone, au travers de la practice TIME (Transport, Infrastructure, Manufacturing &amp; Energy), accompagne les industriels dans leurs programmes de « Performance &amp; Digitalisation de l'ingénierie » : Comment améliorer la phase conception et développement produit en optimisant les organisations, les processus et méthodes de travail, et en s'appuyant sur les solutions digitales (PLM, BIM, Jumeau numérique, etc.) et sur l'intelligence artificielle ?  Nous intervenons auprès des directions R&amp;D, directions d'ingénierie et bureaux d'étude afin de :  Définir la stratégie de développement produit et l'organisation de l'ingénierie   Optimiser les méthodes et processus de développement produit (ingénierie système, gestion des exigences, gestion de configuration, gestion des interfaces.)  Digitaliser les activités d'ingénierie sur l'ensemble du cycle de vie du produit (conception, production, exploitation, recyclage, etc.) dans le but d'assurer la continuité numérique  Accompagner les transformations auprès des équipes d'ingénierie : formation, communication  Ce stage / cette alternance vise à structurer et produire une connaissance et un savoir-faire de premier plan sur un ou plusieurs leviers listés ci-dessus. Les résultats devront apporter à Wavestone des atouts différenciants sur le marché.  Dans ce cadre, sous l'encadrement d'un tuteur et d'un sponsor de l'offre, vous serez amené.es à travailler sur le type de problématiques présentées ci-dessous :   Quelle est la place du PLM dans l'industrie 4.0 ?  Comment les acteurs évoluent-ils vers une continuité numérique de bout en bout ? Comment travaillent les industriels avec leur écosystème en entreprise étendue ?  Comment les jumeaux numériques, le BIM et le PLM transforment-ils le développement produit ? Comment l'intelligence artificielle peut permettre d'accélérer les phases de conception d'un produit ? Comment intégrer l'impact environnemental dès la phase d'ingénierie ? En parallèle du sujet de stage que vous aurez à traiter, vous participerez à une ou plusieurs missions de conseil auprès de nos clients, ou sur des chantiers internes, en étant intégré dans une équipe de consultants placée sous la responsabilité d'un.e directeur.ice de mission. QualificationsEtudiant.e au sein d'une école d'ingénieur ou de management, vous êtes à la recherche d'un stage de fin d'études ou d'une alternance dans un cabinet de conseil. Vous possédez un excellent relationnel, le goût du travail en équipe et un sens prononcé de la qualité. Vous savez associer analyse et synthèse et être force de proposition.  Si votre objectif est d'être considéré comme un.e collaborateur.rice à part entière : soucieux.se d'être acteur d'un projet d'entreprise ambitieux, ayant envie de mettre à profit son talent et son enthousiasme dans une société où il est possible de prendre des responsabilités rapidement et de vivre une expérience riche, alors donnez-vous les chances de rejoindre nos équipes et postulez ! Informations supplémentairesNos stages et alternance s'inscrivent tous dans une logique de pré-embauche.Wavestone est un employeur inc...",
+"target_diploma": null,
+"desired_skills": [],
+"to_be_acquired_skills": [],
+"access_conditions": [],
+"publication": {
+"creation": "2026-09-22T10:09:36.493Z",
+"expiration": "2026-11-22T10:09:36.493Z"
+},
+"opening_count": 1,
+"status": "Active",
+"to_applicant_questions": null
+},
+"is_delegated": false
+},
+{
+"identifier": {
+"id": "6ab2ff287caaafd3f596a59a",
+"partner_label": "France Travail",
+"partner_job_id": "7093023"
+},
+"workplace": {
+"siret": null,
+"brand": null,
+"legal_name": null,
+"website": null,
+"name": null,
+"description": null,
+"size": null,
+"location": {
+"address": "92000 Nanterre",
+"geopoint": {
+"coordinates": [
+2.202314,
+48.898095
+],
+"type": "Point"
+}
+},
+"domain": {
+"idcc": null,
+"opco": null,
+"naf": null
+}
+},
+"apply": {
+"url": "https://www.talents-handicap.com/315-wavestone/342999-stage-de-fin-d-etudes-alternance-sujet-de-stage-financement-de-l-innovation-et-de-la-r-d?src=FranceTravail",
+"phone": null,
+"recipient_id": null
+},
+"contract": {
+"start": null,
+"start_type": null,
+"start_is_flexible": null,
+"duration": 12,
+"type": [
+"Apprentissage"
+],
+"remote": null
+},
+"offer": {
+"title": "Stage de fin d'études / Alternance - Sujet de stage : Financement de l'innovation et de la R&amp;D (H/F)",
+"rome_codes": [
+"M1805"
+],
+"description": "Description de l'entrepriseWavestone est un cabinet de conseil, qui a pour mission d'accompagner les entreprises et organisations dans leurs transformations stratégiques dans un monde en constante évolution, avec l'ambition de générer des impacts positifs et durables pour toutes ses parties prenantes. Forts de plus de 5500 collaborateurs talentueux et engagés à travers l'Europe, l'Amérique du Nord et l'Asie, nous disposons d'expertises sectorielles de premier plan et d'un portefeuille de savoir-faire cross-sectoriels, nous permettant d'adresser à 360° les grands programmes de transformation de nos clients. Chez Wavestone, nous sommes convaincus que la réussite professionnelle et l'épanouissement personnel vont de pair. C'est pourquoi nous offrons un environnement de travail stimulant, inclusif et bienveillant, où chacun peut s'épanouir et atteindre son plein potentiel. Wavestone est coté sur Euronext, à Paris, et labellisé Great Place to Work®. Pour plus d'informations, consulter www.wavestone.com.  Description du posteDescription de la Business Unit TIME TIME (Transport, Infrastructure, Manufacturing, Energy) accompagne les leaders industriels et énergétiques dans leur digitalisation. Nous soutenons leurs projets de transformation des systèmes d'information, de la définition de la stratégie IT au choix et au déploiement des solutions (ERP, EPM, TMS, WMS, CRM.), ainsi que la transformation des métiers tout au long de la chaîne de valeur (R&amp;D, Production, Supply, Vente, Marketing). Nous accélérons également l'adoption des technologies digitales en aidant nos clients à valoriser leurs données et à industrialiser l'innovation, notamment via l'IoT, la GenAI et les jumeaux numériques. Notre accompagnement repose sur des expertises sectorielles, fonctionnelles et technologiques, continuellement renforcées par la veille et la formation. Description du poste Construire un pôle européen de l'innovation est un enjeu clef pour l'UE et pour la France : créer des emplois, pérenniser la croissance économique, gagner en attractivité, conserver ou développer la R&amp;D sur le sol européen. Des politiques publiques nationales et européennes de financement de l'innovation ont ainsi vue le jour afin d'inciter les acteurs à augmenter leurs investissements en R&amp;D.  Wavestone, au travers de la practice TIME (Transport, Infrastructure, Manufacturing &amp; Energy), se propose d'accompagner les grands comptes et PME dans leur stratégie de financement de l'innovation, à travers son expertise technique, financière et fiscale des dispositifs de financement tel que les subventions, le Crédit d'Impôt Recherche et les dispositifs complémentaires (IP Box, CICO, CII, JEI, etc.). L'objectif est de s'inscrire comme partenaire de programmes d'excellence et de transformation à fort impact (nouveaux produits, transition énergétique, décarbonation, intelligence artificielle, industrie 4.0, etc.). Afin de comprendre les tendances actuelles et futures du financement de l'innovation, encadré d'un.e tuteur.ice et d'expert.es, le ou la stagiaire/alternant.e sera amené.e à travailler sur des problématiques telles que : L'utilisation de l'IA générative pour accompagner les industriels dans le financement de leur R&amp;D Etude de la dynamique et des conséquences des contrôles fiscaux sur la R&amp;D des entreprises Etude des financements de la R&amp;D dans le domaine de l'énergie En parallèle du sujet de stage que vous aurez à traiter, vous participerez à une ou plusieurs missions de conseil auprès de nos clients, ou sur des chantiers internes, en étant intégré dans une équipe de consultants placée sous la responsabilité d'un.e directeur.ice de mission. QualificationsEtudiant.e au sein d'une école d'ingénieur ou de management, vous êtes à la recherche d'un stage de fin d'études ou d'une alternance dans un cabinet de conseil. Vous possédez un excellent relationnel, le goût du travail en équipe et un sens prononcé de la qualité. Vous savez associer analyse et synthèse et être force de proposition.  Si votre objectif est d'être considéré comme un.e collaborateur.rice à part entière : soucieux.se d'être acteur d'un projet d'entreprise ambitieux, ayant envie de mettre à profit son talent et son enthousiasme dans une société où il est possible de prendre des responsabilités rapidement et de vivre une expérience riche, alors donnez-vous les chances de rejoindre nos équipes et postulez ! Informations supplémentairesNos stages et alternances s'inscrivent tous dans une logique de pré-embauche.  Wavestone est un employeur inclusif qui s'engage pour l'égalité des chances. Dans le cadre de cette politique de diversité et inclusion, Wavestone accompagne les personnes en situation de handicap et/ou nécessitant un aménagement durant leur process de recrutement et lors de leur prise de poste.",
+"target_diploma": null,
+"desired_skills": [],
+"to_be_acquired_skills": [],
+"access_conditions": [],
+"publication": {
+"creation": "2026-09-22T10:09:36.492Z",
+"expiration": "2026-11-22T10:09:36.492Z"
+},
+"opening_count": 1,
+"status": "Active",
+"to_applicant_questions": null
+},
+"is_delegated": false
+},
+{
+"identifier": {
+"id": "6ad696a2e2d92300cfde48af",
+"partner_label": "France Travail",
+"partner_job_id": "7398511"
+},
+"workplace": {
+"siret": null,
+"brand": null,
+"legal_name": null,
+"website": null,
+"name": "MAYOLY",
+"description": null,
+"size": null,
+"location": {
+"address": "92500 Rueil-Malmaison",
+"geopoint": {
+"coordinates": [
+2.180528,
+48.874602
+],
+"type": "Point"
+}
+},
+"domain": {
+"idcc": null,
+"opco": null,
+"naf": {
+"code": "21.20Z",
+"label": "Fabrication de préparations pharmaceutiques"
+}
+}
+},
+"apply": {
+"url": "https://mayoly-spindler.softy.pro/offre/221812?idt=5&h=2218120",
+"phone": null,
+"recipient_id": null
+},
+"contract": {
+"start": null,
+"start_type": null,
+"start_is_flexible": null,
+"duration": 12,
+"type": [
+"Apprentissage"
+],
+"remote": null
+},
+"offer": {
+"title": "ALTERNANT CHARGÉ DANALYSE DE DONNÉES SUPPLY CHAIN - H/F",
+"rome_codes": [
+"M1419"
+],
+"description": "Description :\n\n\nContribuer au PILOTAGE DE LA PERFORMANCE SUPPLY CHAIN au sein du département S&amp;OE, à travers la fiabilisation des données, le développement d'outils de reporting et de dashboards, l'automatisation des processus et l'analyse des indicateurs clés.\n\nL'alternant(e) participe à l'amélioration de la qualité et de l'exploitation des données Supply afin de faciliter la prise de décision et d'optimiser les processus opérationnels\n\n \n\nREPORTING &amp; DATA\n\n * Extraire, consolider, contrôler et préparer les données issues des différentes sources.\n * Produire et maintenir les reportings nécessaires au pilotage de l'activité.\n * Structurer les données afin de faciliter leur analyse et leur exploitation.\n\nPOWER BI &amp; DASHBOARDS\n\n * Créer, développer et maintenir les dashboards de pilotage S&amp;OE.\n * Faire évoluer les dashboards en fonction des besoins des équipes Supply Chain.\n * Améliorer la visualisation et la lisibilité des indicateurs de performance.\n\nAUTOMATISATION\n\n * Identifier les tâches et processus pouvant être automatisés.\n * Développer et optimiser des solutions sous EXCEL, POWER QUERY ET POWER BI.\n * Réduire les tâches manuelles et améliorer la fiabilité des reportings.\n\nDATA QUALITY\n\n * Mettre en place et réaliser des contrôles de qualité et de cohérence des données.\n * Identifier, analyser et suivre les anomalies.\n * Contribuer à la résolution des problèmes de données avec les équipes concernées.\n\nANALYSE KPI\n\n * Suivre les principaux KPI Supply Chain.\n * Analyser les tendances et les écarts par rapport aux objectifs.\n * Identifier les principales causes d'écarts et contribuer à la mise en évidence des leviers d'amélioration.\n\nAMÉLIORATION CONTINUE\n\n * Documenter les processus, outils et reportings.\n * Identifier les opportunités d'optimisation et de standardisation.\n * Participer aux projets d'amélioration continue et de digitalisation de la Supply Chain\n\n\n  \n  \nProfil recherché :\n  \n  \nEn cours de formation Bac+4/5 en Supply Chain, Data, Business Intelligence, École d'ingénieur, École de commerce ou formation universitaire équivalente.\n\nVous avez:\n\n * Appétence forte pour les chiffres\n * Maitrise avancée d'Excel.\n * Connaissances ERP, APS (FuturMaster/Sunstice) et Power BI seraient un plus\n * Anglais professionnel courant écrit et oral afin de gérer des partenaires internationaux\n * Esprit analytique et capacité à interpréter des données.\n * Rigueur et sens du détail.\n * Autonomie, curiosité et capacité à être force de proposition.\n * Bon relationnel et capacité à travailler avec des interlocuteurs issus de différentes fonctions.",
+"target_diploma": null,
+"desired_skills": [],
+"to_be_acquired_skills": [],
+"access_conditions": [],
+"publication": {
+"creation": "2026-09-25T15:29:18.166Z",
+"expiration": "2026-11-25T15:29:18.166Z"
+},
+"opening_count": 1,
+"status": "Active",
+"to_applicant_questions": null
+},
+"is_delegated": false
+},
+{
+"identifier": {
+"id": "6adbdcf7bfbdb64c1a67fcad",
+"partner_label": "France Travail",
+"partner_job_id": "8221059"
+},
+"workplace": {
+"siret": "91150085800012",
+"brand": "HOLIS",
+"legal_name": "HOLIS",
+"website": null,
+"name": "HOLIS",
+"description": null,
+"size": "6 à 9 salariés",
+"location": {
+"address": "75001 Paris",
+"geopoint": {
+"coordinates": [
+2.347,
+48.859
+],
+"type": "Point"
+}
+},
+"domain": {
+"idcc": 1486,
+"opco": "ATLAS",
+"naf": {
+"code": "70.22Z",
+"label": "Conseil pour les affaires et autres conseils de gestion"
+}
+}
+},
+"apply": {
+"url": "https://jobs.makesense.org/fr/jobs/holis-data-analyst-scientist-startup-a-impact-ynnY0fGqKDP1kM2UdGIE?source=france_travail",
+"phone": null,
+"recipient_id": null
+},
+"contract": {
+"start": null,
+"start_type": null,
+"start_is_flexible": null,
+"duration": 12,
+"type": [
+"Apprentissage"
+],
+"remote": null
+},
+"offer": {
+"title": "Data Analyst / Scientist - Startup à impact  (H/F)",
+"rome_codes": [
+"M1405"
+],
+"description": "Démocratiser l'ACV auprès des entreprises\n\nHolis permet à toute entreprise de quantifier, d'améliorer et de communiquer les performances socio-environnementales de l'ensemble de ses produits \n\nEn facilitant la réalisation d'analyses du cycle de vie (ACV), notre plateforme SaaS permet d'évaluer en quelques minutes l'impact de catalogues entiers et d'identifier les leviers d'éco-conception les plus efficaces. Grâce à notre interface didactique couplée à des outils d'automatisation primés (UNESCO, GreenTech), chaque initiative peut ainsi être valorisée, avec à la clé une réduction d'impact de l'ordre de 20%. Et tout ceci avec rigueur, Holis étant certifiée conforme aux méthodologies française et européenne (Affichage environnemental, PEF, ISO, etc.) \n\nCo-fondée en 2022, Holis compte aujourd'hui une vingtaine d'ingénieurs, de développeurs et de profils hybrides couplant customer success et sciences environnementales  Soutenue par des partenaires reconnus (ADEME, Microsoft, et bien d'autres), l'équipe que tu rejoindrais a déjà permis d'améliorer des milliers de produits issus d'industries variées, et d'accompagner artistes indépendants comme entreprises du CAC 40 dans leur transition !\n\n Tes missions\n\nSi tu as envie de mettre ton expertise analytique et numérique au service d'un monde plus durable, alors ce poste est fait pour toi ! Voici quelles seront tes missions :\n\n Data Analyst\n\n- Contribuer à une harmonisation et valorisation des données environnementales disponibles\n\n- Travailler sur l'automatisation de la collecte et des process\n\n- Optimiser les outils de vérification des matching de données\n\n Data Engineer\n\n- Développer des outils d'optimisation de graphes et des process\n\n- Réaliser l'intégration des outils (internes ou API) à la plateforme, en lien avec les développeurs\n\n- Explorer de nouvelles pistes (faisabilité technique, robustesse, valeur ajoutée, coûts)\n\nProfil recherché\n Ton skillset\n\nHard skills\n\n- Développement Python et SQL\n\n- Maitrise des bases de données\n\nSoft skills\n\n- Une forte capacité à t'approprier et restituer des connaissances scientifiques (environnementales, economiques, sociales) et techniques\n\n- Une capacité à travailler en autonomie et à maitriser des sujets complexes\n\n- Un tres bon sens du relationnel : tu es a l'aise au sein d'equipes pluridisciplinaires\n\n- Langues : bilingue français-anglais, toute autre langue est un plus\n\n Tes qualités\n\n- Tu as envie de t'engager pour resoudre les problemes socio- environnementaux et mesurer l'impact d'un maximum de produits\n\n- Tu as une soif d'apprendre et tu cherches constamment a t'ameliorer\n\n- Tu recherches un environnement dynamique et tu as envie de contribuer au developpement d'une start-up à impact\n\n- Tu ne remplis pas (forcément) toutes les cases ci-dessus, mais ces missions te correspondent et tu apprends vite !\n\n Détails de l'offre\n\nRéférence : S_DA\n\nType : Stage 6 mois\n\nQuand : Pour un début en janvier 2027\n\nOù : Paris BnF (M6, M14, Vélib) &amp; Télétravail\n\nCombien : Gratification selon profil\n\n Le processus de recrutement en 3 étapes\n\n Un premier entretien de 15 min\n\n Un exercice technique en ligne\n\n Restitution du cas technique et entretien oral.\n\nPS : One more thing! Before sending in your resume, please add to its bottom right corner the number related to Responsible Consumption and Production, one of the 17 United Nations Sustainable Development Goals to be achieved by 2030",
+"target_diploma": null,
+"desired_skills": [],
+"to_be_acquired_skills": [],
+"access_conditions": [],
+"publication": {
+"creation": "2026-10-23T18:31:46.076Z",
+"expiration": "2026-12-23T18:31:46.076Z"
+},
+"opening_count": 1,
+"status": "Active",
+"to_applicant_questions": null
+},
+"is_delegated": false
+},
+{
+"identifier": {
+"id": "6ad7791e04d39aae9b87130c",
+"partner_label": "Jobs that make sense",
+"partner_job_id": "6ad7791e04d39aae9b87130c"
+},
+"workplace": {
+"siret": "82237355100040",
+"brand": null,
+"legal_name": "SAS WOODOO",
+"website": "https://jobs.makesense.org/fr/projects/woodoo-5350?source=api-apprentissage",
+"name": "SAS WOODOO",
+"description": "Woodoo a pour mission de décarboner l'industrie de la construction grâce à son bois augmenté.\nNotre objectif est clair : Faire du bois le matériau du XXIe siècle !",
+"size": "20 à 49 salariés",
+"location": {
+"address": "75001 Paris",
+"geopoint": {
+"coordinates": [
+2.347,
+48.859
+],
+"type": "Point"
+}
+},
+"domain": {
+"idcc": 158,
+"opco": "AKTO / Opco entreprises et salariés des services à forte intensité de main d'oeuvre",
+"naf": {
+"code": "16.10B",
+"label": "Imprégnation du bois"
+}
+}
+},
+"apply": {
+"url": "https://jobs.makesense.org/fr/jobs/woodoo-alternance-developpeurse-full-stack-industrie-40-hf-yGvoUSTAta9bd4OUhj3X?source=api-apprentissage",
+"phone": null,
+"recipient_id": null
+},
+"contract": {
+"start": null,
+"start_type": null,
+"start_is_flexible": null,
+"duration": null,
+"type": [
+"Apprentissage",
+"Professionnalisation"
+],
+"remote": null
+},
+"offer": {
+"title": "ALTERNANCE - Développeur·se Full Stack – Industrie 4.0 (H/F)",
+"rome_codes": [
+"M1805"
+],
+"description": "Alternance 12 · La Chapelle-Saint-Luc (Troyes) · Dès que possible\n\nNotre mission\n\nWOODOO est une startup française convaincue que le bois est la clé d’un futur durable. En repensant le bois à l’échelle moléculaire, elle a développé STACK, un bois augmenté bas carbone et haute performance, conçu pour remplacer le béton, l’acier et l’aluminium dans la construction.\n\nAprès plusieurs années de R&amp;D, Woodoo entre dans une phase de déploiement industriel. Plutôt que de bâtir ses propres usines, elle transforme (retrofit) les lignes de production existantes de ses partenaires industriels pour qu’elles produisent selon les standards Woodoo.\n\nDirigée par Timothée Boitouzet, architecte et chimiste diplômé de Harvard, WOODOO réunit près de 40 collaborateurs et compte 80 brevets.\n\nVotre mission\n\nAu sein de l’équipe Industrie 4.0, qui digitalise nos procédés et nos sites de production, vous ferez avancer et fiabiliserez nos applications internes. Concrètement, vous traiterez les demandes des équipes de production, de qualité et de R&amp;D, et vous tiendrez à jour une documentation technique claire.\n\nAvec l’industrialisation, les demandes se multiplient. Vous aurez un vrai impact : réduire les délais de traitement, rendre nos outils plus fiables et faire en sorte que chaque nouvel arrivant puisse s’appuyer sur une documentation solide.\n\nVos responsabilités\n\nDévelopper et corriger (70 %)\n\n  - Reproduire les bugs remontés par les utilisateurs, trouver leur cause et les corriger.\n  - Développer de nouvelles fonctionnalités en front et en back, et faire évoluer les API et les bases de données.\n  - Écrire des tests, participer aux revues de code et contribuer aux mises en production.\n  - Échanger directement avec les opérateurs, les qualiticiens et les chercheurs pour clarifier un besoin et faire valider une livraison.\n\n\nDocumenter et capitaliser (30 %)\n\n  - Documenter l’architecture, les API, les modèles de données et le déploiement de nos applications.\n  - Structurer et centraliser la base documentaire.\n  - Rédiger des guides de résolution pour les incidents récurrents, des FAQ internes et des guides pour les utilisateurs.\n\n\nVotre autonomie\n\nVous organisez le traitement de vos tickets selon les priorités de l’équipe, corrigez les bugs simples et menez vos échanges avec les utilisateurs. Les choix structurants (architecture, migrations, mises en production) se font avec votre tuteur, après revue de code.\n\nÀ l’issue de l’alternance, vous gérerez en autonomie au moins une application, du ticket jusqu’à la mise en production.\n\n\n\nProfil recherché\n\nVous préparez un Bac+3 à Bac+5 en développement informatique (école d’ingénieurs, école du numérique, BUT, licence ou master) et vous cherchez une entreprise pour votre alternance.\n\n  - Vous développez en front et en back : JavaScript/TypeScript avec un framework moderne, et un langage back-end pour créer des API REST.\n  - Vous savez travailler avec des bases de données NoSQL.\n  - Vous écrivez une documentation claire, en Markdown ou sur un wiki.\n  - Vous êtes rigoureux·se et organisé·e, capable de gérer plusieurs tickets en parallèle.\n  - Vous aimez échanger avec des personnes non techniques et comprendre leur quotidien.\n\n\nUn plus : Docker, CI/CD, et un intérêt pour les données industrielles, les capteurs et l’IoT.\n\nMais surtout : vous aimez coder, et vous avez envie de voir concrètement à quoi sert votre travail, au plus près d’un site industriel.\n\nPositionnement\n\nLe poste est rattaché au responsable de l’équipe Industrie 4.0, qui sera votre tuteur. Vous travaillerez sur notre site pilote, au contact direct des équipes de production, de qualité et de R&amp;D.\n\nEnvie de nous rejoindre ?\n\n  - Apprenez en construisant le futur : développez vos compétences au sein d’une équipe qui repousse les limites du possible.\n  - Bougez plus vert : adoptez une mobilité durable grâce à notre forfait dédié.\n  - Rechargez les batteries : profitez de titres-restaurant et de l’offre Bien-être et sport avec notre partenaire E-Gym Wellpass.\n\n\nSi vous avez de la curiosité à revendre, l’envie d’apprendre et le goût du concret, alors Woodoo est fait pour vous !\n\nRejoignez-nous et ensemble, bâtissons le monde de demain !",
+"target_diploma": null,
+"desired_skills": [],
+"to_be_acquired_skills": [],
+"access_conditions": [],
+"publication": {
+"creation": "2026-10-20T14:22:21.473Z",
+"expiration": "2026-12-04T14:22:22.473Z"
+},
+"opening_count": 1,
+"status": "Active",
+"to_applicant_questions": null
+},
+"is_delegated": false
+},
+{
+"identifier": {
+"id": "6a20a5df767e173f5751e037",
+"partner_label": "Hellowork",
+"partner_job_id": "bb4449d6-2bcf-4e9f-a6b7-457c322b2789"
+},
+"workplace": {
+"siret": "77568539902977",
+"brand": null,
+"legal_name": "MUTUELLE GENERALE EDUCATION NATIONALE",
+"website": null,
+"name": "MUTUELLE GENERALE EDUCATION NATIONALE",
+"description": "Connaissez-vous MGEN ?\n\n-\tUn employeur de l'ESS qui réconcilie éthique et économie, solidarité et performance \n\n-\tUn acteur majeur en santé et prévoyance avec plus de 4 millions de personnes protégées \n\n-\t10 000 salariés et 250 métiers diversifiés (assurance, soins, fonctions support, IT...) \n\n-\tUne implantation nationale forte avec plus de 200 sites dont 60 services de soins et d'accompagnement mutualistes\n\n-\tMembre fondateur du Groupe VYV (50 000 collaborateurs), premier groupe de protection sociale mutualiste et solidaire, mobilisé au service du Mieux-vivre.\n\nRattaché (e) à l'équipe Support fonctionnel SIRH Paie &amp; ADP du groupe, vous prenez part aux activités de paramétrage de la Paie et de la DSN. Vous avez également des missions d'accompagnement et de support fonctionnel aux utilisateurs, dans la gestion des process liés à la Paie et aux déclarations.\nVous participez pleinement aux projets d'évolutions légales, conventionnelles ou règlementaires, mais aussi aux projets de croissance et développement (harmonisation, optimisation, communication) du groupe.\nCe poste est basé au siège national à Montparnasse (75015) à proximité de la gare et divers transports en commun.",
+"size": "2 000 à 4 999 salariés",
+"location": {
+"address": "75001 Paris",
+"geopoint": {
+"coordinates": [
+2.347,
+48.859
+],
+"type": "Point"
+}
+},
+"domain": {
+"idcc": 1518,
+"opco": "Uniformation, l'Opco de la Cohésion sociale",
+"naf": {
+"code": "65.12Z",
+"label": "Autres assurances"
+}
+}
+},
+"apply": {
+"url": "https://r.holeest.com/redirect?jd_token=<masqué>&o=1&from=https%3A%2F%2Fwww.hellowork.com%2Ffr-fr%2Femplois%2F79768077.html%3Futm_source%3Dbonnealternance%26utm_medium%3Dmetamoteurs-free%26utm_campaign%3Dalternance%2B-%2B%7Bseo_domain%7D%26utm_content%3Dfluxbonnealternance%26utm_term%3D79768077",
+"phone": null,
+"recipient_id": null
+},
+"contract": {
+"start": null,
+"start_type": null,
+"start_is_flexible": null,
+"duration": 12,
+"type": [
+"Apprentissage",
+"Professionnalisation"
+],
+"remote": null
+},
+"offer": {
+"title": "Alternant·e RH - Paie et SIRH H/F",
+"rome_codes": [
+"M1806"
+],
+"description": "Vous aurez notamment pour mission de :\n\n- Réaliser progressivement les déclarations de charges sociales du Groupe (mutuelle, retraite fonctionnaires) ainsi que la DSN\n- Participer à l'assistance utilisateurs sur l'outil de paie (HR4U)\n- Mettre à jour des supports pédagogiques de paie et/ou de gestion administrative\n- Intégrer des données de paie en masse via des bordereaux d'import\n- Participer à la mise en oeuvre de projets transverses liés aux évolutions législatives, aux accords d'entreprise (expressions de besoins, recettes métiers, supports pédagogiques, mesures d'accompagnement des acteurs clés, ...)",
+"target_diploma": {
+"european": "7",
+"label": "Master, titre ingénieur, grande école (Bac+5)"
+},
+"desired_skills": [
+"Dans le cadre de cette offre, nous ne proposons que des contrats d'apprentissage. Les candidatures en contrat de professionnalisation ne pourront donc pas être étudiées.\n\nVous préparez une formation de niveau  Master 2 en Ressources Humaines, SIRH ou dans un domaine équivalent.\n\nUne première expérience dans le domaine de la paie et/ou des systèmes d'information RH serait appréciée.\n\nVous êtes reconnu(e) pour :\n\n- Votre capacité d'écoute, d'analyse et de synthèse,\n- Vos qualités rédactionnelles et votre sens de la communication,\n- Votre esprit d'initiative et votre force de proposition,\n- Votre goût du travail en équipe et de la collaboration,\n- Votre appétence pour les outils informatiques et les environnements digitaux.\n\nVous maîtrisez les outils bureautiques courants et appréciez l'utilisation d'outils collaboratifs tels qu'Excel, PowerPoint ou SharePoint.\n\nAlors cette alternance est faite pour vous !\n\nPour l'étude de votre candidature, merci de joindre impérativement les documents suivants :\n\n- Votre CV,\n- Votre lettre de motivation,\n- Le contenu pédagogique de votre formation,\n- Votre calendrier d'alternance\n\nLe groupe MGEN s'engage pour la Diversité et le Handicap et garantit l'égalité des chances. Nos postes sont ouverts à tous."
+],
+"to_be_acquired_skills": [],
+"access_conditions": [],
+"publication": {
+"creation": "2026-10-04T20:10:43.000Z",
+"expiration": "2026-12-04T20:10:43.000Z"
+},
+"opening_count": 1,
+"status": "Active",
+"to_applicant_questions": null
+},
+"is_delegated": false
+},
+{
+"identifier": {
+"id": "6ac02afc0d871689a663c8de",
+"partner_label": "Hellowork",
+"partner_job_id": "e83e9432-4693-4b41-975e-1412f7e9cf19"
+},
+"workplace": {
+"siret": null,
+"brand": null,
+"legal_name": null,
+"website": null,
+"name": "LACROIXSAVAC",
+"description": "LACROIXSAVAC, c'est le groupement de deux entreprises nées respectivement en 1937 dans les Yvelines (vallée de Chevreuse) pour Savac et 1953 dans le Val d'Oise (vallée de Montmorency) pour Lacroix.  \n  \nPortés depuis toujours par les mêmes valeurs d'engagement, d'agilité et de bienveillance au service de la performance, Lacroix et Savac se sont unis en septembre 2019 pour mettre en commun un savoir-faire distinctif : celui d'être à la fois les meilleurs connaisseurs du territoire francilien et de ses innombrables particularités, tout en développant des méthodes innovantes et en délivrant des prestations de qualité.",
+"size": null,
+"location": {
+"address": "75001 Paris",
+"geopoint": {
+"coordinates": [
+2.347,
+48.859
+],
+"type": "Point"
+}
+},
+"domain": {
+"idcc": null,
+"opco": null,
+"naf": null
+}
+},
+"apply": {
+"url": "https://r.holeest.com/redirect?jd_token=<masqué>&o=1&from=https%3A%2F%2Fwww.hellowork.com%2Ffr-fr%2Femplois%2F83967596.html%3Futm_source%3Dbonnealternance%26utm_medium%3Dmetamoteurs-free%26utm_campaign%3Dalternance%2B-%2Blogistique%26utm_content%3Dfluxbonnealternance%26utm_term%3D83967596",
+"phone": null,
+"recipient_id": null
+},
+"contract": {
+"start": null,
+"start_type": null,
+"start_is_flexible": null,
+"duration": 24,
+"type": [
+"Apprentissage",
+"Professionnalisation"
+],
+"remote": null
+},
+"offer": {
+"title": "Ingénieur Data - DevOps en Alternance H/F",
+"rome_codes": [
+"M1811"
+],
+"description": "Rejoignez LACROIXSAVAC, spécialiste du transport de voyageurs depuis 2019 et 3ème opérateur de mobilité en grande couronne, pour contribuer à façonner l'avenir de la mobilité.\n\nNous recherchons un(e) Ingénieur(e) DATA / DevOps en alternance pour notre siège basé à Paris (8ème).\n\nVous aurez pour principales responsabilités :\n\nData :\n\n- Optimisation des flux de données : Participer à l'amélioration du système d'ingestion de données existant (Base de données, APIs, fichiers plats, FTP ...)\n- Administration de base de données (Gestion du cycle de vie de la donnée, optimisation des tables et des requêtes pour la performance analytique)\n- Participer à la mise en place d'une data-plateforme moderne (Object Storage S3, Cloud, outils d'orchestration)\n\nDevOps :\n\n- Mise en place de monitoring des flux pour assurer la qualité des données et la performance des systèmes.\n- Développement de tests automatisés, contrôles qualités et intégration d'outils d'audit de sécurité et de gouvernance de la donnée.\n- Gestion et versionnement via GitHub.\n- Automatisation des déploiements avec des outils d'IAC tel que Ansible.\n- Configuration d'agents IA pour soutenir le cycle de développement et la documentation du code.\n\nGestion de projet :\n\n- Pilotage et accompagnement du développement d'applications métiers (Front et backend)\n- Maintien en condition opérationnelle de la solution\n- Rédaction du cahier des charges\n- S'assurer de la conformité du besoin et des règles métiers\n- Déploiement et intégration continue",
+"target_diploma": {
+"european": "7",
+"label": "Master, titre ingénieur, grande école (Bac+5)"
+},
+"desired_skills": [
+"Votre parcours :\n\n- En cours de préparation d'un diplôme d'ingénieur ou Master en Ingénierie ou autre Bac +5 en Informatique, Data ou équivalent.\n\nVos compétences :\n\n- Esprit d'équipe et bonnes capacités de communication\n- Curiosité intellectuelle et envie d'apprendre et de se développer dans le domaine de l'ingénieurie de données\n- Capacité à résoudre des problèmes de manière proactive et à travailler de manière autonome sous supervision\n- Bonnes connaissances Python, SQL\n- Connaissance en conception de base de données, entrepôts de données.\n- Connaissance de base de la gestion et versionning de code sur GitHub (PR, CI /CD, commits, branches..)\n\nEst un plus : Connaissance d'un outil d'orchestration type Airflow, connaissance en administration linux, background de développeur.\n\nPourquoi nous rejoindre ?\n\n- Un environnement de travail dynamique et stimulant.\n- Des opportunités de développement professionnel et de carrière.\n- Une politique d'entreprise axée sur le bien-être et l'équilibre vie professionnelle/vie personnelle.\n- Une équipe collaborative et solidaire.\n\nLe poste est ouvert aux personnes en situation de handicap."
+],
+"to_be_acquired_skills": [],
+"access_conditions": [],
+"publication": {
+"creation": "2026-10-01T07:51:38.000Z",
+"expiration": "2026-12-01T07:51:38.000Z"
+},
+"opening_count": 1,
+"status": "Active",
+"to_applicant_questions": null
+},
+"is_delegated": false
+},
+{
+"identifier": {
+"id": "6adbdcf7bfbdb64c1a67fcb2",
+"partner_label": "France Travail",
+"partner_job_id": "214YWWX"
+},
+"workplace": {
+"siret": "52788142900064",
+"brand": null,
+"legal_name": "ETLB",
+"website": null,
+"name": "ETLB",
+"description": null,
+"size": "50 à 99 salariés",
+"location": {
+"address": "75008 Paris 8e Arrondissement",
+"geopoint": {
+"coordinates": [
+2.3116,
+48.873707
+],
+"type": "Point"
+}
+},
+"domain": {
+"idcc": 478,
+"opco": "ATLAS",
+"naf": {
+"code": "66.30Z",
+"label": "Gestion de fonds"
+}
+}
+},
+"apply": {
+"url": "https://candidat.francetravail.fr/offres/recherche/detail/214YWWX",
+"phone": null,
+"recipient_id": null
+},
+"contract": {
+"start": null,
+"start_type": null,
+"start_is_flexible": null,
+"duration": 12,
+"type": [
+"Apprentissage"
+],
+"remote": null
+},
+"offer": {
+"title": "Alternance - Assistant(e) IA / BI (H/F)",
+"rome_codes": [
+"M1419"
+],
+"description": "Dans un contexte d'hypercroissance et d'industrialisation des processus, Côté Sushi accélère sa \ntransition vers l'automatisation et l'usage de l'IA. Ce poste est clé pour créer, déployer et \nmaintenir des agents IA, automatiser les flux inter-systèmes, structurer les données et \nindustrialiser les dashboards Power BI. Vous collaborerez au quotidien avec les équipes Supply, \nAchats, Finance, QHSE et DSI. \n\nVOS MISSIONS \n1. Automatisation &amp; agents IA : Vous concevez et déployez des agents IA opérationnels et des workflows automatisés pour \nfiabiliser et accélérer les processus métier. \n- Créer des agents IA dédiés aux thématiques supply, prévisionnel, achats et data \nquality : définition des prompts structurés, paramétrage et documentation \n- Développer des workflows Power Automate pour automatiser les flux ERP, la \ngestion de fichiers, les alertes et les synchronisations inter-systèmes \n- Mettre en place des alertes intelligentes sur les ruptures, anomalies et incohérences \ndata, ainsi que des systèmes de prédiction et d'alerting avancés \n- Automatiser les prévisionnels de bout en bout : collecte, calcul, export et diffusion \n\n2. Data Engineering &amp; intégrations : Vous structurez et fiabilisez la donnée en construisant des pipelines robustes et des connexions \nautomatisées entre les systèmes. \n- Traiter, nettoyer et structurer les données issues de sources multiples (ERP, \nSharePoint, fichiers internes) \n- Construire et maintenir des pipelines de données automatisés, fiables et \ndocumentés \n- Développer les connexions API entre l'ERP, SharePoint et Power BI \n- Créer et maintenir les dictionnaires de données et référentiels, et assurer la \nvérification systématique de la qualité des données \n\n3. Business Intelligence : Vous concevez des tableaux de bord Power BI industrialisés, orientés décision, adoptés par les \néquipes métier. \n- Construire, optimiser et maintenir les dashboards Power BI : modélisation DAX, data \nrefresh incrémental, optimisation des performances \n- Créer les modèles de données et mettre en place des conventions de nommage et \nstandards BI \n- Définir et instrumenter les KPIs clés en lien avec les équipes Supply, Finance et \nAchats \n\n4. Support transverse &amp; amélioration continue : Vous êtes un relais tech au sein des équipes, capable d'accompagner, de former et de documenter \npour ancrer les pratiques dans la durée. \n- Accompagner les équipes dans la prise en main des outils IA et Power Platform : \nformation, support, pédagogie \n- Participer aux projets digitaux transverses (BI, automatisation, data) en lien avec la \nDSI et la direction générale \n- Produire une documentation technique systématique et des guides utilisateurs pour \nchaque livrable déployé \n\n\nPROFIL RECHERCHÉ \n- Formation : étudiant(e) Bac+3 à Bac+5 en Data, BI, IA, digital ou informatique \n- Une première expérience (stage ou alternance) en automatisation, BI ou data \nengineering est un plus \n- Forte capacité d'apprentissage, rigueur, logique et sens du détail \n- Autonomie, organisation et espérit d'initiative : vous savez avancer seul(e) sur des \nsujets complexes \n- Pédagogie et aisance relationnelle pour interagir avec des équipes métier non \ntechniques \n- Fort appétit pour la tech, la data et la supply chain \n\nCOMPÉTENCES TECHNIQUES \n- Power Automate - niveau confirmé ou fort potentiel \n- Power BI - modélisation &amp; DAX \n- SQL - un plus \n- Notions d'API et intégrations inter-systèmes \n- IA / LLM - Copilot Studio, agents IA \n- Bases en Python appréciées \n- Compréhension ERP / Supply Chain \n\n\nPourquoi nous rejoindre ? \n- Contrat d'apprentissage uniquement \n- Durée du contrat : 1 an \n- Début de contrat : Septembre 2026 \n- Localisation : Paris 8e (St-Augustin / St-Lazare)",
+"target_diploma": {
+"european": "6",
+"label": "Licence, BUT, Licence Pro (Bac+3)"
+},
+"desired_skills": [],
+"to_be_acquired_skills": [
+"Adapter les outils de traitement statistique de données",
+"Communiquer les résultats des études aux parties prenantes"
+],
+"access_conditions": [],
+"publication": {
+"creation": "2026-10-08T14:56:05.572Z",
+"expiration": "2026-12-08T14:56:05.572Z"
+},
+"opening_count": 1,
+"status": "Active",
+"to_applicant_questions": null
+},
+"is_delegated": false
+},
+{
+"identifier": {
+"id": "6aa86fe99dceff7dd4b89948",
+"partner_label": "Hellowork",
+"partner_job_id": "da2354e2-66f5-45d1-af5f-38c4327f065a"
+},
+"workplace": {
+"siret": "98270430600025",
+"brand": null,
+"legal_name": "VULCAIN ENGINEERING GROUP",
+"website": null,
+"name": "VULCAIN ENGINEERING GROUP",
+"description": "Vulcain Engineering, acteur de l’ingénierie et du conseil, accompagne les leaders industriels mondiaux dans leur transition vers un avenir plus responsable et durable. Nous suivons nos client dans la conception, la construction et l'exploitation de leurs infrastructures complexes.",
+"size": "Non diffusé",
+"location": {
+"address": "92200 Neuilly-sur-Seine",
+"geopoint": {
+"coordinates": [
+2.265869,
+48.886191
+],
+"type": "Point"
+}
+},
+"domain": {
+"idcc": 1486,
+"opco": "ATLAS",
+"naf": {
+"code": "64.20Z",
+"label": "Activités des sociétés holding"
+}
+}
+},
+"apply": {
+"url": "https://r.holeest.com/redirect?jd_token=<masqué>&o=1&from=https%3A%2F%2Fwww.hellowork.com%2Ffr-fr%2Femplois%2F80733348.html%3Futm_source%3Dbonnealternance%26utm_medium%3Dmetamoteurs-free%26utm_campaign%3Dalternance%2B-%2B%7Bseo_domain%7D%26utm_content%3Dfluxbonnealternance%26utm_term%3D80733348",
+"phone": null,
+"recipient_id": null
+},
+"contract": {
+"start": null,
+"start_type": null,
+"start_is_flexible": null,
+"duration": null,
+"type": [
+"Apprentissage",
+"Professionnalisation"
+],
+"remote": "hybrid"
+},
+"offer": {
+"title": "Data Specialist Junior H/F",
+"rome_codes": [
+"M1405"
+],
+"description": "Sous la responsabilité du responsable du domaine Data :\n\nContribuer à la conception et à la réalisation de l'infrastructure d'intégration de données et de flux :\n\n- Conception de la solution à partir d'un outil open source leader du marché (Talend)\n- Développement et recette des flux avec les utilisateurs\n- Mise en production\n- Supervision applicative\n- Traitement des incidents, et amélioration continue de la plate-forme.\n- Contribuer à la conception et à la réalisation de l'infrastructure de reporting :\n- Contribution à l'évaluation des options techniques pour la réalisation du datalake\n- Conception à la définition du modèle de données du datalake\n- Conception et développement de flux d'alimentation et de préparation des data\n- Développement de reports (Power BI)\n- Développement et recette avec les utilisateurs\n- Mise en production\n- Supervision applicative\n- Traitement des incidents, et amélioration continue de la plate-forme.\n- Formation et support des utilisateurs",
+"target_diploma": {
+"european": "7",
+"label": "Master, titre ingénieur, grande école (Bac+5)"
+},
+"desired_skills": [
+"Profil et compétences attendues:\n\n- Profil école d'informatique ou Fac Niveau M1ou M2\n- Bonne capacité relationnelle, vous vous exprimez simplement et clairement (Fr/Eng)\n- Maitrise du langage SQL ainsi, connaissance si possible, de l'ETL Talend\n- Expérience en modélisation de données\n- Expérience en BI (Power BI est un plus)\n- Autonomie, autodidacte\n\nCalendrier et durée\n\n- Ouverture du poste : à partir du 1 janvier 2023\n- Durée de la collaboration : 1 an ou 2 en alternance\n- Lieu du stage : Neuilly sur Seine (avec du télétravail partiel)"
+],
+"to_be_acquired_skills": [],
+"access_conditions": [],
+"publication": {
+"creation": "2026-09-28T20:15:05.000Z",
+"expiration": "2026-11-28T20:15:05.000Z"
+},
+"opening_count": 1,
+"status": "Active",
+"to_applicant_questions": null
+},
+"is_delegated": false
+},
+{
+"identifier": {
+"id": "6ada87671965492bdb882190",
+"partner_label": "PASS",
+"partner_job_id": "A-2026-239993"
+},
+"workplace": {
+"siret": null,
+"brand": null,
+"legal_name": null,
+"website": null,
+"name": "Direction générale des douanes et droits indirects",
+"description": null,
+"size": null,
+"location": {
+"address": "93100 Montreuil",
+"geopoint": {
+"coordinates": [
+2.449364,
+48.863728
+],
+"type": "Point"
+}
+},
+"domain": {
+"idcc": null,
+"opco": null,
+"naf": null
+}
+},
+"apply": {
+"url": "https://www.pass.fonction-publique.gouv.fr/offre/data-analyst-chargee-du-traitement-des-donnees-au-sein-du-pole-performance-de-la-douane",
+"phone": null,
+"recipient_id": "partners_6ada87671965492bdb882190"
+},
+"contract": {
+"start": "2026-11-14T23:00:00.000Z",
+"start_type": null,
+"start_is_flexible": null,
+"duration": 12,
+"type": [
+"Apprentissage"
+],
+"remote": null
+},
+"offer": {
+"title": "\"Data analyst\" chargé(e) du traitement des données au sein du Pôle performance de la Douane",
+"rome_codes": [
+"M1419"
+],
+"description": "<p><strong>1 – Mission générale</strong></p><p>En soutien des deux<em> data analyst</em> du pôle<em>,</em> l’alternant(e) « Data Analyst » recruté(e) au sein de la direction générale des douanes joue un rôle stratégique en matière de suivi de l’activité et de la performance des services<strong>. </strong></p><p>Il/elle participe au pilotage les projets relatifs à la gestion des données et est responsable de l’automatisation, de l'intégration et de l'optimisation des processus d’analyse des données. </p><p>Ce poste exige une forte capacité à gérer des projets complexes et à travailler en assurant une collaboration étroite avec l'ensemble des acteurs concernés.</p><p>Les travaux s’effectuent via TABLEAU.</p><p> </p><p><strong>2 – Production des données de pilotage</strong></p><p>– Produit des données utiles au pilotage de l’activité et au suivi des résultats des services déconcentrés ; </p><p>– Collecte et analyse les données issues des différents applicatifs métiers de la douane (lutte contre la fraude, dédouanement, etc.) ;</p><p>– En lien avec le chef de la performance, participe à l’identification des besoins en matière de données ;</p><p>– Analyse et croise les données pertinentes pour analyser l’activité des services déconcentrés et répondre aux commandes du chef de service des opérations du réseau et du directeur général.</p><p> </p><p><strong>3 – Création et industrialisation des documents décisionnels</strong></p><p>– Contribue à la conception et à la réalisation de tableaux de bord, infographies et autres documents de visualisation des données, essentiels pour les processus de décision au sein de la douane ;</p><p>– Prépare les données dans TABLEAU PREP ;</p><p>– Requête le lac de données via des outils internes.</p><p> </p><p><strong>4 – Pilotage du projet de système d’information décisionnel</strong></p><p>– Participe à la définition des règles de gestion des indicateurs d’activité et de performance, ainsi que la mise en place des traitements de données dans TABLEAU.</p><p>– Travaille en étroite collaboration avec la sous-direction des systèmes d’information, les prestataires extérieurs et les différents comités de suivi, en assurant la coordination des travaux de recette et en apportant un appui technique aux équipes projet.</p><p> </p><p><strong>5 – Automatisation et amélioration continue</strong></p><p>– Automatise les productions de tableaux de bord et autres rapports afin de réduire les délais de production et d’améliorer la performance du service.</p><p>– Propose des solutions innovantes pour simplifier et accélérer les processus de collecte, d’analyse et de restitution des données.</p>",
+"target_diploma": {
+"european": "6",
+"label": "Licence, BUT, Licence Pro (Bac+3)"
+},
+"desired_skills": [],
+"to_be_acquired_skills": [],
+"access_conditions": [],
+"publication": {
+"creation": "2026-10-22T13:08:18.000Z",
+"expiration": "2027-01-14T23:00:00.000Z"
+},
+"opening_count": 1,
+"status": "Active",
+"to_applicant_questions": null
+},
+"is_delegated": false
+},
+{
+"identifier": {
+"id": "6adbda05ec4f5594ab3cccac",
+"partner_label": "Hellowork",
+"partner_job_id": "a9ac552b-7382-4c2f-8e04-7239db0afe9e"
+},
+"workplace": {
+"siret": "85520050700017",
+"brand": null,
+"legal_name": "MANUFACTURE FRANCAISE DES PNEUMATIQUES MICHELIN",
+"website": null,
+"name": "MANUFACTURE FRANCAISE DES PNEUMATIQUES MICHELIN",
+"description": "Notre siège mondial, basé à Clermont-Ferrand depuis la création de l’entreprise en 1889, regroupe l'ensemble des pôles de responsabilités du Groupe. 16 implantations industrielles en France, assurent une part importante de notre production, notamment sur les produits technologiques et innovants.",
+"size": "10 000 salariés et plus",
+"location": {
+"address": "92100 Boulogne-Billancourt",
+"geopoint": {
+"coordinates": [
+2.242716,
+48.836976
+],
+"type": "Point"
+}
+},
+"domain": {
+"idcc": 45,
+"opco": "OPCO 2i",
+"naf": {
+"code": "22.11Z",
+"label": "Fabrication et rechapage de pneumatiques"
+}
+}
+},
+"apply": {
+"url": "https://r.holeest.com/redirect?jd_token=<masqué>&o=1&from=https%3A%2F%2Fwww.hellowork.com%2Ffr-fr%2Femplois%2F84745540.html%3Futm_source%3Dbonnealternance%26utm_medium%3Dmetamoteurs-free%26utm_campaign%3Dalternance%2B-%2B%7Bseo_domain%7D%26utm_content%3Dfluxbonnealternance%26utm_term%3D84745540",
+"phone": null,
+"recipient_id": null
+},
+"contract": {
+"start": null,
+"start_type": null,
+"start_is_flexible": null,
+"duration": 12,
+"type": [
+"Apprentissage",
+"Professionnalisation"
+],
+"remote": null
+},
+"offer": {
+"title": "Alternance - Data Engineer Michelin Guide H/F",
+"rome_codes": [
+"M1811"
+],
+"description": "Alternance - Data Engineer Michelin Guide (F/H)\n- - - - - - - - - - - -\n\n Localisation : Paris Boulogne\n\n Niveau d'études : Bac +4 à Bac +5\n\n Date de début : Novembre 2026\n\n Durée : 1 à 2 ans\n\nContexte :\n\nRejoignez notre équipe Data LB Lifestyle, une équipe pluridisciplinaire en charge du développement d'une Data Platform globale et robuste pour nos applications Guide Michelin, Tablet Hotels, ViaMichelin et Robert Parker. En particulier, participez à la construction du socle Data robuste sur l'histoire du Guide Michelin et la valorisation business de son patrimoine.\n\nVotre mission :\n\nDans le cadre de son développement, l'équipe recherche un(e) alternant Data Engineer pour une durée de 1 an ou 2 ans.\n\nDans ce rôle, vous travaillerez sur une infrastructure data moderne (Snowflake, DBT, Dagster) et aurez l'opportunité de contribuer à l'adoption de nouveaux outils et bonnes pratiques.\n\nVous travaillerez sur des sujets métier à fort impact, notamment autour des restaurants et hôtels étoilés Michelin, de nouvelles approches data et de cas d'usage de personnalisation visant à améliorer l'expérience utilisateur.\n\nProfil recherché :\n\nFormation\n\nVous préparez un diplôme de niveau Bac +5 (École de commerce ou d'école d'ingénieur, avec une spécialisation en Data Engineering)\n\nCompétences techniques\n\nData Engineering &amp; Data Platforms\n\n- Snowflake ou Databricks\n- DBT\n\nLangages\n\n- SQL avancé\n- Python\n\nBases de données\n\n- Bonnes connaissances des systèmes relationnels et analytiques\n- Modélisation de données\n\nCloud\n\n- AWS, Microsoft Azure ou Google Cloud Platform\n\nData Visualisation\n\n- Power BI, Tableau ou Looker\n\nGestion du code et industrialisation\n\n- GitHub ou GitLab\n- Notions CI/CD appréciées\n\nCompétences comportementales\n\nNous recherchons avant tout une personne qui démontre :\n\n- Un fort esprit d'analyse et de résolution de problèmes.\n- Une curiosité naturelle pour les nouvelles technologies et l'innovation.\n- De l'autonomie, de la rigueur et de la proactivité.\n- Une bonne capacité à communiquer et à travailler en équipe.\n- Une volonté d'apprendre dans un environnement international et multiculturel.\n\nLangues\n\n- Français courant (écrit et oral)\n- Anglais courant (écrit et oral)\n\n===========================================================\n\nCette offre vous intéresse et vous demande de la mobilité ?\n\nMichelin vous accompagne dans la recherche et le financement de votre logement.\n\nEn cas d'éloignement école/entreprise de plus de 50 km :\n\n- Participation aux frais de trajet (sous conditions)\n- En cas de double loyer, versement d'une indemnité forfaitaire\n\n- - - - - - - - - - - -\n\nInformations importantes pour votre candidature :\n\n- votre organisme de formation en alternance doit être certifié Qualiopi\n- merci de vous renseigner auprès de votre école sur le type de contrat souhaité (apprentissage ou professionnalisation) ainsi que sur le coût de votre formation.\n\nNous vous précisons que la période d'alternance se déroulera uniquement sur le territoire Français (France métropolitaine).\n\nSi une période à l'étranger est obligatoire pour l'obtention de votre diplôme, Michelin n'est pas dans l'obligation de vous trouver une mission au sein du Groupe.\n\nVotre tuteur.trice vous accompagnera tout au long de votre mission afin de développer votre savoir-faire et savoir-être et vous proposera, si besoin, des formations complémentaires en adéquation avec votre mission.\n\nVous percevrez une rémunération mensuelle en fonction de votre niveau d'études, de votre âge et du type de contrat. Par exemple, pour un contrat en apprentissage, si vous avez moins de 26 ans, elle sera comprise entre 1529,72 € brut mensuel pour un diplôme préparé Bac +1 et 1723,36 € brut mensuel pour un diplôme préparé Bac +5.\n\n- - - - - - - - - - - -\n\nMichelin entreprise engagée dans la mobilité durable et reconnue pour ses actions en faveur de l'expérience employé !\n\n- Une note de 99/100 à l'index de l'égalité femmes-hommes\n- Entreprise « Handi accueillante », avec un réseau de référents et ambassadeurs Handicap pour vous accompagner\n- 83,5% de taux d'engagement de nos employés\n- 94,6% des stagiaires et alternants nous recommandent, label \"Happy Trainees\" depuis 9 années consécutives\n- Classé parmi les groupes du CAC 40 les plus engagés selon les Bac +5 à l'index RSE Universum 2023\n- Parmi les 100 entreprises les plus attractives pour les étudiants et actifs Bac +2/3 au classement Universum 2023\n- N°1 des entreprises de plus de 500 stagiaires et alternants qui rémunèrent le mieux au Classement HappyTrainees® Rémunération 2023\n- Dans le Top 10 des meilleurs employeurs en France au classement Glassdoor 2023\n- Dans le top 3 des entreprises du secteur « Automobile / Equipementier » en matière d'attractivité employeur à l'édition 2024 du Palmarès @EPOKA @GROUPE IFOP @Occurrence\n\nPour en savoir plus sur le Groupe :\n\n- - - - - - - - - - - -",
+"target_diploma": {
+"european": "6",
+"label": "Licence, BUT, Licence Pro (Bac+3)"
+},
+"desired_skills": [],
+"to_be_acquired_skills": [],
+"access_conditions": [],
+"publication": {
+"creation": "2026-10-23T12:05:30.000Z",
+"expiration": "2026-12-23T12:05:30.000Z"
+},
+"opening_count": 1,
+"status": "Active",
+"to_applicant_questions": null
+},
+"is_delegated": false
+},
+{
+"identifier": {
+"id": "6adbda04ec4f5594ab3ccc3d",
+"partner_label": "Hellowork",
+"partner_job_id": "2a2f59fd-a7eb-4121-ac51-d48187083876"
+},
+"workplace": {
+"siret": "85520050700017",
+"brand": null,
+"legal_name": "MANUFACTURE FRANCAISE DES PNEUMATIQUES MICHELIN",
+"website": null,
+"name": "MANUFACTURE FRANCAISE DES PNEUMATIQUES MICHELIN",
+"description": "Notre siège mondial, basé à Clermont-Ferrand depuis la création de l’entreprise en 1889, regroupe l'ensemble des pôles de responsabilités du Groupe. 16 implantations industrielles en France, assurent une part importante de notre production, notamment sur les produits technologiques et innovants.",
+"size": "10 000 salariés et plus",
+"location": {
+"address": "92100 Boulogne-Billancourt",
+"geopoint": {
+"coordinates": [
+2.242716,
+48.836976
+],
+"type": "Point"
+}
+},
+"domain": {
+"idcc": 45,
+"opco": "OPCO 2i",
+"naf": {
+"code": "22.11Z",
+"label": "Fabrication et rechapage de pneumatiques"
+}
+}
+},
+"apply": {
+"url": "https://r.holeest.com/redirect?jd_token=<masqué>&o=1&from=https%3A%2F%2Fwww.hellowork.com%2Ffr-fr%2Femplois%2F84745442.html%3Futm_source%3Dbonnealternance%26utm_medium%3Dmetamoteurs-free%26utm_campaign%3Dalternance%2B-%2B%7Bseo_domain%7D%26utm_content%3Dfluxbonnealternance%26utm_term%3D84745442",
+"phone": null,
+"recipient_id": null
+},
+"contract": {
+"start": null,
+"start_type": null,
+"start_is_flexible": null,
+"duration": 12,
+"type": [
+"Apprentissage",
+"Professionnalisation"
+],
+"remote": null
+},
+"offer": {
+"title": "Alternance - Data Engineer Michelin Guide H/F",
+"rome_codes": [
+"M1811"
+],
+"description": "Alternance - Data Engineer Michelin Guide (F/H)\n- - - - - - - - - - - -\n\n Localisation : Paris Boulogne\n\n Niveau d'études : Bac +4 à Bac +5\n\n Date de début : Novembre 2026\n\n Durée : 1 à 2 ans\n\nContexte :\n\nRejoignez notre équipe Data LB Lifestyle, une équipe pluridisciplinaire en charge du développement d'une Data Platform globale et robuste pour nos applications Guide Michelin, Tablet Hotels, ViaMichelin et Robert Parker. En particulier, participez à la construction du socle Data robuste sur l'histoire du Guide Michelin et la valorisation business de son patrimoine.\n\nVotre mission :\n\nDans le cadre de son développement, l'équipe recherche un(e) alternant Data Engineer pour une durée de 1 an ou 2 ans.\n\nDans ce rôle, vous travaillerez sur une infrastructure data moderne (Snowflake, DBT, Dagster) et aurez l'opportunité de contribuer à l'adoption de nouveaux outils et bonnes pratiques.\n\nVous travaillerez sur des sujets métier à fort impact, notamment autour des restaurants et hôtels étoilés Michelin, de nouvelles approches data et de cas d'usage de personnalisation visant à améliorer l'expérience utilisateur.\n\nProfil recherché :\n\nFormation\n\nVous préparez un diplôme de niveau Bac +5 (École de commerce ou d'école d'ingénieur, avec une spécialisation en Data Engineering)\n\nCompétences techniques\n\nData Engineering &amp; Data Platforms\n\n- Snowflake ou Databricks\n- DBT\n\nLangages\n\n- SQL avancé\n- Python\n\nBases de données\n\n- Bonnes connaissances des systèmes relationnels et analytiques\n- Modélisation de données\n\nCloud\n\n- AWS, Microsoft Azure ou Google Cloud Platform\n\nData Visualisation\n\n- Power BI, Tableau ou Looker\n\nGestion du code et industrialisation\n\n- GitHub ou GitLab\n- Notions CI/CD appréciées\n\nCompétences comportementales\n\nNous recherchons avant tout une personne qui démontre :\n\n- Un fort esprit d'analyse et de résolution de problèmes.\n- Une curiosité naturelle pour les nouvelles technologies et l'innovation.\n- De l'autonomie, de la rigueur et de la proactivité.\n- Une bonne capacité à communiquer et à travailler en équipe.\n- Une volonté d'apprendre dans un environnement international et multiculturel.\n\nLangues\n\n- Français courant (écrit et oral)\n- Anglais courant (écrit et oral)\n\n===========================================================\n\nCette offre vous intéresse et vous demande de la mobilité ?\n\nMichelin vous accompagne dans la recherche et le financement de votre logement.\n\nEn cas d'éloignement école/entreprise de plus de 50 km :\n\n- Participation aux frais de trajet (sous conditions)\n- En cas de double loyer, versement d'une indemnité forfaitaire\n\n- - - - - - - - - - - -\n\nInformations importantes pour votre candidature :\n\n- votre organisme de formation en alternance doit être certifié Qualiopi\n- merci de vous renseigner auprès de votre école sur le type de contrat souhaité (apprentissage ou professionnalisation) ainsi que sur le coût de votre formation.\n\nNous vous précisons que la période d'alternance se déroulera uniquement sur le territoire Français (France métropolitaine).\n\nSi une période à l'étranger est obligatoire pour l'obtention de votre diplôme, Michelin n'est pas dans l'obligation de vous trouver une mission au sein du Groupe.\n\nVotre tuteur.trice vous accompagnera tout au long de votre mission afin de développer votre savoir-faire et savoir-être et vous proposera, si besoin, des formations complémentaires en adéquation avec votre mission.\n\nVous percevrez une rémunération mensuelle en fonction de votre niveau d'études, de votre âge et du type de contrat. Par exemple, pour un contrat en apprentissage, si vous avez moins de 26 ans, elle sera comprise entre 1529,72 € brut mensuel pour un diplôme préparé Bac +1 et 1723,36 € brut mensuel pour un diplôme préparé Bac +5.\n\n- - - - - - - - - - - -\n\nMichelin entreprise engagée dans la mobilité durable et reconnue pour ses actions en faveur de l'expérience employé !\n\n- Une note de 99/100 à l'index de l'égalité femmes-hommes\n- Entreprise « Handi accueillante », avec un réseau de référents et ambassadeurs Handicap pour vous accompagner\n- 83,5% de taux d'engagement de nos employés\n- 94,6% des stagiaires et alternants nous recommandent, label \"Happy Trainees\" depuis 9 années consécutives\n- Classé parmi les groupes du CAC 40 les plus engagés selon les Bac +5 à l'index RSE Universum 2023\n- Parmi les 100 entreprises les plus attractives pour les étudiants et actifs Bac +2/3 au classement Universum 2023\n- N°1 des entreprises de plus de 500 stagiaires et alternants qui rémunèrent le mieux au Classement HappyTrainees® Rémunération 2023\n- Dans le Top 10 des meilleurs employeurs en France au classement Glassdoor 2023\n- Dans le top 3 des entreprises du secteur « Automobile / Equipementier » en matière d'attractivité employeur à l'édition 2024 du Palmarès @EPOKA @GROUPE IFOP @Occurrence\n\nPour en savoir plus sur le Groupe :\n\n- - - - - - - - - - - -",
+"target_diploma": {
+"european": "6",
+"label": "Licence, BUT, Licence Pro (Bac+3)"
+},
+"desired_skills": [],
+"to_be_acquired_skills": [],
+"access_conditions": [],
+"publication": {
+"creation": "2026-10-23T12:04:37.000Z",
+"expiration": "2026-12-23T12:04:37.000Z"
+},
+"opening_count": 1,
+"status": "Active",
+"to_applicant_questions": null
+},
+"is_delegated": false
+},
+{
+"identifier": {
+"id": "6ab2ff287caaafd3f596a596",
+"partner_label": "France Travail",
+"partner_job_id": "7093043"
+},
+"workplace": {
+"siret": null,
+"brand": null,
+"legal_name": null,
+"website": null,
+"name": null,
+"description": null,
+"size": null,
+"location": {
+"address": "92000 Nanterre",
+"geopoint": {
+"coordinates": [
+2.202314,
+48.898095
+],
+"type": "Point"
+}
+},
+"domain": {
+"idcc": null,
+"opco": null,
+"naf": null
+}
+},
+"apply": {
+"url": "https://www.talents-handicap.com/315-wavestone/342993-stage-de-fin-d-etudes-alternance-sujet-de-stage-finance-achats-accompagner-les-transformations-de-ces-metiers-en-s-appuyant-sur-la-data-et-les-systemes-d-informations-les-plus-performants?src=FranceTravail",
+"phone": null,
+"recipient_id": null
+},
+"contract": {
+"start": null,
+"start_type": null,
+"start_is_flexible": null,
+"duration": 12,
+"type": [
+"Apprentissage"
+],
+"remote": null
+},
+"offer": {
+"title": "Stage de fin d'études / Alternance - Sujet de stage : Finance &amp; Achats - Accompagner les transformations de ces métiers en s'appuyant sur la Data et les Systèmes d'Informations les plus performants  (H/F)",
+"rome_codes": [
+"M1805"
+],
+"description": "Description de l'entrepriseWavestone est un cabinet de conseil, qui a pour mission d'accompagner les entreprises et organisations dans leurs transformations stratégiques dans un monde en constante évolution, avec l'ambition de générer des impacts positifs et durables pour toutes ses parties prenantes. Forts de plus de 5500 collaborateurs talentueux et engagés à travers l'Europe, l'Amérique du Nord et l'Asie, nous disposons d'expertises sectorielles de premier plan et d'un portefeuille de savoir-faire cross-sectoriels, nous permettant d'adresser à 360° les grands programmes de transformation de nos clients. Chez Wavestone, nous sommes convaincus que la réussite professionnelle et l'épanouissement personnel vont de pair. C'est pourquoi nous offrons un environnement de travail stimulant, inclusif et bienveillant, où chacun peut s'épanouir et atteindre son plein potentiel. Wavestone est coté sur Euronext, à Paris, et labellisé Great Place to Work®. Pour plus d'informations, consulter www.wavestone.com.   Description du posteDescription de la Business Unit TIME TIME (Transport, Infrastructure, Manufacturing, Energy) accompagne les leaders industriels et énergétiques dans leur digitalisation. Nous soutenons leurs projets de transformation des systèmes d'information, de la définition de la stratégie IT au choix et au déploiement des solutions (ERP, EPM, TMS, WMS, CRM.), ainsi que la transformation des métiers tout au long de la chaîne de valeur (R&amp;D, Production, Supply, Vente, Marketing). Nous accélérons également l'adoption des technologies digitales en aidant nos clients à valoriser leurs données et à industrialiser l'innovation, notamment via l'IoT, la GenAI et les jumeaux numériques. Notre accompagnement repose sur des expertises sectorielles, fonctionnelles et technologiques, continuellement renforcées par la veille et la formation. Description du poste L'agilité et la digitalisation des processus, la valorisation de la donnée, la contribution aux objectifs de développement durable sont des enjeux clés pour nos clients, constituant l'agenda prioritaire des CFO (Chief Financial Officer) et CPO (Chief Procurement Officer), respectivement en charge des fonctions Finance et Achats. Vous aurez l'opportunité d'accompagner et d'impacter directement les transformations les plus profondes engagées par nos clients au sein des directions Financières et Achats, s'inscrivant souvent dans une dimension internationale et multiculturelle avec des interlocuteurs de haut niveau, dans des secteurs variés de l'Industrie, de l'Energie et des Services. Vous aurez ainsi la possibilité d'intervenir sur l'ensemble de notre large panel de savoir-faire, typologies de missions et phases d'un projet (du cadrage au déploiement), et notamment les problématiques de : Pilotage de la performance financière et extra-financière Refonte / digitalisation des processus et des SI Finance et/ou Achats Mise en place de centres de services partagés Digitalisation des contrats (Contract Management) Au sein de notre practice Transportation, Infrastructure, Manufacturing &amp; Energy (TIME), tout en approfondissant vos connaissances des fonctions Finance et Achats, vous explorerez d'autres domaines de compétences (Data &amp; process digitalization, IS Transformation, Change Management), clés dans la transformation. En parallèle du sujet de stage que vous aurez à traiter, vous participerez à une ou plusieurs missions de conseil auprès de nos clients, ou sur des chantiers internes, en étant intégré dans une équipe de consultants placée sous la responsabilité d'un.e directeur.ice de mission. QualificationsEtudiant.e au sein d'une école d'ingénieur ou de management, vous êtes à la recherche d'un stage de fin d'études ou d'une alternance dans un cabinet de conseil. Vous possédez un excellent relationnel, le goût du travail en équipe et un sens prononcé de la qualité. Vous savez associer analyse et synthèse et être force de proposition.  Si votre objectif est d'être considéré comme un.e collaborateur.rice à part entière : soucieux.se d'être acteur d'un projet d'entreprise ambitieux, ayant envie de mettre à profit son talent et son enthousiasme dans une société où il est possible de prendre des responsabilités rapidement et de vivre une expérience riche, alors donnez-vous les chances de rejoindre nos équipes et postulez ! Informations supplémentairesNos stages et alternances s'inscrivent tous dans une logique de pré-embauche. Wavestone est un employeur inclusif qui s'engage pour l'égalité des chances. Dans le cadre de cette politique de diversité et inclusion, Wavestone accompagne les personnes en situation de handicap et/ou nécessitant un aménagement durant leur process de recrutement et lors de leur prise de poste.",
+"target_diploma": null,
+"desired_skills": [],
+"to_be_acquired_skills": [],
+"access_conditions": [],
+"publication": {
+"creation": "2026-09-22T10:09:39.414Z",
+"expiration": "2026-11-22T10:09:39.414Z"
+},
+"opening_count": 1,
+"status": "Active",
+"to_applicant_questions": null
+},
+"is_delegated": false
+},
+{
+"identifier": {
+"id": "6ab2ff287caaafd3f596a595",
+"partner_label": "France Travail",
+"partner_job_id": "7093046"
+},
+"workplace": {
+"siret": null,
+"brand": null,
+"legal_name": null,
+"website": null,
+"name": null,
+"description": null,
+"size": null,
+"location": {
+"address": "92000 Nanterre",
+"geopoint": {
+"coordinates": [
+2.202314,
+48.898095
+],
+"type": "Point"
+}
+},
+"domain": {
+"idcc": null,
+"opco": null,
+"naf": null
+}
+},
+"apply": {
+"url": "https://www.talents-handicap.com/315-wavestone/342991-stage-de-fin-d-etudes-alternance-sujet-de-stage-accompagner-les-transformations-majeures-des-acteurs-du-transport-via-l-evolution-de-leur-business-model-ainsi-que-les-solutions-innovantes-liees-a-la-data-et-a-l-ia?src=FranceTravail",
+"phone": null,
+"recipient_id": null
+},
+"contract": {
+"start": null,
+"start_type": null,
+"start_is_flexible": null,
+"duration": 12,
+"type": [
+"Apprentissage"
+],
+"remote": null
+},
+"offer": {
+"title": "Stage de fin d'études / Alternance - Sujet de stage : Accompagner les transformations majeures des acteurs du transport via l'évolution de leur business model ainsi que les solutions innovantes liées à la Data et à l'IA  (H/F)",
+"rome_codes": [
+"M1805"
+],
+"description": "Description de l'entrepriseWavestone est un cabinet de conseil, qui a pour mission d'accompagner les entreprises et organisations dans leurs transformations stratégiques dans un monde en constante évolution, avec l'ambition de générer des impacts positifs et durables pour toutes ses parties prenantes. Forts de plus de 5500 collaborateurs talentueux et engagés à travers l'Europe, l'Amérique du Nord et l'Asie, nous disposons d'expertises sectorielles de premier plan et d'un portefeuille de savoir-faire cross-sectoriels, nous permettant d'adresser à 360° les grands programmes de transformation de nos clients. Chez Wavestone, nous sommes convaincus que la réussite professionnelle et l'épanouissement personnel vont de pair. C'est pourquoi nous offrons un environnement de travail stimulant, inclusif et bienveillant, où chacun peut s'épanouir et atteindre son plein potentiel. Wavestone est coté sur Euronext, à Paris, et labellisé Great Place to Work®. Pour plus d'informations, consulter www.wavestone.com.  Description du posteDescription de la Business Unit TIME TIME (Transport, Infrastructure, Manufacturing, Energy) accompagne les leaders industriels et énergétiques dans leur digitalisation. Nous soutenons leurs projets de transformation des systèmes d'information, de la définition de la stratégie IT au choix et au déploiement des solutions (ERP, EPM, TMS, WMS, CRM.), ainsi que la transformation des métiers tout au long de la chaîne de valeur (R&amp;D, Production, Supply, Vente, Marketing). Nous accélérons également l'adoption des technologies digitales en aidant nos clients à valoriser leurs données et à industrialiser l'innovation, notamment via l'IoT, la GenAI et les jumeaux numériques. Notre accompagnement repose sur des expertises sectorielles, fonctionnelles et technologiques, continuellement renforcées par la veille et la formation. Description du poste Le secteur des transports est au cœur de transformations majeures. L'ouverture à la concurrence du marché ferroviaire français bouleverse les modèles historiques et pousse les opérateurs à se différencier par la qualité de service et l'innovation. Parallèlement, la transition écologique impose une réduction des émissions de gaz à effet de serre, conformément aux objectifs européens et encourage le report modal vers des solutions collectives ou actives. Ces évolutions s'accompagnent d'une digitalisation accélérée des mobilités : dématérialisation des titres, applications multimodales, information voyageur en temps réel, etc. Dans ce contexte, la performance opérationnelle, la satisfaction client et la réduction de l'empreinte environnementale deviennent des priorités stratégiques. La donnée est un levier essentiel pour y parvenir : elle permet de mieux connaître les voyageurs (habitudes, irritants, préférences), d'anticiper les défaillances, d'adapter l'offre en temps réel et de concevoir des services différenciants. Elle est également indispensable pour mesurer et piloter l'impact écologique des mobilités, favoriser l'intermodalité et accompagner les politiques publiques. Dans ce cadre, sous l'encadrement d'un tuteur et d'un sponsor de l'offre, vous travaillerez sur les types de problématiques suivantes :  Quels sont les cas d'usage de l'IA dans le secteur du transport ? Comment distribuer des offres de transport ferroviaire dans un marché ouvert à la concurrence ? La data dans le secteur de la mobilité : quels usages pour répondre aux enjeux de demain ? Comment la mise en qualité de la donnée permet-elle d'améliorer la performance des opérateurs de Transport ? Relation Client : Comment la donnée permet-elle aux opérateurs de se différencier entre eux ? Quels impacts de la transition écologique sur le secteur du transport ? En parallèle du sujet de stage que vous aurez à traiter, vous participerez à une ou plusieurs missions de conseil auprès de nos clients, ou sur des chantiers internes, en étant intégré dans une équipe de consultants placée sous la responsabilité d'un.e directeur.ice de mission. QualificationsEtudiant.e au sein d'une école d'ingénieur ou de management, vous êtes à la recherche d'un stage de fin d'études ou d'une alternance dans un cabinet de conseil. Vous possédez un excellent relationnel, le goût du travail en équipe et un sens prononcé de la qualité. Vous savez associer analyse et synthèse et être force de proposition.  Si votre objectif est d'être considéré comme un.e collaborateur.rice à part entière : soucieux.se d'être acteur d'un projet d'entreprise ambitieux, ayant envie de mettre à profit son talent et son enthousiasme dans une société où il est possible de prendre des responsabilités rapidement et de vivre une expérience riche, alors donnez-vous les chances de rejoindre nos équipes et postulez ! Informations supplémentairesTous nos stages et alternance s'inscrivent dans une logique de pré-embauche.Wavestone est un employeur inclusif qui s'engage pour l'égalité des chances. Dans le cadre de cette politique de diversit...",
+"target_diploma": null,
+"desired_skills": [],
+"to_be_acquired_skills": [],
+"access_conditions": [],
+"publication": {
+"creation": "2026-09-22T10:09:39.410Z",
+"expiration": "2026-11-22T10:09:39.410Z"
+},
+"opening_count": 1,
+"status": "Active",
+"to_applicant_questions": null
+},
+"is_delegated": false
+},
+{
+"identifier": {
+"id": "6ab2ff287caaafd3f596a594",
+"partner_label": "France Travail",
+"partner_job_id": "7093047"
+},
+"workplace": {
+"siret": null,
+"brand": null,
+"legal_name": null,
+"website": null,
+"name": null,
+"description": null,
+"size": null,
+"location": {
+"address": "92000 Nanterre",
+"geopoint": {
+"coordinates": [
+2.202314,
+48.898095
+],
+"type": "Point"
+}
+},
+"domain": {
+"idcc": null,
+"opco": null,
+"naf": null
+}
+},
+"apply": {
+"url": "https://www.talents-handicap.com/315-wavestone/342995-stage-de-fin-d-etudes-alternance-sujet-de-stage-industrie-5-0-et-performance-des-operations-au-coeur-des-strategies-et-des-transformations-des-acteurs-industriels?src=FranceTravail",
+"phone": null,
+"recipient_id": null
+},
+"contract": {
+"start": null,
+"start_type": null,
+"start_is_flexible": null,
+"duration": 12,
+"type": [
+"Apprentissage"
+],
+"remote": null
+},
+"offer": {
+"title": "Stage de fin d'études / Alternance - Sujet de stage : Industrie 5.0 et performance des opérations, au cœur des stratégies et des transformations des acteurs industriels.  (H/F)",
+"rome_codes": [
+"M1805"
+],
+"description": "Description de l'entrepriseWavestone est un cabinet de conseil, qui a pour mission d'accompagner les entreprises et organisations dans leurs transformations stratégiques dans un monde en constante évolution, avec l'ambition de générer des impacts positifs et durables pour toutes ses parties prenantes. Forts de plus de 5500 collaborateurs talentueux et engagés à travers l'Europe, l'Amérique du Nord et l'Asie, nous disposons d'expertises sectorielles de premier plan et d'un portefeuille de savoir-faire cross-sectoriels, nous permettant d'adresser à 360° les grands programmes de transformation de nos clients. Chez Wavestone, nous sommes convaincus que la réussite professionnelle et l'épanouissement personnel vont de pair. C'est pourquoi nous offrons un environnement de travail stimulant, inclusif et bienveillant, où chacun peut s'épanouir et atteindre son plein potentiel. Wavestone est coté sur Euronext, à Paris, et labellisé Great Place to Work®. Pour plus d'informations, consulter www.wavestone.com.  Description du posteDescription de la Business Unit TIME TIME (Transport, Infrastructure, Manufacturing, Energy) accompagne les leaders industriels et énergétiques dans leur digitalisation. Nous soutenons leurs projets de transformation des systèmes d'information, de la définition de la stratégie IT au choix et au déploiement des solutions (ERP, EPM, TMS, WMS, CRM.), ainsi que la transformation des métiers tout au long de la chaîne de valeur (R&amp;D, Production, Supply, Vente, Marketing). Nous accélérons également l'adoption des technologies digitales en aidant nos clients à valoriser leurs données et à industrialiser l'innovation, notamment via l'IoT, la GenAI et les jumeaux numériques. Notre accompagnement repose sur des expertises sectorielles, fonctionnelles et technologiques, continuellement renforcées par la veille et la formation. Description du poste La recherche de performance opérationnelle est au cœur des problématiques des entreprises industrielles et des transformations opérées par ces dernières. Définir les bonnes stratégies, indicateurs et décliner les feuilles de routes pour atteindre les objectifs est un exercice constant pour s'adapter à un environnement de plus en plus complexe et challengeant.   Identifier les enjeux clés est un point de départ à l'élaboration ou à la mise à jour d'un plan de transformation. L'usine du futur est-elle guidée par l'IA, les outils digitaux, l'humain ou les 3 ? Les enjeux d'une usine sont-ils l'efficacité opérationnelle, la réduction de son impact environnemental ou le développement de ses ressources humaines ? Aidez Wavestone, au travers de la practice TIME (Transport, Infrastructure, Manufacturing &amp; Energy), à développer ses convictions sur ces sujets.  L'objectif du stage de fin d'études ou de l'alternance:  Le stage / l'alternance pourra se concentrer sur un ou plusieurs aspects de la performance industrielle, des enjeux clés actuels des entreprises industrielles, de la recherche de performance par la transformation digitale et des impacts des transformations au sein des organisations.  Travaux à réaliser :   Sous la supervision d'un tuteur, et avec l'aide d'une équipe de consultants experts en industrie, opérations &amp; technologies, le stagiaire/l'alternant devra :   Cadrer et identifier la problématique cible liée à la performance des opérations industrielles et/ou à l'industrie 5.0.  Identifier les enjeux clés liés à sa problématique, comprendre leur importance pour une entreprise industrielle et orienter sa recherche vers les leviers principaux de transformation et les impacts associés.  Etablir une analyse de maturité de nos clients sur la thématique adoptée et dégager des tendances sur les freins et accélérateurs, pour aboutir à l'identification de nouvelles convictions cabinet et/ou à la révision de convictions existantes.  Synthétiser les convictions de Wavestone en la matière pour renforcer les recommandations de Wavestone pour ses clients et la notoriété du cabinet.  En parallèle du sujet de stage que vous aurez à traiter, vous participerez à une ou plusieurs missions de conseil auprès de nos clients, ou sur des chantiers internes, en étant intégré dans une équipe de consultants placée sous la responsabilité d'un.e directeur.ice de mission. QualificationsEtudiant.e au sein d'une école d'ingénieur ou de management, vous êtes à la recherche d'un stage de fin d'études ou d'une alternance dans un cabinet de conseil. Vous possédez un excellent relationnel, le goût du travail en équipe et un sens prononcé de la qualité. Vous savez associer analyse et synthèse et être force de proposition.  Si votre objectif est d'être considéré comme un.e collaborateur.rice à part entière : soucieux.se d'être acteur d'un projet d'entreprise ambitieux, ayant envie de mettre à profit son talent et son enthousiasme dans une société où il est possible de prendre des responsabilités rapidement et de vivre une expérience riche, alors donnez-vous les chances de rejoin...",
+"target_diploma": null,
+"desired_skills": [],
+"to_be_acquired_skills": [],
+"access_conditions": [],
+"publication": {
+"creation": "2026-09-22T10:09:39.407Z",
+"expiration": "2026-11-22T10:09:39.407Z"
+},
+"opening_count": 1,
+"status": "Active",
+"to_applicant_questions": null
+},
+"is_delegated": false
+},
+{
+"identifier": {
+"id": "6ab2ff287caaafd3f596a597",
+"partner_label": "France Travail",
+"partner_job_id": "7093038"
+},
+"workplace": {
+"siret": null,
+"brand": null,
+"legal_name": null,
+"website": null,
+"name": null,
+"description": null,
+"size": null,
+"location": {
+"address": "92000 Nanterre",
+"geopoint": {
+"coordinates": [
+2.202314,
+48.898095
+],
+"type": "Point"
+}
+},
+"domain": {
+"idcc": null,
+"opco": null,
+"naf": null
+}
+},
+"apply": {
+"url": "https://www.talents-handicap.com/315-wavestone/342992-stage-de-fin-d-etudes-alternance-sujet-de-stage-management-des-directions-recherche-et-innovation?src=FranceTravail",
+"phone": null,
+"recipient_id": null
+},
+"contract": {
+"start": null,
+"start_type": null,
+"start_is_flexible": null,
+"duration": 12,
+"type": [
+"Apprentissage"
+],
+"remote": null
+},
+"offer": {
+"title": "Stage de fin d'études / Alternance - Sujet de stage : Management des directions Recherche et Innovation (H/F)",
+"rome_codes": [
+"M1805"
+],
+"description": "Description de l'entrepriseWavestone est un cabinet de conseil, qui a pour mission d'accompagner les entreprises et organisations dans leurs transformations stratégiques dans un monde en constante évolution, avec l'ambition de générer des impacts positifs et durables pour toutes ses parties prenantes. Forts de plus de 5500 collaborateurs talentueux et engagés à travers l'Europe, l'Amérique du Nord et l'Asie, nous disposons d'expertises sectorielles de premier plan et d'un portefeuille de savoir-faire cross-sectoriels, nous permettant d'adresser à 360° les grands programmes de transformation de nos clients. Chez Wavestone, nous sommes convaincus que la réussite professionnelle et l'épanouissement personnel vont de pair. C'est pourquoi nous offrons un environnement de travail stimulant, inclusif et bienveillant, où chacun peut s'épanouir et atteindre son plein potentiel. Wavestone est coté sur Euronext, à Paris, et labellisé Great Place to Work®. Pour plus d'informations, consulter www.wavestone.com.  Description du posteDescription de la Business Unit TIME TIME (Transport, Infrastructure, Manufacturing, Energy) accompagne les leaders industriels et énergétiques dans leur digitalisation. Nous soutenons leurs projets de transformation des systèmes d'information, de la définition de la stratégie IT au choix et au déploiement des solutions (ERP, EPM, TMS, WMS, CRM.), ainsi que la transformation des métiers tout au long de la chaîne de valeur (R&amp;D, Production, Supply, Vente, Marketing). Nous accélérons également l'adoption des technologies digitales en aidant nos clients à valoriser leurs données et à industrialiser l'innovation, notamment via l'IoT, la GenAI et les jumeaux numériques. Notre accompagnement repose sur des expertises sectorielles, fonctionnelles et technologiques, continuellement renforcées par la veille et la formation. Description du poste Les directions Recherche &amp; Innovation (R&amp;I) sont aujourd'hui confrontées à des défis majeurs : démontrer leur valeur, accélérer la mise sur le marché des innovations, tirer parti de l'IA et de la donnée, renforcer leurs écosystèmes et intégrer les enjeux de durabilité au cœur de leurs démarches. Au sein de l'offre Stratégie et Management R&amp;I de Wavestone, nous accompagnons les grandes entreprises industrielles et technologiques dans la transformation de leurs activités d'innovation, de la définition de la stratégie jusqu'à la mise en œuvre opérationnelle. Notre accompagnement s'articule autour de 6 piliers complémentaires : Stratégie, pilotage et performance de l'innovation : définir les feuilles de route R&amp;I, mesurer la création de valeur, optimiser les portefeuilles de projets et mettre en place des dispositifs de pilotage performants. Open innovation et financement : développer les écosystèmes d'innovation, structurer les partenariats avec les startups, laboratoires et institutions, et mobiliser les dispositifs de financement publics et privés. Produits et services innovants : faire émerger, expérimenter et industrialiser de nouvelles offres, depuis l'idéation et le prototypage jusqu'au déploiement à grande échelle. Data &amp; IA au service de la R&amp;I : valoriser la donnée, déployer l'intelligence artificielle générative, digitaliser les activités de recherche et construire des organisations davantage pilotées par les données. Acculturation et transformation : faire évoluer les organisations, les compétences et les modes de travail pour diffuser une culture de l'innovation durable et collaborative. Innovation durable : intégrer les enjeux environnementaux et sociétaux dans les stratégies d'innovation, développer l'éco-innovation et imaginer les business models de demain. Objectifs et exemples de travaux à réaliser Ce stage/cette alternance vise à structurer et produire une connaissance et un savoir-faire de premier plan sur un ou plusieurs leviers listés ci-dessus. Les résultats devront apporter à Wavestone des atouts différenciants sur le marché. Dans ce cadre, sous l'encadrement d'un tuteur et d'un sponsor de l'offre « Stratégie et management R&amp;I », vous serez amené.e à travailler sur le type de problématiques présentées ci-dessous : Stratégie &amp; performance : Comment restituer la valeur de la R&amp;D dans un environnement industriel ? Data &amp; IA : AI Agents : Demain, un chercheur aura-t-il son copilote scientifique ? Innovation durable : Comment scorer l'innovation d'un point de vue durable ? Open innovation : Benchmark sur les dispositifs partagés d'innovation sur la data de demain Exemples de sujets donnés à titre illustratif, liste non exhaustive En parallèle, vous participerez potentiellement à une ou plusieurs missions de conseil auprès de nos clients, en étant intégré dans une équipe de consultants placée sous la responsabilité d'un directeur de mission. QualificationsEtudiant.e au sein d'une école d'ingénieur ou de management, vous êtes à la recherche d'un stage de fin d'études ou d'une alternance dans un cabinet de conseil. Vous possédez un e...",
+"target_diploma": null,
+"desired_skills": [],
+"to_be_acquired_skills": [],
+"access_conditions": [],
+"publication": {
+"creation": "2026-09-22T10:09:39.386Z",
+"expiration": "2026-11-22T10:09:39.386Z"
+},
+"opening_count": 1,
+"status": "Active",
+"to_applicant_questions": null
+},
+"is_delegated": false
+},
+{
+"identifier": {
+"id": "6ab2ff287caaafd3f596a598",
+"partner_label": "France Travail",
+"partner_job_id": "7093035"
+},
+"workplace": {
+"siret": null,
+"brand": null,
+"legal_name": null,
+"website": null,
+"name": null,
+"description": null,
+"size": null,
+"location": {
+"address": "92000 Nanterre",
+"geopoint": {
+"coordinates": [
+2.202314,
+48.898095
+],
+"type": "Point"
+}
+},
+"domain": {
+"idcc": null,
+"opco": null,
+"naf": null
+}
+},
+"apply": {
+"url": "https://www.talents-handicap.com/315-wavestone/342996-stage-de-fin-d-etudes-alternance-sujet-de-stage-transformation-si-transformer-les-si-pour-repondre-aux-nouveaux-enjeux-du-monde-industriel-et-energetique-1?src=FranceTravail",
+"phone": null,
+"recipient_id": null
+},
+"contract": {
+"start": null,
+"start_type": null,
+"start_is_flexible": null,
+"duration": 12,
+"type": [
+"Apprentissage"
+],
+"remote": null
+},
+"offer": {
+"title": "Stage de fin d'études / Alternance - Sujet de stage : Transformation SI : transformer les SI pour répondre aux nouveaux enjeux du monde industriel et énergétique  (H/F)",
+"rome_codes": [
+"M1805"
+],
+"description": "Description de l'entrepriseWavestone est un cabinet de conseil, qui a pour mission d'accompagner les entreprises et organisations dans leurs transformations stratégiques dans un monde en constante évolution, avec l'ambition de générer des impacts positifs et durables pour toutes ses parties prenantes. Forts de plus de 5500 collaborateurs talentueux et engagés à travers l'Europe, l'Amérique du Nord et l'Asie, nous disposons d'expertises sectorielles de premier plan et d'un portefeuille de savoir-faire cross-sectoriels, nous permettant d'adresser à 360° les grands programmes de transformation de nos clients. Chez Wavestone, nous sommes convaincus que la réussite professionnelle et l'épanouissement personnel vont de pair. C'est pourquoi nous offrons un environnement de travail stimulant, inclusif et bienveillant, où chacun peut s'épanouir et atteindre son plein potentiel. Wavestone est coté sur Euronext, à Paris, et labellisé Great Place to Work®. Pour plus d'informations, consulter www.wavestone.com.  Description du posteDescription de la Business Unit TIME TIME (Transport, Infrastructure, Manufacturing, Energy) accompagne les leaders industriels et énergétiques dans leur digitalisation. Nous soutenons leurs projets de transformation des systèmes d'information, de la définition de la stratégie IT au choix et au déploiement des solutions (ERP, EPM, TMS, WMS, CRM.), ainsi que la transformation des métiers tout au long de la chaîne de valeur (R&amp;D, Production, Supply, Vente, Marketing). Nous accélérons également l'adoption des technologies digitales en aidant nos clients à valoriser leurs données et à industrialiser l'innovation, notamment via l'IoT, la GenAI et les jumeaux numériques. Notre accompagnement repose sur des expertises sectorielles, fonctionnelles et technologiques, continuellement renforcées par la veille et la formation. Description du poste Dans un contexte où l'intelligence artificielle s'intègre désormais dans les moindres recoins de l'entreprise - jusqu'à la machine à café -, où les opérations de fusion-acquisition se succèdent à un rythme soutenu, et où les cadres réglementaires évoluent avec une fréquence difficilement prévisible, les entreprises font face à une nécessité impérieuse : se réinventer pour rester compétitives. Notre mission au sein de la BU TIME (Transport, Infrastructure, Manufacturing &amp; Energy) - et peut-être bientôt la vôtre - est d'accompagner les grandes entreprises dans la refonte, la modernisation et l'alignement de leur système d'information avec leurs ambitions stratégiques. Nous combinons vision, pragmatisme et exigence de résultats pour transformer les idées en actions concrètes. Car si les présentations soignées font bonne impression, ce sont les impacts mesurables qui font vraiment la différence. Nos terrains de jeu favoris : Architecture des systèmes d'information (SI) : concevoir un système d'information cohérent, modulaire et évolutif, capable d'intégrer les nouvelles technologies (cloud, IA, data) tout en répondant aux besoins métiers. Target Operating Model (TOM) : organiser les équipes et les outils pour assurer la fluidité dans les opérations, même en mode Agile. M&amp;A IT : fusionner des SI sans provoquer de crash. Votre mission : Renforcer notre expertise sur la transformation des SI au service du business. Concrètement ? Vous allez produire des livrables qui comptent vraiment : utiles, différenciants, et qui font briller nos missions. et nos clients. Et bien sûr, vous ne serez pas seul-e dans l'aventure : Un tuteur et un sponsor de l'offre vous accompagneront sur des sujets aussi passionnants que stratégiques. Vous serez également pleinement intégré.e à la vie de l'équipe : participation à l'élaboration de propositions commerciales, intégration en mission client, contribution au knowledge management. Bref, un environnement stimulant, où l'on apprend vite, ensemble, et dans la bonne humeur. Quelques exemples de défis qui vous attendent : - Automatiser la MaJ de cartographie applicative pour ne plus traiter les écarts à la main, - Définir des indicateurs de pilotage, GreenOps, de gestion de parc applicatif, ou d'autres encore., - Injecter de l'IA dans les processus IT pour les rendre plus efficaces, - Harmoniser une DSI post-fusion : agir au meilleur niveau pour remettre de l'ordre dans l'organigramme, - Définir une stratégie cloud sur mesure pour SAP S/4 HANA (et faire fondre les coûts). En parallèle du sujet de stage que vous aurez à traiter, vous participerez à une ou plusieurs missions de conseil auprès de nos clients, ou sur des chantiers internes, en étant intégré dans une équipe de consultants placée sous la responsabilité d'un.e directeur.ice de mission. QualificationsEtudiant.e au sein d'une école d'ingénieur ou de management, vous êtes à la recherche d'un stage de fin d'études ou d'une alternance dans un cabinet de conseil. Vous possédez un excellent relationnel, le goût du travail en équipe et un sens prononcé de la qualité. Vous save...",
+"target_diploma": null,
+"desired_skills": [],
+"to_be_acquired_skills": [],
+"access_conditions": [],
+"publication": {
+"creation": "2026-09-22T10:09:38.911Z",
+"expiration": "2026-11-22T10:09:38.911Z"
+},
+"opening_count": 1,
+"status": "Active",
+"to_applicant_questions": null
+},
+"is_delegated": false
+},
+{
+"identifier": {
+"id": "6ab2ff287caaafd3f596a599",
+"partner_label": "France Travail",
+"partner_job_id": "7093024"
+},
+"workplace": {
+"siret": null,
+"brand": null,
+"legal_name": null,
+"website": null,
+"name": null,
+"description": null,
+"size": null,
+"location": {
+"address": "92000 Nanterre",
+"geopoint": {
+"coordinates": [
+2.202314,
+48.898095
+],
+"type": "Point"
+}
+},
+"domain": {
+"idcc": null,
+"opco": null,
+"naf": null
+}
+},
+"apply": {
+"url": "https://www.talents-handicap.com/315-wavestone/342994-stage-de-fin-d-etudes-alternance-sujet-de-stage-performance-et-digitalisation-de-l-ingenierie?src=FranceTravail",
+"phone": null,
+"recipient_id": null
+},
+"contract": {
+"start": null,
+"start_type": null,
+"start_is_flexible": null,
+"duration": 12,
+"type": [
+"Apprentissage"
+],
+"remote": null
+},
+"offer": {
+"title": "Stage de fin d'études / Alternance - Sujet de stage : Performance et digitalisation de l'ingénierie (H/F)",
+"rome_codes": [
+"M1805"
+],
+"description": "Description de l'entrepriseWavestone est un cabinet de conseil, qui a pour mission d'accompagner les entreprises et organisations dans leurs transformations stratégiques dans un monde en constante évolution, avec l'ambition de générer des impacts positifs et durables pour toutes ses parties prenantes. Forts de plus de 5500 collaborateurs talentueux et engagés à travers l'Europe, l'Amérique du Nord et l'Asie, nous disposons d'expertises sectorielles de premier plan et d'un portefeuille de savoir-faire cross-sectoriels, nous permettant d'adresser à 360° les grands programmes de transformation de nos clients. Chez Wavestone, nous sommes convaincus que la réussite professionnelle et l'épanouissement personnel vont de pair. C'est pourquoi nous offrons un environnement de travail stimulant, inclusif et bienveillant, où chacun peut s'épanouir et atteindre son plein potentiel. Wavestone est coté sur Euronext, à Paris, et labellisé Great Place to Work®. Pour plus d'informations, consulter www.wavestone.com.  Description du posteDescription de la Business Unit TIME TIME (Transport, Infrastructure, Manufacturing, Energy) accompagne les leaders industriels et énergétiques dans leur digitalisation. Nous soutenons leurs projets de transformation des systèmes d'information, de la définition de la stratégie IT au choix et au déploiement des solutions (ERP, EPM, TMS, WMS, CRM.), ainsi que la transformation des métiers tout au long de la chaîne de valeur (R&amp;D, Production, Supply, Vente, Marketing). Nous accélérons également l'adoption des technologies digitales en aidant nos clients à valoriser leurs données et à industrialiser l'innovation, notamment via l'IoT, la GenAI et les jumeaux numériques. Notre accompagnement repose sur des expertises sectorielles, fonctionnelles et technologiques, continuellement renforcées par la veille et la formation. Description du poste Wavestone, au travers de la practice TIME (Transport, Infrastructure, Manufacturing &amp; Energy), accompagne les industriels dans leurs programmes de « Performance &amp; Digitalisation de l'ingénierie » : Comment améliorer la phase conception et développement produit en optimisant les organisations, les processus et méthodes de travail, et en s'appuyant sur les solutions digitales (PLM, BIM, Jumeau numérique, etc.) et sur l'intelligence artificielle ?  Nous intervenons auprès des directions R&amp;D, directions d'ingénierie et bureaux d'étude afin de :  Définir la stratégie de développement produit et l'organisation de l'ingénierie   Optimiser les méthodes et processus de développement produit (ingénierie système, gestion des exigences, gestion de configuration, gestion des interfaces.)  Digitaliser les activités d'ingénierie sur l'ensemble du cycle de vie du produit (conception, production, exploitation, recyclage, etc.) dans le but d'assurer la continuité numérique  Accompagner les transformations auprès des équipes d'ingénierie : formation, communication  Ce stage / cette alternance vise à structurer et produire une connaissance et un savoir-faire de premier plan sur un ou plusieurs leviers listés ci-dessus. Les résultats devront apporter à Wavestone des atouts différenciants sur le marché.  Dans ce cadre, sous l'encadrement d'un tuteur et d'un sponsor de l'offre, vous serez amené.es à travailler sur le type de problématiques présentées ci-dessous :   Quelle est la place du PLM dans l'industrie 4.0 ?  Comment les acteurs évoluent-ils vers une continuité numérique de bout en bout ? Comment travaillent les industriels avec leur écosystème en entreprise étendue ?  Comment les jumeaux numériques, le BIM et le PLM transforment-ils le développement produit ? Comment l'intelligence artificielle peut permettre d'accélérer les phases de conception d'un produit ? Comment intégrer l'impact environnemental dès la phase d'ingénierie ? En parallèle du sujet de stage que vous aurez à traiter, vous participerez à une ou plusieurs missions de conseil auprès de nos clients, ou sur des chantiers internes, en étant intégré dans une équipe de consultants placée sous la responsabilité d'un.e directeur.ice de mission. QualificationsEtudiant.e au sein d'une école d'ingénieur ou de management, vous êtes à la recherche d'un stage de fin d'études ou d'une alternance dans un cabinet de conseil. Vous possédez un excellent relationnel, le goût du travail en équipe et un sens prononcé de la qualité. Vous savez associer analyse et synthèse et être force de proposition.  Si votre objectif est d'être considéré comme un.e collaborateur.rice à part entière : soucieux.se d'être acteur d'un projet d'entreprise ambitieux, ayant envie de mettre à profit son talent et son enthousiasme dans une société où il est possible de prendre des responsabilités rapidement et de vivre une expérience riche, alors donnez-vous les chances de rejoindre nos équipes et postulez ! Informations supplémentairesNos stages et alternance s'inscrivent tous dans une logique de pré-embauche.Wavestone est un employeur inc...",
+"target_diploma": null,
+"desired_skills": [],
+"to_be_acquired_skills": [],
+"access_conditions": [],
+"publication": {
+"creation": "2026-09-22T10:09:36.493Z",
+"expiration": "2026-11-22T10:09:36.493Z"
+},
+"opening_count": 1,
+"status": "Active",
+"to_applicant_questions": null
+},
+"is_delegated": false
+},
+{
+"identifier": {
+"id": "6ab2ff287caaafd3f596a59a",
+"partner_label": "France Travail",
+"partner_job_id": "7093023"
+},
+"workplace": {
+"siret": null,
+"brand": null,
+"legal_name": null,
+"website": null,
+"name": null,
+"description": null,
+"size": null,
+"location": {
+"address": "92000 Nanterre",
+"geopoint": {
+"coordinates": [
+2.202314,
+48.898095
+],
+"type": "Point"
+}
+},
+"domain": {
+"idcc": null,
+"opco": null,
+"naf": null
+}
+},
+"apply": {
+"url": "https://www.talents-handicap.com/315-wavestone/342999-stage-de-fin-d-etudes-alternance-sujet-de-stage-financement-de-l-innovation-et-de-la-r-d?src=FranceTravail",
+"phone": null,
+"recipient_id": null
+},
+"contract": {
+"start": null,
+"start_type": null,
+"start_is_flexible": null,
+"duration": 12,
+"type": [
+"Apprentissage"
+],
+"remote": null
+},
+"offer": {
+"title": "Stage de fin d'études / Alternance - Sujet de stage : Financement de l'innovation et de la R&amp;D (H/F)",
+"rome_codes": [
+"M1805"
+],
+"description": "Description de l'entrepriseWavestone est un cabinet de conseil, qui a pour mission d'accompagner les entreprises et organisations dans leurs transformations stratégiques dans un monde en constante évolution, avec l'ambition de générer des impacts positifs et durables pour toutes ses parties prenantes. Forts de plus de 5500 collaborateurs talentueux et engagés à travers l'Europe, l'Amérique du Nord et l'Asie, nous disposons d'expertises sectorielles de premier plan et d'un portefeuille de savoir-faire cross-sectoriels, nous permettant d'adresser à 360° les grands programmes de transformation de nos clients. Chez Wavestone, nous sommes convaincus que la réussite professionnelle et l'épanouissement personnel vont de pair. C'est pourquoi nous offrons un environnement de travail stimulant, inclusif et bienveillant, où chacun peut s'épanouir et atteindre son plein potentiel. Wavestone est coté sur Euronext, à Paris, et labellisé Great Place to Work®. Pour plus d'informations, consulter www.wavestone.com.  Description du posteDescription de la Business Unit TIME TIME (Transport, Infrastructure, Manufacturing, Energy) accompagne les leaders industriels et énergétiques dans leur digitalisation. Nous soutenons leurs projets de transformation des systèmes d'information, de la définition de la stratégie IT au choix et au déploiement des solutions (ERP, EPM, TMS, WMS, CRM.), ainsi que la transformation des métiers tout au long de la chaîne de valeur (R&amp;D, Production, Supply, Vente, Marketing). Nous accélérons également l'adoption des technologies digitales en aidant nos clients à valoriser leurs données et à industrialiser l'innovation, notamment via l'IoT, la GenAI et les jumeaux numériques. Notre accompagnement repose sur des expertises sectorielles, fonctionnelles et technologiques, continuellement renforcées par la veille et la formation. Description du poste Construire un pôle européen de l'innovation est un enjeu clef pour l'UE et pour la France : créer des emplois, pérenniser la croissance économique, gagner en attractivité, conserver ou développer la R&amp;D sur le sol européen. Des politiques publiques nationales et européennes de financement de l'innovation ont ainsi vue le jour afin d'inciter les acteurs à augmenter leurs investissements en R&amp;D.  Wavestone, au travers de la practice TIME (Transport, Infrastructure, Manufacturing &amp; Energy), se propose d'accompagner les grands comptes et PME dans leur stratégie de financement de l'innovation, à travers son expertise technique, financière et fiscale des dispositifs de financement tel que les subventions, le Crédit d'Impôt Recherche et les dispositifs complémentaires (IP Box, CICO, CII, JEI, etc.). L'objectif est de s'inscrire comme partenaire de programmes d'excellence et de transformation à fort impact (nouveaux produits, transition énergétique, décarbonation, intelligence artificielle, industrie 4.0, etc.). Afin de comprendre les tendances actuelles et futures du financement de l'innovation, encadré d'un.e tuteur.ice et d'expert.es, le ou la stagiaire/alternant.e sera amené.e à travailler sur des problématiques telles que : L'utilisation de l'IA générative pour accompagner les industriels dans le financement de leur R&amp;D Etude de la dynamique et des conséquences des contrôles fiscaux sur la R&amp;D des entreprises Etude des financements de la R&amp;D dans le domaine de l'énergie En parallèle du sujet de stage que vous aurez à traiter, vous participerez à une ou plusieurs missions de conseil auprès de nos clients, ou sur des chantiers internes, en étant intégré dans une équipe de consultants placée sous la responsabilité d'un.e directeur.ice de mission. QualificationsEtudiant.e au sein d'une école d'ingénieur ou de management, vous êtes à la recherche d'un stage de fin d'études ou d'une alternance dans un cabinet de conseil. Vous possédez un excellent relationnel, le goût du travail en équipe et un sens prononcé de la qualité. Vous savez associer analyse et synthèse et être force de proposition.  Si votre objectif est d'être considéré comme un.e collaborateur.rice à part entière : soucieux.se d'être acteur d'un projet d'entreprise ambitieux, ayant envie de mettre à profit son talent et son enthousiasme dans une société où il est possible de prendre des responsabilités rapidement et de vivre une expérience riche, alors donnez-vous les chances de rejoindre nos équipes et postulez ! Informations supplémentairesNos stages et alternances s'inscrivent tous dans une logique de pré-embauche.  Wavestone est un employeur inclusif qui s'engage pour l'égalité des chances. Dans le cadre de cette politique de diversité et inclusion, Wavestone accompagne les personnes en situation de handicap et/ou nécessitant un aménagement durant leur process de recrutement et lors de leur prise de poste.",
+"target_diploma": null,
+"desired_skills": [],
+"to_be_acquired_skills": [],
+"access_conditions": [],
+"publication": {
+"creation": "2026-09-22T10:09:36.492Z",
+"expiration": "2026-11-22T10:09:36.492Z"
+},
+"opening_count": 1,
+"status": "Active",
+"to_applicant_questions": null
+},
+"is_delegated": false
+},
+{
+"identifier": {
+"id": "6ad696a2e2d92300cfde48af",
+"partner_label": "France Travail",
+"partner_job_id": "7398511"
+},
+"workplace": {
+"siret": null,
+"brand": null,
+"legal_name": null,
+"website": null,
+"name": "MAYOLY",
+"description": null,
+"size": null,
+"location": {
+"address": "92500 Rueil-Malmaison",
+"geopoint": {
+"coordinates": [
+2.180528,
+48.874602
+],
+"type": "Point"
+}
+},
+"domain": {
+"idcc": null,
+"opco": null,
+"naf": {
+"code": "21.20Z",
+"label": "Fabrication de préparations pharmaceutiques"
+}
+}
+},
+"apply": {
+"url": "https://mayoly-spindler.softy.pro/offre/221812?idt=5&h=2218120",
+"phone": null,
+"recipient_id": null
+},
+"contract": {
+"start": null,
+"start_type": null,
+"start_is_flexible": null,
+"duration": 12,
+"type": [
+"Apprentissage"
+],
+"remote": null
+},
+"offer": {
+"title": "ALTERNANT CHARGÉ DANALYSE DE DONNÉES SUPPLY CHAIN - H/F",
+"rome_codes": [
+"M1419"
+],
+"description": "Description :\n\n\nContribuer au PILOTAGE DE LA PERFORMANCE SUPPLY CHAIN au sein du département S&amp;OE, à travers la fiabilisation des données, le développement d'outils de reporting et de dashboards, l'automatisation des processus et l'analyse des indicateurs clés.\n\nL'alternant(e) participe à l'amélioration de la qualité et de l'exploitation des données Supply afin de faciliter la prise de décision et d'optimiser les processus opérationnels\n\n \n\nREPORTING &amp; DATA\n\n * Extraire, consolider, contrôler et préparer les données issues des différentes sources.\n * Produire et maintenir les reportings nécessaires au pilotage de l'activité.\n * Structurer les données afin de faciliter leur analyse et leur exploitation.\n\nPOWER BI &amp; DASHBOARDS\n\n * Créer, développer et maintenir les dashboards de pilotage S&amp;OE.\n * Faire évoluer les dashboards en fonction des besoins des équipes Supply Chain.\n * Améliorer la visualisation et la lisibilité des indicateurs de performance.\n\nAUTOMATISATION\n\n * Identifier les tâches et processus pouvant être automatisés.\n * Développer et optimiser des solutions sous EXCEL, POWER QUERY ET POWER BI.\n * Réduire les tâches manuelles et améliorer la fiabilité des reportings.\n\nDATA QUALITY\n\n * Mettre en place et réaliser des contrôles de qualité et de cohérence des données.\n * Identifier, analyser et suivre les anomalies.\n * Contribuer à la résolution des problèmes de données avec les équipes concernées.\n\nANALYSE KPI\n\n * Suivre les principaux KPI Supply Chain.\n * Analyser les tendances et les écarts par rapport aux objectifs.\n * Identifier les principales causes d'écarts et contribuer à la mise en évidence des leviers d'amélioration.\n\nAMÉLIORATION CONTINUE\n\n * Documenter les processus, outils et reportings.\n * Identifier les opportunités d'optimisation et de standardisation.\n * Participer aux projets d'amélioration continue et de digitalisation de la Supply Chain\n\n\n  \n  \nProfil recherché :\n  \n  \nEn cours de formation Bac+4/5 en Supply Chain, Data, Business Intelligence, École d'ingénieur, École de commerce ou formation universitaire équivalente.\n\nVous avez:\n\n * Appétence forte pour les chiffres\n * Maitrise avancée d'Excel.\n * Connaissances ERP, APS (FuturMaster/Sunstice) et Power BI seraient un plus\n * Anglais professionnel courant écrit et oral afin de gérer des partenaires internationaux\n * Esprit analytique et capacité à interpréter des données.\n * Rigueur et sens du détail.\n * Autonomie, curiosité et capacité à être force de proposition.\n * Bon relationnel et capacité à travailler avec des interlocuteurs issus de différentes fonctions.",
+"target_diploma": null,
+"desired_skills": [],
+"to_be_acquired_skills": [],
+"access_conditions": [],
+"publication": {
+"creation": "2026-09-25T15:29:18.166Z",
+"expiration": "2026-11-25T15:29:18.166Z"
+},
+"opening_count": 1,
+"status": "Active",
+"to_applicant_questions": null
+},
+"is_delegated": false
+},
+{
+"identifier": {
+"id": "6ada88bdd61b4915a03dcb0b",
+"partner_label": "Hellowork",
+"partner_job_id": "be604937-4c0f-4d20-a87f-5d6d0dd17bbd"
+},
+"workplace": {
+"siret": "45132133500023",
+"brand": "CARREFOUR",
+"legal_name": "CARREFOUR HYPERMARCHES",
+"website": null,
+"name": "CARREFOUR HYPERMARCHES",
+"description": "Notre ambition ? Agir et nous battre sur tous les terrains pour mettre le “mieux-manger” (manger sain, frais, bio et local) à la portée de tous. Pour y parvenir, c'est plus de 300 métiers qui œuvre chaque jour pour porter tous les projets répondant à nos enjeux business, RSE et tant d’autres !",
+"size": "10 000 salariés et plus",
+"location": {
+"address": "91300 Massy",
+"geopoint": {
+"coordinates": [
+2.269556,
+48.728133
+],
+"type": "Point"
+}
+},
+"domain": {
+"idcc": 2216,
+"opco": "L'Opcommerce",
+"naf": {
+"code": "70.10Z",
+"label": "Activités des sièges sociaux"
+}
+}
+},
+"apply": {
+"url": "https://r.holeest.com/redirect?jd_token=<masqué>&o=1&from=https%3A%2F%2Fwww.hellowork.com%2Ffr-fr%2Femplois%2F84711906.html%3Futm_source%3Dbonnealternance%26utm_medium%3Dmetamoteurs-free%26utm_campaign%3Dalternance%2B-%2B%7Bseo_domain%7D%26utm_content%3Dfluxbonnealternance%26utm_term%3D84711906",
+"phone": null,
+"recipient_id": null
+},
+"contract": {
+"start": null,
+"start_type": null,
+"start_is_flexible": null,
+"duration": null,
+"type": [
+"Apprentissage",
+"Professionnalisation"
+],
+"remote": null
+},
+"offer": {
+"title": "Carrefour Links Chef de Projet Data - Alternance H/F",
+"rome_codes": [
+"M1811"
+],
+"description": "A propos de l'offre :: \nCarrefour Links Chef de Projet Data (F/H) - Alternance\n\nVous êtes rigoureux, synthétique et avez à coeur d'accélérer la transformation data de nos partenaires ? En tant que Carrefour Links Chef de Projet Data (F/H), vous êtes garants de la satisfaction des industriels partenaires et de la coordination avec la Digital Factory.\n\nVos missions :\n\n- Onboarding &amp; Customer Success : Former et accompagner les utilisateurs internationaux et locaux sur les plateformes Links Growth, puis animer la relation client via newsletters, REX et suivi statistiques.\n- Support &amp; Coordination Produit : Travailler avec les équipes opérations et data, accompagner les CSM dans la résolution des tickets et assurer le suivi des demandes auprès des équipes Produits.\n- Analyse &amp; Storytelling Business : Accompagner la réalisation de cas d'usages adaptés aux enjeux des clients et présenter des synthèses à forte valeur ajoutée à destination des Codir.\n- Pilotage de l'activité : Suivre les indicateurs clés de l'équipe et assurer un suivi rigoureux des projets et clients en cours via les outils internes.\n\nVotre profil :\n\n- Formation : Master 1 ou 2 (École de commerce, d'ingénieur ou universitaire).\n- Savoir-faire : Aisance relationnelle, esprit de synthèse, orientation client et analyse de données.\n- Outils maîtrisés : Excel et outils de Data Visualisation (Looker, Tableau).\n- Savoir-être : Autonomie, rigueur, goût du travail en équipe et anglais courant.\n\nCe que nous offrons :\n\n- Statut et rémunération : Statut Étudiant en alternance, Gratification légale selon le niveau d'études sur 13,5 mois.\n- Avantages : remboursement des frais de transport (50%), 12% de remise sur carte Pass, parking.\n- Bien-être : Salle de sport + accès à Wellpass, restauration, conciergerie, crèche, CSE attractif.\n- Votre Carrière : Plan de formation et perspectives d'évolution interne.\n- Contrat : Alternance de 12 mois à partir de janvier 2027.\n\nQui sommes-nous ? Notre engagement :\n\nCarrefour, c'est bien plus qu'un distributeur. C'est un acteur engagé dans la transition alimentaire pour tous, la consommation responsable, le respect du climat et de la biodiversité. À travers ses enseignes et ses divers métiers, le Groupe s'investit dans un modèle durable et inclusif grâce à ses expertises, son innovation et l'engagement de ses collaborateurs.\n\nCarrefour valorise la diversité des parcours et s'engage à ne laisser aucun talent de côté. Fiers de nos équipes représentatives de la société, nous encourageons tous les profils à postuler, garantissant un recrutement inclusif et sans discrimination.",
+"target_diploma": {
+"european": "7",
+"label": "Master, titre ingénieur, grande école (Bac+5)"
+},
+"desired_skills": [],
+"to_be_acquired_skills": [],
+"access_conditions": [],
+"publication": {
+"creation": "2026-10-22T17:13:47.000Z",
+"expiration": "2026-12-22T17:13:47.000Z"
+},
+"opening_count": 1,
+"status": "Active",
+"to_applicant_questions": null
+},
+"is_delegated": false
+},
+{
+"identifier": {
+"id": "6abd880bd46e986892b9e15f",
+"partner_label": "Hellowork",
+"partner_job_id": "5df8ecbc-6867-4d04-a493-7b60ccc70c4d"
+},
+"workplace": {
+"siret": "45132133500023",
+"brand": "CARREFOUR",
+"legal_name": "CARREFOUR HYPERMARCHES",
+"website": null,
+"name": "CARREFOUR HYPERMARCHES",
+"description": "Notre ambition ? Agir et nous battre sur tous les terrains pour mettre le “mieux-manger” (manger sain, frais, bio et local) à la portée de tous. Pour y parvenir, c'est plus de 300 métiers qui œuvre chaque jour pour porter tous les projets répondant à nos enjeux business, RSE et tant d’autres !",
+"size": "10 000 salariés et plus",
+"location": {
+"address": "91300 Massy",
+"geopoint": {
+"coordinates": [
+2.269556,
+48.728133
+],
+"type": "Point"
+}
+},
+"domain": {
+"idcc": 2216,
+"opco": "L'Opcommerce",
+"naf": {
+"code": "70.10Z",
+"label": "Activités des sièges sociaux"
+}
+}
+},
+"apply": {
+"url": "https://r.holeest.com/redirect?jd_token=<masqué>&o=1&from=https%3A%2F%2Fwww.hellowork.com%2Ffr-fr%2Femplois%2F83892083.html%3Futm_source%3Dbonnealternance%26utm_medium%3Dmetamoteurs-free%26utm_campaign%3Dalternance%2B-%2B%7Bseo_domain%7D%26utm_content%3Dfluxbonnealternance%26utm_term%3D83892083",
+"phone": null,
+"recipient_id": null
+},
+"contract": {
+"start": null,
+"start_type": null,
+"start_is_flexible": null,
+"duration": null,
+"type": [
+"Apprentissage",
+"Professionnalisation"
+],
+"remote": "hybrid"
+},
+"offer": {
+"title": "Data Engineer - en Alternance H/F",
+"rome_codes": [
+"M1811"
+],
+"description": "A propos de l'offre :: \nData Engineer (F/H) - en alternance\n\nVous êtes curieux, rigoureux et avez à coeur de transformer la donnée en leviers de performance commerciale ? En tant que Data Engineer (F/H) en alternance, vous êtes au coeur des projets Data pour digitaliser et automatiser les processus de notre Digital Factory.\n\nVos missions :\n\n- Développement Data et ETL : Montée en compétence et développement sur l'ETL BigL, BigLoader et BDI/DBT.\n- Qualité et DevOps : Prise en charge des incidents, automatisation du delivery et application des normes DevOps.\n- Collaboration et Agilité : Participation aux chiffrages, chantiers SCRUM et montée en compétences de l'équipe.\n\nVotre profil :\n\n- Formation : Bac +5 en école d'ingénieur ou université.\n- Savoir-faire : Gestion de données Cloud (GCP), CI/CD, Docker, Linux, Git, méthode Agile SCRUM.\n- Outils maîtrisés : SQL, Git, Docker Compose, Linux CLI, DBT.\n- Savoir-être : Esprit d'équipe, rigueur, esprit d'analyse et prise de recul.\n\nCe que nous offrons :\n\n- Statut et rémunération : Statut Cadre, Rémunération sur 13,5 mois + rémunération variable sur objectif.\n- Avantages : 1 jour de télétravail possible (charte d'entreprise), primes de participation et intéressement, mutuelle, prévoyance, titres restaurant, CESU, remboursement des frais de transport (50%), 12% de remise sur achats avec la carte Pass, parking.\n- Bien-être : Salle de sport + accès à Wellpass, restauration, conciergerie, crèche, CSE attractif.\n- Votre Carrière : Plan de formation et perspectives d'évolution interne.\n- Type de contrat : Alternance.\n- Disponibilité : Septembre.\n\nQui sommes-nous ? Notre engagement :\n\nCarrefour, c'est bien plus qu'un distributeur. C'est un acteur engagé dans la transition alimentaire pour tous, la consommation responsable, le respect du climat et de la biodiversité. À travers ses enseignes et ses divers métiers, le Groupe s'investit dans un modèle durable et inclusif grâce à ses expertises, son innovation et l'engagement de ses collaborateurs.\n\nCarrefour valorise la diversité des parcours et s'engage à ne laisser aucun talent de côté. Fiers de nos équipes représentatives de la société, nous encourageons tous les profils à postuler, garantissant un recrutement inclusif et sans discrimination.",
+"target_diploma": {
+"european": "5",
+"label": "BTS, DEUST (Bac+2)"
+},
+"desired_skills": [],
+"to_be_acquired_skills": [],
+"access_conditions": [],
+"publication": {
+"creation": "2026-09-29T09:09:38.000Z",
+"expiration": "2026-11-29T09:09:38.000Z"
+},
+"opening_count": 1,
+"status": "Active",
+"to_applicant_questions": null
+},
+"is_delegated": false
+},
+{
+"identifier": {
+"id": "6a73b5041e39cbba1ed3b60f",
+"partner_label": "Hellowork",
+"partner_job_id": "f492a985-0792-4a55-a42b-5f7a14b110dd"
+},
+"workplace": {
+"siret": "56208290901190",
+"brand": null,
+"legal_name": "SAFRAN",
+"website": null,
+"name": "SAFRAN",
+"description": "Safran est un groupe international de haute technologie opérant dans les domaines de l'aéronautique (propulsion, équipements et intérieurs), de l'espace et de la défense. Sa mission : contribuer durablement à un monde plus sûr, où le transport aérien devient toujours plus respectueux de l'environnement, plus confortable et plus accessible. Implanté sur tous les continents, le Groupe emploie 110 000 collaborateurs pour un chiffre d'affaires de 31,3 milliards d'euros en 2025, et occupe, seul ou en partenariat, des positions de premier plan mondial ou européen sur ses marchés. \nSafran est la 2ème entreprise du secteur aéronautique et défense du classement « World's Best Companies 2025 » du magazine TIME.\n\nSafran Aircraft Engines conçoit, produit et commercialise, seul ou en coopération, des moteurs aéronautiques civils et militaires aux meilleurs niveaux de performance, fiabilité et respect de l'environnement. La société est notamment, à travers CFM International*, le leader mondial de la propulsion d'avions commerciaux courts et moyen-courriers.\n* CFM International est une société commune 50/50 de Safran Aircraft Engines et GE Aerospace.\n\nParce que nous sommes persuadés que chaque talent compte, nous valorisons et encourageons les candidatures de personnes en situation de handicap pour nos opportunités d'emploi.",
+"size": "1 000 à 1 999 salariés",
+"location": {
+"address": "91000 Évry-Courcouronnes",
+"geopoint": {
+"coordinates": [
+2.433066,
+48.627362
+],
+"type": "Point"
+}
+},
+"domain": {
+"idcc": 54,
+"opco": "OPCO 2i",
+"naf": {
+"code": "70.10Z",
+"label": "Activités des sièges sociaux"
+}
+}
+},
+"apply": {
+"url": "https://r.holeest.com/redirect?jd_token=<masqué>&o=1&from=https%3A%2F%2Fwww.hellowork.com%2Ffr-fr%2Femplois%2F82058452.html%3Futm_source%3Dbonnealternance%26utm_medium%3Dmetamoteurs-free%26utm_campaign%3Dalternance%2B-%2Binformatique%26utm_content%3Dfluxbonnealternance%26utm_term%3D82058452",
+"phone": null,
+"recipient_id": null
+},
+"contract": {
+"start": null,
+"start_type": null,
+"start_is_flexible": null,
+"duration": 36,
+"type": [
+"Apprentissage",
+"Professionnalisation"
+],
+"remote": null
+},
+"offer": {
+"title": "Apprenti·e - Consultant·e Technico Fonctionelle Apriso H/F",
+"rome_codes": [
+"M1806"
+],
+"description": "Au sein du département Continuité Numérique de la division Projet de la Direction des Systèmes d'Information de Safran Aircraft Engines, le projet de Continuité Numérique vise à mettre en place un ensemble d'applications complexes (type PLM et MES) afin d'améliorer la productivité de l'entreprise en développant la collaboration et l'intégration des processus métiers autour d'un référentiel commun de données techniques des produits.   \n  \nLe programme Continuité Numérique est un programme stratégique et composé de différents projets qui visent à déployer des applications complexes (de type PLM et MES). Ce programme impacte et gravite autour de plusieurs applications du Système d'Information de Safran Aircraft Engines et les jalons à tenir sont critiques pour la continuité opérationnelle des directions métiers.  \nLa définition de la solution et son intégration dans l'écosystème SI est complexe et nécessite une analyse et une évaluation de son impact. De par la richesse et la complexité des fonctionnalités attendue, il est nécessaire d'avoir une vision claire et synthétique afin de minimiser les risques et garantir une maintenabilité efficace de la solution mise en place.  \n  \nAu sein du Pôle Continuité Numérique de la division Projet de la Direction des Systèmes d'Information de Safran Aircraft Engines, qui a pour objectif de faire évoluer les outils PLM / MES sur l'ensemble du processus de fabrication, de montage et de suivi d'un moteur d'avion, l'apprenti.e sera amené.e, avec l'aide de son maître d'apprentissage, à :  \n- Définir et expliciter les notions autour du PLM et du MES : nomenclature applicable, nomenclature appliquée, traçabilité, généalogie, données de base, as built, as deliver, ...   \n- Intervenir avec la TMA pour le support de l'application Eprod  \n- Collaborer sur l'internalisation de l'application Eprod.  \n  \nDans ce cadre, il ou elle sera intégré.e aux projets d'évolution des progiciels PLM / MES en lien avec le processus de montage, de fabrication ou de MRO.  \n  \nComplément du descriptif :  \nDurant sa mission, l'apprenti.e sera amené.e à :  \nDécouvrir l'ensemble du processus projet SI de l'entreprise,  \nDurant toutes les phases des projets mentionnés dans la partie Descriptif, avec l'aide de son maitre d'apprentissage, il mettra en place et pilotera les activités techniques :  \n- Demandes d'installation de plateformes,  \n- Demandes d'installations logicielles, y compris les outils nécessaires au pilotage et à l'exécution du projet (type HP ALM),  \n- Industrialisation des traitements batch,  \n- Réalisation de la recette d'exploitabilité de la solution,  \n- Réalisation, suivi et pilotage d'une bascule,  \n- Pilotage des tests de performance,  \n- Pilotage de l'audit de sécurité,  \n- Validation du DEX,  \n- Pilotage de la RVT,  \n- Pilotage du transfert de l'application à l'équipe d'exploitation.",
+"target_diploma": {
+"european": "7",
+"label": "Master, titre ingénieur, grande école (Bac+5)"
+},
+"desired_skills": [
+"Le.a candidat.e devra avoir des connaissances en S.I. : \n- Systèmes d'exploitation : Windows Server 2019\n- Développement/scripting (algorithmique, programmation, analyse) : scripting bash/sh, scripting bat/Powershell, Langage C#,\n- Langage Web : HTML, CSS, PHP, Javascript,\n- Bases de données : SQL Server 2019.\n- La connaissance des outils Dassault Systèmes et de la technologie DevOps est un plus.\n\nEn terme de savoir-être, l'apprenti.e doit :\nÊtre rigoureux.se,\nSavoir s'adapter,\nVolontaire,\nAvoir un goût pour la veille technologique."
+],
+"to_be_acquired_skills": [],
+"access_conditions": [],
+"publication": {
+"creation": "2026-10-05T20:11:12.000Z",
+"expiration": "2026-12-05T20:11:12.000Z"
+},
+"opening_count": 1,
+"status": "Active",
+"to_applicant_questions": null
+},
+"is_delegated": false
+},
+{
+"identifier": {
+"id": "6a7658310f924fc95a1131d4",
+"partner_label": "Hellowork",
+"partner_job_id": "e7f1e4d3-3259-4295-bba4-4b14b434788d"
+},
+"workplace": {
+"siret": "70990024500040",
+"brand": null,
+"legal_name": "SPIE GLOBAL SERVICES ENERGY",
+"website": null,
+"name": "SPIE GLOBAL SERVICES ENERGY",
+"description": "À propos de SPIE Global Services Energy  \n  \nFiliale internationale du groupe SPIE présente dans une trentaine de pays en Europe, en Afrique, en Asie-Pacifique, au Moyen-Orient et dans les Amériques, SPIE Global Services Energy intervient sur l'ensemble de la chaîne de valeur des infrastructures de production d'énergie, de la conception à la maintenance. Forte d'un réseau de proximité qui permet de mobiliser rapidement des ressources, SPIE Global Services Energy répond aux besoins de ses clients dans les meilleures conditions de sécurité.    \n  \nSPIE Global Services Energy s'appuie sur l'expertise de ses 5 000 collaborateurs pour aider les acteurs de l'industrie du pétrole, du gaz et des énergies renouvelables à améliorer la performance technique de leurs infrastructures, leur efficacité énergétique et à réduire leur empreinte carbone.   \n  \nAvec 55 000 collaborateurs, le groupe SPIE a réalisé en 2025 un chiffre d'affaires consolidé de 10,4  milliards d'euros et un EBITA consolidé de 793 millions d'euros.",
+"size": "100 à 199 salariés",
+"location": {
+"address": "95000 Cergy",
+"geopoint": {
+"coordinates": [
+2.045547,
+49.04227
+],
+"type": "Point"
+}
+},
+"domain": {
+"idcc": 1486,
+"opco": "ATLAS",
+"naf": {
+"code": "71.12B",
+"label": "Ingénierie, études techniques"
+}
+}
+},
+"apply": {
+"url": "https://r.holeest.com/redirect?jd_token=<masqué>&o=1&from=https%3A%2F%2Fwww.hellowork.com%2Ffr-fr%2Femplois%2F82130810.html%3Futm_source%3Dbonnealternance%26utm_medium%3Dmetamoteurs-free%26utm_campaign%3Dalternance%2B-%2Blogistique%26utm_content%3Dfluxbonnealternance%26utm_term%3D82130810",
+"phone": null,
+"recipient_id": null
+},
+"contract": {
+"start": null,
+"start_type": null,
+"start_is_flexible": null,
+"duration": 24,
+"type": [
+"Apprentissage",
+"Professionnalisation"
+],
+"remote": null
+},
+"offer": {
+"title": "Apprenti Data Ingénieur H/F",
+"rome_codes": [
+"M1811"
+],
+"description": "·  Concevoir et développer des scripts ou des outils pour intégrer, transformer et transférer des données entre systèmes (ERP, outils RH, finance...).\n\n·        Automatiser les traitements récurrents : extractions, consolidations, mises à jour de données.\n\n·         Veiller à la sécurisation des échanges de données (authentification, gestion des accès, traçabilité via logs).\n\n·    Participer à la création de tableaux de bord et de visualisations",
+"target_diploma": {
+"european": "6",
+"label": "Licence, BUT, Licence Pro (Bac+3)"
+},
+"desired_skills": [
+"- Étudiant en formation de Bac +3 à Bac +5 (BUT, Licence, Master, école d'ingénieur), avec une spécialisation en développement informatique ou data engineering.  \n  \n- Bonnes bases en développement backend (Java, Python, Node.js ou autre langage serveur).  \n  \n- Connaissances en manipulation de données SQL, API REST, formats JSON/XML  \n et outils de versioning (Git).  \n  \n- Rigueur, autonomie, esprit d'analyse, et goût pour le travail technique."
+],
+"to_be_acquired_skills": [],
+"access_conditions": [],
+"publication": {
+"creation": "2026-10-07T20:10:11.000Z",
+"expiration": "2026-12-07T20:10:11.000Z"
+},
+"opening_count": 1,
+"status": "Active",
+"to_applicant_questions": null
+},
+"is_delegated": false
+}
+],
+"recruiters": [
+{
+"identifier": {
+"id": "6a003c399a6be614e48abba9"
+},
+"workplace": {
+"siret": "82846965000075",
+"brand": "WETRADELOCAL",
+"legal_name": "WETRADELOCAL",
+"website": null,
+"name": "WETRADELOCAL",
+"description": null,
+"size": "0-0",
+"location": {
+"address": "3 avenue Victoria 75004 PARIS",
+"geopoint": {
+"coordinates": [
+2.3503879999999997,
+48.85684199998633
+],
+"type": "Point"
+}
+},
+"domain": {
+"idcc": 1978,
+"opco": "Opco entreprises de proximité",
+"naf": {
+"code": "62.01Z",
+"label": "Programmation informatique"
+}
+}
+},
+"apply": {
+"url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/82846965000075/wetradelocal",
+"phone": null,
+"recipient_id": null
+}
+},
+{
+"identifier": {
+"id": "68f7bdfd49b8c5a96684ae07"
+},
+"workplace": {
+"siret": "55209179502456",
+"brand": "PARIS HOTEL DE VILLE",
+"legal_name": "PARIS HOTEL DE VILLE",
+"website": null,
+"name": "PARIS HOTEL DE VILLE",
+"description": null,
+"size": "10-19",
+"location": {
+"address": "33 RUE DE RIVOLI 75004 PARIS",
+"geopoint": {
+"coordinates": [
+2.350588,
+48.857628999986325
+],
+"type": "Point"
+}
+},
+"domain": {
+"idcc": 3210,
+"opco": "ATLAS",
+"naf": {
+"code": "64.19Z",
+"label": "Autres intermédiations monétaires"
+}
+}
+},
+"apply": {
+"url": "https://labonnealternance.apprentissage.beta.gouv.fr/emploi/recruteurs_lba/55209179502456/paris-hotel-de-ville",
+"phone": null,
+"recipient_id": null
+}
+}
+],
+"warnings": []
+}
