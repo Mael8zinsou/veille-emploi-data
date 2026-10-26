@@ -3,6 +3,10 @@ name: Veille emploi (v2)
 # Un passage de la veille v2 toutes les heures. Le code décide, en heure de Paris, de ce qui
 # est dû (config/planning.yaml) : rien ne se passe hors de la plage 7h-22h.
 #
+# Lancement principal : cron-job.org appelle workflow_dispatch toutes les heures (minute 5).
+# Le cron ci-dessous n'est qu'un secours : GitHub retarde ses lancements programmés de plusieurs
+# heures et en saute. La concurrence et le planning évitent tout double envoi.
+#
 # En service depuis la fusion de la PR « Mise en service ». Pour revenir en test :
 # VEILLE_ENVOI=simulation et VEILLE_SUIVI=essai.
 
