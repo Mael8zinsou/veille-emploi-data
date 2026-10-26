@@ -349,12 +349,61 @@ def sonde_hellowork_tri() -> list[str]:
     return lignes
 
 
+def sonde_lot5_public() -> list[str]:
+    """Lot 5 (26/10) : formats exacts pour Choisir le service public et Passerelles, avec le
+    User-Agent honnête de la production."""
+    d = SORTIE / "lot5_public"
+    ua = {"User-Agent": "veille-emploi-data/2.0 (veille personnelle; +https://github.com/Mael8zinsou/veille-emploi-data)"}
+    csp = "https://choisirleservicepublic.gouv.fr/nos-offres/filtres"
+    tal = "https://place-ep-recrute.talent-soft.com/handlers/offerRss.ashx?LCID=1036"
+    pas = "https://passerelles.economie.gouv.fr/handlers/offerRss.ashx?LCID=1036"
+    lignes = []
+    for nom, url in (("rss_csp_numerique", f"{tal}&Rss_JobFamily=3522"),
+                     ("rss_csp_organisation", f"{tal}&Rss_JobFamily=3523"),
+                     ("rss_csp_numerique_contractuels", f"{tal}&Rss_JobFamily=3522&Rss_Contract=2267"),
+                     ("rss_passerelles_numerique", f"{pas}&Rss_JobFamily=3043")):
+        r = S.get(url, headers=ua, timeout=30)
+        ecrire(d, f"{nom}.xml", r.text)
+        try:
+            items = ET.fromstring(r.text.encode("utf-8")).findall(".//item")
+        except ET.ParseError:
+            items = []
+        dates = [i.findtext("pubDate") or "" for i in items]
+        lignes.append(f"{nom} : HTTP {r.status_code}, {len(items)} offres, de {dates[-1][:16] if dates else '?'} "
+                      f"à {dates[0][:16] if dates else '?'}")
+        lignes.append("  " + "; ".join((i.findtext("title") or "")[:50] for i in items[:6]))
+        pause(1.5)
+    for nom, chemin in (("data", "mot-cles/data/"),
+                        ("data_7j", "mot-cles/data/date-de-publication/7_derniers_jours/"),
+                        ("data_48h", "mot-cles/data/date-de-publication/dernieres_48_heures/"),
+                        ("data_type", "mot-cles/data/type/2349-2267/"),
+                        ("data_7j_type", "mot-cles/data/type/2349-2267/date-de-publication/7_derniers_jours/"),
+                        ("data_page2", "mot-cles/data/page/2/"),
+                        ("donnees_7j", "mot-cles/donnees/date-de-publication/7_derniers_jours/"),
+                        ("ia_7j", "mot-cles/intelligence-artificielle/date-de-publication/7_derniers_jours/"),
+                        ("numerique_7j", "domaine/3522/date-de-publication/7_derniers_jours/")):
+        r = S.get(f"{csp}/{chemin}", headers=ua, timeout=40)
+        total = re.search(r'class="number">(\d+)<', r.text)
+        refs = re.findall(r'/offre-emploi/[^"]*reference-([^"/]+)/"', r.text)
+        dates = re.findall(r"En ligne depuis le ([^<]+?)\s*<", r.text)
+        ecrire(d, f"csp_{nom}.txt", "\n".join(f"{a} | {b}" for a, b in zip(refs, dates)))
+        lignes.append(f"csp {nom} : HTTP {r.status_code}, {len(r.text)} car., total {total.group(1) if total else '?'}, "
+                      f"{len(refs)} cartes, dates {dates[:1]} -> {dates[-1:]}, url finale {r.url[-70:]}")
+        pause(2.0)
+    r = S.get("https://choisirleservicepublic.gouv.fr/offre-emploi/MEF_2026-33266/", headers=ua, timeout=30)
+    ecrire(d, "csp_detail_mef.html", r.text)
+    lignes.append(f"détail MEF_2026-33266 : HTTP {r.status_code}, url finale {r.url[-80:]}, "
+                  f"JSON-LD {'JobPosting' in r.text}, contrat {re.findall(r'(?:Nature du contrat|Type de contrat)[^<]*<[^>]*>[^<]{0,60}', r.text)[:2]}")
+    return lignes
+
+
 SONDES = {
     "France Travail": sonde_france_travail, "APEC": sonde_apec, "Adzuna": sonde_adzuna,
     "HelloWork": sonde_hellowork, "La bonne alternance": sonde_lba, "Passerelles": sonde_passerelles,
     "Choisir le service public": sonde_csp, "engagement-jeunes": sonde_engagement_jeunes,
     "Adzuna titre": sonde_adzuna_titre, "Choisir le service public RSS": sonde_csp_rss,
     "engagement-jeunes plan du site": sonde_engagement_sitemap, "HelloWork tri": sonde_hellowork_tri,
+    "Lot 5 public": sonde_lot5_public,
 }
 
 
