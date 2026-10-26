@@ -97,7 +97,7 @@ def balayer_seuils(resultats: list[Resultat], config: Config, jour: date) -> lis
     gardees = [r for r in resultats if r.motif_rejet is None]
     lignes = []
     for s_alerte in range(6, 21):
-        for s_resume in range(0, 11):
+        for s_resume in range(-5, 11):
             if s_resume > s_alerte:
                 continue
             niv = config.notation.niveaux.model_copy(update={
@@ -125,6 +125,35 @@ def incontournables(config: Config, jour: date, chemin: Path = RACINE / "eval" /
         sortie.append({"titre": d["titre"], "entreprise": d["entreprise"], "attendu": attendu.value,
                        "obtenu": r[0].value if r else niv.value, "ok": ok})
     return sortie
+
+
+def _quantiles(valeurs: list[int]) -> str:
+    if not valeurs:
+        return "aucune"
+    v = sorted(valeurs)
+    q = lambda p: v[min(len(v) - 1, int(p * (len(v) - 1) + 0.5))]  # noqa: E731
+    return f"n={len(v)}, min {v[0]}, q1 {q(0.25)}, médiane {q(0.5)}, q3 {q(0.75)}, max {v[-1]}"
+
+
+def diagnostic(resultats: list[Resultat], balayage: list[dict]) -> list[str]:
+    """Agrégats seulement (pas de titres) : distribution des notes par avis, motifs de rejet des
+    « je postule », composantes les plus fréquentes par avis, et tableau des seuils."""
+    lignes = []
+    for avis in (POSTULE, PEUT_ETRE, HORS_CIBLE):
+        lignes.append(f"Notes « {avis} » : " + _quantiles([r.note for r in resultats if r.avis == avis and r.note is not None]))
+    rejets = collections.Counter(r.motif_rejet for r in resultats if r.avis == POSTULE and r.motif_rejet)
+    lignes.append("« je postule » rejetées par les filtres : " + (", ".join(f"{k} {v}" for k, v in rejets.items()) or "aucune"))
+    for avis in (POSTULE, HORS_CIBLE):
+        familles = collections.Counter(r.offre.famille or "?" for r in resultats if r.avis == avis)
+        employeurs = collections.Counter(str(r.offre.type_employeur) for r in resultats if r.avis == avis)
+        fils = collections.Counter(str(r.offre.fil) for r in resultats if r.avis == avis)
+        lignes.append(f"« {avis} » par famille : {dict(familles)} ; employeur : {dict(employeurs)} ; fil : {dict(fils)}")
+    lignes.append("Seuils (alerte, résumé) : alertes, précision, « je postule » présentées, présentées, bruit")
+    for b in balayage:
+        if b["alerte"] in (6, 8, 9, 10, 12) and b["resume"] in (-5, 0, 1, 2, 3, 4):
+            lignes.append(f"  {b['alerte']:>2}, {b['resume']:>2} : {b['alertes']}, {b['precision_alertes']}, "
+                          f"{b['postule_presentees']}, {b['presentees']}, {b['bruit_presente']}")
+    return lignes
 
 
 def charger_echantillon(chemin: Path) -> tuple[list[tuple[int, Offre]], date]:
@@ -170,6 +199,7 @@ def main() -> int:
     _annotation("Évaluation du tri", [f"{k} : {v}" for k, v in m.items()])
     _annotation("Incontournables", [f"{'OK' if x['ok'] else 'ÉCHEC'} {x['titre']} ({x['entreprise']}) : "
                                     f"attendu {x['attendu']}, obtenu {x['obtenu']}" for x in inc])
+    _annotation("Diagnostic (agrégats, sans titres)", diagnostic(resultats, balayage))
     candidats = [b for b in balayage if (b["precision_alertes"] or 0) >= 0.7 and (b["postule_presentees"] or 0) >= 0.9]
     meilleurs = sorted(candidats, key=lambda b: (-(b["alertes"]), b["bruit_presente"] or 1))[:8]
     _annotation("Seuils qui respectent les critères (précision des alertes >= 70 %, « je postule » présentées >= 90 %)",
