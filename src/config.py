@@ -54,6 +54,7 @@ class Famille(_Strict):
 
 
 class Metiers(_Strict):
+    exclusions: Motifs = []
     familles: list[Famille]
 
     @model_validator(mode="after")
@@ -99,9 +100,15 @@ class Employeurs(_Strict):
     ecoles: Motifs
 
 
+class CertificationExigee(_Strict):
+    fenetre: int = Field(ge=0, le=10)
+    mots: MotifsRequis
+
+
 class Filtres(_Strict):
     fraicheur_max_jours: int = Field(ge=1, le=60)
     duree_min_mois: int = Field(ge=0, le=36)
+    certification_exigee: CertificationExigee
     lieux: Lieux
     contrats: Contrats
     seniorite: Seniorite
@@ -249,7 +256,7 @@ class SeuilAlerte(_Strict):
 
 
 class SeuilResume(_Strict):
-    note_min: int
+    note_min: int = Field(ge=-100)
 
 
 class Niveaux(_Strict):

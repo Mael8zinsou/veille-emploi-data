@@ -7,6 +7,7 @@ comme « trop ancienne ».
 """
 from __future__ import annotations
 
+import re
 from datetime import date
 
 from src.config import Config
@@ -42,6 +43,21 @@ def _seniorite(o: Offre, config: Config) -> str | None:
     return None
 
 
+def _certification_exigee(texte: str, config: Config) -> str | None:
+    """« certifi… » suivi, dans la même proposition et à quelques mots au plus, d'un mot
+    d'exigence. Rend l'extrait trouvé. La recherche se fait proposition par proposition (le
+    texte brut est coupé sur la ponctuation) : « une certification, le permis est requis »
+    ne compte pas."""
+    c = config.filtres.certification_exigee
+    mots = "|".join(re.escape(m) for m in c.mots)
+    motif = re.compile(rf"\bcertifi\w*(?: \w+){{0,{c.fenetre}}} (?:{mots})\b")
+    for proposition in re.split(r"[.,;:!?\n()]", texte):
+        m = motif.search(normaliser(proposition))
+        if m:
+            return m.group(0)
+    return None
+
+
 def motif_de_rejet(o: Offre, config: Config, aujourdhui: date) -> tuple[Motif, str] | None:
     """Premier filtre qui élimine l'offre normalisée, ou None si elle est gardée."""
     f = config.filtres
@@ -61,6 +77,9 @@ def motif_de_rejet(o: Offre, config: Config, aujourdhui: date) -> tuple[Motif, s
     detail = _seniorite(o, config)
     if detail:
         return Motif.SENIORITE, detail
+    certification = _certification_exigee(f"{o.titre}. {o.description}", config)
+    if certification:
+        return Motif.CERTIFICATION_EXIGEE, certification
     if (o.contrat in (Contrat.CDD, Contrat.INTERIM) and o.duree_mois is not None
             and o.duree_mois < f.duree_min_mois):
         return Motif.DUREE_TROP_COURTE, f"{o.duree_mois} mois"

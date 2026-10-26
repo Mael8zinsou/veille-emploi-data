@@ -30,7 +30,12 @@ def test_offre_ordinaire_gardee(config):
     ({"titre": "Senior Data Engineer"}, Motif.SENIORITE),
     ({"titre": "Lead Data Scientist"}, Motif.SENIORITE),
     ({"description": "Vous avez 5 ans d'expérience en data."}, Motif.SENIORITE),
-    ({"contrat_brut": "CDD - 3 Mois"}, Motif.DUREE_TROP_COURTE),
+    ({"contrat_brut": "CDD - 2 Mois"}, Motif.DUREE_TROP_COURTE),
+    # Décisions du 26/10 (annotation)
+    ({"titre": "Data Engineer confirmé"}, Motif.SENIORITE),
+    ({"description": "3 ans d'expérience minimum sur Spark."}, Motif.SENIORITE),
+    ({"titre": "Business Analyst Data"}, Motif.METIER_HORS_CIBLE),
+    ({"description": "Certification AWS exigée."}, Motif.CERTIFICATION_EXIGEE),
     ({"contrat_brut": "MIS Intérim - 1 Mois"}, Motif.DUREE_TROP_COURTE),
     ({"date_publication": "2026-10-01"}, Motif.TROP_ANCIENNE),
 ])
@@ -39,9 +44,11 @@ def test_motifs(config, kw, attendu):
 
 
 @pytest.mark.parametrize("kw", [
-    {"titre": "Data Engineer confirmé"},                          # déclassé plus tard, pas éliminé
-    {"description": "3 ans d'expérience souhaités."},             # 3 ans : accepté
-    {"description": "2 à 5 ans d'expérience."},                   # borne basse
+    {"description": "2 ans d'expérience souhaités."},
+    {"description": "2 à 3 ans d'expérience."},                   # borne basse : 2
+    {"description": "Une certification Databricks est appréciée."},
+    {"contrat_brut": "CDD - 3 Mois"},
+    {"description": "Nous vous accompagnerons vers une certification, le permis est requis."},
     {"titre": "Data Manager (études cliniques)"},                 # métier, pas grade
     {"lieu": "Londres", "titre": "Data Engineer - Full remote"},  # télétravail complet
     {"contrat_brut": "CDD - 6 Mois"},

@@ -11,6 +11,15 @@
 # ne servent pas à classer : France Travail range parfois sous un code data des offres sans
 # rapport (essai du 26/10). Les codes interrogés sont dans sources.yaml.
 
+# Titres exclus même s'ils contiennent un motif de famille (décision du 26/10 : métiers trop
+# éloignés du cœur de cible).
+exclusions:
+  - business analyst
+  - analyste fonctionnel
+  - consultant fonctionnel
+  - amoa
+  - moa
+
 familles:
   - nom: data_engineering
     libelle: Data Engineering
@@ -114,7 +123,6 @@ familles:
       - ingenieur d etudes
       - ingenieur d etude
       - product analyst
-      - business analyst data
       - data analytics
 
   - nom: bi

@@ -46,11 +46,14 @@ signaux:
   teletravail_complet: 1
 
 niveaux:
+  # Calibrage du 26/10 sur 71 offres annotées : la note ne sépare pas les avis (médiane 5 pour
+  # « je postule » comme pour « hors cible »). Les filtres font le tri ; le résumé montre donc
+  # toutes les offres gardées, classées par note, et l'alerte reste rare.
   alerte:
-    note_min: 12
+    note_min: 10
     fils: [emploi]
     # Il faut aussi une famille de priorité 1 OU une entreprise cible, et un employeur identifié.
     exige_priorite_1_ou_cible: true
     exclut_seconde_main: true
   resume:
-    note_min: 4
+    note_min: -20
