@@ -25,3 +25,8 @@ dist/
 
 # Document personnel, non destiné au dépôt public (essai/manifeste)
 docs/le_candidat_moyen_trouvera_t_il_un_premier_emploi.md
+
+# Couverture de tests
+.coverage
+htmlcov/
+.ruff_cache/

@@ -1,0 +1,2132 @@
+{
+ "resultats": [
+  {
+   "id": "215KJZW",
+   "intitule": "Ingénieur de données senior / Senior Data Engineer - #SEB26 (H/F)",
+   "description": "Le système informatique centralisé et homogène au niveau mondial de DACHSER est l'un des facteurs essentiels de réussite de notre Groupe.\n\nComposées de 700 experts métiers à travers le monde, nos équipes couvrent l'ensemble des métiers de l'IT dans un environnement de haute disponibilité. Elles prennent en charge les besoins des clients pour y répondre le plus efficacement possible et les accompagnent dans la gestion de projets d'envergure.\n\n Au cœur de notre IT Hub de Chanverrie, vous évoluerez au sein d'une équipe IT en pleine expansion, impliquée dans des projets internationaux au service de l'innovation logistique chez DACHSER. \n\nAu sein de l'équipe IT Data Management, vous participez au développement et à l'évolution des plateformes et solutions Data du Groupe dans un contexte international.\n\nDans le cadre du renforcement de notre activité Data Management, nous recherchons un(e) Ingénieur de données senior / Senior Data Engineer (H/F) pour rejoindre notre équipe internationale.\n\n \nVos missions:\n\n- Concevoir, développer et maintenir des flux de données robustes et évolutifs.\n- Mettre en œuvre des processus d'intégration de données à l'aide de NiFi, Airflow, Apache Kafka et Universal Messaging.\n- Garantir la qualité, l'intégrité et la sécurité des données tout au long de leur cycle de vie.\n- Participer à la veille technologique et à l'évaluation de nouvelles solutions.\n- Collaborer étroitement avec les équipes BI, Data Scientists et Cloud Engineers\n\nVous êtes issu(e) d'une formation supérieure en informatique, data, systèmes d'information ou équivalent (Bac+5), vous disposez d'une expérience significative dans le domaine de la gestion et de l'exploitation des données.\n\n Les connaissances supplémentaires demandées:\n\n- Maîtrise de SQL et solide expérience en développement Python appliqué aux données.\n- Bonne connaissance des environnements Cloud Azure ainsi que des plateformes de données telles que Teradata, Cloudera ou Databricks.\n- Bonne maîtrise des bases de données modernes.\n- Expérience des outils de gestion et d'automatisation tels que Jira, Git et Terraform.\n- Excellentes capacités d'analyse et de résolution de problèmes.\n- Curiosité technique et intérêt pour les nouvelles technologies.\n \n\nÀ l'aise dans des environnements collaboratifs, vous êtes reconnu(e) pour votre capacité d'analyse, votre rigueur et votre aptitude à travailler efficacement avec des interlocuteurs variés dans un contexte multiculturel.\n\nNotre organisation IT évoluant dans un contexte international, vous avez un bon niveau d'anglais (minimum B2) ainsi que de bonnes capacités de communication à l'écrit et à l'oral.\n\n Plus qu'un diplôme, nous recherchons une personnalité, une réelle motivation et pourquoi pas une passion.\n\n Jusqu'à 10 jours de télétravail par mois sur ce poste.\n\n Laissez-vous transporter vers de nouveaux horizons et rejoignez DACHSER :\n\n Une entreprise internationale familiale aux valeurs fortes : Esprit entrepreneurial, courage d'innover, durabilité économique, écologique et sociale, sens de l'engagement, ouverture sur le monde et respect, .\n\n - Une diversité de métiers qui offre des challenges professionnels motivants et variés.\n - Un environnement de travail international, moderne et en constante évolution.\n- Des collaborateurs engagés, professionnels et ouverts d'esprit.\n- Des avantages sociaux intéressants : 13ème mois, participation, chèques déjeuner, CSE, mutuelle, prévoyance, .\n\nVenez nous rencontrer sur le Salon de l'Emploi du Bocage aux Herbiers le 5 novembre 2026\n\nRetrouvez toutes nos opportunités de carrière : https://fr.dachser-career.com/\n\nSuivez l'actualité de notre groupe sur LinkedIn : https://www.linkedin.com/company/dachser/?originalSubdomain=fr",
+   "dateCreation": "2026-10-19T15:18:35.807Z",
+   "dateActualisation": "2026-10-19T15:18:35.807Z",
+   "lieuTravail": {
+    "libelle": "85 - CHANVERRIE",
+    "latitude": 46.921112,
+    "longitude": -0.967145,
+    "codePostal": "85130",
+    "commune": "85302"
+   },
+   "romeCode": "M1811",
+   "romeLibelle": "Data engineer",
+   "appellationlibelle": "Ingénieur / Ingénieure données",
+   "entreprise": {
+    "nom": "DACHSER FRANCE",
+    "entrepriseAdaptee": false
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "5 An(s)",
+   "langues": [
+    {
+     "libelle": "Anglais",
+     "exigence": "S"
+    }
+   ],
+   "competences": [
+    {
+     "code": "300067",
+     "libelle": "Analyser, exploiter, structurer des données",
+     "exigence": "S"
+    }
+   ],
+   "salaire": {
+    "commentaire": "13 ème mois, partipation aux bénéfices, accès CE",
+    "complement1": "Intéressement / participation",
+    "complement2": "Ordinateur portable",
+    "listeComplements": [
+     {
+      "code": "10",
+      "libelle": "Intéressement / participation"
+     },
+     {
+      "code": "4",
+      "libelle": "Ordinateur portable"
+     },
+     {
+      "code": "3",
+      "libelle": "Téléphone mobile"
+     },
+     {
+      "code": "6",
+      "libelle": "Titres restaurant / Prime de panier"
+     }
+    ]
+   },
+   "dureeTravailLibelle": "35H/semaine\nTravail en journée",
+   "dureeTravailLibelleConverti": "Temps plein",
+   "alternance": false,
+   "contact": {
+    "nom": "DACHSER FRANCE - Mme JULIE FERRAND",
+    "coordonnees1": "https://dachserfrance.profils.org/offre-de-emploi/emploi-chef-de-projet-informatique-ingenieur-de-donnees-senior-senior-data-engineer-h-f_7070.aspx",
+    "urlPostulation": "https://dachserfrance.profils.org/offre-de-emploi/emploi-chef-de-projet-informatique-ingenieur-de-donnees-senior-senior-data-engineer-h-f_7070.aspx"
+   },
+   "agence": {},
+   "nombrePostes": 1,
+   "qualificationCode": "9",
+   "qualificationLibelle": "Cadre",
+   "codeNAF": "49.41A",
+   "secteurActivite": "49",
+   "secteurActiviteLibelle": "Transports routiers de fret interurbains",
+   "trancheEffectifEtab": "250 à 499 salariés",
+   "origineOffre": {
+    "origine": "1",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/215KJZW"
+   },
+   "offresManqueCandidats": false,
+   "contexteTravail": {
+    "horaires": [
+     "35H/semaine\nTravail en journée"
+    ]
+   },
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "215MWFB",
+   "intitule": "Ingénieur-e de recherche en IA et data science R&D et industrie (H/F)",
+   "description": "Au sein de la R&D de Saint-Gobain, l'équipe de Data Science développe et déploie des approches d'intelligence artificielle au service des activités scientifiques et industrielles du Groupe. L'équipe combine des compétences en analyse de données, statistiques, machine learning, IA générative, systèmes agentiques et graphes de connaissances pour accélérer la compréhension des phénomènes, la capitalisation des connaissances, la conception des matériaux et des procédés, ainsi que la transformation des pratiques de R&D. \n\nDans ce cadre, vos missions seront les suivantes :\n- Identifier, cadrer et mener des projets de recherche appliquée en IA et data science.\n- Concevoir, développer et évaluer des agents IA experts et des architectures agentiques capables de mobiliser des connaissances scientifiques, de raisonner sur des problématiques métier et d'utiliser des outils, des modèles et des sources de données pour assister les workflows de recherche : recherche bibliographique, génération d'hypothèses, expérimentation, simulation, aide à la décision et production de livrables.\n- Développer des méthodes d'analyse de données et de machine learning adaptées aux données scientifiques et industrielles : statistiques, apprentissage supervisé et non supervisé, modèles probabilistes, optimisation, séries temporelles, traitement d'images ou de signaux.\n- Développer des prototypes robustes et sécurisés avec les équipes scientifiques et IT, en intégrant les usages afin de favoriser leur adoption et la transformation IA de la R&D.\n- Assurer une veille scientifique et technologique, valoriser les résultats et développer des collaborations avec les équipes du Groupe et des partenaires académiques.\n\nDes déplacements ponctuels de courte durée sont à prévoir en France et à l'étranger (visites d'usines, conférences, formations.).\n \nProfil :\n- Doctorat dans une discipline scientifique avec une forte composante en machine learning / IA, ou doctorat en ML/IA appliqué à des données et problématiques scientifiques ou industrielles. Les candidatures présentant un autre parcours, avec une expérience significative en recherche appliquée, seront également étudiées.\n- Vous avez une bonne compréhension des modèles de langage et de leurs usages. Une première expérience du développement d'agents IA, de systèmes multi-agents ou de l'évaluation de LLM est appréciée, sans être indispensable.\n- Vous maîtrisez Python et les bonnes pratiques de développement ; une familiarité avec le cloud Azure est un plus.\n- Vous êtes à l'aise pour contribuer à plusieurs projets, travailler avec autonomie, proposer des orientations et communiquer clairement avec des interlocutrices et interlocuteurs scientifiques, techniques ou non spécialistes.\n- L'entraide, l'écoute et la coopération font partie de votre manière de travailler.\n- Atouts supplémentaires : une connaissance ou un intérêt pour les graphes de connaissances, le product management et l'expérience utilisateur.\n- Vous maîtrisez le français et l'anglais, à l'écrit comme à l'oral.\n\nNous savons qu'une candidature ne correspond pas toujours à 100 % des critères. Si ce poste vous intéresse et que vous pensez pouvoir y apporter votre contribution, nous vous encourageons à postuler.",
+   "dateCreation": "2026-10-21T16:31:42.467Z",
+   "dateActualisation": "2026-10-22T09:21:24.319Z",
+   "lieuTravail": {
+    "libelle": "93 - AUBERVILLIERS",
+    "latitude": 48.914557,
+    "longitude": 2.381792,
+    "codePostal": "93300",
+    "commune": "93001"
+   },
+   "romeCode": "M1811",
+   "romeLibelle": "Data engineer",
+   "appellationlibelle": "Data engineer",
+   "entreprise": {
+    "nom": "SAINT-GOBAIN RECHERCHE",
+    "entrepriseAdaptee": false
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "D",
+   "experienceLibelle": "Débutant accepté",
+   "formations": [
+    {
+     "niveauLibelle": "Bac+5 et plus ou équivalents",
+     "commentaire": "doctorat sciences",
+     "exigence": "E"
+    }
+   ],
+   "langues": [
+    {
+     "libelle": "Anglais",
+     "exigence": "E"
+    },
+    {
+     "libelle": "Français",
+     "exigence": "E"
+    }
+   ],
+   "competences": [
+    {
+     "code": "300067",
+     "libelle": "Analyser, exploiter, structurer des données",
+     "exigence": "S"
+    }
+   ],
+   "salaire": {
+    "commentaire": "48 500 - 55 000 €, selon profil et expérience",
+    "complement1": "Primes",
+    "complement2": "Indemnité transports",
+    "listeComplements": [
+     {
+      "code": "1",
+      "libelle": "Primes"
+     },
+     {
+      "code": "14",
+      "libelle": "Indemnité transports"
+     },
+     {
+      "code": "8",
+      "libelle": "Restauration"
+     },
+     {
+      "code": "9",
+      "libelle": "CSE"
+     },
+     {
+      "code": "10",
+      "libelle": "Intéressement / participation"
+     }
+    ]
+   },
+   "dureeTravailLibelle": "35H/semaine\nTravail en journée",
+   "dureeTravailLibelleConverti": "Temps plein",
+   "alternance": false,
+   "contact": {
+    "coordonnees1": "https://joinus.saint-gobain.com/fr/fra/red/p/65511/327972/ingenieure-de-recherche-en-ia-et-data-science-pour-la-rd-et-lindustrie-fh",
+    "urlPostulation": "https://joinus.saint-gobain.com/fr/fra/red/p/65511/327972/ingenieure-de-recherche-en-ia-et-data-science-pour-la-rd-et-lindustrie-fh"
+   },
+   "agence": {},
+   "nombrePostes": 2,
+   "deplacementCode": "2",
+   "deplacementLibelle": "Ponctuels Zone internationale",
+   "qualificationCode": "9",
+   "qualificationLibelle": "Cadre",
+   "codeNAF": "72.19Z",
+   "secteurActivite": "72",
+   "secteurActiviteLibelle": "Recherche-développement en autres sciences physiques et naturelles",
+   "trancheEffectifEtab": "250 à 499 salariés",
+   "origineOffre": {
+    "origine": "1",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/215MWFB"
+   },
+   "offresManqueCandidats": false,
+   "contexteTravail": {
+    "horaires": [
+     "35H/semaine\nTravail en journée"
+    ]
+   },
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "215MRWH",
+   "intitule": "ALTERNANCE - INGÉNIEUR(E) AMÉLIORATION CONTINUE, DATA & IA (H/F)",
+   "description": "Chez Léonard (Black Star Next), nous sommes spécialisés dans le remanufacturage de pneumatiques.\n\nImplantés à Béthune, nous souhaitons poursuivre l'optimisation de nos processus industriels en associant innovation, intelligence artificielle et amélioration continue.\n\nDans le cadre de notre développement, nous recherchons un(e) alternant(e) Ingénieur(e) Amélioration Continue, Data & IA pour accompagner notre transformation industrielle et contribuer à des projets concrets au cœur de notre site de production.\n\nVos missions\n\nRattaché(e) à la Direction industrielle / Excellence opérationnelle, vous participerez activement à plusieurs projets stratégiques :\n\nData & Intelligence Artificielle\n\nExploiter, structurer et fiabiliser les données de production.\n\nDévelopper des outils d'analyse et des modèles d'intelligence artificielle pour optimiser les performances industrielles.\n\nIdentifier les anomalies, anticiper les dysfonctionnements et faciliter la prise de décision.\n\nAmélioration continue & optimisation des flux\n\nAnalyser et optimiser les flux logistiques internes ainsi que les processus de tri des pneumatiques.\n\nIdentifier les axes d'amélioration pour réduire les pertes de temps et améliorer la productivité.\n\nParticiper au déploiement des méthodes Lean Manufacturing, 5S et Six Sigma.\n\nTraçabilité & performance industrielle\n\nContribuer à la conception et au déploiement d'un système de traçabilité des pneumatiques, de leur réception jusqu'à leur expédition.\n\nSuivre les indicateurs clés de performance (TRS, taux de rebut, délais, traçabilité).\n\nProposer des actions correctives et accompagner les équipes terrain dans l'utilisation des nouveaux outils.\n\nVotre profil\n\nVous préparez un diplôme d'ingénieur Bac+5, avec une spécialisation en data science, génie industriel ou génie des procédés.\n\nVous disposez idéalement :\n\nDe connaissances en Python, SQL, Machine Learning et outils de Business Intelligence.\n\nD'un intérêt marqué pour les environnements industriels, la logistique et l'optimisation des processus.\n\nDe notions en amélioration continue (Lean, 5S, Six Sigma).\n\nD'un bon esprit d'analyse et d'une capacité à proposer des solutions concrètes.\n\nVos atouts ? Rigueur, autonomie, curiosité, esprit d'équipe et aisance relationnelle.\n\nVous aimez autant analyser des données que comprendre ce qui se passe sur le terrain ? Cette alternance est faite pour vous !\n\nPourquoi nous rejoindre ?\n\nEn intégrant Léonard, vous bénéficierez :\n\nDe projets concrets mêlant industrie, data et intelligence artificielle.\n\nD'une véritable autonomie et de responsabilités dans vos missions.\n\nD'un accompagnement par un maître d'apprentissage.\n\nD'une immersion au cœur d'un environnement industriel, au contact direct des équipes.\n\nDe la possibilité de mesurer concrètement l'impact de vos actions sur la performance de notre usine.\n\nEnvie de relever le défi ?\n\nRejoignez Léonard et participez activement à l'amélioration de notre performance industrielle !\n\nPour postuler, transmettez nous votre CV et votre lettre de motivation, en précisant votre formation ainsi que votre rythme d'alternance.\n\nNous avons hâte de découvrir votre candidature !",
+   "dateCreation": "2026-10-21T14:43:20.997Z",
+   "dateActualisation": "2026-10-22T08:25:56.494Z",
+   "lieuTravail": {
+    "libelle": "62 - BETHUNE",
+    "latitude": 50.518267,
+    "longitude": 2.624768,
+    "codePostal": "62400",
+    "commune": "62119"
+   },
+   "romeCode": "M1811",
+   "romeLibelle": "Data engineer",
+   "appellationlibelle": "Ingénieur / Ingénieure en développement big data",
+   "entreprise": {
+    "nom": "BLACK STAR NEXT",
+    "entrepriseAdaptee": false
+   },
+   "typeContrat": "CDD",
+   "typeContratLibelle": "CDD - 12 Mois",
+   "natureContrat": "Contrat apprentissage",
+   "experienceExige": "E",
+   "experienceLibelle": "1 An(s)",
+   "formations": [
+    {
+     "niveauLibelle": "Bac+3, Bac+4 ou équivalents",
+     "exigence": "E"
+    }
+   ],
+   "competences": [
+    {
+     "code": "404121",
+     "libelle": "Data engineer",
+     "exigence": "S"
+    },
+    {
+     "code": "300067",
+     "libelle": "Analyser, exploiter, structurer des données",
+     "exigence": "S"
+    }
+   ],
+   "salaire": {
+    "commentaire": "Selon les éléments en vigueur",
+    "complement1": "Intéressement / participation",
+    "listeComplements": [
+     {
+      "code": "10",
+      "libelle": "Intéressement / participation"
+     }
+    ]
+   },
+   "dureeTravailLibelle": "35H/semaine\nTravail en journée",
+   "dureeTravailLibelleConverti": "Temps plein",
+   "alternance": true,
+   "contact": {},
+   "agence": {},
+   "nombrePostes": 1,
+   "deplacementCode": "1",
+   "deplacementLibelle": "Jamais Zone départementale",
+   "qualificationCode": "6",
+   "qualificationLibelle": "Employé qualifié",
+   "codeNAF": "22.11Z",
+   "secteurActivite": "22",
+   "secteurActiviteLibelle": "Fabrication et rechapage de pneumatiques",
+   "qualitesProfessionnelles": [
+    {
+     "libelle": "Faire preuve de rigueur et de précision",
+     "description": "Capacité à réaliser des tâches en suivant avec exactitude les règles, les procédures, les instructions qui ont été fournies, sans réaliser d'erreur et à transmettre clairement des informations. Se montrer ponctuel et respectueux des règles de savoir-vivre usuelles."
+    },
+    {
+     "libelle": "Etre force de proposition",
+     "description": "Capacité à initier, imaginer des propositions nouvelles pour résoudre les problèmes identifiés ou améliorer une situation. Être proactif."
+    },
+    {
+     "libelle": "Avoir l'esprit d'équipe",
+     "description": "Capacité à travailler et à se coordonner avec les autres au sein de l'entreprise pour réaliser les objectifs fixés."
+    }
+   ],
+   "trancheEffectifEtab": "50 à 99 salariés",
+   "origineOffre": {
+    "origine": "1",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/215MRWH"
+   },
+   "offresManqueCandidats": false,
+   "contexteTravail": {
+    "horaires": [
+     "35H/semaine\nTravail en journée"
+    ]
+   },
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "215PVRL",
+   "intitule": "Consultant gouvernance de l'IA et des données (H/F)",
+   "description": "Nous recrutons un consultant senior ou une consultante senior pour porter nos missions de gouvernance de l'IA auprès de grands comptes (transport, banque, assurance, industrie).\n\nLe contexte chez nos clients : l'IA a été déployée avant qu'on ait décidé ce qu'on en attendait. Des centaines d'agents Copilot créés sans valeur attendue, du code assisté sans cadre, des fonctions IA activées par les fournisseurs sans passer par la DSI, et l'AI Act qui arrive. Votre rôle est de les aider à gouverner cette IA par la valeur : décider ce qu'on pousse, ce qu'on autorise, ce qu'on arrête.\n\nVos missions :\n\nAnimer les ateliers avec les directions pour écrire la vision, les principes, les lignes rouges et la doctrine d'usage de l'IA du client, jusqu'à la charte arbitrée en comité de direction.\n\nConstruire le dispositif de captation des usages (agents, développements assistés par l'IA, IA des fournisseurs, usages individuels) et le portefeuille d'initiatives qui en découle.\n\nMettre en place la fiche d'initiative et le business case : valeur attendue chiffrée, coût complet, horizon de preuve, indicateur, propriétaire, décision à l'échéance.\n\nDéfinir les rôles, le RACI et les instances (comité IA, revue de stade, point d'interface data et IA) et les raccrocher aux jalons existants de la DSI : Design Authority, Go-NoGo, décommissionnement.\n\nArticuler la gouvernance de l'IA avec la gouvernance des données : sources qualifiées, lineage, classification, catalogue, contrat d'interface avec les Data Owners et Data Stewards.\n\nTraduire l'AI Act en conditions d'entrée au portefeuille (littératie, pratiques interdites, transparence, exigences haut risque) avec le juridique, le DPO et le RSSI.\n\nPiloter l'inventaire et la rationalisation des agents existants : usage réel, valeur constatée, décision d'arrêt ou d'extension.\n\nMesurer : valeur réalisée contre valeur attendue, taux d'arrêt, délai d'exploration à déploiement, risque résiduel.\n\nVous intervenez en autonomie chez le client, en binôme avec le directeur de l'offre, et vous contribuez au développement de l'offre TROY : propositions, notes d'approche, retours d'expérience.\n\nProfil recherché :\n\nAu moins 5 ans d'expérience en conseil, dont une part significative sur la gouvernance des données ou de l'IA, la transformation ou l'organisation SI, auprès de grands comptes.\n\nVous savez animer un atelier avec un comité de direction et produire une doctrine, un RACI ou un business case qui tiennent sur une page.\n\nVous connaissez l'AI Act et le RGPD dans leur application concrète, pas seulement dans le texte.\n\nVous maîtrisez les concepts de gouvernance des données (data owner, data steward, catalogue, lineage, qualité) et au moins un outil de catalogue du marché.\n\nVous avez une pratique réelle de Microsoft 365 et Copilot (agents, administration du tenant, journaux d'usage) ou d'une plateforme équivalente, et une compréhension du développement assisté par l'IA.\n\nVous écrivez bien, en français, de façon directe et structurée. Anglais professionnel.\n\nPoste à pourvoir dès que possible.",
+   "dateCreation": "2026-10-23T12:51:51.762Z",
+   "dateActualisation": "2026-10-23T12:51:52.226Z",
+   "lieuTravail": {
+    "libelle": "Île-de-France"
+   },
+   "romeCode": "M1811",
+   "romeLibelle": "Data engineer",
+   "appellationlibelle": "Expert / Experte big data",
+   "entreprise": {
+    "nom": "TROY",
+    "entrepriseAdaptee": false
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "D",
+   "experienceLibelle": "Débutant accepté",
+   "langues": [
+    {
+     "libelle": "Anglais",
+     "exigence": "E"
+    }
+   ],
+   "competences": [
+    {
+     "code": "300067",
+     "libelle": "Analyser, exploiter, structurer des données",
+     "exigence": "S"
+    }
+   ],
+   "salaire": {
+    "commentaire": "Primes possibles",
+    "complement1": "Indemnité transports",
+    "complement2": "Titres restaurant / Prime de panier",
+    "listeComplements": [
+     {
+      "code": "14",
+      "libelle": "Indemnité transports"
+     },
+     {
+      "code": "6",
+      "libelle": "Titres restaurant / Prime de panier"
+     },
+     {
+      "code": "7",
+      "libelle": "Complémentaire santé"
+     }
+    ]
+   },
+   "dureeTravailLibelle": "39H/semaine\nTravail en journée",
+   "dureeTravailLibelleConverti": "Temps plein",
+   "alternance": false,
+   "contact": {},
+   "agence": {},
+   "nombrePostes": 1,
+   "deplacementCode": "2",
+   "deplacementLibelle": "Ponctuels Zone européenne",
+   "qualificationCode": "9",
+   "qualificationLibelle": "Cadre",
+   "codeNAF": "70.22Z",
+   "secteurActivite": "70",
+   "secteurActiviteLibelle": "Conseil pour les affaires et autres conseils de gestion",
+   "qualitesProfessionnelles": [
+    {
+     "libelle": "Faire preuve d'autonomie",
+     "description": "Capacité à prendre en charge son activité sans devoir être encadré de façon continue (le cas échéant, à solliciter les autres acteurs de l'entreprise)."
+    },
+    {
+     "libelle": "Faire preuve de rigueur et de précision",
+     "description": "Capacité à réaliser des tâches en suivant avec exactitude les règles, les procédures, les instructions qui ont été fournies, sans réaliser d'erreur et à transmettre clairement des informations. Se montrer ponctuel et respectueux des règles de savoir-vivre usuelles."
+    },
+    {
+     "libelle": "Etre à l'écoute, faire preuve d'empathie",
+     "description": "Capacité à écouter activement, réceptionner des informations et messages, faire preuve d'ouverture d'esprit et de diplomatie."
+    }
+   ],
+   "trancheEffectifEtab": "3 à 5 salariés",
+   "origineOffre": {
+    "origine": "1",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/215PVRL"
+   },
+   "offresManqueCandidats": false,
+   "contexteTravail": {
+    "horaires": [
+     "39H/semaine\nTravail en journée"
+    ]
+   },
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "215QBWX",
+   "intitule": "Analyste qualité des données",
+   "description": "Chargé(e) de mission fiabilisation des données de lancement de l'exécution\n\nContexte : Le démarrage de l'exécution au 1er janvier suppose une base de données fiable : référentiels, imputations, ventilations initiales et reports. Ce renfort permet de sécuriser ce travail de fiabilisation pendant le passage d'un exercice à l'autre.\n\nMissions :\n- Contrôle de la base de lancement : vérifier la cohérence des données (structures budgétaires, codes d'imputation, montants), repérer les anomalies, les doublons et les données manquantes.\n- Rapprochements : comparer la base aux documents de référence (LFI, répartitions initiales, données de fin de gestion N-1) et analyser les écarts.\n- Corrections et suivi : tenir un registre des anomalies, faire valider les corrections auprès des gestionnaires concernés, puis vérifier qu'elles ont bien été intégrées.\n- Documentation : formaliser les contrôles réalisés sous forme de fiche de procédure ou de liste de contrôles, réutilisable lors des prochains lancements de gestion.\n\nLivrables :\n- registre des anomalies et des corrections ;\n- base de lancement fiabilisée et validée ;\n- procédure de contrôle documentée.\n\nProfil recherché : formation en finances publiques, comptabilité ou gestion de données (Bac+2/5). Très bonne maîtrise d'Excel (tableaux croisés dynamiques contrôles de cohérence). La connaissance de Chorus ou d'un outil de gestion budgétaire serait un plus. Profil rigoureux, méthodique et autonome.\n\nCDD de 2 mois : décembre et janvier",
+   "dateCreation": "2026-10-23T15:28:57.653Z",
+   "dateActualisation": "2026-10-24T21:46:23.184Z",
+   "lieuTravail": {
+    "libelle": "75 - PARIS",
+    "latitude": 48.840813,
+    "longitude": 2.388195,
+    "codePostal": "75012",
+    "commune": "75112"
+   },
+   "romeCode": "M1811",
+   "romeLibelle": "Data engineer",
+   "appellationlibelle": "Analyste qualité des données",
+   "entreprise": {
+    "nom": "DESTINATION ETAT VIA CHORUS PRO",
+    "entrepriseAdaptee": false
+   },
+   "typeContrat": "CDD",
+   "typeContratLibelle": "CDD - 2 Mois",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "1 An(s)",
+   "formations": [
+    {
+     "niveauLibelle": "Bac+2 ou équivalents",
+     "exigence": "E"
+    }
+   ],
+   "competences": [
+    {
+     "code": "300067",
+     "libelle": "Analyser, exploiter, structurer des données",
+     "exigence": "S"
+    }
+   ],
+   "salaire": {
+    "commentaire": "selon grille indiciaire"
+   },
+   "dureeTravailLibelle": "35H/semaine\nTravail en journée",
+   "dureeTravailLibelleConverti": "Temps plein",
+   "alternance": false,
+   "contact": {
+    "nom": "Agence France Travail Paris 12ème Diderot",
+    "coordonnees1": "3 BOULEVARD Diderot",
+    "coordonnees2": "75012 Paris",
+    "coordonnees3": "Pour postuler, utiliser le lien suivant : https://candidat.francetravail.fr/offres/recherche/detail/215QBWX"
+   },
+   "agence": {
+    "courriel": "Pour postuler, utiliser le lien suivant : https://candidat.francetravail.fr/offres/recherche/detail/215QBWX"
+   },
+   "nombrePostes": 1,
+   "accessibleTH": false,
+   "qualificationCode": "7",
+   "qualificationLibelle": "Technicien",
+   "codeNAF": "84.11Z",
+   "secteurActivite": "84",
+   "secteurActiviteLibelle": "Administration publique générale",
+   "trancheEffectifEtab": "50 à 99 salariés",
+   "origineOffre": {
+    "origine": "1",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/215QBWX"
+   },
+   "offresManqueCandidats": false,
+   "contexteTravail": {
+    "horaires": [
+     "35H/semaine\nTravail en journée"
+    ]
+   },
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "215JWRW",
+   "intitule": "Ingénieur/e de recherche en traitement et analyse de données (H/F)",
+   "description": "Vous avez une expérience en matière d'archéologie et en bases de données SIG ?\nNous recherchons notre futur.e Ingénieur/e de recherche en traitement et analyse de données ! \n\nRejoignez-nous au sein d'Université Côte d'Azur, reconnue depuis 2016 pour son excellence scientifique et pédagogique, pour créer ensemble le modèle de l'université du 21ème siècle responsable et innovante.\n\nRattaché.e à la plateforme de Sédimentologie du CEPAM, vous serez en charge de la création et de la gestion\nd'une bdd SIG pour archiver et partager les données relatives aux sites archéologiques étudiés par l'ensemble des chercheurs du laboratoire\n\nVos missions : \n\nVous concevrez une base de données (bdd) SIG selon les principes FAIR (Findable, Accessible, Interoperable, Reusable) pour l'archivage des données pédo-sédimentaires et stratigraphiques des sites archéologiques étudiés au sein de la Plateforme de Sédimentologie du CEPAM\n\nVous devrez regrouper toutes les informations disponibles sur les sites archéologiques en collaborant avec les chercheurs du CEPAM (coupes stratigraphiques, listes d'échantillons, résultats bruts et traités des analyses, plans de vestiges, bibliographie) et recenser la bdd\n\nVous gérerez le contenu de la bdd pour qu'elle soit accessible et exploitable à la fois par les chercheurs du CEPAM et par des utilisateurs extérieurs\n\nVous serez en charge de créer un système d'archivage pour les sédiments stockés au CEPAM\n\nCe poste est fait pour vous si : \n\nVous possédez une très bonne connaissance du contexte archéologique, environnemental et climatique du Pléistocène\nVous maîtrisez les outils pour la création et la gestion de bases de données SIG ainsi que les principes FAIR\nVous faites preuve d'autonomie, de rigueur et avez un bon ses de l'organisation\nVous aimez travailler en équipe, avec des chercheurs aux spécialisations variées pour favoriser la diffusion des données scientifiques\n\nRémunération et avantages sociaux : \n\nRémunération contractuels (hors variables) : A partir de 2 117,88 € nets (avant impôts), selon expérience\nCongés : 45 jours de congés annuels\nTélétravail : jusqu'à 2 jours/semaine, selon nécessité de service\nPrise en charge partielle des frais de transport en commun domicile-travail\nPrise en charge partielle des frais de mutuelle\nAccès aux restaurants et cafétérias du CROUS avec tarif privilégié\nBilletterie loisirs et sorties à tarifs préférentiels",
+   "dateCreation": "2026-10-19T11:10:38.502Z",
+   "dateActualisation": "2026-10-19T11:10:39.017Z",
+   "lieuTravail": {
+    "libelle": "06 - Nice",
+    "latitude": 43.677218,
+    "longitude": 7.205156,
+    "codePostal": "06000",
+    "commune": "06088"
+   },
+   "romeCode": "M1811",
+   "romeLibelle": "Data engineer",
+   "appellationlibelle": "Analyste scientifique des données",
+   "entreprise": {
+    "nom": "UNIVERSITE COTE D AZUR",
+    "entrepriseAdaptee": false
+   },
+   "typeContrat": "CDD",
+   "typeContratLibelle": "CDD - 6 Mois",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "7 An(s)",
+   "competences": [
+    {
+     "code": "300067",
+     "libelle": "Analyser, exploiter, structurer des données",
+     "exigence": "S"
+    }
+   ],
+   "salaire": {
+    "commentaire": "à partir de 2 117,88 € nets, selon expérience"
+   },
+   "dureeTravailLibelle": "35H/semaine\nTravail en journée",
+   "dureeTravailLibelleConverti": "Temps plein",
+   "alternance": false,
+   "contact": {},
+   "agence": {},
+   "nombrePostes": 1,
+   "qualificationCode": "9",
+   "qualificationLibelle": "Cadre",
+   "codeNAF": "85.42Z",
+   "secteurActivite": "85",
+   "secteurActiviteLibelle": "Enseignement supérieur",
+   "trancheEffectifEtab": "5000 à 9999 salariés",
+   "origineOffre": {
+    "origine": "1",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/215JWRW"
+   },
+   "offresManqueCandidats": false,
+   "contexteTravail": {
+    "horaires": [
+     "35H/semaine\nTravail en journée"
+    ]
+   },
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "215JTKX",
+   "intitule": "Ingénieur en analyse de données de simulations en écologie marine (H/F)",
+   "description": "Le ou la candidat.e sera intégré.e à l'équipe du projet européen OCEAN CITIZEN : Marine forest coastal restoration : an underwater gardening socio-ecological plan du Laboratoire d'Ecogéochimie des Environnements Benthiques (LECOB), UMR 8222, laboratoire commun à Sorbonne Université et au CNRS, hébergé à l'Observatoire Océanologique de Banyuls.\n\nLocalisation : Observatoire Océanologique de Banyuls/Mer 66650 - 1, Av. Pierre Fabre\n\n\nFonctions : Ingénieur.e en analyse de données de simulations en écologie marine\nCatégorie : A\nCorps : IGE\n\nCDD de 1 an. Poste à temps incomplet (50 %).\nA pourvoir à compter du 01/01/2027.\n\n\nMission :\nLa personne recrutée sera chargée d'analyser des simulations de dispersion larvaire pour construire des graphes de connectivité des habitats de substrats durs et évaluer des métriques de la théorie des graphes utilisés en planification systématique de la conservation.\n\nActivités principales :\n-    Construire des graphes de connectivité à partir de simulations existantes de la dispersion larvaire\n-    Quantifier des métriques de la théorie des graphes sur les graphes de connectivité\n-    Écrire un rapport synthétisant les propriétés émergentes de la connectivité de substrats durs dans une perspective de la planification systématique de la conservation\n\nEncadrement : NON\n\nConditions particulières d'exercice :\n-    Prévoir un ou deux déplacements en Europe pour présenter les résultats aux partenaires du projet OCEAN CITIZEN",
+   "dateCreation": "2026-10-19T10:18:25.507Z",
+   "dateActualisation": "2026-10-20T16:22:44.353Z",
+   "lieuTravail": {
+    "libelle": "66 - Banyuls-sur-Mer",
+    "latitude": 42.481014,
+    "longitude": 3.129464,
+    "codePostal": "66650",
+    "commune": "66016"
+   },
+   "romeCode": "M1811",
+   "romeLibelle": "Data engineer",
+   "appellationlibelle": "Ingénieur / Ingénieure données",
+   "entreprise": {
+    "nom": "SORBONNE UNIVERSITE",
+    "entrepriseAdaptee": false
+   },
+   "typeContrat": "CDD",
+   "typeContratLibelle": "CDD - 12 Mois",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "D",
+   "experienceLibelle": "Débutant accepté",
+   "formations": [
+    {
+     "niveauLibelle": "Bac+3, Bac+4 ou équivalents",
+     "exigence": "S"
+    }
+   ],
+   "langues": [
+    {
+     "libelle": "Anglais",
+     "exigence": "S"
+    }
+   ],
+   "competences": [
+    {
+     "code": "300067",
+     "libelle": "Analyser, exploiter, structurer des données",
+     "exigence": "S"
+    },
+    {
+     "libelle": "Connaissance en statistiques",
+     "exigence": "S"
+    },
+    {
+     "libelle": "Connaissance d'un SIG serait un plus",
+     "exigence": "S"
+    },
+    {
+     "libelle": "Master en Sciences de la Mer ou en Océanographie",
+     "exigence": "S"
+    },
+    {
+     "libelle": "Connectivité et métriques de la théorie des graph",
+     "exigence": "S"
+    },
+    {
+     "libelle": "Maîtrise de l'environnement Unix/Linux",
+     "exigence": "S"
+    },
+    {
+     "libelle": "Connaissance générale en océanographie physique",
+     "exigence": "S"
+    },
+    {
+     "libelle": "Planification systématique de la conservation",
+     "exigence": "S"
+    },
+    {
+     "libelle": "Rédaction de rapport",
+     "exigence": "S"
+    },
+    {
+     "libelle": "Production de shell script",
+     "exigence": "S"
+    }
+   ],
+   "salaire": {
+    "commentaire": "A déterminer selon barème SU pour temps incomplet (50%)"
+   },
+   "dureeTravailLibelle": "Temps partiel - 17H5/semaine\nTravail en journée...",
+   "dureeTravailLibelleConverti": "Temps partiel",
+   "alternance": false,
+   "contact": {},
+   "agence": {},
+   "nombrePostes": 1,
+   "deplacementCode": "3",
+   "deplacementLibelle": "Fréquents Zone européenne",
+   "qualificationCode": "6",
+   "qualificationLibelle": "Employé qualifié",
+   "codeNAF": "85.42Z",
+   "secteurActivite": "85",
+   "secteurActiviteLibelle": "Enseignement supérieur",
+   "qualitesProfessionnelles": [
+    {
+     "libelle": "Faire preuve d'autonomie",
+     "description": "Capacité à prendre en charge son activité sans devoir être encadré de façon continue (le cas échéant, à solliciter les autres acteurs de l'entreprise)."
+    },
+    {
+     "libelle": "Faire preuve de rigueur et de précision",
+     "description": "Capacité à réaliser des tâches en suivant avec exactitude les règles, les procédures, les instructions qui ont été fournies, sans réaliser d'erreur et à transmettre clairement des informations. Se montrer ponctuel et respectueux des règles de savoir-vivre usuelles."
+    },
+    {
+     "libelle": "Organiser son travail selon les priorités et les objectifs",
+     "description": "Capacité à planifier, prioriser, anticiper des actions, en tenant compte des moyens, des ressources, des objectifs et du calendrier pour les réaliser."
+    }
+   ],
+   "trancheEffectifEtab": "10 000 salariés et plus",
+   "origineOffre": {
+    "origine": "1",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/215JTKX"
+   },
+   "offresManqueCandidats": false,
+   "contexteTravail": {
+    "horaires": [
+     "Temps partiel - 17H5/semaine\nTravail en journée",
+     " Travail en horaires fractionnés"
+    ]
+   },
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8255842",
+   "intitule": "Data engineer (H/F)",
+   "description": "Qui sommes-nous ?\n\nNous sommes passionnés par les nouvelles technologies, et vous ? \n\nRejoindre Amiltone, c'est intégrer des équipes dynamiques et soudées dans le cadre de projets novateurs et ambitieux. Nous relevons les challenges techniques de nos clients et les accompagnons dans leur transformation digitale.\n\nPourquoi choisir Amiltone \n\n Amiltone, plus qu'une entreprise, un état d'esprit !\n\nNotre objectif ? Votre épanouissement professionnel !\n\nNous avons à cœur de :\n\nVous accompagner au mieux au travers d'un suivi personnalisé\nVous faire monter en compétences en vous proposant des formations tout au long de votre carrière\nComprendre vos besoins et respecter nos engagements\nVous proposer des missions de qualité avec des technologies innovantes\nCultiver votre potentiel grâce à notre programme de développement personnel Addvise\n\n\nVotre bien-être passe aussi par des activités extraprofessionnelles, c'est pourquoi nous vous proposons des séances sportives animées par nos coachs, soirées pour se retrouver et animations (à l'agence ou en visio), Gaming nights...\n\nLe poste : \n\nVos missions ?\n\nIntégré(e) à nos équipes ou chez nos clients, vous contribuez à développer et valoriser l'ensemble des données en résolvant des problématiques business concrètes via les technologies liées à la Data\n\nA ce titre, vos missions seront les suivantes :\n\n- Concevoir et mettre en place des architectures de données en choisissant les technologies adaptées aux besoins.\n- Gestion des bases de données en garantissant la performance et la scalabilité des solutions de stockage.\n- Analyser et explorer les données avec les différents outils.\n- Mettre en place des tableaux de bord avec Power BI ou Tableau en exploitant les données transformées via Talend.\n- Interagir avec les équipes métier pour comprendre et les besoins.\n- Utiliser TALEND pour extraire des données depuis plusieurs sources (SQL, API, Excel ...).\n- Automatiser les processus ETL pour centraliser les données dans un Data Wrehouse (Snowflake).\n- Participation aux projets IA.\n\n\nCompétences requises :\n\n- ETL: Talend\n- Analyse de données (PowerBI, Tableau)\n- Base de données (SQL, GCP)\n- Langages: Python, SQL\n\n\n\n\n\nProfil recherché : \n\nProfil recherché\nAlors - Prêt à devenir Amiltonien ?\n\nN'hésitez pas à postuler si vous vous reconnaissez :\n\n- Diplômé d'un bac+3/+5 (Licence, école d'ingénieur ou master), vous avez 3 ans d'expérience en tant que Data Scientist/ Ingénieur.\n- Vous aimez découvrir de nouveaux contextes fonctionnels et comprendre les objectifs des applications que vous développez.\n- A l'aise dans une organisation agile, vous faites preuve de rigueur.\n\nOutre vos compétences techniques, nous nous intéressons également à votre potentiel et votre motivation.\n\nNos postes sont ouverts aux personnes en situation de handicap.\n",
+   "dateCreation": "2026-10-25T11:21:46.189Z",
+   "dateActualisation": "2026-10-25T11:21:46.189Z",
+   "lieuTravail": {
+    "libelle": "59 - Lille",
+    "codePostal": "59000",
+    "commune": "59350"
+   },
+   "romeCode": "M1868",
+   "romeLibelle": "Architecte base de données",
+   "appellationlibelle": "Architecte de bases de données",
+   "entreprise": {
+    "nom": "AMILTONE"
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "2 An(s)",
+   "salaire": {},
+   "complementExercice": "Temps plein",
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8255842",
+    "partenaires": [
+     {
+      "nom": "PMEJOB",
+      "url": "https://www.jobposting.pro/emploi-2731840-120",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/pmejob80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8247691",
+   "intitule": "Data Engineer Senior - CDI (H/F)",
+   "description": "Salaire: 55K\n\nCONTEXTE\n\nPoste de Data Engineer Senior en environnement Agile Scrum, au sein d'une équipe en charge de la conception, du développement et de la maintenance de solutions Data.\n\nMISSIONS\n\n * Concevoir, développer et maintenir des solutions Data.\n * Développer et traiter des données avec Python, Spark, Scala, SQL/NoSQL, TypeScript/JavaScript.\n * Travailler sur des plateformes telles qu'Azure Data Lake, Synapse, Databricks et Unity Catalog.\n * Industrialiser et automatiser les déploiements via Jenkins, Git/GitLab, Ansible et CI/CD.\n * Assurer la supervision et l'observabilité des systèmes sous Datadog.\n * Garantir la qualité, la robustesse et l'exploitabilité des solutions (tests automatisés, documentation, support N2/N3, analyse d'incidents).\n * Possibilité d'assumer un rôle de Lead Tech.\n\nOUTILS & ENVIRONNEMENT\n\n * Langages : Python, Spark, Scala, SQL/NoSQL, TypeScript/JavaScript\n * Plateformes : Azure Data Lake, Synapse, Databricks, Unity Catalog\n * Automatisation et CI/CD : Jenkins, Git/GitLab, Ansible\n * Supervision : Datadog\n * Méthodologie : Agile Scrum\n\nCONDITIONS DE TRAVAIL\n\n * Localisation : Saint-Denis (93)\n * Démarrage : ASAP\n * Contrat : CDI ou Freelance\n * Salaire : 55K €\n * TJM : 450 €\n * Télétravail : 3 jours par semaine",
+   "dateCreation": "2026-10-24T10:03:27.410Z",
+   "dateActualisation": "2026-10-24T10:03:27.410Z",
+   "lieuTravail": {
+    "libelle": "93 - Saint-Denis",
+    "codePostal": "93380",
+    "commune": "93066"
+   },
+   "romeCode": "M1811",
+   "romeLibelle": "Data engineer",
+   "appellationlibelle": "Ingénieur / Ingénieure en développement big data",
+   "entreprise": {
+    "nom": "Collective.work"
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "D",
+   "experienceLibelle": "Débutant accepté",
+   "salaire": {
+    "libelle": "Annuel de 55000.0 Euros à 55000.0 Euros"
+   },
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8247691",
+    "partenaires": [
+     {
+      "nom": "XTRAMILE",
+      "url": "https://api-v2-multidiff.xtramile.io/collect/ad057c983c0edb69d4b49924613bee7a",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/xtramile80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8247622",
+   "intitule": "Consultant-e AI Engineer & Data Scientist - Agents IA (H/F) - CDI",
+   "description": "Salaire: 50k€ - 70k€ + variable annuel max. 10k€\n\nPour le compte de notre client, un cabinet de conseil spécialisé dans les agents IA sur mesure pour des secteurs exigeants (finance, juridique, conformité, marketing), nous recherchons un-e Consultant-e AI Engineer & Data Scientist. Vous intervenez sur des projets clients stratégiques, de la compréhension des enjeux métier jusqu'à la mise en production, à l'interface entre data science appliquée, ingénierie ML et cas d'usage concrets, avec un fort niveau d'autonomie.\n\nVos missions\n\n * \n\n   Concevoir, développer et déployer des pipelines de data science et de ML (segmentation, scoring, séries temporelles, RAG)\n\n * \n\n   Développer et orchestrer des agents IA métiers (LLM, workflows outillés, architectures multi-agents)\n\n * \n\n   Industrialiser modèles et pipelines : tests, monitoring, observabilité, performance\n\n * \n\n   Intervenir sur des environnements cloud et/ou on-premise, parfois contraints (sécurité, gouvernance)\n\n * \n\n   Proposer les choix méthodologiques, techniques et d'architecture\n\n * \n\n   Travailler directement avec les équipes data, IT et métiers des clients\n\n * \n\n   Contribuer à la R&D sur les agents IA, aux produits internes et à la montée en compétences de l'équipe\n\nCritères indispensables\n\n * \n\n   3 ans d'expérience minimum en AI engineering ou data science, sur des projets en production\n\n * \n\n   Au moins une expérience de système agentique livré en production\n\n * \n\n   Posture conseil : capacité à échanger avec des décideurs côté client\n\n * \n\n   Anglais courant (clients internationaux)\n\n * \n\n   Basé à Paris\n\n * \n\n   Bac+5 : école d'ingénieur ou master reconnu en data science / IA\n\nCompétences techniques\nPython, pipelines data/ML, modélisation statistique et ML appliqué, LLM, RAG, architectures agentiques et multi-agents, cloud (AWS, GCP, Azure), MLOps/LLMOps (Docker, Kubernetes, CI/CD, monitoring).\n\nVotre profil\nVous savez vous approprier des problématiques métier complexes et les traduire en solutions IA concrètes, concevoir des architectures robustes et scalables, et expliquer vos choix à des profils non techniques. Vous êtes curieux-se, autonome, avec le sens des priorités et le goût du partage.\n\nCe qui vous attend\n\n * \n\n   Un environnement entrepreneurial, avec un impact direct et une forte visibilité sur les projets\n\n * \n\n   Une forte exposition aux agents IA et au ML en production\n\n * \n\n   Des missions variées et exigeantes pour des clients prestigieux\n\n * \n\n   Un encadrement rapproché par des profils seniors\n\n * \n\n   Une grande autonomie et la possibilité d'influencer les choix stratégiques\n\n * \n\n   Télétravail flexible, bureaux en plein centre de Paris\n\n * \n\n   Bonus de performance, mutuelle prise en charge à 100 %, formations continues et conférences",
+   "dateCreation": "2026-10-24T10:03:26.909Z",
+   "dateActualisation": "2026-10-24T10:03:26.909Z",
+   "lieuTravail": {
+    "libelle": "75 - Paris",
+    "commune": "75056"
+   },
+   "romeCode": "M1405",
+   "romeLibelle": "Data scientist",
+   "appellationlibelle": "Ingénieur / Ingénieure data scientist",
+   "entreprise": {
+    "nom": "Collective.work"
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "3 An(s)",
+   "salaire": {
+    "libelle": "Annuel de 10000.0 Euros à 70000.0 Euros"
+   },
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8247622",
+    "partenaires": [
+     {
+      "nom": "XTRAMILE",
+      "url": "https://api-v2-multidiff.xtramile.io/collect/cbfcc76c4b5576feee1de68179de7051",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/xtramile80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8209435",
+   "intitule": "Data Engineer GCP - Services Financiers - Ile-de-France H/F",
+   "description": "En tant qu'organisateur de forums de recrutement, Talents Handicap accompagne de très nombreuses entreprises & organisations en France dans leurs recrutements de collaborateurs en situation de handicap. Participant actuellement à l'un de nos forums.\nL'entreprise Sopra Steria recherche actuellement des profils :\nDescription de l'entreprise\nSopra Steria, acteur majeur de la Tech en Europe, avec collaborateurs dans près de 30 pays, est reconnu pour ses activités de conseil, de services et solutions numériques. Il aide ses clients à mener leur transformation digitale et à obtenir des bénéfices concrets et durables. Le Groupe apporte une réponse globale aux enjeux de compétitivité des grandes entreprises et organisations, en combinant une connaissance approfondie des secteurs d'activité et des technologies à une approche collaborative.\nSopra Steria place l'humain au cœur de son action et s'engage auprès de ses clients à tirer le meilleur parti du numérique pour construire un avenir positif. En , le Groupe a réalisé un chiffre d'affaires de 5,6 milliards d'euros.\nDescription du poste\nAu sein de notre Vertical Services Financiers et pour le compte de nos clients bancaires, vous intervenez sur la conception, l'industrialisation et l'automatisation de chaînes de traitement de données sur des environnements comme Google Cloud Platform (GCP).\nEnvironnement de travail \nRejoindre Sopra Steria, c'est intervenir sur des plateformes Data critiques au cœur des enjeux de transformation numérique des grands acteurs bancaires et de paiement.\nVous évoluez dans un environnement Cloud first, avec de vraies problématiques d'industrialisation, de scalabilité et de qualité de données, au sein d'équipes expertes qui valorisent les bonnes pratiques d'ingénierie (CI/CD, automatisation, sécurité).\nSopra Steria vous permet de développer une expertise GCP reconnue, tout en bénéficiant d'un cadre structuré favorisant la montée en compétences et la prise de responsabilité technique.\nLa mission\nVous contribuez sur différentes activités, notamment :\nDéveloppement des pipelines de traitement de données et des scripts de déploiement\nRédaction/maintien de la documentation des user stories garantissant le respect de l'architecture\nGestion des anomalies, contribution au RUN et lien avec l'exploitation\nParticipation au delivery continu et à l'automatisation des tests\nEnvironnement Technique :\nGKE (Google Kubernates Engine)\nStockage : HDFS / GCS\nTraitements : Spark, Kafka, Scala\nOrchestration : Airflow / Composer\nData : SQL, BigQuery, BigTable\nDevOps/Delivery : Git, Docker, Terraform, Ansible, Jenkins / Cloud Build\nQualifications\nVous êtes diplômé d'un Bac+ 5 d'une école d'ingénieur ou d'un cursus universitaire et justifiez d'une expérience de 5 ans minimum dans le domaine de la Data Engineering\nVous disposez d'une solide culture en matière d'industrialisation / qualité / automatisation\nVous maîtrisez les environnements Cloud et les chaînes CI/CD\nVous êtes à l'aise pour produire un code lisible, documenté, testable et à gérer le RUN (analyse d'incident, correctifs).\nInformations supplémentaires\nUn accord télétravail pour télétravailler jusqu'à 2 jours par semaine selon vos missions. \nUn package avantages intéressant : une mutuelle, un CSE, des titres restaurants, un accord d'intéressement, des primes vacances et cooptation.\nDes opportunités de carrières multiples : plus de 30 familles de métiers, autant de passerelles à imaginer ensemble.\nPlusieurs centaines de formations accessibles en toute autonomie avec Sopra Steria Academy.\nLa possibilité de s'engager auprès d'une association grâce à notre plateforme d'engagement citoyen.\nL'opportunité de rejoindre le collectif Tech'Me UP (formations, conférences, veille, et bien plus encore.).\nEmployeur inclusif et engagé, notre société œuvre chaque jour pour lutter contre toute forme de discrimination et favoriser un environnement de travail respectueux. C'est pourquoi, attachés à la mixité et à la diversité, nous encourageons toutes les candidatures et tous les profils.\nhttps://www.soprasteria.fr/nous-connaitre/nos-engagements",
+   "dateCreation": "2026-10-23T13:38:49.476Z",
+   "dateActualisation": "2026-10-23T13:38:49.476Z",
+   "lieuTravail": {
+    "libelle": "75 - Paris",
+    "commune": "75056"
+   },
+   "romeCode": "C1216",
+   "romeLibelle": "Rédacteur / Rédactrice Banque de France",
+   "appellationlibelle": "Rédacteur / Rédactrice Banque de France",
+   "entreprise": {},
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "D",
+   "experienceLibelle": "Débutant accepté",
+   "salaire": {},
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8209435",
+    "partenaires": [
+     {
+      "nom": "DIRECTEMPLOI",
+      "url": "https://www.directemploi.com/candidatOffre/56802362?utm_source=pole-emploi&utm_medium=referral&utm_campaign=Pôle-Emploi",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/directemploi80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8208907",
+   "intitule": "Lead Data Engineer H/F",
+   "description": "En tant qu'organisateur de forums de recrutement, Talents Handicap accompagne de très nombreuses entreprises & organisations en France dans leurs recrutements de collaborateurs en situation de handicap. Participant actuellement à l'un de nos forums.\nL'entreprise Capgemini recherche actuellement des profils :\nProfil :\nDiplôme d'Ingénieur ou équivalent niveau bac+5 en informatique ou en sciences des données\nMinimum 6 ans d'expérience en CDI en : Langages et moteurs de développement : Spark, Kafka, Java, Scala, Python \nData visualization : Microsoft Power BI / Qlik\nEnvironnements Data Cloud : Azure / GCP / Snowflake / Databricks\nMaîtrise des services Cloud (AWS, Azure, GCP) et des outils d'orchestration (Kubernetes, Docker).\nIdéalement, expérience en migration vers des environnements Cloud, CI/CD, développement applicatif, ainsi que dans le domaine de la Data (Data Management, Data Governance, API Management).\nCapacité à travailler en équipe, à challenger le besoin client et à proposer des solutions pragmatiques, avec un sens aigu de la pédagogie\nUne certification « Data Engineer » sur un environnement Cloud : Azure / GCP est un plus\nQuelques raisons de nous rejoindre :\nAvantages groupe : bénéficiez d'un ensemble d'avantages tels que le plan d'actionnariat salarié, les primes de cooptation, tickets restaurant, ainsi que des activités sociales et culturelles variées proposées par le CSE. Des dispositifs d'accompagnement à la parentalité, comme le temps partiel à 90% pendant les vacances scolaires, sont également disponibles, ainsi que de nombreux autres avantages issus de nos accords collectifs.\nQualité de vie au travail : profitez d'un équilibre entre vie professionnelle et personnelle, d'une possibilité de télétravailler (en France et à l'international), ainsi que des dispositifs de santé et bien-être (ligne d'écoute, plateforme dédiéeli> Projets variés et innovants : intervenez sur des missions à fort impact dans des secteurs durables et technologiques (énergies renouvelables, transports, IA, data.), avec des opportunités d'évolution.\nÉvénements et partenariats : participez à des conférences sectorielles et événements partenaires (AWS, Snowflake, SAP.).",
+   "dateCreation": "2026-10-23T13:37:23.318Z",
+   "dateActualisation": "2026-10-23T13:37:23.318Z",
+   "lieuTravail": {
+    "libelle": "21 - Aiserey",
+    "codePostal": "21110",
+    "commune": "21005"
+   },
+   "romeCode": "M1811",
+   "romeLibelle": "Data engineer",
+   "appellationlibelle": "Data engineer",
+   "entreprise": {},
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "D",
+   "experienceLibelle": "Débutant accepté",
+   "salaire": {},
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8208907",
+    "partenaires": [
+     {
+      "nom": "DIRECTEMPLOI",
+      "url": "https://www.directemploi.com/candidatOffre/56737995?utm_source=pole-emploi&utm_medium=referral&utm_campaign=Pôle-Emploi",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/directemploi80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8193091",
+   "intitule": "Expert Data Engineer Python / Apache Airflow -  - CDI (H/F)",
+   "description": "Salaire: 60K\n\nContexte de la mission\n\nPour le compte d'un grand groupe international évoluant dans les services financiers et l'assurance, nous recherchons un expert Python et Apache Airflow pour renforcer une équipe Data. La mission s'inscrit dans le développement et l'exploitation d'une plateforme de données cloud, destinée à collecter, transformer, fiabiliser et mettre à disposition des données pour différents usages analytiques et applicatifs.\n\nL'environnement est distribué et international. Le consultant travaillera en collaboration avec les équipes Data Engineering, les équipes utilisatrices des données et les interlocuteurs techniques.\n\nObjectif de la mission\n\nConcevoir, développer, automatiser et maintenir des traitements de données robustes à l'aide de Python et d'Apache Airflow, en veillant à leur fiabilité, leur performance, leur traçabilité et leur bonne intégration dans l'écosystème data existant.\n\nResponsabilités principales\n\nDéveloppement Python\n\nDévelopper et maintenir des traitements de données clairs, réutilisables et testables.\n\nConcevoir des composants permettant de collecter, nettoyer, transformer et contrôler les données.\n\nAppliquer les bonnes pratiques de développement : qualité du code, tests, documentation et gestion des erreurs.\n\nAnalyser les incidents et corriger les anomalies rencontrées lors de l'exécution des traitements.\n\nOrchestration des traitements avec Apache Airflow\n\nConcevoir et maintenir des workflows automatisés pour enchaîner les différentes étapes de traitement des données.\n\nDéfinir les dépendances, calendriers d'exécution, reprises sur erreur et mécanismes de surveillance.\n\nSuivre les exécutions, diagnostiquer les échecs et améliorer la stabilité des workflows.\n\nOptimiser les traitements afin de respecter les délais d'exécution et les niveaux de service attendus.\n\nIntégration et circulation des données\n\nMettre en place des flux de collecte, de transformation et de mise à disposition des données.\n\nInteragir avec des bases de données et des services exposés par API.\n\nÉcrire et optimiser des requêtes SQL pour extraire, contrôler ou transformer les données.\n\nContribuer à la cohérence des échanges entre les différentes briques de la plateforme.\n\nQualité, industrialisation et exploitation\n\nMettre en place des contrôles pour détecter les données manquantes, incohérentes ou inattendues.\n\nParticiper à l'automatisation des tests et au déploiement des évolutions.\n\nUtiliser les outils de conteneurisation et de déploiement disponibles dans l'environnement.\n\nDocumenter les traitements, les dépendances et les procédures d'exploitation.\n\nContribuer à l'amélioration continue de la performance, de la sécurité et de la maintenabilité.\n\nCollaboration avec les équipes\n\nTravailler avec les ingénieurs data, les équipes applicatives et les utilisateurs des données.\n\nClarifier les besoins, proposer des solutions adaptées et partager les choix techniques.\n\nParticiper aux réunions d'équipe et aux pratiques de travail agiles.\n\nCollaborer avec des interlocuteurs situés dans plusieurs pays.\n\nCompétences requises\n\nExpertise confirmée en Python pour le développement de traitements de données.\n\nMaîtrise d'Apache Airflow pour la création, l'orchestration et la supervision de workflows.\n\nBonne maîtrise de SQL et expérience avec des bases de données relationnelles.\n\nCompréhension des architectures data et des chaînes de traitement de bout en bout.\n\nExpérience des environnements cloud ou distribués.\n\nPratique des tests, du contrôle de version et des processus automatisés de livraison.\n\nCapacité à analyser des incidents et à améliorer la fiabilité des traitements.\n\nEnvironnement technique\n\nPython, Apache Airflow, SQL, bases de données, API, pipelines de données, environnement cloud, outils d'intégration et de déploiement continus, conteneurs (Docker) et orchestration de conteneurs (Kubernetes) selon le périmètre de la mission.\n\nProfil recherché\n\nExpérience significative en développement Python et en ingénierie",
+   "dateCreation": "2026-10-23T10:03:06.781Z",
+   "dateActualisation": "2026-10-23T10:03:06.781Z",
+   "lieuTravail": {
+    "libelle": "75 - Paris",
+    "commune": "75056"
+   },
+   "romeCode": "M1811",
+   "romeLibelle": "Data engineer",
+   "appellationlibelle": "Expert / Experte big data",
+   "entreprise": {
+    "nom": "Collective.work"
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "D",
+   "experienceLibelle": "Débutant accepté",
+   "salaire": {
+    "libelle": "Annuel de 60000.0 Euros à 60000.0 Euros"
+   },
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8193091",
+    "partenaires": [
+     {
+      "nom": "XTRAMILE",
+      "url": "https://api-v2-multidiff.xtramile.io/collect/55ca1c362c6a6958d1920bde257af6ef",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/xtramile80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8173689",
+   "intitule": "Data Engineer PySpark - Data Factory - Services Financiers - Ile de France (H/F)",
+   "description": "\n            Description de l'entrepriseDescription de l'entrepriseSopra Steria, acteur majeur de la Tech en Europe, avec 51000 collaborateurs dans près de 30 pays, est reconnu pour ses activités de conseil, de services et solutions numériques. Il aide ses clients à mener leur transformation digitale et à obtenir des bénéfices concrets et durables. Le Groupe apporte une réponse globale aux enjeux de compétitivité des grandes entreprises et organisations, en combinant une connaissance approfondie des secteurs d'activité et des technologies à une approche collaborative. Sopra Steria place l'humain au cœur de son action et s'engage auprès de ses clients à tirer le meilleur parti du numérique pour construire un avenir positif. En 2024, le Groupe a réalisé un chiffre d'affaires de 5,8 milliards d'euros.\n\nThe world is how we shape itDescription du posteVous êtes passionné(e) par la valorisation de la donnée, rejoignez notre Data Factory localisée à Paris ! Vous y rencontrerez des experts de la mise en œuvre de Plateforme de Données, des Data Architectes ou autres experts solution autour des problématiques de valorisation de la donnée.Vous êtes accompagné(e) au développement de vos connaissances aux travers de différents parcours Data que ce soit pour l'ingestion, la construction de datahub, la transformation et valorisation de la donnée, la modélisation et mise à disposition.Rejoindre notre Data Factory Sopra Steria, c'est rejoindre une communauté de Data Ingénieurs fiers de partager leur savoir et ouverts aux nouvelles expériences et expérimentations de la donnée.Dans le cadre de la mise en place du centre Data pour un grand acteur financier de l'état et selon votre appétence, vous participerez à plusieurs étapes de la chaîne :- La compréhension des besoins métiers et la traduction solution de data ingénierie- La mise en œuvre de solution d'ingestion des données quelles soit en batch et/ou en streaming dans un contexte Cloud ;- La structuration du DataLake, la mise en place des processus de gouvernance et de sécurisation des données ;- Le traitement de la donnée jusqu'à l'exposition au métier ;- La mise en place de la chaine CI/CD et de sa supervision ;- La veille technologie avec nos partenaires éditeurs et la mise en place de Prototype Design, Proof of Concept ou encore MVP dans un objectif d'idéation pour nos clients.Vous maitrisez un langage de programmation appliqué à l'analyse de données (SQL, Scala, R, Python, Java), le traitement distribué de données (Spark, Pyspark , Hadoop) et un Framework de streaming de données (Kafka, RabbitMQ, etc.).QualificationsVous êtes attiré(e) par le monde du numérique, le Cloud et des technologies innovantes.Vous avez un bon esprit d'analyse, êtes curieux(se) et passionné(e) et vous avez le sens du travail en équipe dans une organisation Agile type Srcum ou SAFEVous accordez une importance particulière au développement de vos compétences sur plusieurs technologies. Vous souhaitez une évolution réelle de carrière à travers l'expérience projet. Vous êtes soucieux de l'apport de valeur pour vos clients. Et vous voulez transmettre votre savoir auprès de collaborateurs moins expérimentés. Alors, n'attendez-plus, ce poste est fait pour vous !Diplômé(e) d'une Ecole d'ingénieur ou formation équivalente, vous avez déjà participé à un projet Data (Big Data, BI) et vous avez une expérience de minimum 3 ans.Informations supplémentairesEmployeur inclusif et engagé, notre société œuvre chaque jour pour lutter contre toute forme de discrimination et favoriser un environnement de travail respectueux. C'est pourquoi, attachés à la mixité et à la diversité, nous encourageons toutes les candidatures et tous les profils.https://www.soprasteria.fr/nous-connaitre/nos-engagements \n            ",
+   "dateCreation": "2026-10-23T05:31:00.820Z",
+   "dateActualisation": "2026-10-23T05:31:00.820Z",
+   "lieuTravail": {
+    "libelle": "75 - Paris 1er Arrondissement",
+    "codePostal": "75001",
+    "commune": "75101"
+   },
+   "romeCode": "M1860",
+   "romeLibelle": "Architecte cloud",
+   "appellationlibelle": "Architecte cloud",
+   "entreprise": {},
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "0 An(s)",
+   "salaire": {},
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "qualificationCode": "7",
+   "qualificationLibelle": "Technicien",
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8173689",
+    "partenaires": [
+     {
+      "nom": "TALENTS_HANDICAP",
+      "url": "https://www.talents-handicap.com/165-sopra-steria/347636-data-engineer-pyspark-data-factory-services-financiers-ile-de-france-25?src=FranceTravail",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/talents_handicap80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8168954",
+   "intitule": "Data Engineer H/F",
+   "description": "ActyLink recrute pour son client un(e) Data Engineer (H/F) - Ille-et-Vilaine (35)\n\nActyLink - Cabinet de recrutement spécialisé dans la recherche de talents pour l'industrie.\n\nLe poste en résumé\n\nNotre client structure son pôle data et cherche un(e) Data Engineer en CDI pour bâtir et fiabiliser sa plateforme de données moderne. Rattaché(e) au Responsable Data, vous fournissez aux équipes opérationnelles des données fiables pour piloter l'activité et décider plus vite.\n\nVotre environnement de travail\n\nDistributeur de véhicules industriels et utilitaires, notre client couvre la vente, l'entretien et les services associés à travers un large réseau d'agences dans le Grand Ouest. Il appartient à un ensemble de taille significative qui investit aujourd'hui dans la data comme levier de performance.\n\nVos responsabilités\n\n* Faire évoluer le socle technique de la plateforme data (Python, dbt, Snowflake) et fixer les standards de modélisation : logique ELT, entrepôt, data marts\n* Organiser des environnements distincts de développement, de recette et de production\n* Construire et orchestrer les flux d'ingestion depuis les applications internes et les API jusqu'à l'entrepôt Snowflake\n* Transformer la donnée brute avec dbt pour livrer des modèles directement exploitables par l'analyse\n* Améliorer la performance des requêtes et maîtriser la facture de crédits Snowflake\n* Superviser les flux en production et intervenir en maintenance préventive comme corrective\n* Instaurer le versioning sous Git, les tests automatisés et les contrôles qualité dbt\n* Analyser la logique des rapports issus de l'ancien outil de reporting pour les migrer vers la nouvelle architecture\n* Concevoir avec le/la spécialiste Data Viz les modèles qui alimentent Power BI et optimiser les jeux de données associés\n* Documenter les modèles et contribuer à la politique de gouvernance des données\n\nProfil recherché\n\nExigences indispensables\n\n* Bac+5 en informatique orientée data, diplôme d'ingénieur ou master en mathématiques appliquées / statistiques\n* 3 à 5 ans d'expérience en data engineering\n* Très bon niveau en SQL\n* Pratique de Python, notamment avec Pandas ou Polars\n* Expérience d'un environnement cloud\n\nÉléments appréciés\n\n* Pratique de dbt : c'est le critère le plus différenciant sur ce poste\n* Expérience de Snowflake et d'un orchestrateur de type Airflow\n* Habitude du fonctionnement en méthode agile\n* Intérêt réel pour les sujets opérationnels (commerce, logistique) et approche pragmatique des problèmes\n\nRémunération et avantages\n\n* Mutuelle prise en charge à 60 % par l'employeur\n* Tickets restaurant\n* Participation aux bénéfices\n* Accès au dispositif Action Logement\n* Compte Épargne Temps\n* Avantages CSE : chèques vacances, chèques cadeaux, réductions sur les séjours, événements dans l'année\n* Centre de formation interne et perspectives d'évolution au sein du groupe\n\nProcessus de recrutement\n\n* Échange technique avec ActyLink\n* 1er entretien avec les équipes RH et opérationnelles du client\n* 2ème entretien avec la Direction\n\nPostulez dès maintenant\n\nActyLink vous accompagne de manière confidentielle tout au long du processus de recrutement.\n\nRémunération : 35 000,00€ à 50 000,00€ par an\n\nLieu du poste : En présentiel",
+   "dateCreation": "2026-10-22T22:31:53.396Z",
+   "dateActualisation": "2026-10-22T22:31:53.396Z",
+   "lieuTravail": {
+    "libelle": "35 - Rennes",
+    "codePostal": "35000",
+    "commune": "35238"
+   },
+   "romeCode": "M1419",
+   "romeLibelle": "Data analyst",
+   "appellationlibelle": "Data analyst",
+   "entreprise": {},
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "3 An(s)",
+   "salaire": {},
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8168954",
+    "partenaires": [
+     {
+      "nom": "INDEED",
+      "url": "https://fr.indeed.com/job/data-engineer-hf-02ff6166bc3b67f9?from=poleemploi",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/indeed80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8127076",
+   "intitule": "Data Engineer Senior Talend (H/F)",
+   "description": "DGTL / Signe + est le facilitateur pour tous les acteurs qui recherchent des ressources ou des missions DATA.\n\nSpécialiste du marché Data et BI, nous intervenons dans toute la France comme à l'étranger ; en sous-traitance, pré-embauche, recrutement, portage commercial, portage salarial, etc.\n\nDepuis 2018, nous accompagnons nos clients avec proximité, juste prix et préoccupation éthique de tous les instants.\n\nhttps://www.dgtl-performance.com\n\nLe poste : \n\nUn grand groupe industriel du secteur de la manufacture et de l'innovation technologique recherche un Data Engineer Senior expérimenté pour renforcer son équipe data sur une mission long terme. Vous piloterez la conception, le développement et l'exploitation d'architectures de données robustes et performantes, en travaillant dans un environnement technique moderne et exigeant.\n\nAu sein d'une équipe data agile et structurée, vous serez responsable de la conception et du développement de flux de données complexes, de l'optimisation des pipelines existants et de la mise en place de bonnes pratiques d'ingénierie. Vous travaillerez en étroite collaboration avec les équipes métier, les data scientists et les architectes pour traduire les besoins en solutions scalables et maintenables. Vous participerez également à l'évolution de l'infrastructure data, à la documentation technique et aux revues de code pour garantir la qualité et la pérennité des solutions livrées.\n\nLa mission s'inscrit dans un contexte de transformation numérique et de centralisation des données d'entreprise. Vous évoluerez dans un environnement technologique riche, avec des défis portant sur la volumétrie, la latence et la fiabilité des flux. Vous serez également amené à contribuer à l'amélioration continue des processus, l'automation des tâches récurrentes et la montée en compétences des équipes techniques.\n\nResponsabilités :\n- Concevoir, développer et optimiser des pipelines et flux de données (ETL/ELT) en utilisant Talend et autres outils de l'écosystème data\n- Maîtriser la ingestion, la transformation et l'exploitation de données structurées et non structurées à partir de multiples sources\n- Assurer la qualité, la performance et la fiabilité des traitements de données en production\n- Collaborer avec les équipes métier, data scientists et architectes pour traduire les besoins en solutions techniques\n- Participer à l'architecture et à l'évolution de l'infrastructure data et de la plateforme analytique\n- Contribuer à la documentation technique, aux revues de code et au partage de bonnes pratiques\n- Monitorer et optimiser les performances des flux existants\n- Participer à la mise en place de standards de qualité et de sécurité des données\n\nTélétravail : 2 jours par semaine\nLocalisation : Clermont-Ferrand\n\nProfil recherché : \n\nIndispensables :\n- Expérience confirmée de 5+ années en Data Engineering et développement de flux de données (ETL/ELT)\n- Maîtrise approfondie de Talend ou d'outils ETL équivalents (conception, développement, déploiement en production)\n- Solides compétences en SQL et optimisation de requêtes (performance, indexation, tuning)\n- Maîtrise de Python pour l'automatisation, le scripting et le traitement de données\n- Connaissance de la mise en message et du streaming (Kafka ou équivalent) pour les architectures temps réel\n- Expérience en gestion des volumes de données importants et architectures distribuées\n- Capacité à rédiger une documentation technique claire et précise\n- Autonomie, rigueur et sens des responsabilités dans la livraison de solutions en production\n- Excellentes capacités de communication et collaboration multidisciplinaire\n\nFortement appréciés :\n- Expérience en environnements cloud (AWS, Azure, GCP) et conteneurisation (Docker, Kubernetes)\n- Maîtrise de technologies big data complémentaires (Spark, Hadoop, Hive)\n- Connaissance des bonnes pratiques DevOps et CI/CD pour les pipelines data\n- Expérience en gestion de la qualité et de la gouvernance des données (data lineage, metadata management)\n- Exposition à des méthodologies Agile/Scrum en contexte data\n- Expérience dans des secteurs complexes (industrie, finance, énergie) avec enjeux critiques de données",
+   "dateCreation": "2026-10-21T11:21:41.053Z",
+   "dateActualisation": "2026-10-21T11:21:41.053Z",
+   "lieuTravail": {
+    "libelle": "63 - Clermont-Ferrand",
+    "codePostal": "63000",
+    "commune": "63113"
+   },
+   "romeCode": "M1868",
+   "romeLibelle": "Architecte base de données",
+   "appellationlibelle": "Architecte de bases de données",
+   "entreprise": {
+    "nom": "DGTL Performance"
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "5 An(s)",
+   "salaire": {},
+   "complementExercice": "Temps plein",
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8127076",
+    "partenaires": [
+     {
+      "nom": "PMEJOB",
+      "url": "https://www.jobposting.pro/emploi-2730357-120",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/pmejob80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8126914",
+   "intitule": "Lead Data Orchestration Engineer Airflow (H/F)",
+   "description": "DGTL / Signe + est le facilitateur pour tous les acteurs qui recherchent des ressources ou des missions DATA.\n\nSpécialiste du marché Data et BI, nous intervenons dans toute la France comme à l'étranger ; en sous-traitance, pré-embauche, recrutement, portage commercial, portage salarial, etc.\n\nDepuis 2018, nous accompagnons nos clients avec proximité, juste prix et préoccupation éthique de tous les instants.\n\nhttps://www.dgtl-performance.com\n\nLe poste : \n\nRejoignez une grande organisation du secteur automobile en tant que Lead Data Orchestration Engineer, en charge du pilotage et de l'optimisation d'une plateforme d'orchestration Apache Airflow hébergée sur AWS MWAA. Vous porterez une mission stratégique de transformation technique, alliant optimisation architecturale, sécurisation de l'infrastructure, et autonomisation des équipes autour d'une plateforme bancaire de données critiques.\n\nNotre client gère des pipelines de données complexes traversant 9 pays européens, avec une volumétrie considérable (200+ DAGs en production). Suite à un audit technique approfondi en début 2026, la plateforme a été stabilisée et entre désormais dans une phase d'optimisation structurelle. Vous serez au cœur de cette évolution, responsable de faire évoluer les mécanismes d'orchestration existants, de renforcer la robustesse face à la charge et aux défaillances, d'étudier les alternatives architecturales, et de structurer les équipes pour une exploitation en autonomie long terme.\n\nLa mission s'organise autour de quatre axes complémentaires :\n\n- Axe 1 - Optimisation architecturale : faire évoluer la DAG Factory existante, migrer les dépendances inter-DAGs vers les mécanismes natifs Airflow (Datasets), optimiser les performances au parse-time et runtime, et mettre en place la validation automatisée en CI/CD (parse test, linting, tests d'intégration).\n\n- Axe 2 - Sécurisation et résilience : implémenter une politique de rotation des secrets, déployer le routage différencié des alertes par type d'incident et criticité, piloter le capacity planning et le tuning de la plateforme (pools, scaling, rétention logs), renforcer l'isolation réseau et durcir la configuration, finaliser et maintenir les runbooks d'incidents.\n\n- Axe 3 - Étude et migration vers une infrastructure cible : l'audit a mis en évidence les limites structurelles d'AWS MWAA (contraintes de scaling, flexibilité limitée, coûts). Vous serez chargé de benchmarker les alternatives (Airflow auto-hébergé sur ECS/EKS, Astronomer, Dagster, Prefect ou autres solutions), de produire une recommandation argumentée avec analyse coûts/bénéfices et risques, et de piloter la migration vers l'infrastructure retenue si pertinent.\n\n- Axe 4 - Autonomie des équipes : lancer et piloter un programme de formation sur l'orchestration destiné aux équipes Dev et Ops (environ 10 personnes), constituer une méta-équipe plateforme avec vision unifiée Dev + Ops sous leadership technique commun, accompagner l'évolution des profils (Dev vers Data Engineers, Ops vers DataOps), et évaluer l'internalisation progressive de profils techniques clés.\n\nVous travaillerez dans un environnement technique mature et ambitieux, au sein d'une organisation valorisant l'excellence technique, la rigueur architecturale et le mentorat. Vous aurez également la responsabilité de concevoir et faire appliquer des standards techniques robustes (code reviews, patterns, conventions), et de piloter des programmes d'optimisation complexes avec priorisation, suivi et reporting.\n\nResponsabilités :\n- Piloter l'optimisation et l'évolution des mécanismes d'orchestration Airflow pour le passage à l'échelle et la réduction des coûts d'exploitation\n- Faire évoluer la DAG Factory existante en enrichissant les patterns, en améliorant la maintenabilité et en validant automatiquement les DAGs en CI/CD\n- Implémenter et maintenir une stratégie complète de sécurisation : rotation des secrets, routage d'alertes par criticité, isolation réseau, durcissement de configuration\n- Étudier et recommander l'infrastructure cible pour l'orchestration, en analysant les alternatives à AWS MWAA et en piloter la migration\n- Piloter le capacity planning, le tuning de performance (pools, scaling, rétention logs) et la résilience globale de la plateforme\n- Concevoir et faire appliquer les standards techniques et les bonnes pratiques d'orchestration auprès de l'ensemble des équipes\n- Lancer et piloter un programme de formation et de mentorat auprès des équipes Dev et Ops pour accroître leur autonomie\n- Accompagner la montée en compétence des profils vers des rôles Data Engineer et DataOps\n- Garantir la continuité de service lors des transitions et migrations techniques\n\nTélétravail : à déterminer\nLocalisation : Sochaux\n\nProfil recherché : \n\nIndispensables :\n- Minimum 5 ans d'expérience solide sur Apache Airflow, dont une expérience significative en environnement managé (AWS MWAA ou Google Cloud Composer)\n- Maîtrise approfondie du modèle d'exécution Airflow : sched...",
+   "dateCreation": "2026-10-21T11:21:36.043Z",
+   "dateActualisation": "2026-10-21T11:21:36.043Z",
+   "lieuTravail": {
+    "libelle": "25 - Sochaux",
+    "codePostal": "25600",
+    "commune": "25547"
+   },
+   "romeCode": "M1868",
+   "romeLibelle": "Architecte base de données",
+   "appellationlibelle": "Architecte de bases de données",
+   "entreprise": {
+    "nom": "DGTL Performance"
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "5 An(s)",
+   "salaire": {},
+   "complementExercice": "Temps plein",
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8126914",
+    "partenaires": [
+     {
+      "nom": "PMEJOB",
+      "url": "https://www.jobposting.pro/emploi-2730392-120",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/pmejob80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8111193",
+   "intitule": "Data Engineer (H/F)",
+   "description": "RESPONSABILITÉS : \n\nL'équipe Une équipe moderne et ambitieuse, au cœur de la transformation de Signe+. Nous portons la transformation digitale de l'entreprise, avec des technologies actuelles, et nous avançons vite sans transiger sur la qualité. Chacun a un vrai périmètre, de l'autonomie et un impact visible sur l'activité.\nMissions  - Concevoir, fiabiliser et superviser les flux de données de nos plateformes\n - Faire vivre nos référentiels et la qualité des données\n - Construire des pipelines modernes\n - Mettre les données au service des équipes métier : indicateurs, exports, tableaux de bord\n - Intégrer la conformité (RGPD, sécurité) dès la conception\n\nPROFIL RECHERCHÉ : \n\nProfil recherché  - 3 à 6 ans en data engineering, avec des pipelines en production\nCompétences indispensables :\n - Python et SQL avancé, PostgreSQL (modélisation, performance)\n - Intégration de données : API REST / JSON, flux ETL / ELT, imports de fichiers, webhooks\n - Orchestration (Airflow, Prefect, Dagster ou n8n) : planification, reprise sur erreur, idempotence\n - Qualité des données : tests, dédoublonnage, normalisation, contrôles automatiques\n - Git, revue de code, CI/CD\n - Docker\nCompétences appréciées :\n - Cloud AWS (S3, Lambda, RDS), dbt\n - Elasticsearch ou autre moteur de recherche\n - Environnement Microsoft : Dynamics 365 / Dataverse, Power BI\n - Supervision des flux : alertes, journaux, tableaux de bord\n - Sensibilité RGPD\n - Notions d'IA appliquée aux données (extraction, classification)\nQualités :\n -  Ambitieux-se : vous voulez construire quelque chose qui compte\n -  Curieux-se : vous testez, vous comprenez le métier\n -  Force de proposition, avec un brin de malice pour trouver le chemin qui marche\n -  Rigoureux-se : vous mesurez, vous testez, vous documentez\nCe que nous proposons  - De vrais sujets, une équipe qui livre vite, de l'autonomie\n - Télétravail partiel, mutuelle, tickets restaurant, RTT",
+   "dateCreation": "2026-10-21T04:31:54.917Z",
+   "dateActualisation": "2026-10-21T04:31:54.917Z",
+   "lieuTravail": {
+    "libelle": "31 - Toulouse",
+    "codePostal": "31000",
+    "commune": "31555"
+   },
+   "romeCode": "M1811",
+   "romeLibelle": "Data engineer",
+   "appellationlibelle": "Architecte de données informatiques",
+   "entreprise": {
+    "nom": "Signe+"
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "Expérience exigée",
+   "salaire": {
+    "libelle": "Annuel de 40000.0 Euros à 44993.0 Euros"
+   },
+   "dureeTravailLibelle": "35H/semaine\nTravail en journée",
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "qualificationCode": "9",
+   "qualificationLibelle": "Cadre",
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8111193",
+    "partenaires": [
+     {
+      "nom": "BEETWEEN",
+      "url": "https://app.beetween.com/WeaselWeb/p/#/apply/job/0icyexe7bt8/data-engineer",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/beetween80.png"
+     }
+    ]
+   },
+   "contexteTravail": {
+    "horaires": [
+     "35H/semaine\nTravail en journée"
+    ]
+   },
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8106618",
+   "intitule": "Data Engineer (Cloud GCP) - Confirmé H/F - 92 h/f",
+   "description": "Rejoignez VISEO et vivez une aventure humaine, collective et stimulante !\n\nChez VISEO, nous plaçons l'Humain, le Collectif et le Challenge au cœur de notre ADN. Et si votre prochaine aventure professionnelle commençait ici ?\n\nCe que nous allons faire ensemble ?\n\nDécouvrez comment votre quotidien sera transformé en rejoignant l'équipe Cloud Data Platfom. Vous pourrez :\n\nAccompagner et conseiller le client dans l' adoption des Modern Data Platform sur GCP (Etude d'architecture, préparation des DAT, FinOps, DevOps) ;\n\nConcevoir des architectures Cloud Data exploitant efficacement les services de données managés de GCP ;\n\nPiloter et contribuer aux projets de déploiement des Modern Data Platforms (Applications Cloud Native, Migration d'applications existantes) ;\n\nEtablir des relations de confiance avec les décideurs techniques et métiers afin de favoriser l'adoption du Cloud GCP à long terme au sein ;\n\nFournir une expertise technique approfondie aux équipes projets ;\n\nAssister et former le client sur les usages et outils Data du Cloud GCP ;\n\nAssurer une veille technologique continue sur les tendances du marché et les évolutions concurrentielles ;\n\nGarantir les aspects qualité (robustesse, performance, justesse, évolutivité, lisibilité) ;\n\nApprendre et partager vos connaissances et idées au sein d'un collectif animé par la technique.\n\nCe que nous avons à vous offrir ?\n\nDes formations, des certifications et un système de mentoring ;\n\nUn environnement stimulant, souple et agile pour des parcours sans limite ;\n\nUn engagement fort pour l'environnement, la société, l'égalité et l'inclusion : la plateforme Vendredi, atelier fresque du climat, Café Joyeux, l'institut Imagine, Yumaincap...\n\nUne organisation flexible pour un bon équilibre vie pro / vie perso.\n\nSi pour vous être Data Engineer Cloud GCP Confirmé c'est :\n\nAvoir une expérience solide dans la mise en place des Modern Data Platform dans GCP ;\n\nMaitriser les services Data clés : Cloud Storage, BigQuery, Dataflow, Dataproc, Cloud Function, BI Engine, Workflow, Looker ;\n\nÊtre familiarisé avec les technologies de transformation de données à grande échelle (Spark, Hadoop) ;\n\nFaire grandir des profils juniors en partageant les bonnes pratiques ;\n\nAnimer ou participer à des événements techniques (internes ou externes) ;\n\nÊtre agile et savoir s'adapter\n\n...Alors, nous allons bien nous entendre !\n\nSi vous avez une expertise reconnue dans un rôle de Data Engineer et une expérience significative sur GCP, c'est le moment idéal pour étendre vos compétences, vos responsabilités et poursuivre votre parcours professionnel.\n\nPoste à pourvoir en CDI à Boulogne-Billancourt - 92",
+   "dateCreation": "2026-10-20T22:12:29.103Z",
+   "dateActualisation": "2026-10-20T22:12:29.103Z",
+   "lieuTravail": {
+    "libelle": "92 - Boulogne-Billancourt",
+    "codePostal": "92100",
+    "commune": "92012"
+   },
+   "romeCode": "M1811",
+   "romeLibelle": "Data engineer",
+   "appellationlibelle": "Data engineer",
+   "entreprise": {},
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "Expérience exigée",
+   "salaire": {},
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8106618",
+    "partenaires": [
+     {
+      "nom": "JOBINLIVE",
+      "url": "http://www.missionhandicap.com/emploi/6ad75eff295a3#utm_source=PoleEmploi",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/jobinlive80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8103388",
+   "intitule": "Data Engineer F/H",
+   "description": "Viveris est un groupe de conseil et d'ingénierie spécialisé dans la conduite et la réalisation de projets dans les domaines de l'informatique et de l'électronique.\n\nS'engager avec Viveris, c'est l'assurance de relever des défis techniques et humains tout en travaillant sur des projets innovants dans un environnement collaboratif et solidaire. \n\n        Contexte de la mission:\n \n Dans le cadre du développement de nos activités data et de la montée en puissance de nos plateformes analytiques, nous recherchons un Data Engineer pour concevoir, construire et optimiser les pipelines de données alimentant nos applications métiers, nos plateformes analytiques et nos modèles d'intelligence artificielle.Vous rejoindrez une équipe Data pluridisciplinaire (Data Engineers, Data Scientists, Data Analysts, Architectes) et interviendrez sur toute la chaîne de traitement de la donnée : ingestion, transformation, structuration, optimisation, industrialisation et monitoring.\n\nVos responsabilités:\n \n Vous serez en charge de: \n\n - Concevoir, développer et maintenir des pipelines de données robustes (batch & streaming)\n - Industrialiser la collecte, la transformation et la mise à disposition des données (ETL/ELT)\n - Assurer la qualité, la fiabilité et la disponibilité des datasets critiques\n - Participer à la modélisation et à la structuration des données (Data Lake, Data Warehouse)\n - Collaborer avec Data Scientists & Analysts pour fournir des données fiables et exploitables\n - Contribuer aux choix techniques et à l'évolution de l'architecture data\n - Documenter les pipelines, les schémas et les bonnes pratiques d'exploitation\n\n\n\n\n\n\n\n\n  \n Profil recherché:\n \n Diplômé(e) d'une école d'ingénieur ou d'un Master (Bac+5) en informatique, mathématiques, data engineering ou domaine équivalent.Vous justifiez d'une première expérience réussie en Data Engineering, idéalement dans un environnement cloud ou distribué.\nVous êtes reconnu(e) pour :\n\n - votre sens du détail et votre rigueur technique\n - votre capacité d'analyse et de résolution de problèmes\n - votre autonomie, votre organisation et votre capacité à travailler en équipe\n - votre intérêt pour les architectures data modernes et les bonnes pratiques DevOps\n\n\nLa maîtrise de l'anglais professionnel est un plus selon les projets.\n\nCompétences techniques:\n\n - Python / SQL\n - Spark / PySpark (ou équivalent)\n - ETL/ELT et traitements batch & streaming\n - AWS, Azure ou GCP\n - Data Lake / Data Warehouse (S3, ADLS, BigQuery, Snowflake...)\n - Architectures distribuées : Spark, Databricks, Hadoop\n - Tests automatiques, observabilité des pipelines\n - Catalogage & gouvernance (Data Catalog, Data Quality tools)\n\n\nNos avantages:\n \n\n - Rémunération attractive et évolutive\n - Assurance santé DKV\n - Assurance groupe\n - Tickets restaurant\n - Voiture de fonction ou plan mobilité (sous conditions)\n - Primes d'intéressement, de participation et de cooptation\n - Jusqu'à 2 jours de télétravail par semaine\n - Formation continue via LinkedIn Learning\n\n",
+   "dateCreation": "2026-10-20T14:34:38.074Z",
+   "dateActualisation": "2026-10-20T14:34:38.074Z",
+   "lieuTravail": {
+    "libelle": "Belgique"
+   },
+   "romeCode": "M1811",
+   "romeLibelle": "Data engineer",
+   "appellationlibelle": "Data manager",
+   "entreprise": {
+    "nom": "VIVERIS"
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "1 An(s)",
+   "salaire": {
+    "libelle": "Annuel de 40000.0 Euros à 45000.0 Euros - assurance, tickets restaurants ",
+    "commentaire": "assurance, tickets restaurants "
+   },
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "qualificationCode": "9",
+   "qualificationLibelle": "Cadre",
+   "codeNAF": "62.02A",
+   "secteurActivite": "62",
+   "secteurActiviteLibelle": "Conseil en systèmes et logiciels informatiques",
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8103388",
+    "partenaires": [
+     {
+      "nom": "TALENTPLUG",
+      "url": "http://app.mytalentplug.com/redirection.aspx?ojid=wpqT5L+JIjzLkd7aHFKYeA==",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/talentplug80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8101732",
+   "intitule": "Data Engineer - Transport - Lille H/F",
+   "description": "En tant qu'organisateur de forums de recrutement, Talents Handicap accompagne de très nombreuses entreprises & organisations en France dans leurs recrutements de collaborateurs en situation de handicap. Participant actuellement à l'un de nos forums.\nL'entreprise Sopra Steria recherche actuellement des profils :\nDescription de l'entreprise\nÀ propos de Sopra Steria\nSopra Steria, acteur majeur de la Tech en Europe, avec collaborateurs dans près de 30 pays, est reconnu pour ses activités de conseil, de services et solutions numériques. Il aide ses clients à mener leur transformation digitale et à obtenir des bénéfices concrets et durables. Le Groupe apporte une réponse globale aux enjeux de compétitivité des grandes entreprises et organisations, en combinant une connaissance approfondie des secteurs d'activité et des technologies à une approche collaborative. Sopra Steria place l'humain au cœur de son action et s'engage auprès de ses clients à tirer le meilleur parti du numérique pour construire un avenir positif. En , le Groupe a réalisé un chiffre d'affaires de 5,6 milliards d'euros.\nThe world is how we shape it*\nDescription du poste\nVotre futur environnement de travail \nLes équipes Sopra Steria Transport accompagnent au quotidien leurs clients pour optimiser les plans de transports, superviser la circulation, planifier la gestion des ressources et de la capacité, tout cela pour permettre d'augmenter la part modale du transport ferroviaire et urbain. Cette contribution est déterminante pour aider nos clients à concrétiser les enjeux de transition énergétique portés par le secteur.\nLes projets, réalisées quasi-exclusivement en engagement de résultats, portent sur la mise en œuvre de solutions temps réel, à fort enjeux de performances ou encore de redesign de SI historiques pour les adapter aux nouvelles attentes des métiers.\nPour avoir la capacité de traiter ces enjeux technologiques de pointe, l'équipe Transport regroupe une large communauté d'experts tech (Architectes solutions, architectes techniques, experts techniques, leader technique, responsables de développements, team leader).\nVotre rôle et vos missions : \nAu sein d'une équipe Agile, accompagné par un chef de projet, en tant que Data Engineer et dans le cadre de nos projets de data management dans secteur du Transport, vous intervenez dans le cadre de développement de projet BI (incluant la réalisation de datamarts, cubes ou rapports) complexes et à forte valeur ajoutée (Pilotage des trains, reporting financier, gestion des conducteurs). Votre rôle est donc prépondérant dans la réussite du projet. \nVous intervenez sur toute la chaîne de valeur du cycle projet :\n- Vous rédigez des spécifications fonctionnelles générales ou détaillées sur la base d'expression de besoins\n- Vous participez à la conception et au développement des applications Big Data, les tester, les faites évoluer et assurer leur maintenance.\n- Vous assurez l'intégrité et la qualité de la donnée sur tout le processus d'ETL\n- Vous industrialisez et optimisez la gestion des flux de données\n- Vous participez à la conception de l'architecture et l'infrastructure de nos systèmes de collecte et de traitement des données.\n- Vous pilotez et accompagnez les utilisateurs durant les phases de recette\n- Vous accompagnez des key users et des utilisateurs finaux dans l'usage des nouveaux rapports (formations, support...)\n- Vous contribuez à l'amélioration du reporting et du pilotage de la performance.\nGrâce à votre excellent esprit collectif vous avez à cœur de partager votre savoir et contribuer à la progression des membres de l'équipe.\nEnvironnement technologique riche : Talend, Power BI, Cloud computing, Java, Python, PostgreSQL, Cloudera, Spark...\nEt ce n'est pas tout, nous vous accompagnons tout au long de votre carrière en mode proximité. Demain vous ferez partie de notre team de consultants expérimentés, chefs de projet, expert(e)s métier... Tout est possible avec la Sopra Steria Academy !\nQualifications\nDiplômé d'une école d'Ingénieurs ou formation équivalente en informatique, en Data sciences ou Big Data / Architecture Data, vous justifiez d'une première expérience réussie sur un poste similaire.\nAutonome et curieux, vous êtes reconnu pour votre adaptabilité, votre esprit d'analyse et de synthèse et votre goût du challenge et de l'innovation.\nAlors sans plus attendre, intégrez une entreprise où règne un esprit entrepreneurial fort et une atmosphère propice à votre évolution : participez à une transformation durable et énergétique grâce à une véritable aventure humaine au sein d'un grand groupe international.\nInformations supplémentaires\nUn accord télétravail pour télétravailler jusqu'à 2 jours par semaine selon vos missions.\nUn package avantages intéressants : une mutuelle, un CSE, des titres restaurants, un accord d'intéressement, et des primes vacances.\nPlusieurs centaines de formations accessibles en toute autonomie depuis l'app mobile avec Sopra Steria Academy\nLa possibilité de s'enga...",
+   "dateCreation": "2026-10-20T13:30:25.678Z",
+   "dateActualisation": "2026-10-23T13:37:55.309Z",
+   "lieuTravail": {
+    "libelle": "67 - Nordheim",
+    "codePostal": "67520",
+    "commune": "67335"
+   },
+   "romeCode": "N1209",
+   "romeLibelle": "Technicien / Technicienne logistique",
+   "appellationlibelle": "Technicien / Technicienne logistique transport",
+   "entreprise": {},
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "D",
+   "experienceLibelle": "Débutant accepté",
+   "salaire": {},
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8101732",
+    "partenaires": [
+     {
+      "nom": "DIRECTEMPLOI",
+      "url": "https://www.directemploi.com/candidatOffre/56758575?utm_source=pole-emploi&utm_medium=referral&utm_campaign=Pôle-Emploi",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/directemploi80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8098722",
+   "intitule": "Data Engineer / Big Data (H/F) - Expert GCP, Kafka, Spark, Scala, Cassandra",
+   "description": "Nous recherchons un(e) Data Engineer passionné(e) par le Big Data et les architectures distribuées pour concevoir, optimiser et déployer des solutions data à grande échelle.\nMissions principales :\nConcevoir, développer et maintenir des pipelines data robustes et scalables.\nTravailler sur des architectures distribuées (Kafka, Spark, Cassandra).\nOptimiser les traitements de données sur GCP (BigQuery, Dataflow, Dataproc, etc.).\nCollaborer avec les équipes Data Science et DevOps pour industrialiser les solutions.\nAssurer la performance, la fiabilité et la sécurité des infrastructures data.",
+   "dateCreation": "2026-10-20T13:24:25.678Z",
+   "dateActualisation": "2026-10-23T12:57:41.098Z",
+   "lieuTravail": {
+    "libelle": "92 - Boulogne-Billancourt",
+    "codePostal": "92100",
+    "commune": "92012"
+   },
+   "romeCode": "M1811",
+   "romeLibelle": "Data engineer",
+   "appellationlibelle": "Expert / Experte technique big data",
+   "entreprise": {},
+   "typeContrat": "MIS",
+   "typeContratLibelle": "Intérim - 1 Mois",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "D",
+   "experienceLibelle": "Débutant accepté",
+   "salaire": {},
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "codeNAF": "78.10Z",
+   "secteurActivite": "78",
+   "secteurActiviteLibelle": "Activités des agences de placement de main-d'œuvre",
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8098722",
+    "partenaires": [
+     {
+      "nom": "DIRECTEMPLOI",
+      "url": "https://www.directemploi.com/candidatOffre/56458360?utm_source=pole-emploi&utm_medium=referral&utm_campaign=Pôle-Emploi",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/directemploi80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8076233",
+   "intitule": "Data Engineer - Transport - Lille (H/F)",
+   "description": "\n            Description de l'entrepriseÀ propos de Sopra SteriaSopra Steria, acteur majeur de la Tech en Europe, avec 51000 collaborateurs dans près de 30 pays, est reconnu pour ses activités de conseil, de services et solutions numériques. Il aide ses clients à mener leur transformation digitale et à obtenir des bénéfices concrets et durables. Le Groupe apporte une réponse globale aux enjeux de compétitivité des grandes entreprises et organisations, en combinant une connaissance approfondie des secteurs d'activité et des technologies à une approche collaborative. Sopra Steria place l'humain au cœur de son action et s'engage auprès de ses clients à tirer le meilleur parti du numérique pour construire un avenir positif. En 2025, le Groupe a réalisé un chiffre d'affaires de 5,6 milliards d'euros.\n\nThe world is how we shape it*Description du posteVotre futur environnement de travail Les équipes Sopra Steria Transport accompagnent au quotidien leurs clients pour optimiser les plans de transports, superviser la circulation, planifier la gestion des ressources et de la capacité, tout cela pour permettre d'augmenter la part modale du transport ferroviaire et urbain. Cette contribution est déterminante pour aider nos clients à concrétiser les enjeux de transition énergétique portés par le secteur.Les projets, réalisées quasi-exclusivement en engagement de résultats, portent sur la mise en œuvre de solutions temps réel, à fort enjeux de performances ou encore de redesign de SI historiques pour les adapter aux nouvelles attentes des métiers.Pour avoir la capacité de traiter ces enjeux technologiques de pointe, l'équipe Transport regroupe une large communauté d'experts tech (Architectes solutions, architectes techniques, experts techniques, leader technique, responsables de développements, team leader).Votre rôle et vos missions : Au sein d'une équipe Agile, accompagné par un chef de projet, en tant que Data Engineer et dans le cadre de nos projets de data management dans secteur du Transport, vous intervenez dans le cadre de développement de projet BI (incluant la réalisation de datamarts, cubes ou rapports) complexes et à forte valeur ajoutée (Pilotage des trains, reporting financier, gestion des conducteurs). Votre rôle est donc prépondérant dans la réussite du projet. Vous intervenez sur toute la chaîne de valeur du cycle projet :- Vous rédigez des spécifications fonctionnelles générales ou détaillées sur la base d'expression de besoins- Vous participez à la conception et au développement des applications Big Data, les tester, les faites évoluer et assurer leur maintenance.- Vous assurez l'intégrité et la qualité de la donnée sur tout le processus d'ETL- Vous industrialisez et optimisez la gestion des flux de données- Vous participez à la conception de l'architecture et l'infrastructure de nos systèmes de collecte et de traitement des données.- Vous pilotez et accompagnez les utilisateurs durant les phases de recette- Vous accompagnez des key users et des utilisateurs finaux dans l'usage des nouveaux rapports (formations, support...)- Vous contribuez à l'amélioration du reporting et du pilotage de la performance.Grâce à votre excellent esprit collectif vous avez à cœur de partager votre savoir et contribuer à la progression des membres de l'équipe.Environnement technologique riche : Talend, Power BI, Cloud computing, Java, Python, PostgreSQL, Cloudera, Spark...Et ce n'est pas tout, nous vous accompagnons tout au long de votre carrière en mode proximité. Demain vous ferez partie de notre team de consultants expérimentés, chefs de projet, expert(e)s métier... Tout est possible avec la Sopra Steria Academy !QualificationsDiplômé d'une école d'Ingénieurs ou formation équivalente en informatique, en Data sciences ou Big Data / Architecture Data, vous justifiez d'une première expérience réussie sur un poste similaire.\n\nAutonome et curieux, vous êtes reconnu pour votre adaptabilité, votre esprit d'analyse et de synthèse et votre goût du challenge et de l'innovation.\n\nAlors sans plus attendre, intégrez une entreprise où règne un esprit entrepreneurial fort et une atmosphère propice à votre évolution : participez à une transformation durable et énergétique grâce à une véritable aventure humaine au sein d'un grand groupe international.Informations supplémentairesUn accord télétravail pour télétravailler jusqu'à 2 jours par semaine selon vos missions.Un package avantages intéressants : une mutuelle, un CSE, des titres restaurants, un accord d'intéressement, et des primes vacances.Plusieurs centaines de formations accessibles en toute autonomie depuis l'app mobile avec Sopra Steria AcademyLa possibilité de s'engager auprès de notre fondation ou de notre partenaire « Vendredi ».De très nombreuses opportunités en CDI peuvent vous attendre à l'issue de l'alternance.Employeur inclusif et engagé, notre société œuvre chaque jour pour lutter contre toute forme de discrimination et favoriser un environnement de travail respectueu...",
+   "dateCreation": "2026-10-20T05:30:57.884Z",
+   "dateActualisation": "2026-10-20T05:30:57.884Z",
+   "lieuTravail": {
+    "libelle": "59 - Lezennes",
+    "codePostal": "59260",
+    "commune": "59346"
+   },
+   "romeCode": "M1811",
+   "romeLibelle": "Data engineer",
+   "appellationlibelle": "Data engineer",
+   "entreprise": {},
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "0 An(s)",
+   "salaire": {},
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "qualificationCode": "7",
+   "qualificationLibelle": "Technicien",
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8076233",
+    "partenaires": [
+     {
+      "nom": "TALENTS_HANDICAP",
+      "url": "https://www.talents-handicap.com/165-sopra-steria/347348-data-engineer-transport-lille?src=FranceTravail",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/talents_handicap80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8075966",
+   "intitule": "Data engineer (H/F)",
+   "description": "Description de l'entrepriseRejoignez un cabinet de conseil international qui accompagne les grandes transformations stratégiques.Nous sommes Wavestone : des expert-es passionné-es et orienté-es solutions, qui placent l'humain au cœur de la performance et de la croissance. Ambitieux-ses et en pleine expansion, nous développons sans cesse notre portefeuille de clients et de projets, avec une portée internationale et une réelle volonté de générer un impact positif.Êtes-vous un vrai team player, porté par des valeurs fortes ? Êtes-vous curieux-se et déterminé-e, avec l'envie d'apprendre chaque jour ? Êtes-vous du genre à relever les défis sans hésiter ? Alors vous êtes au bon endroit. Rejoignez Wavestone et exprimez votre potentiel dans un environnement stimulant et collaboratif, où l'on transforme les défis d'aujourd'hui en opportunités de demain.Description du posteVotre équipeVous rejoignez la Business Unit AI, une communauté de près de 200 consultants Data & IA qui accompagnent les entreprises de bout en bout :définition de cas d'usage à fort impact,conception de plateformes Data & IA,déploiement de solutions à l'échelle,mise en place de gouvernance responsable.Role overviewLe rôle de Consultant-e Data & AI Engineer - Jeune diplômé-e combine engineering et conseil, avec un positionnement au cœur du déploiement concret de solutions Data & IA.Vous développerez rapidement des compétences techniques (data, ML, GenAI) et métier, en intervenant sur des projets variés, encadré-e par des experts.Vos responsabilitésEn tant que Consultant-e Data & AI Engineer, vous interviendrez progressivement sur les tâches suivantes :Participer à l'identification et à la priorisation de cas d'usage IA à fort impact métierContribuer à la conception et à l'industrialisation de solutions Data & IA (génératives, prédictives, agents)Intervenir sur la mise en place de plateformes Data & IA (Data Mesh, Lakehouse, architectures sécurisées)Concevoir, entraîner et évaluer des modèles ML / LLM (RAG, fine-tuning, embeddings)Développer des pipelines data et des agents IA (Python, APIs, orchestrations)Monter en compétences sur l'industrialisation via DevOps, DataOps, MLOps / LLMOps (CI/CD, monitoring, gouvernance)Participer à la structuration de la gouvernance Data & IA (sécurité, conformité, RGPD, AI Act)Contribuer à l'acculturation des équipes et à la conduite du changement autour des usages IARéaliser une veille technologique continue sur les solutions Data, IA et GenAIContribuer à la vie de la communauté Data & IA Wavestone (partage, R&D, offres)Exemples de tâchesDéploiement de plateformes Data & IA pour industrialiser des cas d'usage métierDéveloppement d'agents IA (copilotes, assistants) pour automatiser des tâches et améliorer la productivitéConception d'architectures data modernes (Lakehouse, pipelines temps réel)Mise en production de modèles IA dans des environnements cloud sécurisésAccompagnement des clients sur la gouvernance et l'adoption des solutions IAQualificationsVos compétences - Hard skillsBases en Python, développement ou data engineeringNotions en machine learning / IAConnaissance des architectures data (Data Lake, Lakehouse, pipelines)Sensibilisation aux environnements cloud : Azure, AWS ou GCPIntérêt pour la Generative AI (LLM, RAG, agents)Notions de DevOps / CI-CD Vos compétences - Soft skillsCuriosité et envie d'apprendre rapidementEsprit d'analyse et de structurationGoût du travail en équipeAutonomie et sens des responsabilitésAisance en communicationCe que vous apportez :Must-have Jeune diplômé-e d'une grande école d'ingénieurs ou de commerce (Diplôme d'Ingénieur, PGE)Spécialisation ou appétence forte pour la data, l'IA ou le digitalBases techniques acquises via projets ou stagesMotivation pour évoluer en conseil et engineering Data & IANice-to-haveStage ou projet en Data, IA ou développementExposition à des outils type Spark, Kafka, Airflow, ou frameworks MLSensibilité aux enjeux de gouvernance ou IA responsableLanguesFrançais : un niveau courant est requis pour ce posteAnglais : un niveau minimum C1 est requis pour ce posteInformations supplémentairesCe que nous offronsUn parcours d'intégration dédié aux jeunes diplômé-e-sUn accompagnement de proximité (mentorat, feedbacks)Des formations techniques (Cloud, Data, GenAI) et conseilDes tâches à fort impact chez des clients grands comptesUne communauté Data & IA dynamiqueDe fortes opportunités d'évolution en France et à l'internationalData Engineer - AI Engineer - Generative AI - LLM - RAG - Data Platform - Cloud Computing - MLOps - Data Engineering - Junior ConsultantParce que votre réussite est notre priorité, nous adaptons nos processus de recrutement et l'environnement de travail à vos besoins spécifiques ou situations de santé (aménagements de poste,",
+   "dateCreation": "2026-10-20T05:01:30.279Z",
+   "dateActualisation": "2026-10-25T04:02:17.777Z",
+   "lieuTravail": {
+    "libelle": "92 - Nanterre",
+    "codePostal": "92000",
+    "commune": "92050"
+   },
+   "romeCode": "M1811",
+   "romeLibelle": "Data engineer",
+   "appellationlibelle": "Data engineer",
+   "entreprise": {
+    "nom": "Forums Talents Handicap"
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "D",
+   "experienceLibelle": "Débutant accepté",
+   "salaire": {},
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8075966",
+    "partenaires": [
+     {
+      "nom": "HANDICAP_JOB",
+      "url": "https://www.handicap-job.com/recherche/detail/oid/6703105/consultant-e-data-et-ai-engineer-jeune-diplome-e-hf.html",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/handicap_job80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8064158",
+   "intitule": "Calibration Data Infrastructure Engineer (H/F)",
+   "description": "Alice & Bob développe le premier ordinateur quantique universel tolérant aux fautes, destiné à résoudre certains des problèmes parmi les plus complexes au monde. L'ordinateur quantique que nous concevons repose sur un nouveau type de qubit supraconducteur : le qubit de Schrödinger « cat » ?. Comparée aux autres plateformes supraconductrices, cette technologie permet une correction d'erreurs quantiques autonome, ouvrant la voie à des systèmes plus fiables et plus scalables.\nNous sommes une équipe internationale de plus de 140 talents issus de plus de 20 pays, réunis autour d'un objectif commun : révolutionner l'informatique grâce à une machine quantique tolérante aux fautes et réellement exploitable. Êtes-vous prêt à relever des défis sans précédent et à contribuer à façonner l'avenir du calcul quantique ?\nContexte du poste:\nL'équipe Calibration automatise les calibrations de notre Quantum Processing Unit (QPU) à qubits cat afin d'en maximiser les performances et de maintenir le processeur en conditions opérationnelles. Ces calibrations automatiques génèrent de grands volumes de données : résultats de calibration, logs d'erreurs, métriques de performance et diagnostics matériels.\nAujourd'hui, répondre à des questions simples telles que « Quel est le taux de succès des recalibrations nocturnes sur le dernier mois et où surviennent les échecs - » nécessite encore une collecte manuelle fastidieuse des logs.\nEn tant que Calibration Data Infrastructure Engineer, vous concevez et implémentez l'infrastructure de données qui rend ce type de questions triviales à analyser. Vous construisez des systèmes permettant de stocker, organiser et interroger les résultats de calibration, afin de faciliter des analyses transverses sur les performances, les défaillances matérielles et les problématiques d'analyse. Votre travail est central pour quantifier l'exécution des calibrations à plusieurs niveaux et accélérer la fiabilité opérationnelle du QPU.\n\n\nLe poste : \n\n\n- Concevoir et implémenter des systèmes robustes de stockage et de restitution des données de calibration, logs d'erreurs et métriques de performance.\n - Développer des pipelines permettant de collecter, normaliser et indexer automatiquement les sorties de calibration pour faciliter les requêtes et les analyses globales.\n - Construire des outils et des APIs permettant aux scientifiques et ingénieurs de répondre rapidement à des questions opérationnelles (taux de succès, points de défaillance, dérives temporelles).\n - Mettre en place des frameworks d'analyse de séries temporelles afin de suivre la dynamique des calibrations, détecter les anomalies et générer des rapports.\n - Définir des standards pour les schémas de données, la traçabilité, la rétention et la reproductibilité des résultats de calibration.\n - Apporter de la visibilité via des rapports automatisés sur les performances de calibration, la fiabilité matérielle et la qualité des analyses.\n - Accompagner les ingénieurs et contribuer à la stratégie long terme de l'infrastructure de données de calibration.\n \n\n\nProfil recherché : \n\n\n- Minimum 5 ans d'expérience en ingénierie back-end, infrastructure data ou DevOps sur des systèmes en production.\n - Excellente maîtrise de Python et expérience avec des frameworks de data engineering (Pandas, SQLAlchemy, Spark ou équivalents).\n - Expertise sur les bases de données de séries temporelles (TimescaleDB, InfluxDB, Prometheus) et les systèmes d'agrégation de logs (ELK, Grafana ou équivalents).\n - Expérience avérée dans la conception de pipelines de données scalables et d'APIs pour des données scientifiques ou liées à du matériel.\n - Bonne connaissance des stacks d'observabilité (métriques, logs, traces) et de la création de dashboards pour des utilisateurs techniques.\n - Familiarité avec l'analyse statistique et la détection d'anomalies, avec une capacité à collaborer avec des scientifiques sur l'intégration de modèles.\n - Solide compréhension des environnements CI/CD, des stratégies de test et de la reproductibilité dans des contextes scientifiques ou hardware-in-the-loop.\n - Excellentes compétences en communication et capacité à traduire des besoins opérationnels en solutions techniques.\n \n",
+   "dateCreation": "2026-10-19T11:21:49.905Z",
+   "dateActualisation": "2026-10-19T11:21:49.905Z",
+   "lieuTravail": {
+    "libelle": "75 - Paris 15e Arrondissement",
+    "codePostal": "75015",
+    "commune": "75115"
+   },
+   "romeCode": "M1868",
+   "romeLibelle": "Architecte base de données",
+   "appellationlibelle": "Architecte de bases de données",
+   "entreprise": {
+    "nom": "Les Colettes Sourcing"
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "2 An(s)",
+   "salaire": {},
+   "complementExercice": "Temps plein",
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8064158",
+    "partenaires": [
+     {
+      "nom": "PMEJOB",
+      "url": "https://www.jobposting.pro/emploi-2727195-120",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/pmejob80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8044981",
+   "intitule": "Consultant.e Confirmé.e - Data Platform Engineer (H/F)",
+   "description": "\n            Description de l'entrepriseRejoignez un cabinet de conseil international qui accompagne les grandes transformations stratégiques.Nous sommes Wavestone : des expert-es passionné-es et orienté-es solutions, qui placent l'humain au cœur de la performance et de la croissance. Ambitieux-ses et en pleine expansion, nous développons sans cesse notre portefeuille de clients et de projets, avec une portée internationale et une réelle volonté de générer un impact positif.Êtes-vous un vrai team player, porté par des valeurs fortes ? Êtes-vous curieux-se et déterminé-e, avec l'envie d'apprendre chaque jour ? Êtes-vous du genre à relever les défis sans hésiter ? Alors vous êtes au bon endroit. Rejoignez Wavestone et exprimez votre potentiel dans un environnement stimulant et collaboratif, où l'on transforme les défis d'aujourd'hui en opportunités de demain.Description du posteRejoindre la Business Unit AI, c'est intégrer une équipe de près de 200 consultant-e-s passionné-e-s qui accompagnent les grandes organisations dans la transformation de leurs modèles par la donnée et l'intelligence artificielle. Nous intervenons de bout en bout, de la détection de cas d'usage IA à fort impact métier à la conception de plateformes technologiques de pointe, jusqu'à la définition de modèles de gouvernance responsables et scalables. Nous opérons auprès de clients grands comptes, en France et à l'international, en synergie avec les autres expertises du cabinet pour maximiser l'impact de nos interventions. En tant que Consultant.e Expérimenté.e en data platform, vous serez amené.e à jouer un rôle clé dans la conception, et la mise en ouvre de plateformes Data & AI. Vous serez au coeur de l'évolution des SI de nos clients avec un apport attendue sur :Gestion de projet data et architecture :Participer à la conception des architectures de plateforme Data & AI cloud, hybrides ou on-premises liant solutions cloud (GCP, AWS, Azure, OVH, Blue, etc.), pure players du marché (Dataiku, Databricks, Snowflakes, etc.) et solutions spécifiques développées sur mesure, adaptées aux besoins métier et techniques des clients.Garantir l'alignement des solutions proposées avec les principes de gouvernance, de sécurité et de performance.Conception et déploiement de solutions :Déployer des plateformes AI & Data scalables, incluant des solutions de stockage (data lakes, data warehouses, lakehouse) et des pipelines d'intégration (ETL/ELT).Intégrer des outils modernes pour orchestrer, superviser et optimiser les flux de données.Mettre en place des architectures orientées événement (streaming) pour répondre à des besoins en temps réel.Innovation et expertise technique :Réaliser des benchmarks de technologies data et IA (solutions cloud, outils d'orchestration, moteurs analytiques, outils de développement, de visualisation, outils de management de modèles, système de base de données).QualificationsNous cherchons des candidat.e.s avec une envie d'apprendre et de se challenger dans un environnement dynamique et en constante évolution.Type de profil : Diplômé.e d'une grande école d'ingénieurs, école de commerce ou université avec spécialisation data / IA.1 à 3 ans d'expérience en CDI en conseil, data, IA ou environnement technologique exigeant.Intérêt marqué pour les enjeux business et transformation liés à l'IA.Français et anglais professionnels.Compétences appréciées en architecture data : Bonne compréhension des concepts fondamentaux des data platforms et de l'architecture des SI (Infrastructure bas niveau, réseau, protocole d'échange, API, conteneurisation, infra as code, etc.),Un première connaissance des solutions du marché nécessaires pour le développement de cas d'usage data et IA.Compétences appréciées en gestion de projet et travail d'équipe :Communication claire, structurée et professionnelle, à la fois avec des interlocuteurs métiers et techniques.Autonomie, fiabilité et respect des engagements (qualité, délais).Sens du collectif et contribution active à la vie de l'équipe (mentorat de juniors, partage de connaissances).Informations supplémentairesEn rejoignant Wavestone, vous bénéficierez de : Carreer model: une carrière sur mesure, cela signifie pour nous des possibilités de développement individuel. Notre Wavestone Horizon vous permet une évolution rapide de votre parcours et de la dynamique salariale. Further training: let's grow together ! Vous avez accès à un vaste catalogue de formations et de certifications (cloud, DevOps, GenAI, etc.) pour vous former continuellement. Smartworking: le travail flexible et mobile fait partie de notre ADN et permet un cadre adéquat de collaboration. A Great Place To Work: nous sommes reconnus comme Great Place To Work 2025, nous classant numéro un dans notre catégorie parmi les organisations de plus de 2500 employés (France). Parce que votre réussite est notre priorité, nous adaptons nos processus de recrutement et l'environnement de travail à vos besoins spécifiques ou situations de santé (aménageme...",
+   "dateCreation": "2026-10-19T05:31:00.696Z",
+   "dateActualisation": "2026-10-19T05:31:00.696Z",
+   "lieuTravail": {
+    "libelle": "92 - Nanterre",
+    "codePostal": "92000",
+    "commune": "92050"
+   },
+   "romeCode": "M1811",
+   "romeLibelle": "Data engineer",
+   "appellationlibelle": "Expert / Experte big data",
+   "entreprise": {},
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "0 An(s)",
+   "salaire": {},
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "qualificationCode": "7",
+   "qualificationLibelle": "Technicien",
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8044981",
+    "partenaires": [
+     {
+      "nom": "TALENTS_HANDICAP",
+      "url": "https://www.talents-handicap.com/315-wavestone/347128-consultant-e-confirme-e-data-platform-engineer-h-f-10?src=FranceTravail",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/talents_handicap80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8044960",
+   "intitule": "Senior Consultant - Data & AI Engineer (H/F/X) ",
+   "description": "\n            Description de l'entrepriseRejoignez un cabinet de conseil international qui accompagne les grandes transformations stratégiques.Nous sommes Wavestone : des expert-es passionné-es et orienté-es solutions, qui placent l'humain au cœur de la performance et de la croissance. Ambitieux-ses et en pleine expansion, nous développons sans cesse notre portefeuille de clients et de projets, avec une portée internationale et une réelle volonté de générer un impact positif.Êtes-vous un vrai team player, porté par des valeurs fortes ? Êtes-vous curieux-se et déterminé-e, avec l'envie d'apprendre chaque jour ? Êtes-vous du genre à relever les défis sans hésiter ? Alors vous êtes au bon endroit. Rejoignez Wavestone et exprimez votre potentiel dans un environnement stimulant et collaboratif, où l'on transforme les défis d'aujourd'hui en opportunités de demain.Description du posteVous rejoignez la Business Unit AI, une communauté de +500 consultants IA & Data, renforcée depuis septembre 2026 par l'intégration d'AI Builders. Nous accompagnons les organisations de bout en bout : identification de cas d'usage IA à fort impact métier, conception de plateformes Data & IA performantes, et définition de modèles de gouvernance responsables et scalables. Nous ne faisons pas de l'IA de démonstration. Nos équipes conçoivent, déploient et font évoluer des solutions utilisées en production. Nous travaillons avec Microsoft, Google, AWS, Mistral, Anthropic, Databricks et Dataiku, tout en conservant une approche indépendante et orientée valeur client. Votre rôle Vous prenez en charge des chantiers Data & AI Engineering, de la conception détaillée à la mise en production, avec une autonomie croissante dans la relation client. Vos responsabilités Donner la direction Traduire les besoins en solutions robustes et maintenables. Choisir les patterns adaptés de traitement, qualité et exposition. Conduire le delivery et faire grandir les équipes Piloter un chantier et accompagner des consultants plus juniors. Sécuriser tests, CI/CD, observabilité et documentation. Développer la relation client et le business Contribuer aux qualifications et propositions techniques. Identifier les améliorations et suites de mission. Exemples de missions Construire des pipelines et data products cloud. Industrialiser une chaîne de traitement Data & IA. Moderniser un socle Data existant. Qualifications3 ans d'expérience ou plus en Data Engineering. SQL, Python, cloud, orchestration et CI/CD. Autonomie, rigueur et anglais professionnel. Français et anglais courants pour évoluer dans des contextes internationaux (clients, partenaires, communautés internes).Informations supplémentairesEn rejoignant Wavestone, vous bénéficierez de : Carreer model: une carrière sur mesure, cela signifie pour nous des possibilités de développement individuel. Notre Wavestone Horizon vous permet une évolution rapide de votre parcours et de la dynamique salariale. Further training: let's grow together ! Vous avez accès à un vaste catalogue de formations et de certifications (cloud, DevOps, GenAI, etc.) pour vous former continuellement. Smartworking: le travail flexible et mobile fait partie de notre ADN et permet un cadre adéquat de collaboration. A Great Place To Work: nous sommes reconnus comme Great Place To Work 2025, nous classant numéro un dans notre catégorie parmi les organisations de plus de 2500 employés (France). Parce que votre réussite est notre priorité, nous adaptons nos processus de recrutement et l'environnement de travail à vos besoins spécifiques ou situations de santé (aménagements de poste, tiers-temps, outils adaptés...). Cette démarche, confidentielle et fondée sur l'équité, garantit à chaque candidat-e les meilleures conditions pour exprimer son plein potentiel dès le processus de recrutement, lors de sa prise de poste et tout au long de sa carrière.\n            ",
+   "dateCreation": "2026-10-19T05:30:59.269Z",
+   "dateActualisation": "2026-10-19T05:30:59.269Z",
+   "lieuTravail": {
+    "libelle": "92 - Nanterre",
+    "codePostal": "92000",
+    "commune": "92050"
+   },
+   "romeCode": "M1811",
+   "romeLibelle": "Data engineer",
+   "appellationlibelle": "Expert / Experte big data",
+   "entreprise": {},
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "0 An(s)",
+   "salaire": {},
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "qualificationCode": "7",
+   "qualificationLibelle": "Technicien",
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8044960",
+    "partenaires": [
+     {
+      "nom": "TALENTS_HANDICAP",
+      "url": "https://www.talents-handicap.com/315-wavestone/347122-senior-consultant-data-ai-engineer-h-f-x-2?src=FranceTravail",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/talents_handicap80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8042087",
+   "intitule": "DATA ENGINEER / INTÉGRATION SI H/F",
+   "description": "RESPONSABILITÉS : \n\nVOS MISSIONS PRINCIPALES\n1/ Concevoir et industrialiser les flux d'intégration :\n- Concevoir, développer et maintenir les flux entre les SI métiers, la Data Platform, les outils de reporting, les workflows et les applications.\n- Formaliser et mettre en œuvre les contrats de flux : sources, cibles, mappings, transformations, contrôles, gestion des rejets, replay et logs.\n- Contribuer à l'industrialisation de TALAXIE, des API, des pipelines ETL / ELT et des mécanismes d'orchestration, selon les priorités du backlog.\n2/ Fiabiliser et mettre à disposition la donnée :\n- Construire et maintenir les pipelines d'alimentation des différentes couches de la Data Platform.\n- Garantir la complétude, la cohérence, l'historisation, la performance et la traçabilité des traitements.\n- Mettre à disposition des données contrôlées pour les modèles sémantiques, Power BI, les contrôles métiers, les workflows et les produits numériques, en collaboration avec Data / BI et les équipes applicatives.\n3/ Superviser les flux et assurer leur RUN :\n- Mettre en place les logs, alertes, mécanismes de supervision et indicateurs de fonctionnement.\n- Diagnostiquer les anomalies et incidents, organiser les corrections et reprises contrôlées, et éliminer les causes récurrentes.\n- Documenter les flux et procédures d'exploitation, et appliquer les bonnes pratiques de versionnement, tests, déploiement et séparation des environnements Dev / Test / Production.\n4/ Contribuer aux produits numériques et aux usages IA :\n- Préparer les composants techniques nécessaires aux cas d'usage : API, vues, jeux de données, événements, contrôles et logs.\n- S'assurer, avec les responsables Architecture, Cybersécurité et produits, que les solutions utilisent les SI maîtres, les données et les interfaces autorisées.\n- Participer aux tests de performance, de sécurité, de coût et d'exploitabilité, ainsi qu'à la préparation du passage en production et au RUN.\nPOSITIONNEMENT DU RÔLE\nCe rôle est :\n- Un rôle d'ingénierie et d'intégration, responsable de la robustesse, de la traçabilité et de l'exploitabilité des flux.\n- Un rôle de coopération technique au service de la Data, des applications et des produits numériques du Groupe.\nCe rôle n'est pas :\n- La responsabilité de la priorisation du portefeuille, de la gouvernance métier de la donnée ou de l'adoption des produits.\n- Un rôle d'architecte unique ou de propriétaire technique de l'ensemble du SI Groupe.\n\nPROFIL RECHERCHÉ : \n\nIssu(e) d'une formation supérieure en informatique, Data, systèmes d'information, ingénierie logicielle ou équivalent, vous disposez d'une expérience significative de 3 ans en Data Engineering, intégration SI, ETL / ELT, API, pipelines de données ou exploitation de flux.\nVous savez passer d'un besoin ou d'un contrat d'interface à une solution technique fiable, testée, documentée et supervisée. Vous êtes à l'aise dans un environnement industriel, multi-applicatifs et multi-sites, où la continuité de service, la qualité des données et la sécurité sont essentielles.\nCONNAISSANCES PROFESSIONNELLES ATTENDUES\n- Maîtrise de SQL et d'au moins un langage de traitement de données ou de développement, idéalement Python.\n- Maîtrise des concepts Data Engineering : pipelines, ETL / ELT, API, orchestration, qualité, logs et monitoring.\n- Connaissance des architectures Data Platform et des modèles de type Bronze / Silver / Gold.\n- Pratique des contrats de flux, mappings, contrôles, rejets, replay et mécanismes de supervision.\n- Bonnes pratiques de versionnement, tests, CI / CD, documentation, déploiement et séparation Dev / Test / Production.\n- Connaissance de Microsoft Fabric, Azure, Power BI, TALAXIE, d'un iPaaS ou d'un API Management appréciée.\nQUALITÉS ATTENDUES\n- Rigueur, sens du détail et orientation qualité.\n- Esprit d'analyse et capacité de diagnostic.\n- Culture de la supervision, du RUN et de l'amélioration continue.\n- Capacité à documenter et à rendre les solutions exploitables.\n- Esprit d'équipe et capacité à coopérer avec des interlocuteurs métiers et techniques.\n- Sens du service, réactivité et sang-froid en cas d'incident.\n- Anglais recquis\nCE QUE NOUS VOUS PROPOSONS\n- Un rôle technique clé dans la structuration de la Data Platform et des interfaces du Groupe.\n- La possibilité de construire des composants fiables et réutilisables à l'échelle des différents sites.\n- Un environnement industriel concret, exigeant et connecté aux enjeux de production, de qualité et de performance.\n- Une contribution directe au reporting, à l'automatisation, aux produits numériques et à la préparation du futur ERP.\n Rejoignez-nous et contribuez à construire des flux Data et SI fiables, supervisés et durables au service de la performance industrielle.",
+   "dateCreation": "2026-10-19T04:31:46.979Z",
+   "dateActualisation": "2026-10-19T04:31:46.979Z",
+   "lieuTravail": {
+    "libelle": "64 - Bayonne",
+    "codePostal": "64100",
+    "commune": "64102"
+   },
+   "romeCode": "M1811",
+   "romeLibelle": "Data engineer",
+   "appellationlibelle": "Architecte de données informatiques",
+   "entreprise": {
+    "nom": "POTEZ AERONAUTIQUE"
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "D",
+   "experienceLibelle": "Débutant accepté",
+   "salaire": {
+    "libelle": "Annuel de 38000.0 Euros à 45000.0 Euros"
+   },
+   "dureeTravailLibelle": "35H/semaine\nTravail en journée",
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "qualificationCode": "9",
+   "qualificationLibelle": "Cadre",
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8042087",
+    "partenaires": [
+     {
+      "nom": "BEETWEEN",
+      "url": "https://app.beetween.com/WeaselWeb/p/#/apply/job/7v5a96iju48/data-engineer-integration-si-h-f",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/beetween80.png"
+     }
+    ]
+   },
+   "contexteTravail": {
+    "horaires": [
+     "35H/semaine\nTravail en journée"
+    ]
+   },
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8035823",
+   "intitule": "Lead Data Engineer (H/F)",
+   "description": "Description du poste :\n\nEn tant qu'organisateur de forums de recrutement, Talents Handicap accompagne de très nombreuses entreprises & organisations en France dans leurs recrutements de collaborateurs en situation de handicap. Participant actuellement à l'un de nos forums.\nL'entreprise Capgemini recherche actuellement des profils Choisir Capgemini, c'est choisir une entreprise où vous serez en mesure de façonner votre carrière selon vos aspirations. Avec le soutien et l'inspiration d'une communauté d'experts dans le monde entier , vous pourrez réécrire votre futur . Rejoignez-nous pour redéfinir les limites de ce qui est possible, contribuer à libérer la valeur de la technologie pour les plus grandes organisations et participer à la construction d'un monde plus durable et inclusif.\n\n\nVos missions\nIntégré(e) au sein d'une équipe projets intervenant pour des clients dans des secteurs d'activités variées, vous serez notamment en charge des missions suivantes :\nAccompagner des équipes métiers et Data Scientist dans leurs travaux d'identification et d'expression des besoins sur la data\nParticiper aux ateliers de conception et au développement des architectures data\nDévelopper des flux d'ingestion de données de Data Lake et de traitement des données\nParticiper à la création de stratégies d'extraction\nDévelopper des processus permettant de collecter, nettoyer, organiser et modéliser efficacement les données (batch ou temps réel)\nIndustrialiser, optimiser et monitorer au quotidien les pipelines data et leurs déploiements\nMettre en place de système d'exposition et visualisation\nFormer et faire progresser techniquement les membres de l'équipe\nOrganiser les revues de code et être garant de la qualité logicielle sur le projet\n\n\nVotre Profil\nMinimum 3 ans d'expériences\nAnglais (niveau B1/B2)\nMaîtrise des langages Python, SQL, expertise sur les frameworks Spark, Hadoop, pipeline CI/CD pour les développements et infra as code\nExpertise sur les services Cloud Data Platform GCP : BigQuery, Cloud Storage, Dataproc, Dataflow, Cloud Composer, Vertex AI, Looker.\nUne certification GCP Data Engineer ou Cloud Architect est un plus\n\n\n3 raisons de nous rejoindre :\nQualité de vie au travail : accord de télétravail en France et à l'international, accord sur l'égalité professionnelle, la parentalité, l'équilibre des temps et la mobilité durable. Temps partiel possible Apprentissage en continu : certifications et formations en libre accès, accompagnement sur mesure avec votre carreer manager, parcours d'intégration sur 9 mois.\n\n\nAvantages groupe & CSE : plan actionnariat, activités à tarifs préférentiels, remboursement partiel vacances, remboursement de votre abonnement sportif ou culturel\n\n\nLe groupe Capgemini encourage une culture inclusive dans un cadre multiculturel et handi-accueillant. En nous rejoignant, vous intégrez un collectif qui valorise la diversité, développe le potentiel de ses talents, s'engage dans des initiatives solidaires avec ses partenaires, et se mobilise pour réduire son impact environnemental sur tous ses sites et auprès de ses clients.\n\n\nCapgemini est un leader mondial , responsable et multiculturel , regroupant près de 350000 personnes dans plus de 50 pays. Fort de 55 ans d'expérience , nous sommes un partenaire stratégique des entreprises pour la transformation de leurs activités en tirant profit de toute la puissance de la technologie et des innovations dans les domaines en perpétuelle évolution tels que le cloud, la data, l'Intelligence Artificielle , la connectivité , les logiciels , l'ingénierie digitale ou les plateformes.\nGet The Future You Want* /www.capgemini.com/fr fr***Capgemini, le futur que vous voulez",
+   "dateCreation": "2026-10-19T03:29:01.125Z",
+   "dateActualisation": "2026-10-19T03:29:01.125Z",
+   "lieuTravail": {
+    "libelle": "92 - Hauts-de-Seine"
+   },
+   "romeCode": "M1811",
+   "romeLibelle": "Data engineer",
+   "appellationlibelle": "Data engineer",
+   "entreprise": {
+    "nom": "NEW NET 3D"
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "3 An(s)",
+   "salaire": {},
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "codeNAF": "62.02A",
+   "secteurActivite": "62",
+   "secteurActiviteLibelle": "Conseil en systèmes et logiciels informatiques",
+   "trancheEffectifEtab": "6 à 9 salariés",
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8035823",
+    "partenaires": [
+     {
+      "nom": "METEOJOB",
+      "url": "https://www.meteojob.com/jobs/57517928?utm_source=pole-emploi&utm_medium=aggregator-free",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/meteojob80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8035628",
+   "intitule": "Consultant Data Engineer Snowflake (H/F)",
+   "description": "Description du poste :\n\nEn tant qu'organisateur de forums de recrutement, Talents Handicap accompagne de très nombreuses entreprises & organisations en France dans leurs recrutements de collaborateurs en situation de handicap. Participant actuellement à l'un de nos forums.\nL'entreprise Sopra Steria recherche actuellement des profils :\n\nDescription de l'entreprise\n\nSopra Steria , acteur majeur de la Tech en Europe, avec 51000 collaborateurs dans près de 30 pays, est reconnu pour ses activités de conseil, de services et solutions numériques. Il aide ses clients à mener leur transformation digitale et à obtenir des bénéfices concrets et durables. Le Groupe apporte une réponse globale aux enjeux de compétitivité des grandes entreprises et organisations, en combinant une connaissance approfondie des secteurs d'activité et des technologies à une approche collaborative.\nSopra Steria place l'humain au cœur de son action et s'engage auprès de ses clients à tirer le meilleur parti du numérique pour construire un avenir positif. En 2025, le Groupe a réalisé un chiffre d'affaires de 5,6 milliards d'euros.\n\nDescription du poste\n\nLa division « Services Financiers » de Sopra Steria se concentre sur la banque de détail, la banque privée et les services financiers spécialisés. Nous participons à la révolution digitale grâce à notre expertise en automatisation des processus, Big Data, IA et Cloud. Nous accompagnons la transformation de nos clients dans les domaines des Crédits, Risques/Conformité et Moyens de Paiement.\n\nComposée d'environ 100 Data Ingénieurs, vous y rencontrerez des experts en Plateforme de Données, Data Architectes et autres spécialistes de la valorisation de la donnée.\n\nVous serez accompagné(e) dans le développement de vos connaissances à travers divers parcours Data : ingestion, construction de flow de data transformation et data valorisation. Vous aurez également la possibilité de compléter vos compétences auprès de nos partenaires hyper scaler AWS, GCP, Azure.\n\nRejoindre Sopra Steria, c'est intégrer une communauté de Data Ingénieurs fiers de partager leur savoir et ouverts aux nouvelles expériences et expérimentations de la donnée.\n\nVotre rôle et vos missions :\n\nDans le cadre du renforcement de nos équipes chez nos clients bancaires, vous interviendrez sur des projets autour de la solution Snowflake. Vos missions seront La compréhension des besoins métiers ou technique et leur traduction en solution de data ingénierie et ou de data analyse Le développement de traitement d'ingestion et de mise en qualité des données L'apport de l'expertise dans le développement des nodes et flow data sous Snowflake;\n* La structuration de bonnes pratiques en lien avec l'utilisation de Snowflake La mise en place de la chaine CI/CD et de sa supervision ;\n\nEnvironnement technique : Snowflake, Python, PySpark, HDFS, HIVE, SQL, Gitlab CI, XLDeploy Qualifications\n\nVotre profil Vous accordez une importance particulière au développement de vos compétences et celui de vos pairs. Vous êtes reconnus pour votre aisance à transmettre votre savoir et votre pédagogie.\n* Diplômé(e) d'une école d'Ingénieurs ou formation équivalente, vous avez une expérience de minimum 3 ans sur la solution Snowflake. Une certification dans ce domaine est fortement appréciée.\n* Vous êtes soucieux(se) de l'apport de valeur pour vos clients.\n\nAlors, n'attendez-plus, ce poste est fait pour vous !\n\nInformations supplémentaires\n* Un accord télétravail pour télétravailler jusqu'à 2 jours par semaine selon vos missions.\n* Un package avantages intéressant : une mutuelle, un CSE, des titres restaurants, un accord d'intéressement, des primes vacances et cooptation.\n* Des opportunités de carrières multiples : plus de 30 familles de métiers, autant de passerelles à imaginer ensemble.\n* Plusieurs centaines de formations accessibles en toute autonomie avec Sopra Steria Academy.\n* La possibilité de s'engager auprès d'une association grâce à notre plateforme d'engagement citoyen.\n* L'opportunité de rejoindre le collectif Tech'Me UP (formations, conférences, veille, et bien plus encore Employeur inclusif et engagé, notre société œuvre chaque jour pour lutter contre toute forme de discrimination et favoriser un environnement de travail respectueux. C'est pourquoi, attachés à la mixité et à la diversité, nous encourageons toutes les candidatures et tous les profils.***",
+   "dateCreation": "2026-10-19T03:28:17.635Z",
+   "dateActualisation": "2026-10-19T03:28:17.635Z",
+   "lieuTravail": {
+    "libelle": "59 - Lille",
+    "codePostal": "59000",
+    "commune": "59350"
+   },
+   "romeCode": "M1811",
+   "romeLibelle": "Data engineer",
+   "appellationlibelle": "Data engineer",
+   "entreprise": {
+    "nom": "NEW NET 3D"
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "3 An(s)",
+   "salaire": {},
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "codeNAF": "62.02A",
+   "secteurActivite": "62",
+   "secteurActiviteLibelle": "Conseil en systèmes et logiciels informatiques",
+   "trancheEffectifEtab": "6 à 9 salariés",
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8035628",
+    "partenaires": [
+     {
+      "nom": "METEOJOB",
+      "url": "https://www.meteojob.com/jobs/57516660?utm_source=pole-emploi&utm_medium=aggregator-free",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/meteojob80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8019575",
+   "intitule": "Data Analyst / Analytics Engineer junior (paie, RH) (H/F)",
+   "description": "Notre client est un éditeur de logiciel SaaS B2B en forte croissance, basé à Paris. Sa solution s'interface avec les systèmes de paie, de gestion RH et d'assurance de ses clients, ainsi qu'avec certains organismes de protection sociale, afin de collecter, standardiser et réconcilier des données issues de sources multiples.\nDans le cadre de son développement, l'entreprise renforce son équipe data, composée de cinq personnes aux profils scientifiques (docteurs et ingénieurs), spécialisées en analyse de données, statistiques et machine learning.\n\n\nLe poste : \n\nContexte\nRattaché(e) au responsable de l'équipe data, vous intervenez sur l'exploitation des données de paie, RH, sécurité sociale et assurance traitées par la plateforme. Votre rôle consiste à transformer ces données en analyses fiables et utiles, à destination des clients comme des équipes internes.\nMissions\n\n- Recueillir et formaliser les besoins d'analyse exprimés par les équipes métier et les clients - Rechercher, extraire et croiser les données pertinentes pour y répondre - Réaliser des analyses à forte exigence de précision, notamment sur des données de paie et de cotisations - Concevoir et mettre en oeuvre des tests de qualité des données - Contribuer à l'amélioration des processus de réconciliation entre sources de données - Participer à la constitution d'une base de données de référence, standardisée et anonymisée - Maintenir et faire évoluer les tableaux de bord existants - Documenter les traitements et les règles de gestion utilisées \nEnvironnement technique\n\n- Langage : Python (une maîtrise de R est également appréciée) - Architecture : SaaS B2B multitenant, bases de données distribuées, data lake et data lakehouse - Sources de données : logiciels de paie et SIRH, organismes sociaux, assureurs (API, échanges de fichiers) \n\n\nProfil recherché : \n\nExpérience\n\n- 3 ans d'expérience minimum en tant que Data Analyst, Analytics Engineer ou Data Engineer - Une première expérience sur des données de paie, RH, assurance, finance ou issues du secteur public est indispensable \nCompétences techniques\n\n- Pratique de Python pour la manipulation et l'analyse de données - Maîtrise du SQL - Une expérience en intégration de données (API, SFTP, ETL, pipelines) est un plus - Des connaissances en statistiques et en machine learning sont appréciées \nQualités recherchées\n\n- Rigueur et sens du détail : vous êtes attentif(ve) à la cohérence et à l'exactitude des données - Intérêt pour les règles de gestion et les sujets métier complexes - Capacité à comprendre un environnement technique existant avant de proposer des évolutions - Autonomie, curiosité et envie d'apprendre - Anglais professionnel, l'équipe comptant des collaborateurs anglophones \n",
+   "dateCreation": "2026-10-18T11:21:31.317Z",
+   "dateActualisation": "2026-10-25T11:21:49.745Z",
+   "lieuTravail": {
+    "libelle": "75 - Paris 13e Arrondissement",
+    "codePostal": "75013",
+    "commune": "75113"
+   },
+   "romeCode": "M1868",
+   "romeLibelle": "Architecte base de données",
+   "appellationlibelle": "Architecte de bases de données",
+   "entreprise": {
+    "nom": "Cabinet EKINOX"
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "2 An(s)",
+   "salaire": {},
+   "complementExercice": "Temps plein",
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8019575",
+    "partenaires": [
+     {
+      "nom": "PMEJOB",
+      "url": "https://www.jobposting.pro/emploi-2726420-120",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/pmejob80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8106014",
+   "intitule": "Analytics engineer F/H - Le Gouessant",
+   "description": "Dans le cadre de la modernisation de sa plateforme de données, la coopérative renforce son service Data au sein de la Direction des Systèmes d'Information. Vous rejoignez une équipe à taille humaine, où la polyvalence fait partie intégrante du fonctionnement. Chaque membre intervient sur l'ensemble de la chaîne de valeur de la donnée, depuis la collecte et la transformation des données jusqu'à leur valorisation auprès des utilisateurs métiers.\n \n \n \nVos missions :\n \n \n \n \nPiloter la modernisation et l'évolution de la plateforme Data\n \n- Porter la conception et l'évolution de l'architecture de l'entrepôt de données (Data Warehouse), en étant force de proposition sur les modèles de données, les standards de structuration et les principes d'intégration, permettant de garantir la cohérence, la performance et la pérennité de la plateforme. \n- Porter techniquement la modernisation de la plateforme Data : bonnes pratiques de développement, CI/CD. Conduire les évaluations techniques et contribuer aux choix d'architecture et d'outillage. \n- Proposer et faire vivre les standards de développement, et accompagner techniquement l'équipe pour favoriser la montée en compétences collective. \n \nConcevoir et fiabiliser les flux de données\n \n- Concevoir, développer et maintenir les flux de données : alimentation depuis les systèmes sources, traitements, modélisation décisionnelle et mise à disposition des données. \n- Assurer la fiabilité et la qualité des traitements : supervision, contrôles de cohérence, gestion des incidents et documentation. \n \nContribuer à la mise à disposition et à la gouvernance des données\n \n- Recueillir, analyser et challenger les besoins des directions métiers afin de proposer des solutions adaptées. \n- Participer au développement de la gouvernance des données, notamment à travers la structuration du catalogue de données. \n- Concevoir les modèles de données et les tableaux de bord de notre outil BI et accompagner les utilisateurs dans leur usage. \n \n \n Les + du poste \n- Des échanges directs et fréquents avec les directions métiers et les autres services de la DSI. \n- \nUn rôle clé dans la structuration de la couche de transformation des données, au cœur de la modernisation de notre écosystème Data. \n- Une influence directe sur les choix d'architecture et d'outillage dans un circuit de décision court. \n- Une démarche d'industrialisation qui s'appuie sur l'IA générative, déjà déployée dans l'équipe et appelée à s'intégrer à notre chaîne de développement.- De formation supérieure Bac+5 en informatique, data ou statistiques, vous justifiez d'une expérience significative d'au moins 5 ans sur des fonctions Data/décisionnelles (Data Engineer, Analytics Engineer, Ingénieur BI, Consultant BI...). \n- Vous maîtrisez SQL et la modélisation de données, leur historisation et les mécanismes de chargement incrémental. \n- Vous disposez d'une culture de la CI/CD appliquée à la data : versionnement, tests, intégration et déploiement continus, documentation. Vous avez de préférence déjà mis en place ces pratiques au sein de vos expériences passées. \n- Une expérience de l'environnement Microsoft (SQL Server / SSIS) est un atout, tout comme la maitrise de dbt et/ou de Python. \n- Une expérience sur Qlik Sense est appréciée. À défaut, vous maîtrisez un autre outil de restitution tel que Power BI, Tableau ou Looker. \n- Force de proposition, vous contribuez activement à l'évolution de la plateforme en apportant votre expertise sur les sujets de transformation, de modélisation et d'industrialisation des traitement de données. Vous êtes capable de challenger les choix techniques, de participer à l'amélioration continue des pratiques de l'équipe et de contribuer à la définition des futurs standards de la plateforme. \n- Au-delà des compétences techniques, vous faites preuve d'autonomie, de rigueur et d'un réel esprit d'analyse.\nBon communiquant, capable de vulgariser auprès des métiers nos concepts techniques, vous appréciez les échanges avec ces derniers, savez challenger les besoins exprimés et avez à cœur d'accompagner les utilisateurs dans l'appropriation des solutions mises en œuvre. \n \n \n Les conditions d'emploi \n- Poste en CDI - temps plein forfait jours (15 jours de RTT) \n- Lieu de travail : Noyal-sur-Vilaine (35) ou Lamballe (22), avec des déplacements ponctuels sur les sites du Groupe. \n- Télétravail possible 2 jours par semaine. \n- Rémunération selon expérience + avantages : CSE, dispositifs intéressement/participation... \n- Date de prise de fonction : dès accord.",
+   "dateCreation": "2026-10-20T21:15:22.938Z",
+   "dateActualisation": "2026-10-20T21:15:22.938Z",
+   "lieuTravail": {
+    "libelle": "35 - Noyal-sur-Vilaine",
+    "codePostal": "35530",
+    "commune": "35207"
+   },
+   "romeCode": "M1419",
+   "romeLibelle": "Data analyst",
+   "appellationlibelle": "Data analyst",
+   "entreprise": {
+    "nom": "Le Gouessant"
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "5 An(s)",
+   "salaire": {},
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "codeNAF": "10.91Z",
+   "secteurActivite": "10",
+   "secteurActiviteLibelle": "Fabrication d'aliments pour animaux de ferme",
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8106014",
+    "partenaires": [
+     {
+      "nom": "WE_RECRUIT",
+      "url": "https://recrutement.legouessant.com/fr/offres/analytics-engineer-cfbcb2?utm_source=francetravail&utm_medium=job-board",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/we_recruit80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8230612",
+   "intitule": "Expert / Experte big data (H/F)",
+   "description": "Description de l'entrepriseSopra Steria, acteur majeur de la Tech en Europe avec 56 000 collaborateurs dans près de 30 pays, est reconnu pour ses activités de conseil, de services numériques et d'édition de logiciels. Il aide ses clients à mener leur transformation digitale et à obtenir des bénéfices concrets et durables. Le Groupe apporte une réponse globale aux enjeux de compétitivité des grandes entreprises et organisations, combinant une connaissance approfondie des secteurs d'activité et des technologies innovantes à une approche résolument collaborative.Sopra Steria place l'humain au centre de son action et s'engage auprès de ses clients à tirer le meilleur parti du digital pour construire un avenir positif. En 2023, le Groupe a réalisé un chiffre d'affaires de 5,8 milliards d'euros.The world is how we shape itLa division « Services Financiers» s'est développée autour des métiers de la banque de détail, de la banque privée et des services financiers spécialisés. Nous participons à la révolution digitale grâce à notre expertise en automatisation des processus, Big Data, IA, Cloud. Nous accompagnons la transformation de nos clients en y associant nos compétences dans les domaines fonctionnels des Crédits, des Risques/Conformité et des Moyens de Paiement.Description du posteAu sein d'une Data Factory, vous êtes pleinement impliqué(e) dans toutes les phases de nos projets pour le compte de grands clients, contribuant ainsi à leur succès.Vous avez l'occasion de développer vos compétences techniques et fonctionnelles de manière approfondie, tout en travaillant sur des projets exigeants et passionnants pour le compte de grands clients du secteur bancaire.C'est tentant non ? Alors embarquez pour une nouvelle aventure professionnelle !Vos tâches :Rattaché(e) à la division  « Services Financiers », vous évoluez dans un environnement challengeant et convivial, entouré(e) de passionnés dotés d'expertises dans leurs domaines.En tant que Data Engineer, vous évoluez sur des projets IT à forte valeur ajoutée et avez pour rôle la mise en place de pipelines de données fiables, sécurisés et à l'échelle pour soutenir la mise à disposition des données aux cas d'usage métier qui en ont besoin.\nVos activités principales sont les suivantes :Vous travaillez avec le client pour évaluer, concevoir, déployer, améliorer et maintenir les pipelines de données Vous vous assurez que les pipelines de données créés sont résilients, sécurisés et accessibles Vous définissez le modèle opérationnel pour monitorer et supporter les pipelines de données Vous fournissez une expertise à nos clients sur leurs données pour assurer leur optimisation et leur sécurité par rapport à leurs besoins Vous apportez un savoir en gestion de la qualité et la gouvernance de la donnée pour assurer le suivi de la conformité à la gouvernance de la donnée Vous faites de la veille technologique dans le domaine afin d'enrichir les roadmaps technologiques et fournir des solutions modernes à nos clients.QualificationsVotre profil :Diplômé(e) d'une formation supérieur en informatique type Bac + 5 (école ingénieur, université ou équivalent), vous avez déjà acquis une expérience significative en data engineer.Vous avez au moins l'une de ces compétences requises :Maîtrise des technologies de bases de données Relationnelles et NoSQLMaîtrise d'au moins un outil d'ETL/ELT (Stambia, Informatica, Datastage, etc.)Maîtrise des technologies de traitement distribué de données (Spark, Hadoop)Maîtrise d'au moins un framework de streaming de données (Kafka, RabbitMQ, etc.)Maîtrise de chaines CI/CD et de des bonnes pratiques de DataOpsMaîtrise de solution de Virutualisation de données (Denodo, Dremio, etc.)Maîtrise d'au moins un environnement cloud public ou privé (Azure, AWS, Outscale, etc.)Vous avez développé de solides compétences en matière d'autonomie, d'adaptabilité et de communication.Informations supplémentairesLes avantages à nous rejoindre :Un accord télétravail pour télétravailler jusqu'à 2 jours par semaine selon vos tâches.Un package avantages intéressants : une mutuelle, un CSE, des titres restaurants, un accord d'intéressement, des primes vacances et cooptation.Un accompagnement individualisé avec un mentor que vous choisissez.Des opportunités de carrières multiples : plus de 50 métiers, autant de passerelles à imaginer ensemble. Plusieurs centaines de formations accessibles.L'opportunité de rejoindre le collectif Tech'Me UP (formations, conférences, veille, et bien plus encore...).Employeur inclusif et engagé, notre société œuvre chaque jour pour lutter contre toute forme de discrimination et favoriser un environnement de travail respectueux. C'est pourquoi, attachés à la mixité et à la diversité, nous encourageons toutes les candidatures et tous les",
+   "dateCreation": "2026-10-24T05:03:23.908Z",
+   "dateActualisation": "2026-10-25T04:03:15.733Z",
+   "lieuTravail": {
+    "libelle": "59 - Lezennes",
+    "codePostal": "59260",
+    "commune": "59346"
+   },
+   "romeCode": "M1811",
+   "romeLibelle": "Data engineer",
+   "appellationlibelle": "Expert / Experte big data",
+   "entreprise": {
+    "nom": "Forums Talents Handicap"
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "D",
+   "experienceLibelle": "Débutant accepté",
+   "salaire": {},
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8230612",
+    "partenaires": [
+     {
+      "nom": "HANDICAP_JOB",
+      "url": "https://www.handicap-job.com/recherche/detail/oid/6701080/data-engineer-confirmee-services-financiers-lille.html",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/handicap_job80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8170901",
+   "intitule": "Data manager (H/F)",
+   "description": "Description du poste :\n\nNous recherchons un Data Engineer confirmé , avec une expérience significative dans l'intégration et la gestion de flux EDI et B2B . Vous participerez à la gestion, l'industrialisation et l'automatisation des échanges de données entre nos systèmes internes et nos partenaires externes.\n\nVous serez intégré à l'équipe Data et travaillerez sur des projets stratégiques impliquant la fiabilité, la sécurité et la qualité des flux de données .\n\nMissions principales Concevoir, mettre en place et maintenir les flux EDI et batch (EDIFACT, X12, XML, CSV)\n* Gérer les interfaces entre ERP, outils métiers et partenaires externes\n* Automatiser les traitements via scripts et ordonnanceurs (Control-M, Autosys, Airflow, Talend ESB Participer à la traçabilité, la supervision et le monitoring des flux de données\n* Collaborer avec les équipes internes et les partenaires pour garantir la qualité et la fiabilité des échanges\n* Contribuer à la documentation et à la gouvernance des flux\n\nLocalisation : siège à Paris 16ème\n\nPourquoi nous rejoindre Travailler sur des flux stratégiques et critiques pour l'entreprise\n* Évoluer dans un environnement où la rigueur et la fiabilité des données sont essentielles\n* Participer à la modernisation et à l'industrialisation des processus EDI et Data\n* Ce poste en contrat à durée indéterminée est une occasion de prendre part à un projet d'envergure au sein d'une équipe soudée.\n\nDescription du profil :\n\nProfil recherché Expérience : 3 à 7 ans minimum en tant que Data Engineer ou intégrateur de flux EDI / B2B\n* Compétences techniques Maîtrise des flux EDI et des formats standards (EDIFACT, X12, IDoc, XML, CSV)\n* Outils ETL / ELT classiques : Talend, SSIS, Pentaho, Informatica\n* Orchestration et automatisation : Control-M, Autosys, Airflow, scripts Bash/Python\n* Connaissance des ERP et systèmes partenaires (SAP, Oracle, Infor Soft skills : autonomie, rigueur, capacité à collaborer avec des équipes internationales et à documenter les processus\n* Langues : anglais professionnel souhaité\n\nRejoindre ce poste offre l'opportunité de faire partie d'une dynamique d'innovation au sein d'une équipe stimulante, prête à relever des défis passionnants dans le domaine des données.",
+   "dateCreation": "2026-10-23T03:24:21.624Z",
+   "dateActualisation": "2026-10-23T03:24:21.624Z",
+   "lieuTravail": {
+    "libelle": "75 - Paris 9e Arrondissement",
+    "codePostal": "75009",
+    "commune": "75109"
+   },
+   "romeCode": "M1811",
+   "romeLibelle": "Data engineer",
+   "appellationlibelle": "Data manager",
+   "entreprise": {
+    "nom": "LE MERCATO DE L EMPLOI"
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "3 An(s)",
+   "salaire": {},
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "codeNAF": "63.11Z",
+   "secteurActivite": "63",
+   "secteurActiviteLibelle": "Traitement de données, hébergement et activités connexes",
+   "trancheEffectifEtab": "10 à 19 salariés",
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8170901",
+    "partenaires": [
+     {
+      "nom": "METEOJOB",
+      "url": "https://www.meteojob.com/jobs/57647665?utm_source=pole-emploi&utm_medium=aggregator-free",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/meteojob80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8170152",
+   "intitule": "Data manager (H/F)",
+   "description": "Description du poste :\n\nEn tant qu'organisateur de forums de recrutement, Talents Handicap accompagne de très nombreuses entreprises & organisations en France dans leurs recrutements de collaborateurs en situation de handicap. Participant actuellement à l'un de nos forums.\nL'entreprise Atos recherche actuellement des profils Rejoignez une aventure qui a du sens\n\nDans un contexte de développement et de modernisation de nos plateformes Data, nous recrutons un(e) Data Engineer pour renforcer nos équipes et accompagner nos clients sur des projets d'intégration, de migration et de valorisation des données.\n\nVous interviendrez au sein d'équipes expertes, sur des environnements Data variés, avec un rôle clé dans la conception, le développement et l'optimisation des flux de données. Vous contribuerez notamment aux projets de migration et d'industrialisation des traitements, tout en garantissant la fiabilité et la performance des solutions mises en place.\n\nVos missions à nos côtés\n\nVous serez amené(e) à Concevoir, développer et optimiser les flux de données et traitements ETL, en garantissant leur qualité, leur fiabilité et leur performance.\n* Participer aux projets de migration de données et à l'évolution des environnements Data, notamment autour de PostgreSQL et Snowflake.\n* Développer et maintenir les processus d'intégration de données, notamment avec Azure Data Factory.\n* Contribuer à l'exploitation et à l'optimisation des bases de données SQL ainsi qu'aux besoins liés aux infrastructures Power BI.\n* Accompagner les équipes internes à travers le partage d'expertise, les revues techniques et le transfert de compétences.\n\nEnvironnement technique : SQL, PostgreSQL, Snowflake, ETL, Azure Data Factory (ADF), Power BI (infrastructure).",
+   "dateCreation": "2026-10-23T03:23:17.767Z",
+   "dateActualisation": "2026-10-23T03:23:17.767Z",
+   "lieuTravail": {
+    "libelle": "63 - Puy-de-Dôme"
+   },
+   "romeCode": "M1811",
+   "romeLibelle": "Data engineer",
+   "appellationlibelle": "Data manager",
+   "entreprise": {
+    "nom": "NEW NET 3D"
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "D",
+   "experienceLibelle": "Débutant accepté",
+   "salaire": {
+    "libelle": "Annuel de 40000.0 Euros à 52000.0 Euros - De 40000.0 à 52000.0 EUR par an",
+    "commentaire": "De 40000.0 à 52000.0 EUR par an"
+   },
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "codeNAF": "62.02A",
+   "secteurActivite": "62",
+   "secteurActiviteLibelle": "Conseil en systèmes et logiciels informatiques",
+   "trancheEffectifEtab": "6 à 9 salariés",
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8170152",
+    "partenaires": [
+     {
+      "nom": "METEOJOB",
+      "url": "https://www.meteojob.com/jobs/57639662?utm_source=pole-emploi&utm_medium=aggregator-free",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/meteojob80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8100134",
+   "intitule": "Analytics engineer F/H",
+   "description": "? Concevoir, développer et déployer des pipelines de données robustes et scalables sur la plateforme Databricks.\n? Modéliser et préparer les données (Delta Lake) pour répondre efficacement aux enjeux analytiques de nos clients.\n? Optimiser les performances des traitements de données (Apache Spark, SQL, Python) et garantir la fiabilité de l'architecture.\n? Collaborer étroitement avec les Data Scientists et les équipes métiers pour industrialiser les cas d'usage Data.\n Implémenter les bonnes pratiques d'ingénierie logicielle (CI/CD, tests automatisés, versioning) au sein des projets.",
+   "dateCreation": "2026-10-20T13:27:01.493Z",
+   "dateActualisation": "2026-10-23T13:12:07.007Z",
+   "lieuTravail": {
+    "libelle": "59 - Marcq-en-Barœul",
+    "codePostal": "59700",
+    "commune": "59378"
+   },
+   "romeCode": "M1811",
+   "romeLibelle": "Data engineer",
+   "appellationlibelle": "Data engineer",
+   "entreprise": {},
+   "typeContrat": "MIS",
+   "typeContratLibelle": "Intérim - 1 Mois",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "D",
+   "experienceLibelle": "Débutant accepté",
+   "salaire": {},
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "codeNAF": "78.10Z",
+   "secteurActivite": "78",
+   "secteurActiviteLibelle": "Activités des agences de placement de main-d'œuvre",
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8100134",
+    "partenaires": [
+     {
+      "nom": "DIRECTEMPLOI",
+      "url": "https://www.directemploi.com/candidatOffre/56769516?utm_source=pole-emploi&utm_medium=referral&utm_campaign=Pôle-Emploi",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/directemploi80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8075973",
+   "intitule": "Développeur / Développeuse Big Data (H/F)",
+   "description": "Profil :     Diplôme d'Ingénieur ou équivalent niveau bac+5 en informatique ou en sciences des données     Minimum 6 ans d'expérience en contrat en :  Langages et moteurs de développement : Spark, Kafka, Java, Scala, Python  Data visualization : Microsoft Power BI / Qlik Environnements Data Cloud : Azure / GCP / Snowflake / Databricks   Maîtrise des services Cloud (AWS, Azure, GCP) et des outils d'orchestration (Kubernetes, Docker). Idéalement, expérience en migration vers des environnements Cloud, CI/CD, développement applicatif, ainsi que dans le domaine de la Data (Data Management, Data Governance, API Management). Capacité à travailler en équipe, à challenger le besoin client et à proposer des solutions pragmatiques, avec un sens aigu de la pédagogie    Une certification « Data Engineer » sur un environnement Cloud : Azure / GCP est un plus          Quelques raisons de nous rejoindre :      Avantages groupe : bénéficiez d'un ensemble d'avantages tels que le plan d'actionnariat salarié, les primes de cooptation, tickets restaurant, ainsi que des activités sociales et culturelles variées proposées par le CSE. Des dispositifs d'accompagnement à la parentalité, comme le temps partiel à 90% pendant les vacances scolaires, sont également disponibles, ainsi que de nombreux autres avantages issus de nos accords collectifs. Qualité de vie au travail : profitez d'un équilibre entre vie professionnelle et personnelle, d'une possibilité de télétravailler (en France et à l'international), ainsi que des dispositifs de santé et bien-être (ligne d'écoute, plateforme dédiée...). Projets variés et innovants : intervenez sur des tâches à fort impact dans des secteurs durables et technologiques (énergies renouvelables, transports, IA, data.), avec des opportunités d'évolution. Événements et partenariats : participez à des conférences sectorielles et événements partenaires (AWS, Snowflake, SAP.).",
+   "dateCreation": "2026-10-20T05:01:32.678Z",
+   "dateActualisation": "2026-10-25T04:02:17.778Z",
+   "lieuTravail": {
+    "libelle": "38 - Montbonnot-Saint-Martin",
+    "codePostal": "38330",
+    "commune": "38249"
+   },
+   "romeCode": "M1811",
+   "romeLibelle": "Data engineer",
+   "appellationlibelle": "Développeur / Développeuse Big Data",
+   "entreprise": {
+    "nom": "Forums Talents Handicap"
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "5 An(s)",
+   "salaire": {},
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8075973",
+    "partenaires": [
+     {
+      "nom": "HANDICAP_JOB",
+      "url": "https://www.handicap-job.com/recherche/detail/oid/6702962/lead-data-engineer.html",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/handicap_job80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8074200",
+   "intitule": "Data manager (H/F)",
+   "description": "Description du poste :\n\nEn tant qu'organisateur de forums de recrutement, Talents Handicap accompagne de très nombreuses entreprises & organisations en France dans leurs recrutements de collaborateurs en situation de handicap. Participant actuellement à l'un de nos forums.\nL'entreprise Sopra Steria recherche actuellement des profils :\n\nDescription de l'entreprise\n\nÀ propos de Sopra Steria\n\nSopra Steria, acteur majeur de la Tech en Europe, avec 51000 collaborateurs dans près de 30 pays, est reconnu pour ses activités de conseil, de services et solutions numériques. Il aide ses clients à mener leur transformation digitale et à obtenir des bénéfices concrets et durables. Le Groupe apporte une réponse globale aux enjeux de compétitivité des grandes entreprises et organisations, en combinant une connaissance approfondie des secteurs d'activité et des technologies à une approche collaborative. Sopra Steria place l'humain au cœur de son action et s'engage auprès de ses clients à tirer le meilleur parti du numérique pour construire un avenir positif. En 2025, le Groupe a réalisé un chiffre d'affaires de 5,6 milliards d'euros.\nThe world is how we shape it*\n\nDescription du poste\n\nVotre futur environnement de travail\n\nLes équipes Sopra Steria Transport accompagnent au quotidien leurs clients pour optimiser les plans de transports, superviser la circulation, planifier la gestion des ressources et de la capacité, tout cela pour permettre d'augmenter la part modale du transport ferroviaire et urbain. Cette contribution est déterminante pour aider nos clients à concrétiser les enjeux de transition énergétique portés par le secteur.\n\nLes projets, réalisées quasi-exclusivement en engagement de résultats, portent sur la mise en œuvre de solutions temps réel, à fort enjeux de performances ou encore de redesign de SI historiques pour les adapter aux nouvelles attentes des métiers.\n\nPour avoir la capacité de traiter ces enjeux technologiques de pointe, l'équipe Transport regroupe une large communauté d'experts tech (Architectes solutions, architectes techniques, experts techniques, leader technique, responsables de développements, team leader).\n\nVotre rôle et vos missions :\n\nAu sein d'une équipe Agile, accompagné par un chef de projet, en tant que Data Engineer et dans le cadre de nos projets de data management dans secteur du Transport, vous intervenez dans le cadre de développement de projet BI (incluant la réalisation de datamarts, cubes ou rapports) complexes et à forte valeur ajoutée (Pilotage des trains, reporting financier, gestion des conducteurs). Votre rôle est donc prépondérant dans la réussite du projet.\n\nVous intervenez sur toute la chaîne de valeur du cycle projet Vous rédigez des spécifications fonctionnelles générales ou détaillées sur la base d'expression de besoins\n\n- Vous participez à la conception et au développement des applications Big Data, les tester, les faites évoluer et assurer leur maintenance Vous assurez l'intégrité et la qualité de la donnée sur tout le processus d'ETL\n\n- Vous industrialisez et optimisez la gestion des flux de données\n\n- Vous participez à la conception de l'architecture et l'infrastructure de nos systèmes de collecte et de traitement des données Vous pilotez et accompagnez les utilisateurs durant les phases de recette\n\n- Vous accompagnez des key users et des utilisateurs finaux dans l'usage des nouveaux rapports (formations, support Vous contribuez à l'amélioration du reporting et du pilotage de la performance.\n\nGrâce à votre excellent esprit collectif vous avez à cœur de partager votre savoir et contribuer à la progression des membres de l'équipe.\n\nEnvironnement technologique riche : Talend, Power BI, Cloud computing, Java, Python, PostgreSQL, Cloudera, Spark Et ce n'est pas tout, nous vous accompagnons tout au long de votre carrière en mode proximité. Demain vous ferez partie de notre team de consultants expérimentés, chefs de projet, expert(e)s métier... Tout est possible avec la Sopra Steria Academy !\n\nQualifications\n\nDiplômé d'une école d'Ingénieurs ou formation équivalente en informatique, en Data sciences ou Big Data / Architecture Data, vous justifiez d'une première expérience réussie sur un poste similaire.\nAutonome et curieux, vous êtes reconnu pour votre adaptabilité, votre esprit d'analyse et de synthèse et votre goût du challenge et de l'innovation.\nAlors sans plus attendre, intégrez une entreprise où règne un esprit entrepreneurial fort et une atmosphère propice à votre évolution : participez à une transformation durable et énergétique grâce à une véritable aventure humaine au sein d'un grand groupe international.\n\nInformations supplémentaires\n* Un accord télétravail pour télétravailler jusqu'à 2 jours par semaine selon vos missions.\n* Un package avantages intéressants : une mutuelle, un CSE, des titres restaurants, un accord d'intéressement, et des primes vacances.\n* Plusieurs centaines de formations accessibles en toute autonomie depuis l'app mobile avec Sopra Ster",
+   "dateCreation": "2026-10-20T03:25:44.027Z",
+   "dateActualisation": "2026-10-20T03:25:44.027Z",
+   "lieuTravail": {
+    "libelle": "59 - Lille",
+    "codePostal": "59000",
+    "commune": "59350"
+   },
+   "romeCode": "M1811",
+   "romeLibelle": "Data engineer",
+   "appellationlibelle": "Data manager",
+   "entreprise": {
+    "nom": "NEW NET 3D"
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "1 An(s)",
+   "salaire": {},
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "codeNAF": "62.02A",
+   "secteurActivite": "62",
+   "secteurActiviteLibelle": "Conseil en systèmes et logiciels informatiques",
+   "trancheEffectifEtab": "6 à 9 salariés",
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8074200",
+    "partenaires": [
+     {
+      "nom": "METEOJOB",
+      "url": "https://www.meteojob.com/jobs/57582069?utm_source=pole-emploi&utm_medium=aggregator-free",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/meteojob80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8041127",
+   "intitule": "Data manager (H/F)",
+   "description": "Description du poste :\n\nEn tant qu'organisateur de forums de recrutement, Talents Handicap accompagne de très nombreuses entreprises & organisations en France dans leurs recrutements de collaborateurs en situation de handicap. Participant actuellement à l'un de nos forums.\nL'entreprise Sopra Steria recherche actuellement des profils :\n\nDescription de l'entreprise\n\nSopra Steria , acteur majeur de la Tech en Europe, avec 51000 collaborateurs dans près de 30 pays, est reconnu pour ses activités de conseil, de services et solutions numériques. Il aide ses clients à mener leur transformation digitale et à obtenir des bénéfices concrets et durables. Le Groupe apporte une réponse globale aux enjeux de compétitivité des grandes entreprises et organisations, en combinant une connaissance approfondie des secteurs d'activité et des technologies à une approche collaborative.\nSopra Steria place l'humain au cœur de son action et s'engage auprès de ses clients à tirer le meilleur parti du numérique pour construire un avenir positif. En 2025, le Groupe a réalisé un chiffre d'affaires de 5,6 milliards d'euro\nThe world is how we shape\n\nLa division « Services Financiers » s'est développée autour des métiers de la banque de détail, de la banque privée et des services financiers spécialisés. Nous participons à la révolution digitale grâce à notre expertise en automatisation des processus, Big Data, IA, Cloud. Nous accompagnons la transformation de nos clients en y associant nos compétences dans les domaines fonctionnels des Crédits, des Risques/Conformité et des Moyens de Paiement.\n\nDescription du poste\n\nAu sein d'une Data Factory, vous êtes pleinement impliqué(e) dans toutes les phases de nos projets pour le compte de grands clients, contribuant ainsi à leur succès.\n\nVous avez l'occasion de développer vos compétences techniques et fonctionnelles de manière approfondie, tout en travaillant sur des projets exigeants et passionnants pour le compte de grands clients du secteur bancaire.\n\nC'est tentant non ? Alors embarquez pour une nouvelle aventure professionnelle !\n\nVos missions :\n\nRattaché(e) à la division « Banque », vous évoluez dans un environnement challengeant et convivial, entouré(e) de passionnés dotés d'expertises dans leurs domaines.\n\nEn tant que Data Engineer, vous évoluez sur des projets IT à forte valeur ajoutée et avez pour rôle la mise en place de pipelines de données fiables, sécurisés et à l'échelle pour soutenir la mise à disposition des données aux cas d'usage métier qui en ont besoin.\n\n\nVos activités principales sont les suivantes Vous travaillez avec le client pour évaluer, concevoir, déployer, améliorer et maintenir les pipelines de données\n* Vous vous assurez que les pipelines de données créés sont résilients, sécurisés et accessibles\n* Vous définissez le modèle opérationnel pour monitorer et supporter les pipelines de données\n* Vous fournissez une expertise à nos clients sur leurs données pour assurer leur optimisation et leur sécurité par rapport à leurs besoins\n* Vous apportez un savoir en gestion de la qualité et la gouvernance de la donnée pour assurer le suivi de la conformité à la gouvernance de la donnée\n* Vous faites de la veille technologique dans le domaine afin d'enrichir les roadmaps technologiques et fournir des solutions modernes à nos clients.\nQualifications\n\nVotre profil :\n\nDiplômé(e) d'une formation supérieur en informatique type Bac + 5 (école ingénieur, université ou équivalent), vous avez déjà acquis une expérience significative en data engineer.\n\nVous avez au moins l'une de ces compétences requises Maîtrise des technologies de bases de données Relationnelles et NoSQL\n* Maîtrise d'au moins un outil d'ETL/ELT (Stambia, Informatica, Datastage, etc Maîtrise des technologies de traitement distribué de données (Spark, Hadoop)\n* Maîtrise d'au moins un framework de streaming de données (Kafka, RabbitMQ, etc Maîtrise de chaines CI/CD et de des bonnes pratiques de DataOps\n* Maîtrise de solution de Virutualisation de données (Denodo, Dremio, etc Maîtrise d'au moins un environnement cloud public ou privé (Azure, AWS, Outscale, etc.)\n\nVous avez développé de solides compétences en matière d'autonomie, d'adaptabilité et de communication.\n\nInformations supplémentaires\n\nLes avantages à nous rejoindre Un accord télétravail pour télétravailler jusqu'à 2 jours par semaine selon vos missions.\n* Un package avantages intéressants : une mutuelle, un CSE, des titres restaurants, un accord d'intéressement, des primes vacances et cooptation.\n* Un accompagnement individualisé avec un mentor que vous choisissez.\n* Des opportunités de carrières multiples : plus de 50 métiers, autant de passerelles à imaginer ensemble. Plusieurs centaines de formations accessibles en toute autonomie depuis l'app mobile avec Sopra Steria Academy.\n* La possibilité de s'engager auprès de notre fondation ou de notre partenaire «Vendredi L'opportunité de rejoindre le collectif Tech'Me UP (formations, conférences, veille, et bien plus en",
+   "dateCreation": "2026-10-19T03:38:07.144Z",
+   "dateActualisation": "2026-10-19T03:38:07.144Z",
+   "lieuTravail": {
+    "libelle": "59 - Lille",
+    "codePostal": "59000",
+    "commune": "59350"
+   },
+   "romeCode": "M1811",
+   "romeLibelle": "Data engineer",
+   "appellationlibelle": "Data manager",
+   "entreprise": {
+    "nom": "NEW NET 3D"
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "3 An(s)",
+   "salaire": {},
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "codeNAF": "62.02A",
+   "secteurActivite": "62",
+   "secteurActiviteLibelle": "Conseil en systèmes et logiciels informatiques",
+   "trancheEffectifEtab": "6 à 9 salariés",
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8041127",
+    "partenaires": [
+     {
+      "nom": "METEOJOB",
+      "url": "https://www.meteojob.com/jobs/57567096?utm_source=pole-emploi&utm_medium=aggregator-free",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/meteojob80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  },
+  {
+   "id": "8040971",
+   "intitule": "Chef de projet data (H/F)",
+   "description": "Description du poste :\n\nEt si votre expertise Data contribuait à améliorer le quotidien de milliers d'utilisateurs ?\n\nNous recherchons un(e) Chef de Projet Data passionné(e) par la valorisation de la donnée, capable de transformer des environnements complexes en véritables outils d'aide à la décision.\n\nVous rejoindrez une organisation en pleine transformation digitale, au sein d'un système d'information riche et stimulant, où la Data occupe une place stratégique dans l'amélioration de la performance opérationnelle.\n\nVotre challenge\n\nAu cœur de la Direction des Systèmes d'Information, vous serez l'acteur clé des projets de reporting, d'analyse et d'intégration de données.\n\nVous interviendrez sur l'ensemble de la chaîne de valeur Data Concevoir et développer des tableaux de bord et reportings à forte valeur ajoutée\n\n Automatiser et optimiser les flux de données\n\n Connecter des applications multiples au sein d'un écosystème complexe\n\n Garantir la qualité, la cohérence et la fiabilité des données\n\n Accompagner les métiers dans l'exploitation de la donnée pour faciliter leurs prises de décision\n\n Participer à la diffusion d'une véritable culture Data au sein de l'organisation\n\n Identifier et mettre en œuvre les meilleures pratiques et innovations du marché\n\nL'environnement que vous allez découvrir\n\nVous évoluerez dans un contexte exigeant et stimulant :\n\nPrès de 200 applications interconnectées\n\nDes projets variés combinant intégration, reporting et gouvernance de la donnée\n\nUne forte proximité avec les métiers\n\nDe réelles opportunités d'impact sur les processus et la performance de l'entreprise\n\nVotre stack technique***SQL Server & DB2\n* Power BI\n* ETL (OTIC ou équivalent)\n* SSIS, SSAS, SSRS\n* Azure Data Factory\n* Azure SQL Database\n* Azure Functions\n* Azure Service Bus\n* Java / Angular\n\nDescription du profil :\n\nVous justifiez d'au moins 5 ans d'expérience sur des fonctions telles que Chef de Projet Data\n* Data Analyst\n* Data Engineer\n* Consultant Data\n\nVous êtes reconnu(e) pour Votre maîtrise de SQL et Power BI\n\n Votre capacité à concevoir et maintenir des flux de données robustes\n\n Votre compréhension des enjeux métiers\n\n Votre autonomie et votre sens des responsabilités\n\n Votre aptitude à dialoguer avec des interlocuteurs variés et à vulgariser des sujets techniques\n\nCe que nous vous proposons\n\n Un environnement technologique riche et en constante évolution\n\n Une forte autonomie dans vos missions\n\n Du télétravail régulier\n\n Un accompagnement au développement de vos compétences\n\n De réelles perspectives d'évolution\n\n Une équipe engagée, collaborative et bienveillante\n\nVous aimez faire parler la donnée, relever des défis techniques et travailler au plus près des métiers ?\n\nJe serai ravi d'échanger avec vous.\n\n#Data #DataAnalytics #DataEngineer #DataProjectManager #PowerBI #SQL #Azure #BusinessIntelligence #DataJobs #TechJobs #CDI #Recrutement #TransformationDigitale #DataManagement #HiringNow",
+   "dateCreation": "2026-10-19T03:37:49.304Z",
+   "dateActualisation": "2026-10-19T03:37:49.304Z",
+   "lieuTravail": {
+    "libelle": "95 - Frépillon",
+    "codePostal": "95740",
+    "commune": "95256"
+   },
+   "romeCode": "M1811",
+   "romeLibelle": "Data engineer",
+   "appellationlibelle": "Data manager",
+   "entreprise": {
+    "nom": "LHH RECRUITMENT SOLUTIONS"
+   },
+   "typeContrat": "CDI",
+   "typeContratLibelle": "CDI",
+   "natureContrat": "Contrat travail",
+   "experienceExige": "E",
+   "experienceLibelle": "3 An(s)",
+   "salaire": {},
+   "alternance": false,
+   "contact": {},
+   "nombrePostes": 1,
+   "codeNAF": "70.22Z",
+   "secteurActivite": "70",
+   "secteurActiviteLibelle": "Conseil pour les affaires et autres conseils de gestion",
+   "trancheEffectifEtab": "20 à 49 salariés",
+   "origineOffre": {
+    "origine": "2",
+    "urlOrigine": "https://candidat.francetravail.fr/offres/recherche/detail/8040971",
+    "partenaires": [
+     {
+      "nom": "METEOJOB",
+      "url": "https://www.meteojob.com/jobs/57566427?utm_source=pole-emploi&utm_medium=aggregator-free",
+      "logo": "https://www.francetravail.fr/logos/img/partenaires/meteojob80.png"
+     }
+    ]
+   },
+   "contexteTravail": {},
+   "entrepriseAdaptee": false,
+   "employeurHandiEngage": false
+  }
+ ],
+ "filtresPossibles": [
+  {
+   "filtre": "typeContrat",
+   "agregation": [
+    {
+     "valeurPossible": "CDD",
+     "nbResultats": 7
+    },
+    {
+     "valeurPossible": "CDI",
+     "nbResultats": 95
+    },
+    {
+     "valeurPossible": "MIS",
+     "nbResultats": 13
+    }
+   ]
+  },
+  {
+   "filtre": "experience",
+   "agregation": [
+    {
+     "valeurPossible": "0",
+     "nbResultats": 3
+    },
+    {
+     "valeurPossible": "4",
+     "nbResultats": 54
+    },
+    {
+     "valeurPossible": "1",
+     "nbResultats": 4
+    },
+    {
+     "valeurPossible": "2",
+     "nbResultats": 34
+    },
+    {
+     "valeurPossible": "3",
+     "nbResultats": 20
+    }
+   ]
+  },
+  {
+   "filtre": "qualification",
+   "agregation": [
+    {
+     "valeurPossible": "0",
+     "nbResultats": 7
+    },
+    {
+     "valeurPossible": "9",
+     "nbResultats": 9
+    },
+    {
+     "valeurPossible": "X",
+     "nbResultats": 99
+    }
+   ]
+  },
+  {
+   "filtre": "natureContrat",
+   "agregation": [
+    {
+     "valeurPossible": "E1",
+     "nbResultats": 113
+    },
+    {
+     "valeurPossible": "E2",
+     "nbResultats": 1
+    },
+    {
+     "valeurPossible": "FS",
+     "nbResultats": 1
+    }
+   ]
+  }
+ ]
+}
