@@ -5,8 +5,8 @@ name: Veille emploi (v2)
 #
 # PÉRIODE DE TEST (depuis le 26/10/2026) : aucun envoi Telegram (mode simulation, jeton non
 # transmis) et, dans le fichier de suivi, écriture seulement dans les onglets « (essai) ».
-# Mise en service réelle : VEILLE_ENVOI=telegram, VEILLE_SUIVI=reel et transmettre
-# TELEGRAM_BOT_TOKEN, après le réglage des seuils sur l'annotation.
+# En service depuis la fusion de la PR « Mise en service ». Pour revenir en test :
+# VEILLE_ENVOI=simulation et VEILLE_SUIVI=essai.
 
 on:
   schedule:
