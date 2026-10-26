@@ -50,7 +50,7 @@ def message_alerte(o: dict) -> str:
 
 
 def _ligne_resume(i: int, o: dict) -> str:
-    detail = " · ".join(p for p in (e(o.get("entreprise") or "?"), e(o.get("lieu"))) if p)
+    detail = " · ".join(p for p in (e(o.get("entreprise") or "employeur non indiqué"), e(o.get("lieu"))) if p)
     lien = _lien(o.get("url", ""), "offre")
     return f"{i}. <b>{o['note']}</b> {e(o['titre'])} · {detail} · {lien}"
 
