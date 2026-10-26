@@ -48,8 +48,7 @@ jobs:
           # Comme le mode ombre : planning réel, Adzuna exclue (quota partagé avec la v1),
           # envois simulés (aucun jeton Telegram transmis).
           VEILLE_SOURCES_EXCLUES: adzuna
-          # Pour essayer une seule source : VEILLE_SOURCES: <nom> (essai du lot 5 : service_public).
-          VEILLE_SOURCES: la_bonne_alternance
+          # Pour essayer une seule source : VEILLE_SOURCES: <nom> (essais du lot 5 : service_public, la_bonne_alternance).
           VEILLE_ENVOI: simulation
           # Fichier de suivi non touché (la production écrit dans l'onglet Veille).
           VEILLE_SUIVI: aucun
