@@ -165,10 +165,15 @@ def enregistrer_offres(base: Base, offres: list[Offre], le: datetime | None = No
             c.execute("UPDATE offres SET derniere_vue = ? WHERE cle = ?", (maintenant, o.cle))
 
 
-def derniere_vue(base: Base, cle: str) -> str | None:
+def dernieres_vues(base: Base, cles: list[str]) -> dict[str, datetime]:
+    """Dernière détection (UTC) des offres déjà connues parmi `cles`."""
+    sortie: dict[str, datetime] = {}
     with closing(base.connexion()) as c:
-        r = c.execute("SELECT derniere_vue FROM offres WHERE cle = ?", (cle,)).fetchone()
-    return r[0] if r else None
+        for i in range(0, len(cles), 500):
+            lot = cles[i:i + 500]
+            for cle, d in c.execute(f"SELECT cle, derniere_vue FROM offres WHERE cle IN ({','.join('?' * len(lot))})", lot):
+                sortie[cle] = datetime.strptime(d, FORMAT)
+    return sortie
 
 
 def noter(base: Base, cle: str, note: int, raisons: list[tuple[str, int]], niveau: str) -> None:

@@ -1,0 +1,17 @@
+# Offres réelles qui DOIVENT passer les filtres et être présentées.
+# Titre, employeur, lieu et contrat tels que publiés. `competences` : mots-clés techniques de
+# l'offre (relevé, pas le texte de l'annonce). `attendu` : niveau minimal (resume ou alerte).
+offres:
+  - {titre: "AI Engineer (LLM / RAG) F/H", entreprise: "Harvest", lieu: "Paris", contrat_brut: "CDI",
+     competences: "Python, LLM, RAG, Docker, Kubernetes, CI/CD, Grafana", attendu: alerte,
+     note: "Candidature du 23/10, recommandation interne"}
+  - {titre: "Coordinateur IA H/F", entreprise: "Exail", lieu: "Saint-Germain-en-Laye", contrat_brut: "CDI",
+     attendu: resume, note: "Cas fondateur de l'élargissement du 16/10"}
+  - {titre: "Data Scientist", entreprise: "Shift Technology", lieu: "Paris", contrat_brut: "CDI",
+     attendu: resume, note: "Candidature du 05/10"}
+  - {titre: "Data Engineer", entreprise: "DINUM", lieu: "Paris", contrat_brut: "CDD - 36 Mois",
+     attendu: resume, note: "Employeur public, CDD long"}
+  - {titre: "Consultant Data Engineer Junior H/F", entreprise: "Converteo", lieu: "Paris", contrat_brut: "CDI",
+     attendu: resume, note: "Cabinet : présenté, sans alerte"}
+  - {titre: "Data Analyst junior", entreprise: "Cdiscount", lieu: "Bordeaux", contrat_brut: "CDI",
+     attendu: resume, note: "Priorité 2"}
