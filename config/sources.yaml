@@ -1,0 +1,65 @@
+# Requêtes envoyées à chaque source, par fil (résultats du lot 0 : docs/sondages_lot0.md).
+
+actives:
+  france_travail: true
+  adzuna: true
+  hellowork: true
+
+france_travail:
+  # Fenêtre de recherche : les offres créées depuis N jours (le dédoublonnage écarte le déjà vu).
+  fenetre_jours: 3
+  max_pages: 2              # 150 offres par page
+  emploi:
+    types_contrat: CDI,CDD,MIS
+    # Codes ROME confirmés au sondage du 25/10.
+    romes: [M1811, M1405, M1419, M1889, M1403]
+    # Mots-clés EN PLUS des codes ROME : la comparaison v1/v2 du 26/10 a montré que France
+    # Travail classe des offres « Data Engineer » sous d'autres codes. Les deux se complètent,
+    # le dédoublonnage fusionne.
+    mots_cles: [data engineer, ingenieur data, ingenieur donnees, data scientist, data analyst,
+                analytics engineer, machine learning, intelligence artificielle, power bi,
+                data steward, data quality, mlops, llm]
+  alternance:
+    nature_contrat: E2,FS   # apprentissage, professionnalisation
+    romes: [M1811, M1405, M1419, M1889]
+    mots_cles: [data, intelligence artificielle]
+
+adzuna:
+  # Recherche sur le titre (title_only), tri par date. Chaque page coûte 1 requête sur le quota.
+  # La comparaison v1/v2 du 26/10 a montré qu'une requête générique « data » (les 100 plus
+  # récentes) rate la plupart des offres utiles : environ 365 titres « data » par jour. On
+  # vise donc les intitulés, une fois par jour sur les dernières 48 heures : 6 requêtes par
+  # jour, environ 186 par mois, sous le plafond de 220.
+  # Pas de what_exclude : il porte sur tout le texte et écarterait une offre junior dont la
+  # description mentionne « senior ». La séniorité est filtrée sur le titre, par nos règles.
+  max_jours: 2
+  par_page: 50
+  requetes:
+    # Seconde comparaison (26/10) : les offres encore manquées étaient surtout des « Analytics
+    # Engineer » et des « MLOps », d'où ces deux requêtes à la place d'« ingénieur data »,
+    # que France Travail et HelloWork couvrent déjà.
+    - {nom: data_engineer, title_only: data engineer, pages: 2}
+    - {nom: data_analyst, title_only: data analyst, pages: 1}
+    - {nom: data_scientist, title_only: data scientist, pages: 1}
+    - {nom: analytics_engineer, title_only: analytics engineer, pages: 1}
+    - {nom: machine_learning, title_only: machine learning, pages: 1}
+
+hellowork:
+  # Résultats classés par pertinence, sans date sur la page liste, et aucun tri par date
+  # exploitable (sondage du 26/10). On compense par plus de pages et une recherche dédiée à
+  # Paris pour les priorités 1, à un rythme modéré (planning.yaml).
+  max_pages: 4
+  delai_secondes: 2.5
+  emploi:
+    - {k: data engineer}
+    - {k: data engineer, l: Paris}
+    - {k: data scientist}
+    - {k: data analyst}
+    - {k: data analyst, l: Paris}
+    - {k: ingenieur data}
+    - {k: ingenieur ia}
+    - {k: analytics engineer}
+    - {k: machine learning}
+  alternance:
+    - {k: alternance data}
+    - {k: alternance intelligence artificielle}

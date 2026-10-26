@@ -1,178 +1,183 @@
-"""
-Point d'entrée du pipeline de veille.
+"""Un passage du pipeline v2 (conception § 1).
 
-Orchestration :
-    sources actives → filtrage profil → dédoublonnage/fusion → scoring (saturation)
-    → filtre "déjà vu" (SQLite) → marquage → notification Telegram (top N) → prune.
-
-Aucune source défaillante ne doit casser le pipeline (critère d'acceptation #5) :
-chaque fetch est isolé dans un try/except.
+Lot 1 : planification, collecte, normalisation, filtres, dédoublonnage, enregistrement et
+rapport. La note, les envois Telegram et les écritures Google Sheets arrivent aux lots 2 à 4.
 
 Lancement : `python -m src.main`
-Env : ADZUNA_*, FT_*, TELEGRAM_* (+ DRY_RUN=1 pour ne pas envoyer, VERBOSE=1 pour DEBUG).
+Variables : FT_CLIENT_ID, FT_CLIENT_SECRET, ADZUNA_APP_ID, ADZUNA_APP_KEY.
+Options : VEILLE_BASE (chemin de la base), VEILLE_SOURCES (liste imposée, ignore le planning),
+VEILLE_RAPPORT (chemin du rapport JSON), VERBOSE=1.
 """
-import locale
+from __future__ import annotations
+
+import collections
+import json
 import logging
 import os
-from datetime import datetime
+import sys
+from dataclasses import dataclass, field
+from datetime import UTC, datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
-from src import storage
-from src.config import load_config
-from src.notif_telegram import (
-    construire_messages,
-    envoyer_messages,
-    message_jour_vide,
-)
-from src.scoring import dedoublonne_et_fusionne, filtre_par_profil, score_toutes
-from src.sources import (
-    adzuna,
-    apec,
-    ashby,
-    choose,
-    france_travail,
-    greenhouse,
-    hellowork,
-    lever,
-    teamtailor,
-)
+from src import dedoublonnage, filtres, notation, planning, stockage
+from src.config import Config, charger
+from src.models import Offre, Rejet
+from src.sources import Contexte, SourceIndisponible, adzuna, france_travail, hellowork
 from src.utils.http import build_session
-
-CONFIG_PATH = "config/profil.yaml"
-DB_PATH = "data/offres.sqlite"
-LOG_PATH = "data/pipeline.log"
 
 logger = logging.getLogger("veille")
 
-# Nom du module source -> fonction fetch. L'ordre n'a pas d'importance fonctionnelle.
-SOURCES = {
-    "adzuna": adzuna.fetch,
-    "france_travail": france_travail.fetch,
-    "greenhouse": greenhouse.fetch,
-    "lever": lever.fetch,
-    "ashby": ashby.fetch,
-    "teamtailor": teamtailor.fetch,
-    "apec": apec.fetch,
-    "hellowork": hellowork.fetch,
-    "choose": choose.fetch,
-}
+SOURCES = {m.NOM: m.fetch for m in (france_travail, adzuna, hellowork)}
 
 
-def _setup_logging() -> None:
-    """Logs vers stdout ET data/pipeline.log, ISO timestamps. DEBUG si VERBOSE=1."""
-    Path(LOG_PATH).parent.mkdir(parents=True, exist_ok=True)
-    niveau = logging.DEBUG if os.getenv("VERBOSE") == "1" else logging.INFO
-    fmt = "%(asctime)s %(levelname)s %(name)s %(message)s"
-    handlers = [logging.StreamHandler(), logging.FileHandler(LOG_PATH, encoding="utf-8")]
-    logging.basicConfig(level=niveau, format=fmt, datefmt="%Y-%m-%dT%H:%M:%S", handlers=handlers)
+@dataclass
+class Rapport:
+    debut: str
+    plan: dict
+    sources: dict[str, dict] = field(default_factory=dict)
+    brutes: int = 0
+    gardees: int = 0
+    nouvelles: int = 0
+    rejets_par_motif: dict[str, int] = field(default_factory=dict)
+    par_fil: dict[str, int] = field(default_factory=dict)
+    par_famille: dict[str, int] = field(default_factory=dict)
+    par_type_employeur: dict[str, int] = field(default_factory=dict)
+    par_niveau: dict[str, int] = field(default_factory=dict)
+    exemples_nouvelles: list[str] = field(default_factory=list)
+
+    def resume(self) -> list[str]:
+        lignes = [f"Plan : {', '.join(self.plan['sources']) or 'aucune source due'}"]
+        for nom, s in self.sources.items():
+            ligne = f"{nom} : {s['etat']}, {s.get('offres', 0)} offres, {s.get('requetes', 0)} requêtes"
+            if s.get("erreur"):
+                ligne += f" ({s['erreur']})"
+            elif s.get("erreurs_partielles"):
+                ligne += f", {s['erreurs_partielles']} en échec ({'; '.join(s['erreurs'][:2])})"
+            lignes.append(ligne)
+        lignes.append(f"Brutes {self.brutes}, gardées {self.gardees}, nouvelles {self.nouvelles}")
+        lignes.append("Rejets : " + ", ".join(f"{k} {v}" for k, v in sorted(self.rejets_par_motif.items())))
+        lignes.append("Fils : " + ", ".join(f"{k} {v}" for k, v in sorted(self.par_fil.items())))
+        lignes.append("Familles : " + ", ".join(f"{k} {v}" for k, v in sorted(self.par_famille.items())))
+        lignes.append("Employeurs : " + ", ".join(f"{k} {v}" for k, v in sorted(self.par_type_employeur.items())))
+        lignes.append("Niveaux (nouvelles) : " + ", ".join(f"{k} {v}" for k, v in sorted(self.par_niveau.items())))
+        return lignes
 
 
-def _date_fr() -> str:
-    """Date du jour façon '10 juin'. Locale FR si dispo, sinon fallback anglais."""
-    for loc in ("fr_FR.UTF-8", "fr_FR", "French_France"):
-        try:
-            locale.setlocale(locale.LC_TIME, loc)
-            break
-        except locale.Error:
+def collecter(noms: list[str], config: Config, base: stockage.Base, session, maintenant_utc: datetime,
+              rapport: Rapport, sources: dict = SOURCES) -> list[Offre]:
+    """Interroge chaque source isolément. Une source en échec n'arrête pas le passage."""
+    toutes: list[Offre] = []
+    for nom in noms:
+        fetch = sources.get(nom)
+        if fetch is None:
+            rapport.sources[nom] = {"etat": "inconnue"}
             continue
-    try:
-        return datetime.now().strftime("%-d %B")
-    except ValueError:
-        # %-d non supporté sous Windows : on retombe sur %d.
-        return datetime.now().strftime("%d %B").lstrip("0")
-
-
-def _sources_actives(config) -> list[tuple[str, callable]]:
-    """Liste (nom, fetch) des sources activées dans profil.yaml."""
-    actives = vars(config.sources_actives)
-    return [(nom, fn) for nom, fn in SOURCES.items() if actives.get(nom, False)]
-
-
-def run() -> int:
-    """Exécute le pipeline complet. Retourne le nombre d'offres notifiées."""
-    config = load_config(CONFIG_PATH)
-    storage.init_db(DB_PATH)
-    session = build_session()
-
-    # 1. Collecte multi-source, chaque source isolée.
-    toutes = []
-    for nom, fetch_fn in _sources_actives(config):
+        ctx = Contexte(config=config, session=session, maintenant_utc=maintenant_utc)
+        ident = stockage.debut_execution(base, nom, maintenant_utc)
         try:
-            offres = fetch_fn(config, session)
-            logger.info("Source %s : %d offres", nom, len(offres))
-            toutes.extend(offres)
+            offres = fetch(ctx)
+        except SourceIndisponible as e:
+            stockage.fin_execution(base, ident, False, 0, ctx.requetes, str(e))
+            rapport.sources[nom] = {"etat": "indisponible", "requetes": ctx.requetes, "erreur": str(e)}
+            logger.warning("%s", e)
+            continue
         except Exception as e:
-            logger.error("Source %s a échoué (ignorée) : %s", nom, e)
+            stockage.fin_execution(base, ident, False, 0, ctx.requetes, f"{e.__class__.__name__}: {e}")
+            rapport.sources[nom] = {"etat": "erreur", "requetes": ctx.requetes, "erreur": e.__class__.__name__}
+            logger.exception("Source %s en erreur", nom)
             continue
-    logger.info("Total brut : %d offres", len(toutes))
-
-    # 2. Filtrage profil.
-    filtrees = filtre_par_profil(toutes, config)
-    logger.info("Après filtres profil : %d", len(filtrees))
-
-    # 3. Dédoublonnage + fusion cross-source.
-    fusionnees = dedoublonne_et_fusionne(filtrees)
-    logger.info("Après dédoublonnage : %d", len(fusionnees))
-
-    # 4. Scoring (saturation incluse).
-    scorees = score_toutes(fusionnees, config)
-
-    # 5. Filtre "déjà vues" AVANT de marquer.
-    nouvelles = [o for o in scorees if not storage.is_already_seen(o.cle_unique)]
-    logger.info("Nouvelles offres : %d", len(nouvelles))
-
-    # 6. Marque toutes les offres vues (nouvelles ET revues -> rafraîchit date_derniere_vue).
-    for o in scorees:
-        storage.mark_seen(o)
-
-    # 7. Sélection à notifier : score >= seuil, top N.
-    seuil = config.telegram.score_minimum
-    top_n = config.telegram.top_n_par_jour
-    a_notifier = sorted(
-        (o for o in nouvelles if o.score >= seuil),
-        key=lambda o: o.score, reverse=True,
-    )[:top_n]
-    logger.info("À notifier (score>=%d, top %d) : %d", seuil, top_n, len(a_notifier))
-
-    # 8. Notification.
-    date_str = _date_fr()
-    if a_notifier:
-        messages = construire_messages(a_notifier, total_scanne=len(toutes), date_str=date_str)
-        if envoyer_messages(messages, session):
-            for o in a_notifier:
-                storage.mark_notified(o.cle_unique)
-            logger.info("Notification envoyée (%d offres).", len(a_notifier))
-        else:
-            logger.error("Échec de notification : offres non marquées notifiées.")
-    else:
-        envoyer_messages([message_jour_vide(total_scanne=len(toutes), date_str=date_str)], session)
-        logger.info("Aucune offre à notifier aujourd'hui.")
-
-    # 9. Entretien : purge des entrées trop anciennes.
-    supprimees = storage.prune_old(days=90)
-    if supprimees:
-        logger.info("Prune : %d entrées anciennes supprimées.", supprimees)
-
-    logger.info("Pipeline terminé.")
-    return len(a_notifier)
+        stockage.fin_execution(base, ident, True, len(offres), ctx.requetes,
+                               "; ".join(ctx.erreurs[:3]) if ctx.erreurs else None)
+        rapport.sources[nom] = {"etat": "ok", "offres": len(offres), "requetes": ctx.requetes,
+                                "erreurs_partielles": len(ctx.erreurs), "erreurs": ctx.erreurs[:5]}
+        toutes.extend(offres)
+    return toutes
 
 
-def main() -> None:
-    # Charge un éventuel .env local (no-op sur GitHub Actions où il n'existe pas ;
-    # les variables déjà présentes dans l'environnement ne sont pas écrasées).
+REPUBLICATION_JOURS = 30
+
+
+def passage(config: Config, base: stockage.Base, maintenant_utc: datetime | None = None,
+            sources_imposees: list[str] | None = None, session=None, sources: dict = SOURCES,
+            verdicts: dict[str, str] | None = None) -> Rapport:
+    maintenant_utc = maintenant_utc or stockage.maintenant_utc()
+    plan = planning.taches_dues(maintenant_utc, stockage.dernier_succes(base), stockage.derniers_envois(base),
+                                stockage.requetes_du_mois(base, "adzuna", maintenant_utc), config)
+    noms = sources_imposees if sources_imposees is not None else plan.sources
+    rapport = Rapport(debut=maintenant_utc.isoformat(), plan={"sources": noms, "raisons": plan.raisons,
+                                                               "hors_plage": plan.hors_plage})
+    if not noms:
+        logger.info("Rien à faire : %s", plan.raisons)
+        return rapport
+
+    brutes = collecter(noms, config, base, session or build_session(), maintenant_utc, rapport, sources)
+    aujourdhui = maintenant_utc.replace(tzinfo=UTC).astimezone(ZoneInfo(config.planning.fuseau)).date()
+    gardees, rejets = filtres.trier(brutes, config, aujourdhui)
+    fusionnees = dedoublonnage.fusionner(gardees)
+    vues = stockage.dernieres_vues(base, [o.cle for o in fusionnees])
+    nouvelles, notes = [], {}
+    for o in fusionnees:
+        derniere = vues.get(o.cle)
+        republiee = derniere is not None and (maintenant_utc - derniere).days >= REPUBLICATION_JOURS
+        if derniere is None or republiee:
+            nouvelles.append(o)
+        note = notation.noter(o, config, aujourdhui, verdicts, republiee=republiee)
+        notes[o.cle] = (note, notation.niveau(o, note, config))
+
+    stockage.enregistrer_offres(base, fusionnees, maintenant_utc)
+    for o in nouvelles:
+        note, niv = notes[o.cle]
+        stockage.noter(base, o.cle, note.total, note.composantes, niv.value)
+    stockage.enregistrer_rejets(base, _rejets_uniques(rejets), maintenant_utc)
+
+    rapport.brutes, rapport.gardees, rapport.nouvelles = len(brutes), len(fusionnees), len(nouvelles)
+    rapport.rejets_par_motif = dict(collections.Counter(r.motif.value for r in rejets))
+    rapport.par_fil = dict(collections.Counter(str(o.fil) for o in fusionnees))
+    rapport.par_famille = dict(collections.Counter(o.famille for o in fusionnees))
+    rapport.par_type_employeur = dict(collections.Counter(str(o.type_employeur) for o in fusionnees))
+    rapport.par_niveau = dict(collections.Counter(notes[o.cle][1].value for o in nouvelles))
+    meilleures = sorted(nouvelles, key=lambda o: notes[o.cle][0].total, reverse=True)[:25]
+    rapport.exemples_nouvelles = [f"{notes[o.cle][1].value} {notes[o.cle][0].total:+d} [{o.fil}/{o.famille}] {o.titre} · "
+                                  f"{o.entreprise} · {o.lieu} ({', '.join(notes[o.cle][0].raisons(2))})" for o in meilleures]
+    stockage.purger(base)
+    return rapport
+
+
+def _rejets_uniques(rejets: list[Rejet]) -> list[Rejet]:
+    vus: dict[tuple[str, str], Rejet] = {}
+    for r in rejets:
+        vus.setdefault((r.offre.cle, r.motif.value), r)
+    return list(vus.values())
+
+
+def _annotation(titre: str, lignes: list[str]) -> None:
+    corps = "\n".join(lignes)[:6000].replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
+    print(f"::notice title={titre}::{corps}", flush=True)
+
+
+def main() -> int:
     try:
         from dotenv import load_dotenv
         load_dotenv()
     except ImportError:
         pass
-
-    _setup_logging()
-    try:
-        run()
-    except Exception as e:
-        logger.exception("Pipeline interrompu par une erreur fatale : %s", e)
-        raise
+    logging.basicConfig(level=logging.DEBUG if os.getenv("VERBOSE") == "1" else logging.INFO,
+                        format="%(asctime)s %(levelname)s %(name)s %(message)s", stream=sys.stdout)
+    config = charger()
+    base = stockage.ouvrir(os.getenv("VEILLE_BASE", "data/veille_v2.sqlite"))
+    imposees = [s.strip() for s in os.getenv("VEILLE_SOURCES", "").split(",") if s.strip()] or None
+    rapport = passage(config, base, sources_imposees=imposees)
+    chemin = Path(os.getenv("VEILLE_RAPPORT", "data/rapport_passage.json"))
+    chemin.parent.mkdir(parents=True, exist_ok=True)
+    chemin.write_text(json.dumps(rapport.__dict__, ensure_ascii=False, indent=1), encoding="utf-8")
+    for ligne in rapport.resume():
+        logger.info(ligne)
+    if os.getenv("GITHUB_ACTIONS") == "true":
+        _annotation("Passage v2", rapport.resume())
+        _annotation("Nouvelles offres (extrait)", rapport.exemples_nouvelles or ["aucune"])
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

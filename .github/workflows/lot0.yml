@@ -1,0 +1,78 @@
+name: Lot 0 (vérification des accès et sondages)
+
+# Lot 0 de la refonte v2. Déclenché par un push sur la branche lot0 (un workflow manuel
+# n'est déclenchable que depuis la branche par défaut). Lecture seule sur la production :
+# ne touche ni à la base, ni au cache, ni au fichier de suivi. Les résultats sont émis en
+# annotations, et les réponses brutes des sources sont commitées sur la branche « sondes ».
+
+on:
+  push:
+    branches: [lot0]
+    paths:
+      - 'scripts/lot0/**'
+      - '.github/workflows/lot0.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: lot0
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  lot0:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      PYTHONIOENCODING: 'utf-8'
+      SONDE_DIR: ${{ github.workspace }}/sondes_out
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Dépendances
+        run: pip install requests==2.32.3 google-auth==2.35.0
+
+      - name: Vérification des accès
+        # Désactivée pour ce passage : elle poste un message de test dans chaque sujet Telegram.
+        if: false
+        env:
+          GOOGLE_TOKEN_JSON: ${{ secrets.GOOGLE_TOKEN_JSON }}
+          SUIVI_SHEET_ID: ${{ secrets.SUIVI_SHEET_ID }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          LBA_API_KEY: ${{ secrets.LBA_API_KEY }}
+        run: python scripts/lot0/verif_setup.py
+
+      - name: Sondage des sources
+        env:
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+          FT_CLIENT_ID: ${{ secrets.FT_CLIENT_ID }}
+          FT_CLIENT_SECRET: ${{ secrets.FT_CLIENT_SECRET }}
+          LBA_API_KEY: ${{ secrets.LBA_API_KEY }}
+          SONDES: sonde_hellowork_tri
+        run: python scripts/lot0/sonde.py
+
+      - name: Publie les réponses brutes sur la branche sondes
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          DEST="$RUNNER_TEMP/sondes"
+          if git fetch --depth 1 origin sondes 2>/dev/null; then
+            git worktree add "$DEST" FETCH_HEAD
+            cd "$DEST" && git checkout -B sondes
+          else
+            git worktree add --detach "$DEST"
+            cd "$DEST" && git checkout --orphan sondes && git rm -rfq . && rm -rf -- *
+          fi
+          JOUR="$(date -u +%Y-%m-%d_%H%M)"
+          mkdir -p "$JOUR" && cp -r "$SONDE_DIR"/. "$JOUR"/
+          git add -A
+          git commit -qm "sondes : $JOUR (run ${{ github.run_id }})"
+          git push -q origin sondes
+          echo "::notice title=Branche sondes::Réponses publiées dans $JOUR/"

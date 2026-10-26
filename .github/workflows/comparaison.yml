@@ -1,0 +1,82 @@
+name: Comparaison v1 / v2 (à blanc)
+
+# Lance la v1 (code de main) et la v2 au même moment, sur les vraies sources, SANS AUCUN
+# envoi : les secrets Telegram ne sont pas transmis. La base de production est restaurée en
+# lecture dans une copie jetable ; le cache n'est jamais réécrit. Résultats en annotations et
+# sur la branche « sondes » (dossier comparaison/).
+
+on:
+  push:
+    branches: [comparaison]
+    paths: ['scripts/comparaison/**', '.github/workflows/comparaison.yml']
+  workflow_dispatch:
+
+concurrency:
+  group: comparaison
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  comparer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      PYTHONIOENCODING: utf-8
+      COMPARAISON_DIR: ${{ github.workspace }}/comparaison_out
+    steps:
+      - uses: actions/checkout@v5
+      - name: Code de la v1 (branche main)
+        uses: actions/checkout@v5
+        with:
+          ref: main
+          path: v1
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt -r v1/requirements.txt
+
+      - name: Base de production (lecture seule)
+        uses: actions/cache/restore@v4
+        with:
+          path: data/
+          key: comparaison-${{ github.run_id }}
+          restore-keys: |
+            veille-db-
+      - run: mkdir -p v1/data && cp data/offres.sqlite v1/data/offres.sqlite && ls -la v1/data
+
+      - name: v1 à blanc (sans Telegram)
+        working-directory: v1
+        env:
+          PYTHONPATH: ${{ github.workspace }}/v1
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+          FT_CLIENT_ID: ${{ secrets.FT_CLIENT_ID }}
+          FT_CLIENT_SECRET: ${{ secrets.FT_CLIENT_SECRET }}
+        run: python ../scripts/comparaison/v1_a_blanc.py "$RUNNER_TEMP/v1.json"
+
+      - name: v2 et comparaison
+        env:
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+          FT_CLIENT_ID: ${{ secrets.FT_CLIENT_ID }}
+          FT_CLIENT_SECRET: ${{ secrets.FT_CLIENT_SECRET }}
+        run: python scripts/comparaison/comparer.py "$RUNNER_TEMP/v1.json"
+
+      - name: Publie le détail sur la branche sondes
+        run: |
+          set -e
+          rm -f "$COMPARAISON_DIR"/*.sqlite
+          cp "$RUNNER_TEMP/v1.json" "$COMPARAISON_DIR/v1_passage.json"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          DEST="$RUNNER_TEMP/sondes"
+          git fetch --depth 1 origin sondes
+          git worktree add "$DEST" FETCH_HEAD
+          cd "$DEST" && git checkout -B sondes
+          JOUR="comparaison/$(date -u +%Y-%m-%d_%H%M)"
+          mkdir -p "$JOUR" && cp -r "$COMPARAISON_DIR"/. "$JOUR"/
+          git add -A && git commit -qm "comparaison v1/v2 : $JOUR (run ${{ github.run_id }})"
+          git push -q origin sondes
+          echo "::notice title=Détail publié::$JOUR sur la branche sondes"
