@@ -16,7 +16,7 @@ from pathlib import Path
 
 from src.models import Offre, Rejet
 
-VERSION = 1
+VERSION = 2
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS version_schema (version INTEGER NOT NULL);
@@ -43,6 +43,7 @@ CREATE TABLE IF NOT EXISTS offres (
     etat_envoi TEXT NOT NULL DEFAULT 'aucun',
     envoyee_le TEXT,
     ajoutee_veille_le TEXT,
+    ajoutee_essai_le TEXT,
     importee_v1 INTEGER NOT NULL DEFAULT 0
 );
 CREATE INDEX IF NOT EXISTS idx_offres_premiere_vue ON offres(premiere_vue);
@@ -120,7 +121,20 @@ def ouvrir(chemin: str | Path) -> Base:
         if c.execute("SELECT COUNT(*) FROM version_schema").fetchone()[0] == 0:
             c.execute("INSERT INTO version_schema(version) VALUES (?)", (VERSION,))
             _importer_v1(c)
+        _migrer(c)
     return base
+
+
+def _migrer(c: sqlite3.Connection) -> None:
+    """Version 1 -> 2 : l'onglet d'essai a sa propre date d'ajout (le vrai onglet Veille doit
+    recevoir, à la mise en service, les offres déjà vues pendant la période de test)."""
+    colonnes = {r[1] for r in c.execute("PRAGMA table_info(offres)")}
+    if "ajoutee_essai_le" not in colonnes:
+        c.execute("ALTER TABLE offres ADD COLUMN ajoutee_essai_le TEXT")
+        # En version 1, seul le mode essai a existé : ses ajouts deviennent des ajouts d'essai.
+        c.execute("UPDATE offres SET ajoutee_essai_le = ajoutee_veille_le, ajoutee_veille_le = NULL "
+                  "WHERE ajoutee_veille_le IS NOT NULL")
+    c.execute("UPDATE version_schema SET version = ?", (VERSION,))
 
 
 def _importer_v1(c: sqlite3.Connection) -> int:
@@ -318,17 +332,34 @@ def derniere_erreur(base: Base, tache: str) -> str:
 
 # --------------------------------------------------------------------------- fichier de suivi (lot 4)
 
-def a_ajouter_veille(base: Base) -> list[dict]:
-    """Offres présentées (alerte ou résumé) pas encore ajoutées à l'onglet Veille."""
+_COLONNE_VEILLE = {"reel": "ajoutee_veille_le", "essai": "ajoutee_essai_le"}
+
+
+def a_ajouter_veille(base: Base, mode: str = "reel", depuis: datetime | None = None) -> list[dict]:
+    """Offres présentées (alerte ou résumé) pas encore ajoutées à l'onglet Veille du mode.
+
+    `depuis` : seulement les offres détectées depuis cette date (reprise à la mise en service).
+    """
+    colonne = _COLONNE_VEILLE[mode]
+    borne = (depuis or datetime(2000, 1, 1)).strftime(FORMAT)
     with closing(base.connexion()) as c:
-        rows = c.execute("SELECT * FROM offres WHERE niveau IN ('alerte', 'resume') AND ajoutee_veille_le IS NULL "
-                         "AND importee_v1 = 0 ORDER BY premiere_vue, note DESC").fetchall()
+        rows = c.execute(f"SELECT * FROM offres WHERE niveau IN ('alerte', 'resume') AND {colonne} IS NULL "
+                         "AND importee_v1 = 0 AND premiere_vue >= ? ORDER BY premiere_vue, note DESC", (borne,)).fetchall()
     return [_ligne(r) for r in rows]
 
 
-def marquer_veille(base: Base, cles: list[str], le: datetime | None = None) -> None:
+def marquer_veille(base: Base, cles: list[str], le: datetime | None = None, mode: str = "reel") -> None:
+    colonne = _COLONNE_VEILLE[mode]
     with closing(base.connexion()) as c, c:
-        c.executemany("UPDATE offres SET ajoutee_veille_le = ? WHERE cle = ?", [(_maintenant(le), k) for k in cles])
+        c.executemany(f"UPDATE offres SET {colonne} = ? WHERE cle = ?", [(_maintenant(le), k) for k in cles])
+
+
+def reprendre_simulations(base: Base, depuis: datetime) -> int:
+    """Mise en service : les envois simulés récents redeviennent « à envoyer » (une seule fois,
+    car un envoi réel les marque ensuite « envoyee »). Les plus anciens restent simulés."""
+    with closing(base.connexion()) as c, c:
+        return c.execute("UPDATE offres SET etat_envoi = 'aucun', envoyee_le = NULL WHERE etat_envoi = 'simulee' "
+                         "AND premiere_vue >= ?", (depuis.strftime(FORMAT),)).rowcount
 
 
 def candidats_route_b(base: Base, depuis: datetime) -> list[dict]:

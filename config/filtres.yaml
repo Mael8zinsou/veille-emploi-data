@@ -155,19 +155,18 @@ seniorite:
     - vp
     - cto
     - chief
-    # Décision du 26/10 (annotation) : « confirmé » et « expérimenté » sont hors cible.
+    # Calibrage du 26/10 (76 offres annotées) : « confirmé » dans le titre écarte 4 « hors cible »
+    # et aucun « je postule ». « Expérimenté » n'est PAS retenu : il écartait un « je postule ».
     - confirme
     - confirmee
-    - experimente
-    - experimentee
   # Expressions retirées du titre avant ce contrôle : ce sont des métiers, pas des grades.
   exceptions:
     - data manager
     - data management
     - product manager data
-  # Exigence d'expérience au-delà de laquelle l'offre est rejetée. Décision du 26/10 :
-  # « 3 ans minimum » est hors cible ; une fourchette « 2 à 3 ans » passe (borne basse).
-  annees_max: 2
+  # Exigence d'expérience au-delà de laquelle l'offre est rejetée. Calibrage du 26/10 : un
+  # plafond à 2 ans écartait deux « je postule » demandant 3 ans, et aucun « hors cible ».
+  annees_max: 3
 
 # Certification précise exigée : rejet (motif certification_exigee). Décision du 26/10.
 # Règle : « certifi… » suivi, à `fenetre` mots au plus, d'un mot d'exigence

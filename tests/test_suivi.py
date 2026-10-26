@@ -162,3 +162,40 @@ def test_panne_du_tableur_isolee(tmp_path, config):
                      suivi=suivi(EnPanne()))
     assert r.gardees == 1 and "erreur_verdicts" in r.suivi and "erreur_veille" in r.suivi
     assert stockage.a_ajouter_veille(base)                 # rien de perdu : sera ajoutée au passage suivant
+
+
+def test_essai_puis_mise_en_service(tmp_path, config):
+    """Les offres vues pendant le test arrivent dans le vrai onglet et les vrais envois à la mise
+    en service, une seule fois."""
+    t = tableur()
+    base = stockage.ouvrir(tmp_path / "b.sqlite")
+    sources = {"france_travail": lambda ctx: [offre(**BONNE)], "adzuna": lambda ctx: [], "hellowork": lambda ctx: []}
+    sim = Telegram(None, None, 1, config.telegram.sujets, mode="simulation")
+    main.passage(config, base, QUAND, sources_imposees=["france_travail"], session=object(), sources=sources,
+                 telegram=sim, suivi=suivi(t, "essai"))
+    assert t.cellule("Veille (essai)", 2, "F") == "Data Engineer junior" and "Veille" not in t.onglets
+
+    from tests.test_telegram import FauxTelegram
+    reel = Telegram(FauxTelegram(), "j", 1, config.telegram.sujets, mode="telegram")
+    r = main.passage(config, base, datetime(2026, 10, 27, 11, 0), sources_imposees=["france_travail"], session=object(),
+                     sources=sources, telegram=reel, suivi=suivi(t, "reel"))
+    assert r.envois["reprises"] == 1 and r.envois["alertes"] == 1
+    assert t.cellule("Veille", 2, "F") == "Data Engineer junior"
+    r = main.passage(config, base, datetime(2026, 10, 27, 12, 0), sources_imposees=["france_travail"], session=object(),
+                     sources=sources, telegram=reel, suivi=suivi(t, "reel"))
+    assert r.envois["reprises"] == 0 and r.envois["alertes"] == 0 and r.suivi["ajoutees_veille"] == 0
+
+
+def test_migration_version_1(tmp_path, config):
+    import sqlite3
+    chemin = tmp_path / "b.sqlite"
+    base = stockage.ouvrir(chemin)
+    stockage.enregistrer_offres(base, [__import__("src.filtres", fromlist=["x"]).normaliser_offre(offre(), config)])
+    with sqlite3.connect(chemin) as c:     # état d'une base v1 : ajout d'essai noté dans ajoutee_veille_le
+        c.execute("UPDATE offres SET ajoutee_veille_le = '2026-10-26 08:00:00', ajoutee_essai_le = NULL")
+        c.execute("ALTER TABLE offres DROP COLUMN ajoutee_essai_le")
+        c.execute("UPDATE version_schema SET version = 1")
+    stockage.ouvrir(chemin)
+    with sqlite3.connect(chemin) as c:
+        assert c.execute("SELECT ajoutee_veille_le, ajoutee_essai_le FROM offres").fetchone() == (None, "2026-10-26 08:00:00")
+        assert c.execute("SELECT version FROM version_schema").fetchone()[0] == 2

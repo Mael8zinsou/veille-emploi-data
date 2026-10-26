@@ -33,7 +33,7 @@ def test_offre_ordinaire_gardee(config):
     ({"contrat_brut": "CDD - 2 Mois"}, Motif.DUREE_TROP_COURTE),
     # Décisions du 26/10 (annotation)
     ({"titre": "Data Engineer confirmé"}, Motif.SENIORITE),
-    ({"description": "3 ans d'expérience minimum sur Spark."}, Motif.SENIORITE),
+    ({"description": "4 ans d'expérience minimum sur Spark."}, Motif.SENIORITE),
     ({"titre": "Business Analyst Data"}, Motif.METIER_HORS_CIBLE),
     ({"description": "Certification AWS exigée."}, Motif.CERTIFICATION_EXIGEE),
     ({"contrat_brut": "MIS Intérim - 1 Mois"}, Motif.DUREE_TROP_COURTE),
@@ -44,7 +44,8 @@ def test_motifs(config, kw, attendu):
 
 
 @pytest.mark.parametrize("kw", [
-    {"description": "2 ans d'expérience souhaités."},
+    {"description": "3 ans d'expérience souhaités."},
+    {"titre": "Data Analyst expérimenté"},
     {"description": "2 à 3 ans d'expérience."},                   # borne basse : 2
     {"description": "Une certification Databricks est appréciée."},
     {"contrat_brut": "CDD - 3 Mois"},
