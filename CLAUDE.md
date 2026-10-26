@@ -4,8 +4,11 @@
 > `docs/cahier_des_charges_v2.md` (validé), `docs/conception_v2.md` et `docs/sondages_lot0.md`.
 > Ces documents remplacent `brief_vague3.md` pour toute décision nouvelle.
 >
-> * Branches : `main` = v1 en production (ne pas modifier avant la bascule) ; `v2` = intégration ;
->   `lotN` = un lot, fusionné dans `v2` par pull request ; `sondes` = réponses brutes des sondages.
+> * Branches : `main` = **v2 en période de test** depuis le 26/10/2026 (la v1 n'existe plus que
+>   dans l'historique, tag de référence : commit `89cacbf`) ; `sondes` = réponses brutes des
+>   sondages. Travail par branches et pull requests vers `main`.
+> * Période de test : `veille.yml` tourne toutes les heures, VEILLE_ENVOI=simulation,
+>   VEILLE_SUIVI=essai. Mise en service réelle après calibrage des seuils (eval/).
 > * Contrat des sources v2 : `NOM` + `fetch(ctx: Contexte) -> list[Offre]` (src/sources/__init__.py).
 > * Toutes les dates en base sont en UTC ; le planning raisonne en heure de Paris.
 > * APEC répond 403 depuis le 1er octobre 2026 : retirée, ne pas chercher à contourner.

@@ -1,12 +1,19 @@
-name: Veille emploi quotidienne
+name: Veille emploi (v2)
+
+# Un passage de la veille v2 toutes les heures. Le code décide, en heure de Paris, de ce qui
+# est dû (config/planning.yaml) : rien ne se passe hors de la plage 7h-22h.
+#
+# PÉRIODE DE TEST (depuis le 26/10/2026) : aucun envoi Telegram (mode simulation, jeton non
+# transmis) et, dans le fichier de suivi, écriture seulement dans les onglets « (essai) ».
+# Mise en service réelle : VEILLE_ENVOI=telegram, VEILLE_SUIVI=reel et transmettre
+# TELEGRAM_BOT_TOKEN, après le réglage des seuils sur l'annotation.
 
 on:
   schedule:
-    # 6h UTC = 7h Paris en hiver, 8h en été. Cron GitHub est toujours en UTC.
-    - cron: '0 6 * * *'
-  workflow_dispatch:        # permet le déclenchement manuel depuis l'onglet Actions
+    - cron: '17 5-21 * * *'
+  workflow_dispatch:
 
-# Évite deux runs concurrents (cron + manuel) qui se marcheraient sur la DB.
+# Deux passages simultanés se marcheraient sur la base.
 concurrency:
   group: veille-emploi
   cancel-in-progress: false
@@ -17,26 +24,18 @@ permissions:
 jobs:
   veille:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
-          python-version: '3.11'
-          cache: 'pip'
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -r requirements.txt
 
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-
-      # --- Persistance de la base SQLite entre runs ---
-      # On restaure la version la plus récente (restore-keys = préfixe commun),
-      # et on sauvegarde sous une clé datée unique. Le cache GitHub étant
-      # immuable par clé, une clé datée garantit que la sauvegarde du jour est
-      # bien écrite (sinon une clé fixe ne serait jamais ré-uploadée).
-      - name: Restore SQLite cache
-        id: cache-restore
+      # Base persistée entre passages par le cache GitHub (clé datée, restauration par
+      # préfixe). Même préfixe qu'en v1 : la v2 reprend la base v1 et y ajoute ses tables.
+      - name: Restaure la base
         uses: actions/cache/restore@v4
         with:
           path: data/
@@ -44,30 +43,23 @@ jobs:
           restore-keys: |
             veille-db-
 
-      - name: Lance le pipeline
+      - name: Passage
         env:
           ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
           ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
           FT_CLIENT_ID: ${{ secrets.FT_CLIENT_ID }}
           FT_CLIENT_SECRET: ${{ secrets.FT_CLIENT_SECRET }}
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          DRY_RUN: '0'
-          PYTHONIOENCODING: 'utf-8'
+          GOOGLE_TOKEN_JSON: ${{ secrets.GOOGLE_TOKEN_JSON }}
+          SUIVI_SHEET_ID: ${{ secrets.SUIVI_SHEET_ID }}
+          VEILLE_BASE: data/offres.sqlite
+          VEILLE_ENVOI: simulation
+          VEILLE_SUIVI: essai
+          PYTHONIOENCODING: utf-8
         run: python -m src.main
 
-      - name: Save SQLite cache
-        # Sauvegarde même si l'envoi a échoué, pour ne pas perdre l'état "déjà vu".
+      - name: Sauvegarde la base
         if: always()
         uses: actions/cache/save@v4
         with:
           path: data/
           key: veille-db-${{ github.run_id }}
-
-      - name: Upload logs si échec
-        if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: pipeline-logs
-          path: data/pipeline.log
-          if-no-files-found: ignore
