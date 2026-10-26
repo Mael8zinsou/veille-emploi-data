@@ -48,6 +48,8 @@ jobs:
           # envois simulés (aucun jeton Telegram transmis).
           VEILLE_SOURCES_EXCLUES: adzuna
           VEILLE_ENVOI: simulation
+          # Dimanche 25/10 à 18h30 (Paris) : sources, résumé du soir et bilan de la semaine sont dus.
+          VEILLE_MAINTENANT: '2026-10-25T17:30:00'
           PYTHONIOENCODING: utf-8
         run: |
           ls -la data/ || true

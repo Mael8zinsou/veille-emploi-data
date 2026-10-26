@@ -6,7 +6,8 @@ rapport. La note, les envois Telegram et les écritures Google Sheets arrivent a
 Lancement : `python -m src.main`
 Variables : FT_CLIENT_ID, FT_CLIENT_SECRET, ADZUNA_APP_ID, ADZUNA_APP_KEY.
 Options : VEILLE_BASE (chemin de la base), VEILLE_SOURCES (liste imposée, ignore le planning),
-VEILLE_RAPPORT (chemin du rapport JSON), VERBOSE=1.
+VEILLE_SOURCES_EXCLUES, VEILLE_ENVOI (telegram pour un envoi réel, simulation sinon),
+VEILLE_MAINTENANT (essais : heure UTC imposée), VEILLE_RAPPORT (rapport JSON), VERBOSE=1.
 """
 from __future__ import annotations
 
@@ -226,7 +227,12 @@ def main() -> int:
     mode = "telegram" if os.getenv("VEILLE_ENVOI") == "telegram" else "simulation"
     tg = Telegram(build_session(), os.getenv("TELEGRAM_BOT_TOKEN"), config.telegram.groupe_id,
                   config.telegram.sujets, mode=mode)
-    rapport = passage(config, base, sources_imposees=imposees, telegram=tg, sources_exclues=exclues)
+    # Essais seulement : rejouer un passage à une heure donnée (UTC, ISO 8601), pour vérifier
+    # résumés et bilans hors des heures où ils sont dus.
+    force = os.getenv("VEILLE_MAINTENANT")
+    quand = datetime.fromisoformat(force) if force else None
+    rapport = passage(config, base, maintenant_utc=quand, sources_imposees=imposees, telegram=tg,
+                      sources_exclues=exclues)
     chemin = Path(os.getenv("VEILLE_RAPPORT", "data/rapport_passage.json"))
     chemin.parent.mkdir(parents=True, exist_ok=True)
     chemin.write_text(json.dumps(rapport.__dict__, ensure_ascii=False, indent=1), encoding="utf-8")
