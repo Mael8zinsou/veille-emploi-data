@@ -10,8 +10,8 @@ plage:
 taches:
   # Une source est due si son dernier succès date d'au moins `intervalle_minutes`.
   france_travail: {intervalle_minutes: 50}
-  hellowork: {intervalle_minutes: 50}
-  adzuna: {intervalle_minutes: 340}   # 3 passages par jour
+  hellowork: {intervalle_minutes: 170}   # toutes les 3 heures environ, par politesse
+  adzuna: {intervalle_minutes: 1380}    # une fois par jour (quota)
   la_bonne_alternance: {intervalle_minutes: 480}
 
 envois:

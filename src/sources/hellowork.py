@@ -59,12 +59,15 @@ def fetch(ctx: Contexte) -> list[Offre]:
     cfg = ctx.config.sources.hellowork
     recherches = [(m, Fil.EMPLOI) for m in cfg.emploi] + [(m, Fil.ALTERNANCE) for m in cfg.alternance]
     offres: list[Offre] = []
-    for mots, fil in recherches:
+    for recherche, fil in recherches:
         for page in range(1, cfg.max_pages + 1):
             ctx.requetes += 1
+            params = {"k": recherche.k, "p": page}
+            if recherche.l:
+                params["l"] = recherche.l
             try:
-                r = ctx.session.get(URL, params={"k": mots, "p": page}, timeout=20)
-            except Exception as e:
+                r = ctx.session.get(URL, params=params, timeout=20)
+            except Exception as e:  # réseau : on journalise et on passe
                 ctx.erreurs.append(f"hellowork : {e.__class__.__name__}")
                 break
             if _refuse(r.status_code, r.text):

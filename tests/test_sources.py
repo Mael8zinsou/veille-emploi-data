@@ -116,14 +116,16 @@ def test_adzuna_reel_et_pages(config, identifiants):
     pages = sum(r.pages for r in config.sources.adzuna.requetes)
     assert c.requetes == pages and len(offres) == 50 * pages
     params = c.session.appels[0][2]["params"]
-    assert params["title_only"] == "data" and params["sort_by"] == "date" and "what_exclude" not in params
+    assert params["title_only"] == config.sources.adzuna.requetes[0].title_only
+    assert params["sort_by"] == "date" and "what_exclude" not in params
 
 
 def test_adzuna_derniere_page_courte(config, identifiants):
     donnees = fixture_json("adzuna/titre_data.json")
     donnees = {**donnees, "results": donnees["results"][:10]}
     c = ctx(config, lambda m, u, k: Reponse(200, donnees))
-    assert len(adzuna.fetch(c)) == 10 and c.requetes == 1
+    n = len(config.sources.adzuna.requetes)
+    assert len(adzuna.fetch(c)) == 10 * n and c.requetes == n     # page courte : pas de page suivante
 
 
 def test_adzuna_sans_identifiants(config, monkeypatch):
@@ -160,6 +162,7 @@ def test_hellowork_parcourt_les_recherches(config, monkeypatch):
     cfg = config.sources.hellowork
     assert len(offres) == 30 * (len(cfg.emploi) + len(cfg.alternance))
     assert {o.fil_demande for o in offres} == {Fil.EMPLOI, Fil.ALTERNANCE}
+    assert any(a[2]["params"].get("l") == "Paris" for a in c.session.appels)
 
 
 def test_session_honnete():

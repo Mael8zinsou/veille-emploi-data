@@ -181,11 +181,16 @@ class Adzuna(_Strict):
     requetes: list[RequeteAdzuna]
 
 
+class RechercheHelloWork(_Strict):
+    k: str
+    l: str | None = None  # noqa: E741 (nom du paramètre de l'URL HelloWork)
+
+
 class HelloWork(_Strict):
     max_pages: int = Field(ge=1, le=5)
     delai_secondes: float = Field(ge=1.0)
-    emploi: list[str]
-    alternance: list[str] = []
+    emploi: list[RechercheHelloWork]
+    alternance: list[RechercheHelloWork] = []
 
 
 class Sources(_Strict):
@@ -195,6 +200,88 @@ class Sources(_Strict):
     hellowork: HelloWork
 
 
+# --------------------------------------------------------------------------- notation
+
+class Competences(_Strict):
+    points: int
+    plafond: int = Field(ge=0)
+    liste: MotifsRequis
+
+
+class NiveauExperience(_Strict):
+    signaux_junior: Motifs
+    junior: int
+    debutant_accepte: int
+    confirme_titre: int
+    mots_confirme: Motifs
+    annees: dict[int, int]
+
+
+class PointsEmployeur(_Strict):
+    esn: int
+    intermediaire: int
+    inconnu: int
+    ecole: int
+
+
+class PointsSuivi(_Strict):
+    cible_prioritaire: int
+    cible: int
+    derniere_priorite: int
+    ecarter: int
+    ecarter_definitif: Motifs
+
+
+class Signaux(_Strict):
+    publiee_depuis_un_jour: int
+    publiee_depuis_5_jours: int
+    republiee: int
+    peu_candidatee: int
+    zone_preferee: int
+    teletravail_complet: int
+
+
+class SeuilAlerte(_Strict):
+    note_min: int
+    fils: list[str]
+    exige_priorite_1_ou_cible: bool = True
+    exclut_seconde_main: bool = True
+
+
+class SeuilResume(_Strict):
+    note_min: int
+
+
+class Niveaux(_Strict):
+    alerte: SeuilAlerte
+    resume: SeuilResume
+
+    @model_validator(mode="after")
+    def _ordre(self) -> Niveaux:
+        if self.alerte.note_min < self.resume.note_min:
+            raise ValueError("le seuil d'alerte doit être au moins égal à celui du résumé")
+        return self
+
+
+class Notation(_Strict):
+    priorite_famille: dict[int, int]
+    competences: Competences
+    niveau_experience: NiveauExperience
+    employeur: PointsEmployeur
+    suivi: PointsSuivi
+    signaux: Signaux
+    niveaux: Niveaux
+
+
+# --------------------------------------------------------------------------- telegram
+
+class Telegram(_Strict):
+    groupe_id: int
+    sujets: dict[str, int]
+    resume_max_offres: int = Field(ge=1, le=100)
+    pannes_avant_avertissement: int = Field(ge=1, le=20)
+
+
 # --------------------------------------------------------------------------- ensemble
 
 class Config(_Strict):
@@ -202,6 +289,8 @@ class Config(_Strict):
     filtres: Filtres
     planning: Planning
     sources: Sources
+    notation: Notation
+    telegram: Telegram
 
 
 def _lire(chemin: Path) -> dict:
@@ -210,7 +299,8 @@ def _lire(chemin: Path) -> dict:
 
 
 def charger(dossier: Path | str = DOSSIER_CONFIG) -> Config:
-    """Charge et valide les quatre fichiers. Lève pydantic.ValidationError si invalide."""
+    """Charge et valide les fichiers de configuration. Lève pydantic.ValidationError si invalide."""
     d = Path(dossier)
     return Config(metiers=_lire(d / "metiers.yaml"), filtres=_lire(d / "filtres.yaml"),
-                  planning=_lire(d / "planning.yaml"), sources=_lire(d / "sources.yaml"))
+                  planning=_lire(d / "planning.yaml"), sources=_lire(d / "sources.yaml"),
+                  notation=_lire(d / "notation.yaml"), telegram=_lire(d / "telegram.yaml"))

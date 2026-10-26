@@ -1,12 +1,12 @@
 name: Essai v2 (passage à blanc)
 
-# Passage complet de la v2 sur les vraies sources, sans aucun envoi (le lot 1 n'envoie rien).
+# Passage complet de la v2 sur les vraies sources, sans aucun envoi (mode simulation).
 # La base de production v1 est restaurée en LECTURE : la v2 l'importe dans une copie jetable,
 # ce qui teste la migration sur les vraies données. Le cache n'est jamais réécrit.
 
 on:
   push:
-    branches: [lot1, v2]
+    branches: [lot1, lot3, v2]
     paths: ['src/**', 'config/**', '.github/workflows/v2_essai.yml']
   workflow_dispatch:
 
@@ -44,7 +44,12 @@ jobs:
           ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
           ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
           VEILLE_BASE: data/offres.sqlite
-          VEILLE_SOURCES: france_travail,adzuna,hellowork
+          # Comme le mode ombre : planning réel, Adzuna exclue (quota partagé avec la v1),
+          # envois simulés (aucun jeton Telegram transmis).
+          VEILLE_SOURCES_EXCLUES: adzuna
+          VEILLE_ENVOI: simulation
+          # Dimanche 25/10 à 18h30 (Paris) : sources, résumé du soir et bilan de la semaine sont dus.
+          VEILLE_MAINTENANT: '2026-10-25T17:30:00'
           PYTHONIOENCODING: utf-8
         run: |
           ls -la data/ || true

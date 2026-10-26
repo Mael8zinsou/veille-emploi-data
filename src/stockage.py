@@ -165,10 +165,15 @@ def enregistrer_offres(base: Base, offres: list[Offre], le: datetime | None = No
             c.execute("UPDATE offres SET derniere_vue = ? WHERE cle = ?", (maintenant, o.cle))
 
 
-def derniere_vue(base: Base, cle: str) -> str | None:
+def dernieres_vues(base: Base, cles: list[str]) -> dict[str, datetime]:
+    """Dernière détection (UTC) des offres déjà connues parmi `cles`."""
+    sortie: dict[str, datetime] = {}
     with closing(base.connexion()) as c:
-        r = c.execute("SELECT derniere_vue FROM offres WHERE cle = ?", (cle,)).fetchone()
-    return r[0] if r else None
+        for i in range(0, len(cles), 500):
+            lot = cles[i:i + 500]
+            for cle, d in c.execute(f"SELECT cle, derniere_vue FROM offres WHERE cle IN ({','.join('?' * len(lot))})", lot):
+                sortie[cle] = datetime.strptime(d, FORMAT)
+    return sortie
 
 
 def noter(base: Base, cle: str, note: int, raisons: list[tuple[str, int]], niveau: str) -> None:
@@ -254,3 +259,58 @@ def purger(base: Base, jours_offres: int = 180, jours_rejets: int = 90) -> tuple
         n_o = c.execute("DELETE FROM offres WHERE derniere_vue < ?", (limite_o,)).rowcount
         n_r = c.execute("DELETE FROM rejets WHERE vu_le < ?", (limite_r,)).rowcount
     return n_o, n_r
+
+
+# --------------------------------------------------------------------------- envois (lot 3)
+
+def _ligne(r: sqlite3.Row) -> dict:
+    d = dict(r)
+    d["composantes"] = json.loads(d.get("raisons") or "[]")
+    tri = sorted(d["composantes"], key=lambda c: abs(c[1]), reverse=True)
+    d["raisons"] = [f"{n} {p:+d}" for n, p in tri[:3]]
+    d["signaux"] = [n for n, _ in d["composantes"] if n in ("seconde main", "employeur non indiqué", "republiée",
+                                                             "peu candidatée", "école")]
+    return d
+
+
+def alertes_a_envoyer(base: Base) -> list[dict]:
+    with closing(base.connexion()) as c:
+        rows = c.execute("SELECT * FROM offres WHERE niveau = 'alerte' AND etat_envoi IN ('aucun', 'en_attente') "
+                         "ORDER BY note DESC").fetchall()
+    return [_ligne(r) for r in rows]
+
+
+def a_resumer(base: Base, fil: str) -> list[dict]:
+    with closing(base.connexion()) as c:
+        rows = c.execute("SELECT * FROM offres WHERE niveau = 'resume' AND etat_envoi = 'aucun' AND fil = ? "
+                         "ORDER BY note DESC", (fil,)).fetchall()
+    return [_ligne(r) for r in rows]
+
+
+def marquer(base: Base, cles: list[str], etat: str, le: datetime | None = None) -> None:
+    with closing(base.connexion()) as c, c:
+        c.executemany("UPDATE offres SET etat_envoi = ?, envoyee_le = ? WHERE cle = ?",
+                      [(etat, _maintenant(le), cle) for cle in cles])
+
+
+def stats_periode(base: Base, debut: datetime, fin: datetime) -> dict:
+    d, f = debut.strftime(FORMAT), fin.strftime(FORMAT)
+    with closing(base.connexion()) as c:
+        par_fil = dict(c.execute("SELECT fil, COUNT(*) FROM offres WHERE envoyee_le BETWEEN ? AND ? "
+                                 "AND etat_envoi IN ('envoyee', 'simulee') AND niveau IN ('alerte', 'resume') "
+                                 "GROUP BY fil", (d, f)).fetchall())
+        alertes = c.execute("SELECT COUNT(*) FROM offres WHERE envoyee_le BETWEEN ? AND ? AND niveau = 'alerte' "
+                            "AND etat_envoi IN ('envoyee', 'simulee')", (d, f)).fetchone()[0]
+        sources = [dict(r) for r in c.execute(
+            "SELECT tache, COUNT(*) AS passages, SUM(succes) AS succes, COALESCE(SUM(nb_offres), 0) AS offres "
+            "FROM executions WHERE debut BETWEEN ? AND ? GROUP BY tache ORDER BY tache", (d, f)).fetchall()]
+    for s in sources:
+        s["echecs_consecutifs"] = echecs_consecutifs(base, s["tache"])
+    return {"par_fil": par_fil, "alertes": alertes, "sources": sources}
+
+
+def derniere_erreur(base: Base, tache: str) -> str:
+    with closing(base.connexion()) as c:
+        r = c.execute("SELECT erreur FROM executions WHERE tache = ? AND succes = 0 ORDER BY id DESC LIMIT 1",
+                      (tache,)).fetchone()
+    return (r[0] or "") if r else ""

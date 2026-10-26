@@ -6,7 +6,8 @@ rapport. La note, les envois Telegram et les écritures Google Sheets arrivent a
 Lancement : `python -m src.main`
 Variables : FT_CLIENT_ID, FT_CLIENT_SECRET, ADZUNA_APP_ID, ADZUNA_APP_KEY.
 Options : VEILLE_BASE (chemin de la base), VEILLE_SOURCES (liste imposée, ignore le planning),
-VEILLE_RAPPORT (chemin du rapport JSON), VERBOSE=1.
+VEILLE_SOURCES_EXCLUES, VEILLE_ENVOI (telegram pour un envoi réel, simulation sinon),
+VEILLE_MAINTENANT (essais : heure UTC imposée), VEILLE_RAPPORT (rapport JSON), VERBOSE=1.
 """
 from __future__ import annotations
 
@@ -16,13 +17,16 @@ import logging
 import os
 import sys
 from dataclasses import dataclass, field
-from datetime import UTC, datetime
+from datetime import UTC, datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from src import dedoublonnage, filtres, planning, stockage
+from src import dedoublonnage, filtres, notation, planning, stockage
 from src.config import Config, charger
 from src.models import Offre, Rejet
+from src.planning import Plan
+from src.sorties import telegram as tgm
+from src.sorties.telegram import Telegram
 from src.sources import Contexte, SourceIndisponible, adzuna, france_travail, hellowork
 from src.utils.http import build_session
 
@@ -43,7 +47,10 @@ class Rapport:
     par_fil: dict[str, int] = field(default_factory=dict)
     par_famille: dict[str, int] = field(default_factory=dict)
     par_type_employeur: dict[str, int] = field(default_factory=dict)
+    par_niveau: dict[str, int] = field(default_factory=dict)
     exemples_nouvelles: list[str] = field(default_factory=list)
+    envois: dict[str, int] = field(default_factory=lambda: {"alertes": 0, "alertes_en_attente": 0, "resumes": 0,
+                                                            "bilans": 0, "pannes": 0})
 
     def resume(self) -> list[str]:
         lignes = [f"Plan : {', '.join(self.plan['sources']) or 'aucune source due'}"]
@@ -59,6 +66,8 @@ class Rapport:
         lignes.append("Fils : " + ", ".join(f"{k} {v}" for k, v in sorted(self.par_fil.items())))
         lignes.append("Familles : " + ", ".join(f"{k} {v}" for k, v in sorted(self.par_famille.items())))
         lignes.append("Employeurs : " + ", ".join(f"{k} {v}" for k, v in sorted(self.par_type_employeur.items())))
+        lignes.append("Niveaux (nouvelles) : " + ", ".join(f"{k} {v}" for k, v in sorted(self.par_niveau.items())))
+        lignes.append("Envois : " + ", ".join(f"{k} {v}" for k, v in self.envois.items()))
         return lignes
 
 
@@ -80,7 +89,7 @@ def collecter(noms: list[str], config: Config, base: stockage.Base, session, mai
             rapport.sources[nom] = {"etat": "indisponible", "requetes": ctx.requetes, "erreur": str(e)}
             logger.warning("%s", e)
             continue
-        except Exception as e:
+        except Exception as e:  # dernière ligne de défense : une source ne casse pas le passage
             stockage.fin_execution(base, ident, False, 0, ctx.requetes, f"{e.__class__.__name__}: {e}")
             rapport.sources[nom] = {"etat": "erreur", "requetes": ctx.requetes, "erreur": e.__class__.__name__}
             logger.exception("Source %s en erreur", nom)
@@ -93,26 +102,53 @@ def collecter(noms: list[str], config: Config, base: stockage.Base, session, mai
     return toutes
 
 
+REPUBLICATION_JOURS = 30
+
+
 def passage(config: Config, base: stockage.Base, maintenant_utc: datetime | None = None,
-            sources_imposees: list[str] | None = None, session=None, sources: dict = SOURCES) -> Rapport:
+            sources_imposees: list[str] | None = None, session=None, sources: dict = SOURCES,
+            verdicts: dict[str, str] | None = None, telegram: Telegram | None = None,
+            sources_exclues: list[str] | None = None) -> Rapport:
+    """Un passage : collecte des sources dues, tri, note, enregistrement, puis envois dus.
+
+    `sources_imposees` ignore le planning (essais). `sources_exclues` retire des sources après
+    planification (mode ombre : Adzuna, dont le quota est partagé avec la v1).
+    """
     maintenant_utc = maintenant_utc or stockage.maintenant_utc()
     plan = planning.taches_dues(maintenant_utc, stockage.dernier_succes(base), stockage.derniers_envois(base),
                                 stockage.requetes_du_mois(base, "adzuna", maintenant_utc), config)
     noms = sources_imposees if sources_imposees is not None else plan.sources
+    noms = [n for n in noms if n not in (sources_exclues or [])]
     rapport = Rapport(debut=maintenant_utc.isoformat(), plan={"sources": noms, "raisons": plan.raisons,
                                                                "hors_plage": plan.hors_plage})
-    if not noms:
-        logger.info("Rien à faire : %s", plan.raisons)
-        return rapport
+    if noms:
+        _collecter_et_noter(noms, config, base, session, maintenant_utc, rapport, sources, verdicts)
+    else:
+        logger.info("Aucune source due : %s", plan.raisons)
+    if telegram is not None and not plan.hors_plage:
+        envoyer(base, config, plan, telegram, maintenant_utc, rapport)
+    return rapport
 
+
+def _collecter_et_noter(noms, config, base, session, maintenant_utc, rapport, sources, verdicts) -> None:
     brutes = collecter(noms, config, base, session or build_session(), maintenant_utc, rapport, sources)
     aujourdhui = maintenant_utc.replace(tzinfo=UTC).astimezone(ZoneInfo(config.planning.fuseau)).date()
     gardees, rejets = filtres.trier(brutes, config, aujourdhui)
     fusionnees = dedoublonnage.fusionner(gardees)
-    connues = stockage.cles_connues(base, [o.cle for o in fusionnees])
-    nouvelles = [o for o in fusionnees if o.cle not in connues]
+    vues = stockage.dernieres_vues(base, [o.cle for o in fusionnees])
+    nouvelles, notes = [], {}
+    for o in fusionnees:
+        derniere = vues.get(o.cle)
+        republiee = derniere is not None and (maintenant_utc - derniere).days >= REPUBLICATION_JOURS
+        if derniere is None or republiee:
+            nouvelles.append(o)
+        note = notation.noter(o, config, aujourdhui, verdicts, republiee=republiee)
+        notes[o.cle] = (note, notation.niveau(o, note, config))
 
     stockage.enregistrer_offres(base, fusionnees, maintenant_utc)
+    for o in nouvelles:
+        note, niv = notes[o.cle]
+        stockage.noter(base, o.cle, note.total, note.composantes, niv.value)
     stockage.enregistrer_rejets(base, _rejets_uniques(rejets), maintenant_utc)
 
     rapport.brutes, rapport.gardees, rapport.nouvelles = len(brutes), len(fusionnees), len(nouvelles)
@@ -120,10 +156,47 @@ def passage(config: Config, base: stockage.Base, maintenant_utc: datetime | None
     rapport.par_fil = dict(collections.Counter(str(o.fil) for o in fusionnees))
     rapport.par_famille = dict(collections.Counter(o.famille for o in fusionnees))
     rapport.par_type_employeur = dict(collections.Counter(str(o.type_employeur) for o in fusionnees))
-    rapport.exemples_nouvelles = [f"[{o.fil}/{o.famille}] {o.titre} · {o.entreprise} · {o.lieu}"
-                                  for o in sorted(nouvelles, key=lambda o: o.priorite)[:25]]
+    rapport.par_niveau = dict(collections.Counter(notes[o.cle][1].value for o in nouvelles))
+    meilleures = sorted(nouvelles, key=lambda o: notes[o.cle][0].total, reverse=True)[:25]
+    rapport.exemples_nouvelles = [f"{notes[o.cle][1].value} {notes[o.cle][0].total:+d} [{o.fil}/{o.famille}] {o.titre} · "
+                                  f"{o.entreprise} · {o.lieu} ({', '.join(notes[o.cle][0].raisons(2))})" for o in meilleures]
     stockage.purger(base)
-    return rapport
+
+
+def envoyer(base: stockage.Base, config: Config, plan: Plan, tg: Telegram, maintenant_utc: datetime,
+            rapport: Rapport) -> None:
+    """Alertes (dès détection, rejouées si l'envoi a échoué), pannes, résumés, bilan."""
+    fait = "envoyee" if tg.mode == "telegram" else "simulee"
+    for o in stockage.alertes_a_envoyer(base):
+        ok = tg.envoyer(tgm.message_alerte(o), o["fil"])
+        stockage.marquer(base, [o["cle"]], fait if ok else "en_attente", maintenant_utc)
+        rapport.envois["alertes" if ok else "alertes_en_attente"] += 1
+
+    seuil = config.telegram.pannes_avant_avertissement
+    for nom, s in rapport.sources.items():
+        if s.get("etat") != "ok" and stockage.echecs_consecutifs(base, nom) == seuil:
+            tg.envoyer(tgm.message_panne(nom, seuil, stockage.derniere_erreur(base, nom)))
+            rapport.envois["pannes"] += 1
+
+    jour = maintenant_utc.replace(tzinfo=UTC).astimezone(ZoneInfo(config.planning.fuseau)).date()
+    if plan.resume_quotidien:
+        for fil in ("emploi", "alternance"):
+            offres = stockage.a_resumer(base, fil)
+            messages = tgm.messages_resume(fil, offres, jour, config.telegram.resume_max_offres)
+            if all(tg.envoyer(m, fil) for m in messages):
+                stockage.marquer(base, [o["cle"] for o in offres], fait, maintenant_utc)
+                stockage.enregistrer_envoi(base, "resume", fil, maintenant_utc)
+                rapport.envois["resumes"] += 1
+
+    if plan.bilan_hebdomadaire:
+        debut = maintenant_utc - timedelta(days=7)
+        stats = stockage.stats_periode(base, debut, maintenant_utc)
+        stats.update(du=tgm.date_fr(debut.date()), au=tgm.date_fr(jour),
+                     adzuna_mois=stockage.requetes_du_mois(base, "adzuna", maintenant_utc),
+                     adzuna_plafond=config.planning.quotas.adzuna_mensuel)
+        if tg.envoyer(tgm.message_bilan(stats)):
+            stockage.enregistrer_envoi(base, "bilan", None, maintenant_utc)
+            rapport.envois["bilans"] += 1
 
 
 def _rejets_uniques(rejets: list[Rejet]) -> list[Rejet]:
@@ -149,7 +222,17 @@ def main() -> int:
     config = charger()
     base = stockage.ouvrir(os.getenv("VEILLE_BASE", "data/veille_v2.sqlite"))
     imposees = [s.strip() for s in os.getenv("VEILLE_SOURCES", "").split(",") if s.strip()] or None
-    rapport = passage(config, base, sources_imposees=imposees)
+    exclues = [s.strip() for s in os.getenv("VEILLE_SOURCES_EXCLUES", "").split(",") if s.strip()]
+    # Par sécurité, rien n'est envoyé sauf demande explicite (VEILLE_ENVOI=telegram).
+    mode = "telegram" if os.getenv("VEILLE_ENVOI") == "telegram" else "simulation"
+    tg = Telegram(build_session(), os.getenv("TELEGRAM_BOT_TOKEN"), config.telegram.groupe_id,
+                  config.telegram.sujets, mode=mode)
+    # Essais seulement : rejouer un passage à une heure donnée (UTC, ISO 8601), pour vérifier
+    # résumés et bilans hors des heures où ils sont dus.
+    force = os.getenv("VEILLE_MAINTENANT")
+    quand = datetime.fromisoformat(force) if force else None
+    rapport = passage(config, base, maintenant_utc=quand, sources_imposees=imposees, telegram=tg,
+                      sources_exclues=exclues)
     chemin = Path(os.getenv("VEILLE_RAPPORT", "data/rapport_passage.json"))
     chemin.parent.mkdir(parents=True, exist_ok=True)
     chemin.write_text(json.dumps(rapport.__dict__, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -158,6 +241,8 @@ def main() -> int:
     if os.getenv("GITHUB_ACTIONS") == "true":
         _annotation("Passage v2", rapport.resume())
         _annotation("Nouvelles offres (extrait)", rapport.exemples_nouvelles or ["aucune"])
+        if mode == "simulation" and tg.envoyes:
+            _annotation("Messages simulés (extrait)", [f"[{fil or 'général'}] {texte[:300]}" for fil, texte in tg.envoyes[:12]])
     return 0
 
 
