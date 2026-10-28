@@ -113,12 +113,34 @@ lieux:
     - "93"
     - "94"
     - "95"
-    - lille
+    # Hauts-de-France : les cinq départements, et les villes principales pour les sources qui
+    # donnent la ville seule (Choisir le service public).
     - hauts de france
     - nord
     - pas de calais
+    - aisne
+    - oise
+    - somme
     - "59"
     - "62"
+    - "02"
+    - "60"
+    - "80"
+    - lille
+    - roubaix
+    - tourcoing
+    - villeneuve d ascq
+    - dunkerque
+    - calais
+    - boulogne sur mer
+    - lens
+    - arras
+    - douai
+    - valenciennes
+    - amiens
+    - beauvais
+    - compiegne
+    - saint quentin
 
 contrats:
   # Indices dans le TITRE, prioritaires sur le contrat déclaré par la source.

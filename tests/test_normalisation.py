@@ -144,6 +144,10 @@ def test_lieux(config):
     assert lieux.analyser("London", "Data Engineer - Full remote", lx).teletravail_complet
     assert not lieux.analyser("Paris", "Data Engineer (télétravail 2 jours)", lx).teletravail_complet
     assert lieux.analyser("75 - Paris 9e", "Data", lx).zone_preferee
+    for lieu in ("59 - Dunkerque", "Dunkerque", "Calais", "Amiens, Somme", "60 - Compiègne",
+                 "Villeneuve-d'Ascq"):
+        assert lieux.analyser(lieu, "Data", lx).zone_preferee, lieu
+    assert not lieux.analyser("69 - Lyon 3e", "Data", lx).zone_preferee
     assert lieux.analyser("971 - Pointe-à-Pitre", "Data", lx).etranger == "971"
     assert lieux.analyser("Lyon 2e - 69", "Data", lx).etranger is None
 
