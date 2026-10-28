@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import hashlib
+import re
 import unicodedata
 from dataclasses import dataclass, field
 from enum import StrEnum
@@ -88,6 +89,9 @@ class Offre:
     zone_preferee: bool = False
     teletravail_complet: bool = False
     annees_requises: int | None = None
+    via_cabinet: bool = False            # publiée par un cabinet de recrutement pour un client
+    permis_exige: bool = False           # « permis B exigé » dans le texte
+    description_partielle: bool = False  # la source ne donne qu'un extrait (Adzuna)
 
     # Rempli par le dédoublonnage
     sources: list[str] = field(default_factory=list)
@@ -95,6 +99,41 @@ class Offre:
     @property
     def cle(self) -> str:
         return calculer_cle(self.entreprise, self.titre, self.lieu, self.type_employeur)
+
+    @property
+    def cle_souple(self) -> str:
+        """Comme `cle`, mais sur un titre débarrassé de ses suffixes (« (CDI) », « H/F », code en
+        majuscules) : reconnaît une même offre republiée sous un titre à peine différent."""
+        return calculer_cle(self.entreprise, titre_souple(self.titre), self.lieu, self.type_employeur)
+
+    @property
+    def empreinte(self) -> str | None:
+        """Empreinte de la description, liée à l'employeur (ou au lieu s'il est masqué). Rien si la
+        description est trop courte pour distinguer deux offres."""
+        texte = normaliser(self.description)
+        if len(texte) < EMPREINTE_MIN:
+            return None
+        ent = "" if self.type_employeur == TypeEmployeur.INTERMEDIAIRE else normaliser(self.entreprise)
+        base = f"{ent or normaliser(self.lieu)}|{texte[:EMPREINTE_LONGUEUR]}"
+        return hashlib.sha256(base.encode("utf-8")).hexdigest()[:16]
+
+
+EMPREINTE_MIN = 200
+EMPREINTE_LONGUEUR = 500
+_SUFFIXES_TITRE = re.compile(
+    r"\b(?:h\s*f(?:\s*n|\s*x)?|f\s*h(?:\s*n|\s*x)?|x\s*f\s*m|f\s*m\s*x|m\s*f|f\s*m|hf|fh|cdi|cdd)\b")
+_CODE_FINAL = re.compile(r"\s+[A-Z0-9]{4,}\s*$")
+
+
+def titre_souple(titre: str) -> str:
+    """« Data Scientist (H/F) AEROMIN » et « Data Scientist (H/F) » -> « data scientist ».
+    Un mot final tout en majuscules n'est retiré que si le titre contient des minuscules : un
+    titre entièrement en capitales (« INGENIEUR BIG DATA ») reste intact."""
+    t = titre or ""
+    if any(c.islower() for c in t):
+        t = _CODE_FINAL.sub("", t)
+    t = _SUFFIXES_TITRE.sub(" ", normaliser(t))
+    return " ".join(t.split())
 
 
 def calculer_cle(entreprise: str, titre: str, lieu: str = "",

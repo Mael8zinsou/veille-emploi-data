@@ -85,6 +85,7 @@ class IndicesContrat(_Strict):
 
 class Contrats(_Strict):
     indices_titre: IndicesContrat
+    stage_description: Motifs = []
 
 
 class Seniorite(_Strict):
@@ -98,6 +99,7 @@ class Employeurs(_Strict):
     intermediaires: Motifs
     esn: Motifs
     ecoles: Motifs
+    cabinets: Motifs = []
 
 
 class CertificationExigee(_Strict):

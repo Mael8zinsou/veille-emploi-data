@@ -27,3 +27,8 @@ def classer(nom: str, employeurs: Employeurs, delegue_par_ecole: bool = False) -
     if premier_motif(n, employeurs.esn):
         return TypeEmployeur.ESN
     return TypeEmployeur.FINAL
+
+
+def est_cabinet(nom: str, employeurs: Employeurs) -> bool:
+    """Cabinet de recrutement qui publie pour un client (signalé, sans pénalité)."""
+    return bool(premier_motif(normaliser(nom), employeurs.cabinets))

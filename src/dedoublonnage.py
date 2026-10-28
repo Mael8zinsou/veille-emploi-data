@@ -1,7 +1,8 @@
 """Dédoublonnage entre sources (conception § 4.1).
 
-Les offres de même clé sont fusionnées : on garde la plus détaillée (description la plus
-longue), on cumule les sources, et les signaux portés par une seule source sont conservés.
+Les offres de même clé souple (même employeur, titre débarrassé de ses suffixes) sont
+fusionnées : on garde la plus détaillée (description la plus longue), on cumule les sources,
+et les signaux portés par une seule source sont conservés.
 """
 from __future__ import annotations
 
@@ -12,7 +13,7 @@ def fusionner(offres: list[Offre]) -> list[Offre]:
     par_cle: dict[str, Offre] = {}
     sources: dict[str, list[str]] = {}
     for o in offres:
-        cle = o.cle
+        cle = o.cle_souple
         liste = sources.setdefault(cle, [])
         if o.source not in liste:
             liste.append(o.source)
@@ -27,6 +28,8 @@ def fusionner(offres: list[Offre]) -> list[Offre]:
             principale.duree_mois = autre.duree_mois
         if principale.annees_requises is None:
             principale.annees_requises = autre.annees_requises
+        principale.via_cabinet = principale.via_cabinet or autre.via_cabinet
+        principale.permis_exige = principale.permis_exige or autre.permis_exige
         par_cle[cle] = principale
     sortie = []
     for cle, o in par_cle.items():

@@ -1,188 +1,127 @@
-# 🌅 Veille emploi — Data Engineer junior
+# Veille emploi : métiers de la data, profil junior
 
-Pipeline autonome de **découverte d'offres data engineering** qui ratisse le marché
-caché (ATS d'entreprises, plateformes niches FR) plutôt que les agrégateurs saturés,
-dédoublonne, score selon un profil, et notifie chaque matin les meilleures nouveautés
-via **Telegram**. Tourne tout seul sur **GitHub Actions**, sans serveur à maintenir.
+Pipeline autonome qui collecte les offres d'emploi data (Data Engineer, Data Analyst,
+Data Scientist et métiers voisins) publiées en France, écarte ce qui ne correspond pas à un
+profil junior, dédoublonne d'une source et d'un jour à l'autre, note chaque offre et
+prévient sur **Telegram** : alerte immédiate pour les meilleures, résumé quotidien pour les
+autres, bilan chaque lundi. Les offres retenues alimentent aussi un fichier de suivi Google
+Sheets. Tout tourne sur **GitHub Actions**, sans serveur.
 
-> Side-project conçu pour automatiser ma propre recherche de premier poste de Data
-> Engineer. L'idée : LinkedIn est noyé (200–500 candidatures par offre) ; les offres
-> publiées directement sur les ATS (Greenhouse, Lever, Ashby) sont bien moins
-> concurrentielles mais pénibles à ratisser à la main. Ce pipeline fait le ratissage.
+> Projet personnel, conçu pour outiller ma propre recherche de premier poste. Version 2,
+> en service depuis le 26/10/2026. Le besoin et la conception sont décrits dans
+> [`docs/cahier_des_charges_v2.md`](docs/cahier_des_charges_v2.md) et
+> [`docs/conception_v2.md`](docs/conception_v2.md).
 
 ---
 
-## 🏗 Architecture
+## Fonctionnement
 
 ```
- GitHub Actions (cron 7h Paris)
+ cron-job.org, toutes les heures (cron GitHub en secours)
+        │  workflow_dispatch
+        ▼
+   src/main.py : un passage
         │
+        ├── planning : quelles sources sont dues (intervalles, plage horaire, quota Adzuna)
+        ├── sources : France Travail · Adzuna · HelloWork · Choisir le service public
+        │             · La bonne alternance            (une panne n'arrête jamais le passage)
         ▼
-     main.py  ─── orchestration, logging, résilience par source
-        │
-        ├── Sources "core"  (APIs)        ── Adzuna · France Travail
-        │   Sources "core"  (ATS discovery) ── Greenhouse · Lever · Ashby
-        │   Sources "niches" (désactivables) ── HelloWork (scraping) · Choose (no-op)
-        │
+   normalisation : métier reconnu, contrat, type d'employeur (ESN, cabinet, école…)
         ▼
-   Filtrage profil  ── mots-clés, exclusions, localisation
+   filtres : métier hors cible, séniorité, stage déguisé en CDI, lieu, fraîcheur…
         ▼
-   Dédoublonnage cross-source + fusion  ── une offre vue N fois = 1 entrée, N sources
+   dédoublonnage : dans le passage (clé souple) puis avec les 30 derniers jours
+                   (clé souple ou empreinte de la description)
         ▼
-   Scoring  ── bonus stack/junior, malus ESN, et **détection de saturation** :
-              exclusive à 1 source = pépite (boost) · présente sur 4+ = déjà bombardée (malus)
+   notation : priorité du métier, compétences, niveau d'expérience, employeur,
+              entreprises suivies, signaux (fraîcheur, republication, peu de candidats)
         ▼
-   SQLite  ── mémoire des offres déjà vues, ne notifie que les nouveautés
-        ▼
-   Telegram  ── top N du jour, MarkdownV2, liens cliquables
+   SQLite (cache Actions) ─▶ Telegram (alerte, résumé, bilan) ─▶ Google Sheets (onglet Veille)
 ```
 
-Le détail des décisions de conception est dans [`brief_vague3.md`](brief_vague3.md).
+### Dédoublonnage
+
+Une même offre revient souvent sous un titre légèrement différent (« Data Scientist (H/F)
+AEROMIN », « Data Engineer … F/H (CDI) ») ou sur plusieurs sources. Trois clés :
+
+* `cle` : employeur et titre normalisés, identifiant stable de l'offre en base ;
+* `cle_souple` : même calcul sur le titre débarrassé des mentions de genre, du type de
+  contrat et d'un code interne final ; elle regroupe les variantes d'un même passage ;
+* `empreinte` : employeur et 500 premiers caractères de la description, quand celle-ci
+  est assez longue ; elle rattrape une offre republiée sous un autre titre.
+
+Une offre inconnue dont la clé souple ou l'empreinte correspond à une offre vue depuis
+moins de 30 jours n'est pas présentée à nouveau.
+
+### Signaux affichés
+
+Sans changer la note, l'alerte Telegram et la colonne « Signaux » du suivi indiquent :
+permis B exigé, offre publiée par un cabinet de recrutement, description partielle
+(Adzuna ne livre qu'un extrait : l'expérience demandée est à vérifier sur l'offre).
 
 ---
 
-## ⚙️ Installation
+## Sources
 
-Prérequis : **Python 3.11+**.
-
-```bash
-git clone <url-du-repo>
-cd veille-emploi-data
-
-python -m venv .venv
-source .venv/bin/activate        # Windows : .venv\Scripts\activate
-pip install -r requirements.txt
-
-cp .env.example .env             # puis remplir les credentials (voir ci-dessous)
-```
-
-Lancer en local sans rien envoyer (recommandé pour un premier test) :
-
-```bash
-DRY_RUN=1 python -m src.main     # affiche le message Telegram en console
-```
-
-Lancer pour de vrai (envoie sur Telegram) :
-
-```bash
-python -m src.main
-```
-
-Lancer les tests :
-
-```bash
-pytest -q
-```
-
----
-
-## 🔧 Configuration
-
-### Variables d'environnement (`.env`)
-
-| Variable | Requis | Rôle |
-|---|---|---|
-| `ADZUNA_APP_ID` / `ADZUNA_APP_KEY` | optionnel¹ | API Adzuna (free tier 250 req/mois) |
-| `FT_CLIENT_ID` / `FT_CLIENT_SECRET` | optionnel¹ | API France Travail (OAuth2) |
-| `TELEGRAM_BOT_TOKEN` / `TELEGRAM_CHAT_ID` | requis (sauf DRY_RUN) | Bot de notification |
-| `DRY_RUN` | non | `1` = n'envoie rien, affiche en console |
-| `VERBOSE` | non | `1` = logs en niveau DEBUG |
-
-¹ Chaque source dont les credentials manquent est simplement ignorée (les ATS et
-HelloWork ne nécessitent aucune clé). Le pipeline tourne donc même sans Adzuna/FT.
-
-### Profil (`config/profil.yaml`)
-
-Tout ce qui dépend du profil recherché est externalisé ici, **sans toucher au code** :
-mots-clés à matcher, exclusions de titre (senior, lead, alternance…), lieux à exclure
-(couverture France entière par défaut), fraîcheur max, **table de scoring** (poids par
-techno / signal junior, malus ESN), sources actives, et paramètres Telegram
-(`top_n_par_jour`, `score_minimum`).
-
-### Slugs ATS (`config/slugs_ats.txt`)
-
-Liste des entreprises à interroger sur Greenhouse / Lever / Ashby / **Teamtailor**,
-au format `<ats>:<slug>` (ex. `teamtailor:deezer`). Les slugs obsolètes (404) sont
-ignorés sans casser le run. Le script [`scripts/decouvrir_slugs.py`](scripts/decouvrir_slugs.py)
-aide à en découvrir de nouveaux.
-
-### Telegram (setup unique)
-
-1. Sur Telegram, parler à [@BotFather](https://t.me/BotFather), commande `/newbot`.
-2. Récupérer le **token** fourni.
-3. Envoyer un message à son nouveau bot, puis ouvrir
-   `https://api.telegram.org/bot<TOKEN>/getUpdates` et y lire le **`chat_id`**.
-4. Renseigner `TELEGRAM_BOT_TOKEN` et `TELEGRAM_CHAT_ID`.
-
----
-
-## 📡 Sources couvertes
-
-| Source | Type | Statut | Note |
+| Source | Accès | Fréquence | Note |
 |---|---|---|---|
-| **Adzuna** | API agrégée | ✅ | Free tier, quelques requêtes/run |
-| **France Travail** | API officielle | ✅ | OAuth2, exhaustif sur la France |
-| **APEC** | API interne | ✅ | Board des cadres, gros volume DE ; filtre CDI/CDD serveur + signal « peu candidatée » |
-| **Greenhouse** | ATS (discovery) | ✅ | Endpoint board public, filtrage FR côté code |
-| **Lever** | ATS (discovery) | ✅ | idem |
-| **Ashby** | ATS (discovery) | ✅ | idem (+ gestion des postes remote) |
-| **Teamtailor** | ATS (discovery) | ✅ | Flux public `jobs.json` ; scale-ups FR (ex-Greenhouse/Lever migrées) |
-| **HelloWork** | Scraping HTML | ✅ | Page de recherche, parsing résilient, garde-fous anti-ban |
-| **Choose** | — | ⏸ no-op | SPA sans API stable ; désactivé proprement (réactivable) |
+| **France Travail** | API officielle (OAuth2) | environ toutes les heures | codes ROME et mots-clés, emploi et alternance |
+| **Adzuna** | API | une fois par jour | quota gratuit de 250 requêtes par mois, plafonné à 220 |
+| **HelloWork** | page de recherche publique | toutes les 3 heures | délai entre pages, arrêt propre en cas de blocage |
+| **Choisir le service public** | flux RSS publics | toutes les 2 heures | page de l'offre lue une seule fois pour l'employeur |
+| **La bonne alternance** | API publique (clé) | 3 fois par jour | fil alternance |
 
-Hors périmètre volontaire : **LinkedIn, Indeed, APEC, Welcome to the Jungle** — trop
-d'anti-bot, et leurs alertes email natives sont déjà en place de mon côté.
+Hors périmètre : LinkedIn, Indeed, Welcome to the Jungle (alertes natives déjà en place),
+APEC (accès refusé depuis octobre 2026, non contourné).
 
 ---
 
-## 🤖 Automatisation (GitHub Actions)
+## Configuration
 
-Le workflow [`.github/workflows/veille.yml`](.github/workflows/veille.yml) :
+Tout ce qui dépend du profil est dans `config/`, validé au chargement (pydantic) :
 
-- s'exécute via **cron à 6h UTC** (7h Paris) et **manuellement** (`workflow_dispatch`) ;
-- **persiste la base SQLite entre runs** via le cache Actions (restore + save), pour
-  que le « déjà vu » survive d'un jour à l'autre sans serveur ni commit de données ;
-- lit les credentials depuis les **GitHub Secrets** (jamais commités) ;
-- **upload les logs** en artefact si le run échoue.
+| Fichier | Contenu |
+|---|---|
+| `metiers.yaml` | familles de métiers et priorités, exclusions de titre |
+| `filtres.yaml` | fraîcheur, lieux, contrats, séniorité, ESN, cabinets, écoles |
+| `notation.yaml` | barème et seuils d'alerte et de résumé |
+| `sources.yaml` | sources actives et requêtes envoyées |
+| `planning.yaml` | fuseau, plage horaire, intervalles, quotas, heures des envois |
+| `telegram.yaml` | groupe et sujets par fil (emploi, alternance, immersion) |
 
-Mise en route : pousser le repo, ajouter les secrets (`Settings → Secrets and variables
-→ Actions`), lancer un run manuel pour vérifier, puis laisser le cron faire le reste.
-
----
-
-## 🧰 Stack technique
-
-- **Python 3.11** — `requests` (sessions avec retry exponentiel), `PyYAML`, `python-dotenv`.
-- **SQLite** — persistance légère du « déjà vu », UPSERT compatible runners anciens.
-- **pytest** — 69 tests (parsing des sources, filtrage, dédoublonnage, scoring,
-  escaping Telegram, résilience).
-- **GitHub Actions** — cron, cache, secrets, artefacts.
-- Conception : dataclass `Offre` partagée, sources isolées (une panne n'arrête jamais
-  le pipeline), scoring configurable sans toucher au code.
+Variables d'environnement (secrets GitHub en production) : `FT_CLIENT_ID`,
+`FT_CLIENT_SECRET`, `ADZUNA_APP_ID`, `ADZUNA_APP_KEY`, `LBA_API_KEY`,
+`TELEGRAM_BOT_TOKEN`, `GOOGLE_TOKEN_JSON`, `SUIVI_SHEET_ID`. Une source sans identifiants
+est ignorée. `VEILLE_ENVOI=simulation` et `VEILLE_SUIVI=essai` permettent un passage sans
+rien envoyer ni écrire.
 
 ---
 
-## 📂 Structure
+## Développement
+
+```bash
+pip install -r requirements.txt
+pytest -q --cov=src      # seuil de couverture : 90 %
+ruff check src tests
+```
+
+Workflows : `veille.yml` (production), `v2_essai.yml` (essai réel sur une branche, sans
+envoi), `ci.yml` (tests et lint), `comparaison.yml` et `evaluation.yml` (mesures).
 
 ```
 src/
-├── main.py            # orchestration
-├── models.py          # dataclass Offre + clé d'unicité
-├── config.py          # chargement profil.yaml + slugs
-├── storage.py         # SQLite (déjà vu / nouveaux)
-├── scoring.py         # filtres, dédoublonnage/fusion, scoring + saturation
-├── notif_telegram.py  # rendu MarkdownV2, découpage, DRY_RUN
-├── sources/           # une source = un module fetch(config, session) -> list[Offre]
-└── utils/http.py      # session requests partagée (retry, User-Agent)
-config/                # profil.yaml, slugs_ats.txt
-scripts/               # decouvrir_slugs.py, init_db.py
-tests/                 # 69 tests
-.github/workflows/     # veille.yml
+├── main.py            # un passage : collecte, filtres, dédoublonnage, notation, envois
+├── models.py          # dataclass Offre, clés de dédoublonnage
+├── config.py          # chargement et validation de config/*.yaml
+├── filtres.py         # normalisation des offres et motifs de rejet
+├── dedoublonnage.py   # fusion des variantes d'un même passage
+├── notation.py        # note et niveau (alerte, résumé)
+├── planning.py        # sources dues, quotas, heures des envois
+├── stockage.py        # SQLite versionnée (schéma 3)
+├── normalisation/     # texte, métiers, contrats, employeurs
+├── sorties/           # telegram.py, sheets.py, suivi.py
+└── sources/           # un module par source : NOM + fetch(ctx) -> list[Offre]
 ```
 
----
-
-## 🚫 Ce que ce pipeline ne fait pas
-
-Pas d'auto-candidature, pas de génération de lettre, pas d'interface web. Il **alimente** ;
-la candidature reste manuelle et ciblée.
+Le pipeline n'envoie aucune candidature et ne rédige rien : il trie, la candidature reste
+manuelle.

@@ -14,6 +14,15 @@
 >   surveiller). Le cron GitHub reste en secours : il arrive avec 4 à 7 h de retard et saute
 >   souvent des lancements, inutilisable seul pour des alertes.
 > * Contrat des sources v2 : `NOM` + `fetch(ctx: Contexte) -> list[Offre]` (src/sources/__init__.py).
+> * Sources actives : france_travail, adzuna, hellowork, service_public (flux RSS Talentsoft,
+>   PR #14), la_bonne_alternance (PR #15). Route B (entreprises cibles ajoutées au suivi) vérifiée
+>   en réel le 28/10 : 5 ajouts par jour.
+> * Base SQLite en schéma 3 (PR du 28/10) : colonnes `cle_souple` (titre sans H/F, CDI, code
+>   final), `empreinte` (employeur + 500 premiers caractères de la description, si ≥ 200) et
+>   `signaux` (permis B exigé, via cabinet, description partielle Adzuna). Une offre de clé
+>   inconnue dont la clé souple ou l'empreinte existe depuis moins de 30 jours est écartée
+>   (`doublons_ecartes` dans le rapport). Stage détecté dans la description d'un CDI/CDD :
+>   rejet `STAGE_CONVENTIONNE`. Cabinets (`filtres.employeurs.cabinets`) : signal seulement.
 > * Toutes les dates en base sont en UTC ; le planning raisonne en heure de Paris.
 > * APEC répond 403 depuis le 1er octobre 2026 : retirée, ne pas chercher à contourner.
 > * Tests : `pytest -q --cov` (seuil 90 %), lint : `ruff check src tests`.
