@@ -14,9 +14,9 @@ from dataclasses import dataclass
 from datetime import UTC, datetime, timedelta
 from pathlib import Path
 
-from src.models import Offre, Rejet
+from src.models import Offre, Rejet, TypeEmployeur, calculer_cle, titre_souple
 
-VERSION = 2
+VERSION = 3
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS version_schema (version INTEGER NOT NULL);
@@ -44,7 +44,10 @@ CREATE TABLE IF NOT EXISTS offres (
     envoyee_le TEXT,
     ajoutee_veille_le TEXT,
     ajoutee_essai_le TEXT,
-    importee_v1 INTEGER NOT NULL DEFAULT 0
+    importee_v1 INTEGER NOT NULL DEFAULT 0,
+    cle_souple TEXT,
+    empreinte TEXT,
+    signaux TEXT
 );
 CREATE INDEX IF NOT EXISTS idx_offres_premiere_vue ON offres(premiere_vue);
 CREATE INDEX IF NOT EXISTS idx_offres_etat ON offres(etat_envoi);
@@ -137,14 +140,35 @@ def ouvrir(chemin: str | Path) -> Base:
 
 def _migrer(c: sqlite3.Connection) -> None:
     """Version 1 -> 2 : l'onglet d'essai a sa propre date d'ajout (le vrai onglet Veille doit
-    recevoir, à la mise en service, les offres déjà vues pendant la période de test)."""
+    recevoir, à la mise en service, les offres déjà vues pendant la période de test).
+    Version 2 -> 3 : clé souple, empreinte de description et signaux, pour reconnaître une même
+    offre republiée sous un titre à peine différent. La clé souple des offres déjà en base est
+    recalculée ; leur empreinte reste vide (la description n'est pas conservée)."""
     colonnes = {r[1] for r in c.execute("PRAGMA table_info(offres)")}
+    for nouvelle in ("cle_souple", "empreinte", "signaux"):
+        if nouvelle not in colonnes:
+            c.execute(f"ALTER TABLE offres ADD COLUMN {nouvelle} TEXT")
+    a_calculer = c.execute("SELECT cle, titre, entreprise, lieu, type_employeur FROM offres "
+                           "WHERE cle_souple IS NULL").fetchall()
+    if a_calculer:
+        c.executemany("UPDATE offres SET cle_souple = ? WHERE cle = ?",
+                      [(calculer_cle(e or "", titre_souple(t or ""), li or "", _type(ty)), cle)
+                       for cle, t, e, li, ty in a_calculer])
+    c.execute("CREATE INDEX IF NOT EXISTS idx_offres_cle_souple ON offres(cle_souple)")
+    c.execute("CREATE INDEX IF NOT EXISTS idx_offres_empreinte ON offres(empreinte)")
     if "ajoutee_essai_le" not in colonnes:
         c.execute("ALTER TABLE offres ADD COLUMN ajoutee_essai_le TEXT")
         # En version 1, seul le mode essai a existé : ses ajouts deviennent des ajouts d'essai.
         c.execute("UPDATE offres SET ajoutee_essai_le = ajoutee_veille_le, ajoutee_veille_le = NULL "
                   "WHERE ajoutee_veille_le IS NOT NULL")
     c.execute("UPDATE version_schema SET version = ?", (VERSION,))
+
+
+def _type(valeur: str | None) -> TypeEmployeur:
+    try:
+        return TypeEmployeur(valeur)
+    except ValueError:
+        return TypeEmployeur.INCONNU
 
 
 def _importer_v1(c: sqlite3.Connection) -> int:
@@ -204,12 +228,41 @@ def enregistrer_offres(base: Base, offres: list[Offre], le: datetime | None = No
         for o in offres:
             c.execute(
                 """INSERT OR IGNORE INTO offres (cle, fil, famille, priorite, titre, entreprise, type_employeur,
-                       lieu, contrat, duree_mois, url, sources, date_publication, premiere_vue, derniere_vue)
-                   VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+                       lieu, contrat, duree_mois, url, sources, date_publication, premiere_vue, derniere_vue,
+                       cle_souple, empreinte, signaux)
+                   VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
                 (o.cle, o.fil, o.famille, o.priorite, o.titre, o.entreprise, o.type_employeur, o.lieu,
                  o.contrat, o.duree_mois, o.url, ",".join(o.sources or [o.source]), o.date_publication,
-                 maintenant, maintenant))
+                 maintenant, maintenant, o.cle_souple, o.empreinte,
+                 json.dumps(signaux_offre(o), ensure_ascii=False)))
             c.execute("UPDATE offres SET derniere_vue = ? WHERE cle = ?", (maintenant, o.cle))
+
+
+def signaux_offre(o: Offre) -> list[str]:
+    """Signaux sans effet sur la note, affichés avec l'offre (Telegram, onglet Veille)."""
+    signaux = []
+    if o.permis_exige:
+        signaux.append("permis B exigé")
+    if o.via_cabinet:
+        signaux.append("via cabinet")
+    if o.description_partielle:
+        signaux.append("description partielle (Adzuna) : expérience à vérifier")
+    return signaux
+
+
+def doublons(base: Base, offres: list[Offre], depuis: datetime) -> dict[str, str]:
+    """Offres nouvelles par leur clé mais déjà connues sous une autre : même clé souple ou même
+    empreinte de description, vues depuis `depuis`. Rend {clé de l'offre : clé déjà en base}."""
+    trouves: dict[str, str] = {}
+    with closing(base.connexion()) as c:
+        for o in offres:
+            empreinte = o.empreinte
+            r = c.execute("SELECT cle FROM offres WHERE cle != ? AND derniere_vue >= ? AND "
+                          "(cle_souple = ? OR (? IS NOT NULL AND empreinte = ?)) LIMIT 1",
+                          (o.cle, _maintenant(depuis), o.cle_souple, empreinte, empreinte)).fetchone()
+            if r:
+                trouves[o.cle] = r[0]
+    return trouves
 
 
 def dernieres_vues(base: Base, cles: list[str]) -> dict[str, datetime]:
@@ -312,11 +365,13 @@ def purger(base: Base, jours_offres: int = 180, jours_rejets: int = 90) -> tuple
 
 def _ligne(r: sqlite3.Row) -> dict:
     d = dict(r)
+    stockes = json.loads(d.get("signaux") or "[]")
     d["composantes"] = json.loads(d.get("raisons") or "[]")
     tri = sorted(d["composantes"], key=lambda c: abs(c[1]), reverse=True)
     d["raisons"] = [f"{n} {p:+d}" for n, p in tri[:3]]
     d["signaux"] = [n for n, _ in d["composantes"] if n in ("seconde main", "employeur non indiqué", "republiée",
                                                              "peu candidatée", "école")]
+    d["signaux"] += stockes
     return d
 
 

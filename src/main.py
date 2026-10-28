@@ -54,6 +54,7 @@ class Rapport:
     brutes: int = 0
     gardees: int = 0
     nouvelles: int = 0
+    doublons_ecartes: int = 0
     rejets_par_motif: dict[str, int] = field(default_factory=dict)
     par_fil: dict[str, int] = field(default_factory=dict)
     par_famille: dict[str, int] = field(default_factory=dict)
@@ -73,7 +74,8 @@ class Rapport:
             elif s.get("erreurs_partielles"):
                 ligne += f", {s['erreurs_partielles']} en échec ({'; '.join(s['erreurs'][:2])})"
             lignes.append(ligne)
-        lignes.append(f"Brutes {self.brutes}, gardées {self.gardees}, nouvelles {self.nouvelles}")
+        lignes.append(f"Brutes {self.brutes}, gardées {self.gardees}, nouvelles {self.nouvelles}, "
+                      f"doublons écartés {self.doublons_ecartes}")
         lignes.append("Rejets : " + ", ".join(f"{k} {v}" for k, v in sorted(self.rejets_par_motif.items())))
         lignes.append("Fils : " + ", ".join(f"{k} {v}" for k, v in sorted(self.par_fil.items())))
         lignes.append("Familles : " + ", ".join(f"{k} {v}" for k, v in sorted(self.par_famille.items())))
@@ -198,6 +200,13 @@ def _collecter_et_noter(noms, config, base, session, maintenant_utc, rapport, so
     gardees, rejets = filtres.trier(brutes, config, aujourdhui)
     fusionnees = dedoublonnage.fusionner(gardees)
     vues = stockage.dernieres_vues(base, [o.cle for o in fusionnees])
+    # Même offre déjà connue sous un titre à peine différent ou avec la même description :
+    # écartée du passage (ni présentée, ni enregistrée une seconde fois).
+    deja = stockage.doublons(base, [o for o in fusionnees if o.cle not in vues],
+                             maintenant_utc - timedelta(days=REPUBLICATION_JOURS))
+    if deja:
+        fusionnees = [o for o in fusionnees if o.cle not in deja]
+    rapport.doublons_ecartes = len(deja)
     nouvelles, notes = [], {}
     for o in fusionnees:
         derniere = vues.get(o.cle)
@@ -221,7 +230,9 @@ def _collecter_et_noter(noms, config, base, session, maintenant_utc, rapport, so
     rapport.par_niveau = dict(collections.Counter(notes[o.cle][1].value for o in nouvelles))
     meilleures = sorted(nouvelles, key=lambda o: notes[o.cle][0].total, reverse=True)[:25]
     rapport.exemples_nouvelles = [f"{notes[o.cle][1].value} {notes[o.cle][0].total:+d} [{o.fil}/{o.famille}] {o.titre} · "
-                                  f"{o.entreprise} · {o.lieu} ({', '.join(notes[o.cle][0].raisons(2))})" for o in meilleures]
+                                  f"{o.entreprise} · {o.lieu} ({', '.join(notes[o.cle][0].raisons(2))})"
+                                  + (f" [{', '.join(stockage.signaux_offre(o))}]" if stockage.signaux_offre(o) else "")
+                                  + f" {o.url}" for o in meilleures]
     stockage.purger(base)
 
 

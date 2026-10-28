@@ -15,10 +15,24 @@
 # éloignés du cœur de cible).
 exclusions:
   - business analyst
+  - business analysts
+  - business analyste
+  - business analystes
   - analyste fonctionnel
   - consultant fonctionnel
   - amoa
   - moa
+  # Postes de recherche académique, qui exigent un doctorat (décision du 28/10, cas CESI).
+  - enseignant chercheur
+  - enseignante chercheuse
+  - enseignant e chercheur e
+  - maitre de conferences
+  - doctorant
+  - doctorante
+  - post doctorant
+  - post doctorante
+  - postdoc
+  - post doc
 
 familles:
   - nom: data_engineering

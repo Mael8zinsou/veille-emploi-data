@@ -30,7 +30,7 @@ jobs:
       - run: pip install -r requirements.txt
 
       - name: Restaure la base v1 (lecture seule)
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v5
         with:
           path: data/
           key: essai-v2-${{ github.run_id }}

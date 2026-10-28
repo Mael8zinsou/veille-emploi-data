@@ -30,7 +30,30 @@ def normaliser_offre(o: Offre, config: Config, delegue_par_ecole: bool = False) 
     a = lieux.analyser(o.lieu, o.titre, config.filtres.lieux)
     o.teletravail_complet, o.zone_preferee = a.teletravail_complet, a.zone_preferee
     o.annees_requises = experience.annees_requises(o.titre, o.description, o.experience_annees)
+    o.via_cabinet = employeurs.est_cabinet(o.entreprise, config.filtres.employeurs)
+    o.permis_exige = permis_exige(f"{o.titre}. {o.description}", config)
     return o
+
+
+_STAGE_DUREE = re.compile(r"\bstage (?:de |d )?\d{1,2} (?:a \d{1,2} )?mois\b")
+
+
+def stage_dans_description(description: str, config: Config) -> str | None:
+    """Stage annoncé dans le texte d'une offre déclarée CDI ou CDD : « pour un stage de 6 mois »,
+    « pour la réussite de ce stage ». Rend l'expression trouvée."""
+    texte = normaliser(description)
+    m = _STAGE_DUREE.search(texte)
+    if m:
+        return m.group(0)
+    return premier_motif(texte, config.filtres.contrats.stage_description)
+
+
+def permis_exige(texte: str, config: Config) -> bool:
+    """« Permis B exigé », « permis de conduire obligatoire » : même règle de proximité que pour les
+    certifications, proposition par proposition. Signalé, jamais éliminatoire."""
+    mots = "|".join(re.escape(m) for m in config.filtres.certification_exigee.mots)
+    motif = re.compile(rf"\bpermis (?:b|de conduire)(?: \w+){{0,3}} (?:{mots})\b")
+    return any(motif.search(normaliser(p)) for p in re.split(r"[.,;:!?\n()]", texte or ""))
 
 
 def _seniorite(o: Offre, config: Config) -> str | None:
@@ -73,6 +96,10 @@ def motif_de_rejet(o: Offre, config: Config, aujourdhui: date) -> tuple[Motif, s
         return Motif.FREELANCE, o.contrat_brut
     if o.contrat == Contrat.STAGE:
         return Motif.STAGE_CONVENTIONNE, ""
+    if o.contrat in (Contrat.CDI, Contrat.CDD, Contrat.INTERIM, Contrat.INCONNU):
+        stage = stage_dans_description(o.description, config)
+        if stage:
+            return Motif.STAGE_CONVENTIONNE, f"description : {stage}"
     if o.fil is None:
         return Motif.CONTRAT_HORS_CIBLE, o.contrat_brut
     detail = _seniorite(o, config)

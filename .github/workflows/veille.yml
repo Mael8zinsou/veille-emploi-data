@@ -38,7 +38,7 @@ jobs:
       # Base persistée entre passages par le cache GitHub (clé datée, restauration par
       # préfixe). Même préfixe qu'en v1 : la v2 reprend la base v1 et y ajoute ses tables.
       - name: Restaure la base
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v5
         with:
           path: data/
           key: veille-db-${{ github.run_id }}
@@ -63,7 +63,7 @@ jobs:
 
       - name: Sauvegarde la base
         if: always()
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v5
         with:
           path: data/
           key: veille-db-${{ github.run_id }}

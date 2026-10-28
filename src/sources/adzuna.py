@@ -29,6 +29,9 @@ def convertir(item: dict) -> Offre:
         description=(item.get("description") or "")[:3000],
         contrat_brut=item.get("contract_type") or "",
         date_publication=(item.get("created") or "")[:10],
+        # L'API ne rend qu'un extrait de la description (environ 500 caractères) : une exigence
+        # d'expérience placée plus loin échappe au filtre (cas LR Technologies, 6 ans, 27/10).
+        description_partielle=True,
     )
 
 

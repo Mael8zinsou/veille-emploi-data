@@ -132,6 +132,15 @@ contrats:
     cdi: [cdi]
     cdd: [cdd]
     interim: [interim, interimaire]
+  # Stage annoncé dans la DESCRIPTION alors que la source déclare un CDI ou un CDD (cas Cdiscount
+  # et ESSCA, 26 et 27/10). Expressions sans ambiguïté seulement : « un stage » seul apparaît dans
+  # des CDI (« vous avez réalisé un stage »). « stage de N mois » est reconnu en plus par le code.
+  stage_description:
+    - ce stage
+    - offre de stage
+    - convention de stage
+    - gratification de stage
+    - stage a pourvoir
 
 seniorite:
   # Un de ces mots dans le titre : rejet (motif seniorite).
@@ -298,6 +307,18 @@ employeurs:
     - deloitte
     - ey
     - pwc
+    # Ajouts du 28/10 : ESN et sociétés de conseil vues sous leur nom complet.
+    - lr technologies
+    - aubay
+    - davidson
+    - infotel
+    - apside
+    - scalian
+    - hardis
+    - ippon
+    - sqli
+    - ekkiden
+    - societe pour l informatique industrielle
     # Mots génériques du nom. « conseil » seul est exclu : il désignerait les Conseils
     # départementaux et régionaux, employeurs publics légitimes.
     - consulting
@@ -307,6 +328,14 @@ employeurs:
     - informatique
     - ssii
     - esn
+  # Cabinets de recrutement qui publient pour un client : employeur final conservé (pas de
+  # pénalité, leurs offres se sont révélées bonnes), mais signalé « via cabinet ». Décision du 28/10.
+  # Les grands cabinets et agences restent dans `intermediaires`.
+  cabinets:
+    - silkhom
+    - harnham
+    - urban linker
+    - hiresweet
   # Écoles et organismes de formation qui publient des offres d'alternance.
   ecoles:
     - kaischool

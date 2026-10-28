@@ -198,4 +198,4 @@ def test_migration_version_1(tmp_path, config):
     stockage.ouvrir(chemin)
     with sqlite3.connect(chemin) as c:
         assert c.execute("SELECT ajoutee_veille_le, ajoutee_essai_le FROM offres").fetchone() == (None, "2026-10-26 08:00:00")
-        assert c.execute("SELECT version FROM version_schema").fetchone()[0] == 2
+        assert c.execute("SELECT version FROM version_schema").fetchone()[0] == stockage.VERSION

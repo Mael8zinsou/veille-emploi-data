@@ -38,7 +38,7 @@ jobs:
       - run: pip install -r requirements.txt -r v1/requirements.txt
 
       - name: Base de production (lecture seule)
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v5
         with:
           path: data/
           key: comparaison-${{ github.run_id }}
