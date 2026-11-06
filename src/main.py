@@ -62,7 +62,7 @@ class Rapport:
     par_niveau: dict[str, int] = field(default_factory=dict)
     exemples_nouvelles: list[str] = field(default_factory=list)
     envois: dict[str, int] = field(default_factory=lambda: {"alertes": 0, "alertes_en_attente": 0, "resumes": 0,
-                                                            "bilans": 0, "pannes": 0})
+                                                            "bilans": 0, "pannes": 0, "rappels": 0})
     suivi: dict[str, object] = field(default_factory=dict)
 
     def resume(self) -> list[str]:
@@ -273,6 +273,11 @@ def envoyer(base: stockage.Base, config: Config, plan: Plan, tg: Telegram, maint
         if tg.envoyer(tgm.message_bilan(stats)):
             stockage.enregistrer_envoi(base, "bilan", None, maintenant_utc)
             rapport.envois["bilans"] += 1
+
+    rappel = config.telegram.rappel_linkedin
+    if plan.rappel_linkedin and rappel is not None and tg.envoyer(tgm.message_rappel_linkedin(rappel.requetes)):
+        stockage.enregistrer_envoi(base, "rappel_linkedin", None, maintenant_utc)
+        rapport.envois["rappels"] += 1
 
 
 def _rejets_uniques(rejets: list[Rejet]) -> list[Rejet]:

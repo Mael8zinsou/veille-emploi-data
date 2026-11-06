@@ -1,5 +1,5 @@
 """Messages Telegram et envois du passage (alertes, résumés, bilan, pannes)."""
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 
 from src import main, stockage
 from src.sorties import telegram as tgm
@@ -131,3 +131,32 @@ def test_rien_la_nuit(tmp_path, config):
     tg = Telegram(None, None, 1, config.telegram.sujets, mode="simulation")
     _passage(config, base, datetime(2026, 10, 27, 22, 30), tg, [offre(**BONNE)])
     assert tg.envoyes == []
+
+
+# --------------------------------------------------------------------------- rappel LinkedIn
+
+def test_message_rappel_linkedin(config):
+    texte = tgm.message_rappel_linkedin(config.telegram.rappel_linkedin.requetes)
+    assert "Posts LinkedIn" in texte
+    assert texte.count('<a href="https://www.linkedin.com/search/results/content/?keywords=') == \
+        len(config.telegram.rappel_linkedin.requetes)
+    url = tgm.url_recherche_posts('"je recrute" AND data')
+    assert "%22je%20recrute%22%20AND%20data" in url and "past-24h" in url and "date_posted" in url
+
+
+def test_rappel_linkedin_envoye_une_fois_par_heure(tmp_path, config):
+    base = stockage.ouvrir(tmp_path / "b.sqlite")
+    tg = Telegram(None, None, 1, config.telegram.sujets, mode="simulation")
+    r = _passage(config, base, MARDI_10H, tg, [])
+    assert r.envois["rappels"] == 1
+    assert any(fil is None and "Posts LinkedIn" in t for fil, t in tg.envoyes)
+    assert _passage(config, base, MARDI_10H + timedelta(minutes=20), tg, []).envois["rappels"] == 0
+    assert _passage(config, base, MARDI_10H + timedelta(hours=1), tg, []).envois["rappels"] == 1
+
+
+def test_rappel_linkedin_rejoue_apres_echec(tmp_path, config):
+    base = stockage.ouvrir(tmp_path / "b.sqlite")
+    en_panne = Telegram(FauxTelegram(500, False), "j", 1, config.telegram.sujets, mode="telegram")
+    assert _passage(config, base, MARDI_10H, en_panne, []).envois["rappels"] == 0
+    retabli = Telegram(FauxTelegram(), "j", 1, config.telegram.sujets, mode="telegram")
+    assert _passage(config, base, MARDI_10H + timedelta(minutes=10), retabli, []).envois["rappels"] == 1

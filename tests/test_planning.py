@@ -84,3 +84,32 @@ def test_bilan_du_lundi_meme_en_retard(config):
 def test_alertes_du_matin_une_seule_fois(config):
     fait = {("matin", None): datetime(2026, 10, 27, 6, 20)}
     assert not plan(config, MARDI_HIVER_10H, envois=fait).alertes_en_attente
+
+
+# --------------------------------------------------------------------------- rappel LinkedIn
+
+def test_rappel_linkedin_du_dans_la_plage(config):
+    assert plan(config, MARDI_HIVER_10H).rappel_linkedin
+
+
+def test_rappel_linkedin_espace_d_au_moins_l_intervalle(config):
+    r = config.telegram.rappel_linkedin
+    recent = {("rappel_linkedin", None): MARDI_HIVER_10H - timedelta(minutes=r.intervalle_minutes - 1)}
+    ancien = {("rappel_linkedin", None): MARDI_HIVER_10H - timedelta(minutes=r.intervalle_minutes)}
+    assert not plan(config, MARDI_HIVER_10H, envois=recent).rappel_linkedin
+    assert plan(config, MARDI_HIVER_10H, envois=ancien).rappel_linkedin
+
+
+def test_rappel_linkedin_hors_de_sa_plage(config):
+    r = config.telegram.rappel_linkedin
+    # Dernière heure de la plage générale, après la fin de la plage du rappel (heure d'hiver : UTC+1).
+    tard = datetime(2026, 10, 27, r.plage.fin - 1, 30)
+    assert not plan(config, tard).hors_plage and not plan(config, tard).rappel_linkedin
+
+
+def test_rappel_linkedin_coupe(config):
+    sans = config.model_copy(update={"telegram": config.telegram.model_copy(
+        update={"rappel_linkedin": config.telegram.rappel_linkedin.model_copy(update={"actif": False})})})
+    assert not plan(sans, MARDI_HIVER_10H).rappel_linkedin
+    absent = config.model_copy(update={"telegram": config.telegram.model_copy(update={"rappel_linkedin": None})})
+    assert not plan(absent, MARDI_HIVER_10H).rappel_linkedin

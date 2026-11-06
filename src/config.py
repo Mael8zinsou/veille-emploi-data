@@ -311,11 +311,24 @@ class Notation(_Strict):
 
 # --------------------------------------------------------------------------- telegram
 
+class RequeteLinkedIn(_Strict):
+    libelle: str
+    mots_cles: str
+
+
+class RappelLinkedIn(_Strict):
+    actif: bool = True
+    intervalle_minutes: int = Field(ge=30)
+    plage: Plage
+    requetes: list[RequeteLinkedIn] = Field(min_length=1)
+
+
 class Telegram(_Strict):
     groupe_id: int
     sujets: dict[str, int]
     resume_max_offres: int = Field(ge=1, le=100)
     pannes_avant_avertissement: int = Field(ge=1, le=20)
+    rappel_linkedin: RappelLinkedIn | None = None
 
 
 # --------------------------------------------------------------------------- ensemble

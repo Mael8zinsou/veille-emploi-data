@@ -23,6 +23,7 @@ class Plan:
     resume_quotidien: bool = False
     bilan_hebdomadaire: bool = False
     alertes_en_attente: bool = False      # premier passage du matin : envoyer les alertes de la nuit
+    rappel_linkedin: bool = False         # rappel horaire de lancer les recherches de posts LinkedIn
     hors_plage: bool = False
     raisons: dict[str, str] = field(default_factory=dict)
 
@@ -76,4 +77,22 @@ def taches_dues(maintenant_utc: datetime, derniers_succes: dict[str, datetime],
     alertes = not deja_envoye_depuis("matin", debut_jour)
 
     return Plan(sources=sources, resume_quotidien=resume, bilan_hebdomadaire=bilan,
-                alertes_en_attente=alertes, raisons=raisons)
+                alertes_en_attente=alertes, rappel_linkedin=rappel_du(maintenant_utc, derniers_envois, config),
+                raisons=raisons)
+
+
+def rappel_du(maintenant_utc: datetime, derniers_envois: dict[tuple[str, str | None], datetime],
+              config: Config) -> bool:
+    """Rappel LinkedIn dû : actif, dans sa plage, et le dernier rappel assez ancien.
+
+    Même règle que les sources : on regarde l'âge du dernier envoi, pas l'heure pile, pour
+    qu'un passage en retard ne fasse ni sauter ni doubler un rappel.
+    """
+    r = config.telegram.rappel_linkedin
+    if r is None or not r.actif:
+        return False
+    local = _local(maintenant_utc, ZoneInfo(config.planning.fuseau))
+    if not (r.plage.debut <= local.hour < r.plage.fin):
+        return False
+    dernier = derniers_envois.get(("rappel_linkedin", None))
+    return dernier is None or maintenant_utc - dernier >= timedelta(minutes=r.intervalle_minutes)
