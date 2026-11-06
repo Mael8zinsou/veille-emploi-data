@@ -14,6 +14,7 @@ from __future__ import annotations
 import html
 import logging
 from dataclasses import dataclass, field
+from urllib.parse import quote
 
 logger = logging.getLogger(__name__)
 
@@ -85,6 +86,23 @@ def message_bilan(stats: dict) -> str:
         lignes.append(f"{etat} {e(s['tache'])} : {s['succes']}/{s['passages']} passages réussis, {s['offres']} offres"
                       + (f", {s['echecs_consecutifs']} échec(s) d'affilée" if s["echecs_consecutifs"] else ""))
     lignes.append(f"Adzuna : {stats['adzuna_mois']} requêtes ce mois-ci sur {stats['adzuna_plafond']}")
+    return "\n".join(lignes)
+
+
+RECHERCHE_POSTS = ("https://www.linkedin.com/search/results/content/?keywords={mots}"
+                   "&datePosted=%22past-24h%22&sortBy=%22date_posted%22")
+
+
+def url_recherche_posts(mots_cles: str) -> str:
+    """Recherche de posts LinkedIn sur les dernières 24 heures, plus récents d'abord."""
+    return RECHERCHE_POSTS.format(mots=quote(mots_cles, safe=""))
+
+
+def message_rappel_linkedin(requetes) -> str:
+    """`requetes` : objets avec `libelle` et `mots_cles` (config.telegram.rappel_linkedin.requetes)."""
+    lignes = ["🔎 <b>Posts LinkedIn : ton tour de l'heure</b>"]
+    lignes += [f"• {_lien(url_recherche_posts(r.mots_cles), r.libelle)}" for r in requetes]
+    lignes.append("Tri express : junior ? lieu possible ? métier visé ? Si oui, message privé avec CV dans l'heure.")
     return "\n".join(lignes)
 
 

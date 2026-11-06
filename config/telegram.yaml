@@ -9,3 +9,25 @@ sujets:
 resume_max_offres: 30
 # Une source en échec ce nombre de fois d'affilée déclenche un avertissement immédiat.
 pannes_avant_avertissement: 3
+
+# Rappel de lancer les recherches de posts LinkedIn (demande de Maël du 6/11) : les annonces
+# « je recrute, écris-moi » se jouent dans les premières heures. Un message dans le sujet
+# général au plus toutes les `intervalle_minutes`, seulement dans la plage (heures de Paris,
+# `fin` exclue). Chaque lien ouvre la recherche de posts LinkedIn sur les dernières 24 heures,
+# plus récents d'abord. Mettre `actif: false` pour couper les rappels sans toucher au reste.
+rappel_linkedin:
+  actif: true
+  intervalle_minutes: 50
+  plage: {debut: 8, fin: 21}
+  # Requêtes simples, testées le 6/11 : la recherche de posts LinkedIn ne renvoie rien dès
+  # qu'on combine parenthèses et OR/AND, et les mots-clés anglais seuls ramènent surtout des
+  # offres à l'étranger.
+  requetes:
+    - libelle: « Je recrute » + data
+      mots_cles: '"je recrute" data'
+    - libelle: « Nous recrutons » + data
+      mots_cles: '"nous recrutons" data'
+    - libelle: Recrute + data + junior
+      mots_cles: 'recrute data junior'
+    - libelle: « Écris-moi » + data
+      mots_cles: '"écris-moi" data'
