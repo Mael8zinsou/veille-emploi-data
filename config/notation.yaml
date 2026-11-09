@@ -34,7 +34,8 @@ affinites:
   secteur_public:
     points: 3
     sources: [service_public]
-    employeurs: [ministere, direction generale, direction regionale, direction departementale, prefecture,
+    # Motifs comparés en mots entiers : le pluriel s'écrit à part (« Ministères de la Santé... »).
+    employeurs: [ministere, ministeres, direction generale, directions generales, direction regionale, direction departementale, prefecture,
                  dgfip, insee, drees, dares, inserm, cnrs, inria, universite, assistance publique, ap hp,
                  caisse nationale, cnam, cnav, urssaf, caf, banque de france, cour des comptes,
                  conseil departemental, conseil regional, metropole, mairie, ville de, tracfin, douane, ademe,
