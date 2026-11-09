@@ -37,6 +37,11 @@ LIBELLES_SOURCE = {"france_travail": "France Travail", "adzuna": "Adzuna", "hell
                    "la_bonne_alternance": "La bonne alternance"}
 LIBELLES_NIVEAU = {"alerte": "alerte", "resume": "résumé"}
 LIBELLES_MOTIF = {"seniorite": "trop senior", "trop_ancienne": "offre ancienne"}
+ENTETE_LISTE = ["Date", "N°", "Verdict", "Note", "Fil", "Entreprise", "Poste", "Lieu", "Contrat", "Candidature",
+                "Date limite", "Écarts", "Lien", "Je postule", "Faite le", "Clé"]
+COL_JE_POSTULE, COL_CLE_LISTE = 13, 15                     # N, P
+LARGEURS_LISTE = {0: 90, 1: 40, 2: 85, 3: 50, 4: 80, 5: 180, 6: 320, 7: 150, 8: 70, 9: 230, 10: 85, 11: 280,
+                  12: 90, 13: 85, 14: 110}
 BLOC_CANDIDATURES = (5, 300)
 ROUTE_B_PAR_JOUR = 5
 
@@ -53,6 +58,10 @@ class Suivi:
     @property
     def onglet_veille(self) -> str:
         return "Veille" if self.mode == "reel" else "Veille (essai)"
+
+    @property
+    def onglet_liste(self) -> str:
+        return "Liste du matin" if self.mode == "reel" else "Liste du matin (essai)"
 
     @property
     def onglet_route_b(self) -> str:
@@ -80,6 +89,25 @@ class Suivi:
                    o.get("contrat") or "", _source(o.get("sources")), " ; ".join(o.get("raisons") or []),
                    ", ".join(o.get("signaux") or []), o.get("url"), False, "", o.get("cle")] for o in offres]
         self.client.ajouter_lignes(self.onglet_veille, lignes, cases_a_cocher=COL_RETENIR)
+        return len(lignes)
+
+    # ------------------------------------------------------------------ liste du matin
+
+    def liens_candidatures(self) -> set[str]:
+        """Liens déjà présents dans l'onglet Candidatures (colonne C) : offres déjà traitées."""
+        d, f = BLOC_CANDIDATURES
+        return {str(lg[0]).strip() for lg in self.client.lire(f"'Candidatures'!C{d}:C{f}") if lg and str(lg[0]).strip()}
+
+    def ajouter_liste(self, choix: list, quand: datetime) -> int:
+        if not choix:
+            return 0
+        self._assurer(self.onglet_liste, ENTETE_LISTE, colonnes_masquees=(COL_CLE_LISTE,), largeurs=LARGEURS_LISTE)
+        jour = f"{quand:%d/%m/%Y}"
+        lignes = [[jour, i, ch.verdict, ch.offre.get("note"), str(ch.offre.get("fil") or "").capitalize(),
+                   ch.offre.get("entreprise") or "(non indiqué)", ch.offre.get("titre"), ch.offre.get("lieu"),
+                   ch.offre.get("contrat") or "", ch.mode, ch.date_limite, " ; ".join(ch.ecarts), ch.offre.get("url"),
+                   False, "", ch.offre.get("cle")] for i, ch in enumerate(choix, start=1)]
+        self.client.ajouter_lignes(self.onglet_liste, lignes, cases_a_cocher=COL_JE_POSTULE)
         return len(lignes)
 
     # ------------------------------------------------------------------ transfert vers Candidatures

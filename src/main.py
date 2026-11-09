@@ -22,7 +22,7 @@ from datetime import UTC, datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from src import dedoublonnage, filtres, notation, planning, stockage
+from src import dedoublonnage, filtres, liste_matin, notation, planning, stockage
 from src.config import Config, charger
 from src.models import Offre, Rejet
 from src.planning import Plan
@@ -62,7 +62,7 @@ class Rapport:
     par_niveau: dict[str, int] = field(default_factory=dict)
     exemples_nouvelles: list[str] = field(default_factory=list)
     envois: dict[str, int] = field(default_factory=lambda: {"alertes": 0, "alertes_en_attente": 0, "resumes": 0,
-                                                            "bilans": 0, "pannes": 0, "rappels": 0})
+                                                            "bilans": 0, "pannes": 0, "rappels": 0, "listes": 0})
     suivi: dict[str, object] = field(default_factory=dict)
 
     def resume(self) -> list[str]:
@@ -156,7 +156,35 @@ def passage(config: Config, base: stockage.Base, maintenant_utc: datetime | None
         envoyer(base, config, plan, telegram, maintenant_utc, rapport)
     if suivi is not None and not plan.hors_plage:
         synchroniser_suivi(base, config, suivi, verdicts or {}, maintenant_utc, rapport)
+    if telegram is not None and plan.liste_du_matin:
+        envoyer_liste(base, config, telegram, suivi, maintenant_utc, rapport)
     return rapport
+
+
+def envoyer_liste(base: stockage.Base, config: Config, tg: Telegram, suivi: Suivi | None, maintenant_utc: datetime,
+                  rapport: Rapport) -> None:
+    """Liste du matin : après le transfert des offres retenues, pour ne pas reproposer ce qui
+    vient d'entrer dans Candidatures. Les offres listées ne reviennent pas les jours suivants."""
+    lm = config.planning.envois.liste_matin
+    local = maintenant_utc.replace(tzinfo=UTC).astimezone(ZoneInfo(config.planning.fuseau))
+    deja: set[str] = set()
+    if suivi is not None:
+        try:
+            deja = suivi.liens_candidatures()
+        except ErreurSheets as ex:
+            rapport.suivi["erreur_liste_lecture"] = str(ex)[:200]
+    candidats = stockage.candidats_liste(base, maintenant_utc - timedelta(days=lm.fenetre_jours))
+    choix = liste_matin.choisir(candidats, deja, local.date(), lm.max_offres, lm.fils)
+    if not all(tg.envoyer(m) for m in tgm.messages_liste(choix, local.date())):
+        return
+    if suivi is not None:
+        try:
+            rapport.suivi["liste_du_matin"] = suivi.ajouter_liste(choix, local)
+        except ErreurSheets as ex:
+            rapport.suivi["erreur_liste"] = str(ex)[:200]
+    stockage.marquer_liste(base, [ch.offre["cle"] for ch in choix], maintenant_utc)
+    stockage.enregistrer_envoi(base, "liste", None, maintenant_utc)
+    rapport.envois["listes"] += 1
 
 
 def synchroniser_suivi(base: stockage.Base, config: Config, suivi: Suivi, verdicts: dict[str, str],

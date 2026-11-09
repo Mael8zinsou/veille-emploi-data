@@ -18,6 +18,10 @@ taches:
 envois:
   resume_quotidien_heure: 18
   bilan_hebdomadaire: {jour: 0, heure: 8}   # jour 0 = lundi
+  # Liste du matin (9/11) : 10 offres jouables au plus, des 3 derniers jours, une par employeur,
+  # avec verdict, écarts et mode de candidature. Sujet général de Telegram et onglet
+  # « Liste du matin ». Retirer ce bloc pour la couper.
+  liste_matin: {heure: 8, max_offres: 10, fenetre_jours: 3, fils: [emploi, alternance]}
 
 quotas:
   # Requêtes Adzuna autorisées par mois civil (quota gratuit : 250).

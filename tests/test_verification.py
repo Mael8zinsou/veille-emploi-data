@@ -205,7 +205,7 @@ def test_migration_vers_la_version_4(tmp_path):
     stockage.ouvrir(chemin)
     with closing(sqlite3.connect(chemin)) as c:
         assert "candidature" in {r[1] for r in c.execute("PRAGMA table_info(offres)")}
-        assert c.execute("SELECT version FROM version_schema").fetchone()[0] == 4
+        assert c.execute("SELECT version FROM version_schema").fetchone()[0] == stockage.VERSION
 
 
 def test_maintenant_utc_naif():

@@ -139,9 +139,17 @@ class Bilan(_Strict):
     heure: int = Field(ge=0, le=23)
 
 
+class ListeMatin(_Strict):
+    heure: int = Field(ge=0, le=23)              # heure de Paris à partir de laquelle la liste est due
+    max_offres: int = Field(default=10, ge=1, le=20)
+    fenetre_jours: int = Field(default=3, ge=1, le=14)
+    fils: list[str] = ["emploi", "alternance"]
+
+
 class Envois(_Strict):
     resume_quotidien_heure: int = Field(ge=0, le=23)
     bilan_hebdomadaire: Bilan
+    liste_matin: ListeMatin | None = None
 
 
 class Quotas(_Strict):
