@@ -87,16 +87,19 @@ def _rang(ch: Choix) -> int:
 
 
 def choisir(candidats: list[dict], deja_postulees: set[str], aujourdhui: date, maximum: int,
-            fils: list[str], exclure_titre=None) -> list[Choix]:
+            fils: list[str], exclure_titre=None, exclure_entreprise=None) -> list[Choix]:
     """`candidats` : lignes de la table offres (stockage). `deja_postulees` : liens de l'onglet
     Candidatures. `exclure_titre(titre)` : vrai si le titre tombe sous les règles actuelles (une
-    offre notée avant un changement de règle reste en base avec son ancien niveau). Rend au plus
+    offre notée avant un changement de règle reste en base avec son ancien niveau).
+    `exclure_entreprise(nom)` : même principe pour l'employeur (filières réservées). Rend au plus
     `maximum` choix, classés."""
     choix = []
     for o in candidats:
         if str(o.get("fil") or "") not in fils or (o.get("url") or "").strip() in deja_postulees:
             continue
         if exclure_titre is not None and exclure_titre(o.get("titre") or ""):
+            continue
+        if exclure_entreprise is not None and exclure_entreprise(o.get("entreprise") or ""):
             continue
         limite = (o.get("candidature") or {}).get("date_limite") or ""
         if limite and limite < aujourdhui.isoformat():

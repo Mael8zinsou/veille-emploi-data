@@ -67,6 +67,11 @@ def titre_senior(titre: str, config: Config) -> str | None:
     return premier_motif(retirer(normaliser(titre), s.exceptions), s.titre)
 
 
+def filiere_reservee(entreprise: str, config: Config) -> str | None:
+    """Motif de filière réservée (« talents handicap »...) reconnu dans le nom de l'employeur."""
+    return premier_motif(normaliser(entreprise or ""), config.filtres.employeurs.filieres_reservees)
+
+
 def _seniorite(o: Offre, config: Config) -> str | None:
     s = config.filtres.seniorite
     mot = titre_senior(o.titre, config)
@@ -102,8 +107,7 @@ def motif_de_rejet(o: Offre, config: Config, aujourdhui: date) -> tuple[Motif, s
         return Motif.LIEU_ETRANGER, analyse.etranger
     if o.type_employeur == TypeEmployeur.PLATEFORME:
         return Motif.PLATEFORME_MISSIONS, o.entreprise
-    reservee = premier_motif(normaliser(o.entreprise or ""), f.employeurs.filieres_reservees)
-    if reservee:
+    if filiere_reservee(o.entreprise, config):
         return Motif.FILIERE_RESERVEE, o.entreprise
     if o.contrat == Contrat.FREELANCE:
         return Motif.FREELANCE, o.contrat_brut

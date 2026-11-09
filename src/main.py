@@ -175,7 +175,8 @@ def envoyer_liste(base: stockage.Base, config: Config, tg: Telegram, suivi: Suiv
             rapport.suivi["erreur_liste_lecture"] = str(ex)[:200]
     candidats = stockage.candidats_liste(base, maintenant_utc - timedelta(days=lm.fenetre_jours))
     choix = liste_matin.choisir(candidats, deja, local.date(), lm.max_offres * 3 if en_ligne else lm.max_offres, lm.fils,
-                                exclure_titre=lambda t: filtres.titre_senior(t, config) is not None)
+                                exclure_titre=lambda t: filtres.titre_senior(t, config) is not None,
+                                exclure_entreprise=lambda e: filtres.filiere_reservee(e, config) is not None)
     if en_ligne is not None:
         # Une offre fermée est archivée ; on parcourt au plus 3 fois la liste voulue.
         gardes, fermees = [], []
