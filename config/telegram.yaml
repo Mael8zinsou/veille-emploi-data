@@ -6,7 +6,8 @@ sujets:
   emploi: 2
   alternance: 4
   immersion: 6
-resume_max_offres: 30
+# 9/11 : 15 offres au plus par fil, classées par note (70 nouvelles par jour en moyenne).
+resume_max_offres: 15
 # Une source en échec ce nombre de fois d'affilée déclenche un avertissement immédiat.
 pannes_avant_avertissement: 3
 

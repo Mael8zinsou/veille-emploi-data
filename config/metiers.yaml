@@ -1,5 +1,9 @@
 # Familles de métiers reconnues, par priorité (cahier des charges § 3.1).
 #
+# Repositionnement du 9/11 (bilan des candidatures) : Data Analyst, BI et Analytics Engineering
+# passent en priorité 1, au niveau du Data Engineering ; Data Science descend en priorité 2,
+# l'expérience de Maël (SQL, fiabilisation, restitution) y étant la moins démontrée.
+#
 # La reconnaissance se fait sur le TITRE de l'offre, normalisé (minuscules, sans accents,
 # ponctuation remplacée par des espaces) et comparé mot à mot : « ia » ne reconnaît pas
 # « media », « ml » ne reconnaît pas « html ». Écrire les motifs sans accents.
@@ -62,7 +66,7 @@ familles:
 
   - nom: data_science
     libelle: Data Science
-    priorite: 1
+    priorite: 2
     romes: [M1405]
     motifs:
       - data scientist
@@ -119,7 +123,7 @@ familles:
 
   - nom: analyse
     libelle: Analyse de données
-    priorite: 2
+    priorite: 1
     romes: [M1419, M1403]
     motifs:
       - data analyst
@@ -141,7 +145,7 @@ familles:
 
   - nom: bi
     libelle: BI et décisionnel
-    priorite: 2
+    priorite: 1
     romes: []
     motifs:
       - developpeur bi

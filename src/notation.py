@@ -78,6 +78,15 @@ def noter(o: Offre, config: Config, aujourdhui: date, verdicts: dict[str, str] |
     if o.type_employeur in points_employeur:
         comp.append(points_employeur[o.type_employeur])
 
+    af = n.affinites
+    if af.secteur_public and (o.source in af.secteur_public.sources
+                              or premier_motif(normaliser(o.entreprise), af.secteur_public.employeurs)):
+        comp.append(("secteur public", af.secteur_public.points))
+    if af.donnees_sensibles:
+        mot = premier_motif(texte, af.donnees_sensibles.mots)
+        if mot:
+            comp.append((f"données sensibles ({mot})", af.donnees_sensibles.points))
+
     archivee, cible = None, False
     verdict = verdict_de(o.entreprise, verdicts or {})
     if verdict:

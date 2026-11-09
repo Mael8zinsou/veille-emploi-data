@@ -299,6 +299,19 @@ class Niveaux(_Strict):
         return self
 
 
+class Affinite(_Strict):
+    """Bonus quand l'offre ressemble à l'expérience de Maël (repositionnement du 9/11)."""
+    points: int
+    employeurs: Motifs = []    # mots cherchés dans le nom de l'employeur
+    sources: list[str] = []    # sources dont toutes les offres relèvent de l'affinité
+    mots: Motifs = []          # mots cherchés dans le titre et la description
+
+
+class Affinites(_Strict):
+    secteur_public: Affinite | None = None
+    donnees_sensibles: Affinite | None = None
+
+
 class Notation(_Strict):
     priorite_famille: dict[int, int]
     competences: Competences
@@ -307,6 +320,7 @@ class Notation(_Strict):
     suivi: PointsSuivi
     signaux: Signaux
     niveaux: Niveaux
+    affinites: Affinites = Affinites()
 
 
 # --------------------------------------------------------------------------- telegram

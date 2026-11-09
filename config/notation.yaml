@@ -17,15 +17,33 @@ niveau_experience:
                    entry level, sortie d ecole, 0 a 2 ans, 1 an d experience, premiere experience]
   junior: 3                # signal junior dans le titre ou la description
   debutant_accepte: 3      # France Travail : expérience « débutant accepté »
-  confirme_titre: -3       # « confirmé » ou « expérimenté » dans le titre
+  confirme_titre: -4       # « confirmé » ou « expérimenté » dans le titre (9/11 : -3 -> -4)
   mots_confirme: [confirme, confirmee, experimente, experimentee]
-  annees: {0: 2, 1: 2, 2: 0, 3: -1}
+  # 9/11 : 3 ans demandés passent de -1 à -4 (aucune réponse sur ces offres dans le bilan).
+  annees: {0: 2, 1: 2, 2: 0, 3: -4}
 
 employeur:
   esn: -4
   intermediaire: -2        # republicateur ou cabinet : « seconde main »
   inconnu: -2              # employeur non indiqué : « seconde main »
   ecole: -3
+
+affinites:
+  # Repositionnement du 9/11 : un an de Data Engineering à la DGFiP, sur des données sensibles.
+  # Les offres qui ressemblent à cette expérience sont celles où Maël est le plus crédible.
+  secteur_public:
+    points: 3
+    sources: [service_public]
+    employeurs: [ministere, direction generale, direction regionale, direction departementale, prefecture,
+                 dgfip, insee, drees, dares, inserm, cnrs, inria, universite, assistance publique, ap hp,
+                 caisse nationale, cnam, cnav, urssaf, caf, banque de france, cour des comptes,
+                 conseil departemental, conseil regional, metropole, mairie, ville de, tracfin, douane, ademe,
+                 agence nationale, centre hospitalier, chu]
+  donnees_sensibles:
+    points: 2
+    mots: [fraude, conformite, lutte anti blanchiment, lcb ft, rgpd, donnees personnelles, donnees sensibles,
+           secret statistique, reglementaire, qualite des donnees, fiabilisation, controle fiscal]
+    # « pilotage » et « tableaux de bord » écartés : presque toutes les offres d'analyse les citent.
 
 suivi:
   # Verdict de l'entreprise dans l'onglet Entreprises du fichier de suivi (lot 4).

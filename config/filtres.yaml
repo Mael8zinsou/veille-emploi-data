@@ -190,6 +190,10 @@ seniorite:
     # et aucun « je postule ». « Expérimenté » n'est PAS retenu : il écartait un « je postule ».
     - confirme
     - confirmee
+    # 9/11 : postes réservés aux docteurs, critère éliminatoire. « Expérimenté » reste un malus
+    # (notation.yaml), pas un rejet, pour respecter le calibrage du 26/10.
+    - docteur
+    - phd
   # Expressions retirées du titre avant ce contrôle : ce sont des métiers, pas des grades.
   exceptions:
     - data manager
@@ -197,6 +201,8 @@ seniorite:
     - product manager data
   # Exigence d'expérience au-delà de laquelle l'offre est rejetée. Calibrage du 26/10 : un
   # plafond à 2 ans écartait deux « je postule » demandant 3 ans, et aucun « hors cible ».
+  # 9/11 : plafond gardé à 3 ans (même raison), mais 3 ans demandés coûtent désormais -4 dans
+  # la note (notation.yaml) : ces offres n'ont donné aucune réponse dans le bilan du 9/11.
   annees_max: 3
 
 # Certification précise exigée : rejet (motif certification_exigee). Décision du 26/10.
@@ -268,6 +274,22 @@ employeurs:
     - startpeople
     - side
     - gojob
+    # 9/11 : republicateurs, agences et portage vus dans les alertes du 26/10 au 8/11.
+    - keoni
+    - crit
+    - crit interim
+    - kara
+    - linkedin job wrapping
+    - job wrapping
+    - jobposting
+    - lasecurecrute
+    - lynx rh
+    - darwin recruitment
+    - darwin partners
+    - octopus talent
+    - bureau des talents
+    - mercato de l emploi
+    - verscdi
   esn:
     - alten
     - sopra
@@ -384,6 +406,12 @@ employeurs:
     - hetic
     - isitech
     - eemi
+    # 9/11 : écoles vues dans les alertes. Malus « école » seulement, pas de rejet : sur le jeu du
+    # 26/10, six offres d'écoles étaient annotées « je postule ».
+    - aivancity
+    - oktogone
+    - mydigitalschool
+    - kai school
     - ecole
     - school
     - cfa
