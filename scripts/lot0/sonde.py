@@ -349,12 +349,125 @@ def sonde_hellowork_tri() -> list[str]:
     return lignes
 
 
+# --------------------------------------------------------------------------- pages de détail (9/11)
+
+_COURRIEL = re.compile(r"[A-Za-z0-9._%+-]+@([A-Za-z0-9.-]+\.[A-Za-z]{2,})")
+_ATS = ("greenhouse", "lever.co", "ashbyhq", "teamtailor", "welcometothejungle", "welcomekit", "smartrecruiters",
+        "myworkdayjobs", "workday", "taleo", "successfactors", "recruitee", "flatchr", "beetween", "talentsoft",
+        "jobaffinity", "digitalrecruiters", "werecruit", "softy", "cornerstone", "icims", "jobvite", "personio",
+        "choisirleservicepublic", "francetravail", "hellowork", "indeed", "linkedin", "apec", "place-emploi-public",
+        "emploi-territorial", "jobteaser", "meteojob", "monster", "cadremploi", "join.com", "breezy", "bamboohr")
+
+
+def _masquer_courriels(html: str) -> str:
+    return _COURRIEL.sub(lambda m: f"xxx@{m.group(1)}", html)
+
+
+def _jsonld(html: str) -> list[dict]:
+    import json as _json
+    sortie = []
+    for bloc in re.findall(r'<script[^>]+type="application/ld\+json"[^>]*>(.*?)</script>', html, re.S | re.I):
+        try:
+            d = _json.loads(bloc.strip())
+        except ValueError:
+            continue
+        for x in (d if isinstance(d, list) else d.get("@graph", [d]) if isinstance(d, dict) else []):
+            if isinstance(x, dict):
+                sortie.append(x)
+    return sortie
+
+
+def _liens_candidature(html: str) -> list[str]:
+    liens = []
+    for href, texte in re.findall(r'<a[^>]+href="([^"]+)"[^>]*>(.*?)</a>', html, re.S | re.I):
+        t = re.sub(r"<[^>]+>", " ", texte).lower()
+        if re.search(r"postuler|candidater|apply|je postule|envoyer ma candidature", t) or "/land/ad/" in href:
+            liens.append(href)
+    for href in re.findall(r'(?:data-href|data-url|formaction|action)="([^"]+)"', html):
+        if re.search(r"postul|apply|candidat", href, re.I):
+            liens.append(href)
+    return list(dict.fromkeys(liens))[:8]
+
+
+def _domaine(url: str) -> str:
+    m = re.match(r"https?://([^/]+)", url or "")
+    return m.group(1) if m else (url or "")[:40]
+
+
+def _analyser(nom: str, r: requests.Response, d: Path) -> str:
+    html = r.text
+    ecrire(d, f"{nom}.html", _masquer_courriels(html))
+    postings = [x for x in _jsonld(html) if "JobPosting" in str(x.get("@type"))]
+    jp = postings[0] if postings else {}
+    desc = re.sub(r"<[^>]+>", " ", str(jp.get("description", "")))
+    org = jp.get("hiringOrganization") or {}
+    liens = _liens_candidature(html)
+    bas = html.lower()
+    compte = [m for m in ("créer un compte", "creer un compte", "se connecter", "connectez-vous", "identifiez-vous",
+                          "mon espace", "espace candidat") if m in bas]
+    ats = sorted({a for a in _ATS if a in bas})
+    return (f"{nom} : HTTP {r.status_code}, {len(html)} car., final {_domaine(r.url)}, "
+            f"redirections {[_domaine(h.headers.get('location', '')) for h in r.history]}, "
+            f"JobPosting {'oui' if jp else 'non'} (clés {sorted(jp)[:14]}, description {len(desc)} car., "
+            f"employeur {str(org.get('name', '') if isinstance(org, dict) else org)[:40]!r}, "
+            f"experienceRequirements {str(jp.get('experienceRequirements', ''))[:60]!r}, directApply {jp.get('directApply')!r}), "
+            f"courriels {len(_COURRIEL.findall(html))}, mailto {bas.count('mailto:')}, "
+            f"liens candidature {[_domaine(x) if x.startswith('http') else x[:50] for x in liens]}, "
+            f"compte {compte}, ATS cités {ats[:10]}, cloudflare {'cf-chl' in bas or 'just a moment' in bas}")
+
+
+def sonde_pages_detail() -> list[str]:
+    d = SORTIE / "pages_detail"
+    urls = [u.strip() for u in (Path(__file__).parent / "urls_verification.txt").read_text(encoding="utf-8").splitlines()
+            if u.strip() and not u.startswith("#")]
+    lignes = []
+    for i, url in enumerate(urls):
+        nom = f"{i:02d}_{slug(_domaine(url))}"
+        try:
+            r = S.get(url, timeout=30, allow_redirects=True)
+            lignes.append(_analyser(nom, r, d))
+            # Adzuna : suivre aussi le lien « Postuler » vers le site d'origine.
+            if "adzuna" in url:
+                suivants = [x for x in _liens_candidature(r.text) if "/land/ad/" in x or not "adzuna" in x]
+                if suivants:
+                    cible = suivants[0] if suivants[0].startswith("http") else "https://www.adzuna.fr" + suivants[0]
+                    pause(1.5)
+                    r2 = S.get(cible, timeout=30, allow_redirects=True)
+                    lignes.append("  -> " + _analyser(nom + "_origine", r2, d))
+        except Exception as ex:  # noqa: BLE001
+            lignes.append(f"{nom} : erreur {ex.__class__.__name__} {str(ex)[:120]}")
+        pause(2.0)
+    # France Travail : la fiche API donne-t-elle le mode de candidature ?
+    try:
+        tok = S.post("https://entreprise.francetravail.fr/connexion/oauth2/access_token", params={"realm": "/partenaire"},
+                     data={"grant_type": "client_credentials", "client_id": os.environ["FT_CLIENT_ID"],
+                           "client_secret": os.environ["FT_CLIENT_SECRET"], "scope": "api_offresdemploiv2 o2dsoffre"},
+                     timeout=20).json()["access_token"]
+        for url in urls:
+            if "francetravail" not in url:
+                continue
+            ident = url.rstrip("/").rsplit("/", 1)[-1]
+            r = S.get(f"https://api.francetravail.io/partenaire/offresdemploi/v2/offres/{ident}",
+                      headers={"Authorization": f"Bearer {tok}"}, timeout=20)
+            j = r.json() if r.ok else {}
+            contact = {k: ("oui" if v else "") for k, v in (j.get("contact") or {}).items()}
+            lignes.append(f"FT API {ident} : HTTP {r.status_code}, contact {contact}, "
+                          f"origine {(j.get('origineOffre') or {}).get('origine')} {_domaine((j.get('origineOffre') or {}).get('urlOrigine', ''))}, "
+                          f"partenaires {[p.get('nom') for p in (j.get('origineOffre') or {}).get('partenaires', [])][:3]}, "
+                          f"description {len(j.get('description', ''))} car., experienceLibelle {j.get('experienceLibelle')!r}")
+            pause(0.4)
+    except Exception as ex:  # noqa: BLE001
+        lignes.append(f"FT API : erreur {ex.__class__.__name__} {str(ex)[:120]}")
+    return lignes
+
+
 SONDES = {
     "France Travail": sonde_france_travail, "APEC": sonde_apec, "Adzuna": sonde_adzuna,
     "HelloWork": sonde_hellowork, "La bonne alternance": sonde_lba, "Passerelles": sonde_passerelles,
     "Choisir le service public": sonde_csp, "engagement-jeunes": sonde_engagement_jeunes,
     "Adzuna titre": sonde_adzuna_titre, "Choisir le service public RSS": sonde_csp_rss,
     "engagement-jeunes plan du site": sonde_engagement_sitemap, "HelloWork tri": sonde_hellowork_tri,
+    "Pages de détail": sonde_pages_detail,
 }
 
 
