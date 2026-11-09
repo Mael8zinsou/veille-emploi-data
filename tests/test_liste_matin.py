@@ -234,3 +234,25 @@ def test_mode_complete_a_la_revue(tmp_path, config):
     stockage.noter(base, o.cle, 9, [("priorité 1", 6)], "resume")
     (c,) = stockage.candidats_liste(base, LUNDI_9H - timedelta(days=1))
     assert c["candidature"]["plateforme"] == "Beetween"
+
+
+def test_filiere_reservee_ecartee_de_la_liste(config):
+    from src.filtres import filiere_reservee
+    titre = "Ingénieur d'études Intelligence Artificielle & NLP (H/F)"
+    candidats = [ligne(cle="th", entreprise="Groupe Talents Handicap", titre=titre, note=20),
+                 ligne(cle="ok", entreprise="B")]
+    choix = lm.choisir(candidats, set(), JOUR, 10, ["emploi"],
+                       exclure_entreprise=lambda e: filiere_reservee(e, config) is not None)
+    assert [c.offre["cle"] for c in choix] == ["ok"]
+
+
+def test_envoyer_liste_ecarte_une_filiere_reservee_deja_en_base(tmp_path, config):
+    """Offre enregistrée avant la règle du 9/11 : elle ne doit pas ouvrir la liste."""
+    base = _base_avec_offres(tmp_path, config)
+    o = normaliser_offre(offre(entreprise="Groupe Talents Handicap", url="https://ex.fr/th"), config)
+    stockage.enregistrer_offres(base, [o], LUNDI_9H - timedelta(hours=2))
+    stockage.noter(base, o.cle, 20, [("priorité 1", 6)], "resume")
+    tg = Telegram(object(), None, config.telegram.groupe_id, config.telegram.sujets)
+    rapport = main.Rapport("", {})
+    main.envoyer_liste(base, config, tg, None, LUNDI_9H, rapport)
+    assert "Talents Handicap" not in tg.envoyes[0][1] and "3 offre(s)" in tg.envoyes[0][1]
