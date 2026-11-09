@@ -213,3 +213,24 @@ def test_passage_envoie_la_liste(tmp_path, config):
     tg = Telegram(object(), None, config.telegram.groupe_id, config.telegram.sujets)
     r = main.passage(config, base, LUNDI_9H, sources_imposees=[], session=object(), telegram=tg)
     assert r.envois["listes"] == 1
+
+
+def test_titre_tombe_sous_les_regles_actuelles(config):
+    from src.filtres import titre_senior
+    candidats = [ligne(cle="doc", entreprise="A", titre="Docteur- Ingénieur, IA Agentique, Data Scientist (H/F)"),
+                 ligne(cle="ok", entreprise="B")]
+    choix = lm.choisir(candidats, set(), JOUR, 10, ["emploi"], exclure_titre=lambda t: titre_senior(t, config) is not None)
+    assert [c.offre["cle"] for c in choix] == ["ok"]
+
+
+def test_mode_complete_a_la_revue(tmp_path, config):
+    base = stockage.ouvrir(tmp_path / "v.sqlite")
+    o = normaliser_offre(offre(), config)
+    stockage.enregistrer_offres(base, [o], LUNDI_9H - timedelta(hours=5))       # vue avant la vérification
+    o.candidature = Candidature(ModeCandidature.FORMULAIRE, "Beetween")
+    stockage.enregistrer_offres(base, [o], LUNDI_9H)
+    o.candidature = Candidature(ModeCandidature.COMPTE, "France Travail")          # ne remplace pas un mode connu
+    stockage.enregistrer_offres(base, [o], LUNDI_9H)
+    stockage.noter(base, o.cle, 9, [("priorité 1", 6)], "resume")
+    (c,) = stockage.candidats_liste(base, LUNDI_9H - timedelta(days=1))
+    assert c["candidature"]["plateforme"] == "Beetween"
