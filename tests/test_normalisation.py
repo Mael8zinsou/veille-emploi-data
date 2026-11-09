@@ -28,7 +28,8 @@ def test_retirer():
 @pytest.mark.parametrize("titre, famille", [
     ("Data Engineer H/F", "data_engineering"),
     ("Ingénieur Données (F/H)", "data_engineering"),
-    ("Data Scientist & ML Engineer", "data_science"),
+    ("Data Scientist & ML Engineer", "ia_ml"),  # 9/11 : data_science en priorité 2, ia_ml l'emporte
+    ("Data Scientist", "data_science"),
     ("AI Engineer (LLM / RAG) F/H", "ia_ml"),
     ("Ingénieur IA générative", "ia_ml"),
     ("Coordinateur IA", "ia_ml"),
