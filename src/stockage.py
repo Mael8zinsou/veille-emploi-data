@@ -16,7 +16,7 @@ from pathlib import Path
 
 from src.models import ModeCandidature, Offre, Rejet, TypeEmployeur, calculer_cle, titre_souple
 
-VERSION = 4
+VERSION = 5
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS version_schema (version INTEGER NOT NULL);
@@ -48,7 +48,8 @@ CREATE TABLE IF NOT EXISTS offres (
     cle_souple TEXT,
     empreinte TEXT,
     signaux TEXT,
-    candidature TEXT
+    candidature TEXT,
+    liste_le TEXT
 );
 CREATE INDEX IF NOT EXISTS idx_offres_premiere_vue ON offres(premiere_vue);
 CREATE INDEX IF NOT EXISTS idx_offres_etat ON offres(etat_envoi);
@@ -145,9 +146,10 @@ def _migrer(c: sqlite3.Connection) -> None:
     Version 2 -> 3 : clé souple, empreinte de description et signaux, pour reconnaître une même
     offre republiée sous un titre à peine différent. La clé souple des offres déjà en base est
     recalculée ; leur empreinte reste vide (la description n'est pas conservée).
-    Version 3 -> 4 : mode de candidature (JSON), vide pour les offres déjà en base."""
+    Version 3 -> 4 : mode de candidature (JSON), vide pour les offres déjà en base.
+    Version 4 -> 5 : date de passage dans la liste du matin."""
     colonnes = {r[1] for r in c.execute("PRAGMA table_info(offres)")}
-    for nouvelle in ("cle_souple", "empreinte", "signaux", "candidature"):
+    for nouvelle in ("cle_souple", "empreinte", "signaux", "candidature", "liste_le"):
         if nouvelle not in colonnes:
             c.execute(f"ALTER TABLE offres ADD COLUMN {nouvelle} TEXT")
     a_calculer = c.execute("SELECT cle, titre, entreprise, lieu, type_employeur FROM offres "
@@ -394,6 +396,19 @@ def a_resumer(base: Base, fil: str) -> list[dict]:
         rows = c.execute("SELECT * FROM offres WHERE niveau = 'resume' AND etat_envoi = 'aucun' AND fil = ? "
                          "ORDER BY note DESC", (fil,)).fetchall()
     return [_ligne(r) for r in rows]
+
+
+def candidats_liste(base: Base, depuis: datetime) -> list[dict]:
+    """Offres présentées (alerte ou résumé) vues depuis `depuis`, jamais passées dans la liste du matin."""
+    with closing(base.connexion()) as c:
+        rows = c.execute("SELECT * FROM offres WHERE niveau IN ('alerte', 'resume') AND premiere_vue >= ? "
+                         "AND liste_le IS NULL ORDER BY note DESC", (_maintenant(depuis),)).fetchall()
+    return [_ligne(r) for r in rows]
+
+
+def marquer_liste(base: Base, cles: list[str], le: datetime | None = None) -> None:
+    with closing(base.connexion()) as c, c:
+        c.executemany("UPDATE offres SET liste_le = ? WHERE cle = ?", [(_maintenant(le), k) for k in cles])
 
 
 def marquer(base: Base, cles: list[str], etat: str, le: datetime | None = None) -> None:

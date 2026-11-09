@@ -76,6 +76,39 @@ def messages_resume(fil: str, offres: list[dict], jour, maximum: int) -> list[st
     return messages
 
 
+def _ligne_liste(i: int, ch) -> str:
+    o = ch.offre
+    detail = " · ".join(p for p in (e(o.get("entreprise") or "employeur non indiqué"), e(o.get("lieu")),
+                                    e(o.get("contrat"))) if p)
+    mode = e(ch.mode) + (f", avant le {e(ch.date_limite)}" if ch.date_limite else "")
+    lignes = [f"<b>{i}.</b> {e(o['titre'])} · {detail}",
+              f"    note {o.get('note')} · <b>{e(ch.verdict)}</b> · {mode}"]
+    if ch.ecarts:
+        lignes.append(f"    écarts : {e(', '.join(ch.ecarts))}")
+    lignes.append(f"    {_lien(o.get('url', ''), 'offre')}")
+    return "\n".join(lignes)
+
+
+def messages_liste(choix: list, jour) -> list[str]:
+    """Liste du matin : offres jouables numérotées, à valider en lot auprès de Claude."""
+    entete = f"📋 <b>Liste du matin, {date_fr(jour)}</b> · {len(choix)} offre(s) jouable(s)"
+    if not choix:
+        return [f"{entete}\nRien de jouable aujourd'hui dans les offres des derniers jours."]
+    pied = "Valide un lot auprès de Claude (« envoie 1, 3 et 4 ») ou coche « Je postule » dans l'onglet Liste du matin."
+    messages, courant = [], entete
+    for i, ch in enumerate(choix, start=1):
+        bloc = _ligne_liste(i, ch)
+        if len(courant) + len(bloc) + 2 > LIMITE - MARGE:
+            messages.append(courant)
+            courant = f"{entete} (suite)"
+        courant += "\n\n" + bloc
+    if len(courant) + len(pied) + 2 > LIMITE - MARGE:
+        messages.append(courant)
+        courant = f"{entete} (suite)"
+    messages.append(courant + "\n\n" + e(pied))
+    return messages
+
+
 def message_bilan(stats: dict) -> str:
     lignes = [f"📊 <b>Bilan de la semaine</b> (du {e(stats['du'])} au {e(stats['au'])})"]
     lignes.append("Offres présentées : " + ", ".join(f"{LIBELLES_FIL.get(f, f)} {n}" for f, n in stats["par_fil"].items())

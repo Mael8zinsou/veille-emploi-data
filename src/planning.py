@@ -24,6 +24,7 @@ class Plan:
     bilan_hebdomadaire: bool = False
     alertes_en_attente: bool = False      # premier passage du matin : envoyer les alertes de la nuit
     rappel_linkedin: bool = False         # rappel horaire de lancer les recherches de posts LinkedIn
+    liste_du_matin: bool = False          # liste quotidienne des offres jouables
     hors_plage: bool = False
     raisons: dict[str, str] = field(default_factory=dict)
 
@@ -76,9 +77,12 @@ def taches_dues(maintenant_utc: datetime, derniers_succes: dict[str, datetime],
     # Alertes retenues pendant la nuit : le premier passage du jour les envoie.
     alertes = not deja_envoye_depuis("matin", debut_jour)
 
+    lm = p.envois.liste_matin
+    liste = lm is not None and local.hour >= lm.heure and not deja_envoye_depuis("liste", debut_jour)
+
     return Plan(sources=sources, resume_quotidien=resume, bilan_hebdomadaire=bilan,
                 alertes_en_attente=alertes, rappel_linkedin=rappel_du(maintenant_utc, derniers_envois, config),
-                raisons=raisons)
+                liste_du_matin=liste, raisons=raisons)
 
 
 def rappel_du(maintenant_utc: datetime, derniers_envois: dict[tuple[str, str | None], datetime],
