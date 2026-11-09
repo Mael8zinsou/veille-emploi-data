@@ -59,7 +59,8 @@ def lire_page(texte: str, fil: Fil) -> list[Offre]:
 # une ligne « Exp. 5 ans min. » (sondage du 9/11 : 4 offres sur 6 demandaient 3 ans ou plus),
 # puis la description complète. Candidature : formulaire HelloWork, compte requis.
 
-_EXP = re.compile(r"^Exp\.\s*(\d{1,2})\s*ans?\s*min", re.IGNORECASE | re.MULTILINE)
+# « Exp. 5 ans min. », « Exp. 1 an min. », et « Exp. 2 à 5 ans » (Framatome, 9/11) : borne basse.
+_EXP = re.compile(r"^Exp\.\s*(\d{1,2})\s*(?:(?:à|a|-)\s*\d{1,2}\s*)?ans?\b", re.IGNORECASE | re.MULTILINE)
 _DEBUT = ("Les missions du poste", "Détail du poste")
 _FIN = ("Les avantages", "Les étapes de recrutement", "Envoyez votre candidature", " en images\n", "Créer mon alerte",
         "Ces offres pourraient")

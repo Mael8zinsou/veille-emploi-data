@@ -210,3 +210,10 @@ def test_migration_vers_la_version_4(tmp_path):
 
 def test_maintenant_utc_naif():
     assert MAINTENANT.replace(tzinfo=UTC).tzinfo is UTC
+
+
+@pytest.mark.parametrize("ligne, annees", [("Exp. 2 à 5 ans", 2), ("Exp. 5 ans min.", 5), ("Exp. 1 an min.", 1),
+                                           ("Exp. 3-5 ans", 3), ("Bac +5", None)])
+def test_hellowork_lignes_experience(ligne, annees):
+    page = f"<html><body><div>Data Engineer</div><div>{ligne}</div><h2>Les missions du poste</h2><p>x</p></body></html>"
+    assert hellowork.lire_detail(page)["experience"] == annees
