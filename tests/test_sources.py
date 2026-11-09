@@ -157,7 +157,7 @@ def test_hellowork_refus_coupe_la_source(config, monkeypatch):
 def test_hellowork_parcourt_les_recherches(config, monkeypatch):
     monkeypatch.setattr("time.sleep", lambda s: None)
     page = fixture_texte("hellowork/data_scientist.html")
-    c = ctx(config, lambda m, u, k: Reponse(200, text=page if k["params"]["p"] == 1 else "<html></html>"))
+    c = ctx(config, lambda m, u, k: Reponse(200, text=page if k.get("params", {}).get("p") == 1 else "<html></html>"))
     offres = hellowork.fetch(c)
     cfg = config.sources.hellowork
     assert len(offres) == 30 * (len(cfg.emploi) + len(cfg.alternance))
@@ -208,7 +208,7 @@ def test_service_public_detail_reel():
     service_public.completer(o, detail)
     assert o.entreprise == "Direction nationale du renseignement et des enquêtes douanières (DNRED)"
     assert o.lieu == "Val de Marne (94)" and o.date_publication == "2026-10-22"
-    assert o.debutant_accepte is None and o.experience_annees is None     # « Confirmé » : neutre
+    assert o.debutant_accepte is None and o.experience_annees == 3        # « Confirmé » : 3 ans (9/11)
 
 
 @pytest.mark.parametrize("niveau, debutant, annees", [("Débutant", True, None), ("Expert", None, 5)])

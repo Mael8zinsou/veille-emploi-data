@@ -14,9 +14,9 @@ from dataclasses import dataclass
 from datetime import UTC, datetime, timedelta
 from pathlib import Path
 
-from src.models import Offre, Rejet, TypeEmployeur, calculer_cle, titre_souple
+from src.models import ModeCandidature, Offre, Rejet, TypeEmployeur, calculer_cle, titre_souple
 
-VERSION = 3
+VERSION = 4
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS version_schema (version INTEGER NOT NULL);
@@ -47,7 +47,8 @@ CREATE TABLE IF NOT EXISTS offres (
     importee_v1 INTEGER NOT NULL DEFAULT 0,
     cle_souple TEXT,
     empreinte TEXT,
-    signaux TEXT
+    signaux TEXT,
+    candidature TEXT
 );
 CREATE INDEX IF NOT EXISTS idx_offres_premiere_vue ON offres(premiere_vue);
 CREATE INDEX IF NOT EXISTS idx_offres_etat ON offres(etat_envoi);
@@ -143,9 +144,10 @@ def _migrer(c: sqlite3.Connection) -> None:
     recevoir, à la mise en service, les offres déjà vues pendant la période de test).
     Version 2 -> 3 : clé souple, empreinte de description et signaux, pour reconnaître une même
     offre republiée sous un titre à peine différent. La clé souple des offres déjà en base est
-    recalculée ; leur empreinte reste vide (la description n'est pas conservée)."""
+    recalculée ; leur empreinte reste vide (la description n'est pas conservée).
+    Version 3 -> 4 : mode de candidature (JSON), vide pour les offres déjà en base."""
     colonnes = {r[1] for r in c.execute("PRAGMA table_info(offres)")}
-    for nouvelle in ("cle_souple", "empreinte", "signaux"):
+    for nouvelle in ("cle_souple", "empreinte", "signaux", "candidature"):
         if nouvelle not in colonnes:
             c.execute(f"ALTER TABLE offres ADD COLUMN {nouvelle} TEXT")
     a_calculer = c.execute("SELECT cle, titre, entreprise, lieu, type_employeur FROM offres "
@@ -229,12 +231,13 @@ def enregistrer_offres(base: Base, offres: list[Offre], le: datetime | None = No
             c.execute(
                 """INSERT OR IGNORE INTO offres (cle, fil, famille, priorite, titre, entreprise, type_employeur,
                        lieu, contrat, duree_mois, url, sources, date_publication, premiere_vue, derniere_vue,
-                       cle_souple, empreinte, signaux)
-                   VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+                       cle_souple, empreinte, signaux, candidature)
+                   VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
                 (o.cle, o.fil, o.famille, o.priorite, o.titre, o.entreprise, o.type_employeur, o.lieu,
                  o.contrat, o.duree_mois, o.url, ",".join(o.sources or [o.source]), o.date_publication,
                  maintenant, maintenant, o.cle_souple, o.empreinte,
-                 json.dumps(signaux_offre(o), ensure_ascii=False)))
+                 json.dumps(signaux_offre(o), ensure_ascii=False),
+                 json.dumps(o.candidature.en_dict(), ensure_ascii=False) if o.candidature else None))
             c.execute("UPDATE offres SET derniere_vue = ? WHERE cle = ?", (maintenant, o.cle))
 
 
@@ -247,6 +250,9 @@ def signaux_offre(o: Offre) -> list[str]:
         signaux.append("via cabinet")
     if o.description_partielle:
         signaux.append("description partielle (Adzuna) : expérience à vérifier")
+    # Le mode « à vérifier » double le signal Adzuna ci-dessus : pas affiché.
+    if o.candidature and o.candidature.mode not in (ModeCandidature.A_VERIFIER, ModeCandidature.INCONNU):
+        signaux.append(o.candidature.libelle())
     return signaux
 
 
@@ -372,6 +378,7 @@ def _ligne(r: sqlite3.Row) -> dict:
     d["signaux"] = [n for n, _ in d["composantes"] if n in ("seconde main", "employeur non indiqué", "republiée",
                                                              "peu candidatée", "école")]
     d["signaux"] += stockes
+    d["candidature"] = json.loads(d["candidature"]) if d.get("candidature") else None
     return d
 
 

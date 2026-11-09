@@ -154,7 +154,7 @@ def test_migration_vers_la_version_3(tmp_path, config):
     base = stockage.ouvrir(chemin)
     with sqlite3.connect(chemin) as c:
         assert c.execute("SELECT cle_souple FROM offres").fetchone()[0] == o.cle_souple
-        assert c.execute("SELECT version FROM version_schema").fetchone()[0] == 3
+        assert c.execute("SELECT version FROM version_schema").fetchone()[0] == stockage.VERSION
     v = normaliser_offre(offre(titre="Data Scientist (H/F) AEROMIN", entreprise="Transavia"), config)
     assert stockage.doublons(base, [v], datetime(2026, 10, 1)) == {v.cle: o.cle}
 

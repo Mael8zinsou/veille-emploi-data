@@ -6,7 +6,18 @@ et les signaux portés par une seule source sont conservés.
 """
 from __future__ import annotations
 
-from src.models import Offre
+from src.models import Candidature, ModeCandidature, Offre
+
+# Le mode qui demande le moins à Maël l'emporte : un formulaire sans compte vaut mieux qu'un
+# compte à ouvrir, qui vaut mieux qu'une page à vérifier dans Chrome.
+_ORDRE = [ModeCandidature.FORMULAIRE, ModeCandidature.MAIL, ModeCandidature.COMPTE, ModeCandidature.SITE,
+          ModeCandidature.A_VERIFIER, ModeCandidature.INCONNU]
+
+
+def meilleure_candidature(a: Candidature | None, b: Candidature | None) -> Candidature | None:
+    if a is None or b is None:
+        return a or b
+    return a if _ORDRE.index(a.mode) <= _ORDRE.index(b.mode) else b
 
 
 def fusionner(offres: list[Offre]) -> list[Offre]:
@@ -30,6 +41,7 @@ def fusionner(offres: list[Offre]) -> list[Offre]:
             principale.annees_requises = autre.annees_requises
         principale.via_cabinet = principale.via_cabinet or autre.via_cabinet
         principale.permis_exige = principale.permis_exige or autre.permis_exige
+        principale.candidature = meilleure_candidature(principale.candidature, autre.candidature)
         par_cle[cle] = principale
     sortie = []
     for cle, o in par_cle.items():

@@ -30,6 +30,7 @@ from datetime import date, timedelta
 from email.utils import parsedate_to_datetime
 
 from src.models import Offre
+from src.normalisation import candidature as cand
 from src.normalisation import metiers
 from src.normalisation.texte import normaliser
 from src.sources import Contexte
@@ -93,19 +94,37 @@ def lire_flux(texte: str) -> list[Offre]:
     return offres
 
 
+# Bouton « Postuler par mail » (lien mailto) ou « Postuler sur le site employeur » (lien
+# externe), suivi de « Date limite de candidature : 20/11/2026 » (sondage du 9/11).
+_BOUTON = re.compile(r'<a\b[^>]*?href="(?P<href>[^"]+)"[^>]*>(?:(?!</a>).)*?Postuler (?:par mail|sur le site employeur)',
+                     re.S | re.I)
+_LIMITE = re.compile(r"Date limite de candidature\s*:\s*(\d{2}/\d{2}/\d{4})")
+
+
+def lire_candidature(texte: str) -> dict:
+    m = _BOUTON.search(texte or "")
+    limite = _LIMITE.search(texte or "")
+    if not m and not limite:
+        return {}
+    c = cand.depuis_lien(html.unescape(m.group("href")) if m else "",
+                         cand.date_limite_fr(limite.group(1)) if limite else "")
+    return c.en_dict()
+
+
 def lire_detail(texte: str) -> dict:
-    """Bloc JSON-LD JobPosting de la page d'une offre, ou {}."""
+    """Bloc JSON-LD JobPosting de la page d'une offre (ou {}), plus le mode de candidature."""
     for bloc in _JSON_LD.findall(texte or ""):
         try:
             donnees = json.loads(bloc)
         except ValueError:
             continue
         if isinstance(donnees, dict) and donnees.get("@type") == "JobPosting":
-            return donnees
+            candidature = lire_candidature(texte)
+            return {**donnees, "candidature": candidature} if candidature else donnees
     return {}
 
 
-_CHAMPS_GARDES = ("hiringOrganization", "addressLocality", "datePosted", "experienceRequirements")
+_CHAMPS_GARDES = ("hiringOrganization", "addressLocality", "datePosted", "experienceRequirements", "candidature")
 
 
 def completer(o: Offre, detail: dict) -> None:
@@ -127,6 +146,12 @@ def completer(o: Offre, detail: dict) -> None:
         # Niveau « Expert » du site : poste senior. Traduit en exigence d'expérience pour
         # passer par la règle de séniorité (plus de 3 ans : écarté).
         o.experience_annees = 5
+    elif niveau == "confirme":
+        # 9/11 : « Confirmé » vaut 3 ans, gardé avec le malus de la notation (-4), comme une
+        # offre du privé qui demande 3 ans.
+        o.experience_annees = 3
+    if detail.get("candidature"):
+        o.candidature = cand.depuis_dict(detail["candidature"])
 
 
 def _a_completer(o: Offre, ctx: Contexte) -> bool:

@@ -17,6 +17,7 @@ import time
 from datetime import timedelta
 
 from src.models import Fil, Offre
+from src.normalisation import candidature as cand
 from src.normalisation.experience import depuis_france_travail
 from src.sources import Contexte, SourceIndisponible
 
@@ -69,6 +70,7 @@ def convertir(item: dict, fil: Fil) -> Offre:
         code_rome=item.get("romeCode") or "",
         diffuseur=(partenaires[0].get("nom") or "") if partenaires else "",
         fil_demande=fil,
+        candidature=cand.depuis_france_travail(item),
     )
 
 
