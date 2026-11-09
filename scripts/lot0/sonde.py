@@ -461,13 +461,32 @@ def sonde_pages_detail() -> list[str]:
     return lignes
 
 
+def sonde_disponibilite() -> list[str]:
+    """API France Travail : statut d'une offre clôturée (9/11 : 8579282, 8625264, 8624042) et d'une offre en ligne (216FCTW)."""
+    tok = S.post("https://entreprise.francetravail.fr/connexion/oauth2/access_token", params={"realm": "/partenaire"},
+                 data={"grant_type": "client_credentials", "client_id": os.environ["FT_CLIENT_ID"],
+                       "client_secret": os.environ["FT_CLIENT_SECRET"], "scope": "api_offresdemploiv2 o2dsoffre"},
+                 timeout=20).json()["access_token"]
+    lignes = []
+    for ident in ("8579282", "8625264", "8624042", "216FCTW", "8588974"):
+        r = S.get(f"https://api.francetravail.io/partenaire/offresdemploi/v2/offres/{ident}",
+                  headers={"Authorization": f"Bearer {tok}", "Accept": "application/json"}, timeout=20, allow_redirects=False)
+        lignes.append(f"API {ident} : HTTP {r.status_code}, {len(r.content)} octets, debut {r.text[:80]!r}")
+        pause(0.4)
+    for url in ("https://www.hellowork.com/fr-fr/emplois/85290718.html", "https://www.hellowork.com/fr-fr/emplois/62306803.html"):
+        r = S.get(url, timeout=20, allow_redirects=False)
+        lignes.append(f"HelloWork {url[-14:]} : HTTP {r.status_code}, location {r.headers.get('location', '')[:80]}")
+        pause(2)
+    return lignes
+
+
 SONDES = {
     "France Travail": sonde_france_travail, "APEC": sonde_apec, "Adzuna": sonde_adzuna,
     "HelloWork": sonde_hellowork, "La bonne alternance": sonde_lba, "Passerelles": sonde_passerelles,
     "Choisir le service public": sonde_csp, "engagement-jeunes": sonde_engagement_jeunes,
     "Adzuna titre": sonde_adzuna_titre, "Choisir le service public RSS": sonde_csp_rss,
     "engagement-jeunes plan du site": sonde_engagement_sitemap, "HelloWork tri": sonde_hellowork_tri,
-    "Pages de détail": sonde_pages_detail,
+    "Pages de détail": sonde_pages_detail, "Disponibilité": sonde_disponibilite,
 }
 
 
