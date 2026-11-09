@@ -56,10 +56,15 @@ def permis_exige(texte: str, config: Config) -> bool:
     return any(motif.search(normaliser(p)) for p in re.split(r"[.,;:!?\n()]", texte or ""))
 
 
+def titre_senior(titre: str, config: Config) -> str | None:
+    """Mot de séniorité du titre (« senior », « docteur »...), hors métiers en exception."""
+    s = config.filtres.seniorite
+    return premier_motif(retirer(normaliser(titre), s.exceptions), s.titre)
+
+
 def _seniorite(o: Offre, config: Config) -> str | None:
     s = config.filtres.seniorite
-    titre = retirer(normaliser(o.titre), s.exceptions)
-    mot = premier_motif(titre, s.titre)
+    mot = titre_senior(o.titre, config)
     if mot:
         return f"titre : {mot}"
     if o.annees_requises is not None and o.annees_requises > s.annees_max:

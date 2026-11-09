@@ -174,7 +174,8 @@ def envoyer_liste(base: stockage.Base, config: Config, tg: Telegram, suivi: Suiv
         except ErreurSheets as ex:
             rapport.suivi["erreur_liste_lecture"] = str(ex)[:200]
     candidats = stockage.candidats_liste(base, maintenant_utc - timedelta(days=lm.fenetre_jours))
-    choix = liste_matin.choisir(candidats, deja, local.date(), lm.max_offres, lm.fils)
+    choix = liste_matin.choisir(candidats, deja, local.date(), lm.max_offres, lm.fils,
+                                exclure_titre=lambda t: filtres.titre_senior(t, config) is not None)
     if not all(tg.envoyer(m) for m in tgm.messages_liste(choix, local.date())):
         return
     if suivi is not None:

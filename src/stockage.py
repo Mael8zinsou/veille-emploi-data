@@ -240,7 +240,10 @@ def enregistrer_offres(base: Base, offres: list[Offre], le: datetime | None = No
                  maintenant, maintenant, o.cle_souple, o.empreinte,
                  json.dumps(signaux_offre(o), ensure_ascii=False),
                  json.dumps(o.candidature.en_dict(), ensure_ascii=False) if o.candidature else None))
-            c.execute("UPDATE offres SET derniere_vue = ? WHERE cle = ?", (maintenant, o.cle))
+            # Mode de candidature : complété pour une offre enregistrée avant la vérification (9/11).
+            c.execute("UPDATE offres SET derniere_vue = ?, candidature = COALESCE(candidature, ?) WHERE cle = ?",
+                      (maintenant, json.dumps(o.candidature.en_dict(), ensure_ascii=False) if o.candidature else None,
+                       o.cle))
 
 
 def signaux_offre(o: Offre) -> list[str]:
