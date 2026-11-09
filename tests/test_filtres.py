@@ -24,6 +24,10 @@ def test_offre_ordinaire_gardee(config):
     ({"titre": "Comptable"}, Motif.METIER_HORS_CIBLE),
     ({"lieu": "Bruxelles"}, Motif.LIEU_ETRANGER),
     ({"entreprise": "Collective.work"}, Motif.PLATEFORME_MISSIONS),
+    # Diagnostic du vivier (9/11)
+    ({"entreprise": "Groupe Talents Handicap"}, Motif.FILIERE_RESERVEE),
+    ({"titre": "Responsable de la cellule Data-IA-Innovation"}, Motif.SENIORITE),
+    ({"titre": "Data Scientist Chef de la section analyse territoriale"}, Motif.SENIORITE),
     ({"titre": "Data Engineer Freelance"}, Motif.FREELANCE),
     ({"titre": "Stage Data Engineer"}, Motif.STAGE_CONVENTIONNE),
     ({"contrat_brut": "SAI Saisonnier"}, Motif.CONTRAT_HORS_CIBLE),

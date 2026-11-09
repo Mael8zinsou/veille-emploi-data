@@ -1,0 +1,35 @@
+name: Diagnostic du vivier (lecture seule)
+
+# Manuel. Restaure une copie de la base de production depuis le cache et affiche dans le
+# journal : offres présentées par jour et par source, vivier de la prochaine liste du matin,
+# rejets des 7 derniers jours avec échantillons. Ne lance pas la veille, n'envoie rien et ne
+# réécrit jamais le cache.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  vivier:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Restaure la base (lecture seule)
+        uses: actions/cache/restore@v5
+        with:
+          path: data/
+          key: vivier-${{ github.run_id }}
+          restore-keys: |
+            veille-db-
+      - name: Diagnostic
+        env:
+          PYTHONIOENCODING: utf-8
+        run: PYTHONPATH=. python scripts/diagnostic_vivier.py

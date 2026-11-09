@@ -100,6 +100,7 @@ class Employeurs(_Strict):
     esn: Motifs
     ecoles: Motifs
     cabinets: Motifs = []
+    filieres_reservees: Motifs = []
 
 
 class CertificationExigee(_Strict):
