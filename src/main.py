@@ -22,7 +22,7 @@ from datetime import UTC, datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from src import dedoublonnage, filtres, liste_matin, notation, planning, stockage
+from src import dedoublonnage, disponibilite, filtres, liste_matin, notation, planning, stockage
 from src.config import Config, charger
 from src.models import Offre, Rejet
 from src.planning import Plan
@@ -128,7 +128,7 @@ REPRISE_JOURS = 2   # mise en service : offres de la période de test reprises d
 def passage(config: Config, base: stockage.Base, maintenant_utc: datetime | None = None,
             sources_imposees: list[str] | None = None, session=None, sources: dict = SOURCES,
             verdicts: dict[str, str] | None = None, telegram: Telegram | None = None,
-            sources_exclues: list[str] | None = None, suivi: Suivi | None = None) -> Rapport:
+            sources_exclues: list[str] | None = None, suivi: Suivi | None = None, en_ligne=None) -> Rapport:
     """Un passage : collecte des sources dues, tri, note, enregistrement, puis envois dus.
 
     `sources_imposees` ignore le planning (essais). `sources_exclues` retire des sources après
@@ -157,12 +157,12 @@ def passage(config: Config, base: stockage.Base, maintenant_utc: datetime | None
     if suivi is not None and not plan.hors_plage:
         synchroniser_suivi(base, config, suivi, verdicts or {}, maintenant_utc, rapport)
     if telegram is not None and plan.liste_du_matin:
-        envoyer_liste(base, config, telegram, suivi, maintenant_utc, rapport)
+        envoyer_liste(base, config, telegram, suivi, maintenant_utc, rapport, en_ligne)
     return rapport
 
 
 def envoyer_liste(base: stockage.Base, config: Config, tg: Telegram, suivi: Suivi | None, maintenant_utc: datetime,
-                  rapport: Rapport) -> None:
+                  rapport: Rapport, en_ligne=None) -> None:
     """Liste du matin : après le transfert des offres retenues, pour ne pas reproposer ce qui
     vient d'entrer dans Candidatures. Les offres listées ne reviennent pas les jours suivants."""
     lm = config.planning.envois.liste_matin
@@ -174,8 +174,18 @@ def envoyer_liste(base: stockage.Base, config: Config, tg: Telegram, suivi: Suiv
         except ErreurSheets as ex:
             rapport.suivi["erreur_liste_lecture"] = str(ex)[:200]
     candidats = stockage.candidats_liste(base, maintenant_utc - timedelta(days=lm.fenetre_jours))
-    choix = liste_matin.choisir(candidats, deja, local.date(), lm.max_offres, lm.fils,
+    choix = liste_matin.choisir(candidats, deja, local.date(), lm.max_offres * 3 if en_ligne else lm.max_offres, lm.fils,
                                 exclure_titre=lambda t: filtres.titre_senior(t, config) is not None)
+    if en_ligne is not None:
+        # Une offre fermée est archivée ; on parcourt au plus 3 fois la liste voulue.
+        gardes, fermees = [], []
+        for ch in choix:
+            if len(gardes) >= lm.max_offres:
+                break
+            (fermees if en_ligne(ch.offre.get("url") or "") is False else gardes).append(ch)
+        stockage.archiver(base, [ch.offre["cle"] for ch in fermees])
+        rapport.suivi["liste_fermees"] = len(fermees)
+        choix = gardes
     if not all(tg.envoyer(m) for m in tgm.messages_liste(choix, local.date())):
         return
     if suivi is not None:
@@ -349,8 +359,11 @@ def main() -> int:
             suivi = Suivi(ClientSheets.depuis_env(), mode=mode_suivi)
         except Exception as ex:  # jeton expiré ou absent : la veille continue sans le fichier de suivi
             logger.error("Fichier de suivi inaccessible (%s) : passage sans lui", ex.__class__.__name__)
+    # Disponibilité des offres vérifiée avant la liste du matin (réseau réel, hors tests).
+    verif = disponibilite.Verificateur(Contexte(config=config, session=build_session(),
+                                                maintenant_utc=quand or stockage.maintenant_utc()))
     rapport = passage(config, base, maintenant_utc=quand, sources_imposees=imposees, telegram=tg,
-                      sources_exclues=exclues, suivi=suivi)
+                      sources_exclues=exclues, suivi=suivi, en_ligne=verif.en_ligne)
     chemin = Path(os.getenv("VEILLE_RAPPORT", "data/rapport_passage.json"))
     chemin.parent.mkdir(parents=True, exist_ok=True)
     chemin.write_text(json.dumps(rapport.__dict__, ensure_ascii=False, indent=1), encoding="utf-8")

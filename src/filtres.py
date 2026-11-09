@@ -30,6 +30,11 @@ def normaliser_offre(o: Offre, config: Config, delegue_par_ecole: bool = False) 
     a = lieux.analyser(o.lieu, o.titre, config.filtres.lieux)
     o.teletravail_complet, o.zone_preferee = a.teletravail_complet, a.zone_preferee
     o.annees_requises = experience.annees_requises(o.titre, o.description, o.experience_annees)
+    # 9/11 (EXPERTIME) : France Travail affichait « Débutant accepté », le texte demandait 8 ans.
+    # Le champ structuré reste la règle (calibrage du 26/10) ; l'écart devient un signal.
+    if o.experience_annees is not None:
+        texte = experience.annees_requises("", o.description)
+        o.annees_texte = texte if texte is not None and texte >= 3 and texte > o.experience_annees else None
     o.via_cabinet = employeurs.est_cabinet(o.entreprise, config.filtres.employeurs)
     o.permis_exige = permis_exige(f"{o.titre}. {o.description}", config)
     return o

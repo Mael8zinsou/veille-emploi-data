@@ -125,6 +125,7 @@ class Offre:
     zone_preferee: bool = False
     teletravail_complet: bool = False
     annees_requises: int | None = None
+    annees_texte: int | None = None      # années demandées dans le texte, au-dessus du champ structuré (9/11)
     via_cabinet: bool = False            # publiée par un cabinet de recrutement pour un client
     permis_exige: bool = False           # « permis B exigé » dans le texte
     description_partielle: bool = False  # la source ne donne qu'un extrait (Adzuna)

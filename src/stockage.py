@@ -255,6 +255,8 @@ def signaux_offre(o: Offre) -> list[str]:
         signaux.append("via cabinet")
     if o.description_partielle:
         signaux.append("description partielle (Adzuna) : expérience à vérifier")
+    if o.annees_texte:
+        signaux.append(f"le texte demande {o.annees_texte} ans")
     # Le mode « à vérifier » double le signal Adzuna ci-dessus : pas affiché.
     if o.candidature and o.candidature.mode not in (ModeCandidature.A_VERIFIER, ModeCandidature.INCONNU):
         signaux.append(o.candidature.libelle())
@@ -407,6 +409,12 @@ def candidats_liste(base: Base, depuis: datetime) -> list[dict]:
         rows = c.execute("SELECT * FROM offres WHERE niveau IN ('alerte', 'resume') AND premiere_vue >= ? "
                          "AND liste_le IS NULL ORDER BY note DESC", (_maintenant(depuis),)).fetchall()
     return [_ligne(r) for r in rows]
+
+
+def archiver(base: Base, cles: list[str]) -> None:
+    """Offres fermées avant d'avoir été listées : elles ne reviennent plus dans la liste."""
+    with closing(base.connexion()) as c, c:
+        c.executemany("UPDATE offres SET niveau = 'archive' WHERE cle = ?", [(k,) for k in cles])
 
 
 def marquer_liste(base: Base, cles: list[str], le: datetime | None = None) -> None:
