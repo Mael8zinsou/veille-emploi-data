@@ -41,6 +41,7 @@ def fusionner(offres: list[Offre]) -> list[Offre]:
             principale.annees_requises = autre.annees_requises
         principale.via_cabinet = principale.via_cabinet or autre.via_cabinet
         principale.permis_exige = principale.permis_exige or autre.permis_exige
+        principale.annees_texte = principale.annees_texte or autre.annees_texte
         principale.candidature = meilleure_candidature(principale.candidature, autre.candidature)
         par_cle[cle] = principale
     sortie = []

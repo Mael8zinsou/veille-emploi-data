@@ -38,7 +38,7 @@ LIBELLES_SOURCE = {"france_travail": "France Travail", "adzuna": "Adzuna", "hell
 LIBELLES_NIVEAU = {"alerte": "alerte", "resume": "résumé"}
 LIBELLES_MOTIF = {"seniorite": "trop senior", "trop_ancienne": "offre ancienne"}
 ENTETE_LISTE = ["Date", "N°", "Verdict", "Note", "Fil", "Entreprise", "Poste", "Lieu", "Contrat", "Candidature",
-                "Date limite", "Écarts", "Lien", "Je postule", "Faite le", "Clé"]
+                "Date limite", "Écarts", "Lien", "Je postule", "Faite le", "Clé", "Postuler ici"]
 COL_JE_POSTULE, COL_CLE_LISTE = 13, 15                     # N, P
 LARGEURS_LISTE = {0: 90, 1: 40, 2: 85, 3: 50, 4: 80, 5: 180, 6: 320, 7: 150, 8: 70, 9: 230, 10: 85, 11: 280,
                   12: 90, 13: 85, 14: 110}
@@ -102,11 +102,14 @@ class Suivi:
         if not choix:
             return 0
         self._assurer(self.onglet_liste, ENTETE_LISTE, colonnes_masquees=(COL_CLE_LISTE,), largeurs=LARGEURS_LISTE)
+        # Onglet créé avant la colonne « Postuler ici » (9/11) : en-tête complété.
+        if not self.client.lire(f"'{self.onglet_liste}'!Q1"):
+            self.client.ecrire_cellules_vides(self.onglet_liste, {"Q1": ENTETE_LISTE[-1]})
         jour = f"{quand:%d/%m/%Y}"
         lignes = [[jour, i, ch.verdict, ch.offre.get("note"), str(ch.offre.get("fil") or "").capitalize(),
                    ch.offre.get("entreprise") or "(non indiqué)", ch.offre.get("titre"), ch.offre.get("lieu"),
                    ch.offre.get("contrat") or "", ch.mode, ch.date_limite, " ; ".join(ch.ecarts), ch.offre.get("url"),
-                   False, "", ch.offre.get("cle")] for i, ch in enumerate(choix, start=1)]
+                   False, "", ch.offre.get("cle"), ch.lien_candidature] for i, ch in enumerate(choix, start=1)]
         self.client.ajouter_lignes(self.onglet_liste, lignes, cases_a_cocher=COL_JE_POSTULE)
         return len(lignes)
 

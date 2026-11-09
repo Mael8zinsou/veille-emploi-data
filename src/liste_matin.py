@@ -20,7 +20,7 @@ from src.normalisation.texte import normaliser
 
 PRETE, TENTATIVE, A_VERIFIER = "prête", "tentative", "à vérifier"
 # Écarts qui font d'une offre une tentative : l'exigence dépasse le profil.
-_AU_DESSUS = ("an(s) d'expérience demandé", "« confirmé »", "permis b")
+_AU_DESSUS = ("an(s) d'expérience demandé", "« confirmé »", "permis b", "le texte demande")
 _SIGNAUX_ECARTS = {"permis B exigé": "permis B exigé", "via cabinet": "via cabinet",
                    "description partielle (Adzuna) : expérience à vérifier": "description partielle"}
 # Bonus de rang : à note égale, ce qui demande le moins à Maël passe devant.
@@ -50,6 +50,11 @@ class Choix:
         return textes.get(m, m)
 
     @property
+    def lien_candidature(self) -> str:
+        """Lien direct vers le formulaire ou le mail ; à défaut, la page de l'offre."""
+        return self.candidature.get("lien") or self.offre.get("url") or ""
+
+    @property
     def date_limite(self) -> str:
         d = self.candidature.get("date_limite") or ""
         return f"{d[8:10]}/{d[5:7]}" if d else ""
@@ -60,7 +65,7 @@ def ecarts(o: dict) -> list[str]:
     sortie = [f"{n} {p:+d}" for n, p in (o.get("composantes") or []) if p < 0]
     deja = {s.rsplit(" ", 1)[0] for s in sortie}
     for s in o.get("signaux") or []:
-        libelle = _SIGNAUX_ECARTS.get(s)
+        libelle = _SIGNAUX_ECARTS.get(s) or (s if s.startswith("le texte demande") else None)
         if libelle and libelle not in deja:
             sortie.append(libelle)
             deja.add(libelle)
