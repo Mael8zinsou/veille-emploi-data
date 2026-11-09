@@ -48,6 +48,7 @@ class Motif(StrEnum):
     METIER_HORS_CIBLE = "metier_hors_cible"
     LIEU_ETRANGER = "lieu_etranger"
     PLATEFORME_MISSIONS = "plateforme_missions"
+    FILIERE_RESERVEE = "filiere_reservee"
     FREELANCE = "freelance"
     STAGE_CONVENTIONNE = "stage_conventionne"
     CONTRAT_HORS_CIBLE = "contrat_hors_cible"

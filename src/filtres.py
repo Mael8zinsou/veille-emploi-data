@@ -102,6 +102,9 @@ def motif_de_rejet(o: Offre, config: Config, aujourdhui: date) -> tuple[Motif, s
         return Motif.LIEU_ETRANGER, analyse.etranger
     if o.type_employeur == TypeEmployeur.PLATEFORME:
         return Motif.PLATEFORME_MISSIONS, o.entreprise
+    reservee = premier_motif(normaliser(o.entreprise or ""), f.employeurs.filieres_reservees)
+    if reservee:
+        return Motif.FILIERE_RESERVEE, o.entreprise
     if o.contrat == Contrat.FREELANCE:
         return Motif.FREELANCE, o.contrat_brut
     if o.contrat == Contrat.STAGE:

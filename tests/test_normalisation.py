@@ -27,6 +27,12 @@ def test_retirer():
 
 @pytest.mark.parametrize("titre, famille", [
     ("Data Engineer H/F", "data_engineering"),
+    # Diagnostic du vivier (9/11) : intitulés publics au singulier
+    ("DNPJ-DATAI-Ingénieur(e) de la Donnée", "data_engineering"),
+    ("DGPN/STN - Ingénieur de la donnée H/F", "data_engineering"),
+    ("Ingénieur DATABRICKS - MCO/RUN - CDI (H/F)", "data_engineering"),
+    ("SCIENTIFIQUE DE LA DONNEE", "data_science"),
+    ("Chargé de mission Gouvernance et traitement de la donnée", "satellites"),
     ("Ingénieur Données (F/H)", "data_engineering"),
     ("Data Scientist & ML Engineer", "ia_ml"),  # 9/11 : data_science en priorité 2, ia_ml l'emporte
     ("Data Scientist", "data_science"),

@@ -194,6 +194,14 @@ seniorite:
     # (notation.yaml), pas un rejet, pour respecter le calibrage du 26/10.
     - docteur
     - phd
+    # 9/11 (diagnostic du vivier) : postes d'encadrement de la fonction publique, arrivés en
+    # tête de liste (« Responsable de la cellule Data-IA », « Data Scientist Chef de la section »).
+    - responsable de la cellule
+    - responsable du service
+    - chef de la section
+    - chef de section
+    - chef du service
+    - chef de service
   # Expressions retirées du titre avant ce contrôle : ce sont des métiers, pas des grades.
   exceptions:
     - data manager
@@ -227,6 +235,12 @@ employeurs:
     - freelance republik
     - lehibou
     - le hibou
+  # Filières réservées aux personnes en situation de handicap (RQTH) : rejet (motif
+  # filiere_reservee). Décision du 9/11 : Maël n'est pas concerné.
+  filieres_reservees:
+    - talents handicap
+    - forums talents handicap
+    - handicap job
   # Republicateurs, agrégateurs, jobboards, cabinets et agences : « seconde main ».
   intermediaires:
     - cadremploi

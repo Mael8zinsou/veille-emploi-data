@@ -51,6 +51,13 @@ familles:
       - ingenieur donnees
       - ingenieur des donnees
       - ingenieur de donnees
+      # 9/11 (diagnostic du vivier) : formes au singulier des intitulés publics, jusque-là
+      # rejetées (« DNPJ-DATAI - Ingénieur(e) de la Donnée », « Ingénieur DATABRICKS »).
+      - ingenieur de la donnee
+      - ingenieur donnee
+      - ingenieure de la donnee
+      - ingenieur e de la donnee
+      - ingenieur databricks
       - ingenieur big data
       - developpeur data
       - developpeur big data
@@ -69,6 +76,9 @@ familles:
     priorite: 2
     romes: [M1405]
     motifs:
+      # 9/11 : intitulés publics au singulier (« Scientifique de la donnée »).
+      - scientifique de la donnee
+      - scientifique des donnees
       - data scientist
       - data scientiste
       - datascientist
@@ -199,4 +209,6 @@ familles:
       # l'évaluation décident ensuite de ce qui mérite d'être vu.
       - data
       - donnees
+      # 9/11 : le singulier manquait au filet (« Chargé de mission traitement de la donnée »).
+      - donnee
       - analyse de donnees
