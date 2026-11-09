@@ -52,6 +52,9 @@ hellowork:
   # Paris pour les priorités 1, à un rythme modéré (planning.yaml).
   max_pages: 4
   delai_secondes: 2.5
+  # Vérification (9/11) : la page de chaque nouvelle offre au titre reconnu est lue une fois
+  # (expérience exigée « Exp. N ans min. », description complète, mode de candidature).
+  max_details: 40
   emploi:
     - {k: data engineer}
     - {k: data engineer, l: Paris}

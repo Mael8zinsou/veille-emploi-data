@@ -9,7 +9,7 @@ from __future__ import annotations
 import logging
 import os
 
-from src.models import Offre
+from src.models import Candidature, ModeCandidature, Offre
 from src.sources import Contexte, SourceIndisponible
 
 NOM = "adzuna"
@@ -32,6 +32,9 @@ def convertir(item: dict) -> Offre:
         # L'API ne rend qu'un extrait de la description (environ 500 caractères) : une exigence
         # d'expérience placée plus loin échappe au filtre (cas LR Technologies, 6 ans, 27/10).
         description_partielle=True,
+        # Sondage du 9/11 : les pages Adzuna répondent 403 aux robots (CloudFront). La page et
+        # le mode de candidature se vérifient dans Chrome, à la préparation de la liste du matin.
+        candidature=Candidature(ModeCandidature.A_VERIFIER, "Adzuna", item.get("redirect_url") or ""),
     )
 
 

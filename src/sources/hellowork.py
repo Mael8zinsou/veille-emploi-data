@@ -13,8 +13,10 @@ import html
 import logging
 import re
 import time
+from html.parser import HTMLParser
 
-from src.models import Fil, Offre
+from src.models import Candidature, Fil, ModeCandidature, Offre
+from src.normalisation import metiers
 from src.sources import Contexte, SourceIndisponible
 
 NOM = "hellowork"
@@ -51,6 +53,100 @@ def lire_page(texte: str, fil: Fil) -> list[Offre]:
     return offres
 
 
+# ------------------------------------------------------------------ page de l'offre (9/11)
+#
+# La page liste ne donne ni description ni expérience. La page de l'offre porte, sous le titre,
+# une ligne « Exp. 5 ans min. » (sondage du 9/11 : 4 offres sur 6 demandaient 3 ans ou plus),
+# puis la description complète. Candidature : formulaire HelloWork, compte requis.
+
+_EXP = re.compile(r"^Exp\.\s*(\d{1,2})\s*ans?\s*min", re.IGNORECASE | re.MULTILINE)
+_DEBUT = ("Les missions du poste", "Détail du poste")
+_FIN = ("Les avantages", "Les étapes de recrutement", "Envoyez votre candidature", " en images\n", "Créer mon alerte",
+        "Ces offres pourraient")
+_BLOCS = {"p", "div", "li", "br", "h1", "h2", "h3", "h4", "section", "ul", "ol", "tr"}
+_PARASITES = {"Voir plus", "Voir moins", "Lire dans l'app"}
+CANDIDATURE = Candidature(ModeCandidature.COMPTE, "HelloWork")
+
+
+class _Texte(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.morceaux: list[str] = []
+        self._ignore = 0
+
+    def handle_starttag(self, tag, attrs):
+        if tag in ("script", "style", "svg"):
+            self._ignore += 1
+        elif tag in _BLOCS:
+            self.morceaux.append("\n")
+
+    def handle_endtag(self, tag):
+        if tag in ("script", "style", "svg"):
+            self._ignore = max(0, self._ignore - 1)
+
+    def handle_data(self, data):
+        if not self._ignore:
+            self.morceaux.append(data)
+
+
+def texte_visible(page: str) -> str:
+    p = _Texte()
+    p.feed(page or "")
+    t = re.sub(r"[ \t\xa0\u202f]+", " ", "".join(p.morceaux))
+    return "\n".join(ligne.strip() for ligne in t.split("\n") if ligne.strip() and ligne.strip() not in _PARASITES)
+
+
+def lire_detail(page: str) -> dict:
+    """{"experience": années minimum ou None, "description": texte} depuis la page d'une offre."""
+    t = texte_visible(page)
+    m = _EXP.search(t)
+    debut = min((i for i in (t.find(d) for d in _DEBUT) if i >= 0), default=-1)
+    if debut < 0 and m:
+        debut = m.end()
+    description = ""
+    if debut >= 0:
+        fin = min((i for i in (t.find(f, debut) for f in _FIN) if i >= 0), default=len(t))
+        description = t[debut:fin].strip()
+    return {"experience": int(m.group(1)) if m else None, "description": description[:3000]}
+
+
+def completer(o: Offre, detail: dict) -> None:
+    if detail.get("experience") is not None:
+        o.experience_annees = int(detail["experience"])
+    if detail.get("description"):
+        o.description = detail["description"]
+    o.candidature = CANDIDATURE
+
+
+def _a_lire(o: Offre, ctx: Contexte) -> bool:
+    famille, _ = metiers.reconnaitre(o.titre, ctx.config.metiers)
+    return famille is not None
+
+
+def completer_toutes(offres: list[Offre], ctx: Contexte) -> int:
+    """Page de chaque offre au titre reconnu, lue une fois (mémoire), `max_details` au plus
+    par passage. Une offre dont la page n'est pas lue reste gardée : son mode de candidature
+    est connu, son expérience le sera au passage suivant. Rend le nombre de pages lues."""
+    cfg = ctx.config.sources.hellowork
+    lues = 0
+    for o in offres:
+        if o.id_source in ctx.memoire:
+            completer(o, ctx.memoire[o.id_source])
+            continue
+        o.candidature = CANDIDATURE
+        if lues >= cfg.max_details or not _a_lire(o, ctx):
+            continue
+        r = ctx.get(o.url)
+        lues += 1
+        if r is None or _refuse(r.status_code, r.text):
+            continue
+        detail = lire_detail(r.text)
+        ctx.memoire[o.id_source] = detail
+        completer(o, detail)
+        time.sleep(cfg.delai_secondes)
+    return lues
+
+
 def _refuse(statut: int, texte: str) -> bool:
     return statut in (403, 429, 503) or any(m in texte[:5000].lower() for m in _REFUS)
 
@@ -85,5 +181,12 @@ def fetch(ctx: Contexte) -> list[Offre]:
                 break
             time.sleep(cfg.delai_secondes)
     ctx.verifier(NOM)
-    logger.info("hellowork : %d offres, %d requêtes", len(offres), ctx.requetes)
+    # Une même offre revient sous plusieurs recherches : une seule lecture de sa page.
+    uniques = {o.id_source: o for o in offres}
+    lues = completer_toutes(list(uniques.values()), ctx)
+    for o in offres:
+        source = uniques[o.id_source]
+        if o is not source:
+            o.experience_annees, o.description, o.candidature = source.experience_annees, source.description, source.candidature
+    logger.info("hellowork : %d offres, %d pages d'offre lues, %d requêtes", len(offres), lues, ctx.requetes)
     return offres

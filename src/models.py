@@ -57,6 +57,41 @@ class Motif(StrEnum):
     TROP_ANCIENNE = "trop_ancienne"
 
 
+class ModeCandidature(StrEnum):
+    """Ce qu'il faut faire pour postuler (vérification du 9/11)."""
+    FORMULAIRE = "formulaire"   # formulaire sans compte : jouable de A à Z
+    COMPTE = "compte"           # site où Maël doit être connecté
+    MAIL = "mail"               # candidature par mail : brouillon Gmail
+    SITE = "site"               # site de l'employeur, mode inconnu : à regarder
+    A_VERIFIER = "a_verifier"   # page illisible par la veille (Adzuna) : à vérifier dans Chrome
+    INCONNU = "inconnu"
+
+
+@dataclass
+class Candidature:
+    mode: ModeCandidature
+    plateforme: str = ""
+    lien: str = ""
+    date_limite: str = ""       # AAAA-MM-JJ
+
+    def libelle(self) -> str:
+        """Texte court pour Telegram et l'onglet Veille. Ne cite jamais d'adresse mail."""
+        textes = {ModeCandidature.FORMULAIRE: f"formulaire sans compte ({self.plateforme})" if self.plateforme
+                  else "formulaire sans compte",
+                  ModeCandidature.COMPTE: f"compte {self.plateforme}" if self.plateforme else "compte requis",
+                  ModeCandidature.MAIL: "par mail",
+                  ModeCandidature.SITE: f"site de l'employeur ({self.plateforme})" if self.plateforme else "site de l'employeur",
+                  ModeCandidature.A_VERIFIER: "à vérifier", ModeCandidature.INCONNU: "mode inconnu"}
+        texte = "candidature : " + textes[self.mode]
+        if self.date_limite:
+            j, m = self.date_limite[8:10], self.date_limite[5:7]
+            texte += f", avant le {j}/{m}"
+        return texte
+
+    def en_dict(self) -> dict:
+        return {"mode": str(self.mode), "plateforme": self.plateforme, "lien": self.lien, "date_limite": self.date_limite}
+
+
 @dataclass
 class Offre:
     """Une offre telle que rendue par une source, puis enrichie par la normalisation."""
@@ -79,6 +114,7 @@ class Offre:
     diffuseur: str = ""                  # partenaire qui a republié l'offre (France Travail, La bonne alternance)
     delegue_par_ecole: bool = False      # offre déposée par une école pour une entreprise (La bonne alternance)
     fil_demande: Fil | None = None       # fil pour lequel la source a été interrogée
+    candidature: Candidature | None = None  # mode de candidature, si la source le donne
 
     # Rempli par la normalisation
     contrat: Contrat = Contrat.INCONNU

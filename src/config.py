@@ -198,6 +198,7 @@ class RechercheHelloWork(_Strict):
 class HelloWork(_Strict):
     max_pages: int = Field(ge=1, le=5)
     delai_secondes: float = Field(ge=1.0)
+    max_details: int = Field(default=0, ge=0, le=100)   # pages d'offre lues au plus par passage
     emploi: list[RechercheHelloWork]
     alternance: list[RechercheHelloWork] = []
 
