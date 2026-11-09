@@ -57,6 +57,7 @@ def test_nouveaux_intermediaires(config, nom):
     {"entreprise": "Ministère de l'Économie et des Finances"},
     {"entreprise": "Direction générale des Finances publiques"},
     {"entreprise": "Inserm"},
+    {"entreprise": "Ministères de la Santé, des Solidarités et du Travail"},   # pluriel, passage du 9/11
     {"entreprise": "Recruteur", "source": "service_public"},
 ])
 def test_bonus_secteur_public(config, kw):
