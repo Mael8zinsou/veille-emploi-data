@@ -130,6 +130,7 @@ class Offre:
     via_cabinet: bool = False            # publiée par un cabinet de recrutement pour un client
     permis_exige: bool = False           # « permis B exigé » dans le texte
     description_partielle: bool = False  # la source ne donne qu'un extrait (Adzuna)
+    lettre_demandee: bool = False        # lettre de motivation demandée dans le texte (10/11)
 
     # Rempli par le dédoublonnage
     sources: list[str] = field(default_factory=list)

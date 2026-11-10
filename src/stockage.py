@@ -257,6 +257,8 @@ def signaux_offre(o: Offre) -> list[str]:
         signaux.append("description partielle (Adzuna) : expérience à vérifier")
     if o.annees_texte:
         signaux.append(f"le texte demande {o.annees_texte} ans")
+    if o.lettre_demandee:
+        signaux.append("lettre demandée")
     # Le mode « à vérifier » double le signal Adzuna ci-dessus : pas affiché.
     if o.candidature and o.candidature.mode not in (ModeCandidature.A_VERIFIER, ModeCandidature.INCONNU):
         signaux.append(o.candidature.libelle())

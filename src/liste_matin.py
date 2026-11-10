@@ -13,6 +13,7 @@ Verdicts :
 """
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass, field
 from datetime import date
 
@@ -26,6 +27,22 @@ _SIGNAUX_ECARTS = {"permis B exigé": "permis B exigé", "via cabinet": "via cab
 # Bonus de rang : à note égale, ce qui demande le moins à Maël passe devant.
 _BONUS_MODE = {"formulaire": 2, "mail": 1, "compte": 0, "site": 0, "a_verifier": -1, "inconnu": -1}
 _BONUS_VERDICT = {PRETE: 0, A_VERIFIER: -2, TENTATIVE: -3}
+# Famille de CV proposée (familles de `cv_rapide.py`), d'après le titre ; la première qui
+# correspond l'emporte. Par défaut : data_engineer, le poste visé.
+_FAMILLES_CV = (
+    ("analytics_engineer", r"\banalytics engineer"),
+    ("data_scientist", r"\bdata scien|\bmachine learning\b|\bml\b|\bmlops\b"),
+    ("dev_ia", r"\bia\b|\bai\b|intelligence artificielle|\bllm\b|\bgenai\b"),
+    ("data_manager", r"\bdata manager|\bgouvernance\b|\bdata steward|\bqualite des donnees|\bchef de projet data"
+                     r"|\bmdm\b"),
+    ("data_analyst", r"\banalyst|\banalyste\b|\bbi\b|business intelligence|\breporting\b|\bpower bi\b"
+                     r"|\bstatistici|\bcharge d etudes"),
+)
+
+
+def famille_cv(titre: str) -> str:
+    t = normaliser(titre or "")
+    return next((nom for nom, motif in _FAMILLES_CV if re.search(motif, t)), "data_engineer")
 
 
 @dataclass
@@ -48,6 +65,19 @@ class Choix:
                   "site": f"site de l'employeur{f' ({p})' if p else ''}", "a_verifier": "à vérifier dans Chrome",
                   "inconnu": "mode inconnu"}
         return textes.get(m, m)
+
+    @property
+    def lettre(self) -> bool:
+        return "lettre demandée" in (self.offre.get("signaux") or [])
+
+    @property
+    def famille_cv(self) -> str:
+        return famille_cv(self.offre.get("titre") or "")
+
+    @property
+    def mode_complet(self) -> str:
+        """Mode de candidature, suivi de « lettre demandée » si l'annonce en parle."""
+        return self.mode + (" ; lettre demandée" if self.lettre else "")
 
     @property
     def lien_candidature(self) -> str:

@@ -37,7 +37,17 @@ def normaliser_offre(o: Offre, config: Config, delegue_par_ecole: bool = False) 
         o.annees_texte = texte if texte is not None and texte >= 3 and texte > o.experience_annees else None
     o.via_cabinet = employeurs.est_cabinet(o.entreprise, config.filtres.employeurs)
     o.permis_exige = permis_exige(f"{o.titre}. {o.description}", config)
+    o.lettre_demandee = lettre_demandee(o.description)
     return o
+
+
+_LETTRE = re.compile(r"\blettre de motivation\b|\bcv (?:et )?(?:une )?lettre\b")
+
+
+def lettre_demandee(description: str) -> bool:
+    """Lettre de motivation citée dans l'annonce (10/11) : Claude la prépare avant la session,
+    au lieu de la découvrir dans le formulaire."""
+    return bool(_LETTRE.search(normaliser(description or "")))
 
 
 _STAGE_DUREE = re.compile(r"\bstage (?:de |d )?\d{1,2} (?:a \d{1,2} )?mois\b")

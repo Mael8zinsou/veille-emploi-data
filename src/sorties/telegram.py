@@ -80,9 +80,9 @@ def _ligne_liste(i: int, ch) -> str:
     o = ch.offre
     detail = " · ".join(p for p in (e(o.get("entreprise") or "employeur non indiqué"), e(o.get("lieu")),
                                     e(o.get("contrat"))) if p)
-    mode = e(ch.mode) + (f", avant le {e(ch.date_limite)}" if ch.date_limite else "")
+    mode = e(ch.mode_complet) + (f", avant le {e(ch.date_limite)}" if ch.date_limite else "")
     lignes = [f"<b>{i}.</b> {e(o['titre'])} · {detail}",
-              f"    note {o.get('note')} · <b>{e(ch.verdict)}</b> · {mode}"]
+              f"    note {o.get('note')} · <b>{e(ch.verdict)}</b> · {mode} · CV {e(ch.famille_cv)}"]
     if ch.ecarts:
         lignes.append(f"    écarts : {e(', '.join(ch.ecarts))}")
     lignes.append(f"    {_lien(o.get('url', ''), 'offre')}")
